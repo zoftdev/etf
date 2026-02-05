@@ -34,54 +34,77 @@ PERIOD_OPTIONS = [
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([
-            html.H1("ETF Performance Comparison", className="mb-4"),
+            dbc.Row([
+                dbc.Col([
+                    html.H1("ETF Performance Comparison", className="mb-4"),
+                ], width=10),
+                dbc.Col([
+                    dbc.ButtonGroup([
+                        dbc.Button(
+                            "☰ Controls",
+                            id="toggle-sidebar-btn",
+                            color="secondary",
+                            size="sm",
+                            className="me-1"
+                        ),
+                        dbc.Button(
+                            "📊 Legend",
+                            id="toggle-legend-btn",
+                            color="secondary",
+                            size="sm"
+                        ),
+                    ], className="mt-2")
+                ], width=2, className="text-end")
+            ]),
             html.Hr(),
         ], width=12)
     ]),
     
     dbc.Row([
-        # Left sidebar - Controls
+        # Left sidebar - Controls (with show/hide)
         dbc.Col([
-            html.H4("Controls", className="mb-3"),
-            
-            # Period selector
-            html.Label("Time Period:", className="fw-bold"),
-            dcc.Dropdown(
-                id='period-selector',
-                options=PERIOD_OPTIONS,
-                value='7d',  # Default to 7 days
-                className="mb-3"
-            ),
-            
-            html.Hr(),
-            
-            # Group toggles
-            html.Label("Show/Hide Groups:", className="fw-bold mb-2"),
-            html.Div(id='group-checkboxes'),
-            
-            html.Hr(),
-            
-            # Error display
-            html.Div(id='error-display', className="mt-3"),
-            
-            # Loading indicator
-            dcc.Loading(
-                id="loading",
-                type="default",
-                children=html.Div(id="loading-output")
-            ),
-            
-        ], width=3, className="border-end"),
+            html.Div(id='sidebar-content', children=[
+                html.H4("Controls", className="mb-3"),
+                
+                # Period selector
+                html.Label("Time Period:", className="fw-bold"),
+                dcc.Dropdown(
+                    id='period-selector',
+                    options=PERIOD_OPTIONS,
+                    value='7d',  # Default to 7 days
+                    className="mb-3"
+                ),
+                
+                html.Hr(),
+                
+                # Group toggles
+                html.Label("Show/Hide Groups:", className="fw-bold mb-2"),
+                html.Div(id='group-checkboxes'),
+                
+                html.Hr(),
+                
+                # Error display
+                html.Div(id='error-display', className="mt-3"),
+                
+                # Loading indicator
+                dcc.Loading(
+                    id="loading",
+                    type="default",
+                    children=html.Div(id="loading-output")
+                ),
+            ])
+        ], id='sidebar-col', width=3, className="border-end"),
         
         # Main chart area
         dbc.Col([
             dcc.Graph(id='etf-chart', style={'height': '80vh'}),
             html.Div(id='chart-info', className="mt-2 text-muted")
-        ], width=9)
+        ], id='chart-col', width=9)
     ]),
     
     # Store for browser session
     dcc.Store(id='session-store', storage_type='session'),
+    dcc.Store(id='ui-state-store', storage_type='session', data={'show_sidebar': True, 'show_legend': True}),
     
 ], fluid=True)
 
@@ -126,20 +149,68 @@ def update_group_checkboxes(session_data):
 
 
 @app.callback(
+    Output('sidebar-col', 'style'),
+    Output('chart-col', 'width'),
+    Output('ui-state-store', 'data'),
+    Input('toggle-sidebar-btn', 'n_clicks'),
+    Input('toggle-legend-btn', 'n_clicks'),
+    State('ui-state-store', 'data')
+)
+def toggle_ui_elements(sidebar_clicks, legend_clicks, ui_state):
+    """Toggle sidebar and legend visibility"""
+    if ui_state is None:
+        ui_state = {'show_sidebar': True, 'show_legend': True}
+    
+    show_sidebar = ui_state.get('show_sidebar', True)
+    show_legend = ui_state.get('show_legend', True)
+    
+    # Get which button was clicked
+    ctx = callback_context
+    if ctx.triggered:
+        trigger_id = ctx.triggered[0]['prop_id'].split('.')[0]
+        
+        if trigger_id == 'toggle-sidebar-btn' and sidebar_clicks:
+            show_sidebar = not show_sidebar
+        elif trigger_id == 'toggle-legend-btn' and legend_clicks:
+            show_legend = not show_legend
+    
+    ui_state['show_sidebar'] = show_sidebar
+    ui_state['show_legend'] = show_legend
+    
+    # Determine sidebar style and chart width
+    if show_sidebar:
+        sidebar_style = {'display': 'block'}
+        chart_width = 9
+    else:
+        sidebar_style = {'display': 'none'}
+        chart_width = 12
+    
+    return sidebar_style, chart_width, ui_state
+
+
+@app.callback(
     Output('session-store', 'data'),
     Output('etf-chart', 'figure'),
     Output('error-display', 'children'),
     Output('chart-info', 'children'),
     Input('period-selector', 'value'),
     Input({'type': 'group-checkbox', 'index': ALL}, 'value'),
+    Input('ui-state-store', 'data'),
     State('session-store', 'data'),
     State({'type': 'group-checkbox', 'index': ALL}, 'id')
 )
-def update_chart(period, group_values, session_data, group_ids):
+def update_chart(period, group_values, ui_state, session_data, group_ids):
     """Update chart based on period and group selections"""
     # Initialize session data
     if session_data is None:
         session_data = {'period': '7d', 'visible_groups': list(groups.keys())}
+    
+    # Initialize UI state
+    if ui_state is None:
+        ui_state = {'show_sidebar': True, 'show_legend': True}
+    
+    # Get legend visibility from UI state
+    show_legend = ui_state.get('show_legend', True)
     
     # Update session data
     session_data['period'] = period
@@ -187,19 +258,21 @@ def update_chart(period, group_values, session_data, group_ids):
             ticker_info = fetcher.get_ticker_info(ticker)
             name = ticker_info['name'] if ticker_info else ticker
             
+            line_color = colors[color_idx % len(colors)]
+            
             fig.add_trace(go.Scatter(
                 x=df.index,
                 y=df['pct_change'],
                 mode='lines',
                 name=f"{ticker} - {name}",
-                line=dict(color=colors[color_idx % len(colors)], width=2),
+                line=dict(color=line_color, width=2),
                 hovertemplate=f'<b>{ticker}</b><br>' +
                              f'{name}<br>' +
                              'Date: %{x}<br>' +
                              'Change: %{y:.2f}%<extra></extra>',
                 hoverlabel=dict(
                     bgcolor='white',
-                    bordercolor='red',
+                    bordercolor=line_color,
                     font=dict(color='blue', size=12)
                 )
             ))
@@ -207,6 +280,10 @@ def update_chart(period, group_values, session_data, group_ids):
     
     # Update layout
     period_label = next((opt['label'] for opt in PERIOD_OPTIONS if opt['value'] == period), period)
+    
+    # Get legend visibility from UI state
+    show_legend = ui_state.get('show_legend', True) if ui_state else True
+    
     fig.update_layout(
         title=f'ETF Performance Comparison - {period_label}',
         xaxis_title='Date',
@@ -223,9 +300,10 @@ def update_chart(period, group_values, session_data, group_ids):
             y=1,
             xanchor="left",
             x=1.02
-        ),
-        margin=dict(r=200),
-        height=600
+        ) if show_legend else None,
+        margin=dict(r=200 if show_legend else 50),
+        height=600,
+        showlegend=show_legend
     )
     
     # Error display
