@@ -196,7 +196,12 @@ def update_chart(period, group_values, session_data, group_ids):
                 hovertemplate=f'<b>{ticker}</b><br>' +
                              f'{name}<br>' +
                              'Date: %{x}<br>' +
-                             'Change: %{y:.2f}%<extra></extra>'
+                             'Change: %{y:.2f}%<extra></extra>',
+                hoverlabel=dict(
+                    bgcolor='white',
+                    bordercolor='red',
+                    font=dict(color='blue', size=12)
+                )
             ))
             color_idx += 1
     
@@ -207,6 +212,11 @@ def update_chart(period, group_values, session_data, group_ids):
         xaxis_title='Date',
         yaxis_title='Percentage Change (%)',
         hovermode='closest',
+        hoverlabel=dict(
+            bgcolor='white',
+            bordercolor='black',
+            font=dict(color='black', size=12)
+        ),
         legend=dict(
             orientation="v",
             yanchor="top",
