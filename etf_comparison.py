@@ -618,7 +618,8 @@ def update_chart(period, group_values, ui_state, session_data, group_ids):
             yanchor="top",
             y=1,
             xanchor="left",
-            x=1.02
+            x=1.02,
+            font=dict(color='blue', size=12)
         ) if show_legend else None,
         margin=dict(r=200 if show_legend else 50),
         height=600,
