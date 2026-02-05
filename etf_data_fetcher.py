@@ -353,3 +353,90 @@ class ETFDataFetcher:
     def get_ticker_info(self, ticker: str) -> Optional[dict]:
         """Get metadata for a ticker"""
         return self.tickers_map.get(ticker)
+
+    # -------------------------
+    # Extended history fetching
+    # -------------------------
+
+    def _get_cache_path_history_days(self, ticker: str, days: int) -> Path:
+        """Cache path for raw history used by screeners/indicators."""
+        return self.cache_dir / f"{ticker}_days{days}.pkl"
+
+    def _calendar_days_for_trading_window(self, trading_days: int, cushion: int = 60) -> int:
+        """Rough conversion from trading-day windows (e.g. 200) to calendar days."""
+        # 252 trading days ~ 365 calendar days
+        approx = int(trading_days * (365 / 252))
+        return approx + cushion
+
+    def _fetch_ticker_history_days(self, ticker: str, days: int) -> Tuple[str, Optional[pd.DataFrame], Optional[str]]:
+        """Fetch OHLCV history for the last N calendar days (cached)."""
+        cache_path = self._get_cache_path_history_days(ticker, days)
+
+        if self._is_cache_valid(cache_path):
+            try:
+                with open(cache_path, 'rb') as f:
+                    cached_data = pickle.load(f)
+                    return ticker, cached_data, None
+            except Exception:
+                pass
+
+        try:
+            end_date = datetime.now()
+            start_date = end_date - timedelta(days=days)
+
+            yf_ticker = self._get_yfinance_ticker(ticker)
+            df = yf.Ticker(yf_ticker).history(start=start_date, end=end_date)
+
+            if df.empty:
+                return ticker, None, f"No data available for {ticker}"
+
+            # Keep full resolution here (no downsample); indicators need daily continuity.
+            try:
+                with open(cache_path, 'wb') as f:
+                    pickle.dump(df, f)
+            except Exception:
+                pass
+
+            return ticker, df, None
+        except Exception as e:
+            return ticker, None, f"Error fetching {ticker}: {str(e)}"
+
+    def fetch_history_days(self, days: int, tickers: Optional[List[str]] = None) -> Tuple[Dict[str, pd.DataFrame], Dict[str, str]]:
+        """Fetch raw history (Close etc.) for last N calendar days, parallel + cached."""
+        if tickers is None:
+            tickers = list(self.tickers_map.keys())
+
+        results: Dict[str, pd.DataFrame] = {}
+        errors: Dict[str, str] = {}
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            future_to_ticker = {
+                executor.submit(self._fetch_ticker_history_days, ticker, days): ticker
+                for ticker in tickers
+            }
+
+            for future in as_completed(future_to_ticker):
+                ticker, df, error = future.result()
+                if error:
+                    errors[ticker] = error
+                elif df is not None:
+                    results[ticker] = df
+
+        return results, errors
+
+    def fetch_history_for_windows(
+        self,
+        tickers: List[str],
+        trend_window_days: int,
+        dip_window_days: int,
+        slope_lookback_days: int = 20,
+    ) -> Tuple[Dict[str, pd.DataFrame], Dict[str, str]]:
+        """
+        Convenience: fetch enough history to compute SMA(trend_window_days), its slope,
+        and dip returns.
+
+        Note: windows are expressed in TRADING days; we convert to calendar days.
+        """
+        needed_trading_days = max(trend_window_days + slope_lookback_days + 5, dip_window_days + 5)
+        calendar_days = self._calendar_days_for_trading_window(needed_trading_days)
+        return self.fetch_history_days(calendar_days, tickers=tickers)

@@ -4,11 +4,13 @@ Dash web application with browser session storage
 """
 import dash
 from dash import dcc, html, Input, Output, State, callback_context, ALL
+from dash import dash_table
 import plotly.graph_objs as go
 import plotly.express as px
 from etf_data_fetcher import ETFDataFetcher
 import dash_bootstrap_components as dbc
 from datetime import datetime
+import pandas as pd
 
 
 # Initialize data fetcher
@@ -95,7 +97,40 @@ app.layout = dbc.Container([
                 html.Div(id='group-checkboxes'),
                 
                 html.Hr(),
-                
+
+                # Dip-buy screener config
+                html.H5("Dip-Buy Screener", className="mt-2"),
+                dbc.Row([
+                    dbc.Col([
+                        dbc.Label("Trend window (days)", className="fw-bold"),
+                        dbc.Input(id='trend-days', type='number', min=20, step=5, value=200, size='sm'),
+                    ], width=6),
+                    dbc.Col([
+                        dbc.Label("Dip window (days)", className="fw-bold"),
+                        dbc.Input(id='dip-days', type='number', min=2, step=1, value=7, size='sm'),
+                    ], width=6),
+                ], className="g-2 mb-2"),
+                dbc.Row([
+                    dbc.Col([
+                        dbc.Label("SMA slope lookback", className="fw-bold"),
+                        dbc.Input(id='slope-lookback-days', type='number', min=5, step=5, value=20, size='sm'),
+                    ], width=6),
+                    dbc.Col([
+                        dbc.Label("Min dip (%)", className="fw-bold"),
+                        dbc.Input(id='min-dip-pct', type='number', step=0.5, value=0.0, size='sm'),
+                        html.Div("(0 = any negative)", className="text-muted", style={"fontSize": "0.8rem"}),
+                    ], width=6),
+                ], className="g-2 mb-2"),
+                dbc.Checkbox(
+                    id='use-slope-filter',
+                    value=True,
+                    label='Require SMA slope > 0',
+                    className="mb-2"
+                ),
+                html.Div(id='screener-info', className="text-muted", style={"fontSize": "0.9rem"}),
+
+                html.Hr(),
+
                 # Error display
                 html.Div(id='error-display', className="mt-3"),
                 
@@ -110,14 +145,57 @@ app.layout = dbc.Container([
         
         # Main chart area
         dbc.Col([
-            dcc.Graph(id='etf-chart', style={'height': '80vh'}),
-            html.Div(id='chart-info', className="mt-2 text-muted")
+            dcc.Graph(id='etf-chart', style={'height': '65vh'}),
+            html.Div(id='chart-info', className="mt-2 text-muted"),
+            html.Hr(),
+            html.H4("Dip-Buy Screener", className="mt-2"),
+            dash_table.DataTable(
+                id='screener-table',
+                columns=[
+                    {"name": "Ticker", "id": "ticker"},
+                    {"name": "Name", "id": "name"},
+                    {"name": "Group", "id": "group"},
+                    {"name": "Trend vs SMA", "id": "trend_vs_sma_pct", "type": "numeric", "format": {"specifier": ".2f"}},
+                    {"name": "SMA slope", "id": "sma_slope_pct", "type": "numeric", "format": {"specifier": ".2f"}},
+                    {"name": "Dip", "id": "dip_pct", "type": "numeric", "format": {"specifier": ".2f"}},
+                    {"name": "Score", "id": "score", "type": "numeric", "format": {"specifier": ".2f"}},
+                ],
+                data=[],
+                sort_action='native',
+                filter_action='native',
+                page_action='native',
+                page_size=15,
+                style_table={'overflowX': 'auto'},
+                style_cell={'padding': '6px', 'fontFamily': 'system-ui', 'fontSize': '0.9rem'},
+                style_header={'fontWeight': 'bold'},
+                style_data_conditional=[
+                    {
+                        'if': {'filter_query': '{dip_pct} < 0', 'column_id': 'dip_pct'},
+                        'color': '#B00020'
+                    },
+                    {
+                        'if': {'filter_query': '{trend_vs_sma_pct} > 0', 'column_id': 'trend_vs_sma_pct'},
+                        'color': '#0B6E4F'
+                    },
+                ],
+            ),
         ], id='chart-col', width=9)
     ]),
     
     # Store for browser session
     dcc.Store(id='session-store', storage_type='session', data={'period': '7d', 'visible_groups': list(groups.keys())}),
     dcc.Store(id='ui-state-store', storage_type='session', data={'show_sidebar': True, 'show_legend': True}),
+    dcc.Store(
+        id='screener-config-store',
+        storage_type='session',
+        data={
+            'trend_days': 200,
+            'dip_days': 7,
+            'slope_lookback_days': 20,
+            'use_slope_filter': True,
+            'min_dip_pct': 0.0,
+        },
+    ),
     
 ], fluid=True)
 
@@ -141,7 +219,7 @@ def create_group_checkboxes():
     Output('session-store', 'data', allow_duplicate=True),
     Input('invert-groups-btn', 'n_clicks'),
     State('session-store', 'data'),
-    prevent_initial_call='initial_duplicate'
+    prevent_initial_call=True
 )
 def invert_group_selection(invert_clicks, session_data):
     """Invert the group selection when invert button is clicked"""
@@ -171,13 +249,59 @@ def invert_group_selection(invert_clicks, session_data):
 @app.callback(
     Output('period-selector', 'value', allow_duplicate=True),
     Input('session-store', 'data'),
-    prevent_initial_call='initial_duplicate'
+    prevent_initial_call=True
 )
 def restore_period_from_session(session_data):
     """Restore period selector value from session storage"""
     if session_data and 'period' in session_data:
         return session_data['period']
     return '7d'
+
+
+@app.callback(
+    Output('screener-config-store', 'data', allow_duplicate=True),
+    Input('trend-days', 'value'),
+    Input('dip-days', 'value'),
+    Input('slope-lookback-days', 'value'),
+    Input('use-slope-filter', 'value'),
+    Input('min-dip-pct', 'value'),
+    State('screener-config-store', 'data'),
+    prevent_initial_call=True
+)
+def persist_screener_config(trend_days, dip_days, slope_lookback_days, use_slope_filter, min_dip_pct, config):
+    """Persist screener config in browser session."""
+    if config is None:
+        config = {}
+
+    # Sanitize
+    config['trend_days'] = int(trend_days or 200)
+    config['dip_days'] = int(dip_days or 7)
+    config['slope_lookback_days'] = int(slope_lookback_days or 20)
+    config['use_slope_filter'] = bool(use_slope_filter)
+    config['min_dip_pct'] = float(min_dip_pct or 0.0)
+    return config
+
+
+@app.callback(
+    Output('trend-days', 'value', allow_duplicate=True),
+    Output('dip-days', 'value', allow_duplicate=True),
+    Output('slope-lookback-days', 'value', allow_duplicate=True),
+    Output('use-slope-filter', 'value', allow_duplicate=True),
+    Output('min-dip-pct', 'value', allow_duplicate=True),
+    Input('screener-config-store', 'data'),
+    prevent_initial_call=True
+)
+def restore_screener_config(config):
+    """Restore UI inputs from session store on reload."""
+    if not config:
+        return 200, 7, 20, True, 0.0
+    return (
+        config.get('trend_days', 200),
+        config.get('dip_days', 7),
+        config.get('slope_lookback_days', 20),
+        config.get('use_slope_filter', True),
+        config.get('min_dip_pct', 0.0),
+    )
 
 
 @app.callback(
@@ -243,6 +367,112 @@ def toggle_ui_elements(sidebar_clicks, legend_clicks, ui_state):
         chart_width = 12
     
     return sidebar_style, chart_width, ui_state
+
+
+@app.callback(
+    Output('screener-table', 'data'),
+    Output('screener-info', 'children'),
+    Input('session-store', 'data'),
+    Input('screener-config-store', 'data'),
+)
+def update_screener(session_data, config):
+    """Compute dip-buy screener table for currently visible groups."""
+    if not session_data:
+        visible_groups = list(groups.keys())
+    else:
+        visible_groups = session_data.get('visible_groups') or list(groups.keys())
+
+    visible_tickers = []
+    for g in visible_groups:
+        visible_tickers.extend(groups.get(g, []))
+
+    if not visible_tickers:
+        return [], "No groups selected"
+
+    config = config or {}
+    trend_days = int(config.get('trend_days', 200))
+    dip_days = int(config.get('dip_days', 7))
+    slope_lookback_days = int(config.get('slope_lookback_days', 20))
+    use_slope_filter = bool(config.get('use_slope_filter', True))
+    min_dip_pct = float(config.get('min_dip_pct', 0.0))
+
+    # Fetch enough data for indicators
+    history, errors = fetcher.fetch_history_for_windows(
+        tickers=visible_tickers,
+        trend_window_days=trend_days,
+        dip_window_days=dip_days,
+        slope_lookback_days=slope_lookback_days,
+    )
+
+    rows = []
+    for ticker in visible_tickers:
+        if ticker not in history:
+            continue
+
+        df = history[ticker].copy()
+        if 'Close' not in df.columns or df.empty:
+            continue
+
+        close = df['Close'].dropna()
+        if len(close) < max(trend_days + slope_lookback_days + 2, dip_days + 2):
+            continue
+
+        sma = close.rolling(window=trend_days).mean()
+        sma_today = sma.iloc[-1]
+        price_today = close.iloc[-1]
+
+        if pd.isna(sma_today) or sma_today == 0:
+            continue
+
+        trend_vs_sma_pct = (price_today / sma_today - 1.0) * 100.0
+
+        # SMA slope: compare SMA today vs SMA N days ago
+        sma_prev = sma.shift(slope_lookback_days).iloc[-1]
+        sma_slope_pct = None
+        if not pd.isna(sma_prev) and sma_prev != 0:
+            sma_slope_pct = (sma_today / sma_prev - 1.0) * 100.0
+        else:
+            sma_slope_pct = 0.0
+
+        # Dip: price change over dip_days (trading days)
+        dip_ref = close.shift(dip_days).iloc[-1]
+        if pd.isna(dip_ref) or dip_ref == 0:
+            continue
+        dip_pct = (price_today / dip_ref - 1.0) * 100.0
+
+        # Candidate filter
+        if trend_vs_sma_pct <= 0:
+            continue
+        if use_slope_filter and sma_slope_pct <= 0:
+            continue
+        # Require negative dip; and optionally below a minimum (e.g. -3)
+        if dip_pct >= 0:
+            continue
+        if min_dip_pct > 0 and dip_pct > -min_dip_pct:
+            continue
+
+        # Score: reward strong trend + strong dip
+        score = trend_vs_sma_pct + (-dip_pct) + max(0.0, sma_slope_pct)
+
+        info = fetcher.get_ticker_info(ticker) or {}
+        rows.append({
+            'ticker': ticker,
+            'name': info.get('name', ticker),
+            'group': info.get('group', ''),
+            'trend_vs_sma_pct': float(trend_vs_sma_pct),
+            'sma_slope_pct': float(sma_slope_pct),
+            'dip_pct': float(dip_pct),
+            'score': float(score),
+        })
+
+    # Sort by score desc
+    rows = sorted(rows, key=lambda r: r.get('score', 0), reverse=True)
+
+    info_text = f"Candidates: {len(rows)} (from {len(visible_tickers)} ETFs) | Trend={trend_days}d SMA, Dip={dip_days}d"
+    if errors:
+        info_text += f" | Data errors: {len(errors)}"
+
+    return rows, info_text
 
 
 @app.callback(
