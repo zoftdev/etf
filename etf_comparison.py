@@ -71,7 +71,7 @@ app.layout = dbc.Container([
                 dcc.Dropdown(
                     id='period-selector',
                     options=PERIOD_OPTIONS,
-                    value='7d',  # Default, will be restored from session store by update_chart
+                    value='7d',  # Default value
                     className="mb-3"
                 ),
                 
@@ -169,6 +169,18 @@ def invert_group_selection(invert_clicks, session_data):
 
 
 @app.callback(
+    Output('period-selector', 'value', allow_duplicate=True),
+    Input('session-store', 'data'),
+    prevent_initial_call='initial_duplicate'
+)
+def restore_period_from_session(session_data):
+    """Restore period selector value from session storage"""
+    if session_data and 'period' in session_data:
+        return session_data['period']
+    return '7d'
+
+
+@app.callback(
     Output('group-checkboxes', 'children'),
     Input('session-store', 'data')
 )
@@ -238,7 +250,6 @@ def toggle_ui_elements(sidebar_clicks, legend_clicks, ui_state):
     Output('etf-chart', 'figure'),
     Output('error-display', 'children'),
     Output('chart-info', 'children'),
-    Output('period-selector', 'value', allow_duplicate=True),
     Input('period-selector', 'value'),
     Input({'type': 'group-checkbox', 'index': ALL}, 'value'),
     Input('ui-state-store', 'data'),
@@ -403,8 +414,7 @@ def update_chart(period, group_values, ui_state, session_data, group_ids):
     if errors:
         info_text += f" ({len(errors)} errors)"
     
-    # Return period value to update selector if it was restored from session store
-    return session_data, fig, html.Div(error_elements), info_text, period
+    return session_data, fig, html.Div(error_elements), info_text
 
 
 if __name__ == '__main__':
