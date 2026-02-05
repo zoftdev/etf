@@ -1,0 +1,195 @@
+etfs:
+  commodity:
+    specific:
+      - category: ทองคำ
+        ticker: GLD
+        name: SPDR Gold Shares
+        description: ลงทุนในทองคำแท่งจริง สภาพคล่องสูงที่สุด
+      - category: ทองคำ
+        ticker: IAU
+        name: iShares Gold Trust
+        description: ค่าธรรมเนียมถูกกว่า GLD เหมาะสำหรับถือยาว
+      - category: เงิน
+        ticker: SLV
+        name: iShares Silver Trust
+        description: ลงทุนในแร่เงินแท้
+      - category: น้ำมันดิบ
+        ticker: USO
+        name: United States Oil Fund
+        description: อ้างอิงราคาน้ำมันดิบ WTI ผ่านสัญญาฟิวเจอร์ส
+      - category: ก๊าซธรรมชาติ
+        ticker: UNG
+        name: United States Natural Gas Fund
+        description: ""
+      - category: สินค้าเกษตร
+        ticker: DBA
+        name: Invesco DB Agriculture
+        description: รวมข้าวโพด, ถั่วเหลือง, น้ำตาล, กาแฟ
+    broad:
+      - ticker: DBC
+        name: Invesco DB Commodity Index Tracking
+        description: รวม 14 สินค้าโภคภัณฑ์หลัก (น้ำมัน, ทอง, ข้าวโพด ฯลฯ)
+      - ticker: GSG
+        name: iShares S&P GSCI Commodity-Indexed
+        description: เน้นกลุ่มพลังงานสูง (น้ำมันและก๊าซ) ตามดัชนี S&P GSCI
+      - ticker: PDBC
+        name: Invesco Optimum Yield Diversified
+        description: คล้าย DBC แต่บริหารแบบเชิงรุกเพื่อลดผลกระทบจาก Roll Yield
+
+  momentum:
+    - ticker: MTUM
+      name: iShares MSCI USA Momentum Factor
+      description: ตัวที่ใหญ่ที่สุด เน้นหุ้นขนาดใหญ่และกลางในสหรัฐฯ ที่มี Momentum สูง
+    - ticker: PDP
+      name: Invesco Dorsey Wright Momentum
+      description: ใช้ระบบ Relative Strength ของ Dorsey Wright ในการคัดเลือกหุ้น
+    - ticker: QMOM
+      name: Alpha Architect US Quantitative Momentum
+      description: ใช้กลยุทธ์เชิงปริมาณที่เข้มงวด เพื่อหา Momentum ที่ "บริสุทธิ์" ที่สุด
+    - ticker: XMMO
+      name: Invesco S&P MidCap Momentum
+      description: เน้นเจาะจงไปที่หุ้นขนาดกลาง (Mid-Cap) ที่มีแรงส่งราคาสูง
+    - ticker: FDMO
+      name: Fidelity Momentum Factor
+      description: คัดเลือกหุ้นที่มีแรงส่งดีและมีพื้นฐานรองรับในระดับหนึ่ง
+
+  world:
+    asia_pacific:
+      name: ภูมิภาคเอเชียและโอเชียเนีย
+      etfs:
+        - country: จีน
+          tickers: ["MCHI", "FXI"]
+          name: iShares MSCI China
+          description: หุ้นจีนขนาดใหญ่ (Large-Cap)
+        - country: อินเดีย
+          tickers: ["INDA", "EPI"]
+          name: iShares MSCI India
+          description: เน้นบริษัทที่มีกำไร (Earnings)
+        - country: ญี่ปุ่น
+          tickers: ["EWJ"]
+          name: iShares MSCI Japan
+          description: หุ้นยักษ์ใหญ่ของญี่ปุ่น
+        - country: ไต้หวัน
+          tickers: ["EWT"]
+          name: iShares MSCI Taiwan
+          description: น้ำหนักส่วนใหญ่คือ TSMC
+        - country: เกาหลีใต้
+          tickers: ["EWY"]
+          name: iShares MSCI South Korea
+          description: เน้น Samsung
+        - country: ไทย
+          tickers: ["THD"]
+          name: iShares MSCI Thailand
+          description: หุ้นใหญ่ใน SET50/SET100
+        - country: เวียดนาม
+          tickers: ["VNM"]
+          name: VanEck Vietnam
+          description: หุ้นบริษัทที่ทำธุรกิจในเวียดนาม
+        - country: อินโดนีเซีย
+          tickers: ["EIDO"]
+          name: iShares MSCI Indonesia
+          description: เน้นกลุ่มธนาคาร
+        - country: สิงคโปร์
+          tickers: ["EWS"]
+          name: iShares MSCI Singapore
+          description: ""
+        - country: ออสเตรเลีย
+          tickers: ["EWA"]
+          name: iShares MSCI Australia
+          description: ""
+    
+    europe:
+      name: ภูมิภาคยุโรป
+      etfs:
+        - country: เยอรมนี
+          tickers: ["EWG"]
+          name: iShares MSCI Germany
+          description: SAP, Siemens, รถยนต์
+        - country: อังกฤษ
+          tickers: ["EWU"]
+          name: iShares MSCI United Kingdom
+          description: AstraZeneca, Shell
+        - country: ฝรั่งเศส
+          tickers: ["EWQ"]
+          name: iShares MSCI France
+          description: LVMH, Hermes, Total
+        - country: สวิตเซอร์แลนด์
+          tickers: ["EWL"]
+          name: iShares MSCI Switzerland
+          description: Nestle, Novartis
+        - country: เนเธอร์แลนด์
+          tickers: ["EWN"]
+          name: iShares MSCI Netherlands
+          description: ASML
+        - country: อิตาลี
+          tickers: ["EWI"]
+          name: iShares MSCI Italy
+          description: ""
+        - country: สเปน
+          tickers: ["EWP"]
+          name: iShares MSCI Spain
+          description: ""
+        - country: ตุรกี
+          tickers: ["TUR"]
+          name: iShares MSCI Turkey
+          description: ""
+    
+    americas:
+      name: ภูมิภาคอเมริกา (Non-US)
+      etfs:
+        - country: แคนาดา
+          tickers: ["EWC"]
+          name: iShares MSCI Canada
+          description: ""
+        - country: เม็กซิโก
+          tickers: ["EWW"]
+          name: iShares MSCI Mexico
+          description: ""
+        - country: บราซิล
+          tickers: ["EWZ"]
+          name: iShares MSCI Brazil
+          description: หุ้นพลังงานและธนาคาร
+        - country: ชิลี
+          tickers: ["ECH"]
+          name: iShares MSCI Chile
+          description: ""
+        - country: อาร์เจนตินา
+          tickers: ["ARGT"]
+          name: Global X MSCI Argentina
+          description: ""
+    
+    middle_east_africa:
+      name: ตะวันออกกลางและแอฟริกา
+      etfs:
+        - country: ซาอุดีอาระเบีย
+          tickers: ["KSA"]
+          name: iShares MSCI Saudi Arabia
+          description: เน้นน้ำมันและธนาคาร
+        - country: อิสราเอล
+          tickers: ["EIS"]
+          name: iShares MSCI Israel
+          description: หุ้นเทคโนโลยีและการเงิน
+        - country: แอฟริกาใต้
+          tickers: ["EZA"]
+          name: iShares MSCI South Africa
+          description: ""
+        - country: สหรัฐอาหรับเอมิเรตส์
+          tickers: ["UAE"]
+          name: iShares MSCI UAE
+          description: ""
+    
+    broad_market:
+      name: กลุ่มดัชนีภาพรวม
+      etfs:
+        - region: ทั่วโลก (ไม่รวมเมกา)
+          tickers: ["VXUS"]
+          name: Vanguard Total International Stock
+          description: ""
+        - region: ตลาดเกิดใหม่ (Emerging Markets)
+          tickers: ["VWO", "EEM"]
+          name: ""
+          description: จีน, อินเดีย, ไต้หวัน เป็นหลัก
+        - region: ตลาดพัฒนาแล้ว (Developed Markets)
+          tickers: ["VEA", "EFA"]
+          name: ""
+          description: ยุโรป, ญี่ปุ่น, ออสเตรเลีย
