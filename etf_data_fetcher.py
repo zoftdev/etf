@@ -28,116 +28,176 @@ class ETFDataFetcher:
         with open(self.yaml_path, 'r', encoding='utf-8') as f:
             return yaml.safe_load(f)
     
+    def _format_group_name(self, key: str) -> str:
+        """Format a YAML key into a readable group name"""
+        # Replace underscores with spaces and capitalize words
+        return key.replace('_', ' ').title()
+    
+    def _get_group_display_name(self, path_parts: List[str]) -> Optional[str]:
+        """
+        Get display name for a group path by traversing the YAML structure
+        Checks for 'name' or 'display_name' fields at each level
+        """
+        current_node = self.etf_data.get('etfs', {})
+        
+        for part in path_parts:
+            if isinstance(current_node, dict) and part in current_node:
+                current_node = current_node[part]
+            else:
+                return None
+        
+        # Check for name or display_name at this level
+        if isinstance(current_node, dict):
+            return current_node.get('display_name') or current_node.get('name')
+        
+        return None
+    
+    def _build_group_path(self, path_parts: List[str]) -> str:
+        """
+        Build group name from path parts
+        Uses name/display_name from YAML if available, otherwise formats key names
+        """
+        if not path_parts:
+            return "Unknown"
+        
+        # Try to get display name for the full path
+        display_name = self._get_group_display_name(path_parts)
+        if display_name:
+            return display_name
+        
+        # Build from individual path parts
+        group_parts = []
+        current_node = self.etf_data.get('etfs', {})
+        
+        for part in path_parts:
+            if isinstance(current_node, dict) and part in current_node:
+                # Check for name/display_name at this level
+                if isinstance(current_node[part], dict):
+                    part_display = current_node[part].get('display_name') or current_node[part].get('name')
+                    if part_display:
+                        group_parts.append(part_display)
+                    else:
+                        group_parts.append(self._format_group_name(part))
+                else:
+                    group_parts.append(self._format_group_name(part))
+                
+                current_node = current_node[part]
+            else:
+                group_parts.append(self._format_group_name(part))
+        
+        # Join with separator, but only if multiple parts
+        if len(group_parts) == 1:
+            return group_parts[0]
+        return ' - '.join(group_parts)
+    
+    def _get_market_from_path(self, path_parts: List[str]) -> Optional[str]:
+        """
+        Get market/exchange suffix from parent nodes in the path
+        Checks for 'market' field in parent groups
+        """
+        current_node = self.etf_data.get('etfs', {})
+        
+        for part in path_parts:
+            if isinstance(current_node, dict) and part in current_node:
+                current_node = current_node[part]
+                # Check for market at this level
+                if isinstance(current_node, dict):
+                    market = current_node.get('market') or current_node.get('exchange')
+                    if market:
+                        return market
+            else:
+                break
+        
+        return None
+    
+    def _extract_tickers_recursive(self, node: dict, path_parts: List[str], tickers_map: Dict[str, dict], parent_market: Optional[str] = None) -> None:
+        """
+        Recursively extract tickers from YAML structure
+        Handles all group structures dynamically
+        """
+        if not isinstance(node, dict):
+            return
+        
+        # Check for market at current node level (can override parent)
+        # Priority: node market > parent market
+        market = node.get('market') or node.get('exchange') or parent_market
+        
+        # Check if this node has a 'ticker' or 'tickers' field (it's an ETF item)
+        if 'ticker' in node or 'tickers' in node:
+            # Build group name from path (excluding 'etfs' and 'items' if present)
+            filtered_path = [p for p in path_parts if p not in ['etfs', 'items']]
+            group_name = self._build_group_path(filtered_path)
+            
+            # Extract tickers (single or multiple)
+            tickers = []
+            if 'ticker' in node:
+                tickers.append(node['ticker'])
+            elif 'tickers' in node:
+                tickers = node['tickers'] if isinstance(node['tickers'], list) else [node['tickers']]
+            
+            # Extract metadata
+            name = node.get('name', '')
+            category = node.get('category', '') or node.get('sector', '') or node.get('country', '') or node.get('region', '') or node.get('index', '')
+            description = node.get('description', '')
+            
+            # Add each ticker to the map
+            for ticker in tickers:
+                if ticker:  # Only add non-empty tickers
+                    tickers_map[ticker] = {
+                        'name': name or ticker,
+                        'group': group_name,
+                        'category': category,
+                        'description': description,
+                        'market': market  # Store market for API calls (can be None, str, or empty string)
+                    }
+            return
+        
+        # Check if this is a list of items
+        if isinstance(node, list):
+            for item in node:
+                if isinstance(item, dict):
+                    self._extract_tickers_recursive(item, path_parts, tickers_map, parent_market)
+            return
+        
+        # Recursively process nested dictionaries
+        for key, value in node.items():
+            # Skip metadata fields that aren't part of the structure
+            # But we still need to traverse through 'name' fields to get to 'etfs' lists
+            if key in ['display_name', 'market', 'exchange']:
+                continue
+            
+            new_path = path_parts + [key]
+            
+            # Determine market to pass down: check value's market first, then use current market
+            current_market = market  # Start with current level's market
+            if isinstance(value, dict):
+                # If nested dict has its own market, use it; otherwise inherit
+                current_market = value.get('market') or value.get('exchange') or market
+            
+            if isinstance(value, list):
+                # List of items - process each item with current path and market
+                # Use current market (from parent) for all items in the list
+                for item in value:
+                    if isinstance(item, dict):
+                        # Each item can override market, but defaults to current market
+                        # Use market from current node level (which may have been set from parent)
+                        item_market = item.get('market') or item.get('exchange') or market
+                        self._extract_tickers_recursive(item, new_path, tickers_map, item_market)
+            elif isinstance(value, dict):
+                # Nested dictionary - check for market in the dict, otherwise use current market
+                nested_market = value.get('market') or value.get('exchange') or market
+                self._extract_tickers_recursive(value, new_path, tickers_map, nested_market)
+    
     def _extract_tickers(self) -> Dict[str, dict]:
         """
-        Extract all tickers from YAML structure
-        Returns: {ticker: {name, group, category, ...}}
+        Extract all tickers from YAML structure dynamically
+        Returns: {ticker: {name, group, category, market, ...}}
         """
         tickers_map = {}
+        etfs_data = self.etf_data.get('etfs', {})
         
-        # Commodity ETFs
-        if 'commodity' in self.etf_data.get('etfs', {}):
-            commodity = self.etf_data['etfs']['commodity']
-            
-            # Specific commodities
-            if 'specific' in commodity:
-                for item in commodity['specific']:
-                    ticker = item.get('ticker')
-                    if ticker:
-                        tickers_map[ticker] = {
-                            'name': item.get('name', ticker),
-                            'group': 'Commodity',
-                            'category': item.get('category', ''),
-                            'description': item.get('description', '')
-                        }
-            
-            # Broad commodities
-            if 'broad' in commodity:
-                for item in commodity['broad']:
-                    ticker = item.get('ticker')
-                    if ticker:
-                        tickers_map[ticker] = {
-                            'name': item.get('name', ticker),
-                            'group': 'Commodity',
-                            'category': 'Broad',
-                            'description': item.get('description', '')
-                        }
-        
-        # Momentum ETFs
-        if 'momentum' in self.etf_data.get('etfs', {}):
-            for item in self.etf_data['etfs']['momentum']:
-                ticker = item.get('ticker')
-                if ticker:
-                    tickers_map[ticker] = {
-                        'name': item.get('name', ticker),
-                        'group': 'Momentum',
-                        'category': '',
-                        'description': item.get('description', '')
-                    }
-        
-        # World ETFs
-        if 'world' in self.etf_data.get('etfs', {}):
-            world = self.etf_data['etfs']['world']
-            
-            # Asia Pacific
-            if 'asia_pacific' in world:
-                for item in world['asia_pacific'].get('etfs', []):
-                    tickers = item.get('tickers', [])
-                    for ticker in tickers:
-                        tickers_map[ticker] = {
-                            'name': item.get('name', ticker),
-                            'group': 'World - Asia Pacific',
-                            'category': item.get('country', ''),
-                            'description': item.get('description', '')
-                        }
-            
-            # Europe
-            if 'europe' in world:
-                for item in world['europe'].get('etfs', []):
-                    tickers = item.get('tickers', [])
-                    for ticker in tickers:
-                        tickers_map[ticker] = {
-                            'name': item.get('name', ticker),
-                            'group': 'World - Europe',
-                            'category': item.get('country', ''),
-                            'description': item.get('description', '')
-                        }
-            
-            # Americas
-            if 'americas' in world:
-                for item in world['americas'].get('etfs', []):
-                    tickers = item.get('tickers', [])
-                    for ticker in tickers:
-                        tickers_map[ticker] = {
-                            'name': item.get('name', ticker),
-                            'group': 'World - Americas',
-                            'category': item.get('country', ''),
-                            'description': item.get('description', '')
-                        }
-            
-            # Middle East & Africa
-            if 'middle_east_africa' in world:
-                for item in world['middle_east_africa'].get('etfs', []):
-                    tickers = item.get('tickers', [])
-                    for ticker in tickers:
-                        tickers_map[ticker] = {
-                            'name': item.get('name', ticker),
-                            'group': 'World - Middle East & Africa',
-                            'category': item.get('country', ''),
-                            'description': item.get('description', '')
-                        }
-            
-            # Broad Market
-            if 'broad_market' in world:
-                for item in world['broad_market'].get('etfs', []):
-                    tickers = item.get('tickers', [])
-                    for ticker in tickers:
-                        tickers_map[ticker] = {
-                            'name': item.get('name', ticker),
-                            'group': 'World - Broad Market',
-                            'category': item.get('region', ''),
-                            'description': item.get('description', '')
-                        }
+        # Start recursive extraction from the 'etfs' root
+        self._extract_tickers_recursive(etfs_data, [], tickers_map, None)
         
         return tickers_map
     
@@ -187,6 +247,20 @@ class ETFDataFetcher:
         
         return df.iloc[indices].copy()
     
+    def _get_yfinance_ticker(self, ticker: str) -> str:
+        """
+        Get the yfinance-compatible ticker symbol
+        Appends market suffix if needed (e.g., .BK for Bangkok Stock Exchange)
+        """
+        ticker_info = self.tickers_map.get(ticker)
+        if ticker_info and ticker_info.get('market'):
+            market = ticker_info['market']
+            # If market suffix doesn't start with '.', add it
+            if not market.startswith('.'):
+                return f"{ticker}.{market}"
+            return f"{ticker}{market}"
+        return ticker
+    
     def _fetch_ticker_data(self, ticker: str, period: str) -> Tuple[str, Optional[pd.DataFrame], Optional[str]]:
         """
         Fetch data for a single ticker
@@ -210,7 +284,9 @@ class ETFDataFetcher:
             end_date = datetime.now()
             start_date = end_date - timedelta(days=days)
             
-            ticker_obj = yf.Ticker(ticker)
+            # Get yfinance-compatible ticker (with market suffix if needed)
+            yf_ticker = self._get_yfinance_ticker(ticker)
+            ticker_obj = yf.Ticker(yf_ticker)
             df = ticker_obj.history(start=start_date, end=end_date)
             
             if df.empty:

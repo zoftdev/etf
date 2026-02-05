@@ -1,5 +1,6 @@
 etfs:
   commodity:
+    display_name: Commodity
     specific:
       - category: ทองคำ
         ticker: GLD
@@ -37,21 +38,23 @@ etfs:
         description: คล้าย DBC แต่บริหารแบบเชิงรุกเพื่อลดผลกระทบจาก Roll Yield
 
   momentum:
-    - ticker: MTUM
-      name: iShares MSCI USA Momentum Factor
-      description: ตัวที่ใหญ่ที่สุด เน้นหุ้นขนาดใหญ่และกลางในสหรัฐฯ ที่มี Momentum สูง
-    - ticker: PDP
-      name: Invesco Dorsey Wright Momentum
-      description: ใช้ระบบ Relative Strength ของ Dorsey Wright ในการคัดเลือกหุ้น
-    - ticker: QMOM
-      name: Alpha Architect US Quantitative Momentum
-      description: ใช้กลยุทธ์เชิงปริมาณที่เข้มงวด เพื่อหา Momentum ที่ "บริสุทธิ์" ที่สุด
-    - ticker: XMMO
-      name: Invesco S&P MidCap Momentum
-      description: เน้นเจาะจงไปที่หุ้นขนาดกลาง (Mid-Cap) ที่มีแรงส่งราคาสูง
-    - ticker: FDMO
-      name: Fidelity Momentum Factor
-      description: คัดเลือกหุ้นที่มีแรงส่งดีและมีพื้นฐานรองรับในระดับหนึ่ง
+    display_name: Momentum
+    items:
+      - ticker: MTUM
+        name: iShares MSCI USA Momentum Factor
+        description: ตัวที่ใหญ่ที่สุด เน้นหุ้นขนาดใหญ่และกลางในสหรัฐฯ ที่มี Momentum สูง
+      - ticker: PDP
+        name: Invesco Dorsey Wright Momentum
+        description: ใช้ระบบ Relative Strength ของ Dorsey Wright ในการคัดเลือกหุ้น
+      - ticker: QMOM
+        name: Alpha Architect US Quantitative Momentum
+        description: ใช้กลยุทธ์เชิงปริมาณที่เข้มงวด เพื่อหา Momentum ที่ "บริสุทธิ์" ที่สุด
+      - ticker: XMMO
+        name: Invesco S&P MidCap Momentum
+        description: เน้นเจาะจงไปที่หุ้นขนาดกลาง (Mid-Cap) ที่มีแรงส่งราคาสูง
+      - ticker: FDMO
+        name: Fidelity Momentum Factor
+        description: คัดเลือกหุ้นที่มีแรงส่งดีและมีพื้นฐานรองรับในระดับหนึ่ง
 
   world:
     asia_pacific:
@@ -193,3 +196,97 @@ etfs:
           tickers: ["VEA", "EFA"]
           name: ""
           description: ยุโรป, ญี่ปุ่น, ออสเตรเลีย
+
+  us_sectors:
+    display_name: US Sectors
+    items:
+      - sector: Technology
+        ticker: XLK
+        name: SPDR Technology Select Sector ETF
+        description: หุ้นเทคโนโลยียักษ์ใหญ่ (Apple, Microsoft, Nvidia)
+      - sector: Financials
+        ticker: XLF
+        name: SPDR Financial Select Sector ETF
+        description: ธนาคาร ประกันภัย และสถาบันการเงิน
+      - sector: Healthcare
+        ticker: XLV
+        name: SPDR Healthcare Select Sector ETF
+        description: บริการทางการเงิน โรงพยาบาล และบริษัทยายักษ์ใหญ่
+      - sector: Consumer Discretionary
+        ticker: XLY
+        name: SPDR Consumer Discretionary Select Sector ETF
+        description: สินค้าฟุ่มเฟือย รถยนต์ (Amazon, Tesla, McDonald's)
+      - sector: Communication Services
+        ticker: XLC
+        name: SPDR Communication Services Select Sector ETF
+        description: บริการสื่อสารและโซเชียลมีเดีย (Meta, Google, Netflix)
+      - sector: Industrials
+        ticker: XLI
+        name: SPDR Industrial Select Sector ETF
+        description: การผลิต การบิน การก่อสร้าง และเครื่องจักร
+      - sector: Consumer Staples
+        ticker: XLP
+        name: SPDR Consumer Staples Select Sector ETF
+        description: สินค้าอุปโภคบริโภคที่จำเป็น (Coca-Cola, Walmart, P&G)
+      - sector: Energy
+        ticker: XLE
+        name: SPDR Energy Select Sector ETF
+        description: น้ำมัน ก๊าซธรรมชาติ และพลังงานฟอสซิล
+      - sector: Utilities
+        ticker: XLU
+        name: SPDR Utilities Select Sector ETF
+        description: สาธารณูปโภคพื้นฐาน ไฟฟ้า ประปา
+      - sector: Real Estate
+        ticker: XLRE
+        name: SPDR Real Estate Select Sector ETF
+        description: อสังหาริมทรัพย์และ REITs
+      - sector: Materials
+        ticker: XLB
+        name: SPDR Materials Select Sector ETF
+        description: วัตถุดิบต้นน้ำ เคมีภัณฑ์ และเหมืองแร่
+
+  # thai_sectors:
+  #   display_name: Thai Sectors
+  #   market: BK
+  #   index:
+  #     - index: SET50 Index
+  #       ticker: TDEX
+  #       name: ThaiDEX SET50 ETF
+  #       description: หุ้น 50 บริษัทใหญ่สุดในตลาดหลักทรัพย์
+  #     - index: SET100 Index
+  #       ticker: TH100
+  #       name: ThaiDEX SET100 ETF
+  #       description: หุ้น 100 บริษัทใหญ่สุดในตลาดหลักทรัพย์
+  #     - index: SET100 Index
+  #       ticker: BSET100
+  #       name: BCAP SET100 ETF
+  #       description: หุ้น 100 บริษัทใหญ่สุด
+  #     - index: High Dividend
+  #       ticker: 1DIV
+  #       name: ThaiDEX SET High Dividend ETF
+  #       description: หุ้น SET ที่จ่ายเงินปันผลสูง
+  #     - index: MSCI Thailand
+  #       ticker: BMSCITH
+  #       name: BCAP MSCI Thailand ETF
+  #       description: หุ้นไทยตามดัชนี MSCI Thailand
+  #   sector:
+  #     - sector: Banking (ธนาคาร)
+  #       ticker: EBANK
+  #       issuer: กสิกรไทย (KAsset)
+  #       description: รวมหุ้นธนาคารใหญ่ เช่น BBL, KBANK, SCB
+  #     - sector: Commerce (พาณิชย์)
+  #       ticker: ECOMM
+  #       issuer: กสิกรไทย (KAsset)
+  #       description: หุ้นค้าปลีกหลัก เช่น CPALL, CPAXT, CRC
+  #     - sector: Energy (พลังงาน)
+  #       ticker: ENERG
+  #       issuer: กสิกรไทย (KAsset)
+  #       description: หุ้นพลังงานและไฟฟ้า เช่น PTT, PTTEP, GULF
+  #     - sector: Food (อาหาร)
+  #       ticker: EFOOD
+  #       issuer: กสิกรไทย (KAsset)
+  #       description: หุ้นกลุ่มอาหารและเครื่องดื่ม เช่น CBG, CPF, MINT
+  #     - sector: ICT (สื่อสาร)
+  #       ticker: EICT
+  #       issuer: กสิกรไทย (KAsset)
+  #       description: หุ้นสื่อสารโทรคมนาคม เช่น ADVANC, TRUE

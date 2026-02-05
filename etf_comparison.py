@@ -71,14 +71,27 @@ app.layout = dbc.Container([
                 dcc.Dropdown(
                     id='period-selector',
                     options=PERIOD_OPTIONS,
-                    value='7d',  # Default to 7 days
+                    value='7d',  # Default, will be restored from session store by update_chart
                     className="mb-3"
                 ),
                 
                 html.Hr(),
                 
                 # Group toggles
-                html.Label("Show/Hide Groups:", className="fw-bold mb-2"),
+                dbc.Row([
+                    dbc.Col([
+                        html.Label("Show/Hide Groups:", className="fw-bold mb-2"),
+                    ], width=8),
+                    dbc.Col([
+                        dbc.Button(
+                            "Invert",
+                            id="invert-groups-btn",
+                            color="outline-secondary",
+                            size="sm",
+                            className="mb-2"
+                        ),
+                    ], width=4, className="text-end")
+                ]),
                 html.Div(id='group-checkboxes'),
                 
                 html.Hr(),
@@ -103,7 +116,7 @@ app.layout = dbc.Container([
     ]),
     
     # Store for browser session
-    dcc.Store(id='session-store', storage_type='session'),
+    dcc.Store(id='session-store', storage_type='session', data={'period': '7d', 'visible_groups': list(groups.keys())}),
     dcc.Store(id='ui-state-store', storage_type='session', data={'show_sidebar': True, 'show_legend': True}),
     
 ], fluid=True)
@@ -125,11 +138,43 @@ def create_group_checkboxes():
 
 
 @app.callback(
+    Output('session-store', 'data', allow_duplicate=True),
+    Input('invert-groups-btn', 'n_clicks'),
+    State('session-store', 'data'),
+    prevent_initial_call='initial_duplicate'
+)
+def invert_group_selection(invert_clicks, session_data):
+    """Invert the group selection when invert button is clicked"""
+    if invert_clicks is None:
+        return session_data
+    
+    # Get current visible groups
+    if session_data and 'visible_groups' in session_data:
+        current_visible = set(session_data['visible_groups'])
+    else:
+        current_visible = set(groups.keys())  # Default: all selected
+    
+    # Invert: selected becomes unselected, unselected becomes selected
+    all_groups = set(groups.keys())
+    new_visible = list(all_groups - current_visible)
+    
+    # Update session data
+    if session_data is None:
+        session_data = {}
+    session_data['visible_groups'] = new_visible
+    
+    return session_data
+
+
+
+
+@app.callback(
     Output('group-checkboxes', 'children'),
     Input('session-store', 'data')
 )
 def update_group_checkboxes(session_data):
     """Initialize group checkboxes, restore from session if available"""
+    # Get visible groups from session store, or default to all
     if session_data and 'visible_groups' in session_data:
         visible_groups = session_data['visible_groups']
     else:
@@ -193,6 +238,7 @@ def toggle_ui_elements(sidebar_clicks, legend_clicks, ui_state):
     Output('etf-chart', 'figure'),
     Output('error-display', 'children'),
     Output('chart-info', 'children'),
+    Output('period-selector', 'value', allow_duplicate=True),
     Input('period-selector', 'value'),
     Input({'type': 'group-checkbox', 'index': ALL}, 'value'),
     Input('ui-state-store', 'data'),
@@ -201,7 +247,7 @@ def toggle_ui_elements(sidebar_clicks, legend_clicks, ui_state):
 )
 def update_chart(period, group_values, ui_state, session_data, group_ids):
     """Update chart based on period and group selections"""
-    # Initialize session data
+    # Initialize session data if it doesn't exist
     if session_data is None:
         session_data = {'period': '7d', 'visible_groups': list(groups.keys())}
     
@@ -212,20 +258,52 @@ def update_chart(period, group_values, ui_state, session_data, group_ids):
     # Get legend visibility from UI state
     show_legend = ui_state.get('show_legend', True)
     
-    # Update session data
-    session_data['period'] = period
+    # Get context to check what triggered this callback
+    ctx = callback_context
+    period_triggered = ctx.triggered and any(
+        'period-selector' in prop_id for prop_id in [t['prop_id'] for t in ctx.triggered]
+    )
     
-    # Get visible groups from checkboxes
-    visible_groups = []
+    # Handle period: restore from session store on initial load, save when user changes it
+    if period_triggered:
+        # User changed the period selector - save it
+        session_data['period'] = period
+    elif 'period' in session_data:
+        # Restore period from session store (on page reload)
+        period = session_data['period']
+    else:
+        # First time, save the current period
+        session_data['period'] = period
+    
+    # Get visible groups from checkboxes (user interaction)
+    visible_groups_from_checkboxes = []
     if group_values and group_ids:
         for idx, group_id in enumerate(group_ids):
             if idx < len(group_values) and group_values[idx]:  # If checkbox is checked
-                visible_groups.append(group_id['index'])
+                visible_groups_from_checkboxes.append(group_id['index'])
     
-    # If no groups selected (initial load), show all
-    if not visible_groups:
+    # Determine which groups to use:
+    # Priority: session store (if exists) > checkboxes > default to all
+    # This ensures that on page reload, we restore from session store
+    ctx = callback_context
+    checkbox_triggered = ctx.triggered and any(
+        'group-checkbox' in prop_id for prop_id in [t['prop_id'] for t in ctx.triggered]
+    )
+    
+    if checkbox_triggered and visible_groups_from_checkboxes:
+        # User just changed checkboxes - use their selection
+        visible_groups = visible_groups_from_checkboxes
+    elif session_data and 'visible_groups' in session_data:
+        # Restore from session store (on page reload or initial load with saved data)
+        visible_groups = session_data['visible_groups']
+    elif visible_groups_from_checkboxes:
+        # Use checkbox values if available
+        visible_groups = visible_groups_from_checkboxes
+    else:
+        # Default: show all groups
         visible_groups = list(groups.keys())
     
+    # Always update session store with current selection
     session_data['visible_groups'] = visible_groups
     
     # Get tickers for visible groups
@@ -325,7 +403,8 @@ def update_chart(period, group_values, ui_state, session_data, group_ids):
     if errors:
         info_text += f" ({len(errors)} errors)"
     
-    return session_data, fig, html.Div(error_elements), info_text
+    # Return period value to update selector if it was restored from session store
+    return session_data, fig, html.Div(error_elements), info_text, period
 
 
 if __name__ == '__main__':
