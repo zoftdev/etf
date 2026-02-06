@@ -1,0 +1,137 @@
+sentiment_data:
+- etf: EWY
+  name: iShares MSCI South Korea
+  forecasts:
+  - year: 2024
+    forecast_year: 2025
+    sentiment: |-
+      EWY has shown strong performance heading into year-end 2025, with returns of approximately 84-97% depending on measurement date.
+      The ETF was trading around $112.22 as of late January 2026, approaching its 52-week high of $112.26 and recovering substantially from its 52-week low of $48.49.
+      The overall market environment shows neutral sentiment with moderate volatility (18.58) and yield curve indicators showing recession risk (-53.98%).
+      EWY is heavily weighted toward technology (41.83%) and industrials (19.90%), with Samsung Electronics (23.47% of assets) as its dominant holding, reflecting South Korea's tech-heavy economy.
+  - year: 2023
+    forecast_year: 2024
+    sentiment: |-
+      Goldman Sachs forecast strong earnings growth for South Korean stocks in 2024, with Kospi earnings expected to rebound 54% in 2024 and grow an additional 20% in 2025.
+      South Korea's markets were considered undervalued relative to other Asia-Pacific regions, offering attractive entry points, with South Korea's ban on short-selling expected to be a significant catalyst.
+      The semiconductor sector was positioned for strong growth driven by AI demand and supply constraints, with improving fundamentals expected to boost earnings particularly in the second half of 2024.
+      The Kospi's price-to-book ratio of 0.92 and P/E ratio of 18.93 suggested undervaluation compared to regional peers, with attractive sectors including defense, IT hardware, auto parts, and financials.
+  - year: 2022
+    forecast_year: 2023
+    sentiment: |-
+      The South Korean stock market was expected to experience volatile conditions with a bifurcated outlook, with high volatility persisting through the first half of 2023 due to inflation and rising interest rates.
+      Mirae Asset Securities projected that Korean stocks with strong earnings were anticipated to rally in the second half of the year, with investors advised to focus on income assets like bond ETFs in H1.
+      Fitch Solutions forecast South Korean GDP growth to decelerate sharply to 1.8% in 2023, down from 2.6% in 2022, attributed to semiconductor industry downturn and global growth weakness.
+      The economic slowdown was driven by high household debt, elevated inflation, and monetary tightening, creating challenging conditions for equity markets.
+  - year: 2021
+    forecast_year: 2022
+    sentiment: |-
+      South Korea's economy showed strong recovery momentum in 2021, with real GDP growth forecast at 3.6%, benefiting from strong global demand for electronics exports.
+      Analyst predictions for year-end 2022 KOSPI targets varied significantly, with KB Securities forecasting 3,600 points, Hyundai Motor Securities above 3,500 points, while Morgan Stanley took a more conservative stance at 3,000 points.
+      Positive factors included supply chain stabilization, weak dollar trends, strong dividend payouts, and robust corporate earnings, with Samsung Electronics and SK Hynix as key drivers of market performance.
+      Headwinds included inflationary pressures, memory chip downcycle, fading central bank support, and South Korea's March 2022 presidential election as a swing factor, with consumer prices rising 3.2% year-on-year in October 2021.
+  - year: 2020
+    forecast_year: 2021
+    sentiment: |-
+      By mid-2020, the KOSPI erased year-to-date losses of up to 34% as traders shifted funds to emerging markets betting on global recovery, with Credit Suisse raising its KOSPI target to 2,600 from 2,300.
+      As 2020 concluded, the KOSPI hit record highs of 2,772.18 points, with most domestic securities firms projecting KOSPI highs exceeding 3,000 for 2021, with Shinhan Investment targeting 3,200 and Daishin Securities forecasting 3,080.
+      JPMorgan also projected a 2021 KOSPI target of 3,200, citing weakened US dollar and improving economic indicators pointing to further market sentiment boost.
+      Analysts remained divided on 2022 prospects, with optimistic forecasts including Hyundai Motor Securities predicting over 3,500 points, while Morgan Stanley took a more cautious stance, cutting its 2022 target to 3,000.
+  - year: 2019
+    forecast_year: 2020
+    sentiment: |-
+      Morgan Stanley predicted the KOSPI would reach 2,350 by end of 2020, representing over a 12.3% increase from December 2019 levels, upgrading its investment stance to overweight.
+      Goldman Sachs also raised its valuation to overweight, expecting the KOSPI to make a meaningful rebound in 2020 with earnings projected to grow 22% after declining 33% in 2019.
+      The bank specifically cited recovery in semiconductor earnings and a global cyclical upturn as drivers, with JP Morgan recommending bolstering positions on South Korean stocks, noting that IT stocks would see strong performance.
+      Credit Suisse raised its KOSPI target to 2,600 in August 2020, citing a weak US dollar, improving economic indicators, and upward earnings revisions in tech, autos, and financial sectors.
+  - year: 2018
+    forecast_year: 2019
+    sentiment: |-
+      The KOSPI faced significant challenges in 2018, declining approximately 15-21% from its January peak, closing around 2,060-2,280 points by year-end amid concerns over the memory chip sector, US interest rate hikes, and trade tensions.
+      Nomura initially projected the KOSPI would reach 3,000 points in 2019, but lowered their target to 2,600 due to memory sector concerns and slower-than-expected corporate earnings growth.
+      Major investment banks were bullish by late 2019, with Morgan Stanley predicting a rally to 2,350 by end of 2019, upgrading to overweight based on expectations of 25% earnings growth.
+      Goldman Sachs predicted 22% increase in net profits for South Korean companies, upgrading to overweight and citing a cyclical rally in memory semiconductors, while JP Morgan was bullish on South Korean IT stocks.
+  - year: 2017
+    forecast_year: 2018
+    sentiment: |-
+      In mid-2017, Nomura Holdings raised South Korea's economic growth forecast to 2.7% for the year, citing improving exports and construction investment.
+      Based on this optimistic outlook, Nomura expected the KOSPI to test the 2,600-point level by year-end 2017, predicting that combined net profit of KOSPI-listed firms would rise 46% year-over-year.
+      However, the 2018 outlook proved less rosy than anticipated, with the domestic economy slowing in 2018 and the stock market turning bearish despite previous optimistic predictions.
+      External factors including US interest rate increases and trade war tensions, combined with downward revisions to growth projections, led to a stock market correction, with the KOSPI 200 underperforming significantly compared to global indices.
+  - year: 2014
+    forecast_year: 2015
+    sentiment: |-
+      As of early 2015, the KOSPI was positioned near the end of a narrowing trading range that began in late 2011, with technical analysts identifying key resistance levels and predicting a breakout was likely.
+      By late 2014, analysts expected the KOSPI to show bumpy movements for some time after hitting bottom at around 1,900 points, with a gradual rebound rather than immediate sharp upturn.
+      Positive factors included Korea's economy showing recovery with 3Q14 GDP growth rebounding to +0.9% QoQ, record-high exports expected, and foreign investors turning to net buying of KOSPI for the first time in seven weeks.
+      The KOSPI's performance was heavily influenced by US market dynamics, with US stock market returns and volatility being key predictors of the Korean index movements.
+  - year: 2013
+    forecast_year: 2014
+    sentiment: |-
+      The KOSPI showed weak performance in 2013, gaining only 0.7 percent for the year, significantly underperforming regional peers like the Hang Seng Index (up 3 percent) and Taiex (up 12 percent).
+      Nomura projected strong recovery for 2014, targeting the KOSPI at 2,350 by year-end—representing an 18 percent rally from the 2,011 level at the end of 2013.
+      This bullish outlook was based on improved demand from the U.S. and eurozone supporting Korean exports, as Korea was positioned as the most leveraged play to a global macro recovery given its high dependency to international trade.
+      Nomura expected 19 percent annual earnings growth in 2014, led by cyclical sectors that experienced significant earnings drops over the previous two years, though the first half of 2014 could remain volatile as the Federal Reserve reduces asset purchases.
+  - year: 2012
+    forecast_year: 2013
+    sentiment: |-
+      In mid-March 2012, the KOSPI reached a 7-month intraday high of 2,055.13 points, breaching the key 2,050 resistance level, with the index having risen more than 12 percent by that point in the year.
+      Analysts at the time saw a push toward 2,100 as feasible, though they cautioned this would require strong corporate earnings momentum.
+      By April 2013, after the KOSPI had fallen from its March 29 peak of 2,004.89 points, analysts expected a gradual rebound toward the 2,000 mark within one to two weeks.
+      Samsung Securities analyst stated that most negative factors—including the Bank of Korea's rate freeze, North Korea tensions, and weak corporate earnings—had already been reflected in the market, with analysts generally recommending buying commodity shares and consumer-related food and beverage stocks.
+  - year: 2011
+    forecast_year: 2012
+    sentiment: |-
+      According to Nomura's December 2010 forecast, the Korean market was expected to continue rising in 2011, with a year-end target of 2,230 and expected KOSPI earnings growth of 15% in 2011.
+      The report noted that Korean equities were entering 2011 with no signs of overheating, with inexpensive valuations and favorable liquidity conditions, with Korean companies expected to benefit from high exposure to emerging markets.
+      However, Nomura recommended selective stock picking rather than broad market buying, anticipating margin pressure from rising commodity prices and a strengthening won.
+      Despite the optimistic outlook, the market experienced severe turbulence in August 2011, with the KOSPI posting its biggest intraday fall since October 2008, dropping as much as 7.4%, with South Korea hit harder than regional peers due to its heavy exposure to the global export cycle.
+  - year: 2010
+    forecast_year: 2011
+    sentiment: |-
+      South Korea's KOSPI index gained more than 20 percent in 2010 despite tensions on the Korean peninsula, with Nomura expecting the Korean market to continue rising in 2011.
+      Nomura forecast a year-end target of 2,230 points with KOSPI earnings forecast to rise 15 percent, noting that Korean equities were entering 2011 with no signs of overheating, with inexpensive valuations and favorable liquidity conditions.
+      Several global investment banks including HSBC and Morgan Stanley expected most developing Asian stock markets to continue climbing in 2011, with some forecasting average index gains of about 20 percent in the region.
+      However, analysts warned that inflation and rising interest rates could undermine markets in 2011, with regional economic growth expected to slow to 7 percent from 8.3 percent in 2010.
+  - year: 2009
+    forecast_year: 2010
+    sentiment: |-
+      Goldman Sachs issued the most bullish forecast, projecting the KOSPI would reach 2,300 points by the end of 2010, representing an 11.4% gain above the October 2007 record high of 2,064.85 and a 41% increase from the then-current index level.
+      Goldman's optimistic scenario suggested the index could even surge to 2,700 points if liquidity exceeded expectations and business performance improved significantly, while UBS and Credit Suisse offered more conservative forecasts of around 2,000 and 1,900 points respectively.
+      The economic recovery formed the basis for stock market optimism, with the IMF revising its 2010 growth forecast to 4.5% (up from 3.6%), while the OECD projected 4.4% growth—the highest among OECD member states.
+      Goldman Sachs cited the KOSPI's undervalued price-to-earnings ratio of 9.6 as highly attractive compared to other Asian markets, with the outlook supported by expectations of sustained export recovery and rising capital expenditure.
+  - year: 2008
+    forecast_year: 2009
+    sentiment: |-
+      Asia ex-Japan equities fell 59.2% during 2008, marking potentially the worst year in 40 years, with South Korea significantly affected by the global financial crisis.
+      Goldman Sachs offered the most optimistic forecast in December 2009, projecting the KOSPI would reach 2,300 points by end of 2010, citing the KOSPI's undervalued price-to-earnings ratio of 9.6, noting it was far below Asian counterparts.
+      UBS strategists believed 2009 would prove better than 2008, with Asian equities near book value already discounting much bad news, expecting a rally when credit conditions eased and the global growth cycle bottomed.
+      However, South Korea's central bank downgraded 2009 growth forecasts to a 2.4% contraction—the first annual decline since 1998—though the economy narrowly avoided recession in Q1 2009 with 0.2% growth.
+  - year: 2007
+    forecast_year: 2008
+    sentiment: |-
+      In April 2007, the IMF predicted South Korea's economy would grow 4.4% in both 2007 and 2008, supported by recovery in international electronics demand, though the IMF warned of potential risks including U.S. economic slowdown and Korean won appreciation pressuring exports.
+      By August 2007, the KOSPI experienced severe turbulence due to U.S. subprime mortgage problems, with the index plummeting 125.91 points (6.93%), closing at 1,691.98—marking the biggest drop in KOSPI history at that time.
+      The decline was driven by massive sell-offs from foreign and individual investors, with trading curbs activated to halt program-based trading, with heavy losses occurring across sectors, particularly in shipbuilding, securities, machinery, and construction.
+      South Korea was significantly affected by the 2008 global financial crisis, though the country ultimately weathered the downturn better than many developed economies, with the crisis highlighting vulnerabilities in emerging markets to sudden financial market shifts.
+  - year: 2006
+    forecast_year: 2007
+    sentiment: |-
+      In mid-2006, the Korea Development Institute noted that while the Korean economy continued on a growth path, the pace of expansion was slowing down, with signs of deceleration visible in both industrial and services production.
+      By October 2006, this slowdown had become more pronounced, with the cyclical coincident composite index and leading composite index declining since February, indicating overall economic slowdown, driven by weakening private consumption.
+      By August 2007, the KOSPI was facing significant headwinds, staring at what appeared to be its biggest drop in seven years, reflecting the broader financial challenges emerging in 2007, including global market instability.
+      Key factors affecting the outlook included oil price increases hindering growth and limiting consumption expansion, concerns about US economic slowdown negatively affecting Korean consumer confidence, and terms of trade deterioration due to oil prices constraining income growth.
+  - year: 2005
+    forecast_year: 2006
+    sentiment: |-
+      For 2006, the Asian Development Bank upgraded South Korea's GDP growth forecast to 5.1% (from an earlier estimate of 4.6%), aligned with the Bank of Korea's projection of 5% growth for 2006 compared to 4% in 2005.
+      By mid-2006, Korea's economy showed signs of slowing despite remaining on a growth path, with the Korean Development Institute noting modest economic slowdown with declining industrial and service production growth rates, led by slower private consumption.
+      This slowdown was attributed to oil price increases worsening terms of trade, concerns about US economic slowdown affecting consumer confidence, and appreciation of the Korean Won affecting exports.
+      However, exports maintained strong growth despite domestic demand weakness, supported by recovery in global electronics sales and a favorable global economic environment, with growth expected to slow to 4.9% in 2007.
+  - year: 2004
+    forecast_year: 2005
+    sentiment: |-
+      The Korean economy was positioned for continued growth in 2005, with the Asian Development Bank and Bank of Korea projecting GDP growth around 4-5% for the period.
+      The KOSPI's performance was influenced by global economic conditions, particularly recovery in international electronics demand and favorable export environment supporting Korean manufacturers.
+      South Korea's export-oriented economy benefited from improving global trade conditions, with semiconductor and electronics sectors showing strong performance as global demand recovered.
+      The market showed resilience despite concerns about oil prices and potential US economic slowdown, with Korean companies maintaining competitive positions in key export sectors.

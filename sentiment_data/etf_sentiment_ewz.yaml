@@ -1,0 +1,151 @@
+sentiment_data:
+- etf: EWZ
+  name: iShares MSCI Brazil
+  forecasts:
+  - year: 2024
+    forecast_year: 2025
+    sentiment: |-
+      EWZ showed strong gains in 2024 with year-to-date gains of 44.03% as of November 2024, trading around $27-$32.
+      However, analysts highlight several concerns for 2025, including fiscal crisis challenges, currency volatility affecting the Brazilian real, and pressures from U.S. tariff policies.
+      The 2025 outlook appears bearish with concerns about Brazil's fiscal struggles, currency chaos, and U.S. tariff uncertainty impacting Brazilian equities.
+      The ETF carries high volatility with annualized historical volatility of 37.46% and a maximum drawdown of -77.25%, suggesting meaningful price swings are likely despite strong 2024 performance.
+  - year: 2023
+    forecast_year: 2024
+    sentiment: |-
+      Bank of America expected the Ibovespa index to reach 145,000 points by the end of 2024, representing approximately 11% upside potential from late 2023 levels.
+      Brazil's economy showed resilience in early 2024 after stagnating in the second half of 2023, supported by a surprisingly resilient labor market.
+      The pace of rate cuts was expected to slow in the second half of 2024, with interest rates forecast to decline gradually from elevated levels toward lower single-digit levels by late 2026.
+      BofA favored Brazil over Mexico amid prospects for US slowdown, citing loosening global monetary policy as a driver for increased appetite in risky assets.
+  - year: 2022
+    forecast_year: 2023
+    sentiment: |-
+      The Bovespa stock index was expected to rally 13% by the end of 2023, reaching 123,250 points from 108,976 points, according to a Reuters poll of strategists.
+      Market experts expressed pessimism regarding President-elect Lula da Silva's government, citing doubts about fiscal management and budget constraints, with all seven analysts expecting corporate earnings to worsen.
+      Brazil's Economy Ministry cut its 2023 GDP growth forecast to 2.1% from 2.5%, with private economists projecting even slower expansion at just 0.7%.
+      Capital Economics forecast the stock market would fall approximately 15% through the rest of 2022, with falling commodity prices and mounting fiscal risks limiting the scale of future rallies.
+  - year: 2021
+    forecast_year: 2022
+    sentiment: |-
+      Brazil stocks were positioned for continued recovery in 2022, building on the strong performance seen in 2021, with the Ibovespa index showing resilience despite global economic uncertainties.
+      The outlook was supported by Brazil's commodity exports benefiting from global demand recovery, though concerns about fiscal policy and political developments remained key factors affecting market sentiment.
+      Interest rate policy and inflation trends were expected to play crucial roles in determining equity market performance, with the Central Bank's monetary policy decisions closely watched by investors.
+      The market faced headwinds from global economic slowdown concerns and U.S.-China trade tensions, though Brazil's position as a major commodity exporter provided some support for equity valuations.
+  - year: 2020
+    forecast_year: 2021
+    sentiment: |-
+      According to a Reuters quarterly poll, Brazil's Ibovespa index was expected to reach 130,000 points by the end of 2020, representing a 16% rise from the anticipated 2019 year-end level of 112,000 points.
+      The outlook was driven by record-low interest rates supporting equity valuations and market-friendly economic reforms under President Jair Bolsonaro, including a sweeping pension overhaul expected to generate savings of around 800 billion reais.
+      Plans for further state reduction, privatization, and investment encouragement, along with strong structural changes, positioned Brazil to outperform other Latin American markets.
+      Global economic slowdown and U.S.-China trade tensions were identified as main external risks, though many expected de-escalation before the 2020 U.S. election.
+  - year: 2019
+    forecast_year: 2020
+    sentiment: |-
+      Brazilian stocks were expected to rise in 2020 after 2019's Latin American turmoil, with the Ibovespa index projected to reach 130,000 points by the end of 2020, representing a 16% rise from 2019 levels.
+      The outlook was driven by record-low interest rates supporting equity valuations and market-friendly economic reforms under President Jair Bolsonaro, including pension overhaul expected to generate savings of around 800 billion reais.
+      Brazil was expected to significantly outperform regional peers amid political and economic uncertainty in Latin America, with projections showing double-digit gains compared to around 8% expected for Mexico.
+      This optimism reflected confidence in Bolsonaro's orthodox economic agenda and local investor appetite for higher returns as interest rates declined, with plans for further state reduction, privatization, and investment encouragement.
+  - year: 2018
+    forecast_year: 2019
+    sentiment: |-
+      A Reuters poll from late 2018 predicted the Bovespa would end 2018 at 92,000 points, with Brazil's economic recovery during 2018 slower than expected, with GDP growth likely reaching just 1.2%, falling short of early-year market expectations near 3%.
+      The Bovespa was expected to reach 107,500 by the end of 2019, representing a 17% increase for the year, driven by post-election confidence following far-right candidate Jair Bolsonaro's victory.
+      Surging confidence indicators and continued monetary stimulus supported the outlook, with strong performance of state-owned companies like Petrobras and Banco do Brasil expected.
+      However, the 2019 recovery depended critically on congressional approval of fiscal reforms, particularly social security reform, with fiscal uncertainties expected to keep investors relatively cautious.
+  - year: 2017
+    forecast_year: 2018
+    sentiment: |-
+      In mid-2017, BBVA Research revised down GDP growth forecasts to 0.6% for 2017 and 1.5% for 2018, citing rising political tensions and uncertainty around President Temer's continuation in power.
+      Analysts were cautiously bullish on Brazil's stock market in early 2017, with the consensus estimate for year-end 2017 around 70,000 points, representing approximately 8% upside from March 2017 levels.
+      Key drivers for potential gains included interest rate cuts, with the Central Bank's SELIC rate expected to decline from 12.25% toward 9% by year-end 2017, making equities more attractive relative to fixed income.
+      However, analysts acknowledged that the relationship between interest rate cuts and stock market performance was weaker than commonly assumed, and that political uncertainty posed significant downside risks, with projected improvements depending heavily on approval of social security reform.
+  - year: 2016
+    forecast_year: 2017
+    sentiment: |-
+      Brazil's economy was expected to contract by 3.0% in 2016, with downside risks to this forecast, though recovery was anticipated for 2017, with GDP growth projected at 0.9% to 0.50%.
+      Recovery was expected to be supported by reduced political uncertainty, lower inflation, and easing monetary conditions, with the outlook for 2017 dependent on adoption of a public expenditure ceiling by Congress.
+      Implementation of social security reform and continuation of central bank support were seen as essential to spurring sustainable growth from 2017 onward, with global conditions showing some improvement heading into 2017.
+      Signs of recovery in China and emerging markets, improving global trade, and relative calm in financial markets with capital inflows to emerging economies provided a more favorable backdrop.
+  - year: 2015
+    forecast_year: 2016
+    sentiment: |-
+      The Ibovespa faced significant headwinds in late 2014 and early 2015, with volatility returning to Brazilian financial markets in the final quarter of 2014 after relative calm from March to September.
+      The index experienced substantial losses in the three months leading up to October elections, with declines heavier than those seen in other emerging countries and in previous Brazilian election periods.
+      Macroeconomic deterioration and debates over Brazil potentially losing investment-grade status, currency weakness with the Brazilian real depreciating significantly, and Petrobras corruption scandals battered asset prices.
+      Industrial production collapse at the end of 2014 reinforced downward bias for fourth quarter performance, with policy uncertainty surrounding the incoming government's economic adjustments for 2015 creating a challenging outlook.
+  - year: 2014
+    forecast_year: 2015
+    sentiment: |-
+      By late 2014, the Ibovespa faced significant headwinds, with volatility returning to Brazilian financial markets in the final quarter after relative calm from March to September.
+      The index experienced substantial losses in the three months leading up to October elections, with declines heavier than those seen in other emerging countries, driven by macroeconomic deterioration and debates over Brazil potentially losing investment-grade status.
+      Currency weakness saw the Brazilian real depreciate significantly, reaching its most depreciated level in nearly a decade by mid-November 2014, while Petrobras corruption scandals battered asset prices.
+      Industrial production collapse at the end of 2014 reinforced downward bias, with volatility persisting even after the October elections concluded as investors shifted concerns from election uncertainty to questions about the scale and duration of necessary economic policy corrections.
+  - year: 2013
+    forecast_year: 2014
+    sentiment: |-
+      The Ibovespa faced significant headwinds in early 2013, with BBVA Research expecting Brazil's economy to grow around 3.6% in 2013, though the stock market struggled considerably.
+      By mid-2013, the Bovespa was down more than 20% year-to-date, making it the worst performer among major emerging markets, driven by external factors including anticipated tighter U.S. monetary policy following Federal Reserve tapering announcements.
+      Reduced global demand for commodities and lackluster domestic growth outlook weighed on the market, with economic conditions expected to improve modestly in 2014, with BBVA Research forecasting GDP growth of around 4.0%.
+      However, the market faced significant volatility in late 2014, with the Ibovespa experiencing notable losses between August and October 2014, coinciding with Brazil's elections and broader emerging market turmoil linked to China's slowdown and impending Fed rate hikes.
+  - year: 2012
+    forecast_year: 2013
+    sentiment: |-
+      For 2012, Brazil's GDP growth was forecast at 3.3%, though this was later revised downward to 0.9%, with economists expecting GDP growth to rebound to around 3.6-4.3% for 2013.
+      The Bovespa index showed mixed signals during this period, with the index rising in early 2012 despite lowered growth expectations, with the iShares MSCI Brazil ETF (EWZ) up 19% year-to-date as of February.
+      By August 2012, the Bovespa had gained 3.26% year-to-date but faced technical resistance around 58,800 points, with analysts expressing caution about the outlook.
+      One fund manager stated it was not the time to be buying Brazilian equities in February 2012, noting the market had gotten ahead of itself, with concerns centered on disappointing earnings results and whether the rally was sustainable given weak fundamentals.
+  - year: 2011
+    forecast_year: 2012
+    sentiment: |-
+      According to analyst forecasts from late 2010, JPMorgan Chase projected a bullish outlook for Brazil's stock market heading into 2011, with a positive scenario predicting the Bovespa Index could surge as much as 70% to reach 122,000 by the end of 2011.
+      The expected rally was anticipated to be driven by increased foreign inflows into Brazilian equities, removal of market overhangs including Petroleo Brasileiro's large share sale and Brazil's presidential election, and robust macroeconomic fundamentals with supportive credit conditions.
+      JPMorgan advised holding overweight positions in Brazilian stocks and recommended focusing on companies dependent on domestic demand, such as financial firms and homebuilders, citing reasonable valuations in the market.
+      However, in a more cautious scenario, JPMorgan estimated the Bovespa could fall 14% if earnings declined, reflecting the high volatility and uncertainty in the Brazilian market.
+  - year: 2010
+    forecast_year: 2011
+    sentiment: |-
+      JPMorgan Chase analysts forecast Brazil's Bovespa Index to potentially surge significantly by the end of 2011, with a positive scenario expecting the index to climb to 122,000, representing approximately a 70 percent increase from its October 2010 level of around 71,195.
+      The bullish outlook was supported by low interest rates worldwide, reasonable valuations in Brazilian stocks, expected pickup in foreign inflows, and removal of market overhangs including Petroleo Brasileiro's major share sale and the presidential election.
+      JPMorgan strategist recommended holding overweight positions in Brazilian stocks, particularly in companies reliant on domestic demand such as financial firms and homebuilders, citing robust macro fundamentals and very supportive credit conditions.
+      However, the forecast also included a cautionary scenario, where the Bovespa could fall 14 percent if earnings declined, reflecting the inherent volatility in emerging market equities.
+  - year: 2009
+    forecast_year: 2010
+    sentiment: |-
+      In early 2009, economists dramatically downgraded growth forecasts for Brazil due to the global financial crisis, with analysts expecting the economy to grow only 0.59 percent by March 2009, down from a 1.2 percent forecast the previous week.
+      More pessimistic projections emerged as conditions deteriorated, with Morgan Stanley cutting its 2009 GDP forecast to a contraction of 4.5 percent, reflecting weakness in the fourth quarter of 2008 when Brazil's economy had already shrunk 3.6 percent—its largest quarterly decline in over a decade.
+      The Bovespa index reflected this pessimistic outlook, falling to 37,894 points in January 2009 after initially responding positively to a 100 basis-point central bank rate cut, with major holdings like Petrobras and Vale experiencing significant declines.
+      The government increased BNDES development bank funding by 100 billion reais ($42.6 billion) to spur corporate investment, though markets remained volatile as the index tracked global market weakness.
+  - year: 2008
+    forecast_year: 2009
+    sentiment: |-
+      Before the crisis hit in Q4 2008, the Ibovespa had risen 20% in local currency between June 2007 and June 2008 (44% in USD terms), with Brazil entering the crisis period in a relatively strong position.
+      However, following the collapse of Lehman Brothers, the market deteriorated sharply, with the Bovespa recording its worst one-day plunge in almost a decade on September 29, 2008, dropping 9.36%, driven by global risk aversion, falling commodity prices, and domestic credit concerns.
+      By January 2009, Brazil's central bank began cutting rates, reducing the benchmark Selic rate by 100 basis points and signaling additional cuts ahead, with the government also increasing BNDES development bank funding by 100 billion reais to spur corporate investment.
+      However, markets remained volatile, with the Bovespa closing at 37,894 points in late January 2009 as it tracked global market weakness, with the crisis creating increased correlations among stock exchanges during the 2008 period.
+  - year: 2007
+    forecast_year: 2008
+    sentiment: |-
+      The Ibovespa surged nearly 38 percent in 2007, reaching successive all-time highs driven by strong foreign investment inflows, with the index hitting record levels around 58,400 points by late September and climbing to 61,370 points by October.
+      The positive momentum was fueled by U.S. Federal Reserve rate cuts and strong emerging market investor demand, with analysts offering highly positive outlooks for the Brazilian economy in 2008, with expectations of strong corporate results continuing into that year.
+      Between June 2007 and June 2008, the Ibovespa rose an additional 20 percent in local currency terms (44 percent in USD terms), with economic activity accelerating with year-on-year GDP growth rising from 5.4% to 6.8%.
+      However, the outlook changed dramatically in Q4 2008 following the Lehman Brothers collapse, with the financial crisis leading to substantial tightening of financial conditions, BRL currency depreciation, and negative impacts on consumer and business confidence.
+  - year: 2006
+    forecast_year: 2007
+    sentiment: |-
+      The Bovespa gained 33 percent in 2006 and rose above 45,000 points for the first time, reaching a market capitalization of USD 723 billion by year-end, demonstrating strong momentum heading into 2007.
+      In early January 2007, the index fell 4.03 percent to 42,245 points—its steepest decline since June—due to strong U.S. jobs data that made investors reconsider expectations for Federal Reserve rate cuts.
+      However, by October 2007, the Bovespa had surged nearly 38 percent during that year and reached an all-time high of 61,370 points, driven by strong foreign investment inflows.
+      The market benefited from favorable global conditions, with strong demand for Brazilian commodities and improving economic fundamentals supporting equity valuations, though volatility increased as global financial conditions began to tighten.
+  - year: 2005
+    forecast_year: 2006
+    sentiment: |-
+      The Ibovespa reached 33.5 thousand points in 2005 with cumulative profitability of 30.1% for the year in Brazilian real terms, delivering even stronger returns of 44.8% annually in dollar terms, significantly outperforming major U.S. indices.
+      Trading volume increased 31.5% with a daily average of R$1.6 billion, with the market's strong performance driven by consolidation of macroeconomic fundamentals and diversification strategies adopted by investors.
+      Interest rate policy also supported markets, with monetary easing beginning in August 2005 as inflation converged toward target levels, creating favorable conditions for equity investments.
+      The Bovespa gained 33 percent in 2006 and rose above 45,000 points for the first time, reaching a market capitalization of USD 723 billion by year-end, demonstrating continued strong momentum.
+  - year: 2004
+    forecast_year: 2005
+    sentiment: |-
+      The Brazilian stock market was positioned for continued growth in 2005, with the Ibovespa reaching 33.5 thousand points with cumulative profitability of 30.1% for the year in Brazilian real terms.
+      In dollar terms, the index delivered even stronger returns of 44.8% annually, significantly outperforming major U.S. indices, with trading volume increasing 31.5% with a daily average of R$1.6 billion.
+      The market's strong performance was driven by consolidation of macroeconomic fundamentals and diversification strategies adopted by investors, with interest rate policy supporting markets as monetary easing began in August 2005.
+      Academic research from this period found that factors like GDP growth, exchange rate devaluations, and international stock markets positively affected Bovespa performance, while domestic real interest rates and country risk had negative impacts.

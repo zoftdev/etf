@@ -33,7 +33,7 @@ score_strong_sell: -0.8    # Maximum score for strong sell signal
 # Signal Filtering
 min_score_threshold: 0.1   # Minimum absolute score to return (filter out weak signals)
 enable_divergence: true    # Enable divergence detection
-enable_momentum_shift: true # Enable momentum shift signals (RSI crossing 50)
+enable_momentum_shift: false # Enable momentum shift signals (RSI crossing 50)
 
 # Notes:
 # - Period 7: More sensitive, reacts faster to price changes

@@ -1,0 +1,68 @@
+etfs:
+  commodity:
+    display_name: Commodity
+    specific:
+      - category: ทองคำ
+        ticker: GLD
+        name: SPDR Gold Shares
+        description: ลงทุนในทองคำแท่งจริง สภาพคล่องสูงที่สุด
+
+  momentum:
+    display_name: Momentum
+    items:
+      - ticker: MTUM
+        name: iShares MSCI USA Momentum Factor
+        description: ตัวที่ใหญ่ที่สุด เน้นหุ้นขนาดใหญ่และกลางในสหรัฐฯ ที่มี Momentum สูง
+
+  world:
+    asia_pacific:
+      name: ภูมิภาคเอเชียและโอเชียเนีย
+      etfs:
+        - country: จีน
+          tickers: ["MCHI"]
+          name: iShares MSCI China
+          description: หุ้นจีนขนาดใหญ่ (Large-Cap)
+        - country: ญี่ปุ่น
+          tickers: ["EWJ"]
+          name: iShares MSCI Japan
+          description: หุ้นยักษ์ใหญ่ของญี่ปุ่น
+        - country: เกาหลีใต้
+          tickers: ["EWY"]
+          name: iShares MSCI South Korea
+          description: เน้น Samsung
+    
+    europe:
+      name: ภูมิภาคยุโรป
+      etfs:
+        - country: เยอรมนี
+          tickers: ["EWG"]
+          name: iShares MSCI Germany
+          description: SAP, Siemens, รถยนต์
+    
+    americas:
+      name: ภูมิภาคอเมริกา (Non-US)
+      etfs:
+        - country: บราซิล
+          tickers: ["EWZ"]
+          name: iShares MSCI Brazil
+          description: หุ้นพลังงานและธนาคาร
+    
+    broad_market:
+      name: กลุ่มดัชนีภาพรวม
+      etfs:
+        - region: ตลาดเกิดใหม่ (Emerging Markets)
+          tickers: ["VWO"]
+          name: ""
+          description: จีน, อินเดีย, ไต้หวัน เป็นหลัก
+        - region: ตลาดพัฒนาแล้ว (Developed Markets)
+          tickers: ["VEA"]
+          name: ""
+          description: ยุโรป, ญี่ปุ่น, ออสเตรเลีย
+
+  us_sectors:
+    display_name: US Sectors
+    items:
+      - sector: Technology
+        ticker: XLK
+        name: SPDR Technology Select Sector ETF
+        description: หุ้นเทคโนโลยียักษ์ใหญ่ (Apple, Microsoft, Nvidia)

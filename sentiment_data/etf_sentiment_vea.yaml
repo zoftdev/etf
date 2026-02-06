@@ -1,0 +1,151 @@
+sentiment_data:
+- etf: VEA
+  name: Vanguard FTSE Developed Markets
+  forecasts:
+  - year: 2024
+    forecast_year: 2025
+    sentiment: |-
+      The near-term forecast for VEA is generally negative, with analysts projecting an average price target of $41.18, representing a -21.47% decrease from the current price of $52.43.
+      In contrast, longer-term forecasts are more optimistic, with one forecast model predicting VEA could reach up to $68.619 based on technical analysis.
+      The significant divergence between bearish near-term predictions and bullish long-term forecasts suggests market uncertainty about developed markets performance.
+      VEA's holdings received a Moderate Buy aggregate rating from MarketBeat based on 41 analyst ratings, with an aggregate price target matching the current level of $52.43.
+  - year: 2023
+    forecast_year: 2024
+    sentiment: |-
+      Advanced economies were expected to slow from 2.6% growth in 2022 to 1.5% in 2023 and 1.4% in 2024, with global headline inflation forecast to fall from 8.7% in 2022 to 6.9% in 2023 and 5.8% in 2024.
+      The outlook emphasized growing regional divergences with little margin for policy error, as advanced economies faced significant headwinds from policy tightening and persistent structural issues.
+      Inflation was not expected to return to target until 2025 in most cases, creating ongoing uncertainty for developed markets equities.
+      The October 2024 outlook showed growth remaining stable but underwhelming, with downgrades to major European countries offsetting upgrades to the US.
+  - year: 2022
+    forecast_year: 2023
+    sentiment: |-
+      Advanced economies were projected to see growth fall from 2.7% in 2022 to 1.3% in 2023, reflecting significant economic slowdown.
+      Global inflation pressures remained elevated, with emerging market inflation at 8.7% in 2022, significantly higher than advanced economies.
+      The transition to higher interest rate environment was emphasized as a structural shift expected to persist beyond the next business cycle.
+      Rising earnings growth could provide near-term momentum for stocks, though long-term prospects were described as subdued.
+  - year: 2021
+    forecast_year: 2022
+    sentiment: |-
+      The IMF projected global economic growth of 6.0% in 2021 and 4.9% in 2022, with advanced economies performing better than emerging markets, with vaccine access emerging as a key driver of divergence in recovery prospects.
+      By October 2021, advanced economies faced a downward revision due to supply disruptions affecting their near-term performance, though the forecast for advanced economies was revised upward in mid-2021, particularly for the United States.
+      Price pressures from pandemic-related supply-demand mismatches were expected to be transitory, with inflation anticipated to return to pre-pandemic ranges in most countries by 2022, though uncertainty remained high about inflation persistence.
+      The rapid spread of COVID-19 variants increased uncertainty about recovery timelines across developed markets, with the outlook reflecting concerns about supply chain disruptions and inflation pressures.
+  - year: 2020
+    forecast_year: 2021
+    sentiment: |-
+      Global growth was projected to contract by 4.4 percent in 2020, representing a less severe contraction than initially forecast, as activity improved sooner than expected in advanced economies after lockdowns were scaled back.
+      Global growth was projected at 5.2 percent in 2021, with the level of global GDP in 2021 expected to be only 0.6 percent above 2019 levels, with advanced economies showing better-than-anticipated second quarter GDP outcomes in 2020.
+      By July 2021, the forecast for advanced economies was revised upward, reflecting improved health metrics and anticipated additional fiscal support, particularly in the United States, though by October 2021, advanced economies faced a slight downward revision due to supply disruptions.
+      After the 2021 rebound, global growth was expected to gradually slow to about 3.5 percent in the medium term, representing only limited progress toward pre-pandemic growth trajectories, with vaccination access emerging as a principal driver of performance gaps.
+  - year: 2019
+    forecast_year: 2020
+    sentiment: |-
+      Advanced economies were projected to grow at 1.7% for both 2019 and 2020, with major developed economies breakdown showing United States at 2.1%, Euro Area at 1.4%, and Japan at 0.5% for 2020.
+      The October 2019 IMF report characterized the outlook as Global Manufacturing Downturn, Rising Trade Barriers, reflecting challenges facing developed markets, while by January 2020, the IMF described the outlook as Tentative Stabilization, Sluggish Recovery.
+      The forecasts anticipated relatively flat growth in developed economies for both years, with the U.S. performing better than the Euro Area and Japan, with trade tensions and manufacturing weakness identified as key headwinds.
+      However, the actual 2020 outcome was dramatically different due to the COVID-19 pandemic, with global growth contracting by 4.4 percent, though advanced economies showed better-than-anticipated recovery after initial lockdowns.
+  - year: 2018
+    forecast_year: 2019
+    sentiment: |-
+      Global growth was projected at 3.7-3.9 percent for 2018, though the expansion became increasingly uneven across major developed economies, with growth projections revised downward for the euro area, Japan, and the United Kingdom.
+      Global growth was projected at 3.5 percent for 2019, representing a slowdown from 2018, with by early 2019, the IMF describing the global expansion as weakening, with a shift toward a precarious recovery outlook by April 2019.
+      The outlook deteriorated significantly in the second half of 2018 due to escalating US-China trade tensions and tariff increases, decline in business and consumer confidence, and tightening of financial conditions, particularly for emerging markets.
+      By year-end 2019, developed market growth prospects remained subdued, with the IMF warning of mounting risks to the global expansion, with policy uncertainty across multiple economies creating headwinds for equity markets.
+  - year: 2017
+    forecast_year: 2018
+    sentiment: |-
+      Global output was projected to grow by 3.5 percent in 2017 and 3.6 percent in 2018, with a firming recovery underway, representing an acceleration from the previous lackluster performance.
+      Growth projections for the United States were revised downward from April 2017 estimates, primarily due to assumptions that fiscal policy would be less expansionary than previously anticipated, while growth projections for the Euro Area and Japan were revised upward.
+      Inflation in advanced economies remained subdued and generally below targets during this period, though it was also declining in several emerging economies, creating a favorable environment for equity markets.
+      While near-term risks appeared broadly balanced, downside risks persisted over the medium term, including concerns about rich market valuations, very low volatility amid high policy uncertainty, and the potential for market corrections that could dampen growth and confidence.
+  - year: 2016
+    forecast_year: 2017
+    sentiment: |-
+      Global growth in 2016 was the weakest since 2008-09 at 3.1 percent, with the IMF projecting growth would rebound to 3.4 percent in 2017, with further improvement to 3.6 percent in 2018.
+      The outlook for advanced economies was described as subdued following Brexit and weaker U.S. growth, though conditions improved significantly in late 2016, with growth prospects for Europe and Japan revised upward, with positive surprises to activity in late 2016 and early 2017 indicating solid momentum.
+      While risks appeared broadly balanced in the near term, they remained skewed to the downside over the medium term, with key concerns including rich market valuations, low volatility amid high policy uncertainty, and the potential for market corrections.
+      Uncertainty about fiscal policy specifics and Brexit's ultimate impact added to the wider-than-usual range of risks to forecasts, creating a challenging environment for developed market equities.
+  - year: 2015
+    forecast_year: 2016
+    sentiment: |-
+      The IMF projected slower growth in emerging markets and a gradual pickup in advanced economies, with developed markets expected to show modest improvement from previous years.
+      Global growth for 2015 was projected at 3.1 percent, slightly lower than 2014, with advanced economies showing modest growth in the first half of 2015, though expected to pick up slightly relative to 2014.
+      The United States experienced weaker-than-expected growth despite a strong second quarter, reflecting first-quarter setbacks from harsh weather and port closures, while the Euro Area recovery was broadly in line with forecasts.
+      The outlook reflected concerns about uneven growth across developed markets, with some regions showing stronger momentum than others, creating a mixed environment for international equity investments.
+  - year: 2014
+    forecast_year: 2015
+    sentiment: |-
+      According to IMF forecasts from April 2014, advanced economies were expected to show gradual recovery in 2014-15, with the United States projected to grow at approximately 2¾ percent annually for 2014-15, above trend, supported by moderate fiscal consolidation and accommodative monetary conditions.
+      The Euro Area was projected to grow close to trend in core economies, though stressed euro area economies were expected to remain weak and fragile due to high debt and financial fragmentation, while Japan's fiscal consolidation in 2014-15 was projected to result in some growth moderation.
+      By October 2014, the outlook had been revised downward, with advanced economies forecast to grow at 1.8 percent in 2014 and 2.3 percent in 2015, reflecting temporary setbacks in the first half of 2014.
+      The recovery remained uneven across developed markets, with the United States showing stronger momentum than Europe and Japan, creating a mixed outlook for international equity investments.
+  - year: 2013
+    forecast_year: 2014
+    sentiment: |-
+      Global activity strengthened in the second half of 2013 and was expected to improve further, with growth projected to reach 3.6% in 2014 and 3.9% in 2015, with growth in advanced economies rebounding significantly during H2 2013.
+      The United States grew at 3.25% in H2 2013, stronger than expected, with annual growth for 2014-15 projected at approximately 2.75%, above trend, supported by moderate fiscal consolidation, accommodative monetary conditions, and real estate recovery.
+      Core eurozone economies expected growth close to trend, but stressed economies projected to remain weak and fragile due to high debt and financial fragmentation, while Japan's fiscal consolidation in 2014-15 projected to cause growth moderation.
+      Downside risks continued to dominate the outlook, particularly low inflation prospects and potential for protracted stagnation in the euro area and Japan, despite large remaining output gaps, creating concerns for developed market equities.
+  - year: 2012
+    forecast_year: 2013
+    sentiment: |-
+      The IMF projected global output expansion of 3.25 percent in 2012, but this represented a downward revision of approximately 0.75 percentage points, with the euro area economy expected to enter a mild recession in 2012 due to rising sovereign yields and bank deleveraging effects.
+      Financial conditions deteriorated and growth prospects dimmed considerably in the first half of 2012, with activity disappointing notably in the United States and United Kingdom, alongside weakness in the euro area periphery, with high government debt levels persisting as a medium-term concern.
+      The IMF indicated expectations of a gradual upturn in global growth during 2013, suggesting modest improvement ahead, though this was contingent on European and U.S. policymakers addressing their major short-term economic challenges effectively.
+      Overall, 2012-2013 was characterized as a period of slow and bumpy recovery for developed markets, with significant downside risks elevated throughout the forecast period, creating a challenging environment for international equity investments.
+  - year: 2011
+    forecast_year: 2012
+    sentiment: |-
+      Advanced economies were projected to expand at an anemic pace of approximately 1.5% in 2011, with this weak outlook following multiple shocks including the Japanese earthquake and tsunami, unrest in oil-producing countries, and major financial turbulence in the euro area.
+      Advanced economies were expected to grow at around 2% in 2012, though by January 2012, forecasts were significantly revised downward as the euro area crisis intensified, with the euro area economy projected to enter a mild recession in 2012.
+      Global growth was revised down to 3.25% for 2012, approximately 0.75 percentage points lower than September 2011 projections, with the outlook characterized by significant downside risks, particularly potential euro area crisis escalation beyond policymaker control.
+      By October 2012, growth projections were marked down further as the global economy continued to deteriorate, with downside risks judged more elevated than previous forecasts, creating severe headwinds for developed market equities.
+  - year: 2010
+    forecast_year: 2011
+    sentiment: |-
+      In early 2010, the IMF projected global output growth of 4 percent for 2010, representing an upward revision from prior forecasts, with the recovery proceeding at different speeds across regions, with advanced economies expected to maintain sluggish growth by historical standards.
+      By January 2011, the IMF projected global output expansion of 4.5 percent for 2011, an upward revision of about 0.25 percentage points from October 2010 forecasts, though developed economies faced subdued prospects with activity having moderated less than expected.
+      The outlook for advanced economies was characterized by weak and bumpy expansion prospects, high unemployment despite recovery, financial turbulence in the euro area, and stalled handover from public to private demand in the U.S.
+      By mid-2011, forecasts had become more pessimistic, with growth expected to moderate to roughly 1.5 percent in 2011 and 2 percent in 2012 for advanced economies, as downside risks intensified, reflecting concerns about sovereign debt troubles requiring urgent policy action.
+  - year: 2009
+    forecast_year: 2010
+    sentiment: |-
+      World output was expected to rise by approximately 4.25 percent in 2010, representing an upward revision of 1 percentage point from the October 2009 forecast, though the recovery speed varied significantly across regions and economies.
+      Advanced economies were experiencing more subdued recoveries compared to emerging markets, with the United States off to a stronger start than Europe or Japan, with stimulus-driven recovery underway, though private final demand remained subdued.
+      Europe was experiencing a sluggish recovery ahead, with euro area trade links to troubled emerging European economies and currency appreciation weighing on growth, while Japan's recovery was hampered by large yen appreciation affecting exports and reemergence of deflation.
+      The global recovery evolved better than expected, with growth from about 3.25 percent annualized in Q2 2009 rising to over 4.5 percent in the second half of the year, though recovery remained dependent on accommodative macroeconomic policies and faced downside risks.
+  - year: 2008
+    forecast_year: 2009
+    sentiment: |-
+      In early 2008, developed markets faced significant headwinds, with the World Bank projecting high-income country growth at 2.2% for 2008, down from 2.6% in 2007, with the U.S. economy showing early signs of severe stress.
+      By October 2008, the outlook had deteriorated sharply, with the IMF noting that a recession was increasingly likely in the United States, with the financial crisis having intensified, with tight credit conditions expected to persist throughout 2009.
+      By February 2009, the IMF indicated that the global recession was ending with recovery underway, though the recovery was characterized as subdued with sluggish real sector dynamics ahead, and risks of deflation remained.
+      The outlook emphasized that deleveraging and slow job growth would persist even as financial conditions gradually improved, with developed markets transitioning from moderate slowdown in 2008 to deep recession, with cautious expectations for gradual recovery beginning in 2009.
+  - year: 2007
+    forecast_year: 2008
+    sentiment: |-
+      In July 2007, the IMF projected optimistic growth for developed markets, with global growth forecast at 5.2 percent for both 2007 and 2008, revised upward from 4.9 percent, with the U.S. expected to grow at 2 percent in 2007.
+      Activity was projected to regain momentum through the year and return to potential by mid-2008, with growth projections for the euro area (particularly Germany) and Japan also raised, reflecting strong global economic conditions.
+      However, by October 2008, the outlook had deteriorated dramatically, with the U.S. economy slowing rapidly, with data suggesting GDP growth averaged only 1.25 percent over the prior three quarters, well below potential.
+      Forward-looking indicators pointed to economic contraction in the current quarter and into early 2009, with the economy facing intensifying financial strain, a continuing housing correction, and tight credit conditions that were expected to remain restrictive throughout 2009.
+  - year: 2006
+    forecast_year: 2007
+    sentiment: |-
+      In September 2006, the IMF projected global economic growth of 5.1 percent for 2006, with this forecast 0.2 percentage points higher than April 2006 predictions, with for advanced economies specifically, 2006 growth forecast at 2.9 percent.
+      In April 2006, the IMF cut its eurozone growth forecast for 2007 to 1.9 percent from 2.2 percent, with expected inflation averaging 2.2 percent in the region, though by September 2006, global growth for 2007 was forecast at 4.9 percent.
+      By mid-2007, the IMF had revised its 2007 projections upward, with the July 2007 update increasing the 2007 growth forecast to 5.2 percent globally, with advanced economies projected to grow 2.5 percent.
+      The strong global expansion continued through 2007, though risks remained modestly tilted to the downside, with concerns about inflation pressures from energy and food prices offsetting otherwise favorable growth conditions.
+  - year: 2005
+    forecast_year: 2006
+    sentiment: |-
+      Real GDP growth in the U.S. was solid in 2005, ranging from 3.3% to 4.1% across quarters, with an average of 4.9% globally for the year, though inflation rose significantly during 2005, driven largely by energy prices.
+      Economic growth was expected to soften slightly in 2006, with inflation projected to decrease and the unemployment rate expected to remain stable, with the IMF projecting global economic growth of 4.3% for 2006 in its September 2005 outlook.
+      By September 2006, the IMF raised its forecast to 5.1% for 2006, though it warned that inflation, oil prices, and the U.S. housing slowdown posed risks to expansion, with the IMF predicting eurozone inflation would average 2.1% in 2006 and 2.2% in 2007.
+      The outlook reflected concerns about energy price volatility and potential housing market slowdown in the United States, though overall growth prospects remained positive for developed markets.
+  - year: 2004
+    forecast_year: 2005
+    sentiment: |-
+      Global economic growth in 2004 was projected at 5 percent, the highest in nearly three decades, though growth momentum slowed from the second quarter onward, particularly in the United States, Japan, and China, raising concerns of an emerging soft patch.
+      Global economic growth was forecast to settle at approximately 3 to 3.25 percent in 2005, representing a slight slowdown from 2004 but still above the historical 3 percent average, with the United States expected to continue supporting world growth, though at a slower pace than 2004.
+      The Euro Area was projected growth of approximately 2.2 percent in recovery, though remaining relatively weak and heavily dependent on external demand, with Germany facing particular headwinds, while Japan was expected to grow at a pace close to its potential long-term output growth rate.
+      The balance of risks shifted to the downside, with particular concerns about oil price volatility, with rising oil prices and potential currency appreciation of the euro posing threats to developed market competitiveness and growth prospects.

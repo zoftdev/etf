@@ -1,0 +1,130 @@
+sentiment_data:
+- etf: EWG
+  name: iShares MSCI Germany
+  forecasts:
+  - year: 2024
+    forecast_year: 2025
+    sentiment: |-
+      EWG has shown solid gains with a 1-year return of 24.09% and a 3-year return of 17.44% as of late January 2025.
+      Probabilistic forecasting models project EWG to reach price levels ranging from $44.44-$46.00 by April 2026, representing modest upside potential from current levels.
+      The current market environment shows neutral positioning with a yield curve signaling recession risk (-54.32%) and cooling inflation (18.33%).
+      The ETF has 61 total holdings, $1.76 billion in assets under management, and tracks the MSCI Germany Index, providing exposure to major German companies like SAP and Siemens.
+  - year: 2023
+    forecast_year: 2024
+    sentiment: |-
+      German stock market analysts maintained a cautiously optimistic outlook for 2024 despite economic weakness and geopolitical risks.
+      Multiple institutions forecast the DAX to end 2024 between 15,500 and 17,000 points, with BayernLB at 15,500, Landesbank Hessen-Thüringen at 17,000, and DekaBank at 16,500 points.
+      Current valuations were low with growth weaknesses already priced in, while the DAX maintained a relatively high risk premium of nearly 7 percentage points versus German government bonds.
+      A soft landing scenario was anticipated with stock market corrections limited and temporary, though weak global economy and murky monetary conditions remained headwinds.
+  - year: 2022
+    forecast_year: 2023
+    sentiment: |-
+      The German economy faced persistent headwinds, particularly in the industrial sector, with structural challenges dampening export business and investments.
+      Elevated inflation rates were expected to persist into 2023, with the HICP inflation forecast at 2.5% for 2025, while economic weakness was beginning to impact employment and consumption.
+      The outlook focused on macroeconomic conditions rather than equity valuations, with growth challenges and export weakness creating uncertainty for German equities.
+      Central banks maintaining higher interest rates and sluggish corporate earnings with limited upward potential were expected to weigh on the market.
+  - year: 2021
+    forecast_year: 2022
+    sentiment: |-
+      DZ BANK Research forecasted that the DAX would reach 18,000 points by the end of 2022, based on expectations of strong economic recovery driven by pent-up demand and increasing vaccination rates.
+      The 2022 outlook was underpinned by normalization of everyday life and the economy, backlog of production orders to propel major share indices, and declining inflation throughout 2022.
+      However, analysts identified headwinds including global supply chain problems persisting into early 2022, sharp rise in coronavirus cases, and economic pressure from the need to innovate in climate change and digitalisation.
+      The bank anticipated global economic growth of 4.4% with German GDP rising 4.8%, supporting equity market gains.
+  - year: 2020
+    forecast_year: 2021
+    sentiment: |-
+      The Q2 2020 financial expert survey indicated that pessimism about the COVID-19 outbreak dominated expert predictions, with experts revising growth outlooks downward for Germany and the Eurozone.
+      The corona crisis was expected to push the economy into recession over the following quarters, creating significant uncertainty for equity markets.
+      However, by late 2020, recovery expectations began to emerge as vaccination programs were developed and fiscal stimulus measures were implemented.
+      The DAX faced substantial volatility throughout 2020, reflecting the unprecedented economic disruption from pandemic-related lockdowns and restrictions.
+  - year: 2019
+    forecast_year: 2020
+    sentiment: |-
+      The IW Financial Expert Survey from Q2 2020 indicates that experts were pessimistic due to the coronavirus crisis, with the pessimistic outlook inferred from downward revisions of forecasts.
+      The survey noted that participants assumed the corona crisis would plunge the economy into recession over the following quarters, creating severe headwinds for German equities.
+      Market conditions deteriorated rapidly as the pandemic spread globally, with the DAX experiencing significant declines as economic activity ground to a halt.
+      The outlook shifted dramatically from earlier optimistic expectations to severe economic contraction as lockdown measures were implemented across Europe.
+  - year: 2018
+    forecast_year: 2019
+    sentiment: |-
+      The DAX had a challenging year in 2018, ending a six-year winning streak with an 18 percent drop, marking its worst performance since the financial crisis.
+      The poor performance was primarily driven by escalating world trade conflicts and concerns about U.S. tariff policies significantly impacting investor sentiment, as the DAX is heavily export-dependent.
+      Analysts continuously revised down 2018 earnings expectations for DAX companies from initial 10% growth forecasts to near stagnation compared to 2017.
+      According to forecasts from September 2018, expectations for 2019 appeared more optimistic, with slight improvement in U.S.-EU trade relations offering some hope for recovery.
+  - year: 2015
+    forecast_year: 2016
+    sentiment: |-
+      The DAX ended 2015 at 10,743 points, up nearly 10% for the year, reaching as high as 12,390 points in spring driven by European Central Bank quantitative easing.
+      The index declined as China's growth slowed, but analysts at M.M. Warburg believed the rising trend should continue in the new year given Germany's strong economy.
+      The DAX had risen for four consecutive years, demonstrating resilience despite global economic uncertainties and concerns about emerging market growth.
+      German stocks remained reasonably valued compared to other markets, with the economy showing relative strength in the European context.
+  - year: 2013
+    forecast_year: 2014
+    sentiment: |-
+      The DAX showed strong mid-year performance in 2013, achieving year-to-date gains of more than 15% by October, with the index gaining more than 9% for the year by September.
+      However, underlying economic conditions presented challenges, with the Bundesbank projecting full-year 2013 growth of only 0.3% and expectations for a slowdown in the third quarter.
+      Industrial production fell 1.7% from June to July, and export growth—a key driver for the German economy—was slowing, raising questions about maintaining the DAX's upward trajectory.
+      Germany's upcoming 2013 political election marked a major point of uncertainty for investors heading into the final stretch of the year.
+  - year: 2012
+    forecast_year: 2013
+    sentiment: |-
+      The Bundesbank published macroeconomic projections for 2012 and 2013, though specific DAX forecasts were not detailed in available reports.
+      Germany's economy was positioned relatively better than other European economies, having managed to avoid the worst of the eurozone debt crisis.
+      The DAX performance reflected broader European market conditions, with concerns about sovereign debt issues in peripheral eurozone countries creating volatility.
+      German equities benefited from the country's export-oriented economy and relatively strong fiscal position compared to other European nations.
+  - year: 2011
+    forecast_year: 2012
+    sentiment: |-
+      Germany was expected to enter 2011 with strong tailwind, as the economy was positioned for recovery following the recession, with the Bundesbank issuing macroeconomic projections for both 2011 and 2012.
+      However, by September 2011, the DAX had substantially underperformed compared to the S&P 500, despite Germany's initial strength as the strongman of Europe.
+      German economic growth slowed significantly, with second quarter 2011 growth at just 0.1%, reflecting broader concerns about Europe's debt crisis.
+      The market weakness reflected growing focus on Europe's unresolved debt problems and slower German economic momentum, which contrasted with the optimistic outlook expressed at the beginning of the year.
+  - year: 2010
+    forecast_year: 2011
+    sentiment: |-
+      According to the Bundesbank's June 2010 projection, the German economy was on a recovery path, with GDP expected to rise by 1.9% in 2010 and 1.4% in 2011.
+      The recovery was driven primarily by exports and inventory cycles, with business investment expected to pick up in the medium term, and the Bundesbank noted the economy had weathered the most difficult post-war economic crisis extremely well.
+      Unemployment was projected at 3.4 million (8.0% rate) in 2011, while consumer prices were expected to increase by 1.2% in 2010 and 1.6% in 2011.
+      By December 2010, the Bundesbank projected GDP growth at 3.6% for 2010, then moderating to 2.0% in 2011, with strong exports as the main growth engine and rising investment supported by low interest rates.
+  - year: 2009
+    forecast_year: 2010
+    sentiment: |-
+      The German economy faced severe challenges in 2009 but showed signs of recovery by late 2009, with the Bundesbank projecting a sharp recession with GDP contracting 6.2% in 2009.
+      By December 2009, the Bundesbank's outlook had brightened, projecting GDP growth of 1.6% in 2010 and 1.2% in 2011, with recovery beginning in Q2 2009.
+      Unemployment was expected to rise significantly, from 3.4 million in 2009 to 3.8 million in 2010, corresponding to a 10.1% unemployment rate.
+      Consumer price inflation was expected to remain moderate, with prices rising 0.9% in 2010 after remaining stable in 2009, suggesting equity market conditions likely improved from 2009 lows into 2010.
+  - year: 2008
+    forecast_year: 2009
+    sentiment: |-
+      The DAX ended 2008 with a devastating 40.4 percent loss, closing at 4,810.20 points, marking the index's second-worst annual performance in its 20-year history.
+      The collapse was driven by financial sector turmoil spreading to the real economy, triggering a global downturn and forcing government bailouts of troubled lenders.
+      According to the Deutsche Bundesbank's June 2008 forecast, Germany's economy was expected to grow at 2.25% in 2008 but slow to 1.5% in 2009, with unemployment projected to decline from 9.0% in 2007 to 7.8% in 2008 and 7.6% in 2009.
+      Inflation was forecast at 3.0% for 2008 and 2.2% for 2009, with the Bundesbank warning of upside risks from wage pressures and rising input prices, reflecting expectations for economic growth to resume by late 2008 or early 2009.
+  - year: 2007
+    forecast_year: 2008
+    sentiment: |-
+      At the end of 2006, financial market experts surveyed by ZEW expected the DAX to grow by 5 percent in 2007, with analysts forecasting an average closing of 6,700 points.
+      The 2007 forecast proved accurate—the DAX rose 22 percent that year, with German stocks viewed as reasonably valued with a price/earnings ratio of about 13.9 percent compared to more expensive U.S. stocks.
+      However, 2008 brought dramatically different results, with the DAX ending at 4,810.20 points, down 40.4 percent for the year, driven by financial sector turmoil that spread to the real economy.
+      Five of the DAX's 10 worst trading sessions on record occurred in 2008, with the index losing more than 7 percent on multiple days, reflecting the severity of the financial crisis.
+  - year: 2006
+    forecast_year: 2007
+    sentiment: |-
+      Financial market experts surveyed by ZEW expected the DAX to grow by 5 percent in 2007, with an average closing target of 6,700 points, based on the forecasted year-end closing of approximately 6,400 points in December 2006.
+      The DAX achieved strong performance in 2006, growing approximately 19 percent from the start of the year and surpassing the psychological 7,000-point barrier, reaching as high as 7,005.34 points.
+      Experts characterized the market development as healthy and fundamentally sound, driven by strong corporate profits and cost-cutting measures rather than speculative bubbles like the 2000 IT crash.
+      German stocks were valued reasonably with a price/earnings ratio of approximately 13.9 percent compared to US stocks at 21.2 percent, with the forecast reflecting more modest growth expectations than 2006's exceptional performance.
+  - year: 2005
+    forecast_year: 2006
+    sentiment: |-
+      The DAX showed strong performance in 2005, with historical data indicating the index returned 27.1% for the year, building on positive momentum from the previous year.
+      German economic conditions were improving, with the Bundesbank publishing economic outlook documents covering the transition from 2004 to 2005, though specific DAX forecasts were not detailed.
+      The market benefited from improving corporate fundamentals and economic recovery following the early 2000s downturn, with German companies showing resilience.
+      Equity markets were supported by accommodative monetary policy and improving global economic conditions, creating a favorable environment for German exporters.
+  - year: 2004
+    forecast_year: 2005
+    sentiment: |-
+      Historical data indicates the DAX returned 4% in 2004, showing modest but positive performance as the market recovered from the technology bubble and economic slowdown of the early 2000s.
+      The Bundesbank published an economic overview titled The economic scene in Germany around the turn of 2004-05, covering economic conditions during that transition period.
+      German equities were positioned for recovery as the economy stabilized and corporate earnings improved, with the export-oriented economy benefiting from global economic growth.
+      The market showed signs of recovery from the bear market of 2000-2003, with improving fundamentals supporting equity valuations.

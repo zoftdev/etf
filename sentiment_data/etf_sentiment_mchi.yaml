@@ -1,0 +1,151 @@
+sentiment_data:
+- etf: MCHI
+  name: iShares MSCI China
+  forecasts:
+  - year: 2024
+    forecast_year: 2025
+    sentiment: |-
+      MCHI had strong returns in 2024, with a 1-year return of 25.97% and year-to-date performance of 10.58% as of April 2025.
+      Probabilistic forecasting models show a mixed outlook, with base case scenario expecting prices to rise from $62.34 to $77.01 by January 2027.
+      The current market environment shows neutral sentiment overall with neutral volatility, contango VIX term structure, and recession risk indicated by yield curve.
+      The ETF holds 573 companies with $5.53-$7.7 billion in assets under management, reflecting exposure to China's large-cap equity market.
+  - year: 2023
+    forecast_year: 2024
+    sentiment: |-
+      Goldman Sachs projected strong gains for 2024, with MSCI China expected to gain +12% and CSI 300 +15%, expecting China's first annual equity gain in four years.
+      The outlook was based on approximately 10% earnings growth and moderate valuation gains, supported by an increasingly accommodative policy environment including monetary easing and fiscal stimulus.
+      Chinese equities had experienced three consecutive years of declines heading into 2024, with the MSCI China Index down approximately 50% from its February 2021 peak.
+      Goldman upgraded food and beverage and technology hardware sectors to overweight and preferred A-shares over H-shares, though the property sector remained a significant headwind.
+  - year: 2022
+    forecast_year: 2023
+    sentiment: |-
+      For 2023, T. Rowe Price identified several positive factors: the government announced easing of zero-COVID restrictions, introduced stabilization measures for residential property, and maintained room for policy easing given low inflation.
+      Scotiabank forecasted real GDP growth of approximately 5.3% in 2023, though with risks tilted to the downside, while the Chinese government had set an ambitious GDP growth target of around 5.5% for 2022.
+      Valuations presented an opportunity, as institutional holdings reached five-year lows and Chinese stock valuations fell far below historical averages, suggesting a favorable risk/reward ratio.
+      Wall Street analysts were divided on China's economic trajectory, with disagreement over whether strict regulatory measures would persist or ease.
+  - year: 2021
+    forecast_year: 2022
+    sentiment: |-
+      The MSCI China Index significantly underperformed global markets between January 2021 and March 2022, declining 49% relative to the MSCI World Index, with the index falling 21.75% in 2021 and dropping 21.91% in 2022.
+      Several factors contributed to the poor performance, including downturn in China's $55 trillion real estate market, regulatory crackdown on the tech sector, COVID-19 lockdowns and supply chain disruptions, and geopolitical tensions from the Russia-Ukraine war.
+      MSCI Research presented three potential scenarios: New and Sustainable Growth with China redirecting away from real estate and tech troubles, Decoupling and Growth Concerns with accelerating East/West polarization, or Continuing COVID Lockdowns with zero-COVID policy causing further large-scale lockdowns.
+      In the most pessimistic scenario, a diversified global portfolio could lose 9%, reflecting the significant risks facing Chinese equities heading into 2022.
+  - year: 2020
+    forecast_year: 2021
+    sentiment: |-
+      The MSCI China Index delivered strong returns in 2020, gaining 29.49%, but faced significant headwinds in 2021 with a decline of -21.72%, while the MSCI China A Index returned 43.46% in 2020 before falling -3.36% in 2021.
+      By May 2022, MSCI research identified multiple pressures on Chinese equities, including COVID-19 lockdowns, the real estate debt crisis, tech sector regulatory crackdowns, and geopolitical tensions.
+      MSCI presented three hypothetical scenarios for China's economic trajectory: a pessimistic scenario with economic decoupling and growth slowdown that could result in a 9% loss for a diversified global portfolio, a base case scenario where China prevents sector contagion, and an optimistic scenario where recent sell-offs present opportunities.
+      The outlook reflected concerns about whether China could maintain its growth trajectory amid regulatory changes, pandemic management, and increasing tensions with Western economies.
+  - year: 2019
+    forecast_year: 2020
+    sentiment: |-
+      The MSCI China Index returned 23.66% in 2019 and 29.67% in 2020, showing strong positive performance with 2020 being particularly robust despite global pandemic challenges.
+      By June 2019, MSCI published research analyzing how China's A-share inclusion was reshaping global equity allocations and how investors should reconsider their portfolio positioning toward Chinese equities.
+      The strong performance in 2020 occurred despite the global pandemic, reflecting China's early recovery from COVID-19 and its position as a major manufacturing and export hub benefiting from global demand for medical supplies and electronics.
+      However, by May 2022, MSCI analysis highlighted challenges facing Chinese equities, including real estate sector issues, tech regulatory crackdowns, COVID-19 lockdowns, and potential economic decoupling concerns, which would cause the index to significantly underperform the MSCI World Index.
+  - year: 2018
+    forecast_year: 2019
+    sentiment: |-
+      The MSCI China Index declined -18.88% in 2018, underperforming compared to the MSCI Emerging Markets (-14.57%) and MSCI ACWI (-9.41%), reflecting broader emerging market weakness and trade tensions.
+      In May 2018, MSCI began the partial inclusion of China A shares into the MSCI Emerging Markets Index, which was expected to bring approximately $22 billion in capital inflows, representing a significant milestone for Chinese equity markets.
+      The 2019 outlook improved significantly, with the MSCI China Index recovering with a gain of +23.46%, outperforming both the MSCI Emerging Markets (+18.42%) and slightly lagging the MSCI ACWI (+26.60%).
+      By June 2019, MSCI published research analyzing how China's A-share inclusion was reshaping global equity allocations, with the strong 2019 performance reflecting improved sentiment and capital flows.
+  - year: 2017
+    forecast_year: 2018
+    sentiment: |-
+      MSCI China delivered strong returns of 54.33% in 2017, representing exceptional performance driven by strong economic growth and improving corporate fundamentals.
+      However, the outlook for 2018 deteriorated significantly, with the MSCI China Index declining -18.75% in 2018, underperforming compared to the MSCI Emerging Markets and MSCI ACWI.
+      The 2018 downturn occurred during a period of broader emerging market weakness, with MSCI beginning the partial inclusion of China A shares into the MSCI Emerging Markets Index in May 2018, which was expected to bring approximately $22 billion in capital inflows.
+      The decline reflected concerns about trade tensions, slowing economic growth, and regulatory changes affecting Chinese companies, particularly in the technology sector.
+  - year: 2016
+    forecast_year: 2017
+    sentiment: |-
+      The MSCI China Index gained modestly in 2016 with returns of approximately +1.11%, representing near-flat performance compared to the MSCI Emerging Markets Index which returned +11.19% in 2016.
+      The outlook for 2017 improved dramatically, with MSCI China delivering exceptional returns of 54.33% in 2017, representing one of the strongest years for Chinese equities in recent history.
+      The strong 2017 performance was driven by robust economic growth, improving corporate earnings, and positive sentiment around China's economic transformation and technology sector development.
+      The recovery from 2016's weak performance reflected improving global economic conditions, strong domestic demand, and China's continued position as a key driver of global growth.
+  - year: 2015
+    forecast_year: 2016
+    sentiment: |-
+      The MSCI China Index declined significantly in 2015, with returns of -7.82% (net) to -7.62% (gross), representing a challenging year for Chinese equities as the market experienced substantial volatility.
+      Performance improved modestly in 2016, with the MSCI China Index returning approximately +0.90% (net) to +1.11% (gross), representing a near-flat performance year.
+      Chinese stocks struggled during this period, underperforming broader emerging markets, with the MSCI Emerging Markets Index returning -14.92% in 2015 and +11.19% in 2016.
+      The period reflected concerns about China's economic slowdown, currency devaluation, and stock market volatility, with the government implementing various measures to stabilize markets.
+  - year: 2014
+    forecast_year: 2015
+    sentiment: |-
+      According to MSCI's September 2014 research, an imminent hard landing in China was unlikely, with MSCI's macroeconomic models indicating that China's GDP growth could meet the official 7.5% target by year-end 2014.
+      The economy was expected to grow at a healthy rate of approximately 7% over the following year, slightly below the official target, with the chances of entering recession over the next year assessed as quite small.
+      MSCI found that Chinese equities carried a premium to compensate investors for bearing the risk of disruptions in Chinese economic growth, though Chinese real growth risk was characterized as a small contributor to long-term global equity risk.
+      China A-shares were not included in the MSCI Emerging Markets Index in 2014 but remained on the review list for potential inclusion in the 2015 Annual Market Classification Review, pending resolution of investability constraints.
+  - year: 2013
+    forecast_year: 2014
+    sentiment: |-
+      In September 2014, MSCI research indicated that an imminent hard landing in China was unlikely, with the MSCI Macroeconomic Model forecasting that Chinese GDP growth could meet the official target of 7.5% by the end of 2014.
+      However, the research noted that growth had remained below long-term averages since the 2008 financial crisis, with concerns about weaknesses in the housing market and shadow banking sector.
+      In June 2013, MSCI announced the start of a formal review of China A-shares for potential inclusion in the MSCI Emerging Markets Index, driven by positive market opening measures and regulatory momentum.
+      MSCI's models indicated that Chinese equities carried a long-term premium to compensate investors for bearing the risk of disruptions in Chinese economic growth, though Chinese real growth risk was a relatively small contributor to long-term global equity risk at that time.
+  - year: 2012
+    forecast_year: 2013
+    sentiment: |-
+      The MSCI China Index delivered strong returns in 2012, posting a 23.10% gross return for the year, representing a significant rebound following weakness in prior periods as global equity markets recovered in 2012.
+      The strong 2012 gains occurred amid broader emerging markets recovery, with the MSCI Emerging Markets Index returning 14.52% for 2012, representing a vigorous rebound from 2011's losses when global markets posted negative returns.
+      The MSCI China Index's performance moderated in 2013, with a 3.96% gross return for the year, representing a substantial deceleration compared to the prior year's gains.
+      The 2013 performance reflected concerns about China's economic growth slowdown and structural challenges, though the market remained resilient compared to other emerging markets.
+  - year: 2011
+    forecast_year: 2012
+    sentiment: |-
+      Global markets experienced a slowdown in 2011, with the MSCI ACWI Investable Market Index delivering a loss of -9.87% for the year, reflecting broader economic uncertainties and European debt crisis concerns.
+      Markets rebounded significantly in 2012 with double-digit returns across most indices, with the MSCI ACWI Investable Market Index recovering with a 13.45% return for 2012, overcoming the 2011 losses.
+      For emerging markets specifically, the MSCI Emerging Markets Index returned 14.52% in 2012, showing strong relative performance compared to developed markets.
+      The MSCI China Growth Index returned 20.01% in 2012, while the broader MSCI China Index returned 18.97% for the year, indicating Chinese equities participated strongly in the 2012 global market recovery.
+  - year: 2010
+    forecast_year: 2011
+    sentiment: |-
+      China stocks had a strong 2010, with the economy growing 10.3% for the year and an astounding 12.7% in the last quarter, with the MSCI Emerging Markets Index (which includes China) returning 13.8% in 2010.
+      In February 2010, analysts flagged significant risks for Chinese equities, with after a liquidity-fueled 2009 rally, markets faced concerns about Chinese slowdown and sovereign risk.
+      Key warning signals included rising volatility, increasing VaR outliers reaching 9%, and rising correlations between Chinese and global equities climbing from 55% to 76%—approaching crisis levels.
+      Despite China's strong 2010 finish, the outlook for 2011 remained uncertain due to risks stemming from massive credit expansion and potential economic slowdown, with the MSCI Emerging Markets Index declining sharply in 2011, posting a -20.6% year-to-date return.
+  - year: 2009
+    forecast_year: 2010
+    sentiment: |-
+      MSCI China showed strong recovery in 2009 following the financial crisis, with the MSCI China 10-40 Index posting year-to-date returns of 50.64% as of September 30, 2009, with one-year returns of 32.61%.
+      Following the liquidity-fueled 2009 rally, early 2010 presented significant challenges for Chinese equities, with MSCI research highlighting rising risk indicators including volatility concerns and risk warning signals.
+      VaR outliers increased to 9%, with three outliers clustering in just three weeks—often preceding major market corrections, while Chinese equities' correlation with global equities spiked from 55% in October 2009 to 76% in December 2009, approaching crisis levels.
+      The report warned that the Chinese Year of the Tiger could become a turbulent one, with significant increases in volatility compared to today's relatively moderate levels, citing concerns about sovereign debt risk and potential Chinese economic slowdown.
+  - year: 2008
+    forecast_year: 2009
+    sentiment: |-
+      Asia ex-Japan equities fell 59.2% during 2008 (down 63.1% from the October 2007 peak), marking what could be the worst year in 40 years, with this severe decline occurring amid global financial turmoil affecting major economies.
+      According to UBS's December 2008 outlook report, 2009 was expected to be better than 2008 for Asian equities, despite continued challenges, with UBS's economics team expecting 4.9% GDP growth for Asia in 2009 and 6.3% in 2010.
+      Asian equities were thought to reach a favorable inflection point when credit conditions eased and the global growth cycle bottomed out, with at close to book value, Asian equity valuations already discounting much of the bad news.
+      A shift was anticipated from macro factors toward stock selection and alpha generation as the year progressed, with China's economy expected to slow significantly in 2008, though China was viewed as critical to preventing a global recession due to its continued growth.
+  - year: 2007
+    forecast_year: 2008
+    sentiment: |-
+      MSCI Barra announced 42 additions to the MSCI China A Index in May 2007, with 45 Domestic Inclusion Factor changes, reflecting the expanding Chinese equity market and increasing international investor interest.
+      The period saw significant index composition adjustments, with the MSCI China A Value and Growth Indices expanding, indicating growing market depth and diversification opportunities for international investors.
+      However, the outlook changed dramatically in Q4 2008 following the Lehman Brothers collapse, with the financial crisis leading to substantial tightening of financial conditions and negative impacts on global equity markets.
+      Asia ex-Japan equities fell 59.2% during 2008, marking what could be the worst year in 40 years, reflecting the severe impact of the global financial crisis on emerging markets including China.
+  - year: 2006
+    forecast_year: 2007
+    sentiment: |-
+      In February 2006, the MSCI China A Index underwent a quarterly review with no additions or deletions, only share count updates, while by May 2006, the annual review resulted in 19 additions and 7 deletions to the index.
+      The largest new additions included Yantai Changyu Pioneer A, Union Holdings China A, Shanghai First Pro Sto A, Shandong Gold-Mining A, and Zhejiang Xinan Chem A, reflecting the expanding Chinese equity market.
+      The May 2007 annual review showed significant expansion with 42 additions to the MSCI China A Index and 45 changes in Domestic Inclusion Factors, indicating rapid market development and increasing international investor interest.
+      The period reflected China's economic growth and the increasing importance of Chinese equities in global portfolios, with the market benefiting from strong economic fundamentals and improving corporate governance.
+  - year: 2005
+    forecast_year: 2006
+    sentiment: |-
+      In November 2005, there were no additions or deletions to the MSCI China A Index, with only share count updates, while by May 2006, the annual review included 19 additions and 7 deletions.
+      Major additions in 2006 included Yantai Changyu Pioneer A, Union Holdings China A, and Shandong Gold-Mining A, reflecting the expanding Chinese equity market and increasing international investor interest.
+      The period saw modifications to the MSCI China Index universe in May 2005 to include China Private Enterprises (P-Chips) listed on the Hong Kong Stock Exchange, expanding the investable universe.
+      The market reflected China's continued economic growth and the increasing integration of Chinese equities into global investment portfolios, with improving market infrastructure and regulatory environment.
+  - year: 2004
+    forecast_year: 2005
+    sentiment: |-
+      The period saw details about the May 2004 Annual Full Country Index Review, with modifications to the MSCI China Index universe to include China Private Enterprises (P-Chips) listed on the Hong Kong Stock Exchange.
+      The market reflected China's continued economic growth and the increasing importance of Chinese equities in global portfolios, with improving market infrastructure and regulatory environment supporting international investor interest.
+      The period marked an important transition as China's equity markets became more accessible to international investors, with index providers expanding coverage of Chinese companies.
+      The outlook reflected optimism about China's economic prospects and the potential for Chinese equities to become a significant component of global equity allocations, though market access remained somewhat constrained.

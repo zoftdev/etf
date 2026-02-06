@@ -1,0 +1,144 @@
+sentiment_data:
+- etf: MTUM
+  name: iShares MSCI USA Momentum Factor
+  forecasts:
+  - year: 2024
+    forecast_year: 2025
+    sentiment: |-
+      MTUM delivered strong returns in 2024, gaining +32.89% for the year with consistent quarterly gains throughout.
+      The momentum factor ETF showed mixed results heading into 2025, with Q1 2025 seeing a decline of -2.06% but Q2 recovering with +2.79%.
+      As of late 2025, MTUM trades around $255-256 with a dividend yield of 0.92% and net assets of approximately $13.95 billion.
+      The ETF has demonstrated solid long-term growth since inception in 2013, with higher volatility (20.3%) than the S&P 500's 13.9%, reflecting its momentum strategy.
+  - year: 2023
+    forecast_year: 2024
+    sentiment: |-
+      Vanguard projected US equity returns of approximately 3.9%-5.9% annualized over the next 10 years, with US equities, particularly growth stocks, appearing more overvalued than in the prior year.
+      Rising earnings growth could provide near-term momentum for stocks, though long-term prospects were described as subdued, with the transition to a higher interest rate environment emphasized as a structural shift.
+      The momentum factor typically performs well when markets show strong trends, with the factor benefiting from continued upward price movements in US equities.
+      Fixed income returns improved significantly with higher bond yields, creating competition for equity investments and potentially affecting momentum strategies.
+  - year: 2021
+    forecast_year: 2022
+    sentiment: |-
+      Vanguard's 2022 outlook projected challenging conditions for equities overall, with the firm expecting U.S. equity returns of 2.3%-4.3% annualized over the next decade, citing stretched valuations and reduced policy support.
+      Despite short-term performance volatility, analysts noted that consistency in factor returns gives confidence in the long-term outperformance potential of factors, suggesting momentum was expected to continue functioning over longer periods.
+      Central banks were expected to raise rates, with the Federal Reserve potentially reaching at least 2.5%, creating a more challenging environment for momentum strategies that benefit from persistent trends.
+      The outlook reflected concerns about factor performance in a transitioning monetary policy environment, with momentum strategies potentially facing headwinds as market dynamics shift.
+  - year: 2020
+    forecast_year: 2021
+    sentiment: |-
+      Momentum had a challenging year in 2020, moderately underperforming overall despite leading performance in early 2020 before the pandemic, with factor performance experiencing sudden and frequent reversals.
+      By September-October 2020, momentum measures returned to leading performance, with investors seeking high momentum stocks while avoiding undervalued names, though by Q4 2020, momentum underperformed across universes.
+      Looking ahead to 2021, the investment environment was expected to transition to an early-cycle phase with strong profit growth potential, though specific momentum factor forecasts were not detailed.
+      Throughout 2020, factor performance experienced sudden and frequent reversals with elevated volatility, making it difficult for multi-factor strategies to outperform consistently, though analysts maintained confidence in factors' long-term outperformance potential.
+  - year: 2019
+    forecast_year: 2020
+    sentiment: |-
+      In Q4 2019, momentum was a strong performer, with equity momentum experiencing significant outperformance through most of 2019, though it faced a sharp reversal in early September alongside value factors—one of the largest three-day reversals in over 30 years.
+      Despite this late-year correction, momentum finished 2019 as a leading factor, with research suggesting that momentum's continuation depended on factor autocorrelations: momentum strategies profit when factors remain autocorrelated but crash when these autocorrelations break down.
+      The 2020 reality proved challenging for momentum investors, with momentum being one of the worst-performing factors in 2020, moderately underperforming alongside quality factors, while value and low-risk strategies saw the steepest declines.
+      The year saw sudden and frequent reversals in factor leadership paired with elevated volatility, making it difficult for momentum-based multi-factor strategies to maintain outperformance, reflecting dramatic shifts during the COVID-19 pandemic.
+  - year: 2018
+    forecast_year: 2019
+    sentiment: |-
+      Research published in late 2018 and early 2019 demonstrated that momentum behavior is driven by factor-level persistence rather than just individual stock performance, with most factors showing positive autocorrelation.
+      A time-series factor momentum portfolio combining timing strategies across 65 widely-studied characteristic-based equity factors earned an annual Sharpe ratio of 0.84, outperforming traditional stock momentum, industry momentum, and value factors on a standalone basis.
+      The research revealed that momentum strategies profit when factor autocorrelations persist but crash when these autocorrelations break down, with individual factors exhibiting significant time-series momentum.
+      The outlook suggested that factor momentum strategies could provide more robust performance than traditional stock momentum, though the strategy remained vulnerable to autocorrelation breakdowns during market regime changes.
+  - year: 2017
+    forecast_year: 2018
+    sentiment: |-
+      Momentum stocks were the dominant factor driving US equity returns in 2017, with the momentum factor providing approximately 8% in returns for a long/short momentum portfolio, by far the most significant factor explaining performance.
+      The iShares Edge MSCI USA Momentum Factor ETF (MTUM) surged 36.9% over the 12 months through early December 2017, substantially outpacing the S&P 500's 21.4% gain and all other major equity factor strategies.
+      However, by early December 2017, momentum showed signs of weakness, with the Bloomberg US pure momentum portfolio having its worst week since April 2016, suggesting potential vulnerability in momentum's dominance heading into year-end and 2018.
+      The outlook noted momentum's cyclical nature, with analysts warning that eventually the tide will turn, though historically momentum has experienced crashes but recovered swiftly thereafter.
+  - year: 2016
+    forecast_year: 2017
+    sentiment: |-
+      Research from September 2016 found that momentum is meaningfully more robust compared to other factors like size and quality, with the MSCI World Momentum Index generating annualized returns exceeding 13% over a 40-year period through May 2015.
+      Since March 2009, the MSCI World Momentum Index was the leading performer among factor indexes, and over 2001-2016, despite momentum crashes, the index recovered swiftly and outperformed five other factors.
+      However, illiquidity and momentum strategies are associated with significantly higher trading costs than other factors, which could impact net returns, representing an important consideration for actual implementation versus theoretical returns.
+      Research highlighted that while momentum strategies deliver strong average returns across asset classes, they experience infrequent and persistent strings of negative returns in certain conditions, with crashes being partly forecastable and occurring during panic states, following market declines, and when market volatility is high.
+  - year: 2015
+    forecast_year: 2016
+    sentiment: |-
+      Vanguard's December 2015 economic outlook addressed the 2016 outlook but did not specifically focus on the momentum factor, reflecting broader market concerns about equity valuations and economic growth.
+      The period saw academic research examining momentum strategies, with studies finding that momentum crashes are predictable and more likely to occur when momentum has recently performed well, interest rates are relatively low, or momentum has recently outperformed the stock market.
+      Research suggested investors should implement dynamic momentum strategies that forecast the factor's mean and variance rather than static approaches, potentially improving risk-adjusted returns.
+      The outlook reflected concerns about momentum's vulnerability to crashes, particularly following periods of strong performance, with the strategy facing headwinds when market conditions shift dramatically.
+  - year: 2014
+    forecast_year: 2015
+    sentiment: |-
+      By late 2014, momentum as a strategy was experiencing difficulties, with recent performance described as having a more difficult time, suggesting headwinds for momentum strategies entering 2015.
+      Research published in 2014 identified that momentum crashes are predictable and more likely to occur when momentum has recently performed well, interest rates are relatively low, or momentum has recently outperformed the stock market.
+      These are times when borrowing or attracting return-chasing capital would be easier, creating conditions where momentum strategies become vulnerable to reversals.
+      The outlook reflected concerns about momentum's performance sustainability, with the strategy facing challenges when market conditions shift or when momentum has recently outperformed, creating potential for mean reversion.
+  - year: 2013
+    forecast_year: 2014
+    sentiment: |-
+      US stocks had a strong 2013, with the S&P 500 up 32%, representing a banner year for equities, though broader asset classes showed mixed results with foreign developed and emerging markets mixed.
+      Research covering 212 years of U.S. equity data (1801-2012) shows momentum is a well-established empirical fact, with evidence also appearing in 40 other countries and more than a dozen asset classes, with momentum generating abnormally high risk-adjusted returns of approximately 1 percent per month between 1927-2012.
+      However, momentum faced difficulties in recent years leading up to 2013-2014, with research noting that momentum crashes were predictable—more likely when momentum had recently performed well or when interest rates were relatively low.
+      Market valuations presented headwinds for 2014, with the S&P 500's price/revenue multiple of 1.54 nearly double historical norms, and prospective 10-year nominal returns estimated at just 2.9% annually, constraining returns across equity strategies including momentum approaches.
+  - year: 2012
+    forecast_year: 2013
+    sentiment: |-
+      Goldman Sachs forecasted an S&P 500 12-month target of 1575 for end-2013, representing approximately 12% potential return, with the bank predicting the US economy would grow by 1.9% in 2013 and 2.9% in 2014.
+      Cyclical sectors (Materials, Industrials, Information Technology) were expected to outperform defensive sectors, creating a favorable environment for momentum strategies that tend to benefit from persistent trends.
+      Academic research revealed important risks in momentum strategies, finding that momentum strategies exhibit rare but dramatic crashes, with losses concentrated during periods when stock markets are depressed and volatile.
+      Historical analysis covering 212 years of momentum data (1801-2012) confirmed that momentum remains a statistically significant factor but experiences extended periods of underperformance, particularly following major market dislocations.
+  - year: 2011
+    forecast_year: 2012
+    sentiment: |-
+      A January 2011 JPMorgan analysis found that factors pertaining to growth and sentiment families, including forward earnings momentum and analyst revisions, showed strong forecasting ability, particularly within the small-cap space.
+      Valuation factors overall proved most effective at differentiating future winners from losers, though momentum strategies remained a key component of factor-based investing approaches.
+      Research published in August 2011 identified a critical risk: momentum strategies experience infrequent but severe and persistent negative returns (momentum crashes) that are forecastable following market declines and during periods of high volatility.
+      These crashes occur contemporaneously with market rebounds, suggesting momentum strategies faced elevated risk during market turmoil periods, with the strategy vulnerable when market conditions shift dramatically.
+  - year: 2010
+    forecast_year: 2011
+    sentiment: |-
+      Research from October 2010 found that momentum strategies had become less profitable after earlier studies, with momentum actually producing negative returns on average in the five years preceding 2010, representing a significant deterioration from the factor's historical track record.
+      While momentum had been a well-established phenomenon since the early 1990s, with studies showing that stocks with the best relative performance over 3-12 months tend to continue outperforming, its effectiveness was coming into question by 2010-2011.
+      As of November 2010, US stock investors had experienced zero average annual returns over the prior decade despite enormous volatility, with valuations being identified as a critical concern for future returns.
+      However, when examined over the full 2010-2019 decade, momentum (along with earnings momentum and analyst revisions) did deliver positive premiums, suggesting momentum's performance during 2010-2011 specifically may have represented a temporary weakness rather than permanent deterioration.
+  - year: 2009
+    forecast_year: 2010
+    sentiment: |-
+      In 2009, the momentum factor experienced significant headwinds, with MSCI research from November 2009 finding that the momentum factor in the Barra Global Equity Model recently experienced its largest negative historical return in more than a decade.
+      The momentum factor declined for 10 consecutive months, which was unprecedented in the 13-year GEM2 factor return history, with consumer sentiment identified as a significant explanatory variable for these momentum declines.
+      Despite near-term challenges, financial research from summer 2009 presented a favorable long-term case for momentum investing, emphasizing that momentum is the tendency of investments to exhibit persistence in their relative performance and that momentum historically outperforms.
+      The period presented a paradox: while academic research supported momentum's long-term efficacy, actual near-term performance was weak, suggesting a temporary anomaly rather than a permanent deterioration of the momentum strategy.
+  - year: 2008
+    forecast_year: 2009
+    sentiment: |-
+      The momentum factor experienced severe deterioration in 2008-2009, with MSCI research from November 2009 finding that the momentum factor recently experienced its largest negative historical return in more than a decade and declined for 10 consecutive months.
+      The dramatic momentum decline was linked to consumer sentiment, with research finding that consumer sentiment is a significant explanatory variable for Momentum changes, suggesting the economic downturn and consumer weakness during the financial crisis directly impacted momentum factor performance.
+      Research on global momentum examined how the performance of the momentum factor would be examined, especially in bull versus bear markets, recognizing that market conditions significantly affect momentum strategy returns.
+      The 2008-2009 period represented an extreme bear market environment where momentum strategies faced substantial headwinds, with the strategy experiencing one of its worst performance periods in recent history.
+  - year: 2007
+    forecast_year: 2008
+    sentiment: |-
+      By July 2007, market conditions were deteriorating, with the S&P 500's total return roughly even with Treasury bills from mid-December 2006 through July 2007, and market internals had shifted decisively negative, with credit spreads surging.
+      A critical event occurred in August 2007 when quantitative hedge funds experienced severe losses, with research finding evidence of portfolio deleveraging beginning in July 2007 and continuing through the end of the year, affecting momentum strategies significantly.
+      The unwinding began with short Earnings Momentum positions, indicating that momentum factor exposure was part of the broader quant fund casualties, with momentum experiencing a major crash from March-May 2009 when past-loser stocks gained 156% while past-winner stocks gained only 30%.
+      Research noted that momentum strategies, while historically strong, experience crashes that occur following market declines and high volatility periods, with the 2007-2009 period exemplifying this risk.
+  - year: 2006
+    forecast_year: 2007
+    sentiment: |-
+      By December 2006, the market exhibited overvalued, overbought, and overbullish conditions that had historically been associated with returns below Treasury bill yields, with a sharp drop in the number of individual stocks outperforming the S&P 500.
+      An increasing proportion of outperforming stocks had poor quality rankings, suggesting market conditions that could challenge momentum strategies, which typically benefit from persistent trends in high-quality stocks.
+      Academic research confirms momentum as a significant factor, with historically stocks with the best momentum tending to outperform those with the worst momentum over one-year periods, with momentum identified as one of the strongest generators of excess returns.
+      Research from 2006 examined the connection between momentum returns and macroeconomic risk, finding that winners have temporarily higher loadings than losers on industrial production growth rates, though this factor pricing alone did not explain a large fraction of momentum returns.
+  - year: 2005
+    forecast_year: 2006
+    sentiment: |-
+      In February 2005, market commentary warned that stocks were richly valued relative to historical standards, with P/E multiples above their historical medians, creating a challenging environment for all equity strategies including momentum.
+      Research from 2004 examined whether momentum strategies remained profitable after accounting for trading costs, finding that liquidity-weighted and hybrid momentum strategies could accommodate approximately $5 billion or more in investment before profits disappeared due to transaction costs.
+      Academic literature established that momentum strategies—holding past winners and shorting past losers—generated positive returns over 3-12 month horizons, though these returns were not fully explained by traditional risk models.
+      The outlook reflected concerns about momentum's profitability after transaction costs, with the strategy facing headwinds from rich valuations and potential trading cost impacts on net returns.
+  - year: 2004
+    forecast_year: 2005
+    sentiment: |-
+      Research from 2004 examined whether momentum strategies remained profitable after accounting for trading costs, finding that liquidity-weighted and hybrid momentum strategies could accommodate approximately $5 billion or more in investment before profits disappeared.
+      Equal-weighted strategies performed worst after trading costs, highlighting the importance of implementation methodology for momentum strategies, with the research suggesting that careful portfolio construction could help maintain momentum's profitability.
+      Academic literature established that momentum strategies generated positive returns over 3-12 month horizons, though these returns were not fully explained by traditional risk models, with the factor showing persistence across different market conditions.
+      The outlook reflected optimism about momentum's continued effectiveness, though with recognition that implementation costs and portfolio construction methodology would be critical factors in determining net returns.

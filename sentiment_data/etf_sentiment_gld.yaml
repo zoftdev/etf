@@ -1,0 +1,59 @@
+sentiment_data:
+  - etf: GLD
+    name: SPDR Gold Shares
+    forecasts:
+      - year: 2024
+        forecast_year: 2025
+        sentiment: |
+          Analysts were bullish on GLD heading into 2025, driven by expectations for Federal Reserve rate cuts and broader economic uncertainty.
+          The gold rally was supported by weak dollar dynamics as lower interest rates made gold cheaper for overseas buyers.
+          Geopolitical factors including global conflicts and elections created safe-haven demand, while central bank buying remained robust.
+          Price forecasts suggested GLD could continue its strong performance, with some analysts projecting gold to approach $5,000/oz by 2026.
+      
+      - year: 2023
+        forecast_year: 2024
+        sentiment: |
+          Analysts were bullish on gold ETFs like GLD for 2024, with expectations for three Fed rate cuts bringing rates to 4.4-4.9% by year-end.
+          The weak dollar environment from lower interest rates was expected to make gold cheaper for overseas buyers and support prices.
+          Geopolitical factors including conflicts and global elections in 2024 were anticipated to drive safe-haven demand.
+          WisdomTree forecasted gold could reach $2,300 in 2024 if fundamentals remained strong, while J.P. Morgan was bullish citing the Fed cutting cycle as a key driver.
+      
+      - year: 2022
+        forecast_year: 2023
+        sentiment: |
+          The World Gold Council predicted stable but positive performance for gold in 2023, despite mixed influences from competing factors.
+          Tailwinds included mild recession expectations, weaker earnings, further dollar weakening as inflation receded, and geopolitical flare-ups creating tail risk hedge demand.
+          Headwinds included long-term bond yields likely remaining high and commodity pressure from slowing economy expected in the first half of 2023.
+          The outlook emphasized unusually high uncertainty, with more severe recession scenarios being significantly positive for gold, while an unlikely soft landing could be detrimental.
+      
+      - year: 2021
+        forecast_year: 2022
+        sentiment: |
+          Gold finished 2021 approximately 4% lower, facing competing pressures from rising interest rates and stronger US dollar offset by elevated inflation concerns.
+          The World Gold Council's 2022 outlook noted that while rate hikes could create headwinds, history showed their effect may be limited.
+          Elevated inflation and market pullbacks were expected to sustain demand for gold as a hedge against economic uncertainty.
+          The outlook balanced potential headwinds from rate hikes with tailwinds from inflation concerns and safe-haven demand during market volatility.
+      
+      - year: 2020
+        forecast_year: 2021
+        sentiment: |
+          Analysts predicted a bullish outlook for gold in 2021, with gold finishing 2020 on a strong note after recovering from March 2020 liquidity-driven dip.
+          Central bank rate cuts, quantitative easing, and fiscal stimulus supported gold's recovery, though a correction occurred in August 2020 as real Treasury rates began rising.
+          Forecast models comparing gold prices to broad money supply per capita suggested gold was fairly-valued at end of 2020 with good long-term return potential.
+          Key supporting factors included financial and geopolitical uncertainty, low interest rates bolstering investment demand, robust central bank purchases, and structural economic reforms in India and China.
+      
+      - year: 2019
+        forecast_year: 2020
+        sentiment: |
+          Goldman Sachs maintained a 12-month price target of $1,600 per troy ounce for gold heading into 2020, driven by recession and political fears.
+          Investment demand was expected to be supported by recession concerns, U.S.-China trade tensions, and the 2020 U.S. elections creating uncertainty.
+          A global savings glut combined with weak capital expenditure would boost demand for defensive assets like gold, while Goldman expected a small weakening of the U.S. dollar.
+          The World Gold Council anticipated gold demand driven by the interplay between market risk and economic growth, with central bank demand remaining robust despite being lower than recent record highs.
+      
+      - year: 2018
+        forecast_year: 2019
+        sentiment: |
+          Analysts predicted GLD would perform well in 2019, with the bullish case based on several anticipated economic headwinds including slowing economy and volatile markets.
+          Interest rate concerns were prominent, with analysts anticipating up to three more Fed rate hikes in 2019 that would erode corporate profits and increase borrowing costs.
+          An inverted yield curve pointed to increasing recession possibilities, with the pattern having accurately predicted the last three recessions.
+          Ongoing U.S.-China tariff disputes were expected to create short-term volatility, making gold an attractive defensive holding in a risk-off investment environment.

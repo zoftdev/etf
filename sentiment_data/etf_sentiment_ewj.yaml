@@ -1,0 +1,151 @@
+sentiment_data:
+- etf: EWJ
+  name: iShares MSCI Japan
+  forecasts:
+  - year: 2024
+    forecast_year: 2025
+    sentiment: |-
+      Goldman Sachs Research anticipated that the TOPIX index would rise approximately 13% to 2,650 by end of 2024, driven by robust global economic growth and stock market reform.
+      The Japanese equity market was expected to experience a transformational year supported by foreign investment flows and rising corporate earnings.
+      EWJ demonstrated strong actual performance with a one-year return of 26.76% as of January 2025, gaining approximately 23% while receiving relatively little media attention.
+      As of late January 2026, EWJ trades around $84-85 per share with the Bank of Japan maintaining rates at a 30-year high, though the market faces mixed signals from yen volatility.
+  - year: 2023
+    forecast_year: 2024
+    sentiment: |-
+      Goldman Sachs forecast the TOPIX would rise approximately 13% to 2,650 by end-2024, while Morgan Stanley expected a more modest 11% gain to 2,600 in 2024.
+      The rally was supported by corporate governance reforms, with Tokyo Stock Exchange reforms incentivizing efficient capital use and improved valuations viewed as game changers.
+      Strong earnings performance was expected with 10% EPS growth forecast for 2024 and 8% for 2025, while Japan's real GDP growth was forecast at 1.5% in 2024.
+      Foreign investment flows and new retail investment programs (NISA starting January 2024) were expected to support prices, with wage inflation emerging to support a virtuous price-wage cycle.
+  - year: 2022
+    forecast_year: 2023
+    sentiment: |-
+      The outlook remained cautiously positive but finely poised, with Japan maintaining an ultra-easy monetary policy stance while other major economies were tightening, which supported the market.
+      Sustained improvements in corporate governance and shareholder returns were noted, with Japanese companies described as undervalued despite global headwinds.
+      While global economic slowdown posed headwinds, several factors suggested a broadly encouraging outlook for Japan moving through 2023, including the sharp fall in the yen and focus on pandemic recovery.
+      Bank of Japan's accommodative policy stance maintained flexibility, with improvements in corporate governance providing a constructive backdrop for investors.
+  - year: 2021
+    forecast_year: 2022
+    sentiment: |-
+      Market participants forecast the Nikkei 225 would fluctuate between 25,000 and 29,500 in 2021, with corporate earnings in Japan expected to rise significantly.
+      For 2022, analysts expected profit recovery from the pandemic to keep Tokyo stocks on an uptrend, with the Global Investment Committee projecting solid global economic growth.
+      A Reuters poll from late 2021 showed the Nikkei 225 was forecast to reach 31,000 by the end of June 2022, representing an 11.4% gain.
+      However, potential U.S. interest rate increases and new coronavirus variants posed significant risks, with SMBC Nikko Securities warning the benchmark could fall by as much as 1,500 points if U.S. federal funds rates rose sharply.
+  - year: 2020
+    forecast_year: 2021
+    sentiment: |-
+      Analysts predicted the Nikkei 225 would reach around 29,000-30,000 by end-2021, with Sumitomo Mitsui Trust Asset Management specifically forecasting the Nikkei testing 29,000 by end-2021.
+      Recovery would be led by exports and consumption rebounds as global trade picks up, with companies having high exposure to the Chinese market, particularly automakers and electric vehicle manufacturers.
+      Japan's economy was expected to recover with GDP growth of 3.6% in 2021, supported by vaccine rollout and rebound in consumption, with the Bank of Japan maintaining accommodative monetary policy.
+      The main downside risks identified were lack of an effective vaccine, further US-China tensions, and potential cancellation of the Tokyo Olympic Games.
+  - year: 2019
+    forecast_year: 2020
+    sentiment: |-
+      At the end of 2019, Japan's economic outlook was modest, with the Daiwa Institute of Research projecting real GDP growth of +0.9% for FY2019 and +0.5% for FY2020.
+      The economy was described as cruising at low altitude but avoiding bottom falling out, facing headwinds from US-China trade friction while supported by domestic demand.
+      The 2020 forecasts were significantly impacted by the coronavirus pandemic, with the Daiwa Institute revising its outlook to project real GDP contraction of -5.1% for FY2020.
+      By December 2020, the forecast was further revised to show real GDP decline of -5.3% in FY2020 and recovery of +3.4% in FY2021, reflecting the severe economic impact of the pandemic.
+  - year: 2018
+    forecast_year: 2019
+    sentiment: |-
+      According to a Reuters poll from late 2018, Japanese stocks were expected to end 2018 largely flat, with the Nikkei forecast to trade at 23,000 at year-end.
+      The market was expected to make modest gains in 2019, rising over 3% for the year, with the Nikkei seen trading at 24,000 in mid-2019, then settling at 23,750 by year-end 2019.
+      Analysts cited cheap valuations as a key driver, with the TOPIX trading at 12.43 times projected earnings, attractive enough to draw investors if concerns eased.
+      However, global economic slowdown presented significant constraints, with the IMF cutting growth forecasts for 2018 and 2019, citing the U.S.-China trade war and emerging market struggles.
+  - year: 2017
+    forecast_year: 2018
+    sentiment: |-
+      Japan's economy showed strong momentum heading into 2018, with GDP growing for seven consecutive quarters for the first time in over 15 years.
+      A Reuters poll of 22 analysts projected the Nikkei would end 2018 at 23,000, representing a 4.8% gain, with the broader consensus expecting stocks to remain largely flat through 2018.
+      The TOPIX traded at 12.43 times projected earnings, offering attractive valuations that could attract buyers if global concerns diminished.
+      However, external risks including U.S.-China trade tensions, emerging market slowdowns, and Federal Reserve policy weighed on sentiment, with foreign investors remaining skeptical through much of 2017.
+  - year: 2016
+    forecast_year: 2017
+    sentiment: |-
+      The Bank of Japan's April 2016 outlook indicated Japan's economy was continuing a moderate recovery trend, though exports and production remained sluggish due to emerging market slowdowns.
+      For fiscal 2017, Nomura's analysts looked for stronger performance with sales growth of 3.3% year-on-year and recurring profit growth of 12.0%.
+      By December 2016, four major securities firms raised their fiscal 2017 profit growth estimates to 12-13%, boosted by the yen's depreciation.
+      The Nikkei Stock Average topped 19,000 in late 2016, with year-to-date highs supported by expectations of business recovery driven by weaker yen and improving profit forecasts.
+  - year: 2015
+    forecast_year: 2016
+    sentiment: |-
+      As of June 2015, the Daiwa Institute of Research assessed Japan's economic recovery following the Nikkei's recovery to the 20,000 yen level in April 2015.
+      Real GDP growth was forecast at +2.0% for FY2015 and +1.9% for FY2016, with continuation of Abenomics' virtuous circle and gradual firming of exports centered on the US.
+      The analysis indicated Japan's economy was moving toward recovery from its Lost Decades, though important tasks remained: ending deflation and implementing bold growth strategies.
+      Risk factors included the Triple Weaknesses (weak bond market, weak yen, weak stock market), China's economic bubble risk, emerging market turbulence, and geopolitical risks.
+  - year: 2014
+    forecast_year: 2015
+    sentiment: |-
+      Market experts surveyed by Nikkei Quick News predicted the Nikkei Stock Average would break through the 20,000 point mark in 2015, with an average high forecast of 20,958 and a low of 16,625.
+      Japanese companies were expected to achieve double-digit year-on-year earnings growth in fiscal 2015, supported by an improved economy and yen weakness against the dollar.
+      Additional support was anticipated from Bank of Japan exchange-traded fund investments and Government Pension Investment Fund stock purchases, plus stronger shareholder payouts.
+      The Bank of Japan cut its fiscal 2014 GDP growth forecast to 0.5%, reflecting weakness from the April sales tax hike, with SMAM forecasting the Japanese economy to bottom out in early 2015.
+  - year: 2013
+    forecast_year: 2014
+    sentiment: |-
+      The Nikkei 225 achieved exceptional gains in 2013, surging 56.7%—its best annual performance in over 40 years since 1972, driven by Prime Minister Shinzo Abe's economic revival plan called Abenomics.
+      The weaker yen—falling nearly 18-22% against the U.S. dollar—significantly boosted Japanese exporters, with major winners including Mazda Motor Corp (up 213%), SoftBank (up 193%), and Fuji Heavy Industries (up 160%).
+      Sentiment remained positive heading into 2014, with one analyst predicting the Nikkei would continue to benefit from investor inflows, though cautioning against expecting another year of similar gains.
+      By late December 2014, the Nikkei closed at 17,818.96, with market sentiment buoyed by bullish expectations for 2015, though analysts tempered expectations for the extraordinary returns seen in 2013.
+  - year: 2012
+    forecast_year: 2013
+    sentiment: |-
+      The Nikkei Stock Average delivered strong results in 2012, rising 23.2% for the year—its best performance since 2005, ending at 10,395.18, reaching its highest closing level since March 2011.
+      Analysts were notably bullish heading into 2013, with BNP Paribas' chief Japan equity strategist predicting the Nikkei would reach 11,000 as early as late January or early February.
+      By March 2013, the Nikkei scaled a new 4-1/2 year high of 11,932.27, within sight of the 12,000 mark, with the TOPIX also reaching above 1,000 for the first time since October 2008.
+      The rally was fueled by expectations of aggressive monetary easing under new Prime Minister Shinzo Abe, aimed at weakening the yen and supporting exporters, with market sentiment shifting from export-focused stocks to domestic-demand shares.
+  - year: 2011
+    forecast_year: 2012
+    sentiment: |-
+      The Nikkei experienced a difficult 2011, posting a double-digit loss of 17.6 percent for the year—the second consecutive year of decline and the worst performance since 2008.
+      Market analyst Toshiyuki Kanayama expressed pessimism about 2012 prospects, stating it was difficult to say investors would rush back into equities next year, and as things stood it was hard to see a clear theme for the market to rally round.
+      Key challenges included the March 11 earthquake and tsunami, Thai floods, and European sovereign debt crisis, with investors uncertain about a sustained recovery and preferring to keep money in cash.
+      Despite steep declines, the TOPIX remained reasonably valued with a 12-month forward price-earnings ratio of 11.4, slightly cheaper than the S&P 500's 11.7.
+  - year: 2010
+    forecast_year: 2011
+    sentiment: |-
+      The Nikkei and Topix faced significant headwinds in 2011, with the Nikkei set for a double-digit loss of 17.6 percent, marking the second consecutive year of decline.
+      Market analysts cited multiple negative factors dampening investor sentiment, including the March 11 earthquake and tsunami, Thai floods, and European sovereign debt crisis.
+      Investors were uncertain about a sustained recovery, preferring to keep money in cash rather than commit to equities, with corporate earnings remaining a concern as 65 percent of reported Nikkei companies failed to meet market expectations.
+      Despite the steep 2011 decline, valuations remained relatively stable, with the Topix carrying a 12-month forward price-earnings ratio of 11.4, compared with the U.S. S&P 500's 11.7.
+  - year: 2009
+    forecast_year: 2010
+    sentiment: |-
+      In early 2009, Japan's economy faced severe challenges following the global financial crisis, with the Bank of Japan noting that economic conditions had deteriorated significantly.
+      The Nikkei fell to 20-year lows in February 2009, with the broader TOPIX index hitting 25-year closing lows, as exports declined sharply due to overseas downturns and business investment fell substantially.
+      By October 2009, conditions showed signs of improvement, with the Bank of Japan indicating that Japan's economy had started to pick up in the first half of fiscal 2009 as inventory adjustments progressed.
+      For fiscal 2010, the Bank of Japan projected that Japan's economy would remain on a recovery trend, though the pace of improvement was expected to be moderate until around mid-2010, as global economic recovery itself was projected to be gradual.
+  - year: 2008
+    forecast_year: 2009
+    sentiment: |-
+      In March 2008, analysts predicted the Nikkei 225 would end the year at 14,000, representing an 8.5% decline, but the actual outcome was far worse.
+      The Nikkei fell 42% in 2008, marking the worst year ever on the Japanese stock exchange, eclipsing previous record declines of 39% in 1990 and 27% in 2000.
+      The pessimistic outlook was driven by U.S. economic weakness and the global financial crisis, a stronger yen which eroded export-dependent corporate profits, high raw material costs, and deteriorating corporate profitability.
+      By August 2008, the Japanese economy showed clear signs of recession, with declining private consumption, capital investment, and exports—marking the first export decline in 13 quarters, with major companies like Toyota predicting their first-ever operating loss.
+  - year: 2007
+    forecast_year: 2008
+    sentiment: |-
+      The Nikkei 225 dropped 11% in 2007, posting its first annual loss in five years, while the broader TOPIX index fell 12%, making Japan the worst performer among the world's 10 largest markets.
+      Analyst forecasts made in March 2008 were significantly downgraded, with the Nikkei projected to end 2008 at 14,000, representing an 8.5% decline, substantially lower than the 17,225 level predicted just three months prior.
+      Key headwinds cited for 2008 included U.S. economic weakness and credit market turmoil stemming from subprime problems, a strengthening yen dropping below 100 yen per dollar for the first time in 12 years, and high raw materials costs.
+      Some analysts predicted the Nikkei would bottom around 10,000 in mid-2008, with potential modest recovery later in the year if U.S. government intervention stabilized financial markets.
+  - year: 2006
+    forecast_year: 2007
+    sentiment: |-
+      As of December 2006, Japan's economy showed sustained recovery that had begun in January 2002, exceeding the length of the postwar Izanagi boom, with the Bank of Japan terminating quantitative easing in March 2006.
+      Corporate sector strength was evident, with firms projecting their fifth consecutive year of profit growth since fiscal 2002, with profit-to-sales ratios exceeding bubble-era peaks.
+      The Bank of Japan expected global economic expansion to continue in 2007 at around the same pace as 2006, though risks were identified, particularly from the U.S. housing market slowdown.
+      However, the 2007 forecast proved overly optimistic, with both the Nikkei 225 and TOPIX indexes experiencing their first annual losses in five years, driven by Goldman Sachs predictions of further subprime-linked securities writedowns.
+  - year: 2005
+    forecast_year: 2006
+    sentiment: |-
+      In mid-2005, the Bank of Japan expected Japan's economy to experience moderate growth, with real GDP growth forecast at around 1.5 percent for both fiscal 2005 and 2006, slightly above the potential growth rate.
+      Stock price movements during 2005 were constrained, with the Nikkei remaining in the 10,000-12,000 yen range, reflecting conservative expectations on corporate earnings amid cautious views on the timing of economic recovery acceleration.
+      By end of 2006, the Bank of Japan noted that Japan's economic recovery had exceeded the record length of the postwar Izanagi boom, marking steady progress toward normalization.
+      The outlook for 2007 expected global economic growth to continue at around the same pace as 2006 (approximately 5 percent), though risks included potential slowdowns in the U.S. housing market and its effects on consumption.
+  - year: 2004
+    forecast_year: 2005
+    sentiment: |-
+      The Nikkei 225 remained range-bound during 2004, staying between 10,000-12,000 yen through most of the year and into 2005, with stock prices rising toward early March 2005, reaching a peak of 11,966 yen on March 9th.
+      The Japanese equity markets faced several constraints during 2005, including conservative expectations on future corporate earnings, more cautious views regarding economic recovery timing, and slowdown in foreign investor purchases of Japanese equities.
+      Concerns about export outlook and China-related sectors followed anti-Japanese demonstrations in April, with the domestic stock markets lacking upward strength despite some recovery in US and European markets toward mid-June 2005.
+      By year-end 2005, the Nikkei closed at 16,111.43 on December 30th, while the TOPIX index closed at 1,649.76, showing some recovery from the constrained trading range earlier in the year.

@@ -1,0 +1,151 @@
+sentiment_data:
+- etf: VWO
+  name: Vanguard FTSE Emerging Markets
+  forecasts:
+  - year: 2024
+    forecast_year: 2025
+    sentiment: |-
+      VWO showed strong gains in 2024 with a +10.58% annual return and has maintained positive momentum into 2025 with a +2.26% return through Q2.
+      For 2025, VWO is predicted to average $44.13, representing a -6.67% decrease from the May 2025 price of $47.29, with a forecast range of $41.30 to $47.23.
+      The 2026 forecast is more pessimistic, with an average predicted price of $41.20, down -12.88% from the May 2025 reference price.
+      The ETF carries a 3.15% dividend yield and 15.5% volatility, with emerging markets remaining subject to significant economic and geopolitical risks.
+  - year: 2023
+    forecast_year: 2024
+    sentiment: |-
+      Emerging market growth was projected to maintain modest growth at 4.0% in both 2023 and 2024, showing resilience despite global headwinds.
+      China and India were bright spots, supported by substantial public investment and surging demand for semiconductors and electronics driven by AI investments.
+      East Asia's growth forecast for 2023 was revised up to 4.7% on higher-than-expected growth in China, with 2024 maintained at 4.2%.
+      However, dimmer growth prospects in China and other large emerging market economies were expected to weigh on trading partners.
+  - year: 2022
+    forecast_year: 2023
+    sentiment: |-
+      Emerging market growth was projected to moderate significantly, with GDP growth declining from 6.7% in 2021 to 2.9% in 2022 and 2.7% in 2023.
+      The outlook faced significant headwinds with further growth slowdown amid gloomy global prospects, including high public debt, uncertain capital flows, and US dollar appreciation threatening stability.
+      Inflation pressures were significant with emerging market inflation at 8.7% in 2022, while commodity price volatility remained elevated due to global conflicts and supply constraints.
+      Despite growth slowdown, emerging market purchasing manager indices showed some resilience, moving into expansionary territory above 50% in June 2022.
+  - year: 2021
+    forecast_year: 2022
+    sentiment: |-
+      Global economic recovery continued through 2021-2022, though momentum weakened, with the IMF projecting global growth of 5.9% in 2021 and 4.9% in 2022, though emerging market recovery remained incomplete by early 2022.
+      Emerging market policymakers faced significant constraints including high public debt levels, uncertain inflation prospects, external risks surrounding capital flows and exchange rate developments, and potential tightening in global financial conditions and US dollar appreciation.
+      By Q1 2022, COVID-19 variants and inflation remained front-and-center concerns, with vaccination progress and policy decisions remaining critical to growth prospects through 2021.
+      Early 2021 saw stronger near-term prospects among commodity-exporting emerging market economies, though low-income developing countries faced worsening pandemic dynamics, creating divergences in recovery timelines across emerging markets.
+  - year: 2020
+    forecast_year: 2021
+    sentiment: |-
+      Recovery momentum in emerging markets was forecast to pick up in 2021, with risks to the outlook considered balanced, with emerging markets positioned to benefit from tailwinds of stronger global growth by mid-2021, though several challenges remained on the radar.
+      The IMF projected the global economy would grow 6.0% in 2021 and 4.9% in 2022, though emerging market and developing economies faced a marked downgrade in 2021 prospects, particularly Emerging Asia, reflecting pandemic developments and policy changes.
+      Despite recovery expectations, emerging markets faced headwinds including vaccine access disparities creating divergences in recovery timelines, supply disruptions and price pressures, and elevated inflation in some emerging market and developing economies related to high food prices.
+      By October 2021, while global recovery continued, momentum had weakened and uncertainty increased, with the pandemic's effects creating persistent fault lines expected to leave lasting imprints on medium-term performance, with vaccine access remaining a principal driver of divergences between economic blocs.
+  - year: 2019
+    forecast_year: 2020
+    sentiment: |-
+      Global growth was projected to rise from 2.9% in 2019 to 3.3% in 2020, though the IMF downwardly revised its forecasts, citing negative surprises in emerging market economies, particularly India, which prompted a reassessment of growth prospects.
+      Emerging market growth in 2019 was forecast to be the weakest in a decade since the global financial crisis, while a pickup in activity was projected for 2020, it was characterized as unspectacular, with downside risks prevailing.
+      Advanced economies' monetary easing was not materially improving global growth prospects, as several risks materialized, with the IMF's January 2020 outlook titled Tentative Stabilization, Sluggish Recovery.
+      However, by October 2020, conditions had deteriorated further due to the COVID-19 pandemic, with the outlook shifting to A Long and Difficult Ascent, reflecting the impact of the pandemic on recovery prospects for emerging markets.
+  - year: 2018
+    forecast_year: 2019
+    sentiment: |-
+      The global economy grew 3.7-3.8% in 2018, with emerging markets expected to slow but still outpace advanced economies, with growth projected to reach 3.5-3.6% in 2019, with China expected to grow 6.5% in 2018 and 6.3% in 2019, facing headwinds from U.S. trade tensions.
+      India was forecast at 7.3% growth in FY2018 and 7.5% in FY2019, supported by normalization in cash conditions and GST stabilization, while Brazil was expected to grow 1.7% in 2018 and 2.5% in 2019, with recovery dependent on market-friendly political outcomes.
+      Emerging markets were characterized as slower and riskier, but still ahead of the pack, with key risks including escalating trade tensions, tighter financial conditions, currency pressures, and geopolitical uncertainties.
+      Russia was projected at 1.7% growth for both 2018 and 2019, buoyed by firmer oil prices and improved labor markets, while Mexico was forecast at 2.2% for both years, supported by household spending and exports despite NAFTA uncertainty.
+  - year: 2017
+    forecast_year: 2018
+    sentiment: |-
+      Global output was projected to grow by 3.5 percent in 2017 and 3.6 percent in 2018, with the IMF noting that this pickup in global growth anticipated in April 2017 remained on track, with China's growth projections revised upward, reflecting a strong first quarter of 2017.
+      Inflation had been declining in several emerging economies, including Brazil, India, and Russia, creating a favorable environment for emerging market equities, though the IMF highlighted concerns about the more supportive policy tilt in China, particularly strong credit growth.
+      While risks around the global growth forecast appeared broadly balanced in the near term, they remained skewed to the downside over the medium term, with rich market valuations and very low volatility in an environment of high policy uncertainty raising the likelihood of a market correction.
+      The October 2017 IMF report emphasized that while a global economic upswing was occurring, it created both opportunities and challenges for sustainable long-term growth, with emerging markets positioned to benefit from improved global conditions.
+  - year: 2016
+    forecast_year: 2017
+    sentiment: |-
+      Global growth in 2016 was the weakest since 2008-09 at 3.1 percent, with the IMF projecting growth would rebound to 3.4 percent in 2017, with further improvement to 3.6 percent in 2018, with growth projections for emerging markets revised upward based on China's strong first quarter 2017 performance.
+      Inflation had been declining in several emerging economies including Brazil, India, and Russia, creating a more favorable environment for emerging market investments, though uncertainty about fiscal policy specifics and Brexit's ultimate impact added to the wider-than-usual range of risks.
+      While risks appeared broadly balanced in the near term, they remained skewed to the downside over the medium term, with key concerns including rich market valuations, low volatility amid high policy uncertainty, and the potential for market corrections.
+      The outlook reflected concerns about uneven growth across emerging markets, with some regions showing stronger momentum than others, creating a mixed environment for international equity investments.
+  - year: 2015
+    forecast_year: 2016
+    sentiment: |-
+      Global growth in 2015 was projected at 3.1 percent, with emerging markets experiencing a notable slowdown, with the IMF highlighting that emerging market and developing economies faced declining commodity prices, depreciating currencies, and increased financial market volatility.
+      The outlook for 2016 showed modest improvement, with advanced economies expected to strengthen their recovery, while emerging market and developing economies were projected to improve, though unevenly, with countries experiencing economic distress in 2015 including Brazil, Russia, and some Latin American and Middle Eastern nations expected to show higher growth in 2016.
+      Emerging markets faced their fifth consecutive year of slowing growth heading into 2016, with forecasts suggesting a lengthy era of weak growth ahead, with the slowdown driven by global headwinds including weak international trade, slowing capital flows, and collapsed commodity prices.
+      The January 2016 IMF update maintained a cautious tone, describing the outlook as subdued demand with diminished prospects, reflecting concerns about China's projected gradual slowdown and persistent structural challenges in many emerging economies.
+  - year: 2014
+    forecast_year: 2015
+    sentiment: |-
+      Emerging market growth was forecast to slow to 4.4 percent in 2014, down from earlier projections, reflecting negative growth surprises in the first half of 2014, subdued domestic demand in major economies, and adverse effects from geopolitical tensions in Russia-Ukraine and the Middle East.
+      Growth in emerging markets was projected to recover to 5.0 percent in 2015, though this forecast was later revised downward, with by October 2015, growth in emerging market and developing economies actually projected to decline compared to 2014, with the 2015 growth rate at 3.1 percent as a whole for global activity.
+      The IMF identified emerging markets as being in transition, facing structural headwinds beyond cyclical factors, with by mid-2015, conditions having deteriorated significantly, with declining commodity prices, depreciating currencies, increased financial market volatility, and China's growth slowdown creating larger-than-expected cross-border repercussions.
+      Capital inflows slowed, and U.S. monetary policy normalization posed additional downside risks, creating a challenging environment for emerging market equities, with China showing some recovery in the second quarter after a weak start, though Latin America remained particularly weak in domestic demand.
+  - year: 2013
+    forecast_year: 2014
+    sentiment: |-
+      Global growth was projected to strengthen to 3.6 percent in 2014 and 3.9 percent in 2015, though emerging market growth was expected to pick up only modestly compared to advanced economies, with growth in emerging market and developing economies picking up only modestly in the second half of 2013.
+      Several large emerging market economies including Brazil, Russia, South Africa, and Turkey experienced downgraded growth rates due to domestic policy weaknesses, tighter financial conditions, and investment constraints, with emerging markets facing a more difficult external financial environment.
+      Financial conditions in these economies tightened further, with capital inflows potentially slowing or reversing as a significant downside risk, with robust growth largely limited to Asia and sub-Saharan Africa, while most other regions experienced moderating growth rates.
+      The World Bank noted 2013 would bring less volatile, but slower growth, reflecting structural adjustments in emerging economies, with the recovery being supported by currency depreciation and strengthening advanced economies, though domestic demand remained constrained by high debt and financial fragmentation in some regions.
+  - year: 2012
+    forecast_year: 2013
+    sentiment: |-
+      Emerging market economies were projected to expand 5.6 percent in 2012, with growth forecast at 5.9 percent for 2013, though this represented a 0.1 percentage point downward revision from earlier April projections, with overall global growth for 2013 expected around 3.3 percent, powered largely by China and emerging economies.
+      The slowdown was driven by worsening external conditions, particularly the deepening eurozone crisis, and weakening internal demand, with exports from emerging economies declining as Europe struggled, while earlier domestic policies intended to prevent overheating also contributed to slower growth.
+      Chinese growth slowed to 7.5 percent in 2012 from 9.3 percent in 2011, though a hard landing was avoided, with by year-end 2012, expectations for 2013 improvement centered on China and Asia recovering from earlier weakness.
+      Easier financial conditions were expected to gradually improve the broader emerging market outlook, though the eurozone crisis and global economic uncertainty continued to pose significant headwinds for emerging market equities.
+  - year: 2011
+    forecast_year: 2012
+    sentiment: |-
+      In September 2011, the IMF projected emerging market economies would experience fairly robust growth despite increasing uncertainty, with growth expected to reach approximately 6 percent in 2012, described as a still very solid pace, though this represented a slowdown from previous expectations.
+      This forecast assumed emerging economies would be able to counter weaker foreign demand through less policy tightening, though by late 2012, the outlook had deteriorated significantly, with the global economy showing increasing and broad-based economic sluggishness in the first half of 2012 with no significant improvement by the third quarter.
+      Emerging market and developing economies faced spillovers from advanced economies and homegrown difficulties that held back activity, with key challenges including lower commodity prices affecting commodity exporters, constraints on sustainability of high growth rates, and building financial imbalances in emerging markets.
+      Major downside risks included potential loss of control over the euro area crisis and weakening U.S. activity, which threatened to undermine emerging market performance through reduced external demand and capital flow reversals, creating severe headwinds for emerging market equities.
+  - year: 2010
+    forecast_year: 2011
+    sentiment: |-
+      The IMF upgraded its 2010 global growth forecast to 4.6 percent, citing robust expansion in Asia and renewed U.S. private demand, with emerging economies showing particularly strong performance, with Brazil's 2010 growth forecast raised to 7.1 percent and China's growth forecast increased to 10.5 percent.
+      For 2011, global output was projected to expand by 4.5 percent, though the IMF cut its 2011 growth forecasts for emerging economies from earlier projections, with in early 2011, emerging economies showing continued strength with buoyant activity, though inflation pressures were emerging and some signs of overheating appeared.
+      Most developing countries, particularly in sub-Saharan Africa, were also growing strongly, driven partly by strong capital inflows, though the euro area's sovereign debt crisis posed significant downside risks to the emerging markets recovery.
+      By mid-2011, the outlook shifted to a mild slowdown of global expansion with increasing risks, with policymakers needing to keep overheating pressures in check and facilitate external rebalancing in key emerging economies.
+  - year: 2009
+    forecast_year: 2010
+    sentiment: |-
+      World output was expected to rise by approximately 4-4.25 percent in 2010, representing an upward revision from earlier 2009 forecasts, following stronger-than-expected recovery in the second half of 2009, with emerging and developing economies demonstrating significantly stronger recovery dynamics compared to advanced economies.
+      Most emerging and developing economies were recovering at a solid pace, contrasting with tepid recovery in many advanced economies, with final domestic demand in key emerging markets very strong, driven by inventory cycle improvements and normalized global trade.
+      In 2010, emerging and developing economies were expected to show relatively vigorous activity, largely driven by buoyant internal demand, with many emerging economies having resumed high growth rates by 2010 and began moderating accommodative macroeconomic policies in response to high capital inflows.
+      The challenge identified was absorbing these inflows while nurturing domestic demand without triggering a new boom-bust cycle, with the global recovery evolving better than expected through 2009-2010, though strength varied by region, with emerging markets leading the rebound supported by extraordinary policy stimulus globally.
+  - year: 2008
+    forecast_year: 2009
+    sentiment: |-
+      In early 2008, emerging markets faced significant headwinds from the global financial crisis, with equities in emerging markets losing more than 10% in January 2008 alone, with capital flows to developing countries dropping sharply, though some optimism remained in certain regions.
+      Growth in developing Asia and Latin America was holding up well, with import growth for developing countries remaining robust at 30% (USD, seasonally adjusted annual rate), with the World Bank projecting developing country growth at 7.1% for 2008, down from 7.4% in 2007.
+      By late 2008 and into 2009, the outlook deteriorated significantly, with the IMF's October 2008 outlook indicating that recession was increasingly likely in advanced economies, with tight credit conditions expected to persist throughout 2009, with the crisis spreading globally.
+      Particular vulnerability existed in regions dependent on capital inflows, such as Eastern Europe and Central Asia, where capital flows dropped to just 20% of 2007 monthly averages in January 2008, with the 2009 World Economic Outlook emphasizing that emerging markets would face a subdued recovery with deleveraging and slow job growth ahead.
+  - year: 2007
+    forecast_year: 2008
+    sentiment: |-
+      The IMF projected strong growth for emerging markets in both 2007 and 2008, with global growth forecasts revised upward to 5.2 percent for both years, with emerging market and developing countries showing particularly robust expansion led by China, India, and Russia.
+      Growth projections for these countries were substantially marked up compared to earlier April 2007 estimates, though by October 2007, the outlook deteriorated significantly, with the IMF downgrading global growth from 5.2% to 4.8% for 2008, primarily due to worsening U.S. economic prospects.
+      For emerging markets specifically, growth was projected to ease from 8.1% in 2007 to 7.4% in 2008, though they remained expected to continue expanding rapidly, led by China and India, with in July 2007, the IMF noting that risks to the favorable outlook remained modestly tilted to the downside.
+      Inflation pressures emerged in some emerging market countries, particularly from energy and food prices, with by mid-2008, concerns having escalated further, with the IMF report titled Global slowdown and rising inflation reflecting deteriorating conditions.
+  - year: 2006
+    forecast_year: 2007
+    sentiment: |-
+      Emerging market economies recorded strong growth with moderate inflation and current account surpluses throughout 2006 and into early 2007, with the IMF's September 2006 outlook projecting global economic growth at 5.1 percent for 2006 and 4.9 percent for 2007.
+      By mid-2007, the IMF significantly upgraded its forecasts, with the July 2007 update raising global growth projections to 5.2 percent for both 2007 and 2008, with major upward revisions specifically for emerging market and developing countries, with growth projections substantially marked up for China, India, and Russia.
+      EMEs demonstrated resilience through fiscal consolidation and improved debt management, though inflation pressures emerged in some countries due to robust demand and commodity price uncertainties, particularly affecting energy and food prices, with despite moderate monetary tightening, credit growth remaining strong in several EMEs.
+      Asset prices in emerging markets surged during this period, though the exact influence of foreign investors remained unclear, with China's emergence as a major importer and exporter significantly influencing regional trading patterns and growth opportunities for neighboring economies.
+  - year: 2005
+    forecast_year: 2006
+    sentiment: |-
+      The IMF projected global economic growth of 4.3 percent for both 2005 and 2006, with emerging markets showing strong growth across major regions, with Asia forecast growth of 7.3% in 2005 (with China at 8.9% and India at 7.15%), Latin America projected 4.3% growth, and Central Europe expected 4.0% growth.
+      Overall emerging market growth was forecasted at 6.3% for 2005, with emerging markets benefiting from unusually favorable global conditions including robust external demand and strong capital inflows, with growth reflecting better balance between external and domestic demand.
+      Consumer and investor confidence rebounded across regions, though higher oil prices created resource pressures, though this did not generate marked inflation resurgence, with inflation across emerging markets forecast at 5.0% for 2005, with generally stable price pressures despite strong growth.
+      The outlook reflected concerns about energy price volatility and potential impacts on emerging market competitiveness, though overall growth prospects remained positive for emerging markets, with the strong performance driven by improved fundamentals and favorable external conditions.
+  - year: 2004
+    forecast_year: 2005
+    sentiment: |-
+      Emerging markets experienced exceptionally rapid expansion during 2004, with global growth averaging 5 percent between mid-2003 and mid-2004, well above the 4 percent historical trend, with China leading this growth, though it began to ease in the second quarter as overheating concerns emerged.
+      Global economic growth was forecast to settle at approximately 3 to 3¼ percent in 2005, with the consensus view anticipating further robust global growth with generally subdued inflation, with emerging market economies demonstrating increased resilience to shocks.
+      Domestic demand became less dependent on external demand, with fiscal positions improving in some cases, inflation becoming more stable with greater monetary policy credibility, and many emerging markets developing significant current account surpluses, with banking performance improving.
+      Growth across all major emerging market regions was surprisingly strong, reflecting better balance between external and domestic demand, though downside risks included rising commodity and oil prices, potential increases in long-term interest rates, and unresolved internal and external imbalances in the global economy.

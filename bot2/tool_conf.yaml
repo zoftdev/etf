@@ -1,0 +1,40 @@
+# Tool Configuration for Decision Visualization
+# Defines which decision module to use and visualization settings
+
+# Decision module to use
+# Options: rsi_low, rsi_mid, rsi_high
+decision: rsi_mid
+
+# Decision config file path (relative to bot2 directory)
+# Will be automatically resolved based on decision name above
+# decision_config: decision_rsi_mid.yaml
+
+# Visualization settings
+visualization:
+  # Period to fetch data
+  period: 6m  # Options: 7d, 1m, 6m, 1y, 3y
+  
+  # Tickers to display (empty list = all tickers from etf.yaml)
+#  tickers: [EWZ, SPY, QQQ]  # Limit to 3 symbols
+  tickers: []  # Limit to 3 symbols
+  
+  # Groups to display (empty list = all groups)
+  groups: []  # Example: [commodity, momentum]
+  
+  # Show RSI subplot
+  show_rsi: true
+  
+  # Show buy/sell signals on chart
+  show_signals: true
+  
+  # Signal markers
+  signal_markers:
+    buy_color: green
+    sell_color: red
+    buy_size: 10
+    sell_size: 10
+  
+  # RSI threshold lines
+  show_rsi_thresholds: true
+  oversold_line: 30
+  overbought_line: 70
