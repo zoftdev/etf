@@ -1,0 +1,22 @@
+# Simulation grid config for dip_buy_backtest.py
+# --grid-exit uses grid_exit; --grid uses grid_dip; --small-grid uses small_grid (or first 3 of grid_dip).
+
+# Exit rules grid (--grid-exit). spread_pct comes from dip_default.yaml / CLI.
+grid_exit:
+  hold_days: [5, 10, 15, 20]
+  take_profit_pct: [null, 3, 5, 8, 10, 15]   # null = no take profit
+  stop_loss_pct: [null, -3, -5]              # null = no stop loss
+
+# Dip / strategy params grid (--grid). Full Cartesian product.
+grid_dip:
+  trend_days: [50, 100, 200]
+  dip_days: [5, 7, 10]
+  slope_lookback_days: [10, 20]
+  use_slope_filter: [true, false]
+  min_dip_pct: [0.0, 2.0]
+
+# Predefined small grid for --small-grid (list of param sets).
+small_grid:
+  - { trend_days: 100, dip_days: 7, slope_lookback_days: 20, use_slope_filter: true, min_dip_pct: 0.0 }
+  - { trend_days: 200, dip_days: 7, slope_lookback_days: 20, use_slope_filter: true, min_dip_pct: 0.0 }
+  - { trend_days: 200, dip_days: 5, slope_lookback_days: 20, use_slope_filter: false, min_dip_pct: 2.0 }

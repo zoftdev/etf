@@ -17,6 +17,7 @@ import yaml
 from etf_data_fetcher import ETFDataFetcher
 
 DEFAULT_CONFIG_PATH = Path(__file__).resolve().parent / "dip_default.yaml"
+SIM_CONFIG_PATH = Path(__file__).resolve().parent / "dip-sim.yaml"
 
 
 @dataclass
@@ -68,6 +69,23 @@ def load_dip_defaults(config_path: Optional[Path] = None) -> Tuple[DipBuyParams,
             spread_pct=float(er.get("spread_pct", exit_rules.spread_pct)),
         )
     return dip_buy, exit_rules
+
+
+def load_dip_sim_config(config_path: Optional[Path] = None) -> Dict[str, Any]:
+    """Load grid lists from dip-sim.yaml. Returns dict with grid_exit, grid_dip, small_grid (or empty)."""
+    path = config_path or SIM_CONFIG_PATH
+    out: Dict[str, Any] = {"grid_exit": {}, "grid_dip": {}, "small_grid": None}
+    if not path.exists():
+        return out
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f) or {}
+    except Exception:
+        return out
+    out["grid_exit"] = data.get("grid_exit") or {}
+    out["grid_dip"] = data.get("grid_dip") or {}
+    out["small_grid"] = data.get("small_grid")
+    return out
 
 
 def _series_up_to(df: pd.DataFrame, end_idx: int) -> pd.Series:
@@ -280,35 +298,77 @@ def run_backtest_ticker(
     }
 
 
-def param_grid_reasonable() -> List[DipBuyParams]:
-    """Reasonable grid for search (subset to keep runtime manageable)."""
+def _ensure_list(val: Any, default: List[Any]) -> List[Any]:
+    if val is None:
+        return default
+    if isinstance(val, list):
+        return val
+    return default
+
+
+def small_grid_from_config(sim_config_path: Optional[Path] = None) -> Optional[List[DipBuyParams]]:
+    """Build param list from small_grid in dip-sim.yaml. Returns None if missing or invalid."""
+    sim = load_dip_sim_config(sim_config_path)
+    sg = sim.get("small_grid")
+    if not sg or not isinstance(sg, list):
+        return None
+    out = []
+    for item in sg:
+        if not isinstance(item, dict):
+            continue
+        try:
+            out.append(DipBuyParams(
+                trend_days=int(item.get("trend_days", 200)),
+                dip_days=int(item.get("dip_days", 7)),
+                slope_lookback_days=int(item.get("slope_lookback_days", 20)),
+                use_slope_filter=bool(item.get("use_slope_filter", True)),
+                min_dip_pct=float(item.get("min_dip_pct", 0.0)),
+            ))
+        except (TypeError, ValueError):
+            continue
+    return out if out else None
+
+
+def param_grid_reasonable(sim_config_path: Optional[Path] = None) -> List[DipBuyParams]:
+    """Reasonable grid for search. Uses grid_dip from dip-sim.yaml when present."""
+    sim = load_dip_sim_config(sim_config_path)
+    gd = sim.get("grid_dip") or {}
+    trend_days_list = _ensure_list(gd.get("trend_days"), [50, 100, 200])
+    dip_days_list = _ensure_list(gd.get("dip_days"), [5, 7, 10])
+    slope_list = _ensure_list(gd.get("slope_lookback_days"), [10, 20])
+    use_slope_list = _ensure_list(gd.get("use_slope_filter"), [True, False])
+    min_dip_list = _ensure_list(gd.get("min_dip_pct"), [0.0, 2.0])
     grid = []
-    for trend_days in [50, 100, 200]:
-        for dip_days in [5, 7, 10]:
-            for slope_lookback_days in [10, 20]:
-                for use_slope_filter in [True, False]:
-                    for min_dip_pct in [0.0, 2.0]:
+    for trend_days in trend_days_list:
+        for dip_days in dip_days_list:
+            for slope_lookback_days in slope_list:
+                for use_slope_filter in use_slope_list:
+                    for min_dip_pct in min_dip_list:
                         grid.append(DipBuyParams(
-                            trend_days=trend_days,
-                            dip_days=dip_days,
-                            slope_lookback_days=slope_lookback_days,
-                            use_slope_filter=use_slope_filter,
-                            min_dip_pct=min_dip_pct,
+                            trend_days=int(trend_days),
+                            dip_days=int(dip_days),
+                            slope_lookback_days=int(slope_lookback_days),
+                            use_slope_filter=bool(use_slope_filter),
+                            min_dip_pct=float(min_dip_pct),
                         ))
     return grid
 
 
-def exit_rules_grid(spread_pct: float = 0.0) -> List[ExitRules]:
-    """Grid of exit rules for --grid-exit. hold_days 5,10,...; take 3,5,8,10,15; stop included. No spread variation."""
-    hold_days_list = [5, 10, 15, 20]
-    take_profit_list = [3.0, 5.0, 8.0, 10.0, 15.0]  # and None for no TP
-    stop_loss_list = [None, -3.0, -5.0]
+def exit_rules_grid(spread_pct: float = 0.0, sim_config_path: Optional[Path] = None) -> List[ExitRules]:
+    """Grid of exit rules for --grid-exit. Uses grid_exit from dip-sim.yaml when present."""
+    sim = load_dip_sim_config(sim_config_path)
+    ge = sim.get("grid_exit") or {}
+    hold_days_list = _ensure_list(ge.get("hold_days"), [5, 10, 15, 20])
+    take_raw = _ensure_list(ge.get("take_profit_pct"), [None, 3.0, 5.0, 8.0, 10.0, 15.0])
+    take_profit_list = [None if v is None else float(v) for v in take_raw]
+    stop_raw = _ensure_list(ge.get("stop_loss_pct"), [None, -3.0, -5.0])
+    stop_loss_list = [None if v is None else float(v) for v in stop_raw]
     grid = []
     for hold_days in hold_days_list:
-        for take_profit_pct in [None] + take_profit_list:
+        for take_profit_pct in take_profit_list:
             for stop_loss_pct in stop_loss_list:
                 grid.append(ExitRules(
-                    hold_days=hold_days,
+                    hold_days=int(hold_days),
                     take_profit_pct=take_profit_pct,
                     stop_loss_pct=stop_loss_pct,
                     spread_pct=spread_pct,
@@ -561,9 +621,11 @@ def main():
     parser.add_argument("--limit", type=int, default=None, help="Limit number of tickers (for testing)")
     parser.add_argument("--years", type=float, default=None, help="Backtest history in years (e.g. 3 for 3 years)")
     parser.add_argument("--config", type=str, default=None, help="Path to dip_default.yaml (default: same dir as script)")
+    parser.add_argument("--sim-config", type=str, default=None, help="Path to dip-sim.yaml for grid lists (default: same dir as script)")
     args = parser.parse_args()
 
     default_params, default_exit = load_dip_defaults(Path(args.config) if args.config else None)
+    sim_config_path = Path(args.sim_config) if args.sim_config else None
 
     fetcher = ETFDataFetcher()
     tickers = args.tickers or list(fetcher.tickers_map.keys())
@@ -590,20 +652,20 @@ def main():
         history_days = int(args.years * 365) + 60  # calendar days + cushion
 
     if args.grid_exit:
-        exit_rules_list = exit_rules_grid(spread_pct=exit_rules.spread_pct)
+        exit_rules_list = exit_rules_grid(spread_pct=exit_rules.spread_pct, sim_config_path=sim_config_path)
         results = grid_search_exit(
             fetcher, tickers, default_params, exit_rules_list,
             history_calendar_days=history_days,
         )
     elif args.grid or args.small_grid:
         if args.small_grid:
-            param_list = [
+            param_list = small_grid_from_config(sim_config_path) or [
                 DipBuyParams(100, 7, 20, True, 0.0),
                 DipBuyParams(200, 7, 20, True, 0.0),
                 DipBuyParams(200, 5, 20, False, 2.0),
             ]
         else:
-            param_list = param_grid_reasonable()
+            param_list = param_grid_reasonable(sim_config_path)
         results = grid_search(
             fetcher, tickers, param_list, exit_rules,
             history_calendar_days=history_days,
