@@ -15,23 +15,23 @@ periods:
   end_date: '2023-12-31'
 comparison:
 - period: sideway_2015_2017
-  total_return_pct: 97.6862
-  n_trades: 18
-  win_rate: 77.78
-  max_drawdown_pct: -6.12
+  total_return_pct: 25.5688
+  n_trades: 19
+  win_rate: 52.63
+  max_drawdown_pct: -3.5
 - period: bear_2008_2009
-  total_return_pct: 57.7214
-  n_trades: 5
-  win_rate: 80.0
+  total_return_pct: 15.0082
+  n_trades: 2
+  win_rate: 100.0
   max_drawdown_pct: 0.0
 - period: bull_2022_2025
-  total_return_pct: 188.6227
+  total_return_pct: 187.7794
   n_trades: 28
   win_rate: 71.43
-  max_drawdown_pct: -4.47
+  max_drawdown_pct: -4.51
 - period: overall_2021_2023
-  total_return_pct: 75.54
-  n_trades: 11
-  win_rate: 63.64
-  max_drawdown_pct: -8.41
-aggregate_mean_return_pct: 104.8926
+  total_return_pct: 31.682
+  n_trades: 13
+  win_rate: 61.54
+  max_drawdown_pct: -4.81
+aggregate_mean_return_pct: 65.0096

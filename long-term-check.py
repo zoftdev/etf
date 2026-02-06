@@ -112,7 +112,9 @@ def main():
         hovermode="x unified",
         height=500,
     )
-    out = Path(__file__).resolve().parent / "long_term_by_section.html"
+    result_dir = Path(__file__).resolve().parent / "result"
+    result_dir.mkdir(parents=True, exist_ok=True)
+    out = result_dir / "long_term_by_section.html"
     fig.write_html(str(out))
     print(f"Saved: {out}")
     fig.show()

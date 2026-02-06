@@ -1,0 +1,73 @@
+run:
+  run_at: '2026-02-06T03:24:22.259376+00:00'
+  mode: single
+  years: null
+  sim_start_date: null
+  sim_end_date: null
+  backtest_start: '2025-11-14T00:00:00-05:00'
+  backtest_end: '2026-02-05T00:00:00-05:00'
+  n_tickers: 2
+  exit_rules:
+    hold_days: 20
+    take_profit_pct: 15.0
+    stop_loss_pct: null
+    spread_pct: 0.0
+best_per_ticker:
+- ticker: IAU
+  total_return_pct: 24.898843012014193
+  n_trades: 3
+  win_rate: 100.0
+  max_drawdown_pct: 0.0
+  sharpe_approx: 5.808187845830155
+  trend_days: 200
+  dip_days: 5
+  slope_lookback_days: 20
+  use_slope_filter: false
+  min_dip_pct: 0.0
+- ticker: GLD
+  total_return_pct: 24.87636243397564
+  n_trades: 3
+  win_rate: 100.0
+  max_drawdown_pct: 0.0
+  sharpe_approx: 5.8139006999421765
+  trend_days: 200
+  dip_days: 5
+  slope_lookback_days: 20
+  use_slope_filter: false
+  min_dip_pct: 0.0
+best_overall:
+- ticker: IAU
+  total_return_pct: 24.898843012014193
+  n_trades: 3
+  win_rate: 100.0
+  max_drawdown_pct: 0.0
+  sharpe_approx: 5.808187845830155
+  trend_days: 200
+  dip_days: 5
+  slope_lookback_days: 20
+  use_slope_filter: false
+  min_dip_pct: 0.0
+summary_by_group:
+- group: commodity.specific
+  n_tickers: 2
+  mean_return_pct: 24.8876
+  mean_win_rate: 100.0
+  mean_max_dd_pct: 0.0
+  mean_n_trades: 3.0
+  trend_days: 200
+  dip_days: 5
+  slope_lookback_days: 20
+  use_slope_filter: false
+  min_dip_pct: 0.0
+all_exclude_commodity: []
+per_ticker_agg:
+- ticker: GLD
+  total_return_pct: 24.87636243397564
+  n_trades: 3
+  win_rate: 100.0
+  max_drawdown_pct: 0.0
+- ticker: IAU
+  total_return_pct: 24.898843012014193
+  n_trades: 3
+  win_rate: 100.0
+  max_drawdown_pct: 0.0

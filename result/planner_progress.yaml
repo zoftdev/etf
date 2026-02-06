@@ -1,0 +1,164 @@
+---
+event: period_start
+period:
+  name: sideway_2015_2017
+  start_date: '2015-01-01'
+  end_date: '2017-12-31'
+mode: grid
+limit: 1
+---
+event: period_done
+period:
+  name: sideway_2015_2017
+  start_date: '2015-01-01'
+  end_date: '2017-12-31'
+runtime_sec: 0.466
+n_results: 72
+best_overall:
+- ticker: GLD
+  total_return_pct: 25.568798064609055
+  n_trades: 19
+  win_rate: 52.63157894736842
+  max_drawdown_pct: -3.503376273067982
+  sharpe_approx: 1.4718261500097594
+  trend_days: 50
+  dip_days: 5
+  slope_lookback_days: 20
+  use_slope_filter: false
+  min_dip_pct: 0.0
+summary_by_group_top:
+- group: commodity.specific
+  n_tickers: 1
+  mean_return_pct: 25.5688
+  mean_win_rate: 52.63
+  mean_max_dd_pct: -3.5
+  mean_n_trades: 19.0
+  trend_days: 50
+  dip_days: 5
+  slope_lookback_days: 10
+  use_slope_filter: false
+  min_dip_pct: 0.0
+all_exclude_commodity: []
+---
+event: period_start
+period:
+  name: bear_2008_2009
+  start_date: '2008-05-01'
+  end_date: '2009-03-31'
+mode: grid
+limit: 1
+---
+event: period_done
+period:
+  name: bear_2008_2009
+  start_date: '2008-05-01'
+  end_date: '2009-03-31'
+runtime_sec: 0.245
+n_results: 72
+best_overall:
+- ticker: GLD
+  total_return_pct: 15.00818864870006
+  n_trades: 2
+  win_rate: 100.0
+  max_drawdown_pct: 0.0
+  sharpe_approx: 4.637206384286591
+  trend_days: 100
+  dip_days: 10
+  slope_lookback_days: 10
+  use_slope_filter: true
+  min_dip_pct: 2.0
+summary_by_group_top:
+- group: commodity.specific
+  n_tickers: 1
+  mean_return_pct: 15.0082
+  mean_win_rate: 100.0
+  mean_max_dd_pct: 0.0
+  mean_n_trades: 2.0
+  trend_days: 100
+  dip_days: 10
+  slope_lookback_days: 10
+  use_slope_filter: true
+  min_dip_pct: 2.0
+all_exclude_commodity: []
+---
+event: period_start
+period:
+  name: bull_2022_2025
+  start_date: '2022-10-01'
+  end_date: '2025-12-31'
+mode: grid
+limit: 1
+---
+event: period_done
+period:
+  name: bull_2022_2025
+  start_date: '2022-10-01'
+  end_date: '2025-12-31'
+runtime_sec: 0.432
+n_results: 72
+best_overall:
+- ticker: GLD
+  total_return_pct: 187.77935288529358
+  n_trades: 28
+  win_rate: 71.42857142857143
+  max_drawdown_pct: -4.507332785625717
+  sharpe_approx: 3.2678572836798003
+  trend_days: 100
+  dip_days: 7
+  slope_lookback_days: 10
+  use_slope_filter: false
+  min_dip_pct: 0.0
+summary_by_group_top:
+- group: commodity.specific
+  n_tickers: 1
+  mean_return_pct: 187.7794
+  mean_win_rate: 71.43
+  mean_max_dd_pct: -4.51
+  mean_n_trades: 28.0
+  trend_days: 100
+  dip_days: 7
+  slope_lookback_days: 10
+  use_slope_filter: false
+  min_dip_pct: 0.0
+all_exclude_commodity: []
+---
+event: period_start
+period:
+  name: overall_2021_2023
+  start_date: '2021-10-01'
+  end_date: '2023-12-31'
+mode: grid
+limit: 1
+---
+event: period_done
+period:
+  name: overall_2021_2023
+  start_date: '2021-10-01'
+  end_date: '2023-12-31'
+runtime_sec: 0.37
+n_results: 72
+best_overall:
+- ticker: GLD
+  total_return_pct: 31.682044773966812
+  n_trades: 13
+  win_rate: 61.53846153846154
+  max_drawdown_pct: -4.808544921817271
+  sharpe_approx: 1.9013972546419602
+  trend_days: 100
+  dip_days: 7
+  slope_lookback_days: 10
+  use_slope_filter: false
+  min_dip_pct: 0.0
+summary_by_group_top:
+- group: commodity.specific
+  n_tickers: 1
+  mean_return_pct: 31.682
+  mean_win_rate: 61.54
+  mean_max_dd_pct: -4.81
+  mean_n_trades: 13.0
+  trend_days: 100
+  dip_days: 7
+  slope_lookback_days: 10
+  use_slope_filter: false
+  min_dip_pct: 0.0
+all_exclude_commodity: []

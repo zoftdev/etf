@@ -970,7 +970,14 @@ def main():
     else:
         by_ticker_agg = None
 
-    out_path = Path(args.output) if args.output else (Path(__file__).resolve().parent / "dip_sim_result.yaml")
+    result_dir = Path(__file__).resolve().parent / "result"
+    result_dir.mkdir(parents=True, exist_ok=True)
+    if args.output:
+        out_path = Path(args.output)
+        if not out_path.is_absolute():
+            out_path = result_dir / out_path.name
+    else:
+        out_path = result_dir / "dip_sim_result.yaml"
     r0 = results[0]
     backtest_start = r0.get("backtest_start")
     backtest_end = r0.get("backtest_end")

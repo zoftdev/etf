@@ -124,10 +124,12 @@ def main():
         raise SystemExit(f"Planner not found: {planner_path}")
 
     base_dir = planner_path.resolve().parent
+    result_dir = base_dir / "result"
+    result_dir.mkdir(parents=True, exist_ok=True)
     plan = load_planner(planner_path)
     mode = (plan.get("mode") or "single").strip().lower()
 
-    progress_path = Path(args.progress) if args.progress else (base_dir / "planner_progress.yaml")
+    progress_path = Path(args.progress) if args.progress else (result_dir / "planner_progress.yaml")
     if mode not in ("single", "small_grid", "grid", "grid_exit"):
         mode = "single"
 
@@ -268,7 +270,9 @@ def main():
     # บันทึก YAML
     output_path = plan.get("output")
     if output_path:
-        out_path = base_dir / output_path if not Path(output_path).is_absolute() else Path(output_path)
+        out_path = Path(output_path)
+        if not out_path.is_absolute():
+            out_path = result_dir / out_path.name
         out_data = {
             "planner": str(planner_path),
             "mode": mode,

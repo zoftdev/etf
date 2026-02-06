@@ -26,5 +26,5 @@ periods:
     start_date: "2021-10-01"
     end_date: "2023-12-31"
 
-# บันทึกผลรวม (null = ไม่เขียน)
-output: planner_result.yaml
+# บันทึกผลรวม (null = ไม่เขียน) — ลง result/
+output: result/planner_result.yaml
