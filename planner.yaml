@@ -1,0 +1,30 @@
+# Simulation planner: หลายช่วงปี รัน dip_buy (grid / grid-exit) ต่อช่วง แล้วเทียบและรวมผล
+# ใช้กับ: uv run python simulation_planner.py [--planner planner.yaml]
+
+# โหมด: single | small_grid | grid | grid_exit
+mode: grid
+
+# path config (เทียบกับโฟลเดอร์ที่อยู่ของ planner หรือ cwd)
+dip_config: dip_default.yaml
+sim_config: dip-sim.yaml
+
+# จำกัดจำนวน ticker (null = ใช้ทั้งหมด)
+limit: 3
+
+# ช่วงที่รัน แต่ละช่วงได้ sim_start_date, sim_end_date
+periods:
+  - name: sideway_2015_2017
+    start_date: "2015-01-01"
+    end_date: "2017-12-31"
+  - name: bear_2008_2009
+    start_date: "2008-05-01"
+    end_date: "2009-03-31"
+  - name: bull_2022_2025
+    start_date: "2022-10-01"
+    end_date: "2025-12-31"
+  - name: overall_2021_2023
+    start_date: "2021-10-01"
+    end_date: "2023-12-31"
+
+# บันทึกผลรวม (null = ไม่เขียน)
+output: planner_result.yaml

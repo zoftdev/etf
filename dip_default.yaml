@@ -1,5 +1,9 @@
 # Default parameters for Dip-Buy backtest (dip_buy_backtest.py)
-# Override via CLI (e.g. --hold-days, --spread).
+# Override via CLI (e.g. --hold-days, --spread, --start-date).
+
+# Simulation start date: backtest only from this date (optional). Format: YYYY-MM-DD
+# Override with CLI: --start-date 2020-01-01
+# sim_start_date: "2020-01-01"
 
 # Strategy params (DipBuyParams) — used when not running --grid / --small-grid
 dip_buy:

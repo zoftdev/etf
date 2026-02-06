@@ -127,6 +127,8 @@ class ETFDataFetcher:
             # Build group name from path (excluding 'etfs' and 'items' if present)
             filtered_path = [p for p in path_parts if p not in ['etfs', 'items']]
             group_name = self._build_group_path(filtered_path)
+            # Raw YAML keys for result/export (e.g. commodity, world.asia_pacific)
+            group_key = '.'.join(filtered_path) if filtered_path else 'unknown'
             
             # Extract tickers (single or multiple)
             tickers = []
@@ -146,6 +148,7 @@ class ETFDataFetcher:
                     tickers_map[ticker] = {
                         'name': name or ticker,
                         'group': group_name,
+                        'group_key': group_key,
                         'category': category,
                         'description': description,
                         'market': market  # Store market for API calls (can be None, str, or empty string)

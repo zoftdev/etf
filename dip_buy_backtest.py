@@ -9,9 +9,9 @@ import itertools
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple, Any
+from typing import Dict, List, Optional, Tuple, Any, Union
 
 import pandas as pd
 import numpy as np
@@ -40,18 +40,36 @@ class ExitRules:
     spread_pct: float = 0.0                   # round-trip cost: sell-buy diff, e.g. 0.15 = 0.15%
 
 
-def load_dip_defaults(config_path: Optional[Path] = None) -> Tuple[DipBuyParams, ExitRules]:
-    """Load default DipBuyParams and ExitRules from dip_default.yaml. Missing file or keys use code defaults."""
+def _parse_start_date(value: Optional[str]) -> Optional[pd.Timestamp]:
+    """Parse sim_start_date string (YYYY-MM-DD) to timezone-aware timestamp for comparison with df.index."""
+    if not value or not isinstance(value, str):
+        return None
+    value = value.strip()
+    if not value:
+        return None
+    try:
+        ts = pd.Timestamp(value)
+        if ts.tzinfo is None:
+            ts = ts.tz_localize("UTC")
+        return ts
+    except Exception:
+        return None
+
+
+def load_dip_defaults(config_path: Optional[Path] = None) -> Tuple[DipBuyParams, ExitRules, Optional[pd.Timestamp]]:
+    """Load default DipBuyParams, ExitRules and optional sim_start_date from dip_default.yaml."""
     path = config_path or DEFAULT_CONFIG_PATH
     dip_buy = DipBuyParams()
     exit_rules = ExitRules()
+    sim_start_date: Optional[pd.Timestamp] = None
     if not path.exists():
-        return dip_buy, exit_rules
+        return dip_buy, exit_rules, sim_start_date
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f) or {}
     except Exception:
-        return dip_buy, exit_rules
+        return dip_buy, exit_rules, sim_start_date
+    sim_start_date = _parse_start_date(data.get("sim_start_date"))
     db = data.get("dip_buy") or {}
     if isinstance(db, dict):
         dip_buy = DipBuyParams(
@@ -71,7 +89,7 @@ def load_dip_defaults(config_path: Optional[Path] = None) -> Tuple[DipBuyParams,
             stop_loss_pct=float(sl) if sl is not None else None,
             spread_pct=float(er.get("spread_pct", exit_rules.spread_pct)),
         )
-    return dip_buy, exit_rules
+    return dip_buy, exit_rules, sim_start_date
 
 
 def load_dip_sim_config(config_path: Optional[Path] = None) -> Dict[str, Any]:
@@ -148,16 +166,24 @@ def run_single_backtest(
     df: pd.DataFrame,
     params: DipBuyParams,
     exit_rules: ExitRules,
+    sim_start_date: Optional[Union[pd.Timestamp, str]] = None,
+    sim_end_date: Optional[Union[pd.Timestamp, str]] = None,
 ) -> Tuple[List[Dict[str, Any]], pd.Series]:
     """
     Run backtest on one price frame. No look-ahead.
     - Signal at day idx → enter at Open of day idx+1.
     - Exit: after hold_days, or when take_profit_pct / stop_loss_pct hit (checked at Close).
+    - If sim_start_date set: only consider signals on or after that date.
+    - If sim_end_date set: only consider new entries on or before that date (exits may occur after).
 
     Returns:
         trades: list of {entry_date, exit_date, entry_price, exit_price, return_pct, exit_reason}
         equity_curve: series of cumulative return (1.0 at start, then growth per trade)
     """
+    if isinstance(sim_start_date, str):
+        sim_start_date = _parse_start_date(sim_start_date)
+    if isinstance(sim_end_date, str):
+        sim_end_date = _parse_start_date(sim_end_date)
     if "Open" not in df.columns:
         df = df.copy()
         df["Open"] = df["Close"]
@@ -174,8 +200,32 @@ def run_single_backtest(
     if n < need + exit_rules.hold_days + 1:
         return [], pd.Series(dtype=float)
 
-    trades: List[Dict[str, Any]] = []
     first_idx = need
+    # If sim_start_date is set, start backtest only from that date (still need warmup bars before it)
+    if sim_start_date is not None:
+        start_ts = pd.Timestamp(sim_start_date)
+        # Normalize for comparison: make index and start_ts both naive or both aware
+        if hasattr(dates, "tz") and dates.tz is not None:
+            if start_ts.tzinfo is None:
+                start_ts = start_ts.tz_localize(dates.tz)
+        else:
+            if start_ts.tzinfo is not None:
+                start_ts = start_ts.tz_convert(None)
+        mask = dates >= start_ts
+        if mask.any():
+            first_date_idx = int(np.where(mask)[0][0])
+            first_idx = max(need, first_date_idx)
+
+    # When sim_end_date is set, do not open new positions after that date
+    end_ts = None
+    if sim_end_date is not None:
+        end_ts = pd.Timestamp(sim_end_date)
+        if hasattr(dates, "tz") and dates.tz is not None and end_ts.tzinfo is None:
+            end_ts = end_ts.tz_localize(dates.tz)
+        elif (not hasattr(dates, "tz") or dates.tz is None) and end_ts.tzinfo is not None:
+            end_ts = end_ts.tz_convert(None)
+
+    trades: List[Dict[str, Any]] = []
     in_position = False
     entry_idx = -1
     entry_price = 0.0
@@ -215,6 +265,10 @@ def run_single_backtest(
                 continue
 
         if in_position:
+            continue
+
+        # Do not open new position after sim_end_date
+        if end_ts is not None and dates[idx] > end_ts:
             continue
 
         if is_dip_buy_signal_at_idx(df, idx, params):
@@ -280,16 +334,55 @@ def run_backtest_ticker(
     df: pd.DataFrame,
     params: DipBuyParams,
     exit_rules: ExitRules,
+    sim_start_date: Optional[Union[pd.Timestamp, str]] = None,
+    sim_end_date: Optional[Union[pd.Timestamp, str]] = None,
 ) -> Dict[str, Any]:
-    trades, equity = run_single_backtest(df, params, exit_rules)
+    trades, equity = run_single_backtest(
+        df, params, exit_rules,
+        sim_start_date=sim_start_date,
+        sim_end_date=sim_end_date,
+    )
     metrics = backtest_metrics(trades, equity)
     need = max(
         params.trend_days + params.slope_lookback_days + 2,
         params.dip_days + 2,
     )
-    # First date when signal can be generated (no look-ahead)
-    backtest_start = df.index[need] if len(df) > need else None
-    backtest_end = df.index[-1] if len(df) else None
+    # First date when signal can be generated (no look-ahead); respect sim_start_date
+    if len(df) <= need:
+        backtest_start = None
+        backtest_end = None
+    else:
+        first_idx = need
+        if sim_start_date is not None:
+            start_ts = _parse_start_date(sim_start_date) if isinstance(sim_start_date, str) else pd.Timestamp(sim_start_date)
+            if start_ts is not None:
+                dates = df.index
+                if hasattr(dates, "tz") and dates.tz is not None and start_ts.tzinfo is None:
+                    start_ts = start_ts.tz_localize(dates.tz)
+                elif (not hasattr(dates, "tz") or dates.tz is None) and start_ts.tzinfo is not None:
+                    start_ts = start_ts.tz_convert(None)
+                mask = dates >= start_ts
+                if mask.any():
+                    first_idx = max(need, int(np.where(mask)[0][0]))
+        backtest_start = df.index[first_idx]
+        dates = df.index
+        last_date = dates[-1]
+        if sim_end_date is not None:
+            end_ts = _parse_start_date(sim_end_date) if isinstance(sim_end_date, str) else pd.Timestamp(sim_end_date)
+            if end_ts is not None:
+                if hasattr(dates, "tz") and dates.tz is not None and end_ts.tzinfo is None:
+                    end_ts = end_ts.tz_localize(dates.tz)
+                elif (not hasattr(dates, "tz") or dates.tz is None) and end_ts.tzinfo is not None:
+                    end_ts = end_ts.tz_convert(None)
+                mask = dates <= end_ts
+                if mask.any():
+                    backtest_end = dates[np.where(mask)[0][-1]]
+                else:
+                    backtest_end = last_date
+            else:
+                backtest_end = last_date
+        else:
+            backtest_end = last_date
     return {
         "ticker": ticker,
         "params": params,
@@ -385,9 +478,15 @@ def _run_one_dip(
     params: DipBuyParams,
     exit_rules: ExitRules,
     group: str,
+    sim_start_date: Optional[Union[pd.Timestamp, str]] = None,
+    sim_end_date: Optional[Union[pd.Timestamp, str]] = None,
 ) -> Dict[str, Any]:
     """Single backtest for grid_search (dip params). Used in parallel."""
-    res = run_backtest_ticker(ticker, df, params, exit_rules)
+    res = run_backtest_ticker(
+        ticker, df, params, exit_rules,
+        sim_start_date=sim_start_date,
+        sim_end_date=sim_end_date,
+    )
     res["params_dict"] = {
         "trend_days": params.trend_days,
         "dip_days": params.dip_days,
@@ -409,10 +508,14 @@ def grid_search(
     max_slope_days: int = 30,
     history_calendar_days: Optional[int] = None,
     max_workers: Optional[int] = None,
+    sim_start_date: Optional[Union[pd.Timestamp, str]] = None,
+    sim_end_date: Optional[Union[pd.Timestamp, str]] = None,
 ) -> List[Dict[str, Any]]:
     """
     For each ticker, fetch history; for each param set run backtest (in parallel); return list of results.
     If history_calendar_days is set (e.g. 3*365 for 3 years), use that for fetch; else use min needed.
+    If sim_start_date is set, backtest only from that date.
+    If sim_end_date is set, no new entries after that date (window = start to end).
     """
     if history_calendar_days is not None:
         calendar_days = history_calendar_days
@@ -421,7 +524,7 @@ def grid_search(
         calendar_days = fetcher._calendar_days_for_trading_window(need_trading)
     history, errors = fetcher.fetch_history_days(calendar_days, tickers=tickers)
 
-    ticker_infos = {t: (fetcher.get_ticker_info(t) or {}).get("group") or "Unknown" for t in tickers}
+    ticker_infos = {t: (fetcher.get_ticker_info(t) or {}).get("group_key") or (fetcher.get_ticker_info(t) or {}).get("group") or "unknown" for t in tickers}
     tasks: List[Tuple[str, pd.DataFrame, DipBuyParams, str]] = []
     for ticker in tickers:
         if ticker not in history:
@@ -430,7 +533,7 @@ def grid_search(
         if df is None or df.empty or "Close" not in df.columns:
             continue
         df = df.sort_index()
-        group = ticker_infos.get(ticker, "Unknown")
+        group = ticker_infos.get(ticker, "unknown")
         for params in param_list:
             if (
                 params.trend_days > max_trend_days
@@ -444,7 +547,7 @@ def grid_search(
     results: List[Dict[str, Any]] = []
     with ThreadPoolExecutor(max_workers=workers) as executor:
         future_to_task = {
-            executor.submit(_run_one_dip, t, d, p, exit_rules, g): (t, p)
+            executor.submit(_run_one_dip, t, d, p, exit_rules, g, sim_start_date, sim_end_date): (t, p)
             for t, d, p, g in tasks
         }
         for future in as_completed(future_to_task):
@@ -461,9 +564,15 @@ def _run_one_exit(
     params: DipBuyParams,
     exit_rules: ExitRules,
     group: str,
+    sim_start_date: Optional[Union[pd.Timestamp, str]] = None,
+    sim_end_date: Optional[Union[pd.Timestamp, str]] = None,
 ) -> Dict[str, Any]:
     """Single backtest for grid_search_exit. Used in parallel."""
-    res = run_backtest_ticker(ticker, df, params, exit_rules)
+    res = run_backtest_ticker(
+        ticker, df, params, exit_rules,
+        sim_start_date=sim_start_date,
+        sim_end_date=sim_end_date,
+    )
     res["params_dict"] = {
         "trend_days": params.trend_days,
         "dip_days": params.dip_days,
@@ -490,10 +599,13 @@ def grid_search_exit(
     max_slope_days: int = 30,
     history_calendar_days: Optional[int] = None,
     max_workers: Optional[int] = None,
+    sim_start_date: Optional[Union[pd.Timestamp, str]] = None,
+    sim_end_date: Optional[Union[pd.Timestamp, str]] = None,
 ) -> List[Dict[str, Any]]:
     """
     For each ticker and each exit_rule, run backtest with single DipBuyParams (in parallel).
     Results include exit_dict (hold_days, take_profit_pct, stop_loss_pct) for summarization.
+    If sim_start_date / sim_end_date set, backtest only in that window.
     """
     if history_calendar_days is not None:
         calendar_days = history_calendar_days
@@ -502,7 +614,7 @@ def grid_search_exit(
         calendar_days = fetcher._calendar_days_for_trading_window(need_trading)
     history, errors = fetcher.fetch_history_days(calendar_days, tickers=tickers)
 
-    ticker_infos = {t: (fetcher.get_ticker_info(t) or {}).get("group") or "Unknown" for t in tickers}
+    ticker_infos = {t: (fetcher.get_ticker_info(t) or {}).get("group_key") or (fetcher.get_ticker_info(t) or {}).get("group") or "unknown" for t in tickers}
     tasks: List[Tuple[str, pd.DataFrame, ExitRules, str]] = []
     for ticker in tickers:
         if ticker not in history:
@@ -511,7 +623,7 @@ def grid_search_exit(
         if df is None or df.empty or "Close" not in df.columns:
             continue
         df = df.sort_index()
-        group = ticker_infos.get(ticker, "Unknown")
+        group = ticker_infos.get(ticker, "unknown")
         for exit_rules in exit_rules_list:
             tasks.append((ticker, df, exit_rules, group))
 
@@ -519,7 +631,7 @@ def grid_search_exit(
     results: List[Dict[str, Any]] = []
     with ThreadPoolExecutor(max_workers=workers) as executor:
         future_to_task = {
-            executor.submit(_run_one_exit, t, d, params, er, g): (t, er)
+            executor.submit(_run_one_exit, t, d, params, er, g, sim_start_date, sim_end_date): (t, er)
             for t, d, er, g in tasks
         }
         for future in as_completed(future_to_task):
@@ -713,13 +825,23 @@ def main():
     parser.add_argument("--grid-exit", action="store_true", help="Grid over exit rules: hold_days 5,10,15,20; take 3,5,8,10,15; stop None,-3,-5 (spread from config)")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of tickers (for testing)")
     parser.add_argument("--years", type=float, default=None, help="Backtest history in years (e.g. 3 for 3 years)")
+    parser.add_argument("--start-date", type=str, default=None, help="Simulation start date (YYYY-MM-DD), e.g. 2020-01-01")
     parser.add_argument("--config", type=str, default=None, help="Path to dip_default.yaml (default: same dir as script)")
     parser.add_argument("--sim-config", type=str, default=None, help="Path to dip-sim.yaml for grid lists (default: same dir as script)")
     parser.add_argument("--output", "-o", type=str, default=None, help="Write simulation result to YAML (for planner); default: dip_sim_result.yaml")
     args = parser.parse_args()
 
-    default_params, default_exit = load_dip_defaults(Path(args.config) if args.config else None)
+    default_params, default_exit, config_start_date = load_dip_defaults(Path(args.config) if args.config else None)
+    sim_start_date = _parse_start_date(args.start_date) if args.start_date else config_start_date
     sim_config_path = Path(args.sim_config) if args.sim_config else None
+
+    # When both --start-date and --years: backtest window = start_date for `years` years (or until data ends)
+    sim_end_date: Optional[pd.Timestamp] = None
+    if sim_start_date is not None and args.years is not None and args.years > 0:
+        start_ts = pd.Timestamp(sim_start_date)
+        if start_ts.tzinfo is not None:
+            start_ts = start_ts.tz_localize(None)
+        sim_end_date = start_ts + timedelta(days=int(args.years * 365))
 
     fetcher = ETFDataFetcher()
     tickers = args.tickers or list(fetcher.tickers_map.keys())
@@ -741,15 +863,26 @@ def main():
     if args.spread is not None:
         exit_rules = ExitRules(hold_days=exit_rules.hold_days, take_profit_pct=exit_rules.take_profit_pct, stop_loss_pct=exit_rules.stop_loss_pct, spread_pct=args.spread)
 
+    # Fetch window: when both start_date and years are set, fetch from start_date to today so the window is covered
     history_days = None
     if args.years is not None and args.years > 0:
-        history_days = int(args.years * 365) + 60  # calendar days + cushion
+        if sim_start_date is not None:
+            # Need data from sim_start_date to today (at least)
+            today = pd.Timestamp.now().normalize()
+            start_ts = pd.Timestamp(sim_start_date).normalize()
+            if start_ts.tzinfo is not None:
+                start_ts = start_ts.tz_localize(None)
+            history_days = max((today - start_ts).days + 60, int(args.years * 365) + 60)
+        else:
+            history_days = int(args.years * 365) + 60  # calendar days + cushion
 
     if args.grid_exit:
         exit_rules_list = exit_rules_grid(spread_pct=exit_rules.spread_pct, sim_config_path=sim_config_path)
         results = grid_search_exit(
             fetcher, tickers, default_params, exit_rules_list,
             history_calendar_days=history_days,
+            sim_start_date=sim_start_date,
+            sim_end_date=sim_end_date,
         )
     elif args.grid or args.small_grid:
         if args.small_grid:
@@ -763,12 +896,16 @@ def main():
         results = grid_search(
             fetcher, tickers, param_list, exit_rules,
             history_calendar_days=history_days,
+            sim_start_date=sim_start_date,
+            sim_end_date=sim_end_date,
         )
     else:
         param_list = [default_params]
         results = grid_search(
             fetcher, tickers, param_list, exit_rules,
             history_calendar_days=history_days,
+            sim_start_date=sim_start_date,
+            sim_end_date=sim_end_date,
         )
 
     if not results:
@@ -830,10 +967,18 @@ def main():
     if backtest_end is not None and hasattr(backtest_end, "isoformat"):
         backtest_end = backtest_end.isoformat()
     mode = "grid_exit" if args.grid_exit else ("small_grid" if args.small_grid else ("grid" if args.grid else "single"))
+    sim_start_str = None
+    if sim_start_date is not None:
+        sim_start_str = sim_start_date.strftime("%Y-%m-%d") if hasattr(sim_start_date, "strftime") else str(sim_start_date)
+    sim_end_str = None
+    if sim_end_date is not None:
+        sim_end_str = sim_end_date.strftime("%Y-%m-%d") if hasattr(sim_end_date, "strftime") else str(sim_end_date)
     run_meta = {
         "run_at": datetime.now(timezone.utc).isoformat(),
         "mode": mode,
         "years": args.years,
+        "sim_start_date": sim_start_str,
+        "sim_end_date": sim_end_str,
         "backtest_start": backtest_start,
         "backtest_end": backtest_end,
         "n_tickers": len(tickers),
