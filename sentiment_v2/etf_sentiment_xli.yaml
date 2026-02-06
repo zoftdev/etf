@@ -1,0 +1,301 @@
+sentiment_data:
+- etf: XLI
+  name: SPDR Industrial Select Sector ETF
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'XLI (Industrial Select Sector SPDR ETF) Price Forecasts for 2025-2026.
+        According to probabilistic forecasting models, XLI is projected to reach the
+        following price levels: April 2026: $161.97 (base case), July 2026: $167.86,
+        October 2026: $177.75, January 2027: $197.51. The forecast also includes bullish
+        and bearish scenarios, with the bullish case reaching $197.51 by January 2027
+        and the bearish case reaching $160.86. As of early January 2026, XLI was trading
+        around $157.98, up 1.84% for the day. The market environment shows low volatility
+        (14.51), benign credit conditions (0.88), and cooling inflation (7.60%), supporting
+        a "risk-on" market posture.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.615
+          sentiment_label: buy
+          reasoning: The forecast for XLI shows a positive trajectory with projected
+            price increases over the next few years, supported by favorable market
+            conditions such as low volatility and cooling inflation. The current trading
+            price is also above the bearish scenario, indicating a bullish sentiment
+            overall.
+    - sentiment: 'XLI ETF Price Prediction for 2026. According to ETF price forecast
+        models, XLI is expected to show the following trajectory throughout 2026:
+        April 2026: $161.97 (bullish scenario), $158.06 (base case), $154.16 (bearish
+        scenario). July 2026: $167.86 (bullish), $163.28 (base case), $158.70 (bearish).
+        October 2026: $177.75 (bullish), $168.58 (base case), $159.42 (bearish). January
+        2027: $197.51 (bullish), $179.18 (base case), $160.86 (bearish). As of early
+        2026, XLI was trading around $157.98. The market environment considered in
+        these forecasts includes low volatility (14.51), benign credit conditions,
+        and cooling inflation (7.60%).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.487
+          sentiment_label: buy
+          reasoning: The forecast indicates a generally positive trajectory for XLI
+            throughout 2026, with consistently higher prices in bullish scenarios
+            and base cases compared to current trading levels. Additionally, the mention
+            of low volatility and cooling inflation suggests a favorable market environment,
+            contributing to a bullish outlook.
+    - sentiment: 'SPDR Industrial Select Sector ETF (XLI) 2025-2026 Outlook. The industrials
+        sector is gaining attention heading into 2026 due to: AI infrastructure demand:
+        Data centers and AI infrastructure require power equipment, cooling systems,
+        construction services, and logistics capacity. Capital spending cycle: An
+        AI-driven capital spending cycle expected to drive industrial equipment demand.
+        Policy tailwinds: Infrastructure spending, supply chain reshaping, and defense
+        priorities expected to benefit the sector. Market breadth: Investors are rotating
+        beyond mega-cap tech stocks to broader "real economy" beneficiaries. The sector
+        has posted strong returns, with XLI up 18-24% over the past year depending
+        on the measurement date.'
+      source: Ts2
+      author: ''
+      date: '2025-12-20'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.742
+          sentiment_label: strong buy
+          reasoning: The outlook for the industrials sector is very positive, driven
+            by strong demand for AI infrastructure, a favorable capital spending cycle,
+            and supportive policies. Additionally, the sector has shown impressive
+            returns of 18-24% over the past year, indicating strong investor confidence
+            and a bullish sentiment overall.
+    - sentiment: 'XLI Industrial ETF 2026 Forecast Analysis. As of early 2026, XLI
+        was trading around $157-167 per share. The ETF showed strong 2025 performance
+        with a 1-year return of approximately 18-24%. One forecast model projects
+        XLI reaching the following levels through 2026: April 2026: $161.97 (base
+        case), July 2026: $167.86, October 2026: $177.75, January 2027: $197.51. The
+        model also provides lower and upper probability ranges, with more conservative
+        scenarios suggesting prices around $160-180 by year-end 2026. Key Drivers
+        for 2026: The industrials sector is positioned to benefit from several major
+        tailwinds: AI Infrastructure Boom - Industrials will supply critical components
+        for data center expansion, including power equipment, cooling systems, and
+        engineered components.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The analysis highlights strong past performance of the XLI ETF
+            (18-24% return in 2025) and positive forecasts for 2026, driven by favorable
+            market conditions and the AI infrastructure boom, suggesting a bullish
+            outlook for the industrials sector.
+    - sentiment: 'XLI ETF 2026 Market Outlook and 2025 Performance. As of January
+        2026, XLI (Industrial Select Sector SPDR Fund) is trading around $157-167,
+        with assets under management of approximately $24-28 billion. The fund tracks
+        78-83 industrial stocks including major companies like Honeywell, Union Pacific,
+        and GE Aerospace. XLI delivered strong returns in 2025, with a one-year return
+        of approximately 19-24.58%, and year-to-date performance of 7.59-19.06%. Probabilistic
+        forecasts suggest XLI could reach: April 2026: $161.97-$163.28, July 2026:
+        $167.86-$177.75, October 2026: $177.75-$187.63, January 2027: $197.51 (bullish
+        scenario) to $179.18-$160.86 (base/bearish scenarios).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The XLI ETF has shown strong performance in 2025 with returns
+            between 19-24.58%, and positive forecasts suggest continued growth into
+            2026, indicating a bullish outlook. The projected price increases further
+            support a favorable sentiment towards the fund.
+    - sentiment: 'XLI Industrial Sector ETF Performance Outlook. The industrials sector
+        is expected to deliver strong returns in 2025, driven by robust fundamental
+        growth. The sector is anticipated to generate double-digit earnings growth
+        across multiple industries, including aerospace and defense, airlines, services,
+        and transportation. XLI''s portfolio is projected to achieve approximately
+        12% average earnings growth over the next 3-5 years, with potential for dividend
+        increases and price appreciation. Probabilistic forecasts suggest the following
+        price targets for XLI in 2026: April 2026: $161.97 - $158.06, July 2026: $167.86
+        - $163.28, October 2026: $177.75 - $168.58, January 2027: $197.51 - $179.18.'
+      source: Seekingalpha
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.742
+          sentiment_label: strong buy
+          reasoning: The outlook for the industrial sector is very positive, with
+            expectations of strong returns and double-digit earnings growth across
+            multiple industries. Additionally, the projected price targets indicate
+            significant appreciation potential, reinforcing a bullish sentiment.
+    - sentiment: 'XLI ETF 2026 Analyst Forecasts. According to ETF price forecast
+        analysis, XLI is expected to show upward movement through 2026. The probabilistic
+        forecasts indicate three scenarios: Base Case Scenario: April 2026: $167.86,
+        July 2026: $177.75, October 2026: $187.63, January 2027: $197.51. Bullish
+        Scenario: April 2026: $161.97, July 2026: $168.58, October 2026: $173.88,
+        January 2027: $179.18. Conservative Scenario: April 2026: $154.16, July 2026:
+        $158.70, October 2026: $159.42, January 2027: $160.86. The forecasts are based
+        on current market conditions showing a risk-on environment with low volatility
+        (14.51), contango VIX term structure, cooling inflation (7.60%), and benign
+        credit conditions (0.88).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The analysis indicates a generally positive outlook for the XLI
+            ETF with upward movement expected through 2026 across multiple scenarios,
+            supported by favorable market conditions such as low volatility and cooling
+            inflation, which contribute to a bullish sentiment.
+    - sentiment: Industrial Sector ETF Outlook for 2025-2026. The Industrial sector
+        ETF has underperformed recently after strong gains from "onshoring" and inflation
+        tailwinds in prior years. The sector needs to break above the $145 price level
+        to re-establish an uptrend; failure to do so would signal a bearish technical
+        position. Internal breadth remains neutral, with the sector requiring stocks
+        above their 50-day moving average to reach 90% to confirm a bull trend. The
+        broader 2026 ETF market outlook is "uncomfortably bullish," with valuations
+        stretched and geopolitical risks emerging. For cyclical sectors like industrials,
+        monetary easing and deregulation are creating opportunities in small caps
+        and banks.
+      source: Etfdigi
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The outlook indicates a mixed sentiment with recent underperformance
+            of the industrial sector ETF contrasted by potential opportunities from
+            monetary easing and deregulation. The need to break above the $145 price
+            level and the mention of geopolitical risks contribute to a cautious stance,
+            resulting in a neutral sentiment score.
+    - sentiment: 'XLI Industrial ETF 2026 Outlook. XLI (State Street Industrial Select
+        Sector SPDR ETF) has shown strong performance, with a 1-year return of approximately
+        24-26% as of mid-January 2026. The ETF trades around $166-167 per share with
+        $28 billion in assets under management and holds 83 stocks. The industrials
+        sector is entering 2026 with credible market leadership beyond "late-cycle"
+        narratives. Key factors supporting industrials include: AI Infrastructure
+        Boom: Industrials are positioned as beneficiaries of AI capital spending through
+        supplying equipment for data centers—including power equipment, cooling systems,
+        construction services, logistics capacity, and engineered components. Broadening
+        Market Leadership: After years of tech dominance, gains are broadening into
+        "real economy" beneficiaries.'
+      source: Ts2
+      author: ''
+      date: '2026-01-15'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The text highlights strong performance of the XLI ETF with a
+            24-26% return and emphasizes positive factors such as the AI infrastructure
+            boom and broadening market leadership, indicating a bullish outlook for
+            the industrials sector.
+    - sentiment: 'XLI ETF 2026 Price Target Summary. An ETF price forecast model projects
+        the following scenarios for XLI through 2026: Optimistic scenario: $197.51
+        by January 2027, Base case: $179.18 by January 2027, Conservative scenario:
+        $160.86 by January 2027. Mid-year 2026 projections show: $177.75 (optimistic)
+        by October 2026, $168.58 (base case) by October 2026, $159.42 (conservative)
+        by October 2026. An implied analyst target price of $154 has been calculated
+        based on weighted average analyst 12-month forward targets for XLI''s underlying
+        holdings. As of late January 2025, XLI was trading around $164.14, with a
+        52-week range of $112.75 to $167.20.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The price target scenarios for XLI show a range of potential
+            outcomes, with the optimistic scenario suggesting growth but the conservative
+            scenario indicating a decline. The current trading price is near the lower
+            end of the projected range, leading to a mixed outlook overall.
+    - sentiment: 'SPDR Industrial Select Sector ETF (XLI) 2025-2026 Forecast. The
+        XLI ETF shows mixed near-term forecasts. For the next 30 days, analysts project
+        a -13.32% decrease with an average price target of $136.53 (from a current
+        price around $157.50). However, the 12-month price target averages $146.08,
+        representing a -7.25% downside. XLI is a passively managed ETF tracking the
+        Industrial Select Sector Index, covering U.S. industrial companies including
+        manufacturing, construction, aerospace and defense, machinery, and transportation.
+        The fund has: Expense ratio: 0.08-0.09%, Assets under management: $27.41 billion,
+        Dividend yield: 1.21%. Recent analysis suggests mixed prospects. Analysts
+        note the industrials sector has underperformed but may be nearing recovery,
+        with earnings growth potential cited as a driver for healthy returns.'
+      source: Stockscan
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.325
+          sentiment_label: neutral
+          reasoning: The forecast indicates a significant near-term decline of -13.32%
+            and a 12-month downside of -7.25%, suggesting bearish sentiment. However,
+            the mention of potential recovery and earnings growth in the industrial
+            sector introduces a balanced perspective, leading to a neutral overall
+            sentiment.
+    - sentiment: 'XLI Industrial ETF 2025-2026 Investment Outlook. As of January 30,
+        2026, XLI was trading at $164.74 with a fair performance rating over the prior
+        90 days and less than a 9% chance of financial distress. The industrials sector
+        is expected to deliver strong returns in 2025, driven by double-digit earnings
+        growth across aerospace & defense, airlines, services, and transportation
+        industries. XLI''s portfolio is anticipated to generate 12% average earnings
+        growth over the next 3-5 years, with significant potential for dividend hikes
+        and price appreciation. XLI offers several strengths compared to peers: a
+        robust portfolio structure, low expense ratio, high liquidity, and targeted
+        exposure to large-cap industrial stocks.'
+      source: Seekingalpha
+      author: ''
+      date: '2026-01-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The outlook for the XLI Industrial ETF is very positive, with
+            expectations of strong returns driven by double-digit earnings growth
+            and a solid portfolio structure. The anticipated 12% average earnings
+            growth and potential for dividend hikes further support a bullish sentiment.
+    - sentiment: 'XLI Industrial Sector ETF: 2025-2026 Outlook. The industrial sector
+        is entering 2026 with significant tailwinds. Key forecasters expect the XLI
+        ETF to benefit from two major drivers: AI Infrastructure Boom - Industrials
+        are positioned as "picks and shovels" suppliers for the AI capex cycle, providing
+        power equipment, cooling systems, construction services, logistics capacity,
+        and engineered components needed for data centers. Infrastructure & Policy
+        Push - A major catalyst includes infrastructure investment reshaping supply
+        chains, defense priorities, and freight networks, exemplified by a proposed
+        $85 billion coast-to-coast rail merger. After years of underperformance, industrials
+        stocks are regaining market leadership in late 2025.'
+      source: Ts2
+      author: ''
+      date: '2025-12-20'
+      sentiment_score: 0.0
+    - sentiment: 'XLI Industrial ETF 2026 Performance Metrics. Performance Metrics
+        (as of late December 2025): 1-Year Return: 19-24.58% (depending on measurement
+        date), YTD 2025 Return: 7.59-19.06%, Assets Under Management: ~$25-28 billion,
+        Beta: 1.05 (moves slightly more than broader market), Dividend Yield: ~1.20-1.27%.
+        The sector enters 2026 with genuine momentum from both structural trends and
+        broadened market participation beyond technology stocks. Investor sentiment
+        has shifted beyond narrow mega-cap tech winners to "real economy" beneficiaries,
+        with the industrial sector increasingly viewed as a bridge between AI spending
+        and infrastructure development.'
+      source: Finviz
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0

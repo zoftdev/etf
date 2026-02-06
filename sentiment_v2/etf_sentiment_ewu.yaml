@@ -1,0 +1,216 @@
+sentiment_data:
+- etf: EWU
+  name: iShares MSCI United Kingdom
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'EWU ETF 2025-2026 Outlook. EWU (iShares MSCI United Kingdom ETF)
+        was trading at $41.74 in late 2025, up approximately 13.07% over the past
+        year. Specific predictions for EWU are limited in the available results. However,
+        broader market guidance for 2026 provides some context: Global Markets: Major
+        banks offer cautiously optimistic views for 2026. Citigroup expects "noticeable
+        gains" in the first half of 2026 driven by accelerating profit growth and
+        stable valuations. UBS projects high single-digit to low double-digit gains
+        for global equities, supported by technology investments, productivity improvements,
+        and lower interest rates.'
+      source: Ishares
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.558
+          sentiment_label: buy
+          reasoning: The text indicates a positive outlook with a 13.07% increase
+            in EWU over the past year and cautiously optimistic predictions from major
+            banks for 2026, suggesting potential for noticeable gains driven by profit
+            growth and favorable economic conditions.
+    - sentiment: 'EWU United Kingdom ETF Forecast Overview. As of early 2026, EWU
+        (iShares MSCI United Kingdom ETF) is trading around $44.46 with a 1-year return
+        of 35.04%. The ETF has gained 10.38% year-to-date and recently hit new 52-week
+        highs in May 2025. Positive Drivers: Bank of England rate cuts: The BOE cut
+        rates in early February 2025, with markets pricing in an additional 50 basis
+        points of cuts for 2025. U.S.-U.K. trade deal optimism: Potential exemption
+        from U.S. tariffs could provide significant economic boost, particularly as
+        the U.K. could avoid tariffs imposed on the EU. Strong dividend yield: The
+        ETF offers a 3.69-3.77% dividend yield. Valuation appeal: The U.K. is among
+        the cheapest equity markets globally.'
+      source: Portfoliopilot
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.684
+          sentiment_label: buy
+          reasoning: The text highlights several positive indicators such as a strong
+            1-year return of 35.04%, year-to-date gains of 10.38%, and recent 52-week
+            highs. Additionally, the Bank of England's rate cuts and optimism surrounding
+            a U.S.-U.K. trade deal further bolster a bullish outlook for the ETF.
+    - sentiment: EWU ETF Price Prediction for 2025-2026. As of September 2025, EWU
+        (iShares MSCI United Kingdom ETF) is trading around $41.55-$45.09 and has
+        outperformed the S&P 500 in 2025. Technical analysis suggests bullish momentum,
+        with predictions targeting the mid-$40s based on a bullish breakout pattern.
+        The ETF shows signs of an upward trend with a 3-day advance pattern indicating
+        further price growth potential. EWU remains attractive with a low P/E ratio
+        of 13.5, a 3.5% dividend yield, and strong liquidity. The large-cap, financials-heavy
+        portfolio benefits from a weaker US dollar.
+      source: Seekingalpha
+      author: ''
+      date: '2025-09-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights strong bullish momentum and positive technical
+            indicators for the EWU ETF, including its outperformance against the S&P
+            500, a favorable P/E ratio, and a solid dividend yield, suggesting a positive
+            outlook for future price growth.
+    - sentiment: 'EWU ETF Investment Outlook for 2025-2026. EWU has shown strong momentum
+        in 2025, outperforming the S&P 500 with gains of over 30% year-to-date. The
+        ETF remains attractively valued with a low P/E ratio of 13.5 and a dividend
+        yield of approximately 3.5-3.7%. Monetary Policy: The Bank of England has
+        cut interest rates three times in six months, with markets pricing in an additional
+        50 basis points of rate cuts for 2025. This supports valuations and economic
+        growth. Trade Outlook: Growing optimism around a potential U.S.-U.K. trade
+        deal could exempt the U.K. from U.S. tariffs, providing a significant economic
+        boost and differentiating the U.K. from EU exposure.'
+      source: Seekingalpha
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.688
+          sentiment_label: buy
+          reasoning: The EWU ETF has shown strong performance with over 30% gains
+            year-to-date and remains attractively valued, supported by favorable monetary
+            policy and positive trade outlook, indicating a bullish sentiment overall.
+    - sentiment: EWU United Kingdom ETF 2025-2026 Outlook. EWU has delivered strong
+        returns in 2025, gaining 35% year-to-date as of early January 2026, significantly
+        outperforming the S&P 500. The ETF has rebounded from December 2024 lows and
+        is approaching 52-week highs. EWU offers attractive valuations with a P/E
+        ratio of 13.5 and a dividend yield around 3.7%, providing robust income alongside
+        growth potential. The ETF holds 83-87 stocks with top holdings including AstraZeneca
+        (9.5%), HSBC (8.3%), and Shell (7.3%).
+      source: Seekingalpha
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights strong returns of 35% year-to-date and attractive
+            valuations, indicating a positive outlook for the EWU ETF. The mention
+            of robust income through dividends and growth potential further supports
+            a bullish sentiment.
+    - sentiment: 'MSCI United Kingdom 2026 Outlook. UK equity managers are optimistic
+        about 2026 performance. A survey by the Association of Investment Companies
+        found that two-thirds of investment trust managers believe the FTSE 100 will
+        climb above 10,000 points in 2026, compared with 24% expecting it to remain
+        between 9,000-10,000 points. Key Drivers for Growth: Interest Rate Cuts: With
+        moderating inflation and interest rates expected to fall in 2026, many UK
+        equity managers are expecting the rally to continue into the new year. Mid-Cap
+        Opportunity: Mid-cap stocks in the FTSE 250 index are positioned as key growth
+        drivers. In an environment of declining interest rates, these more cyclical
+        stocks have historically outperformed the large-cap FTSE 100.'
+      source: Morningstar
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text reflects a strong optimism among UK equity managers
+            regarding the FTSE 100's potential to exceed 10,000 points, supported
+            by expected interest rate cuts and the positive outlook for mid-cap stocks,
+            indicating a bullish sentiment overall.
+    - sentiment: 'EWU UK Index ETF: 2025 Performance and 2026 Outlook. EWU has performed
+        strongly in 2025, outperforming the S&P 500 with gains of approximately 35%
+        year-to-date as of early January 2026. The ETF has benefited from strong momentum,
+        reasonable valuations, and high shareholder yields. Technical analysis suggests
+        further upside potential, with bullish breakout patterns targeting the mid-$40s.
+        Analysts maintain a "buy" rating on the ETF, citing: Bank of England rate
+        cuts (three cuts in six months through early 2025, with markets pricing 50+
+        basis points of additional cuts for 2025), Potential U.S.-U.K. trade deal
+        that could exempt the UK from tariffs, Weaker US dollar benefiting UK equities.'
+      source: Zacks
+      author: ''
+      date: '2026-01-07'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.754
+          sentiment_label: strong buy
+          reasoning: The text highlights strong performance in 2025 with a 35% gain,
+            positive technical analysis suggesting further upside, and favorable macroeconomic
+            factors such as Bank of England rate cuts and a potential U.S.-U.K. trade
+            deal, all contributing to a very bullish outlook.
+    - sentiment: 'EWU UK ETF 2025-2026 Outlook. EWU has performed strongly in 2025,
+        gaining approximately 31-35% year-to-date. The ETF outperformed the S&P 500,
+        driven by strong momentum, reasonable valuation, and high shareholder yield.
+        Key Positive Factors for 2026: Monetary Policy: The Bank of England cut interest
+        rates in early February 2025, marking the third cut in six months, with markets
+        pricing in an additional 50 basis points of rate cuts for 2025. Trade Prospects:
+        President Trump signaled a strong possibility of a U.S.-U.K. trade deal, which
+        could exempt the U.K. from tariffs and provide significant economic boost.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.684
+          sentiment_label: buy
+          reasoning: The strong year-to-date performance of the EWU UK ETF (31-35%
+            gain) and positive indicators such as favorable monetary policy and potential
+            trade deals contribute to a bullish outlook for 2026, justifying a score
+            in the 'buy' range.
+    - sentiment: 'EWU ETF 2026 investment outlook 2025. EWU has demonstrated strong
+        performance in 2025, outperforming the S&P 500 with a year-to-date return
+        of approximately 33-35%. The ETF is approaching decade-plus highs, with technical
+        analysis pointing to further upside targeting the mid-$40s. Key Drivers for
+        2025-2026: Positive factors: Bank of England rate cuts (the third cut in six
+        months occurred in early February 2025), with markets pricing in an additional
+        50 basis points of cuts for 2025, Weaker US dollar benefiting the ETF''s holdings,
+        Potential optimism around a US-UK trade deal, which could exempt the UK from
+        reciprocal tariffs affecting other regions.'
+      source: Seekingalpha
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights strong performance of the EWU ETF with a
+            33-35% return and positive technical analysis suggesting further upside.
+            Additionally, favorable macroeconomic factors, such as Bank of England
+            rate cuts and a weaker US dollar, contribute to an overall bullish outlook.
+    - sentiment: 'EWU United Kingdom ETF 2026 forecast 2025. EWU has performed strongly
+        in 2025, gaining approximately 31-35% year-to-date. The ETF outperformed the
+        S&P 500, driven by strong momentum, reasonable valuation, and high shareholder
+        yield. Key Positive Factors for 2026: Monetary Policy: The Bank of England
+        cut interest rates in early February 2025, marking the third cut in six months,
+        with markets pricing in an additional 50 basis points of rate cuts for 2025.
+        Trade Prospects: President Trump signaled a strong possibility of a U.S.-U.K.
+        trade deal, which could exempt the U.K. from tariffs and provide significant
+        economic boost. Valuation: EWU remains attractive with a low P/E of 13.5 and
+        a 3.5-3.7% dividend yield.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.684
+          sentiment_label: buy
+          reasoning: The text highlights strong performance of the EWU ETF with a
+            31-35% gain in 2025, positive monetary policy changes, and favorable trade
+            prospects, indicating a bullish outlook for 2026. The attractive valuation
+            metrics further support a positive sentiment, leading to a strong buy
+            recommendation.

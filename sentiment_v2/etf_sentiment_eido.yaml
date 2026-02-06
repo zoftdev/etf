@@ -1,0 +1,231 @@
+sentiment_data:
+- etf: EIDO
+  name: iShares MSCI Indonesia
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Indonesia (EIDO) ETF Price Forecast. According to probabilistic
+        forecasts based on historical price data, EIDO is projected to trade in the
+        following ranges through early 2027: April 2026: $18.75-$19.54, July 2026:
+        $18.93-$19.82, October 2026: $18.52-$20.50, January 2027: $18.32-$21.86. As
+        of January 16, 2026, EIDO was trading at $19.14 with assets under management
+        of $362.2 million.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-16'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast presents a range of projected prices for EIDO, indicating
+            some stability with slight upward potential, but lacks strong bullish
+            or bearish indicators. The trading price is relatively stable around $19,
+            suggesting a balanced outlook without significant optimism or pessimism.
+    - sentiment: 'EIDO ETF 2025-2026 Outlook. One forecast model projects EIDO price
+        targets throughout 2026: April 2026: $19.82, July 2026: $20.50, October 2026:
+        $21.18, January 2027: $21.86. This represents a base case scenario with modest
+        upside potential from the January 2026 price of $19.14.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast indicates a gradual increase in EIDO's price targets
+            over the next couple of years, suggesting some positive sentiment. However,
+            the term 'modest upside potential' implies a cautious outlook, balancing
+            the overall sentiment towards neutrality.
+    - sentiment: 'EIDO Indonesia ETF Forecast Summary. One forecasting model projects
+        EIDO prices through early 2027, with three scenarios: Bullish case: Rising
+        from $19.54 (April 2026) to $21.86 (January 2027), Base case: Modest growth
+        from $19.38 (April 2026) to $20.09 (January 2027), Bearish case: Declining
+        from $18.93 (April 2026) to $18.32 (January 2027). As of January 2026, EIDO
+        was trading at $19.14 with an annualized volatility of 26.69%.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast presents a range of scenarios for EIDO prices, with
+            a bullish case indicating potential growth but also a bearish case suggesting
+            a decline. The overall mixed outlook and the modest growth in the base
+            case lead to a neutral sentiment assessment.
+    - sentiment: 'EIDO ETF Price Predictions for 2025-2026. One forecast model projects
+        the following price targets through January 2027: April 2026: $19.82, July
+        2026: $20.50, October 2026: $21.18, January 2027: $21.86. An alternative scenario
+        shows more conservative growth to around $20.09 by January 2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.25
+          sentiment_label: buy
+          reasoning: The forecast models suggest a gradual increase in price targets
+            for the EIDO ETF, indicating a positive outlook for growth. Even the conservative
+            scenario reflects a slight upward trend, which supports a bullish sentiment
+            overall.
+    - sentiment: 'EIDO ETF Investment Outlook. Probabilistic forecasts predict a general
+        upward trend through early 2027: April 2026: $19.82, July 2026: $20.50, October
+        2026: $21.18, January 2027: $21.86. However, analyst price targets are significantly
+        more bearish, with an average target of $12.68, representing a -27.68% decrease
+        from current levels.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.457
+          sentiment_label: sell
+          reasoning: The probabilistic forecasts suggest a potential upward trend,
+            but the significantly lower analyst price targets indicate a strong bearish
+            sentiment, reflecting a negative outlook overall. The average target of
+            $12.68 represents a substantial decline from current levels, outweighing
+            the positive forecasts.
+    - sentiment: 'iShares MSCI Indonesia ETF (EIDO) Price Forecasts for 2025-2026.
+        According to probabilistic forecasting analysis, EIDO is expected to reach
+        the following levels by 2026: April 2026: $19.82, July 2026: $20.50, October
+        2026: $21.18, January 2027: $21.86. The base case scenario shows gradual appreciation,
+        while bullish and bearish scenarios range from $18.32 to $21.86 by January
+        2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.375
+          sentiment_label: buy
+          reasoning: The forecast indicates a gradual appreciation of the iShares
+            MSCI Indonesia ETF (EIDO) with expected price increases over the specified
+            period, suggesting a positive outlook. Although there are bearish scenarios,
+            the overall trend points towards growth, supporting a bullish sentiment.
+    - sentiment: 'EIDO 2026 Forecast Summary. 2026 probabilistic forecast: Based on
+        historical price patterns, expected price ranges for 2026 are: April 2026:
+        $19.38-$19.82, July 2026: $19.61-$20.50, October 2026: $18.52-$21.18. As of
+        April 2025, technical analysis suggests longer-term buy signal near $15.58
+        with target of $17.56.'
+      source: Stockscan
+      author: ''
+      date: '2025-04-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.423
+          sentiment_label: buy
+          reasoning: The forecast indicates a positive outlook with expected price
+            ranges showing potential growth above current levels, and a technical
+            analysis suggesting a buy signal at $15.58 with a target of $17.56, reflecting
+            bullish sentiment.
+    - sentiment: 'EIDO Indonesia ETF 2025-2026 Outlook. One forecasting model projects
+        EIDO could appreciate modestly through 2026, with probabilistic price targets
+        showing potential ranges: April 2026: $19.54-$18.75, July 2026: $19.82-$18.93,
+        October 2026: $20.50-$18.73, January 2027: $21.86-$18.32. However, another
+        analyst forecast suggests more pessimistic near-term expectations, with an
+        average price target of $12.68, representing a -27.68% decline from current
+        levels.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.175
+          sentiment_label: sell
+          reasoning: While there is a modest appreciation forecast for EIDO through
+            2026, the significant negative outlook from another analyst, projecting
+            a -27.68% decline, heavily influences the overall sentiment, leading to
+            a bearish outlook.
+    - sentiment: 'EIDO ETF 2026 Market Analysis. Probabilistic forecasts suggest EIDO
+        could reach price targets ranging from $18.32-$21.86 by January 2027, depending
+        on market conditions: Bull case: $21.86 by January 2027, Base case: $20.09
+        by January 2027, Bear case: $18.32 by January 2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.3
+          sentiment_label: neutral
+          reasoning: The analysis presents a range of price targets for EIDO ETF,
+            indicating uncertainty in market conditions. While the bull case suggests
+            a positive outlook, the presence of a bear case shows potential downside
+            risks, leading to a balanced sentiment overall.
+    - sentiment: 'EIDO ETF 2026 Price Target Summary. According to one forecast model,
+        EIDO is projected to reach the following price levels throughout 2026: April
+        2026: $19.82, July 2026: $20.50, October 2026: $21.18, January 2027: $21.86.
+        This represents an upward trend from the January 2026 price of $19.14.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The forecast indicates a consistent upward trend in the price
+            of EIDO ETF throughout 2026, with projected increases from $19.14 to $21.86,
+            suggesting a positive outlook for the asset.
+    - sentiment: 'EIDO Indonesia Index ETF Forecast. Based on probabilistic forecasts
+        as of January 2026, EIDO is projected to reach the following price levels
+        by the end of 2026: Bullish scenario (APR-26 to JAN-27): $19.54 → $21.86,
+        Base case scenario: $19.14 → $20.09, Bearish scenario: $18.75 → $18.32. The
+        ETF was trading at $19.14 as of January 16, 2026.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-16'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.3
+          sentiment_label: neutral
+          reasoning: The forecast presents a range of scenarios with a bullish outlook
+            suggesting potential growth, but also includes a bearish scenario indicating
+            possible declines. The mixed projections lead to a balanced sentiment
+            overall.
+    - sentiment: 'iShares MSCI Indonesia ETF (EIDO) 2025-2026 Outlook. Analyst forecasts
+        differ notably: Short-term outlook (30 days): Bearish, with average analyst
+        price target of $12.68 representing a -27.68% decline from the $17.54 price
+        point. Probabilistic forecasts suggest potential range from $18.32 to $21.86
+        by January 2027, with mid-case estimate around $20.09.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.575
+          sentiment_label: sell
+          reasoning: The short-term outlook is bearish with a significant expected
+            decline of -27.68% from the current price, indicating a negative sentiment.
+            Although there are some positive probabilistic forecasts for the longer
+            term, the strong bearish sentiment in the short term outweighs these factors.
+    - sentiment: EIDO ETF 2026 Investment Outlook. One analyst model projects modest
+        upside through 2026, with price targets ranging from $18.32 to $21.86 by January
+        2027, with the base case scenario reaching $20.09. However, another forecast
+        shows a more pessimistic outlook with an average analyst price target of $12.68,
+        representing a -27.68% decline from current levels.
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+    - sentiment: 'EIDO Indonesia ETF 2026 Forecast Summary. According to probabilistic
+        forecasting models, EIDO is expected to trade in the following ranges through
+        early 2027: April 2026: $19.38-$19.82, July 2026: $19.61-$20.50, October 2026:
+        $19.85-$21.18, January 2027: $20.09-$21.86. The base case scenario projects
+        prices rising from the current level of around $19.14 to approximately $21.86
+        by January 2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0

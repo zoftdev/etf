@@ -1,0 +1,287 @@
+sentiment_data:
+- etf: EIS
+  name: iShares MSCI Israel
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Israel ETF (EIS) Forecast for 2025-2026. As of early
+        February 2026, EIS trades around $119-121, with strong year-to-date performance
+        of 8.28% and a 1-year return of 47.55%. The ETF has $604-777 million in assets
+        under management with 120 holdings. Forecasts show mixed signals: 30-day outlook
+        is negative with an average analyst target of $57.49 (representing a -39.26%
+        decline from current levels), while 12-month target averages $63.35, implying
+        -33.08% downside. However, these forecasts appear to be based on older analyst
+        estimates and may not reflect current market conditions.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.267
+          sentiment_label: sell
+          reasoning: The strong year-to-date performance and high 1-year return are
+            positive indicators, but the negative short-term and long-term forecasts
+            suggest significant declines, leading to an overall bearish sentiment
+            despite the current strong performance.
+    - sentiment: 'EIS - iShares MSCI Israel ETF Stock Price Forecast 2025, 2026. The
+        iShares MSCI Israel ETF (EIS) shows strong recent performance with a 1-year
+        return of 47.55% and 3-year return of 28.25%. As of early 2026, EIS was trading
+        around $118.78-$119.14 per share. Analyst forecasts for EIS show mixed outlooks:
+        12-month average target of $63.35 (representing -33.08% downside from recent
+        levels), and 30-day forecast with average target of $57.49 (-39.26% from the
+        price of $94.66 at the time of that forecast). These bearish short-term forecasts
+        contrast with the ETF''s strong historical performance.'
+      source: Stockscan
+      author: ''
+      date: '2026-01-23'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The strong historical performance of the ETF (47.55% return over
+            1 year) is countered by significantly bearish short-term forecasts indicating
+            potential declines of over 33% to 39%. This mixed outlook results in a
+            neutral sentiment overall.
+    - sentiment: 'iShares MSCI Israel ETF 2026 Investment Outlook. While iShares''
+        2026 Investment Directions outlook doesn''t specifically address Israel, the
+        broader market guidance suggests favorable conditions that could benefit the
+        Israeli market: Macro backdrop: Above-trend growth, easing policy, and accelerating
+        productivity are expected to characterize 2026, favoring selective risk taking.
+        Key themes: AI remains a high conviction theme, with improving fundamentals
+        elsewhere supporting diversification. The Israeli market''s strong 2025 performance
+        and tech/financial sector composition align with iShares'' emphasis on AI-driven
+        productivity gains and selective equity exposure for 2026.'
+      source: Ishares
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights favorable macroeconomic conditions, strong
+            performance in 2025, and a focus on AI-driven productivity, all of which
+            contribute to a positive outlook for the Israeli market in 2026. The overall
+            tone is optimistic, suggesting a bullish sentiment.
+    - sentiment: iShares MSCI Israel ETF (EIS) 2025 Performance Overview. The iShares
+        MSCI Israel ETF delivered strong returns in 2025, with NAV performance of
+        45.59% and benchmark performance of 46.76%. Year-to-date through January 2026,
+        the fund showed 9.44% returns. The fund has $604.20 million in net assets
+        with 111 securities, expense ratio of 0.59%, and 30-Day SEC Yield of 0.93%.
+        Top sectors include Financials (31.80%), Information Technology (25.93%),
+        and Health Care (9.63%).
+      source: Ishares
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.754
+          sentiment_label: strong buy
+          reasoning: The iShares MSCI Israel ETF demonstrated impressive performance
+            with a 45.59% NAV return and a 46.76% benchmark return in 2025, along
+            with a solid year-to-date return of 9.44% in early 2026. The strong returns
+            and substantial net assets indicate a positive outlook, justifying a strong
+            buy sentiment.
+    - sentiment: 'Israel Stock Market Forecast for 2025-2026. Trading Economics forecasts
+        a declining Israeli stock market through 2026, with the index expected to
+        fall from current levels of around 4,107 points to approximately 3,555 points
+        by Q4 2026. The forecast shows gradual quarterly declines: Q1/26 at 3,920
+        points, Q2/26 at 3,769 points, Q3/26 at 3,660 points, and Q4/26 at 3,555 points.
+        The forecasts are based on improved geopolitical conditions following the
+        October 2025 ceasefire. The Bank of Israel expects GDP growth of 2.8% in 2025
+        and 5.2% in 2026, with inflation expected at 1.7% and interest rates at 3.5%
+        by Q4 2026.'
+      source: Tradingeconomics
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.646
+          sentiment_label: strong sell
+          reasoning: The forecast indicates a significant decline in the Israeli stock
+            market, with the index expected to drop from 4,107 points to 3,555 points
+            by Q4 2026. Despite some positive economic indicators like GDP growth,
+            the overall sentiment is strongly negative due to the anticipated market
+            downturn.
+    - sentiment: Israel Equity ETF Market Forecast 2025-2026. The Israeli equity ETF
+        market is projected to reach US$424.37 million in 2025, with an expected annual
+        growth rate (CAGR) of 6.14% from 2025-2027, resulting in a projected total
+        of US$478.11 million by 2027. The iShares MSCI Israel ETF (EIS), the primary
+        Israel-focused equity ETF, has shown strong recent performance with a 1-year
+        return of 47.55%, 3-year return of 28.25%, and 5-year return of 14.62%. As
+        of late January 2026, EIS was trading around $118.78-$119.14 per share.
+      source: Statista
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The forecast indicates a positive growth trajectory for the Israeli
+            equity ETF market, with a projected CAGR of 6.14% and strong recent performance
+            of the iShares MSCI Israel ETF, which has shown impressive returns over
+            multiple time frames. This suggests a bullish outlook on the market.
+    - sentiment: 'EIS iShares MSCI Israel ETF 2026 Performance Prediction. The EIS
+        ETF is currently trading around $118-119, with strong year-to-date performance
+        showing approximately 8.28% gains. Over the past year, the ETF has delivered
+        47.55% returns, and over three years has returned 28.25%. Analyst predictions
+        for EIS show mixed outlooks: 30-day forecast is generally negative with an
+        average analyst price target of $57.49, representing a -39.26% decrease from
+        current levels, while 12-month target averages $63.35, indicating -33.08%
+        downside. However, these bearish forecasts appear inconsistent with the fund''s
+        recent strong performance.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The EIS ETF shows strong historical performance with significant
+            gains over various time frames, but the mixed analyst forecasts indicate
+            a potential decline, leading to a balanced outlook overall. The strong
+            past performance contrasts with the bearish short-term predictions, resulting
+            in a neutral sentiment score.
+    - sentiment: iShares MSCI Israel ETF 2026 Market Outlook. For 2025, iShares recommends
+        "low volatility strategies and defensive equities for the near term" due to
+        expectations of slower growth, elevated volatility, and shifting trade policy.
+        This suggests investors should exercise caution before the more favorable
+        2026 backdrop emerges. The iShares MSCI Israel ETF (EIS) delivered strong
+        returns in 2025, with a 45.59% NAV return and 46.76% benchmark return. The
+        fund achieved a 49.13% one-year return as of the data snapshot.
+      source: Ishares
+      author: ''
+      date: '2025-05-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: While the iShares MSCI Israel ETF showed strong returns in 2025
+            (45.59% NAV return), the recommendation for low volatility strategies
+            and caution due to expectations of slower growth and elevated volatility
+            indicates a mixed outlook for the near term, balancing the positive performance
+            with a more cautious sentiment.
+    - sentiment: Israel Market ETF 2026 Forecast. EIS received an aggregate rating
+        of Moderate Buy with an aggregate price target of $119.32 based on analyst
+        ratings of its holdings. The ETF has 120 total holdings and tracks the MSCI
+        Israel Capped Investable Market Index, managed by BlackRock. As of early 2026,
+        the ETF was trading at approximately $119.32. Earlier forecasts for 2025-2026
+        showed more pessimistic short-term price targets around $63.35 (representing
+        33% downside from certain price points), though these appear to have been
+        revised upward based on subsequent market performance.
+      source: Marketbeat
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.35
+          sentiment_label: buy
+          reasoning: The ETF has received a 'Moderate Buy' rating and a price target
+            that aligns with its current trading price, indicating a positive outlook.
+            Although earlier forecasts were pessimistic, the upward revision based
+            on market performance suggests a more favorable sentiment moving forward.
+    - sentiment: iShares MSCI Israel ETF 2026 Forecast Report. The iShares MSCI Israel
+        ETF (EIS) showed strong performance in 2025, with NAV returns of 45.59% and
+        market price returns of 45.05% for the year. As of February 3, 2026, EIS was
+        trading at $121.32, up 0.50% for the day. The fund has $604.2 million in net
+        assets and shows a beta of 0.9 with annualized historical volatility of 22.66%.
+        The fund tracks the MSCI Israel Capped Investable Market Index and holds 111
+        holdings. Top sectors include Financials (31.80%), Information Technology
+        (25.93%), and Health Care (9.63%).
+      source: Ishares
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The iShares MSCI Israel ETF demonstrated strong performance in
+            2025 with significant NAV and market price returns of over 45%, indicating
+            a bullish outlook. Additionally, the fund's solid net assets and diversified
+            holdings in strong sectors further support a positive sentiment towards
+            its future performance.
+    - sentiment: Israel Stock Market 2026 Forecast Economic Context. The Bank of Israel
+        expects GDP growth of 2.8% in 2025 and 5.2% in 2026, with inflation expected
+        at 1.7% and interest rates at 3.5% by Q4 2026. Israel's high-tech sector,
+        which represents nearly 20% of GDP and 60% of total exports, is expected to
+        continue expanding by 2.5% in both 2025 and 2026. Key economic positives include
+        reduced geopolitical risk premiums, strong trade surpluses, stable foreign
+        direct investment, and expectations of rapid investment growth as supply constraints
+        ease due to reservist releases. Private consumption is forecast to grow 6.0%
+        in 2025 and 3.5% in 2026.
+      source: Org
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.654
+          sentiment_label: buy
+          reasoning: The forecast indicates strong GDP growth (5.2% in 2026) and positive
+            trends in the high-tech sector, alongside robust private consumption growth
+            and reduced geopolitical risks, suggesting a bullish outlook for the Israel
+            stock market.
+    - sentiment: EIS ETF 2026 Investment Research. The iShares MSCI Israel ETF delivered
+        strong returns in 2025, with NAV performance of 45.59% and benchmark performance
+        of 46.76%. Year-to-date through January 2026, the fund showed 9.44% returns.
+        The fund has $604.20 million in net assets with 111 securities, expense ratio
+        of 0.59%, and 30-Day SEC Yield of 0.93%. Valuation metrics include P/E Ratio
+        of 15.82x, Price-to-Book Ratio of 2.58x, Equity Beta (3-year) of 1.23, and
+        Standard Deviation (3-year) of 20.55%.
+      source: Marketwatch
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.684
+          sentiment_label: buy
+          reasoning: The iShares MSCI Israel ETF demonstrated strong past performance
+            with a 45.59% return in 2025 and a solid year-to-date return of 9.44%.
+            Positive valuation metrics and a reasonable expense ratio further support
+            a bullish outlook for the fund.
+    - sentiment: MSCI Israel Index 2026 Forecast. The MSCI Israel Index covers approximately
+        85% of Israel's free float-adjusted market capitalization with 15 constituents
+        as of December 31, 2025. The index's top holdings include Teva Pharma (16.06%),
+        Bank Leumi (14.72%), and Bank Hapoalim (12.69%). One result references the
+        iShares MSCI Israel ETF (EIS), which tracks this index. That source provides
+        a 12-month price target average of $63.35, representing a -33.08% downside
+        from the current price of $94.66. However, this appears to be an ETF-specific
+        forecast rather than an official MSCI index outlook.
+      source: Msci
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+    - sentiment: 'iShares MSCI Israel ETF 2026 Outlook Investment Analysis. The iShares
+        MSCI Israel ETF (EIS) is a passively managed ETF that tracks the MSCI Israel
+        Capped Investable Market Index, providing exposure to Israeli equities. The
+        fund launched in March 2008 and has an expense ratio of 0.59%. As of late
+        January 2026, the ETF shows strong recent performance: YTD return of 9.44%
+        (NAV), with 1-year returns of 47.55% and 3-year annualized returns of 27.07%.
+        The fund''s composition aligns with iShares'' 2026 emphasis on AI-driven productivity
+        gains and selective equity exposure.'
+      source: Ishares
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+    - sentiment: EIS Israel Equity ETF 2026 Forecast. The iShares MSCI Israel ETF
+        (EIS) has shown strong performance in early 2026, with year-to-date returns
+        of approximately 8.28% gains. Over the past year, the ETF has delivered 47.55%
+        returns, and over three years has returned 28.25%. The ETF is currently trading
+        around $118-119 per share. The fund has $777.25 million in assets under management
+        with 120 total holdings. Historical volatility is 22.66% annualized with a
+        beta of 0.9.
+      source: Investing
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0

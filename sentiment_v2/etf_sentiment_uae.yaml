@@ -1,0 +1,267 @@
+sentiment_data:
+- etf: UAE
+  name: iShares MSCI UAE
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: iShares MSCI UAE ETF Forecast 2025-2026. As of late January 2025,
+        the UAE ETF trades around $20.46-$20.49. The ETF has delivered strong recent
+        performance, with a 1-year return of approximately 15-24% and a year-to-date
+        return of around 7%. One forecast source shows the UAE ETF trading at $21.06
+        as of February 3, 2026, representing a modest gain from current levels. Key
+        metrics include Assets Under Management of $157-167 million, Holdings of 47-60
+        companies, 52-week Range of $15.40-$20.78, Dividend Yield of 3.72-3.83%, and
+        Volatility of Low to moderate (annualized historical volatility of 21.21%).
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.487
+          sentiment_label: buy
+          reasoning: The UAE ETF shows strong recent performance with a 1-year return
+            of 15-24% and a positive year-to-date return of around 7%. Additionally,
+            the forecast indicates a modest gain, and the ETF's metrics such as a
+            healthy dividend yield and low to moderate volatility suggest a favorable
+            outlook.
+    - sentiment: UAE ETF Price Predictions for 2026. As of February 3, 2026, the ETF
+        was trading at $21.06, up 0.57% that day. Over the past 12 months (as of May
+        2025), the fund increased 25.16%. Year-to-date returns as of May 2025 were
+        10.33%. Historically, over 52-week periods, the ETF has averaged gains of
+        only 0.3%, with a 36.36% accuracy rate of positive returns. The ETF shows
+        moderate risk with Beta of 0.5 (lower volatility than the market), Historical
+        volatility (annualized) of 21.21%, Maximum drawdown of -60.49%, and Current
+        Sharpe Ratio of 0.06 (annualized).
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The ETF has shown a significant increase of 25.16% over the past
+            year and a modest 10.33% year-to-date return, which are positive indicators.
+            However, the historical average gains are low at 0.3%, and the maximum
+            drawdown of -60.49% indicates substantial risk, leading to a balanced
+            outlook overall.
+    - sentiment: 'UAE ETF 2026 Forecast Analysis. The iShares MSCI UAE ETF (ticker:
+        UAE) has shown solid performance in 2025 with a year-to-date return of 7.17%
+        and a one-year return of 24.17%. The ETF trades at $20.49 with 60 holdings
+        and $167.48 million in assets under management. The ETF has a beta of 0.49
+        with an expected risk of 16.46%, suggesting relatively lower volatility compared
+        to broader market indices. One analyst recommendation suggests a "Strong Sell"
+        rating for a 90-day investment horizon with above-average risk tolerance,
+        citing overvaluation concerns. However, this contrasts with broader market
+        momentum showing UAE emerging markets "racing to new highs" and "outpacing
+        US equity growth" in 2025.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-05-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.267
+          sentiment_label: buy
+          reasoning: The ETF has demonstrated solid performance with a 24.17% one-year
+            return and lower volatility compared to broader markets, indicating a
+            positive outlook. Despite one analyst's 'Strong Sell' recommendation due
+            to overvaluation concerns, the overall market momentum suggests strong
+            growth potential, leading to a bullish sentiment.
+    - sentiment: 'MSCI UAE Index 2025-2026 Summary. The MSCI United Arab Emirates
+        Index had a dividend yield of 4.51% and a P/E ratio of 9.94 as of December
+        31, 2025. The index covers approximately 85% of the UAE equity universe with
+        17 constituents and a market cap of $147.51 billion. Several stocks were expected
+        to be added to the MSCI UAE Standard Index in the May 2025 review, with potential
+        capital inflows: ADNOC Gas expected addition with ~$440 million inflow, Salik
+        Company expected addition with ~$210 million inflow, DEWA low probability
+        addition (price-dependent) with ~$344 million potential inflow.'
+      source: Msci
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.482
+          sentiment_label: buy
+          reasoning: The MSCI UAE Index shows a healthy dividend yield of 4.51% and
+            a low P/E ratio of 9.94, indicating attractive valuations. Additionally,
+            the expected capital inflows from the potential additions to the index
+            suggest positive market sentiment and growth prospects.
+    - sentiment: UAE ETF Market Outlook 2025-2026. ETFs are becoming increasingly
+        central to investment portfolios across the UAE and GCC region. What was once
+        viewed as a passive investment tool is now actively used for portfolio construction,
+        tactical positioning, income generation, and risk management. Capital markets
+        are maturing across the UAE, with regulators showing strong support and exchanges
+        expanding ETF listings as investor sophistication rises among both retail
+        and institutional investors. 2025 is marked as "the year of thematic ETFs"
+        in the GCC market. The iShares MSCI UAE ETF (tracking 60 UAE holdings) showed
+        strong 1-year returns of 20.28% as of March 31, 2025, with 5-year cumulative
+        returns of 13.28% annually.
+      source: Nukoud
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights the increasing importance of ETFs in investment
+            portfolios, strong regulatory support, and impressive returns from the
+            iShares MSCI UAE ETF, indicating a positive outlook for the market. The
+            emphasis on thematic ETFs and rising investor sophistication further reinforces
+            a bullish sentiment.
+    - sentiment: 'UAE Stock Market 2026 Forecast. The UAE economy is expected to grow
+        at 5.3-5.6% in 2026, up from approximately 4.9-5.2% in 2025. This improvement
+        is driven by higher oil production following OPEC+ rollback of restrictions
+        and sustained non-oil sector diversification. The UAE stock market capitalization
+        is projected to reach US$1.05 trillion by 2026, representing 3.2% annual growth
+        from 2025 levels of US$1.02 trillion. Key sectors include Banking & Real Estate:
+        Banks including Abu Dhabi Islamic Bank and Abu Dhabi Commercial Bank continue
+        to deliver solid earnings growth. Dubai''s real estate sector remains a strong
+        growth driver, with companies like Emaar, Aldar, and Union Properties benefiting
+        from strong transaction activity and population growth.'
+      source: Fitchsolutions
+      author: ''
+      date: '2025-12-11'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The forecast for the UAE economy shows positive growth expectations
+            (5.3-5.6% in 2026), driven by increased oil production and diversification
+            efforts. Additionally, the stock market capitalization is projected to
+            grow, and key sectors like banking and real estate are performing well,
+            indicating a bullish outlook.
+    - sentiment: 'UAE Equity ETF Forecast 2025-2026. The iShares MSCI UAE ETF (ticker:
+        UAE) was trading at $20.46 as of late January 2025. The fund has shown solid
+        recent performance, with a 1-year return of 15.26-15.85% and a 5-year return
+        of 8.40-8.41%. As of early February 2026, the ETF was priced at $21.06, representing
+        a modest gain from early 2025 levels. The fund has demonstrated relatively
+        stable volatility with an annualized historical volatility of 21.21% and a
+        low beta of 0.5, indicating lower price movements compared to broader market
+        indices. The UAE ETF tracks the MSCI All UAE Capped Index with 47-60 holdings
+        and approximately $157-167 million in assets under management.'
+      source: Finviz
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The UAE Equity ETF has shown solid recent performance with a
+            1-year return of over 15%, and a modest gain from early 2025 levels, indicating
+            positive momentum. Additionally, the relatively stable volatility and
+            low beta suggest a lower risk profile, further supporting a bullish outlook.
+    - sentiment: 'UAE Market ETF 2025-2026 Outlook. The iShares MSCI UAE ETF (ticker:
+        UAE) has shown solid gains in 2025, with a year-to-date return of 3.22% as
+        of March 31, 2025, and a 1-year return of 20.28%. The ETF was trading at $20.49
+        as of January 30, 2025. eToro has published a "UAE 2026: What investors should
+        know" market outlook guide identifying key stocks and sectors to watch for
+        2026. The iShares MSCI UAE ETF tracks the MSCI All UAE Capped Index with 60
+        holdings and $167.48 million in assets under management. The fund has generated
+        a 3-year annualized return of -0.16% and a 5-year return of 17.75%.'
+      source: Etoro
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.367
+          sentiment_label: buy
+          reasoning: The UAE Market ETF has demonstrated solid gains in 2025 with
+            a year-to-date return of 3.22% and a strong 1-year return of 20.28%, indicating
+            positive momentum. Despite a slight decline in the 3-year annualized return,
+            the overall performance and the outlook for 2026 suggest a bullish sentiment
+            among investors.
+    - sentiment: 'UAE ETF 2026 Price Target. The iShares MSCI UAE ETF (ticker: UAE)
+        is currently trading around $20.49 as of late January 2025. Recent Performance
+        shows 1-year return of 24.17%, Year-to-date (2025) of 7.17%, and 52-week range
+        of $15.40 to $20.78. Based on available forecast data, the ETF was trading
+        at $21.06 as of February 3, 2026, representing a modest increase from early
+        2025 levels. The UAE ETF tracks the MSCI All UAE Capped Index and holds 60
+        total holdings with approximately $167.48 million in assets under management.
+        It offers a dividend yield of 3.83% with a trailing twelve-month dividend
+        of $0.78.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.446
+          sentiment_label: buy
+          reasoning: The UAE ETF has shown strong recent performance with a 1-year
+            return of 24.17% and a year-to-date return of 7.17%. Additionally, the
+            forecast indicates a modest price increase, and the ETF's dividend yield
+            of 3.83% adds to its attractiveness, leading to a positive sentiment overall.
+    - sentiment: 'iShares MSCI UAE ETF - 2025 Forecast Summary. The iShares MSCI UAE
+        ETF (ticker: UAE) was trading around $20.46-$20.49 as of January 2025. The
+        fund has shown strong recent performance with a 1-year return of approximately
+        24-40%. The ETF tracks the MSCI All UAE Capped Index and provides exposure
+        to a broad range of United Arab Emirates equities. Key characteristics include
+        Assets Under Management of ~$145-167 million, Holdings of 54-60 companies,
+        Top holdings of Emaar Properties (14.51%), First Abu Dhabi Bank (11.68%),
+        Emirates Telecom (9.62%), and 30-day SEC Yield of 4.29%. A February 2026 forecast
+        shows the ETF at $21.06, suggesting modest appreciation from early 2025 levels.'
+      source: Blackrock
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.558
+          sentiment_label: buy
+          reasoning: The ETF has shown strong recent performance with a 1-year return
+            of 24-40%, indicating positive momentum. Additionally, the forecast for
+            modest appreciation to $21.06 by February 2026 further supports a bullish
+            outlook.
+    - sentiment: 'UAE Economic Outlook for 2026. The UAE economy is expected to grow
+        at 5.3-5.6% in 2026, up from approximately 4.9-5.2% in 2025. This improvement
+        is driven by higher oil production following OPEC+ rollback of restrictions
+        and sustained non-oil sector diversification. Key sectors and opportunities
+        include Banking & Real Estate: Banks including Abu Dhabi Islamic Bank and
+        Abu Dhabi Commercial Bank continue to deliver solid earnings growth. Dubai''s
+        real estate sector remains a strong growth driver, with companies like Emaar,
+        Aldar, and Union Properties benefiting from strong transaction activity and
+        population growth. Energy & Technology: Oil-linked stocks remain important,
+        though dependent on OPEC+ decisions and global demand. The UAE is positioning
+        itself as a center for AI and technology, with Presight AI emerging as a standout
+        ADX technology name.'
+      source: Indexbox
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The UAE economy is projected to grow between 5.3% and 5.6%, indicating
+            a positive outlook compared to the previous year. Strong performance in
+            key sectors such as banking and real estate, along with diversification
+            efforts and advancements in technology, further support a bullish sentiment.
+    - sentiment: 'UAE ETF Investment Research 2026. The iShares MSCI UAE ETF (ticker:
+        UAE) tracks the MSCI All UAE Capped Index and provides exposure to UAE equities.
+        Launched on April 29, 2014, the fund has 47-55 holdings with net assets of
+        approximately $68-169 million. As of late January 2025, the ETF showed strong
+        performance with a 1-year return of approximately 20.28% (NAV) and YTD returns
+        around 3.22%. Top holdings include Emaar Properties (18.43%), First Abu Dhabi
+        Bank (13.13%), Emirates Telecom (12.27%), Abu Dhabi Commercial Bank (4.62%),
+        and Emirates NBD (4.61%). The fund has an expense ratio of 59 basis points
+        and offers a dividend yield of 3.72-5.2% (30-day SEC yield).'
+      source: Morningstar
+      author: ''
+      date: '2025-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The ETF demonstrates strong performance with a 1-year return
+            of approximately 20.28% and positive YTD returns of 3.22%. Additionally,
+            the presence of significant top holdings and a reasonable expense ratio
+            further supports a bullish outlook on the UAE equities.

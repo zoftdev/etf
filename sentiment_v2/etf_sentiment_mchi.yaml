@@ -1,0 +1,180 @@
+sentiment_data:
+- etf: MCHI
+  name: iShares MSCI China
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI China (MCHI) ETF Forecast for 2025-2026. According
+        to ETF Price Forecast data (as of January 8, 2026), MCHI had a price of $62.28
+        with probabilistic forecasts showing three scenarios: Bullish scenario: $64.52
+        (April 2026) → $87.25 (January 2027), Base case: $62.34 (April 2026) → $77.01
+        (January 2027), Bearish scenario: $60.16 (April 2026) → $66.77 (January 2027).
+        The mid-range forecast suggests potential movement toward the mid-$70s by
+        late 2026/early 2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-08'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.3
+          sentiment_label: neutral
+          reasoning: The forecast presents a balanced view with a bullish scenario
+            suggesting growth to $87.25, while the bearish scenario indicates a lower
+            price of $60.16. The mid-range forecast around the mid-$70s reflects cautious
+            optimism, resulting in a neutral sentiment overall.
+    - sentiment: 'MCHI ETF 2025-2026 Outlook. According to probabilistic forecasts
+        based on historical pricing data, MCHI is expected to show the following trajectory
+        through 2026: April 2026: $64.52 (base case), July 2026: $68.52, October 2026:
+        $74.76, January 2027: $87.25. The forecast includes upside and downside scenarios,
+        with ranges from $60.16 to $81.00 by October 2026. The current market backdrop
+        is characterized as neutral, with moderate volatility (15.45), a contango
+        VIX term structure, a yield curve indicating recession risk (-54.72%), cooling
+        inflation (9.60%).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast shows a gradual increase in MCHI's price over the
+            next few years, suggesting a positive outlook. However, the current market
+            backdrop is described as neutral with moderate volatility and recession
+            risks, which balances the overall sentiment to a neutral stance.
+    - sentiment: 'MCHI China ETF Forecast for 2025-2026. According to probabilistic
+        forecasting models, MCHI is expected to show upward movement through 2026:
+        April 2026: $64.52 (most probable scenario), July 2026: $68.52, October 2026:
+        $74.76, January 2027: $87.25. As of late April 2025, MCHI was trading around
+        $51-52 with the following recent performance: Year-to-date (2025): +10.45%,
+        1-year return: +21.02%, 3-year return: 4.49%, 5-year return: -1.31%.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-04-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.487
+          sentiment_label: buy
+          reasoning: The forecast indicates a consistent upward trend in MCHI's price,
+            with significant expected increases by 2027. Additionally, the positive
+            year-to-date and 1-year returns suggest a bullish sentiment, despite the
+            mixed longer-term performance.
+    - sentiment: MCHI ETF Investment Outlook for 2025-2026. MCHI (iShares MSCI China
+        ETF) tracks Chinese equities in the top 85% of market capitalization, including
+        H-shares and B-shares. It has an expense ratio of 0.59% and trades on NASDAQ
+        with substantial liquidity ($115M average 30-day trading volume). Recent performance
+        shows YTD returns of +16.1% (as of March 2025), with a 1-year return of +40.1%.
+        MCHI demonstrates notable sensitivity to credit conditions (+5.4) and growth
+        factors (+2.3), while showing negative correlation to interest rates (-1.4)
+        and liquidity (-3.4).
+      source: Portfoliopilot
+      author: ''
+      date: '2025-03-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The MCHI ETF shows strong recent performance with YTD returns
+            of +16.1% and a 1-year return of +40.1%, indicating a bullish outlook.
+            Additionally, the substantial liquidity and positive sensitivity to growth
+            factors further support a favorable investment sentiment.
+    - sentiment: 'MCHI 2026 Forecast Summary. According to ETF price forecast data,
+        MCHI is projected to trade at the following levels throughout 2026: April
+        2026: $64.52 - $68.52, July 2026: $68.52 - $74.76, October 2026: $73.32 -
+        $81.00, January 2027: $77.01 - $87.25. The forecast shows three scenario bands
+        ranging from conservative to bullish outcomes. PortfolioPilot''s 12-month
+        forecast indicates a beta of 1.06 with a risk level of 32.10%, suggesting
+        MCHI will move roughly in line with broader markets but with elevated volatility.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast for MCHI shows potential growth with projected price
+            increases throughout 2026, indicating a positive outlook. However, the
+            mention of elevated volatility and a conservative scenario suggests caution,
+            leading to a balanced sentiment overall.
+    - sentiment: 'MCHI ETF 2026 Investment Outlook. Based on probabilistic forecasting
+        models, MCHI is expected to trade in a range through 2026: April 2026: $64.52–$68.52,
+        July 2026: $65.96–$74.76, October 2026: $65.64–$81.00, January 2027: $66.77–$87.25.
+        As of early January 2026, the ETF was trading at $62.28. MCHI is the iShares
+        MSCI China ETF, tracking the top 85% of Chinese market capitalization across
+        H-shares and B-shares. The fund has $7.74 billion in assets under management
+        with a 0.59% expense ratio.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The MCHI ETF shows a range of expected trading prices that indicate
+            potential growth, but the current trading price is below the lower end
+            of the forecast range. This suggests a cautious outlook, balancing between
+            potential upward movement and current underperformance.
+    - sentiment: 'MCHI China Index ETF 2026 Forecast. According to ETF price forecast
+        models, MCHI is expected to show the following price trajectory through 2026:
+        April 2026: $60.16-$64.52 (base: $62.34), July 2026: $63.40-$68.52 (base:
+        $65.96), October 2026: $64.52-$74.76 (base: $69.64), January 2027: $66.77-$87.25
+        (base: $77.01). The forecast assumes a neutral market outlook, with neutral
+        volatility (15.45), a contango VIX term structure, and a benign credit environment.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The forecast for the MCHI China Index ETF indicates a range of
+            expected prices with a neutral market outlook and no significant bullish
+            or bearish indicators. The overall tone is balanced, reflecting neither
+            strong optimism nor pessimism.
+    - sentiment: 'MCHI China ETF 2026 Forecast and 2025 Performance. MCHI has shown
+        positive returns in 2025, with a year-to-date return of approximately 10.58%
+        and a one-year return of about 25.97%. According to probabilistic forecasting
+        models, MCHI is projected to reach the following price levels through 2026:
+        April 2026: $64.52 (bullish) / $62.34 (base) / $60.16 (bearish), July 2026:
+        $68.52 / $65.96 / $63.40, October 2026: $74.76 / $69.64 / $64.52, January
+        2027: $81.00 / $77.01 / $66.77.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights strong positive returns for MCHI in 2025,
+            with a year-to-date return of approximately 10.58% and a one-year return
+            of about 25.97%. Additionally, the projected price levels through 2026
+            indicate a bullish outlook, suggesting continued growth potential.
+    - sentiment: iShares MSCI China ETF (MCHI) - 2025-2026 Investment Outlook. The
+        MSCI China Index delivered strong performance in 2025, with gains of 31.42%
+        (gross returns) and 31.17% (net returns) as of December 31, 2025. This outperformed
+        the 3-year annualized return of 11.85% (gross) and represents recovery from
+        negative performance in 2023 (-11.04%) and 2022 (-21.80%). The underlying
+        MSCI China Index includes 559 constituents covering approximately 85% of the
+        China equity universe. Top holdings include Tencent Holdings (17.45% weight)
+        and Alibaba (11.15% weight).
+      source: Msci
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The MSCI China Index showed strong performance in 2025 with gains
+            of over 31%, indicating a significant recovery from previous negative
+            years. This positive trend, along with a solid representation of major
+            companies like Tencent and Alibaba, suggests a bullish outlook for the
+            investment in the near future.

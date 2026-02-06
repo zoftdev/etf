@@ -1,0 +1,168 @@
+sentiment_data:
+- etf: EWQ
+  name: iShares MSCI France
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'EWQ ETF: 2025 Outlook and 2026 Predictions. As of mid-2025, EWQ
+        was trading around $42-43 with a 52-week range of $35.22-$43.64. The ETF offers
+        a dividend yield of approximately 2.81% with semi-annual distributions. While
+        specific predictions for EWQ itself are limited in the search results, broader
+        ETF market expectations for 2026 provide context: General ETF Market: The
+        ETF industry is expected to continue maturing globally, with ETFs becoming
+        increasingly embedded in portfolio construction across developed and emerging
+        markets. Global Equity Expectations: Major banks provide optimistic guidance
+        for global equities in 2026. Citigroup expects noticeable gains in the first
+        half of 2026 driven by recovering earnings growth, while UBS projects mid-to-high
+        single-digit percentage gains through year-end 2026.'
+      source: Ishares
+      author: ''
+      date: '2025-06-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The outlook for EWQ is supported by a positive dividend yield
+            and optimistic predictions for global equities, indicating a bullish sentiment.
+            Major banks expect noticeable gains in 2026, which contributes to a favorable
+            market perspective.
+    - sentiment: EWQ France ETF Forecast for 2025-2026. The forecast for EWQ is generally
+        negative in the near term, with an average analyst price target of $40.07,
+        representing a -5.86% decrease from the current price of $42.56. The price
+        target range is between $39.26 and $40.87. Looking ahead, analysts project
+        more optimistic long-term performance with an average 12-month price target
+        of $44.09, representing +3.60% upside potential from recent prices. The ETF
+        has shown strong recent gains, with a 1-year return of approximately 21-29%
+        and a 3-year return of around 10-13%.
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The near-term forecast is negative with a projected decrease
+            of -5.86%, but long-term projections show a potential upside of +3.60%.
+            The strong recent gains of 21-29% over the past year indicate positive
+            momentum, balancing the overall sentiment to a neutral outlook.
+    - sentiment: EWQ ETF Price Prediction for 2026. Based on available analyst forecasts,
+        analysts project an average price target of $44.09, representing approximately
+        +3.60% upside from current levels. Over the next 30 days, the forecast is
+        generally negative, with an average analyst price target of $40.07, indicating
+        a -5.86% decrease from the current price of $42.56. Price targets range from
+        $39.26 to $40.87. As of early 2025, EWQ was trading around $45.88, with strong
+        year-to-date performance of 29.09% over the past year and 26.22% year-over-year
+        returns.
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: While the long-term forecast suggests a slight upside of +3.60%,
+            the short-term outlook is negative with a projected decrease of -5.86%.
+            The mixed signals from the price targets and the strong past performance
+            create a balanced sentiment overall.
+    - sentiment: 'EWQ (iShares MSCI France ETF) 2026 Forecast Summary. Price Forecasts:
+        Short-term (30-day outlook): Analysts have an average price target of $40.07,
+        representing a -5.86% decrease from the current price of $42.56, with targets
+        ranging from $39.26 to $40.87. 12-month outlook: The average analyst price
+        target is $44.09, suggesting +3.60% upside potential. Current Performance:
+        The ETF tracks the MSCI France Index and holds 62 stocks. Recent performance
+        shows: 1-year return: 29.09%, 3-year return: 13.14%, 5-year return: 9.67%.'
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The short-term forecast indicates a potential decline of -5.86%,
+            which is negative, while the 12-month outlook suggests a modest upside
+            of +3.60%. The strong historical returns over 1, 3, and 5 years provide
+            a positive context, leading to a mixed overall sentiment.
+    - sentiment: 'EWQ France ETF: 2025-2026 Outlook. EWQ is trading around $43.06
+        USD and has delivered approximately 10.36% returns over the past year. The
+        ETF has a 52-week range of $35.16-$44.32. The fund offers a dividend yield
+        of 2.81%, with a recent dividend of $0.27 paid in December 2024. BlackRock''s
+        Q1 2025 outlook emphasizes investment opportunities in European defense and
+        security infrastructure as Europe reshapes its security architecture. This
+        suggests potential tailwinds for French industrial and defense-related companies
+        within the EWQ portfolio.'
+      source: Ishares
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The EWQ France ETF shows a solid return of 10.36% over the past
+            year and offers a reasonable dividend yield of 2.81%. Additionally, the
+            positive outlook from BlackRock regarding investment opportunities in
+            European defense and security infrastructure indicates a bullish sentiment
+            for the ETF's future performance.
+    - sentiment: 'iShares MSCI France ETF: 2025 Investment Research and 2026 Outlook.
+        The iShares MSCI France ETF (EWQ) provides exposure to large and mid-sized
+        French companies and tracks the MSCI France Index. As of January 2026, the
+        fund showed strong performance with a 1-year return of 29.09% and YTD return
+        of 1.98%. MSCI''s 2026 Investment Trends research highlights significant shifts
+        in global markets. Despite U.S. dominance in AI stocks, European markets significantly
+        outperformed U.S. equities in 2025, with Europe up 31% through November (in
+        U.S. dollar terms) compared to the U.S. up 18%.'
+      source: Msci
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The iShares MSCI France ETF demonstrated strong performance with
+            a 29.09% return over the past year and a positive outlook for European
+            markets, which outperformed U.S. equities. This indicates a bullish sentiment
+            towards the ETF and the broader European market, justifying a 'buy' label.
+    - sentiment: 'EWQ ETF 2025-2026 Investment Outlook. EWQ has delivered solid returns
+        with a 1-year return of 21.50% and a 3-year annualized return of 10.69%. As
+        of January 23, 2025, the ETF was trading at $45.51. The fund holds 63 total
+        securities with $391.86M in assets under management. The top 10 holdings represent
+        56.6% of the portfolio and are concentrated in major French companies across
+        multiple sectors: Consumer: LVMH (8.32%), L''Oreal (4.52%), Industrials: Schneider
+        Electric (7.09%), Airbus (6.72%), Safran (6.14%), Energy: TotalEnergies (5.62%).'
+      source: Nasdaq
+      author: ''
+      date: '2025-01-23'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The EWQ ETF has demonstrated solid returns with a 21.50% one-year
+            return and a 10.69% three-year annualized return, indicating strong performance.
+            Additionally, the concentration in major French companies across various
+            sectors suggests a robust and diversified portfolio, supporting a positive
+            outlook.
+    - sentiment: 'EWQ France ETF: 2025-2026 Forecast. The iShares MSCI France ETF
+        (EWQ) closed at $45.88 as of January 9, 2025. For the 12-month outlook, analysts
+        have set an average price target of $44.09, representing +3.60% upside potential.
+        The next 30-day forecast is more cautious, with an average analyst target
+        of $40.07, suggesting a -5.86% decline from recent levels, with targets ranging
+        from $39.26 to $40.87. EWQ has shown strong recent returns: 26.22% gain over
+        the past year and 29.09% return over 12 months.'
+      source: Finviz
+      author: ''
+      date: '2025-01-09'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The recent strong returns of 26.22% and 29.09% indicate positive
+            performance, but the cautious 30-day forecast suggests a potential decline
+            of -5.86%, which tempers the overall sentiment, leading to a mixed outlook.

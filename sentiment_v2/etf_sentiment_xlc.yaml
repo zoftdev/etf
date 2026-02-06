@@ -1,0 +1,259 @@
+sentiment_data:
+- etf: XLC
+  name: SPDR Communication Services Select Sector ETF
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: XLC (Communication Services Select Sector SPDR ETF) Forecast 2025-2026.
+        As of early 2026, XLC was trading around $117.68 with strong year-over-year
+        returns of approximately 20-21% for 2025. The ETF has delivered solid 3-year
+        returns of 36.45% and holds $26.96 billion in assets under management. XLC
+        was expected to deliver significant returns in 2025 as the third consecutive
+        year of gains for the communication services sector. Key drivers included
+        strong earnings growth from sector leaders (Meta, Alphabet, Netflix), cheap
+        valuations, benefits from AI technology adoption, and increased internet usage.
+        State Street's broader 2026 ETF market outlook describes the bull market as
+        "uncomfortably bullish," with momentum entering 2026 but stretched valuations
+        and shifting global dynamics introducing new risks.
+      source: Finviz
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.487
+          sentiment_label: buy
+          reasoning: The text highlights strong year-over-year returns (20-21%) and
+            solid 3-year returns (36.45%), indicating a positive outlook for XLC.
+            However, the mention of stretched valuations and new risks suggests some
+            caution, but overall, the positive indicators outweigh the negatives,
+            leading to a bullish sentiment.
+    - sentiment: 'XLC ETF Price Prediction for 2026. As of early February 2026, XLC
+        was trading at $117.68, down 1.66% from the previous close. Forecasting websites
+        provide probabilistic projections, but these are general educational tools
+        rather than investment advice. Current Performance Context: 52-week range:
+        $84.02 - $119.55, 1-year return: 21.42%, 3-year return: 36.45%, AUM: Approximately
+        $27 billion, Historical volatility (annualized): 22.48%. The ETF has experienced
+        significant volatility with a maximum drawdown of -46.65% and can take up
+        to 1,006 days to recover from losses. The Sharpe Ratio of 0.50 and Sortino
+        Ratio of 0.85 suggest moderate risk-adjusted returns.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The XLC ETF shows a strong 1-year return of 21.42% and a solid
+            3-year return of 36.45%, indicating positive performance. However, the
+            recent decline of 1.66% and significant historical volatility, including
+            a maximum drawdown of -46.65%, suggest caution, leading to a balanced
+            outlook overall.
+    - sentiment: 'SPDR Communication Services ETF: 2025-2026 Outlook. The Communication
+        Services sector has received an Outperform rating from Schwab Center for Financial
+        Research for the next six to 12 months, upgraded in December 2025. The sector
+        has shown strong recent performance, with trailing six-month and 12-month
+        returns of 30.4% and 40.2% respectively as of late November 2025. Key Positive
+        Drivers: Fundamentals & AI Growth: Companies in the sector benefit from advertising
+        and subscription-based revenue models that typically expand during economic
+        growth. Importantly, large hyper-scalers in communication services are positioned
+        to benefit significantly from artificial intelligence adoption. Valuation
+        Strength: Communication Services shows strong momentum composite score (1.98)
+        relative to other sectors.'
+      source: Fidelity
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The Communication Services sector has received an Outperform
+            rating and has demonstrated strong recent performance with significant
+            returns over the past year. Positive indicators such as AI growth and
+            favorable revenue models contribute to a bullish outlook, justifying a
+            score in the 'buy' range.
+    - sentiment: XLC Communication Services ETF 2026 Forecast Analysis. As of early
+        2026, XLC is trading around $117.68 with substantial assets under management
+        of $27.15 billion. The ETF has delivered solid returns, with 1-year performance
+        at 21.42% and 3-year annualized returns of 36.45%. State Street's broader
+        2026 ETF market outlook characterizes conditions as "uncomfortably bullish,"
+        noting that while the bull market enters 2026 with momentum, valuations are
+        stretched and global geopolitical shifts could introduce new risks. The ETF
+        shows a historical volatility (annualized) of 22.48% with a maximum drawdown
+        of -46.65%. Key risk metrics include a Sharpe ratio of 0.50 and Sortino ratio
+        of 0.85, suggesting moderate risk-adjusted returns.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.35
+          sentiment_label: buy
+          reasoning: The XLC ETF shows strong past performance with a 1-year return
+            of 21.42% and a 3-year return of 36.45%, indicating positive momentum.
+            However, the mention of stretched valuations and geopolitical risks tempers
+            the outlook slightly, leading to a moderately bullish sentiment overall.
+    - sentiment: SPDR Communication Services Select Sector ETF (XLC) 2025 Research.
+        The Communication Services Select Sector SPDR Fund (XLC) is a passive ETF
+        with a very low expense ratio of 0.08%. As of June 2025, the fund has $20.3
+        billion in assets under management and holds 23 companies across telecommunications,
+        media, entertainment, wireless, and internet media industries. XLC delivered
+        strong 2025 performance year-to-date, with a 12.75% total return (net asset
+        value) through June 30, 2025, compared to 6.20% for the S&P 500. The broader
+        2026 ETF market outlook is described as "uncomfortably bullish," with the
+        bull market entering 2026 with momentum, though valuations are stretched and
+        geopolitical risks could introduce new challenges.
+      source: Spdrs
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.575
+          sentiment_label: buy
+          reasoning: The ETF has shown strong performance with a 12.75% total return,
+            significantly outperforming the S&P 500. While there are concerns about
+            stretched valuations and geopolitical risks, the overall tone remains
+            optimistic, indicating a bullish outlook for the sector.
+    - sentiment: 'Communication Services Sector ETF 2026 Forecast. Schwab''s February
+        2026 assessment rates Communication Services as "Outperform" compared to the
+        S&P 500 over the next 6-12 months, citing solid fundamentals and potential
+        benefits from artificial intelligence adoption. Communication Services has
+        shown strong recent performance: 12-month return: 30.0% (as of early February
+        2026), 6-month return: 26.6%. The sector comprises 11.0% of the S&P 500. XLC
+        (Communication Services Select Sector SPDR Fund): 1-year return: 20.39%, 5-year
+        return: 15.14%, $20.82B in assets under management, 26 holdings, Very low
+        expense ratio: 0.09%. The sector appears well-positioned for 2025-2026 based
+        on current analyst ratings and historical performance trends.'
+      source: Schwab
+      author: ''
+      date: '2026-02-28'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The assessment highlights strong recent performance (30% return
+            over 12 months) and solid fundamentals, along with positive future expectations
+            due to artificial intelligence adoption, indicating a bullish outlook
+            for the Communication Services sector.
+    - sentiment: 'Communication Services ETF Market Overview 2025-2026. The Communication
+        Services sector has a total market cap of $5.687 trillion with a 9.15% weight
+        in the S&P 500. As of early 2026, there are 52 Communication Services ETFs
+        with approximately $41.03 billion in total assets under management. The sector
+        showed strong returns in 2025, with most major ETFs posting year-to-date gains
+        of 22-27%: State Street Communication Services Select Sector SPDR (XLC): 22.82%
+        1-year return, Vanguard Communication Services (VOX): 26.40% 1-year return,
+        21.65% return as of late January 2026, Fidelity MSCI Communication Services
+        (FCOM): 25.77% 1-year return, iShares Global Comm Services (IXP): 27.37% 1-year
+        return.'
+      source: Yahoo
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The Communication Services sector demonstrated strong performance
+            in 2025, with major ETFs achieving year-to-date gains of 22-27%, indicating
+            a bullish outlook. The substantial market cap and significant weight in
+            the S&P 500 further support a positive sentiment towards this sector.
+    - sentiment: 'XLC Communication Services sector ETF 2026 forecast. XLC is expected
+        to deliver strong returns in 2025, potentially marking a third consecutive
+        year of significant gains for the communication services sector. The ETF benefits
+        from several favorable factors: Strong earnings growth and relatively cheap
+        valuations compared to other sectors, Sector leadership from major holdings
+        including Meta, Alphabet, and Netflix, which are positioned to benefit from
+        increased internet usage and AI technology, Balanced portfolio offering both
+        growth and defensive stocks with lower downside risk and higher risk-adjusted
+        returns. As of early January 2026, XLC showed solid recent returns: 1-year
+        return: 21.42%, 3-year return: 146.78%, 5-year return: 76.43%, YTD performance:
+        -0.70% (as of Jan 2, 2026).'
+      source: Seekingalpha
+      author: ''
+      date: '2026-01-02'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The forecast for the XLC ETF indicates strong expected returns
+            and significant gains in the communication services sector, supported
+            by strong earnings growth, favorable valuations, and leadership from major
+            companies. While there is a slight negative YTD performance, the overall
+            positive indicators and solid long-term returns suggest a bullish outlook.
+    - sentiment: XLC ETF 2026 Market Context. While State Street's 2026 ETF Market
+        Outlook describes conditions as "uncomfortably bullish," noting that the bull
+        market enters 2026 with momentum, it cautions that valuations are stretched
+        and global shifts could introduce new risks. XLC offers attractive features
+        including low expense ratios, high liquidity, strong dividend growth, and
+        $26.96B in assets under management. The fund tracks the S&P Communication
+        Services Select Sector Index with 23-26 holdings. The fund's top holdings
+        include Meta (17.78% weight), Alphabet (17.65% combined weight), Netflix (7.30%),
+        and major telecommunications companies like AT&T, Verizon, and T-Mobile.
+      source: Spdrs
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.346
+          sentiment_label: buy
+          reasoning: The text highlights a generally positive outlook with strong
+            features of the XLC ETF, such as high liquidity and strong dividend growth.
+            However, the caution regarding stretched valuations and potential global
+            risks tempers the enthusiasm slightly, leading to a moderately bullish
+            sentiment overall.
+    - sentiment: SPDR Communication Services ETF 2025-2026 Information. As of early
+        2025, XLC is trading around $95-117 per share. The fund has shown strong recent
+        returns, with a 1-year return of approximately 20-21% and a 3-year return
+        around 36%. XLC tracks the Communication Services Select Sector Index and
+        holds 26 stocks with $20-27 billion in assets under management. The fund has
+        an extremely low expense ratio of 0.09% and a dividend yield around 1.09-1.14%.
+        One forecast source predicts XLC could reach up to $137.23 in the longer term.
+        The fund's portfolio is heavily weighted toward large-cap tech and media companies,
+        with Meta (17.78%), Alphabet (17.65%), Netflix (7.30%), and traditional telecom
+        providers like AT&T, Verizon, and T-Mobile comprising major positions.
+      source: Finviz
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The SPDR Communication Services ETF shows strong recent returns
+            (20-21% over 1 year and 36% over 3 years) and has a low expense ratio,
+            indicating a positive outlook. Additionally, the forecast of reaching
+            $137.23 suggests further growth potential, contributing to a bullish sentiment
+            overall.
+    - sentiment: 'Communication Services Sector 2026 Performance Outlook. The Communication
+        Services sector has received an Outperform rating from Schwab Center for Financial
+        Research for the next six to 12 months, upgraded in December 2025. The sector
+        has shown strong recent performance, with trailing six-month and 12-month
+        returns of 30.4% and 40.2% respectively as of late November 2025. Key Positive
+        Drivers: Fundamentals & AI Growth: Companies in the sector benefit from advertising
+        and subscription-based revenue models that typically expand during economic
+        growth. Importantly, large hyper-scalers in communication services are positioned
+        to benefit significantly from artificial intelligence adoption. Valuation
+        Strength: Communication Services shows strong momentum composite score (1.98)
+        relative to other sectors. However, the sector shows mixed valuation metrics
+        with negative relative valuations on price-to-sales and price-to-book ratios.'
+      source: Fidelity
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The Communication Services sector has received an Outperform
+            rating and has shown strong recent performance with significant returns
+            over the past year. Positive factors such as fundamentals benefiting from
+            economic growth and AI adoption contribute to a bullish outlook, despite
+            some mixed valuation metrics.

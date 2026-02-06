@@ -1,0 +1,285 @@
+sentiment_data:
+- etf: XLB
+  name: SPDR Materials Select Sector ETF
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: XLB (Materials Select Sector SPDR ETF) 2025-2026 Forecast. One source
+        reports that analysts have an average price target of $111.94 for XLB, representing
+        a potential 146.84% increase from the price of $45.35, with targets ranging
+        from $110.73 to $113.15. However, this forecast appears to be a 30-day outlook
+        rather than a specific 2025-2026 projection. The Materials Select Sector ETF
+        is currently showing neutral momentum with an RSI (Relative Strength Index)
+        of 53, indicating the ETF is at or near its resistance level. The implied
+        volatility stands at 0.27, suggesting moderate expected price movements.
+      source: Stockscan
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast indicates a significant potential increase of 146.84%,
+            which is positive, but the current neutral momentum and RSI of 53 suggest
+            the ETF is at resistance, indicating caution. The mixed signals lead to
+            a balanced outlook overall.
+    - sentiment: 'XLB ETF Price Predictions for 2025-2026. Short-term Forecast (Next
+        30 Days): One source projects an average analyst price target of $111.94,
+        representing a +146.84% increase from the $45.35 price point referenced, though
+        this appears to be an outlier estimate. Recent Performance Context: As of
+        early 2025, XLB was trading around $49.27, with the ETF showing strong recent
+        returns of 12.85% over the past year and 12.82% in the quarter. The 52-week
+        range was $36.56 to $50.62. General Characteristics: XLB (Materials Select
+        Sector SPDR Fund) tracks the S&P Materials Select Sector Index with 29 holdings.
+        The ETF has a low expense ratio of 0.08% and a beta of 1.02.'
+      source: Stockscan
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.482
+          sentiment_label: buy
+          reasoning: The forecast indicates a significant potential increase in price
+            (+146.84%), and the ETF has shown strong recent performance with a 12.85%
+            return over the past year. These positive indicators suggest a bullish
+            outlook, despite the mention of an outlier estimate.
+    - sentiment: 'SPDR Materials Select Sector ETF (XLB) 2025-2026 Outlook. The Materials
+        sector has been the worst performer in the S&P 500 in 2024, declining 0.6%
+        year-to-date while the broader index gained 24%. However, technical indicators
+        suggest oversold conditions—the XLB''s relative strength index (RSI) was at
+        17 as of late 2024, the lowest since 2018, indicating potential undervaluation
+        and a possible rebound. The outlook for materials stocks in 2025 appears more
+        favorable. Key bullish factors include: Interest rate relief: Falling rates
+        in major economies could support materials demand. China stimulus: Further
+        economic stimulus measures in China could drive recovery in the world''s largest
+        industrial economy. Historical precedent: The materials sector has never experienced
+        consecutive down years since 1990, with average returns of 20.43% following
+        down years.'
+      source: Morningstar
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.489
+          sentiment_label: buy
+          reasoning: While the materials sector has underperformed in 2024, the presence
+            of oversold conditions and several bullish indicators, such as potential
+            interest rate relief and stimulus measures in China, suggest a positive
+            outlook for 2025. Historical trends also support a rebound, indicating
+            a favorable sentiment overall.
+    - sentiment: 'XLB Materials ETF 2026 Forecast Analysis. XLB has delivered solid
+        recent performance, with a 1-year return of 10.00%, 3-year return of 7.62%,
+        and 5-year return of 7.12%. The ETF currently trades near $85.11 with 29 total
+        holdings and $5.46 billion in assets under management. The materials sector
+        shows mixed technical signals heading into 2026. The relative strength momentum
+        indicator stands at 53, indicating a neutral position near resistance levels.
+        Portfolio Pilot''s detailed forecast analysis suggests 12-month expected returns
+        with a beta of 0.63 and risk level of 14.95%, though specific return percentages
+        weren''t disclosed. XLB demonstrates significant sensitivity to economic factors:
+        it''s most sensitive to credit conditions (+2.5) and growth (+1.7), while
+        showing negative sensitivity to interest rates (-1.3) and inflation (-0.7).'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The XLB Materials ETF has shown solid recent performance with
+            positive returns over multiple timeframes, but the mixed technical signals
+            and sensitivity to economic factors create a cautious outlook. The neutral
+            momentum indicator and lack of specific return forecasts contribute to
+            an overall balanced sentiment.
+    - sentiment: XLB ETF 2025-2026 Market Outlook. The broader market environment
+        suggests cautious optimism for materials. Global X's 2025 outlook indicates
+        the U.S. economy is likely to surprise on the upside, with expected growth
+        driven by manufacturing recovery and renewed small- and mid-cap corporate
+        investment. However, economic uncertainty remains elevated due to potential
+        policy impacts from tax changes, tariffs, immigration restrictions, and regulatory
+        shifts. XLB (Materials Select Sector SPDR Fund) tracks 25 large-cap U.S. materials
+        companies with $4.9 billion in assets under management. The sector carries
+        a Zacks ETF Rank of 3 (Hold) and is currently ranked 9th among the 16 broad
+        sectors, placing it in the bottom 44% by ranking.
+      source: Globalxetfs
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The outlook presents cautious optimism with positive indicators
+            like expected growth from manufacturing recovery, but it is tempered by
+            significant economic uncertainties and a low sector ranking, leading to
+            a balanced sentiment overall.
+    - sentiment: 'XLB Materials Sector ETF: 2025 Performance and 2026 Outlook. XLB
+        has shown modest gains through 2025, with a year-to-date price return of 6.3%
+        as of late November 2025. However, the trailing 12-month return stands at
+        -5.7%, indicating volatility in recent performance. Specific predictions for
+        2026 are limited in the search results. However, one source indicates a 12-month
+        expected return forecast, though the exact percentage is not fully disclosed
+        in the available content. The fund shows neutral momentum with a relative
+        strength index (RSI) of 50-53, suggesting the price is near resistance levels
+        rather than in a strongly bullish or bearish position. Several tailwinds support
+        potential growth for the materials sector: Tariff Impact: Precious metals
+        tariffs could drive material prices higher. Macro Sensitivity: The fund has
+        positive exposure to credit (+2.5) and growth (+1.7), but negative sensitivity
+        to interest rates (-1.3).'
+      source: Etfrc
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The XLB ETF has shown modest gains of 6.3% year-to-date, but
+            a negative trailing return of -5.7% indicates volatility. The neutral
+            momentum with an RSI of 50-53 and mixed macro sensitivities suggest a
+            balanced outlook, with potential growth supported by tariff impacts but
+            no strong bullish indicators.
+    - sentiment: 'Materials Sector ETF 2026 Forecast. The materials sector is positioned
+        for constructive performance in 2026, driven by several structural factors:
+        Demand Drivers: A multi-year capital expenditure wave from hyperscalers, utilities,
+        and governments is creating persistent, non-cyclical demand for metals and
+        materials. Data center expansion and power grid infrastructure spending are
+        directly benefiting demand for conductive materials like copper and silver.
+        This capex wave appears structurally durable and should weather short-term
+        economic cycles. Supply Dynamics: Mining supply is weakening following years
+        of lackluster capital investment in the metals and mining sector. Copper and
+        silver face particularly tight supply fundamentals, with silver experiencing
+        its fifth consecutive annual deficit in 2025.'
+      source: Globalxetfs
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights strong demand drivers and a structurally
+            durable capital expenditure wave, indicating a positive outlook for the
+            materials sector. Additionally, the tight supply fundamentals for copper
+            and silver further support a bullish sentiment, suggesting favorable conditions
+            for growth.
+    - sentiment: 'XLB Materials ETF 2026 Outlook for 2025. The Materials Select Sector
+        SPDR Fund (XLB) is positioned as a key investment vehicle for materials sector
+        exposure heading into 2026. The ETF has shown momentum, with charts indicating
+        the potential for breakout performance as the materials sector continues its
+        hot streak. XLB comprises 26-28 companies across chemicals, construction materials,
+        packaging, containers, metals and mining, and paper products. Top holdings
+        include: Linde (18%), Sherwin-Williams (6.3%), Newmont (5.8%), Corteva (5.5%),
+        Ecolab (5.4%). The materials sector outlook benefits from ongoing global economic
+        adjustments and increased infrastructure investment. Legislative developments
+        like recent infrastructure bills promise substantial investments in transportation,
+        broadband, and clean energy, stimulating demand for building materials.'
+      source: Cnbc
+      author: ''
+      date: '2026-01-07'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The text highlights strong momentum and potential breakout performance
+            for the XLB ETF, driven by positive factors such as ongoing global economic
+            adjustments and substantial infrastructure investments. These elements
+            contribute to a bullish outlook for the materials sector, justifying a
+            positive sentiment score.
+    - sentiment: 'Materials Market ETF Outlook for 2026. The 2026 outlook for materials
+        and commodity markets appears constructive. Morgan Stanley identifies trends
+        driving optimism in 2026, with strong structural support expected to continue.
+        Global X''s investment strategy emphasizes that "strong thematic trends continue
+        to support demand for key commodities," with an outlook described as "constructive
+        in a macro environment that increasingly favours them." Key Drivers for 2026:
+        Capital Spending Wave: A major "twin-capex" cycle is reshaping industrial
+        demand, driven by hyperscalers, utilities, and governments investing heavily
+        in digital and physical infrastructure. This capex wave is described as "non-cyclical,"
+        providing robust demand through economic cycles. Metals Demand: Copper and
+        silver are identified as clearest beneficiaries, facing tightening supply
+        fundamentals while demand outlook appears increasingly robust.'
+      source: Morganstanley
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The outlook for the materials market is described as constructive,
+            with strong structural support and robust demand driven by significant
+            capital spending and favorable macro trends. The positive indicators,
+            particularly regarding metals like copper and silver, suggest a bullish
+            sentiment overall.
+    - sentiment: XLB ETF 2026 price target. Based on the available search results,
+        I found limited specific information about XLB ETF price targets for 2026
+        or 2025. The most concrete forecast mentioned is that analysts predict 12%
+        gains ahead for XLB. Current pricing data shows XLB was trading at $49.27
+        as of January 30, 2025. The search results indicate that XLB (Materials Select
+        Sector SPDR Fund) has shown recent performance with a 12.85% return over 1
+        year and 12.82% quarterly performance. However, the results do not contain
+        specific 2026 price targets or detailed 2025 forecasts beyond the general
+        12% upside prediction.
+      source: Tipranks
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.3
+          sentiment_label: buy
+          reasoning: The text highlights a positive outlook with a forecast of 12%
+            gains for XLB and strong recent performance (12.85% return over 1 year
+            and 12.82% quarterly performance), suggesting a bullish sentiment despite
+            the lack of specific price targets.
+    - sentiment: XLB Materials ETF 2025-2026 Investment Outlook. The Materials Select
+        Sector SPDR Fund (XLB) is positioned as a strategic investment option in the
+        materials sector. As of late 2025, the ETF has shown positive momentum, with
+        year-to-date returns of 8.64% and recent quarterly performance of 12.82%.
+        Technical analysis suggests the materials ETF is "ready to break out" based
+        on chart patterns. XLB comprises 29 holdings across chemicals, construction
+        materials, packaging, metals and mining, and paper products. The fund's largest
+        holdings include Linde (15.2%), Newmont Mining (8.0%), Sherwin-Williams (6.2%),
+        Ecolab (5.4%), and Freeport-McMoRan (5.3%). The portfolio is heavily weighted
+        toward large-cap stocks (95.2%) with an average market cap of $65.5 billion.
+      source: Nasdaq
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The XLB ETF shows strong positive momentum with year-to-date
+            returns of 8.64% and quarterly performance of 12.82%. Additionally, technical
+            analysis indicates it is 'ready to break out', suggesting a bullish outlook
+            for the materials sector.
+    - sentiment: 'XLB Materials Sector ETF: 2025-2026 Outlook. XLB (State Street Materials
+        Select Sector SPDR ETF) had a 1-year return of approximately 10-12.85% as
+        of late 2024-early 2025. The ETF tracks the S&P Materials Select Sector Index
+        with 29 holdings and an expense ratio of 0.08-0.09%. While specific 2026 price
+        targets aren''t available in the results, several indicators suggest potential
+        headwinds and tailwinds: Positive Factors: Industry experts have expressed
+        bullish sentiment on materials, with commentary on tailwinds from tariffs
+        on precious metals that could drive material prices higher. Technical analysis
+        shows the sector at a neutral momentum position (RSI of 53). Risk Factors:
+        The ETF shows negative interest rate sensitivity (-1.3), suggesting headwinds
+        if rates remain elevated. Implied volatility of 0.27 indicates the market
+        expects moderate price swings.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The outlook for the XLB ETF includes positive factors such as
+            a solid 1-year return and bullish sentiment from industry experts, but
+            it is tempered by potential headwinds from negative interest rate sensitivity
+            and moderate implied volatility, leading to a balanced overall sentiment.

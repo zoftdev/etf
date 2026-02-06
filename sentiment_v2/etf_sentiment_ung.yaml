@@ -1,0 +1,179 @@
+sentiment_data:
+- etf: UNG
+  name: United States Natural Gas Fund
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: UNG (United States Natural Gas Fund) 2025-2026 Forecast. Natural
+        gas ETFs like UNG are expected to gain as demand is anticipated to rebound
+        in 2026. This suggests potential upside for the fund as natural gas consumption
+        increases. UNG is trading around $14.38, with year-to-date (2025) return of
+        +17.29%.
+      source: Nasdaq
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.523
+          sentiment_label: buy
+          reasoning: The forecast indicates a rebound in demand for natural gas in
+            2026, suggesting potential upside for UNG. Additionally, the year-to-date
+            return of +17.29% reflects a positive performance, contributing to a bullish
+            sentiment overall.
+    - sentiment: 'Natural Gas Price Forecast 2026: Is a Major Bull Run Ahead?. U.S.
+        natural gas prices surged above $5.00 in late 2025 and are expected to maintain
+        strength into early 2026. Technical charts signal a potential bottom with
+        a breakout above $5.50 opening room for further rallies. Strong structural
+        factors supporting prices include high LNG exports, cold weather demand, and
+        geopolitical factors.'
+      source: Fxempire
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights a strong upward trend in natural gas prices,
+            supported by high LNG exports and cold weather demand, indicating a bullish
+            outlook. The mention of technical charts signaling a potential breakout
+            further reinforces the positive sentiment.
+    - sentiment: UNG ETF Price Prediction for 2025-2026. Analyst forecasts for UNG
+        are generally negative. The average analyst price target is $5.47, representing
+        a decline of approximately -56.31% from the current price of $12.51. Analyst
+        predictions range from a high target of $6.83 to a low of $4.10.
+      source: Stockscan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.675
+          sentiment_label: sell
+          reasoning: The overall sentiment is negative, with analysts predicting a
+            significant decline of approximately 56.31% from the current price. The
+            average price target of $5.47 and the range of predictions further reinforce
+            a bearish outlook for the UNG ETF.
+    - sentiment: 'Natural Gas ETF Forecast for 2025-2026. For the UNG ETF, probabilistic
+        forecasts suggest: 12-month high: $19.57 (+47.72%), 12-month average: $14.09
+        (+6.35%), 12-month low: $8.61 (-35.02%). The market currently shows neutral
+        conditions with moderate inflation and stable credit environments.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast indicates a significant potential upside with a
+            12-month high of $19.57 (+47.72%), but the 12-month low suggests a possible
+            decline of -35.02%. The overall neutral market conditions and moderate
+            inflation contribute to a balanced outlook, leading to a neutral sentiment
+            score.
+    - sentiment: UNG ETF Investment Outlook for 2025-2026. Analyst outlook for UNG
+        is generally negative. Analysts expect an average price target of $5.47, representing
+        a decline of -56.31% from the current price of $12.51. The fund has experienced
+        significant long-term declines, with a -88.86% decline over 10 years and a
+        -25.57% loss over the past year.
+      source: Stockscan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.754
+          sentiment_label: strong sell
+          reasoning: The outlook for UNG is predominantly negative, with analysts
+            projecting a significant decline in price and highlighting long-term losses
+            of nearly 89% over the past decade, indicating a very bearish sentiment.
+    - sentiment: UNG 2026 Forecast Summary. According to analyst forecasts, UNG is
+        expected to show stability in 2026. One analysis projects UNG's price to reach
+        $14.34 by 2027 and $20.58 by 2030 based on AI modeling extrapolation. Alternative
+        data suggests UNG should be approached with caution, with a "hold" rating
+        recommended.
+      source: Altindex
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast indicates stability for UNG in 2026, with potential
+            price increases by 2027 and 2030, which are positive indicators. However,
+            the recommendation to approach UNG with caution and the 'hold' rating
+            suggest a more balanced outlook, leading to a neutral sentiment overall.
+    - sentiment: Natural Gas Market Forecast 2026 and ETF Outlook. The U.S. Energy
+        Information Administration (EIA) projects natural gas prices at Henry Hub
+        will average $3.46 per million British thermal units (MMBtu) in 2026, representing
+        a 2% decline from 2025's $3.53/MMBtu. Prices are expected to rise to $4.59/MMBtu
+        in 2027 as demand growth from expanding LNG exports and increased electric
+        power sector consumption outpaces production growth.
+      source: Eia
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The forecast indicates a slight decline in natural gas prices
+            for 2026, which is a negative signal, but the projected increase in prices
+            for 2027 suggests potential recovery. Overall, the outlook is mixed, balancing
+            short-term decline with long-term growth expectations.
+    - sentiment: United States Natural Gas Fund (UNG) 2026 Forecast. The EIA projects
+        natural gas prices at Henry Hub to average $4.20 per million British thermal
+        units (MMBtu) in 2026, up from an expected $3.80 in 2025. However, more recent
+        EIA forecasts indicate prices will average just under $3.50/MMBtu in 2026,
+        representing a 2% decrease from 2025. U.S. liquefied natural gas gross exports
+        are expected to reach 16 billion cubic feet per day in 2026.
+      source: Eia
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The forecast indicates a slight increase in natural gas prices
+            from 2025 to 2026, but the more recent EIA forecasts suggest a decrease,
+            which introduces uncertainty. The overall outlook is mixed, with stable
+            export expectations but conflicting price predictions.
+    - sentiment: 'UNG Natural Gas ETF: 2025-2026 Outlook. Analysts have a negative
+        outlook for UNG over the next 12 months. The average analyst price target
+        is $5.47, representing a decline of approximately 56% from current levels
+        around $12.51. Natural gas futures are expected to decline after hitting highs
+        in December 2025, with price projected to target support at $3.00.'
+      source: Stockscan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.742
+          sentiment_label: strong sell
+          reasoning: The text indicates a negative outlook for UNG, with analysts
+            projecting a significant decline of approximately 56% from current levels
+            and expectations of further decreases in natural gas futures, which strongly
+            supports a bearish sentiment.
+    - sentiment: Natural Gas Price Outlook 2026 and ETF Perspective. The EIA expects
+        natural gas prices to remain relatively flat in 2026, with the Henry Hub spot
+        price averaging just under $3.50 per MMBtu—a 2% decrease from 2025. The first
+        quarter of 2026 is forecast to be notably lower at an average of $3.38/MMBtu
+        due to milder-than-normal winter temperatures. Both forecasts anticipate significant
+        price increases in 2027.
+      source: Eia
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The outlook indicates a slight decrease in natural gas prices
+            for 2026, with a forecasted average of $3.50 per MMBtu, which is a negative
+            indicator. However, the anticipation of significant price increases in
+            2027 balances this outlook, leading to a mixed sentiment overall.

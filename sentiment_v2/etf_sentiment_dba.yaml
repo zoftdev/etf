@@ -1,0 +1,204 @@
+sentiment_data:
+- etf: DBA
+  name: Invesco DB Agriculture
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'Invesco DB Agriculture Fund (DBA) Price Forecasts for 2025-2026.
+        According to probabilistic forecasts based on historical prices, DBA is expected
+        to trade at: April 2026: $26.14-$26.72, July 2026: $26.46-$27.52, October
+        2026: $27.01-$28.33, January 2027: $28.11-$29.13. The 12-month average price
+        target is $27.27, suggesting an upside of +6.87%.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.487
+          sentiment_label: buy
+          reasoning: The forecasts indicate a positive price trend for the Invesco
+            DB Agriculture Fund, with an average price target suggesting a 6.87% upside.
+            This reflects a bullish outlook on the fund's performance over the next
+            couple of years.
+    - sentiment: 'DBA ETF Outlook for 2025-2026. Based on probabilistic forecasting
+        models, DBA is expected to show modest appreciation through 2026. Projected
+        price targets include: April 2026: $26.72, July 2026: $27.52, October 2026:
+        $28.33, January 2027: $29.13. The current market environment shows neutral
+        conditions with neutral volatility (15.38), cooling inflation (6.00%), and
+        benign credit conditions.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The outlook for DBA ETF indicates modest appreciation through
+            2026, which is a positive sign, but the overall market conditions are
+            described as neutral with no strong bullish or bearish indicators, leading
+            to a balanced sentiment.
+    - sentiment: Agriculture ETF Forecast for 2025-2026. Corn prices are expected
+        to continue increasing through 2026 and into 2027, though abundant global
+        supplies will weigh on prices. High global supplies of grains and oilseeds
+        will dominate markets. Fertilizer prices are expected to remain elevated and
+        will be the primary driver of input cost inflation throughout 2026. Tight
+        supplies and strong consumer demand will support beef and alternative protein
+        prices.
+      source: Metlife
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: While there are positive indicators such as expected increases
+            in corn prices and strong consumer demand for beef, the mention of abundant
+            global supplies and elevated fertilizer prices suggests a balancing effect
+            that leads to a mixed outlook overall.
+    - sentiment: 'DBA ETF Price Prediction for 2026. Price Forecast by Quarter (2026):
+        April 2026: $26.72, July 2026: $27.52, October 2026: $28.33, January 2027:
+        $29.13. The forecast shows three scenarios: Bullish case: $26.14 (April) →
+        $29.13 (January 2027), Base case: $25.92 (April) → $28.11 (January 2027),
+        Bearish case: $25.70 (April) → $27.09 (January 2027).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.3
+          sentiment_label: neutral
+          reasoning: The forecast presents a range of price predictions with a slight
+            upward trend in all scenarios, indicating a balanced outlook. However,
+            the presence of bearish and base cases suggests caution, preventing a
+            stronger bullish sentiment.
+    - sentiment: Agricultural Commodities Forecast 2026 & Agriculture ETFs. Bank of
+        America projects divergent paths for major agricultural commodities in 2026.
+        Soybean Oil shows a "strong bullish trajectory" driven by robust biofuel demand.
+        The USDA projects 15.5 billion pounds of soybean oil for biofuel production
+        in 2025-2026. Wheat & Soymeal face bearish predictions with anticipated surpluses
+        expected to depress prices.
+      source: Financialcontent
+      author: ''
+      date: '2025-11-25'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: While soybean oil is projected to have a strong bullish trajectory
+            due to robust biofuel demand, the bearish predictions for wheat and soymeal,
+            which face anticipated surpluses, create a mixed outlook for the agricultural
+            commodities market overall.
+    - sentiment: DBA ETF Investment Outlook for 2025-2026. Deutsche Bank's 2026 outlook
+        describes the year as "anything but dull," with expectations for continued
+        economic support from government fiscal and monetary measures. The US economy
+        is expected to grow robustly with tax relief measures and continued AI investment
+        driving demand. However, tariff policies remain uncertain, which could affect
+        agricultural commodity prices.
+      source: Db
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.463
+          sentiment_label: buy
+          reasoning: The outlook for 2025-2026 is generally positive, highlighting
+            robust economic growth driven by government support and AI investment,
+            which suggests a bullish sentiment. However, the uncertainty surrounding
+            tariff policies introduces some caution, but overall, the positive indicators
+            outweigh the negatives.
+    - sentiment: DBA Agriculture ETF 2025-2026 Outlook. DBA shows a bullish trend
+        since 2020, with technical support at $22.79 and resistance at $28.48. In
+        2024, DBA delivered strong returns of +33.47%. Weather and crop conditions
+        will be critical drivers for price movements in 2025. The ETF maintains liquidity
+        and proactive management, making it suitable for diversified portfolio exposure
+        to agricultural markets.
+      source: Seekingalpha
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights a bullish trend for the DBA Agriculture ETF,
+            strong returns of +33.47% in 2024, and favorable liquidity and management,
+            which contribute to a positive outlook. However, the mention of weather
+            and crop conditions as critical drivers introduces some uncertainty, but
+            overall, the sentiment leans towards a strong buy.
+    - sentiment: 'DBA Agriculture ETF 2026 Forecast and 2025 Performance. DBA is projected
+        to reach the following price levels by early 2027: April 2026: $26.14-$26.72,
+        July 2026: $26.21-$27.52, October 2026: $26.80-$28.33, January 2027: $27.09-$29.13.
+        As of mid-2025, DBA was trading around $27.17-$27.23. Key performance metrics
+        include 1-Year Return: +13.3%, 3-Year Return: +9.9% annualized.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-06-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.546
+          sentiment_label: buy
+          reasoning: The projected price levels for DBA Agriculture ETF show a positive
+            trend with expected growth, and the 1-Year Return of +13.3% indicates
+            strong recent performance. These factors contribute to a bullish outlook
+            on the ETF's future performance.
+    - sentiment: Agricultural Commodities Price Forecast for 2026. Bank of America
+        projects divergent paths for major agricultural commodities in 2026. Soybean
+        Oil expected to follow a "strong bullish trajectory" driven by robust biofuel
+        demand. Wheat and Soymeal predicted to face price declines and potential surplus
+        conditions. Overall, the World Bank expects agricultural commodity prices
+        to decline 2.2% in 2026 compared to 2025.
+      source: Financialcontent
+      author: ''
+      date: '2025-11-25'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.292
+          sentiment_label: neutral
+          reasoning: While there is a strong bullish outlook for Soybean Oil due to
+            robust biofuel demand, the overall forecast indicates a decline in agricultural
+            commodity prices by 2.2%, which balances the positive sentiment with concerns
+            about price declines in Wheat and Soymeal, leading to a mixed outlook.
+    - sentiment: DBA ETF 2026 Market Analysis. Key factors affecting DBA's 2026 performance
+        will include weather patterns and crop conditions, as agricultural commodities
+        depend heavily on these variables. The ETF maintains liquidity and proactive
+        management. DBA shows volatility of 15.3% with moderate positive correlation
+        to the S&P 500 at +0.28.
+      source: Seekingalpha
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The analysis highlights both positive aspects, such as liquidity
+            and proactive management, and concerns regarding external factors like
+            weather patterns and crop conditions, leading to a balanced outlook with
+            moderate volatility and correlation to the S&P 500.
+    - sentiment: 'Invesco DB Agriculture Fund: 2026 Outlook and Current Forecast.
+        Invesco''s 2026 Annual Investment Outlook emphasizes "Resilience and rebalancing."
+        Key themes include global growth reacceleration expected from Fed rate cuts,
+        weaker US dollar anticipated, and rebalancing away from expensive assets toward
+        alternative assets with better valuation opportunities. 12-month price target:
+        $27.27 (representing +6.87% upside).'
+      source: Invesco
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The outlook highlights positive themes such as expected global
+            growth reacceleration and a weaker US dollar, which are bullish indicators.
+            Additionally, the projected 6.87% upside in the price target suggests
+            a favorable investment opportunity, supporting a positive sentiment overall.

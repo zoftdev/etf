@@ -1,0 +1,186 @@
+sentiment_data:
+- etf: EWN
+  name: iShares MSCI Netherlands
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'EWN (iShares MSCI Netherlands ETF) Forecast Summary. Based on available
+        data, specific forecasts for 2025-2026 are limited. The only quantitative
+        forecast found indicates a 12-month expected return estimate, though the specific
+        percentage is not displayed in the search results. The ETF has a beta of 0.78
+        and an annualized risk of 18.99%. Key Characteristics: Expense ratio: 0.47%,
+        Current price: Around $48-52 USD (as of mid-2025), 52-week range: $41.40-$53.03,
+        Dividend per share: $0.79. The fund shows sensitivity to various economic
+        factors, with notable negative sensitivity to inflation (-3.2) and interest
+        rates (-1.8), and positive sensitivity to credit conditions (+3.6).'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-06-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.267
+          sentiment_label: sell
+          reasoning: The forecast summary presents limited positive indicators, such
+            as a reasonable expense ratio and dividend yield, but highlights significant
+            negative sensitivities to inflation and interest rates, suggesting a bearish
+            outlook for the ETF amidst economic uncertainties.
+    - sentiment: 'EWN ETF 2026 Outlook. EWN is currently trading at $53.79, up 8.62%
+        over the past year, with a 52-week range of $41.21-$54.80. While no direct
+        EWN forecast exists in these results, broader European market outlook for
+        2026 includes: Europe''s Growth Prospects: Europe is expected to expand moderately
+        in 2026, supported by Germany''s fiscal stimulus and rising real incomes.
+        However, European companies face headwinds from increased US tariffs under
+        the Trump administration. Interest Rate Environment: The European Central
+        Bank is expected to continue its accommodative monetary policy, which generally
+        supports equity valuations.'
+      source: Etoro
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.346
+          sentiment_label: buy
+          reasoning: The EWN ETF has shown a positive growth of 8.62% over the past
+            year, and the broader European market outlook is moderately optimistic
+            due to fiscal stimulus and rising incomes, despite some headwinds from
+            US tariffs. The accommodative monetary policy from the European Central
+            Bank further supports a bullish sentiment.
+    - sentiment: 'EWN Netherlands ETF Forecast for 2025-2026. Based on available information,
+        specific price forecasts for EWN in 2025-2026 are limited. However, here''s
+        what the data shows: Forecast Data: One source provides a 12-month expected
+        return forecast for EWN, though the specific percentage isn''t fully detailed
+        in the results. The ETF has a beta of 0.78 and an annual risk level of 18.99%.
+        Recent Performance Context: As of early 2025, EWN was trading around $59-$52,
+        having gained approximately 29-35% over the past year. The ETF''s 5-year return
+        stands at 43.23%, with a 10-year return of 144.27%.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.482
+          sentiment_label: buy
+          reasoning: The recent performance of EWN shows significant gains (29-35%
+            over the past year and 144.27% over 10 years), indicating a positive outlook.
+            However, the lack of specific future price forecasts introduces some uncertainty,
+            which tempers the bullish sentiment slightly.
+    - sentiment: 'EWN ETF Price Prediction for 2026. Based on the available search
+        results, specific price predictions for EWN in 2026 are not provided by major
+        financial analysts or forecasting services. Current Status (as of early 2026):
+        Current Price: $62.27 (as of January 30, 2026), 52-Week Range: $41.40 - $64.01,
+        Recent Performance: The ETF returned 42.64% over the past year, including
+        dividends. The iShares MSCI Netherlands ETF (EWN) tracks Dutch companies,
+        with its top holding being ASML (25.83% of assets).'
+      source: Stockanalysis
+      author: ''
+      date: '2026-01-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The EWN ETF has shown strong recent performance with a 42.64%
+            return over the past year, indicating positive momentum. Although there
+            are no specific predictions for 2026, the current price is within a reasonable
+            range, suggesting a bullish outlook for the ETF.
+    - sentiment: EWN ETF Investment Outlook 2025-2026. I was unable to find specific
+        investment outlooks for EWN (iShares MSCI Netherlands ETF) for 2025-2026.
+        The search results show that Morningstar does not currently provide analyst
+        coverage for this ETF. EWN is an ETF that tracks the MSCI Netherlands IMI
+        25/50 Index with 60 holdings and approximately $296 million in assets under
+        management. Recent performance shows strong gains, with a 1-year return of
+        31.23% as of January 2025.
+      source: Morningstar
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.4
+          sentiment_label: buy
+          reasoning: The recent performance of the EWN ETF shows strong gains with
+            a 1-year return of 31.23%, indicating positive momentum. However, the
+            lack of specific investment outlooks and analyst coverage introduces some
+            uncertainty, but the overall performance suggests a bullish sentiment.
+    - sentiment: 'EWN Netherlands ETF: 2025-2026 Outlook. Fund Overview: EWN is the
+        iShares MSCI Netherlands ETF, a passively managed fund tracking Dutch equities
+        with an expense ratio of 0.47-0.50%. The fund holds approximately $335 million
+        in assets under management. Recent Performance: EWN showed modest performance
+        in 2024 with a 1.69% total return, underperforming the broader MSCI ACWX USA
+        index (5.53%). However, the fund gained 35.04% year-to-date through December
+        2025.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.35
+          sentiment_label: buy
+          reasoning: The fund's year-to-date performance of 35.04% through December
+            2025 is a strong positive indicator, despite modest performance in 2024.
+            This suggests a bullish outlook for the fund moving forward.
+    - sentiment: 'MSCI Netherlands ETF (EWN) - 2025 Performance and 2026 Outlook.
+        The iShares MSCI Netherlands ETF (EWN) had strong performance in 2025, with
+        a 34.32% NAV return through year-end, outpacing many global markets. The fund
+        tracks the MSCI Netherlands IMI 25/50 Index and is managed by BlackRock. Fund
+        Overview: Expense Ratio: 0.50%, Net Assets: $336.82 million, Number of Holdings:
+        54, 30-Day SEC Yield: 1.70%. Top Holdings (as of end 2025): The fund is heavily
+        concentrated in technology and financial stocks: ASML Holding NV (21.53%),
+        ING Groep NV (8.85%), Prosus NV (8.36%), Adyen NV (4.19%).'
+      source: Blackrock
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The MSCI Netherlands ETF (EWN) demonstrated strong performance
+            in 2025 with a 34.32% NAV return, significantly outpacing global markets.
+            The positive outlook is further supported by a solid expense ratio and
+            a well-diversified portfolio concentrated in high-performing sectors like
+            technology and finance.
+    - sentiment: 'EWN Netherlands ETF: 2025-2026 Forecast. Based on available data,
+        here''s what we know about the iShares MSCI Netherlands ETF (EWN): Current
+        Performance & Price: As of May 2025, EWN is trading around $52, with a 52-week
+        range of $41.40-$53.03. Forecast Information: Portfolio Pilot provides a 12-month
+        expected return forecast, though the specific percentage isn''t clearly displayed
+        in the available data. The ETF has a beta of 0.78 and an annualized risk of
+        18.99%.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-05-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The text provides a factual overview of the EWN Netherlands ETF's
+            current performance and forecast without indicating a strong positive
+            or negative sentiment. The lack of specific return forecasts and the mention
+            of risk factors contribute to a balanced outlook.
+    - sentiment: 'EWN Netherlands ETF 2025-2026 Forecast. Based on available data,
+        here''s what''s known about the iShares MSCI Netherlands ETF (EWN): Current
+        Performance & Valuation: As of May 2025, EWN is trading around $52.04, with
+        a 52-week range of $41.40-$53.03. The ETF has a low expense ratio of 0.47%
+        and tracks the MSCI Netherlands Index with passive management. Forecast Outlook:
+        PortfolioPilot provides a 12-month expected return forecast for EWN, though
+        specific percentage targets are not disclosed in the available data. The ETF
+        carries a beta of 0.78 and an annualized risk of 18.99%.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-05-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The current performance of EWN shows stability with a low expense
+            ratio and a reasonable trading range, but the lack of specific percentage
+            targets in the forecast and the moderate annualized risk suggest a cautious
+            outlook, leading to a balanced sentiment.

@@ -1,0 +1,145 @@
+sentiment_data:
+- etf: EWP
+  name: iShares MSCI Spain
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Spain ETF (EWP) - 2025/2026 Forecast. The search results
+        do not contain specific price forecasts or target prices for EWP for 2025
+        or 2026. While TipRanks and FinViz are mentioned as sources that provide forecast
+        information, the actual forecast data is not included in the available content.
+        Based on available data: 1-Year Return: 74.35% (as of January 2025), 3-Year
+        Return: 31.79%, 5-Year Return: 17.40%, Recent Price: Around $53.83 as of January
+        20, 2025, 52-Week Range: $31.76 - $55.25.'
+      source: Finviz
+      author: ''
+      date: '2025-01-20'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The text presents strong past returns (74.35% over 1 year) which
+            is positive, but lacks specific future forecasts, leading to uncertainty.
+            The overall tone is balanced, reflecting both positive historical performance
+            and the absence of clear future guidance.
+    - sentiment: 'EWP Spain ETF Forecast Summary. EWP (iShares MSCI Spain ETF) has
+        shown strong recent performance, with a 1-year return of 74.35% and a year-to-date
+        return of 31.05% as of early 2025. The ETF tracks the MSCI Spain 25/50 Index
+        and has $1.82 billion in assets under management. The available forecasts
+        provide limited specific guidance for 2025-2026: 12-month expected returns
+        are indicated but specific percentages are not clearly stated in the search
+        results. A Sharpe Ratio and 17.83% risk level are noted, with a beta of 0.69,
+        suggesting the ETF is less volatile than the broader market.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.546
+          sentiment_label: buy
+          reasoning: The strong recent performance of the EWP ETF, with a 1-year return
+            of 74.35% and a year-to-date return of 31.05%, indicates a positive outlook.
+            Additionally, the lower volatility suggested by the beta of 0.69 and a
+            reasonable risk level further supports a bullish sentiment despite the
+            lack of specific forecasts for the upcoming years.
+    - sentiment: EWP ETF Investment Outlook for 2025-2026. EWP (iShares MSCI Spain
+        ETF) has shown strong performance recently. As of mid-2025, the fund is up
+        significantly year-to-date, with returns of approximately 39.4% YTD and 34.1%
+        over the past year. The ETF has also delivered solid longer-term returns,
+        with 5-year annualized returns of 18.5%. EWP tracks the MSCI Spain 25/50 Index
+        and invests in large- and mid-cap Spanish equities. The fund has $1.56 billion
+        in assets under management with a low expense ratio of 0.50%.
+      source: Yahoo
+      author: ''
+      date: '2025-06-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.742
+          sentiment_label: strong buy
+          reasoning: The EWP ETF has demonstrated exceptional performance with a year-to-date
+            return of 39.4% and solid long-term returns of 18.5%, indicating a very
+            positive outlook for investors. The low expense ratio and substantial
+            assets under management further enhance the attractiveness of this investment.
+    - sentiment: EWP Spain ETF 2025-2026 Outlook. EWP has demonstrated strong performance
+        in 2024-2025, with a year-to-date return of 23.70% (as of March 2025) and
+        a one-year return of 19.40%. More recent data shows even stronger gains, with
+        returns of 24.55% year-to-date and 28.66% over the past year. The iShares
+        MSCI Spain ETF tracks large and mid-capitalization Spanish equities with a
+        low expense ratio of 0.50%. The fund offers a dividend yield of 3.76% and
+        trades with a P/E ratio of 11.76, suggesting relatively attractive valuation.
+      source: Yahoo
+      author: ''
+      date: '2025-03-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.725
+          sentiment_label: strong buy
+          reasoning: The text highlights strong performance metrics for the EWP Spain
+            ETF, including impressive year-to-date and one-year returns, along with
+            attractive valuation indicators such as a low P/E ratio and a decent dividend
+            yield, suggesting a very positive outlook for the fund.
+    - sentiment: EWP Spain Index ETF - 2025-2026 Forecast. EWP has shown strong returns,
+        with a 1-year return of 28.66% to 74.35% depending on the time period measured.
+        The ETF tracks the MSCI Spain 25/50 Index and has approximately $1.16-1.82B
+        in assets under management. One source provides a 12-month expected return
+        forecast, though the specific percentage is not fully detailed in the available
+        content. The ETF has a beta of 0.69-0.85, indicating moderate volatility relative
+        to broader markets.
+      source: Portfoliopilot
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The EWP Spain Index ETF has demonstrated strong returns of up
+            to 74.35% over the past year, indicating a positive performance. Additionally,
+            a moderate beta suggests that the ETF has less volatility compared to
+            the broader market, which is favorable for investors, leading to a bullish
+            sentiment overall.
+    - sentiment: EWP ETF 2026 Investment Outlook. EWP has shown strong performance
+        year-to-date, with returns of +39.4% as of May 2025, significantly outperforming
+        broader indices like the MSCI ACWI Ex USA (+14.0%) and MSCI Europe (+20.6%).
+        The ETF gained +23.70% YTD and +19.40% over the past year as of March 2025.
+        The iShares MSCI Spain ETF tracks large and mid-cap Spanish equities with
+        a net asset base of approximately $809-1,160 million. It has a low expense
+        ratio of 0.50% and offers a dividend yield of 3.76%.
+      source: Wallst
+      author: ''
+      date: '2025-05-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.724
+          sentiment_label: strong buy
+          reasoning: The EWP ETF has demonstrated exceptional performance with a year-to-date
+            return of +39.4%, significantly outperforming major indices. Additionally,
+            the low expense ratio and attractive dividend yield further enhance its
+            appeal, indicating a very positive outlook for investors.
+    - sentiment: 'EWP Spain ETF 2025-2026 Outlook. Based on available information,
+        specific 2026 forecasts for the EWP (iShares MSCI Spain ETF) are not prominently
+        published by major financial sources. However, here''s what current data shows:
+        EWP has shown strong recent returns, with a 1-year return of 74.35% (as of
+        January 2025) and 28.66% year-to-date returns in some reporting periods. The
+        ETF tracks the MSCI Spain 25/50 Index and holds 25-31 large and mid-cap Spanish
+        companies. Current Price: Around $40-54 depending on date, Assets Under Management:
+        $1.16-1.82 billion, Expense Ratio: 0.50%, 52-Week Range: $30.33-$41.33.'
+      source: Finviz
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.586
+          sentiment_label: buy
+          reasoning: The EWP Spain ETF has demonstrated strong recent returns of 74.35%
+            over the past year and 28.66% year-to-date, indicating a positive performance
+            trend. The solid asset management figures and reasonable expense ratio
+            further support a bullish outlook, despite the lack of specific forecasts
+            for 2026.

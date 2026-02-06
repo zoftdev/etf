@@ -1,0 +1,227 @@
+sentiment_data:
+- etf: EWC
+  name: iShares MSCI Canada
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Canada ETF (EWC) Forecast Summary. As of February 3,
+        2026, EWC was trading at $54.78, with assets under management of approximately
+        $3.86 billion. The search results provide limited specific forecasts for 2025-2026.
+        However, one source indicates that historically over a 52-week period, EWC
+        has risen an average of 6.8% based on 26 years of past performance data, rising
+        in 16 of those years. Current market conditions show: Neutral sentiment with
+        22.12% annualized historical volatility, A yield curve showing recession risk
+        (-53.99%), Maximum drawdown of -60.75% historically, Sharpe ratio of 0.34
+        (annualized).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.086
+          sentiment_label: neutral
+          reasoning: The historical performance of EWC shows a modest average rise
+            of 6.8% over 52 weeks, which is positive, but the current market conditions
+            indicate significant recession risk and high volatility, leading to a
+            mixed outlook overall.
+    - sentiment: 'EWC ETF: 2025 Performance and 2026 Outlook. The iShares MSCI Canada
+        ETF (EWC) has delivered strong returns in 2025, with gains of approximately
+        22-24% year-to-date as of late December 2025. The Canadian market outperformed
+        global indices, with the S&P/TSX Composite Index rising 8.6% (15% in US-Dollar
+        terms) in the first half of 2025, compared to the S&P 500''s 5.5%. The rally
+        has been driven primarily by: Gold and precious metals stocks: Contributing
+        about half of the gains, Financials sector: Up 8.23% in May 2025, Technology:
+        Up 8.88% in May 2025, Energy sector: Benefiting from Canada''s position as
+        a global energy supplier.'
+      source: Etoro
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.746
+          sentiment_label: strong buy
+          reasoning: The EWC ETF has shown impressive returns of 22-24% in 2025, significantly
+            outperforming global indices, particularly with strong contributions from
+            key sectors like gold, financials, technology, and energy. This positive
+            performance and sector strength indicate a very bullish outlook for the
+            ETF moving forward.
+    - sentiment: EWC Canada ETF 2025-2026 Forecast. As of late 2025, EWC was trading
+        around $48-54 per share. The ETF showed strong performance in 2025, with year-to-date
+        returns of approximately 33.8% through year-end. One forecasting model indicated
+        EWC was at $54.78 as of February 3, 2026, with a neutral market outlook. However,
+        specific price targets for 2026 were not prominently featured in available
+        forecasts. EWC (iShares MSCI Canada ETF) has approximately $3.9 billion in
+        assets under management and tracks the MSCI Canada Index, focusing on large
+        and mid-cap Canadian equities.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.4
+          sentiment_label: buy
+          reasoning: The EWC ETF demonstrated strong performance in 2025 with a 33.8%
+            return, indicating positive market sentiment. Although the forecast for
+            2026 lacks specific price targets, the overall outlook remains neutral,
+            suggesting continued confidence in the ETF's potential for growth.
+    - sentiment: 'EWC ETF 2026 price prediction 2025. Analyst price targets for EWC
+        show a negative near-term outlook, with an average target of $33.52, representing
+        a -22.83% decrease from the price of $43.44. Targets range from $32.44 to
+        $34.61. 2026 Price Forecast: One forecast source projects EWC could reach
+        approximately $54.78 by February 2026, representing a significant increase
+        from current levels. As of March 2025, EWC had posted a +8.9% return over
+        the past year and +15.8% over five years. The ETF tracks the iShares MSCI
+        Canada Index with a beta of 0.8 and annualized volatility of 22.12%.'
+      source: Stockscan
+      author: ''
+      date: '2025-03-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.267
+          sentiment_label: sell
+          reasoning: The text presents a negative near-term outlook with a projected
+            decrease of -22.83% from the current price, which heavily influences the
+            sentiment. Although there is a potential for significant growth by 2026,
+            the immediate bearish indicators outweigh the positive long-term forecast.
+    - sentiment: 'EWC ETF Investment Outlook for 2025-2026. EWC (iShares MSCI Canada
+        ETF) tracks the MSCI Canada Index with $3.1-3.9 billion in assets under management.
+        As of late 2025, the ETF has shown strong year-to-date returns of 33.8%, with
+        a current price around $48-49. Short-Term Forecast (Next 30 Days): Analyst
+        sentiment is bearish in the near term, with an average price target of $33.52,
+        representing a -22.83% decrease from the price of $43.44 at the time of analysis.
+        The highest target is $34.61 and lowest is $32.44.'
+      source: Stockscan
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.467
+          sentiment_label: sell
+          reasoning: While the EWC ETF has shown strong year-to-date returns of 33.8%,
+            the short-term forecast indicates a bearish sentiment with a significant
+            expected price decrease of -22.83%, leading to an overall negative outlook.
+    - sentiment: 'EWC Canada ETF 2025-2026 Outlook. The iShares MSCI Canada ETF (EWC)
+        has shown strong momentum, with the Canadian market delivering impressive
+        returns. The S&P/TSX Composite Index gained 26.34% year-to-date, driven primarily
+        by gold price surges and record M&A activity. In the first half of 2025, the
+        TSX returned 8.6% in local currency (15% in USD), outperforming the S&P 500''s
+        5.5%. Key Drivers for 2025-2026: Commodity and Sector Strength: Gold and precious
+        metals have been primary performance drivers, contributing approximately half
+        of the gains.'
+      source: Etoro
+      author: ''
+      date: '2025-06-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights strong momentum in the Canadian market, with
+            impressive year-to-date returns of 26.34% and outperformance compared
+            to the S&P 500. The emphasis on key drivers like gold price surges and
+            record M&A activity further supports a positive outlook for the EWC Canada
+            ETF.
+    - sentiment: MSCI Canada forecast 2026 ETF 2025. The iShares MSCI Canada ETF (EWC)
+        is currently trading around $54.78 as of early February 2026. However, short-term
+        analyst forecasts are pessimistic, with an average price target of $33.52,
+        representing a projected 22.83% decline over the next 30 days. The MSCI Canada
+        Index, which EWC tracks, covers approximately 85% of Canada's free float-adjusted
+        market capitalization with 83 constituents. As of late 2025, the index showed
+        a dividend yield of 2.31% and a P/E ratio of 20.84.
+      source: Stockscan
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.675
+          sentiment_label: sell
+          reasoning: The text highlights a significant projected decline of 22.83%
+            in the short term, which indicates a bearish outlook. While there are
+            some neutral indicators like the dividend yield and P/E ratio, the overall
+            sentiment is dominated by the negative forecast.
+    - sentiment: 'EWC Canada index ETF 2026 forecast 2025. As of February 3, 2026,
+        EWC was trading at $54.78, up 0.42% for the day. The fund has $3.9 billion
+        in assets under management. EWC delivered strong returns in 2025, with a year-to-date
+        total return of 35.9% (including dividends) as of December 31, 2025. One forecasting
+        service provides a neutral market outlook for EWC, with probabilistic projections
+        based on historical prices. The market environment shows: Neutral volatility
+        levels, Yield curve indicating recession risk, Moderate, stable inflation,
+        Benign credit conditions.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The strong returns of 35.9% in 2025 and stable credit conditions
+            are positive indicators, but the neutral market outlook and recession
+            risk from the yield curve suggest caution, leading to a balanced sentiment
+            overall.
+    - sentiment: 'iShares MSCI Canada 2026 forecast investment research 2025. Short-term
+        outlook: The next 30 days show a generally negative forecast, with analyst
+        price targets averaging $33.52, representing a -22.83% decrease from the current
+        price of $43.44. One-year historical performance: Based on 26 years of historical
+        data, the iShares MSCI Canada ETF has risen an average of 6.8% over 52-week
+        periods, with the stock rising higher in 16 of those years. 2026 price projection:
+        As of February 3, 2026, the ETF was trading at $54.78.'
+      source: Stockscan
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.525
+          sentiment_label: sell
+          reasoning: The short-term outlook indicates a generally negative forecast
+            with a significant expected decrease in price (-22.83%), which heavily
+            influences the sentiment. Although historical performance shows some positive
+            growth over the years, the current negative projection outweighs these
+            factors, leading to a bearish outlook.
+    - sentiment: 'EWC ETF 2026 investment outlook 2025. EWC (iShares MSCI Canada ETF)
+        showed solid returns in 2025, with a 1-year return of approximately 21% as
+        of mid-2025. This reflects broader strength in Canadian equities during the
+        period. International Markets Strength: Global equity markets performed robustly
+        in 2025, with non-U.S. equities surging 33.11%, driven by strong earnings
+        recovery, AI enthusiasm in Asia, and a weaker dollar. This environment benefited
+        Canadian equities as part of the international rotation away from U.S. large-caps.'
+      source: Intechinvestments
+      author: ''
+      date: '2025-06-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights solid returns of 21% for the EWC ETF and
+            a robust performance in global equity markets, indicating a positive outlook
+            for Canadian equities. The mention of strong earnings recovery and favorable
+            market conditions supports a bullish sentiment.
+    - sentiment: EWC Canada ETF 2026 forecast 2025. As of late 2025, EWC (iShares
+        MSCI Canada ETF) was trading around $54.78 with $3.9 billion in assets under
+        management. The ETF showed strong year-to-date performance of 33.8% in 2025.
+        Specific 2026 price forecasts are limited in the available data. However,
+        one forecast model as of February 3, 2026 indicated EWC at $54.78, suggesting
+        relative stability near current levels. The market environment shows neutral
+        conditions with moderate volatility and recession risk signals in the yield
+        curve.
+      source: Portfoliopilot
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The ETF demonstrated strong year-to-date performance of 33.8%,
+            which is positive, but the forecast suggests stability rather than growth,
+            and there are concerns about moderate volatility and recession risks,
+            leading to a balanced outlook.

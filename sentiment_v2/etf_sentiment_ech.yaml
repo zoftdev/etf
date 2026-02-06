@@ -1,0 +1,238 @@
+sentiment_data:
+- etf: ECH
+  name: iShares MSCI Chile
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Chile (ECH) ETF Forecast 2025-2026. According to probabilistic
+        forecasting models, ECH is expected to show the following price progression:
+        Period: April 2026: Bull Case: $45.70, Base Case: $44.12, Bear Case: $42.55.
+        July 2026: Bull Case: $47.97, Base Case: $46.20, Bear Case: $44.43. October
+        2026: Bull Case: $51.84, Base Case: $48.31, Bear Case: $44.77. January 2027:
+        Bull Case: $59.60, Base Case: $52.52, Bear Case: $45.45. The base case scenario
+        projects modest growth from the current price of around $44-46, reaching approximately
+        $52.52 by January 2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.375
+          sentiment_label: buy
+          reasoning: The forecast indicates a positive trend with a base case projecting
+            growth from around $44-46 to approximately $52.52 by January 2027, suggesting
+            a bullish outlook. The bull case scenarios further reinforce this positive
+            sentiment, indicating potential for higher returns.
+    - sentiment: 'ECH ETF 2026 Outlook and Price Predictions. Based on probabilistic
+        forecasting models, ECH is expected to appreciate throughout 2026: April 2026:
+        $47.97, July 2026: $51.84, October 2026: $55.72, January 2027: $59.60. This
+        represents potential upside from the current price of approximately $44-46
+        as of early 2025. ECH has shown strong momentum recently: 1-Year Return: ~70-81%,
+        6-Month Return: ~52-54%, YTD Performance (2025): ~12-14%.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text indicates a positive outlook for ECH ETF with expected
+            price appreciation throughout 2026 and strong recent performance metrics,
+            including a 1-Year Return of approximately 70-81%. This suggests significant
+            bullish sentiment, despite the current price being slightly lower than
+            the projected future values.
+    - sentiment: 'ECH Chile ETF Forecast for 2025-2026. Based on probabilistic forecasting
+        models, ECH is expected to show the following price targets: April 2026: Bull
+        Case: $45.70, Base Case: $44.12, Bear Case: $42.55. July 2026: Bull Case:
+        $47.97, Base Case: $46.20, Bear Case: $44.43. October 2026: Bull Case: $51.84,
+        Base Case: $48.31, Bear Case: $44.77. January 2027: Bull Case: $59.60, Base
+        Case: $52.52, Bear Case: $45.45. The base case scenario suggests moderate
+        upside potential through 2026, with the ETF potentially reaching around $52.52
+        by January 2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.463
+          sentiment_label: buy
+          reasoning: The forecast indicates a moderate upside potential with the base
+            case suggesting a price increase to $52.52 by January 2027, supported
+            by consistently higher bull case targets across the forecast period, which
+            reflects a generally positive outlook for the ECH ETF.
+    - sentiment: 'ECH ETF 2026 price prediction 2025. Based on forecast models, the
+        iShares MSCI Chile ETF (ECH) is predicted to reach the following price levels
+        through 2026: Timeline: April 2026: $47.97, July 2026: $51.84, October 2026:
+        $55.72, January 2027: $59.60. These forecasts represent a mid-range scenario
+        based on probabilistic models using historical price data. As of early February
+        2025, ECH was trading around $46.05. The ETF has shown strong performance
+        with a 1-year return of approximately 70%. Historical volatility is relatively
+        high at 26.89% annualized.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The forecasted price levels indicate a positive trend with significant
+            growth expected from $46.05 to $59.60 over the next couple of years, supported
+            by a strong 1-year return of approximately 70%. However, the high historical
+            volatility suggests some risk, but the overall outlook remains bullish.
+    - sentiment: 'ECH ETF Investment Outlook for 2025-2026. ECH (iShares MSCI Chile
+        ETF) has shown strong recent performance with a 1-year return of approximately
+        71-81%. However, the ETF exhibits high volatility with an annualized historical
+        volatility of 26.89% and a maximum drawdown of -74.08%. According to probabilistic
+        forecasts, ECH could reach the following levels by January 2027: Bull case:
+        $59.60, Base case: $52.52, Bear case: $45.45. Mid-year 2026 (July) base case
+        projection is $48.31.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The strong recent performance of the ECH ETF (71-81% return)
+            is a positive indicator; however, the high volatility and significant
+            maximum drawdown (-74.08%) introduce substantial risk. The mixed probabilistic
+            forecasts suggest uncertainty, leading to a balanced outlook overall.
+    - sentiment: ECH Chile ETF 2026 Outlook. The iShares MSCI Chile ETF (ECH) has
+        delivered exceptional returns, gaining 44.44% year-to-date as of late 2025.
+        This strong performance is driven by record highs in the Chilean stock exchange,
+        with the IGPA Index climbing 42.92% since the start of the year. Chile's economy
+        is expected to grow 2.3% in 2025, with growth moderating to 2.1% in 2026.
+        The Chilean central bank is anticipated to cut interest rates further in December
+        2025 or early 2026, which could provide additional economic stimulus.
+      source: Ad-hoc-news
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights exceptional returns of 44.44% year-to-date
+            and strong performance in the Chilean stock exchange, indicating a bullish
+            outlook. Additionally, anticipated interest rate cuts by the central bank
+            could further stimulate the economy, supporting a positive sentiment overall.
+    - sentiment: 'ECH ETF 2026 Market Analysis 2025. As of early 2026, the iShares
+        MSCI Chile ETF (ECH) is trading at $44.09, with an assets under management
+        (AUM) of approximately $1.03 billion. The fund has demonstrated strong recent
+        performance, with a 1-year return of 70.91% and a 3-year annualized return
+        of 20.11%. Probabilistic forecasts for ECH through early 2027 suggest potential
+        price ranges: April 2026: $44.43-$47.97, July 2026: $44.77-$51.84, October
+        2026: $45.11-$55.72, January 2027: $45.45-$59.60.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The ECH ETF shows strong recent performance with a 1-year return
+            of 70.91% and a solid 3-year annualized return of 20.11%. Additionally,
+            the probabilistic forecasts indicate a positive trend in price ranges
+            for the upcoming months, suggesting a bullish outlook.
+    - sentiment: 'MSCI Chile forecast 2026 ETF 2025. The iShares MSCI Chile ETF (ECH)
+        has the following probabilistic price forecasts for 2026: Period: April 2026:
+        Low: $42.55, Mid: $44.12, High: $45.70. July 2026: Low: $44.43, Mid: $46.20,
+        High: $47.97. October 2026: Low: $44.77, Mid: $48.31, High: $51.84. January
+        2027: Low: $45.11, Mid: $50.41, High: $59.60. As of late January 2026, ECH
+        was trading around $44-45.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.25
+          sentiment_label: buy
+          reasoning: The forecast for the iShares MSCI Chile ETF shows a gradual increase
+            in the mid and high price targets, suggesting a positive outlook for the
+            asset. The projected price movements indicate potential growth, particularly
+            with the high target reaching up to $59.60 by January 2027, which supports
+            a bullish sentiment.
+    - sentiment: 'ECH Chile index ETF 2026 forecast 2025. ECH (iShares MSCI Chile
+        ETF) was trading around $31.67-$45.51 depending on the specific date in early
+        2025, with strong year-to-date performance of approximately 12-19%. According
+        to probabilistic forecasting models, ECH is expected to appreciate throughout
+        2026: April 2026: $45.70, July 2026: $47.97, October 2026: $51.84, January
+        2027: $59.60. The base case scenario projects prices reaching $45-52 range
+        by end of 2026, with upside scenarios potentially reaching $59.60 by early
+        2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights strong year-to-date performance (12-19% growth)
+            and positive forecasts for price appreciation throughout 2026, indicating
+            a bullish outlook for the ECH Chile index ETF.
+    - sentiment: 'iShares MSCI Chile 2026 forecast investment research 2025. As of
+        January 27, 2026, ECH trades at $47.30 with a year-to-date return of 16.80%.
+        The fund has posted strong 1-year performance of 80.86% and a 3-year return
+        of 21.65%. According to probabilistic forecasting models, ECH price targets
+        for 2026 include: April 2026: $47.97, July 2026: $51.84, October 2026: $55.72,
+        January 2027: $59.60. However, these forecasts note a neutral market outlook
+        with yield curve recession risk signals.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-27'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.423
+          sentiment_label: buy
+          reasoning: The text highlights strong past performance (80.86% in 1 year
+            and 16.80% year-to-date), and positive price targets for 2026 indicate
+            bullish expectations. However, the mention of neutral market outlook and
+            recession risk introduces some caution, but overall, the positive indicators
+            outweigh the negatives.
+    - sentiment: 'ECH ETF 2026 investment outlook 2025. ECH (iShares MSCI Chile ETF)
+        has shown strong recent performance, with a 1-year return of approximately
+        70-81% and YTD returns around 13-19% as of early 2025. The ETF trades at $31-46
+        per share depending on the date, with an AUM of approximately $1.3-1.4 billion.
+        According to probabilistic forecasting models, ECH is expected to trade in
+        the following ranges through 2026: April 2026: $44-48, July 2026: $44-52,
+        October 2026: $45-56, January 2027: $45-60.'
+      source: Finviz
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The ECH ETF has demonstrated strong recent performance with a
+            1-year return of 70-81% and positive year-to-date returns, indicating
+            a bullish sentiment. The projected trading ranges through 2026 suggest
+            continued growth potential, reinforcing a positive outlook for investors.
+    - sentiment: 'ECH Chile ETF 2026 forecast 2025. Based on available forecasts,
+        here''s the outlook for the iShares MSCI Chile ETF (ECH): Price Forecast for
+        2026: According to probabilistic forecasting models, ECH is expected to trade
+        in the following ranges through early 2027: April 2026: $44.43 - $47.97, July
+        2026: $44.77 - $51.84, October 2026: $45.11 - $55.72, January 2027: $45.45
+        - $59.60. The mid-range forecast suggests gradual appreciation throughout
+        2026, with potential upside to around $59.60 by January 2027.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.575
+          sentiment_label: buy
+          reasoning: The forecast indicates a gradual appreciation of the ECH ETF
+            throughout 2026, with a potential upside reaching $59.60 by January 2027.
+            This positive outlook suggests a bullish sentiment towards the ETF's performance.

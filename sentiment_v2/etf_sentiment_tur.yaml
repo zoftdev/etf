@@ -1,0 +1,272 @@
+sentiment_data:
+- etf: TUR
+  name: iShares MSCI Turkey
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Turkey ETF (TUR) Forecast 2025-2026. As of early February
+        2026, TUR was trading at $41.49. For the next 30 days, analysts project a
+        generally positive outlook with an average price target of $42.06, representing
+        a +26.32% increase from current levels, with targets ranging from $40.48 to
+        $43.65. 12-Month Price Target: The average 12-month price target is $47.16,
+        indicating potential +41.62% upside. Key Fund Metrics: Assets Under Management:
+        $198.7 million, Expense Ratio: 0.59%, Historical Volatility (annualized):
+        37.62%, Beta: 1.0.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text presents a generally positive outlook for the iShares
+            MSCI Turkey ETF (TUR), with analysts projecting a significant price increase
+            of +26.32% in the short term and +41.62% in the long term, indicating
+            strong bullish sentiment. The positive price targets and solid fund metrics
+            further support a favorable investment perspective.
+    - sentiment: 'TUR ETF 2025-2026 Outlook. Price Forecasts: Short-term (30 days):
+        Analysts project TUR averaging $42.06, representing a +26.32% increase from
+        current levels around $33.30. 12-month target: The average analyst price target
+        is $47.16, indicating +41.62% upside potential. Current price (as of early
+        2026): $41.49, up 0.85%. The current market environment shows neutral positioning
+        with moderate volatility (18.16) and stable inflation (35.32%). The yield
+        curve signals recession risk at -54.00%.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.325
+          sentiment_label: buy
+          reasoning: The analysis indicates a strong positive outlook with significant
+            projected price increases (26.32% short-term and 41.62% long-term), despite
+            the current neutral market environment and recession risk signals. The
+            overall sentiment leans towards optimism due to the substantial upside
+            potential in the price forecasts.
+    - sentiment: TUR Turkey ETF forecast 2026 2025. As of early February 2026, the
+        iShares MSCI Turkey ETF (TUR) is trading around $40-41, with Assets Under
+        Management (AUM) of approximately $198-350 million. The ETF has shown strong
+        recent performance, with a 12-month average price target of $47.16, representing
+        a +41.62% upside from current levels. In the near term (30 days), the average
+        analyst price target is $42.06, suggesting a +26.32% potential increase.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights strong recent performance of the iShares
+            MSCI Turkey ETF (TUR) with a significant upside potential of +41.62% based
+            on the 12-month average price target and a +26.32% potential increase
+            in the near term, indicating a bullish outlook.
+    - sentiment: 'TUR ETF 2026 price prediction 2025. As of early 2025, TUR (iShares
+        MSCI Turkey ETF) was trading around $32-$33. Analysts provide the following
+        price targets: 30-day forecast: Average target of $42.06, representing a +26.32%
+        increase from $33.30, 12-month forecast: Average target of $47.16, representing
+        a +41.62% upside. As of February 3, 2026, TUR traded at $41.49, up 0.85% on
+        the day. TUR exhibits significant volatility (37.62% annualized historical
+        volatility) with a maximum drawdown of -72.34%, indicating this is a high-risk
+        investment.'
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.423
+          sentiment_label: buy
+          reasoning: The positive price targets indicate a strong potential upside
+            (26.32% in 30 days and 41.62% in 12 months), suggesting bullish sentiment.
+            However, the significant volatility and high maximum drawdown highlight
+            risks, but overall, the outlook remains positive due to the anticipated
+            price increases.
+    - sentiment: TUR ETF Investment Outlook for 2025-2026. The iShares MSCI Turkey
+        ETF (TUR) is trading near its 52-week highs, with a price of approximately
+        $39-41 as of late January 2026. The ETF has delivered strong recent returns,
+        with a 1-year return of 15.10% and year-to-date performance of 19.84%. Analyst
+        price targets show optimism for the near term. Over the next 30 days, the
+        average analyst target is $42.06, representing a +26.32% upside from current
+        levels. Looking further ahead, the 12-month price target averages $47.16,
+        implying +41.62% upside potential.
+      source: Ishares
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.683
+          sentiment_label: buy
+          reasoning: The text highlights strong recent returns (15.10% over 1 year
+            and 19.84% year-to-date) and optimistic analyst price targets indicating
+            significant upside potential (+26.32% in 30 days and +41.62% over 12 months),
+            reflecting a bullish outlook for the TUR ETF.
+    - sentiment: 'iShares MSCI Turkey 2026 target price 2025. Based on current analyst
+        forecasts: Near-term outlook (30 days): The average analyst price target is
+        $42.06, representing a +26.32% increase from the current price of $33.30,
+        with targets ranging from $40.48 to $43.65. 12-month outlook: The average
+        price target is $47.16, indicating +41.62% upside potential. Current status
+        (as of early February 2026): The ETF was trading around $41.37-$41.49. Fund
+        fundamentals: The iShares MSCI Turkey ETF has $344.76 million in assets under
+        management, tracks the MSCI Turkey IMI 25/50 Index, and carries a 0.59% expense
+        ratio.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The sentiment is predominantly positive, with analyst forecasts
+            indicating significant upside potential of +26.32% in the near term and
+            +41.62% over 12 months. The current trading price is close to the near-term
+            target, suggesting a bullish outlook for the ETF.
+    - sentiment: 'TUR forecast 2026 analyst report 2025. The iShares MSCI Turkey ETF
+        (TUR) has analyst price targets showing positive sentiment for 2026: 12-month
+        average price target: $47.16, representing a +41.62% upside from current levels,
+        Near-term (30-day) forecast: $42.06 average, a +26.32% increase, with a range
+        between $40.48 and $43.65. Several 2025 analyst reports provide economic outlook
+        relevant to the ETF''s performance: Economic Growth: Turkey''s economy is
+        expected to slow in 2025-2026 after growth picked up in Q4 2024 and Q1 2025,
+        driven by financial tensions and impact of US tariffs on exports.'
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.31
+          sentiment_label: buy
+          reasoning: The forecast for the iShares MSCI Turkey ETF (TUR) indicates
+            significant upside potential (41.62% for 2026 and 26.32% for the near-term),
+            suggesting a bullish outlook. However, the expected economic slowdown
+            in Turkey introduces some caution, balancing the overall sentiment towards
+            a positive but tempered view.
+    - sentiment: 'TUR Turkey ETF 2026 outlook 2025. As of February 2026, TUR (iShares
+        MSCI Turkey ETF) trades at $41.49, with a 52-week range of $29.64-$39.44.
+        The ETF has shown a 1-year change of 7.91%. Analyst projections for TUR are
+        generally positive: 30-day forecast: Average price target of $42.06, representing
+        a +26.32% increase from recent prices, 12-month forecast: Average target of
+        $47.16, suggesting +41.62% upside potential. Key Risk Metrics: The ETF exhibits
+        significant volatility: Historical volatility (annualized): 37.62%, Maximum
+        drawdown: -72.34%, Maximum recovery time: 913 days.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The overall sentiment is positive due to favorable analyst projections
+            indicating significant upside potential (26.32% for 30 days and 41.62%
+            for 12 months), despite the high volatility and risks associated with
+            the ETF. The positive price targets suggest a bullish outlook for the
+            Turkey ETF.
+    - sentiment: TUR ETF 2026 price target 2025. As of early February 2025, TUR (iShares
+        MSCI Turkey ETF) is trading around $41.37-$41.49. For the next 30 days, the
+        average analyst price target is $42.06, representing a +26.32% increase from
+        the current price of $33.30. The 12-month average price target is $47.16,
+        indicating potential +41.62% upside from current levels. The ETF has shown
+        strong recent performance, with a 1-year return of 17.36% and year-to-date
+        performance of 20.19%. However, it carries high volatility with an annualized
+        historical volatility of 37.62%.
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights a significant potential upside in price targets
+            (+26.32% and +41.62%) along with strong recent performance (17.36% return
+            over the year and 20.19% year-to-date), indicating a bullish outlook despite
+            the mention of high volatility.
+    - sentiment: 'MSCI Turkey forecast 2026 ETF 2025. As of February 2026, the iShares
+        MSCI Turkey ETF (TUR) is trading at approximately $41.49. The ETF has $198.7
+        million in assets under management with high volatility of 37.62% annualized.
+        Price Forecasts: Near-term (30-day forecast): Analysts project an average
+        price target of $42.06, representing a +26.32% increase from recent levels
+        of $33.30. 12-month forecast: The average analyst price target is $47.16,
+        suggesting +41.62% upside potential.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.654
+          sentiment_label: buy
+          reasoning: The text indicates a positive outlook with significant potential
+            upside in the near-term (+26.32%) and 12-month forecast (+41.62%). The
+            trading price is also expected to increase, suggesting bullish sentiment
+            among analysts.
+    - sentiment: 'TUR Turkey index ETF 2026 forecast 2025. As of early February 2025,
+        TUR (iShares MSCI Turkey ETF) is trading around $39-41, with strong recent
+        gains. The ETF has achieved a 1-year return of approximately 17.36% and is
+        trading near its 52-week high of $41.73. 2025-2026 Price Forecasts: 30-Day
+        Forecast: The average analyst price target is $42.06, representing a +26.32%
+        increase from recent levels, with a range between $40.48-$43.65. 12-Month
+        Forecast: The average 12-month price target is $47.16, suggesting potential
+        +41.62% upside from current prices.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The text highlights strong recent gains for the TUR ETF, a significant
+            1-year return of 17.36%, and positive price forecasts indicating potential
+            upside of 26.32% and 41.62%. These factors contribute to a bullish outlook
+            on the ETF's performance.
+    - sentiment: iShares MSCI Turkey 2026 forecast investment research 2025. As of
+        early 2026, TUR was trading around $41.49 with assets under management of
+        approximately $198.7 million. The ETF has a 52-week range of $29.64-$39.44
+        and an expense ratio of 0.59%. TUR exhibits high volatility with an annualized
+        historical volatility of 37.62% and a maximum drawdown of -72.34%. The fund
+        has a Sharpe ratio of 0.14 and Sortino ratio of 0.32, indicating relatively
+        weak risk-adjusted returns. Price forecasts provided are probabilistic and
+        illustrative based on historical data.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.342
+          sentiment_label: neutral
+          reasoning: The text presents a mixed outlook with high volatility and a
+            significant maximum drawdown of -72.34%, which are negative indicators.
+            However, it also mentions the trading price and assets under management,
+            suggesting some level of stability, leading to a neutral sentiment overall.
+    - sentiment: TUR ETF 2026 investment outlook 2025. The iShares MSCI Turkey ETF
+        (TUR) is showing positive momentum in early 2025. As of late January 2026,
+        the ETF is trading around $41.49-$41.58, with a year-to-date return of approximately
+        20.80% and a one-year return of 13.73%. TUR tracks the MSCI Turkey Investable
+        Market Index and holds 77-84 Turkish companies with a 0.58-0.59% expense ratio.
+        The ETF exhibits high volatility with annualized historical volatility of
+        37.62% and a maximum drawdown of -72.34%.
+      source: Ishares
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+    - sentiment: TUR Turkey ETF 2026 forecast 2025. As of early February 2026, TUR
+        (iShares MSCI Turkey ETF) was trading at $41.49. For the next 30 days, forecasts
+        are generally positive, with an average analyst price target of $42.06, representing
+        a +26.32% increase from recent levels. The average 12-month price target stands
+        at $47.16, suggesting potential upside of +41.62%. TUR exhibits significant
+        volatility with an annualized historical volatility of 37.62% and a maximum
+        drawdown of -72.34%. The yield curve shows recession risk at -54%, though
+        inflation is moderate and stable.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0

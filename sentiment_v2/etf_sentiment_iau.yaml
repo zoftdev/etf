@@ -1,0 +1,210 @@
+sentiment_data:
+- etf: IAU
+  name: iShares Gold Trust
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares Gold Trust(IAU) ETF Price Forecast. As of January 16, 2026,
+        IAU was trading at $86.27. Probabilistic forecasts show three scenarios: Base
+        case: $90.97 (April 2026) → $105.09 (January 2027), Bullish case: $95.07 (April
+        2026) → $121.46 (January 2027), Bearish case: $86.88 (April 2026) → $88.72
+        (January 2027).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-16'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.2
+          sentiment_label: buy
+          reasoning: The probabilistic forecasts indicate a generally positive outlook
+            with both the base and bullish cases projecting increases in price, particularly
+            the bullish case suggesting a significant rise to $121.46 by January 2027.
+            The bearish case, while lower, does not suggest a drastic decline, indicating
+            overall optimism in the market sentiment for IAU.
+    - sentiment: 'IAU : iShares Gold Trust etf forecast 2025 - 2026 - 2030 - 2035.
+        Forecasts predict 2025 average: $46.14 (down 24.37% from $61.00), 2026 average:
+        $36.14 (down 40.75% from $61.00). The fund has $40.3 billion in assets under
+        management and tracks the price of physical gold bullion.'
+      source: Aipickup
+      author: ''
+      date: '2025-05-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.675
+          sentiment_label: sell
+          reasoning: The forecasts indicate significant declines in average prices
+            for 2025 and 2026, with drops of 24.37% and 40.75% respectively from the
+            current price of $61.00. This bearish outlook on future performance suggests
+            a negative sentiment towards the IAU ETF.
+    - sentiment: IAU ETF 2025-2026 Outlook. As of January 2026, IAU is trading around
+        $86-96, with assets under management of approximately $68-77 billion. Professional
+        market participants expect gold to have another strong year in 2026. Supporting
+        factors include sustained central bank demand, geopolitical uncertainty, seven
+        consecutive months of inflows into global gold ETFs, and elevated hedging
+        demand.
+      source: Etftrends
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The outlook for gold in 2026 is very positive, with expectations
+            of strong performance driven by sustained central bank demand and geopolitical
+            uncertainty, alongside consistent inflows into gold ETFs, indicating a
+            bullish sentiment.
+    - sentiment: 'iShares Gold Trust (IAU) 2026 Forecast Analysis. ETF Price Forecast
+        Model projects IAU reaching: Upper scenario: $121.46 by January 2027, Base
+        scenario: $105.09 by January 2027, Lower scenario: $88.72 by January 2027.
+        Analyst Consensus: 12-month price target averages $74.60, indicating -10.99%
+        downside from current levels.'
+      source: Stockscan
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.487
+          sentiment_label: sell
+          reasoning: The forecast analysis presents a significant downside risk of
+            -10.99% from the current levels, with the analyst consensus indicating
+            a price target that is considerably lower than the current price. This
+            bearish outlook, coupled with the lower scenario of $88.72, suggests a
+            negative sentiment towards IAU.
+    - sentiment: 'IAU ETF 2026 Price Predictions. Price predictions for IAU in 2026
+        vary significantly: ETF Price Forecast Model projects IAU reaching between
+        $86.88 and $121.46 by January 2027. AIPickup Forecast predicts an average
+        price of $36.14 for 2026. AltIndex Prediction extrapolates a 2026 price target
+        of $65.55.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The price predictions for IAU in 2026 show a wide range of outcomes,
+            from a low of $36.14 to a high of $121.46, indicating uncertainty and
+            mixed sentiments about future performance. The lack of a clear consensus
+            on direction leads to a neutral sentiment overall.
+    - sentiment: IAU ETF Investment Outlook for 2025-2026. As of January 2026, IAU
+        is trading around $86-96 per share with substantial assets under management
+        of $68-76 billion. The ETF has delivered strong recent performance, with an
+        83.27% total return over the past year through end of 2025. Forecasts vary
+        significantly by source.
+      source: Stockanalysis
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The IAU ETF shows strong recent performance with an 83.27% total
+            return, indicating positive investor sentiment. However, the varying forecasts
+            suggest some uncertainty, but overall, the strong performance leads to
+            a bullish outlook.
+    - sentiment: 'IAU Gold ETF 2025-2026 Forecasts. ETF Price Forecast Model projects
+        modest gains: April 2026: $90.00-$95.07, July 2026: $95.68-$103.86, October
+        2026: $100.38-$112.66, January 2027: $105.09-$121.46. AIPickup Forecast is
+        significantly more bearish: 2025 average: $46.14, 2026 average: $36.14.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.432
+          sentiment_label: sell
+          reasoning: The forecast model indicates modest gains for the IAU Gold ETF,
+            but the significantly lower projections from AIPickup suggest a bearish
+            outlook, particularly with average prices dropping to $36.14 in 2026,
+            which heavily influences the overall sentiment towards a negative stance.
+    - sentiment: IAU 2026 Forecast Summary. Seven analysts covering IAU on the Toronto
+        Stock Exchange have a 1-year price target average of 2.45 CAD, with estimates
+        ranging from a low of 1.07 CAD to a high of 3.85 CAD. The overall analyst
+        rating is "strong buy."
+      source: Tradingview
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.8
+          sentiment_label: strong buy
+          reasoning: The average price target of 2.45 CAD, with a range indicating
+            significant upside potential (from 1.07 CAD to 3.85 CAD), coupled with
+            a 'strong buy' rating from analysts, reflects a very positive outlook
+            for IAU.
+    - sentiment: 'iShares Gold Trust (IAU) 2026 Forecast Summary. Forecasts for IAU
+        in 2026 vary significantly: AIPickup: Average forecast of $36.14, representing
+        a -40.75% decrease. ETF Price Forecast: Projects probabilistic price scenarios
+        ranging from $86.88 to $103.86 by July 2026. AltIndex: AI-based price target
+        prediction of $65.55 for 2026.'
+      source: Stockscan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.325
+          sentiment_label: neutral
+          reasoning: The forecasts for IAU in 2026 show a significant range, with
+            one projection indicating a steep decline of -40.75%, while others suggest
+            more optimistic scenarios. This mixed outlook leads to a neutral sentiment
+            overall, as the extreme variability indicates uncertainty in the market.
+    - sentiment: iShares Gold Trust (IAU) 2026 Forecast. According to forecast analysis,
+        IAU is projected to average $36.14 in 2026, with a forecasted range between
+        $28.22 (low) and $48.30 (high). This represents approximately a -40.75% decrease
+        from reference price levels. For the next 30 days, analyst forecasts show
+        an average price target of $58.63.
+      source: Aipickup
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.575
+          sentiment_label: sell
+          reasoning: The forecast indicates a significant decrease of approximately
+            -40.75% from current price levels, which suggests a bearish outlook. Although
+            there is a higher short-term price target of $58.63, the overall long-term
+            projection is negative, leading to a sell sentiment.
+    - sentiment: iShares Gold Trust (IAU) 2026 Investment Outlook. State Street Global
+        Advisors projects that gold's 2025 rally will likely moderate in 2026, with
+        gold possibly consolidating at $4,000–$4,500. However, strategic reallocations
+        and geopolitical factors could create conditions for gold to reach $5,000/oz.
+        Five structural forces support gold's bull cycle in 2026.
+      source: Ssga
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The text indicates a positive outlook for gold, with projections
+            suggesting a potential rise to $5,000/oz supported by five structural
+            forces, despite a moderation in the rally. This suggests a bullish sentiment
+            overall, warranting a 'buy' label.
+    - sentiment: IAU Gold ETF 2026 Forecast and 2025 Performance. IAU has delivered
+        strong returns in 2025, with a year-to-date return of approximately 25.91%
+        through Q2. ETF Price Forecast model projects a base-case scenario with quarterly
+        price targets of $90.97 (April), $95.68 (July), $100.38 (October), and $105.09
+        (January 2027).
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-06-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.683
+          sentiment_label: buy
+          reasoning: The text highlights a strong year-to-date return of approximately
+            25.91% for IAU in 2025 and presents a positive price forecast for the
+            upcoming quarters, indicating a bullish outlook for the ETF.

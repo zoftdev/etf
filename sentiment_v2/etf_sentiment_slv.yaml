@@ -1,0 +1,208 @@
+sentiment_data:
+- etf: SLV
+  name: iShares Silver Trust
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: iShares Silver Trust (SLV) Forecast for 2025-2026. Analyst forecasts
+        for SLV show negative near-term outlook with an average price target of $35.21,
+        representing a -33.72% decline from the current price of $53.13. The 12-month
+        average price target is $37.27, indicating -29.85% downside. SLV has shown
+        significant recent gains, with a 1-year return of 169.43% and a 6-month performance
+        of 115.66%.
+      source: Stockscan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.423
+          sentiment_label: sell
+          reasoning: While SLV has shown impressive recent gains (169.43% over 1 year),
+            the analyst forecasts indicate a negative near-term outlook with significant
+            expected declines in price targets (-33.72% and -29.85%), leading to an
+            overall bearish sentiment.
+    - sentiment: SLV ETF 2025-2026 Outlook. Silver prices (which SLV tracks) are forecasted
+        to reach $56-$88 per ounce in 2026, with major banks predicting $63.78 by
+        end of 2026. Technical analysis suggests even higher potential targets of
+        $72-$88 based on multi-year breakout patterns. Silver has entered "price discovery
+        mode" after breaking through multi-year resistance above $60 in late 2025.
+      source: Advantagegold
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The outlook for silver prices is highly positive, with forecasts
+            suggesting significant increases to $56-$88 per ounce and technical analysis
+            indicating potential targets of $72-$88. The mention of breaking through
+            multi-year resistance above $60 further supports a bullish sentiment.
+    - sentiment: SLV (iShares Silver Trust) 2026 Forecast Analysis. SLV is positioned
+        as a bullish silver investment heading into 2026. The forecast indicates a
+        steady upward trajectory with pullbacks functioning as consolidation phases.
+        Silver has transitioned from a defensive hedge into a hybrid asset driven
+        by industrial demand, monetary uncertainty, and supply constraints.
+      source: Bitrue
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The analysis presents a bullish outlook for SLV, highlighting
+            a steady upward trajectory and positive factors such as industrial demand
+            and supply constraints, which contribute to a strong positive sentiment
+            towards silver investments.
+    - sentiment: SLV ETF Investment Outlook for 2025-2026. SLV has experienced exceptional
+        gains, surging +74% year-to-date as of late December 2025. Analysts are eyeing
+        targets between $70 and $75 by Q1 2026. Key bullish catalysts include anticipated
+        Fed rate cuts (3-4 expected in 2026), geopolitical uncertainty, industrial
+        demand from AI data centers and solar technology, and undervalued valuations
+        with gold-to-silver ratio at 90:1.
+      source: Globalmarketpulse
+      author: ''
+      date: '2025-12-26'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.756
+          sentiment_label: strong buy
+          reasoning: The text highlights exceptional gains of 74% year-to-date and
+            strong bullish catalysts such as anticipated Fed rate cuts and increasing
+            industrial demand, which collectively indicate a very positive outlook
+            for SLV in the near future.
+    - sentiment: 'Silver ETF Forecast for 2025-2026. Silver has experienced exceptional
+        performance, with spot prices reaching record highs near $117.69 in January
+        2026. Analysts have issued bullish forecasts: Citi boosted its short-term
+        silver target to $150 per ounce. FXEmpire forecasts potential movement toward
+        $62 and potentially $100. Investors added 15.7 million ounces to silver-backed
+        ETFs in November 2025, the largest monthly inflow since July.'
+      source: Fxempire
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.754
+          sentiment_label: strong buy
+          reasoning: The text highlights exceptional performance of silver with record
+            high prices and bullish forecasts from analysts, indicating a strong positive
+            outlook. Additionally, significant inflows into silver-backed ETFs suggest
+            strong investor confidence and demand, further supporting a strong buy
+            sentiment.
+    - sentiment: 'Silver Price Forecast 2026 and ETF Outlook. Analysts are bullish
+        on silver for 2026, with significant upside targets: $100+ target with ETF
+        inflows and supply deficits setting the stage. $150 target from Citibank citing
+        capital flow-driven momentum. Silver has been in a supply deficit for five
+        consecutive years, with industrial demand from solar panels, EVs, and medical
+        technology outpacing mine output.'
+      source: Fxempire
+      author: ''
+      date: '2025-12-09'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.754
+          sentiment_label: strong buy
+          reasoning: The analysis presents a very positive outlook for silver, highlighting
+            bullish targets exceeding $100 and $150, driven by strong industrial demand
+            and ongoing supply deficits. The consistent supply deficit over five years
+            and anticipated ETF inflows further reinforce a significant positive sentiment
+            towards silver prices.
+    - sentiment: SLV 2026 Forecast Summary. Silver entered 2026 with renewed institutional
+        and retail investor attention, transitioning from a defensive hedge to a hybrid
+        asset. SLV shows a generally bullish narrative for 2026 with gradual upside
+        and manageable volatility. Technical support zone at 97.50–98.00 with resistance
+        at 100–102 range. SLV maintains a medium-term ascending structure with higher
+        lows intact.
+      source: Bitrue
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text indicates a generally bullish outlook for SLV in 2026,
+            highlighting renewed investor attention and a medium-term ascending structure,
+            which suggests positive momentum. The mention of manageable volatility
+            and technical support further supports a favorable sentiment, leading
+            to a score in the 'buy' range.
+    - sentiment: iShares Silver Trust (SLV) 2025-2026 Investment Outlook. SLV has
+        shown strong performance in 2025, with the fund gaining 147.86% NAV return
+        and 144.66% market price return through December 31, 2025. The 1-year return
+        stands at 169.43%. Analyst price targets show mixed sentiment with 12-month
+        price target averaging $37.27, implying -29.85% downside.
+      source: Stockscan
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The strong performance of SLV in 2025 with significant returns
+            (147.86% NAV and 144.66% market price) is countered by the mixed sentiment
+            from analysts indicating a potential downside of -29.85% based on the
+            average price target. This balance of strong past performance and cautious
+            future outlook results in a neutral sentiment score.
+    - sentiment: SLV ETF 2026 Market Analysis. SLV experienced exceptional gains through
+        2025-2026, with the ETF returning +144.7% for the full year 2025. Silver prices
+        surged over 150% driven by industrial demand (solar panels and electric vehicles),
+        geopolitical factors (rising U.S. tariffs), and supply constraints. Despite
+        strong fundamentals, analysts warned of speculative risks and potential correction
+        in early 2026.
+      source: Ainvest
+      author: ''
+      date: '2026-01-26'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The text highlights exceptional gains of +144.7% for SLV in 2025
+            and strong demand for silver due to industrial uses, indicating a positive
+            outlook. However, the mention of speculative risks and potential corrections
+            tempers the enthusiasm slightly, but overall, the strong performance and
+            fundamentals suggest a bullish sentiment.
+    - sentiment: 'Silver ETF (SLV) 2026 Outlook. SLV has delivered exceptional returns
+        in 2025, surging approximately 74-162%. Key bullish drivers for 2026 include:
+        Monetary Policy (3-4 Fed rate cuts expected), Industrial Demand (solar photovoltaics
+        accounting for 14-17% of silver consumption, AI data centers), Supply Deficits
+        (five consecutive years), and Geopolitical Safe-Haven Demand. Analysts project
+        SLV could reach $70-75 by Q1 2026.'
+      source: Globalmarketpulse
+      author: ''
+      date: '2025-12-26'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.754
+          sentiment_label: strong buy
+          reasoning: The text highlights exceptional returns in 2025 and strong bullish
+            drivers for 2026, including expected Fed rate cuts, increasing industrial
+            demand, and supply deficits. The projected price range of $70-75 indicates
+            a very positive outlook for SLV, warranting a strong buy sentiment.
+    - sentiment: 'iShares Silver Trust (SLV) 2026 Investment Outlook. SLV delivered
+        exceptional returns in 2025, gaining approximately 144-147%. Silver prices
+        reached historic highs not seen in over 40 years. Bullish factors for 2026:
+        Silver remains undervalued relative to gold, industrial demand continues expanding,
+        supply deficits remain unresolved. Cautionary factors: SLV exhibits high volatility
+        (42.5%), rally appears technically overextended, macroeconomic uncertainties.'
+      source: Finviz
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The text highlights exceptional returns and bullish factors such
+            as undervaluation relative to gold and expanding industrial demand, which
+            contribute to a positive outlook. However, the cautionary notes about
+            volatility and macroeconomic uncertainties are present but do not outweigh
+            the overall bullish sentiment.

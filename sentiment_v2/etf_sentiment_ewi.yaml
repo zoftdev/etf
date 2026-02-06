@@ -1,0 +1,212 @@
+sentiment_data:
+- etf: EWI
+  name: iShares MSCI Italy
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Italy ETF (EWI) - 2025-2026 Outlook. EWI has shown
+        strong recent returns, with a 1-year total return of 49.4% and 2-year returns
+        of 33.7% as of January 31, 2026. Fund Basics: EWI is a passively managed ETF
+        with $718.5 million in assets under management and an expense ratio of 0.48-0.50%.
+        The fund tracks the MSCI Italy Index and holds 26 stocks, with the top holdings
+        being Italian banks and industrial companies like UniCredit (15.8%), Intesa
+        Sanpaolo (12.8%), and Enel (11.1%).'
+      source: Portfoliopilot
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The strong recent returns of 49.4% over the past year and 33.7%
+            over two years indicate a positive performance outlook for the iShares
+            MSCI Italy ETF. Additionally, the focus on stable sectors like banking
+            and industrials further supports a bullish sentiment.
+    - sentiment: EWI ETF Outlook for 2025-2026. EWI is the iShares MSCI Italy ETF,
+        managed by BlackRock and listed on the NYSE. It tracks Italian equities across
+        various sectors, with a focus on financials (43.7%), utilities (16.3%), and
+        consumer cyclical stocks. The ETF's top holdings include UniCredit, Intesa
+        Sanpaolo, and Enel. As of late December 2025, EWI traded at $50.78 USD. The
+        ETF gained 33.60% over the past year and has appreciated 0.97% in the most
+        recent week.
+      source: Etoro
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The EWI ETF has shown a significant annual gain of 33.60%, indicating
+            strong performance and positive investor sentiment. The recent weekly
+            appreciation of 0.97% further supports a bullish outlook, suggesting continued
+            growth potential in the near term.
+    - sentiment: EWI Italy ETF Forecast for 2025-2026. The search results provide
+        limited specific forecasts for EWI (iShares MSCI Italy ETF) for 2025-2026.
+        EWI is a passively managed ETF tracking Italian equities with an expense ratio
+        of 0.48% and a beta of 1.02. The fund has an average trading volume of $15M
+        (30-day) and provides a dividend yield of $1.12 per share. The ETF carries
+        a 16.35% risk rating with a Sharpe ratio provided on PortfolioPilot. Macro
+        sensitivity analysis shows EWI is negatively sensitive to interest rates (-1.3)
+        and inflation (-1.4), but positively sensitive to credit conditions (+2.9).
+      source: Portfoliopilot
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The text presents a mixed outlook on EWI, highlighting both its
+            passive management and dividend yield as positive aspects, while also
+            noting significant negative sensitivities to interest rates and inflation,
+            which could impact performance. Overall, the lack of specific forecasts
+            and the balance of positive and negative factors lead to a neutral sentiment
+            score.
+    - sentiment: 'EWI ETF Investment Outlook for 2025-2026. EWI (iShares MSCI Italy
+        ETF) trades at 1.74x price-to-book, reflecting flat growth expectations. The
+        ETF faces headwinds from a muted European economic outlook combined with sector-specific
+        profit pressures. The primary concerns for EWI''s outlook include: Tax pressures:
+        Rising IRAP taxes and latent windfall tax measures, Net interest margin (NIM)
+        compression: Declining European interest rates negatively impact profitability,
+        Banking sector headwinds: As the ETF is heavily weighted toward Italian financials
+        (notably UniCredit and Intesa Sanpaolo, which represent approximately 25.9%
+        of holdings combined).'
+      source: Seekingalpha
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.675
+          sentiment_label: sell
+          reasoning: The outlook for the EWI ETF is predominantly negative due to
+            flat growth expectations, tax pressures, and banking sector headwinds,
+            particularly from declining interest rates impacting profitability. These
+            factors suggest a bearish sentiment towards the ETF's performance in the
+            near future.
+    - sentiment: 'EWI Italy ETF 2025-2026 Outlook. Performance and Valuation: EWI
+        trades at 1.74x price-to-book ratio, reflecting flat growth expectations.
+        The ETF showed strong recent performance with 49.4% total returns over the
+        past year (as of January 2026), though with an annualized volatility of 20.3%.
+        Key Headwinds: The ETF faces several challenges ahead: Rising IRAP (regional)
+        taxes on financial institutions, Net interest margin (NIM) pressure as European
+        interest rates decline, Latent windfall tax measures affecting profitability,
+        Muted European economic outlook.'
+      source: Portfoliopilot
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.073
+          sentiment_label: neutral
+          reasoning: The ETF has shown strong recent performance with 49.4% total
+            returns, which is a positive indicator. However, the flat growth expectations
+            and several key headwinds, including rising taxes and a muted economic
+            outlook, create a cautious sentiment overall, leading to a neutral score.
+    - sentiment: MSCI Italy forecast 2026 ETF 2025. The MSCI Italy Index has shown
+        strong performance in 2025, with year-to-date returns of 56.41% as of December
+        20, 2025. This represents significant outperformance, with the index up 57.94%
+        over the past year. MSCI's "Investment Trends in Focus" report for 2026 discusses
+        broader market themes rather than Italy-specific forecasts. The report highlights
+        that Europe (including Italy as part of European markets) was up 31% through
+        November 2025 in U.S. dollar terms, significantly outperforming the U.S. market's
+        18% gain.
+      source: Msci
+      author: ''
+      date: '2025-12-20'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The MSCI Italy Index has demonstrated strong performance with
+            year-to-date returns of 56.41% and a 57.94% increase over the past year,
+            indicating a bullish outlook. Additionally, Italy's performance significantly
+            outpaces the U.S. market, reinforcing a positive sentiment towards Italian
+            equities.
+    - sentiment: EWI Italy index ETF 2026 forecast 2025. EWI (iShares MSCI Italy ETF)
+        has shown strong performance recently, with a 1-year return of 45-49.4% as
+        of early 2025. Year-to-date returns for 2025 stand at approximately 2.9%.
+        EWI is a passively managed ETF tracking the MSCI Italy Index with an expense
+        ratio of 0.48-0.50%. The fund holds 26-35 securities concentrated in large-cap
+        Italian companies, with top holdings including UniCredit (15.8%), Intesa Sanpaolo
+        (12.8%), and Enel (11.1%).
+      source: Portfoliopilot
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The EWI Italy ETF has demonstrated strong recent performance
+            with a 1-year return of 45-49.4%, indicating a bullish outlook. Additionally,
+            the year-to-date return of approximately 2.9% further supports a positive
+            sentiment towards the ETF, despite the passive management and expense
+            ratio being relatively standard.
+    - sentiment: iShares MSCI Italy 2026 forecast investment research 2025. The EWI
+        is currently trading around $50-55, with a 52-week range of $36.82-$55.63.
+        Historically, over the next 52 weeks, the ETF has risen an average of 4.2%
+        based on 29 years of performance data, with a historical accuracy of 51.72%
+        in predicting upward movement. The fund carries a low expense ratio of 0.48-0.50%.
+        The ETF has a beta of 1.02 and an annualized volatility (risk) of 16.35%.
+        The fund is positively sensitive to credit (+2.9) and growth (+0.8) factors,
+        but negatively sensitive to inflation (-1.4) and interest rates (-1.3).
+      source: Portfoliopilot
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The ETF shows a historical average gain of 4.2% and has a low
+            expense ratio, which are positive indicators. However, the mixed sensitivity
+            to economic factors such as inflation and interest rates introduces a
+            level of caution, leading to a balanced outlook overall.
+    - sentiment: 'EWI ETF 2026 investment outlook 2025. EWI (iShares MSCI Italy ETF)
+        has delivered strong recent returns, with 1-year performance of approximately
+        50% and YTD 2025 returns around 44-45%. However, the 2026 outlook presents
+        mixed prospects. Key Headwinds for 2026: EWI faces significant headwinds that
+        constrain growth expectations: Tax pressures: Rising IRAP taxes and latent
+        windfall tax measures on financial institutions, Net interest margin (NIM)
+        compression: Declining European interest rates are pressuring banking profitability,
+        Valuation concerns: The ETF trades at 1.74x price-to-book, reflecting flat
+        growth expectations.'
+      source: Seekingalpha
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.267
+          sentiment_label: sell
+          reasoning: While EWI has shown strong recent returns (50% over the past
+            year), the 2026 outlook is concerning due to significant headwinds such
+            as rising taxes, declining interest rates affecting profitability, and
+            valuation concerns, which indicate a bearish sentiment for future performance.
+    - sentiment: 'EWI Italy ETF 2026 forecast 2025. As of January 31, 2026, EWI showed
+        strong recent returns: 45% over the past year and 49.4% in total returns (including
+        dividends). Year-to-date through January 2026, the fund was up 2.9%. One analysis
+        indicated a 12-month expected return forecast, though specific percentage
+        figures weren''t fully detailed in the available results. The fund has a beta
+        of 1.02 relative to its benchmark, indicating it tracks market movements closely.
+        EWI holds $718.5-$719 million in assets under management and tracks the MSCI
+        Italy Index with 26 holdings, heavily concentrated in large-cap stocks.'
+      source: Portfoliopilot
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text highlights strong recent returns of 45% over the past
+            year and a year-to-date increase of 2.9%, indicating a positive outlook.
+            Additionally, the fund's close tracking of market movements and substantial
+            assets under management suggest a stable investment, leading to a bullish
+            sentiment.

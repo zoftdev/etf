@@ -1,0 +1,204 @@
+sentiment_data:
+- etf: USO
+  name: United States Oil Fund
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: United States Oil Fund (USO) Forecasts for 2025-2026. As of early
+        February 2026, USO was trading at $77.54, up 2.94%. The market environment
+        for oil is currently characterized as neutral, with moderate inflation (35.32%),
+        recession risk indicated in the yield curve (-53.99%), and benign credit conditions.
+        USO showed recent performance of +2.52% for the week and +8.92% for the month.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The recent performance of USO is positive, with increases of
+            2.94% and 8.92% over the month, but the overall market environment is
+            described as neutral with recession risks and moderate inflation, leading
+            to a balanced outlook.
+    - sentiment: USO 2026 Forecast Analysis. The EIA forecasts Brent crude will average
+        $56 per barrel in 2026, representing a 19% decline from 2025 levels of $69/bbl.
+        J.P. Morgan similarly projects Brent reaching $66/bbl in 2025 and declining
+        further to $58/bbl in 2026. WTI crude is expected to average $52 per barrel
+        in 2026, down from $65/bbl in 2025.
+      source: Jpmorgan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.675
+          sentiment_label: sell
+          reasoning: The forecasts indicate a significant decline in crude oil prices,
+            with Brent expected to drop by 19% and WTI also showing a notable decrease.
+            This bearish outlook suggests a negative sentiment towards the market
+            for crude oil in the coming years.
+    - sentiment: USO ETF Price Predictions for 2026. The International Energy Agency
+        (IEA) forecasts that West Texas Intermediate crude oil will average $51 per
+        barrel in 2026, down from an expected $65/barrel in 2025. This suggests downward
+        pressure on oil ETFs like USO throughout 2026. Bearish factors include expected
+        global oil oversupply, weak Chinese economic demand, and potential ceasefire
+        in Ukraine.
+      source: Nasdaq
+      author: ''
+      date: '2025-12-15'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.675
+          sentiment_label: sell
+          reasoning: The forecast of a decline in crude oil prices from $65 to $51
+            per barrel indicates a negative outlook for oil ETFs like USO. Additionally,
+            bearish factors such as expected global oversupply and weak demand from
+            China further contribute to a pessimistic sentiment.
+    - sentiment: 'Crude Oil ETF Forecast for 2025-2026. Analyst predictions for Brent
+        crude oil in 2026 vary: EIA projects $80-$95 per barrel, BMI (Fitch Solutions)
+        cites $85-$100 per barrel, RHB Investment Bank forecasts ~$90 per barrel,
+        and Standard Chartered projects ~$92 per barrel average. These forecasts are
+        built on sophisticated models weighing economic growth, supply adjustments,
+        and inventory levels.'
+      source: Financialease
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.35
+          sentiment_label: buy
+          reasoning: The forecasts for Brent crude oil prices range from $80 to $100
+            per barrel, indicating a generally positive outlook for the commodity.
+            The use of sophisticated models and the consideration of economic growth
+            and supply adjustments suggest confidence in a stable and potentially
+            increasing price trajectory.
+    - sentiment: USO ETF Investment Outlook for 2025-2026. 2026 is viewed as a "critical
+        inflection point" for oil ETFs. OPEC+ is maintaining group-wide output quotas
+        of 43 million barrels per day for 2026. Non-OPEC+ supply growth from the U.S.,
+        Brazil, Canada, and Argentina is projected to add 1 million bpd, creating
+        potential surplus risks. Potential WTI price targets of $55+ by Q1 2026 if
+        OPEC+ intervenes or geopolitical disruptions tighten markets.
+      source: Ainvest
+      author: ''
+      date: '2025-12-25'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The outlook presents a mixed sentiment; while there are potential
+            price targets of $55+ indicating a bullish scenario, the mention of surplus
+            risks and the critical nature of 2026 suggests caution and uncertainty
+            in the market dynamics.
+    - sentiment: Oil Price Forecast for 2026 and ETF Considerations. EIA projects
+        Brent will average $56/barrel in 2026, down from $69/barrel in 2025. WTI will
+        average $52/barrel in 2026, down from $65/barrel in 2025. The price declines
+        are expected because global oil production will exceed global oil demand,
+        causing oil inventories to rise significantly throughout 2026.
+      source: Eia
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.675
+          sentiment_label: sell
+          reasoning: The forecast indicates a significant decline in oil prices for
+            both Brent and WTI, driven by an oversupply situation leading to rising
+            inventories. This bearish outlook suggests a negative sentiment regarding
+            the oil market for 2026.
+    - sentiment: USO 2026 Forecast and Analyst Reports. The U.S. Energy Information
+        Administration's January 2026 Short-Term Energy Outlook projects Brent crude
+        oil price at $56 per barrel (down 19% from 2025's $69), West Texas Intermediate
+        price at $52 per barrel. U.S. crude oil production at 13.6 million barrels
+        per day. The EIA expects oil prices to decline as global oil production will
+        exceed global oil demand.
+      source: Eia
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.646
+          sentiment_label: sell
+          reasoning: The forecast indicates a significant decline in oil prices (down
+            19% from 2025), driven by an oversupply situation where production exceeds
+            demand, which suggests a bearish outlook for the market.
+    - sentiment: United States Oil Fund (USO) 2026 Forecast. J.P. Morgan expects Brent
+        crude to reach $58/barrel in 2026. IEA forecasts West Texas Intermediate crude
+        to average $51/barrel in 2026, compared to an expected $65/barrel in 2025.
+        Key headwinds include supply oversupply, weak Chinese economic demand, and
+        potential ceasefire in Ukraine. Geopolitical uncertainties could provide some
+        price support.
+      source: Jpmorgan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.367
+          sentiment_label: neutral
+          reasoning: The forecast indicates lower prices for both Brent and West Texas
+            Intermediate crude in 2026 compared to 2025, reflecting a bearish outlook.
+            However, the mention of potential geopolitical uncertainties providing
+            price support introduces a mixed sentiment, leading to a neutral overall
+            assessment.
+    - sentiment: USO ETF 2026 Market Analysis. A contrarian analysis suggests crude
+        oil could spike above $100 per barrel in 2026 under certain conditions. Crude
+        oil is historically undervalued versus gold, with the gold-to-oil ratio near
+        record highs above 70x. Current prices under $60 per barrel are approaching
+        global breakeven costs, limiting downside potential. Significant upside could
+        emerge if geopolitical hostilities disrupt regional oil supply.
+      source: Seekingalpha
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.527
+          sentiment_label: buy
+          reasoning: The analysis highlights potential for significant upside in crude
+            oil prices due to geopolitical factors and the current undervaluation
+            compared to gold, suggesting a bullish outlook. Additionally, the mention
+            of prices nearing breakeven costs indicates limited downside risk, further
+            supporting a positive sentiment.
+    - sentiment: USO Oil ETF 2025-2026 Outlook. USO has declined about 11.8% year-to-date
+        through mid-December 2025. The IEA forecasts West Texas Intermediate crude
+        oil will average $51 per barrel in 2026, significantly lower than the 2024
+        average of $77/b. Key headwinds include oversupply concerns, ceasefire hopes
+        in Ukraine, and weak Chinese demand. Potential support factors include geopolitical
+        risks and long-term demand growth from data centers.
+      source: Nasdaq
+      author: ''
+      date: '2025-12-15'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.564
+          sentiment_label: sell
+          reasoning: The text highlights a significant decline in the USO Oil ETF
+            (11.8% year-to-date) and a bearish forecast for crude oil prices ($51
+            per barrel in 2026 compared to $77 in 2024). While there are some potential
+            support factors, the overall outlook is dominated by negative indicators
+            such as oversupply concerns and weak demand, leading to a bearish sentiment.
+    - sentiment: USO Oil ETF 2026 Forecast Summary. As of early February 2026, USO
+        was trading around $75-77 per share. The market environment for oil in 2026
+        appears neutral. USO exhibits significant volatility with annualized historical
+        volatility of 36.36% and a maximum drawdown of -98.19%, reflecting the commodity's
+        inherent price swings.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The sentiment is neutral due to the mixed indicators; while the
+            trading price is stable around $75-77, the significant volatility and
+            maximum drawdown highlight risks without providing a clear bullish or
+            bearish outlook.

@@ -1,0 +1,200 @@
+sentiment_data:
+- etf: EWS
+  name: iShares MSCI Singapore
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: MSCI Singapore Futures to see further upside in 2026. Singapore equities
+        are expected to see further upside in 2026, with analysts maintaining a constructive
+        view on the market. The MSCI Singapore Index (SiMSCI) recorded a year-to-date
+        total return of 25.23% as of December 29, 2024, demonstrating strong performance
+        heading into 2026. The Monetary Authority of Singapore's S$5 billion Equity
+        Market Development Programme is providing a structural tailwind for local
+        equities. Upcoming SGX-Nasdaq dual listing bridge (expected mid-2026) and
+        reduced board lot sizes should improve liquidity and investor participation.
+      source: Com
+      author: ''
+      date: '2025-12-29'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights a positive outlook for Singapore equities
+            with a projected upside in 2026, strong year-to-date returns of 25.23%,
+            and supportive initiatives from the Monetary Authority of Singapore, indicating
+            a bullish sentiment overall.
+    - sentiment: EWS ETF 2025-2026 Outlook. The EWS ETF tracks the performance of
+        Singapore's largest companies and has shown strong recent performance. As
+        of the latest data, the ETF was trading at $28.54, with a 52-week range of
+        $17.74-$28.61. The ETF has gained approximately 32.4% over the past year.
+        For broader Asian market context, Singapore's economy could be influenced
+        by US trade policy developments under the Trump administration, global technology
+        sector trends and AI developments, regional economic stimulus measures, particularly
+        in China, and interest rate policies from major central banks.
+      source: Mitrade
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The EWS ETF has demonstrated strong recent performance with a
+            32.4% gain over the past year, indicating a bullish outlook. Additionally,
+            the mention of positive influences such as technology trends and regional
+            economic stimulus further supports a favorable sentiment towards the ETF.
+    - sentiment: EWS ETF Price Predictions for 2025-2026. The 30-day outlook is generally
+        negative, with an average analyst price target of $12.85, representing a -49.02%
+        decrease from recent prices around $25.21. Price targets range from $12.29
+        to $13.41. As of early 2025, EWS trades in the $25-28 range with strong year-to-date
+        performance. The ETF has shown 1-year return of approximately 27-35%, 3-year
+        annualized return of around 16-18%.
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.423
+          sentiment_label: sell
+          reasoning: The overall sentiment is negative due to the significant expected
+            price decrease of -49.02% from current levels, despite strong past performance.
+            The analysts' price targets indicate a bearish outlook, overshadowing
+            the positive returns from previous years.
+    - sentiment: 'iShares MSCI Singapore ETF (EWS) - 2025-2026 Target Price. Current
+        Price: Around $25-28 as of early 2025. One source provides a 30-day forecast
+        with an average analyst price target of $12.85, though this represents a significantly
+        bearish outlook with a -49.02% decrease from the current price, and appears
+        to be an outlier compared to other available data. Performance Context: The
+        ETF has shown strong 1-year returns of approximately 27-31%, 52-week trading
+        range: $20.08 - $29.65.'
+      source: Finviz
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.325
+          sentiment_label: neutral
+          reasoning: While the ETF has shown strong 1-year returns of 27-31%, the
+            significant bearish outlook of a -49.02% decrease from the current price
+            based on one analyst's forecast creates a mixed sentiment. The performance
+            context suggests resilience, but the outlier forecast introduces caution,
+            leading to a neutral overall sentiment.
+    - sentiment: EWS 2026 Forecast Summary. According to the stock forecast data available,
+        EWS has a notably negative short-term outlook. The average analyst price target
+        is $12.85, representing a -49.02% decrease from the current price of $25.21,
+        with the highest target at $13.41 and lowest at $12.29. However, this appears
+        to be a 30-day forecast rather than a comprehensive 2026 analyst report.
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.65
+          sentiment_label: sell
+          reasoning: The forecast indicates a significant negative outlook with a
+            projected average price target that reflects a -49.02% decrease from the
+            current price, suggesting bearish sentiment among analysts despite the
+            mention of it being a short-term forecast.
+    - sentiment: EWS Singapore ETF 2025-2026 Outlook. The ETF is trading at $28.54
+        with a 1-year return of 32.40%. Key valuation metrics include a P/E ratio
+        of 15.11 and a P/B ratio of 1.81. EWS tracks the MSCI Singapore Index and
+        provides exposure to Singapore's largest companies across sectors including
+        financials, telecommunications, transport, and retail. Top holdings include
+        DBS Group, Singtel, United Overseas Bank, and Keppel Corporation. The ETF
+        has approximately $687 million in assets under management with a 0.5% expense
+        ratio.
+      source: Eulerpool
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.525
+          sentiment_label: buy
+          reasoning: The ETF shows a strong 1-year return of 32.40%, indicating positive
+            performance, and the P/E and P/B ratios suggest reasonable valuation.
+            The exposure to major sectors and top holdings further supports a bullish
+            outlook for the ETF.
+    - sentiment: EWS ETF 2026 price target 2025. The EWS ETF (iShares MSCI Singapore
+        ETF) is trading at approximately $28.54 as of early 2025. Citigroup expects
+        "spürbare Kursgewinne" (notable gains) in the first half of 2026 due to accelerating
+        profit growth, while UBS anticipates upside of "high single-digit to low double-digit"
+        range for global equities, driven by technology investments and productivity
+        gains.
+      source: Boerse-online
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text indicates a positive outlook for the EWS ETF with expectations
+            of notable gains and strong profit growth in 2026, supported by favorable
+            trends in technology investments and productivity, suggesting a bullish
+            sentiment overall.
+    - sentiment: MSCI Singapore Outlook for 2025-2026. Singapore equities are expected
+        to see further upside in 2026, with analysts maintaining a constructive view
+        on the market. The MSCI Singapore Index (SiMSCI) recorded a year-to-date total
+        return of 25.23% as of December 29, 2024, demonstrating strong performance
+        heading into 2026. The Monetary Authority of Singapore's S$5 billion Equity
+        Market Development Programme is providing a structural tailwind for local
+        equities. Upcoming SGX-Nasdaq dual listing bridge (expected mid-2026) and
+        reduced board lot sizes should improve liquidity and investor participation.
+      source: Com
+      author: ''
+      date: '2025-12-29'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.684
+          sentiment_label: buy
+          reasoning: The outlook for Singapore equities is positive, with a projected
+            upside in 2026 and a strong year-to-date return of 25.23%. Additionally,
+            supportive measures like the S$5 billion Equity Market Development Programme
+            and improvements in liquidity indicate a bullish sentiment towards the
+            market.
+    - sentiment: iShares MSCI Singapore ETF (EWS) - 2025-2026 Investment Overview.
+        The iShares MSCI Singapore ETF (EWS) has shown strong performance in 2025,
+        with a 31.56% NAV return and 31.33% market price return for the year. The
+        fund tracks the MSCI Singapore 25/50 Index and has $736.13 million in net
+        assets with 16 holdings as of December 31, 2025. A notable April 2025 report
+        indicated Singapore was lowering its GDP forecast for 2025, which may impact
+        future returns.
+      source: Ishares
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.4
+          sentiment_label: buy
+          reasoning: The iShares MSCI Singapore ETF (EWS) has demonstrated strong
+            performance with over 31% returns in 2025, indicating a positive outlook.
+            However, the mention of a lowered GDP forecast introduces some caution,
+            but the overall strong performance outweighs this concern, leading to
+            a bullish sentiment.
+    - sentiment: 'EWS ETF 2026 investment outlook 2025. EWS is the iShares MSCI Singapore
+        ETF, a passively managed fund tracking Singapore''s mid-to-large-cap equities
+        with approximately $768.56 million in assets under management and 26 holdings.
+        Recent Performance: 1-year return: ~27-31%, 3-year annualized return: ~16-18%,
+        5-year annualized return: ~9-9.5%, Dividend yield: ~4% TTM. Year-to-date performance
+        as of early February 2025 shows modest gains around 1-2%, with some quarterly
+        weakness.'
+      source: Finviz
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The EWS ETF shows strong historical performance with significant
+            returns over 1, 3, and 5 years, along with a decent dividend yield. However,
+            the year-to-date performance indicates only modest gains and some quarterly
+            weakness, leading to a balanced outlook overall.

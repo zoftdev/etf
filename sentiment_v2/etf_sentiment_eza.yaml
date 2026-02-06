@@ -1,0 +1,288 @@
+sentiment_data:
+- etf: EZA
+  name: iShares MSCI South Africa
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI South Africa ETF (EZA) Forecast Summary. As of February
+        3, 2026, EZA was trading at $74.36, up 1.52% on the day. The ETF has $582
+        million in assets under management and an annualized historical volatility
+        of 33.22%. The ETF shows significant volatility characteristics: Beta of 1.2,
+        Maximum Drawdown of -64.64%, Sharpe Ratio (annualized) of 0.35, and Sortino
+        Ratio of 0.61. The market sentiment for EZA is currently neutral, with moderate
+        inflation (34.92%) and stable conditions, though the yield curve indicates
+        recession risk.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The sentiment is characterized as neutral, with no strong positive
+            or negative indicators. While the ETF shows some volatility and recession
+            risk, it also has stable conditions and moderate inflation, leading to
+            a balanced outlook.
+    - sentiment: EZA ETF Price Prediction for 2026. As of early February 2025, EZA
+        was trading around $73.98-$74.36. The ETF has shown strong recent performance
+        with a 72.45% one-year return and 69.06% year-to-date gains. One forecast
+        service projects EZA at $74.36 by February 3, 2026, representing a modest
+        1.52% gain from early 2025 levels. However, this is presented as a probabilistic
+        and illustrative projection based on historical prices rather than a definitive
+        prediction. EZA exhibits high volatility (33.22% annualized), with a maximum
+        historical drawdown of -64.64%.
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The EZA ETF shows strong recent performance with significant
+            returns, but the forecast indicates only a modest gain of 1.52%, and the
+            high volatility and historical drawdown suggest caution. This mixed outlook
+            leads to a neutral sentiment overall.
+    - sentiment: 'iShares MSCI South Africa ETF: 2026 Outlook and 2025 Performance.
+        The iShares MSCI South Africa ETF (EZA) has delivered exceptional returns
+        in 2025, with a year-to-date total return of 53.78% as of November 30, 2025.
+        The ETF achieved a one-year total return of 35.40%, significantly outperforming
+        broader emerging markets and global stocks. The fund tracks the MSCI South
+        Africa 25-50 index and captures 85% of the publicly available market. Top
+        holdings include Naspers Limited (12.61%), AngloGold Ashanti (10.54%), Gold
+        Fields Limited (9.75%), and FirstRand Limited (6.37%). EZA offers an attractive
+        dividend yield of 4.51% with semi-annual payouts and a P/E ratio of 14.81,
+        suggesting relatively cheap valuations.'
+      source: Ishares
+      author: ''
+      date: '2025-11-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.754
+          sentiment_label: strong buy
+          reasoning: The iShares MSCI South Africa ETF has shown exceptional performance
+            with a year-to-date return of 53.78% and a one-year return of 35.40%,
+            significantly outperforming broader markets. Additionally, the attractive
+            dividend yield and relatively cheap valuations further enhance the positive
+            outlook for this ETF.
+    - sentiment: 'EZA South Africa ETF: 2025-2026 Analysis. As of early 2026, EZA
+        was trading at $74.36, up 1.52% with Assets Under Management of approximately
+        $582-793 million. The ETF showed strong performance in 2025, with a year-to-date
+        return of 75.2% (total returns including dividends) and a 64.2% price return
+        as of December 31, 2025. EZA exhibits elevated volatility with a historical
+        volatility of 33.22% annualized and a maximum drawdown of -64.64%. The fund
+        has a beta of 1.2, indicating it''s more volatile than the broader market.
+        Risk measures include a Sharpe Ratio of 0.35 and Sortino Ratio of 0.61.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.482
+          sentiment_label: buy
+          reasoning: The EZA South Africa ETF shows a strong performance with a year-to-date
+            return of 75.2% and a positive price return of 64.2%, indicating bullish
+            sentiment. However, the elevated volatility and significant maximum drawdown
+            suggest caution, leading to a moderately positive outlook overall.
+    - sentiment: 'EZA ETF 2026 Market Outlook. EZA (iShares MSCI South Africa ETF)
+        has shown strong recent performance, with a 75.2% total return year-to-date
+        as of December 31, 2025. The outlook for EZA in 2026 faces several headwinds:
+        Structural Weaknesses: EZA lacks technology sector exposure, which weakens
+        its long-term growth prospects. The fund has underperformed over the past
+        decade despite South Africa''s gradually improving economy. Sector Concentration:
+        EZA has high exposure to economically sensitive sectors (mining, financials,
+        telecoms), leading to potential volatility during economic downturns. Currency
+        Headwinds: A strong U.S. dollar, driven by anticipated Trump administration
+        policies, is likely to negatively impact EZA''s near-term outlook.'
+      source: Seekingalpha
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.367
+          sentiment_label: neutral
+          reasoning: While EZA has shown strong recent performance with a 75.2% total
+            return year-to-date, the outlook for 2026 is tempered by significant headwinds
+            such as structural weaknesses, sector concentration, and currency challenges,
+            leading to a mixed sentiment overall.
+    - sentiment: 'EZA South Africa ETF: 2025-2026 Forecast. EZA (iShares MSCI South
+        Africa ETF) is trading around $50.22 as of May 2025. One forecast model shows
+        EZA at $74.36 as of February 3, 2026, representing a gain of approximately
+        1.52% from that date. This suggests potential appreciation from current 2025
+        levels. A more bearish near-term forecast predicts a -66.71% decline to an
+        average target of $16.72, with analyst targets ranging from $15.18 to $18.26.
+        However, this extreme downside prediction appears to be an outlier compared
+        to the longer-term 2026 outlook. Key metrics include Beta of 1.2 (slightly
+        more volatile than the market), Historical Volatility of 33.22% (annualized),
+        Maximum Drawdown of -64.64%, and AUM of $582 million.'
+      source: Stockscan
+      author: ''
+      date: '2025-05-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.267
+          sentiment_label: sell
+          reasoning: While there is a potential long-term appreciation forecast for
+            EZA, the significant bearish near-term prediction of a -66.71% decline
+            heavily influences the overall sentiment, indicating a negative outlook
+            despite some positive indicators.
+    - sentiment: iShares MSCI South Africa ETF (EZA) 2025 Performance Outlook. As
+        of early 2026, EZA was trading at $74.36, up 1.52% with $582 million in assets
+        under management. Historical analysis shows that over the next 52 weeks, the
+        iShares MSCI South Africa ETF has on average historically risen by 5.8% based
+        on 22 years of past performance data, with positive performance occurring
+        in 12 of those 22 years (54.55% historical accuracy). The fund exhibits significant
+        volatility with high historical volatility of 33.22% annualized, Maximum Drawdown
+        of -64.64%, Beta of 1.2 (more volatile than the broader market), and Sharpe
+        Ratio (annualized) of 0.35, indicating modest risk-adjusted returns.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The ETF shows a slight positive current performance (up 1.52%)
+            and a historical average rise of 5.8%, which is encouraging. However,
+            the significant volatility and high maximum drawdown indicate considerable
+            risk, balancing the overall sentiment towards a neutral outlook.
+    - sentiment: 'South Africa Equity ETF Market Forecast 2025-2026. The South African
+        equity ETF market is projected to reach US$163.77 million in 2025, with expected
+        growth of 6.78% annually (CAGR 2025-2027), reaching approximately US$186.71
+        million by 2027. 2025 was a strong year for South African equity ETFs, driven
+        particularly by commodity and resource stocks: The Satrix RESI 10 ETF surged
+        142% over the year, benefiting from the commodity boom and gold/platinum mining
+        exposure. Emerging markets outperformed: The Sygnia Itrix Emerging Markets
+        50 ETF gained 26.5%, while the broader MSCI Emerging Markets Index returned
+        18.2%.'
+      source: Statista
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The forecast for the South African equity ETF market shows promising
+            growth (6.78% CAGR) and strong past performance, particularly with significant
+            gains in commodity and resource stocks, indicating a positive outlook
+            for investors.
+    - sentiment: 'EZA iShares MSCI South Africa ETF: 2025-2026 Outlook. EZA has shown
+        strong performance in 2025, with a YTD return of 17.6-18.2% as of April 30,
+        2025, and 1-year returns of 31.0-32.1%. The fund was trading at $50.19 as
+        of May 12, 2025, within a 52-week range of $39.55-$51.68. EZA is a passively
+        managed ETF that tracks the MSCI South Africa 25/50 Index, focusing on large-
+        and mid-cap South African equities. The fund holds 27-36 securities with a
+        0.59% expense ratio. Top holdings are concentrated in mining and financial
+        stocks, including Naspers, AngloGold Ashanti, Gold Fields, and FirstRand.
+        As of early February 2026, EZA was trading at $74.36, up 1.52% from the previous
+        day.'
+      source: Portfoliopilot
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The EZA ETF has demonstrated strong performance with significant
+            year-to-date returns (17.6-18.2%) and impressive one-year returns (31.0-32.1%).
+            The upward trend in trading price and the focus on large-cap South African
+            equities in sectors like mining and finance suggest a bullish outlook
+            for the fund.
+    - sentiment: 'South Africa ETF Market Forecast 2025-2026. The equity ETF market
+        in South Africa is projected to reach US$163.77m in 2025, with an expected
+        annual growth rate (CAGR) of 6.78% from 2025-2027, reaching US$186.71m by
+        2027. South African ETF markets delivered strong returns in 2025, driven by
+        several factors: Commodity ETFs were standout performers. The Absa NewGold
+        ETF climbed 46%, while the Absa NewWave Silver ETN surged 120%. Platinum group
+        metals also rallied strongly, with the Absa NewGold-Platinum ETF gaining 94%.
+        South African assets benefited from a weaker US dollar, surging gold prices,
+        positive fiscal outcomes from the Medium-Term Budget Policy Statement, and
+        the rand''s appreciation against the dollar.'
+      source: Stonehagefleming
+      author: ''
+      date: '2026-01-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The forecast indicates a positive growth trajectory for the South
+            African ETF market, with a projected CAGR of 6.78% and strong past performance
+            from various ETFs, particularly in commodities. The overall tone is optimistic,
+            supported by favorable economic factors such as a weaker US dollar and
+            rising gold prices.
+    - sentiment: iShares MSCI South Africa ETF (EZA) - 2025/2026 Outlook. The iShares
+        MSCI South Africa ETF is trading around $59-74, with recent year-to-date returns
+        of approximately 53.78% as of November 2025. Over the past 12 months, the
+        fund returned 35.40%. As of February 2026, EZA was trading at $74.36, up 1.52%
+        for the period. Fund characteristics include Assets Under Management of $582
+        million, Beta of 0.98-1.2, Annual Volatility of 33.22%, Sharpe Ratio of 0.35,
+        and Expense Ratio of 0.59%. Historically, EZA has risen by an average of 5.8%
+        over 52-week periods based on 22 years of performance data, with positive
+        returns in 54.55% of those years.
+      source: Ishares
+      author: ''
+      date: '2026-02-03'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The ETF shows strong recent performance with a year-to-date return
+            of approximately 53.78% and a solid historical average increase of 5.8%
+            over 52-week periods. The positive returns in over half of the historical
+            years and a moderate expense ratio contribute to a bullish outlook.
+    - sentiment: 'EZA ETF 2026 Investment Research. The iShares MSCI South Africa
+        ETF (EZA) has delivered strong returns: 1-year total return of 35.40%, 3-year
+        annualized return of 25.69%, and year-to-date return of 53.78%. The fund has
+        an expense ratio of 0.59% and manages approximately $349 million in assets.
+        Portfolio metrics include Price-to-Book Ratio of 2.05x, Price-to-Earnings
+        Ratio of 14.35x, 3-Year Beta of 1.00, and Dividend Yield of 6.18% trailing
+        twelve-month yield. The fund tracks the MSCI South Africa 25/50 Index and
+        holds 36-40 securities with top 10 holdings representing about 65.6% of assets.'
+      source: Aaii
+      author: ''
+      date: '2025-11-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.746
+          sentiment_label: strong buy
+          reasoning: The EZA ETF shows impressive returns across multiple time frames
+            (35.40% 1-year, 25.69% 3-year, and 53.78% year-to-date), along with a
+            solid dividend yield of 6.18%. These strong performance metrics and favorable
+            portfolio metrics indicate a very positive outlook for the fund.
+    - sentiment: 'MSCI South Africa Index 2026 Forecast. The MSCI South Africa Index
+        measures the performance of large and mid-cap segments of the South African
+        market, covering approximately 85% of free float-adjusted market capitalization.
+        Current metrics as of August 29, 2025: Number of constituents: 27, Index Market
+        Cap: $302.87 billion, Dividend yield: 2.83%, P/E ratio: 14.81, Forward P/E:
+        10.19. The index is heavily weighted toward financial and resource stocks,
+        with Naspers (16.93%), Gold Fields (9.68%), and AngloGold Ashanti (9.25%)
+        comprising the largest positions.'
+      source: Msci
+      author: ''
+      date: '2025-08-29'
+      sentiment_score: 0.0
+    - sentiment: EZA ETF 2026 Performance Prediction. Historical analysis shows that
+        over the next 52 weeks, the iShares MSCI South Africa ETF has on average historically
+        risen by 5.8% based on 22 years of past performance data, with positive performance
+        occurring in 12 of those 22 years (54.55% historical accuracy). The fund exhibits
+        significant volatility with high historical volatility of 33.22% annualized,
+        Maximum Drawdown of -64.64%, Beta of 1.2 (more volatile than the broader market),
+        and Sharpe Ratio (annualized) of 0.35, indicating modest risk-adjusted returns.
+        The broader market environment for 2025 shows neutral conditions with a yield
+        curve indicating recession risk.
+      source: Financhill
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0

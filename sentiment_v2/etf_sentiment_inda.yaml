@@ -1,0 +1,194 @@
+sentiment_data:
+- etf: INDA
+  name: iShares MSCI India
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI India ETF (INDA) Price Forecasts. According to ETF
+        price forecast data, INDA is projected to trade in the following ranges through
+        early 2026: April 2026: $55.30 (mid-range estimate), July 2026: $56.73 (mid-range
+        estimate), October 2026: $58.90 (mid-range estimate), January 2027: $63.24
+        (mid-range estimate). As of early February 2026, INDA was trading around $53.00.
+        The ETF tracks the MSCI India Index and holds 171 securities with approximately
+        $9.4 billion in assets under management.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.25
+          sentiment_label: buy
+          reasoning: The price forecasts for INDA show a consistent upward trend,
+            with projected increases from $55.30 to $63.24 over the next year, indicating
+            a positive outlook. Additionally, the ETF's substantial assets under management
+            and diverse holdings suggest a strong foundation, contributing to a bullish
+            sentiment.
+    - sentiment: 'INDA ETF 2025-2026 Outlook. Based on probabilistic forecasting models,
+        INDA is projected to reach the following price levels: April 2026: $55.30
+        - $56.73, July 2026: $56.73 - $58.90, October 2026: $58.90 - $61.07, January
+        2027: $61.07 - $63.24. As of early January 2026, INDA was trading at $54.56.
+        INDA is the iShares MSCI India ETF with approximately $9.4-$11 billion in
+        assets under management. The fund has an expense ratio of 0.62% and holds
+        172 Indian equities.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.35
+          sentiment_label: buy
+          reasoning: The projected price levels for INDA show a consistent upward
+            trend from $55.30 in April 2026 to $63.24 in January 2027, indicating
+            a positive outlook. Additionally, the substantial assets under management
+            and a reasonable expense ratio suggest a strong foundation for growth,
+            contributing to a bullish sentiment.
+    - sentiment: 'INDA India ETF Price Forecast for 2025-2026. According to probabilistic
+        forecasts based on historical prices, INDA is expected to show gradual appreciation
+        through 2026: April 2026: $55.30 (base case) / $56.73 (upside) / $53.86 (downside),
+        July 2026: $56.73 / $58.90 / $55.05, October 2026: $58.90 / $61.07 / $55.53,
+        January 2027: $63.24 / $63.24 / $56.51. As of early February 2026, INDA was
+        trading at $54.56.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.375
+          sentiment_label: buy
+          reasoning: The forecast indicates gradual appreciation of the INDA ETF,
+            with projected price increases over the next few years, suggesting a positive
+            outlook for investors. The consistent upward trend in the price targets
+            supports a bullish sentiment despite the presence of downside scenarios.
+    - sentiment: 'INDA ETF 2026 Price Prediction. One forecast model projects the
+        following price targets throughout 2026: April 2026: $55.30 (bull) / $54.58
+        (base) / $53.86 (bear), July 2026: $56.73 / $55.89 / $55.05, October 2026:
+        $58.90 / $57.22 / $55.53, January 2027: $63.24 / $59.87 / $56.51. The base
+        case scenario suggests INDA could reach approximately $59.87 by January 2027.
+        As of early January 2026, INDA was trading around $54.56.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.432
+          sentiment_label: buy
+          reasoning: The forecast indicates a steady upward trend in price targets
+            for INDA ETF throughout 2026, with projections reaching as high as $63.24
+            by January 2027, suggesting a positive outlook. The current trading price
+            of $54.56 is below the projected base case of $59.87, indicating potential
+            for growth.
+    - sentiment: 'INDA ETF Investment Outlook for 2025-2026. Price forecasts for INDA
+        suggest moderate upward movement through 2026. The middle-case scenario projects
+        the ETF price reaching $55.89 by July 2026, $57.22 by October 2026, and $59.87
+        by January 2027, compared to the current price of around $53-54. The broader
+        market environment shows favorable conditions: risk-on sentiment with low
+        volatility (14.51), a benign credit environment (0.88), and cooling inflation
+        (7.60%).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.564
+          sentiment_label: buy
+          reasoning: The outlook for the INDA ETF is positive, with projected moderate
+            upward price movement and favorable market conditions such as low volatility
+            and cooling inflation, indicating a bullish sentiment overall.
+    - sentiment: 'iShares MSCI India ETF (INDA) 2025-2026 Price Forecasts. According
+        to ETF price forecasting models, INDA is expected to reach approximately $56-$58
+        by mid-2026, with potential upside to $61-$63 by early 2027. Specifically,
+        probabilistic forecasts show: April 2026: $55.30-$56.73, July 2026: $57.22-$58.90,
+        October 2026: $58.54-$61.07, January 2027: $59.87-$63.24. As of early February
+        2025, INDA was trading around $53.00.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.542
+          sentiment_label: buy
+          reasoning: The forecast for INDA shows a consistent upward trend with expected
+            price increases reaching up to $63 by early 2027, indicating a positive
+            outlook. The current trading price is below the forecasted range, suggesting
+            potential for growth, which supports a bullish sentiment.
+    - sentiment: INDA India ETF 2026 Outlook. As of early February 2026, INDA is trading
+        at $53-54.56. Price forecasts suggest gradual appreciation through 2026, with
+        probabilistic targets reaching $63.24 by January 2027, though more conservative
+        scenarios show prices between $56.51-$59.87 for the same period. The current
+        market environment shows risk-on sentiment with low volatility (14.51), contango
+        VIX structure, cooling inflation (7.60%), and a benign credit environment
+        (0.88).
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.485
+          sentiment_label: buy
+          reasoning: The outlook for the INDA ETF is generally positive, with forecasts
+            suggesting gradual price appreciation and a favorable market environment
+            characterized by low volatility and cooling inflation, indicating a bullish
+            sentiment overall.
+    - sentiment: 'INDA ETF 2026 Forecast. Based on probabilistic forecasts, INDA is
+        expected to trade in ranges by end of 2026: April 2026: $53.86-$55.30 (mid:
+        $54.58), July 2026: $55.05-$56.73 (mid: $55.89), October 2026: $55.53-$58.90
+        (mid: $58.54), January 2027: $56.51-$63.24 (mid: $59.87). As of early February
+        2026, INDA was trading at approximately $53-54 with assets under management
+        of $9.4-9.6 billion.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast presents a range of expected prices for INDA, indicating
+            potential growth but also uncertainty, as the midpoints suggest modest
+            increases. The current trading range is stable, but the lack of strong
+            bullish or bearish indicators leads to a neutral sentiment overall.
+    - sentiment: 'iShares MSCI India ETF (INDA) 2026 Forecast. According to price
+        forecast models, INDA is projected to trade in the following ranges through
+        2026: April 2026: $55.30 (base case), July 2026: $56.73 (base case), October
+        2026: $58.90 (base case), January 2027: $63.24 (base case). The forecasts
+        show a probabilistic range with multiple scenarios, with prices potentially
+        reaching $61.07 by October 2026 in the higher scenario.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The forecast indicates a steady increase in the price of INDA,
+            with projections showing consistent growth from $55.30 to $63.24 over
+            the next several years. This positive outlook, supported by multiple scenarios
+            suggesting further price appreciation, reflects a bullish sentiment towards
+            the ETF.
+    - sentiment: 'INDA India ETF 2026 Forecast. According to probabilistic forecasting
+        models, INDA is expected to show the following price trajectory through 2026:
+        April 2026: $55.30 (base) / $56.73 (upside) / $53.86 (downside), July 2026:
+        $56.73 / $58.90 / $55.05, October 2026: $58.90 / $61.07 / $55.53, January
+        2027: $63.24 / $63.24 / $56.51. The ETF was trading at $54.56 as of early
+        January 2026.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The forecast shows a gradual upward price trajectory for INDA,
+            with expected increases in price over the years. However, the presence
+            of downside scenarios indicates uncertainty, leading to a balanced outlook
+            rather than a strong bullish sentiment.

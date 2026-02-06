@@ -1,0 +1,264 @@
+sentiment_data:
+- etf: EWA
+  name: iShares MSCI Australia
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Australia ETF (EWA) - 2025-2026 Outlook. The ETF has
+        a 12-month expected return forecast available through analysis platforms,
+        with a beta of 0.98 and a risk profile of 22.62%. The fund trades with an
+        expense ratio of 0.50%. EWA shows sensitivity to several economic factors
+        that could influence 2025-2026 performance: Negative exposure to interest
+        rates (-1.6) and inflation (-2.5), Positive exposure to credit conditions
+        (+4.1), Minimal sensitivity to growth and commodities. Australia''s second-quarter
+        2025 inflation dropped to its lowest level since March 2021, supporting a
+        case for rate cuts.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-06-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The outlook presents a mixed sentiment with some positive indicators
+            like improved credit conditions and low inflation, which support potential
+            rate cuts. However, the negative exposure to interest rates and inflation
+            suggests caution, leading to a balanced overall sentiment.
+    - sentiment: 'EWA ETF Outlook for 2025-2026. EWA showed solid performance in 2025,
+        with a year-to-date return of 12.68% and a 6-month return of 16.70%. The current
+        price as of late December 2025 was around $26.89. While the search results
+        do not provide specific predictions for EWA itself, they offer relevant context
+        through broader market expectations: Major banks including Citigroup expect
+        noticeable gains in the first half of 2026 driven by accelerating profit growth
+        and more stable valuations. The UBS provides an even more optimistic outlook,
+        forecasting gains in the high single-digit to low double-digit range through
+        2026, supported by technology investments, productivity improvements, and
+        lower interest rates.'
+      source: Etoro
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The text highlights solid performance of EWA with significant
+            returns and positive forecasts from major banks, indicating a bullish
+            outlook for the upcoming years. The mention of accelerating profit growth
+            and optimistic projections further supports a positive sentiment.
+    - sentiment: 'EWA Australia ETF Forecast for 2025-2026. EWA is tracking the MSCI
+        Australia Index with an expense ratio of 0.50%. Recent performance shows mixed
+        results: the ETF returned 3.50% over 1 year and 12.36% over 5 years as of
+        the latest data. Year-to-date performance was 5.53% with a current price around
+        $25.18. EWA''s outlook is influenced by several economic factors: Negative
+        exposure to inflation (-2.5) and interest rates (-1.6), Positive exposure
+        to credit (+4.1). These sensitivities suggest the fund benefits from declining
+        inflation and lower rates. Australia''s economic conditions showed improvement
+        in 2025, with inflation dropping to its lowest level since March 2021 in the
+        second quarter, supporting the case for potential rate cuts.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-06-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.246
+          sentiment_label: neutral
+          reasoning: The ETF's recent performance shows a decent return over 1 and
+            5 years, but the mixed results and negative exposure to inflation and
+            interest rates create a balanced outlook. Positive factors like improving
+            economic conditions and potential rate cuts provide some optimism, but
+            overall sentiment remains cautious.
+    - sentiment: EWA ETF Price Prediction for 2025-2026. Over the next 52 weeks, EWA
+        has historically risen by an average of 4.8% based on 29 years of performance
+        data. The ETF has risen in 17 of those 29 years, corresponding to a historical
+        accuracy rate of 58.62%. As of the latest data, EWA was trading around $26.89-$27.10,
+        with a stock score of 54 (8% above its historic median of 50), indicating
+        lower than normal risk. While historical seasonality suggests modest upside
+        potential of around 4-5% annually, specific price predictions for 2026 are
+        not available from analyst forecasts.
+      source: Financhill
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The historical performance data indicates a modest average rise
+            of 4.8% over the next year, with a reasonable historical accuracy rate
+            of 58.62%. However, the lack of specific price predictions for 2026 and
+            the indication of only modest upside potential suggest a balanced outlook
+            rather than a strongly positive or negative sentiment.
+    - sentiment: EWA ETF Investment Outlook for 2025-2026. Australian economy is showing
+        resilience with potential for consumer spending growth as the Reserve Bank
+        of Australia has cut rates. This lower rate environment may stimulate spending
+        "down under." EWA offers diversification away from US-centric risks and exposure
+        to non-US markets amid US trade policy uncertainties. The fund provides a
+        relatively safe international investment option compared to other emerging
+        markets. U.S. economic fundamentals remain supportive with strong GDP growth
+        (2.8% in Q3), moderating inflation (~2.2%), and resilient consumer spending,
+        which could benefit Australian exporters indirectly.
+      source: Seekingalpha
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The outlook for the Australian economy is positive due to rate
+            cuts that may stimulate consumer spending, and EWA ETF offers diversification
+            away from US risks. Additionally, supportive U.S. economic fundamentals
+            and strong GDP growth further enhance the attractiveness of this investment,
+            leading to a bullish sentiment overall.
+    - sentiment: 'EWA Australia ETF: 2025-2026 Outlook. EWA (iShares MSCI Australia
+        ETF) tracks large-cap Australian equities with $1.5 billion in assets and
+        a 0.50% expense ratio. Recent performance has been modest, with the fund showing
+        0.3% returns over the past year and 0.5% year-to-date as of March 2025. Analysts
+        are bullish on the Australian economy as 2025 progresses. Key factors supporting
+        this outlook include: Interest Rate Environment: The Reserve Bank of Australia
+        has recently cut rates, which is expected to spur consumer spending. Inflation
+        Trends: Australia''s second-quarter inflation dropped to its lowest level
+        since March 2021, supporting the case for further rate cuts.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-03-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.532
+          sentiment_label: buy
+          reasoning: The overall outlook for the EWA Australia ETF is positive, driven
+            by bullish analyst sentiment regarding the Australian economy and supportive
+            factors like interest rate cuts and declining inflation, despite modest
+            recent performance.
+    - sentiment: 'MSCI Australia Outlook for 2025-2026. Morgan Stanley forecasts that
+        Australian economic growth will improve gradually in 2025 but remain below
+        trend. Key expectations include: Household spending: Real incomes will likely
+        increase due to lower taxes and inflation, but consumers are expected to remain
+        cautious with only modest spending impacts. Business investment: Steady growth
+        supported by strong nominal activity and declining capital-labour ratios.
+        Dwelling investment: Significant pick-up expected late in 2025 as interest
+        rate cuts take effect. Labor market: Strong through the first half of 2025,
+        with solid but slowing job growth, primarily driven by government policies.'
+      source: Com
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The outlook indicates gradual improvement in economic growth
+            and positive factors like increasing real incomes and business investment,
+            but also highlights caution among consumers and modest spending impacts,
+            leading to a balanced sentiment overall.
+    - sentiment: 'EWA Australia ETF: 2025-2026 Outlook. EWA (iShares MSCI Australia
+        ETF) tracks the MSCI Australia Index, primarily investing in large-cap Australian
+        stocks. The fund has $1.5 billion in assets under management with a 0.50%
+        expense ratio. As of March 2025, EWA showed modest recent performance with
+        a YTD return of 0.5% and 1-year return of 0.3%. The fund carries an annualized
+        volatility of approximately 22%. Recent developments supporting the Australian
+        market include inflation dropping to its lowest level since March 2021 in
+        the second quarter of 2025, which supports a case for central bank rate cuts.'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-03-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.25
+          sentiment_label: buy
+          reasoning: The outlook for the EWA ETF is generally positive due to the
+            recent drop in inflation, which may lead to central bank rate cuts, supporting
+            market growth. However, the modest performance figures (0.5% YTD and 0.3%
+            1-year return) indicate a cautious sentiment, leading to a moderately
+            bullish score.
+    - sentiment: EWA ETF 2026 Investment Outlook. EWA is the iShares MSCI Australia
+        ETF, a passive fund tracking large-cap Australian equities with $1.5 billion
+        in assets under management and a 50 basis point expense ratio. As of March
+        2025, EWA showed modest performance with 0.5% YTD price returns and -1.8%
+        total returns year-to-date. Recent analysis suggests a bullish outlook for
+        Australian equities in 2025, driven by lower interest rates that may spur
+        consumer spending as the Reserve Bank of Australia has cut rates. The overall
+        ETF market outlook for 2026 is described as "uncomfortably bullish," with
+        stretched valuations and shifting global dynamics.
+      source: Ssga
+      author: ''
+      date: '2025-03-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: While there is a bullish outlook for Australian equities due
+            to lower interest rates, the modest performance of EWA with only 0.5%
+            YTD returns and the description of the market as 'uncomfortably bullish'
+            suggests caution, leading to a mixed sentiment overall.
+    - sentiment: 'EWA Australia ETF: 2025-2026 Outlook. EWA (iShares MSCI Australia
+        ETF) showed positive performance through 2025, with a 9.8% price return and
+        13.4% total return (including dividends) year-to-date as of December 31, 2025.
+        The ETF trades at approximately $25.42 USD with a 52-week range of $20.50-$27.23.
+        According to forecast analysis, the 12-month expected returns show a beta
+        of 0.98 with a volatility of 22.62%. The fund demonstrates negative sensitivity
+        to inflation (-2.5) and interest rates (-1.6), but positive exposure to credit
+        factors (+4.1).'
+      source: Portfoliopilot
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.486
+          sentiment_label: buy
+          reasoning: The ETF has shown strong performance with a 9.8% price return
+            and 13.4% total return year-to-date, indicating positive market sentiment.
+            Despite some negative sensitivities to inflation and interest rates, the
+            overall outlook remains optimistic due to the solid returns and favorable
+            exposure to credit factors.
+    - sentiment: 'EWA ETF 2026 investment outlook 2025. Analysts are bullish on the
+        Australian economy as 2025 progresses. Key factors supporting this outlook
+        include: Interest Rate Environment: The Reserve Bank of Australia has recently
+        cut rates, which is expected to spur consumer spending. Diversification Appeal:
+        EWA offers investors exposure to Australian equities as a relatively safe
+        non-US option amid concerns about U.S. tariffs and policy uncertainties. The
+        fund carries moderate volatility with a beta of 0.98 against the S&P 500 and
+        annualized volatility around 22.6%.'
+      source: Seekingalpha
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The sentiment is largely positive due to analysts being bullish
+            on the Australian economy and the supportive interest rate environment,
+            which is expected to boost consumer spending. Additionally, EWA's appeal
+            as a relatively safe investment option amid U.S. uncertainties further
+            enhances the positive outlook.
+    - sentiment: EWA Australia ETF 2026 forecast 2025. EWA (iShares MSCI Australia
+        ETF) showed positive performance through 2025, with a 9.8% price return and
+        13.4% total return (including dividends) year-to-date as of December 31, 2025.
+        The ETF trades at approximately $25.42 USD. According to forecast analysis,
+        the 12-month expected returns show a beta of 0.98 with a volatility of 22.62%.
+        The fund demonstrates negative sensitivity to inflation (-2.5) and interest
+        rates (-1.6), but positive exposure to credit factors (+4.1). Australia's
+        second-quarter 2025 inflation dropped to its lowest level since March 2021,
+        supporting a case for interest rate cuts.
+      source: Portfoliopilot
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.482
+          sentiment_label: buy
+          reasoning: The EWA ETF shows strong positive performance indicators with
+            a 9.8% price return and positive total return, alongside favorable economic
+            conditions such as decreasing inflation, which supports a bullish outlook.
+            However, the negative sensitivity to inflation and interest rates slightly
+            tempers the overall sentiment, leading to a moderately positive score.

@@ -1,0 +1,108 @@
+sentiment_data:
+- etf: EWT
+  name: iShares MSCI Taiwan
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'iShares MSCI Taiwan ETF (EWT) Forecast Summary. As of early February
+        2026, EWT was trading at $68.77 with assets under management of approximately
+        $6.95 billion. Short-term (30 days): Analysts project a generally negative
+        outlook with an average price target of $49.33, representing an 8.25% decrease
+        from the $53.77 price level, with targets ranging from $48.58 to $50.09. The
+        current market environment shows neutral sentiment with moderate volatility
+        (18.32), moderate stable inflation (34.13%), and benign credit conditions
+        (0.98).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.525
+          sentiment_label: sell
+          reasoning: The forecast indicates a generally negative outlook with an expected
+            price decrease of 8.25% and a price target significantly lower than the
+            current trading price. Although the market environment shows some neutral
+            factors, the predominant negative sentiment from analysts drives the overall
+            score down.
+    - sentiment: 'EWT ETF 2025-2026 Outlook. For 2026, general ETF market outlooks
+        suggest a transition into an innovation-intensive phase rather than economic
+        slowdown. Key investment themes expected to drive markets include: Artificial
+        intelligence and technology investments, Industrial policy and strategic autonomy
+        (particularly in Europe), Emerging market growth reallocation, Sustainable
+        energy focus. Regional diversification is recommended due to high concentration
+        and valuations in tech-heavy markets, suggesting opportunities in Asian markets
+        like Taiwan.'
+      source: Amundietf
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.654
+          sentiment_label: buy
+          reasoning: The outlook for the EWT ETF is positive, highlighting a transition
+            into an innovation-intensive phase with strong investment themes such
+            as AI, sustainable energy, and emerging markets. The recommendation for
+            regional diversification further supports a bullish sentiment, indicating
+            potential growth opportunities.
+    - sentiment: MSCI Taiwan ETF Outlook for 2025-2026. As of early 2026, the iShares
+        MSCI Taiwan ETF (EWT) was trading around $68.77, with assets under management
+        of approximately $6.95 billion. The MSCI Taiwan Index showed strong 2025 performance,
+        gaining 39.84% for the year. Analyst price targets for EWT show mixed near-term
+        sentiment. One forecast projects an average target of $49.33, representing
+        an 8.25% decline from current levels, with targets ranging from $48.58 to
+        $50.09.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The MSCI Taiwan ETF showed strong performance in 2025 with a
+            39.84% gain, which is positive. However, the mixed near-term sentiment
+            from analysts, including a projected average target indicating a potential
+            decline of 8.25%, creates a balanced outlook, leading to a neutral sentiment
+            score.
+    - sentiment: 'iShares MSCI Taiwan ETF (EWT) - 2025-2026 Outlook. As of early February
+        2026, EWT is trading around $68.77, with assets under management of approximately
+        $6.95 billion. The fund has a 0.59% expense ratio and tracks large and mid-sized
+        Taiwanese companies. The ETF exhibits significant volatility characteristics:
+        Historical volatility (annualized): 28.15%, Beta: 0.9, Sharpe Ratio: 0.22,
+        Maximum drawdown: -64.36%. The broader market backdrop shows neutral conditions
+        with recession risk signals in the yield curve (-53.98%).'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.267
+          sentiment_label: sell
+          reasoning: The outlook for the iShares MSCI Taiwan ETF (EWT) is tempered
+            by significant volatility and a high maximum drawdown of -64.36%, indicating
+            considerable risk. While the broader market backdrop is described as neutral,
+            the recession risk signals in the yield curve suggest a bearish sentiment
+            overall.
+    - sentiment: EWT Taiwan ETF Forecast 2025-2026. EWT has net assets of $4.34 billion
+        and maintains a dividend yield of 3.22% with an annualized volatility of 26.6%.
+        The fund shows a correlation of +0.75 with the S&P 500, indicating moderate
+        positive correlation with U.S. equity markets. The fund's 2024 performance
+        was strong at 16.12%, building on 2023's exceptional 29.20% return. However,
+        this follows the challenging 2022 performance of -28.84%.
+      source: Etfreplay
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.375
+          sentiment_label: buy
+          reasoning: The fund's strong performance in 2023 (29.20%) and 2024 (16.12%)
+            indicates a positive trend, and the moderate correlation with the S&P
+            500 suggests potential for further gains. Despite the previous year's
+            negative performance, the overall outlook is bullish due to recent strong
+            returns and a reasonable dividend yield.

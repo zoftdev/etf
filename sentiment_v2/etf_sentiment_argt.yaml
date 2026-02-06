@@ -1,0 +1,178 @@
+sentiment_data:
+- etf: ARGT
+  name: Global X MSCI Argentina
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'Global X MSCI Argentina ETF (ARGT) 2025-2026 Forecast. Price Forecasts:
+        Short-term (Next 30 days): Analysts forecast a -30.22% decline to an average
+        target of $62.98, down from the current price of around $90. 12-month outlook:
+        The average 12-month price target is $71.36, representing a -20.93% downside
+        from current levels. 2026 Price Range: One forecast model projects ARGT could
+        trade between approximately $84.47 and $107.72 by January 2027, with intermediate
+        targets around $95.61-$99.65 through mid-2026.'
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.706
+          sentiment_label: sell
+          reasoning: The forecast indicates a significant decline in the short-term
+            (-30.22%) and a negative 12-month outlook (-20.93%), suggesting a bearish
+            sentiment. Although there is a potential recovery range for 2026, the
+            overall tone remains negative due to the substantial expected declines.
+    - sentiment: 'ARGT Argentina ETF Forecast Summary. Based on analyst forecasts
+        for the Global X MSCI Argentina ETF (ARGT): 2025-2026 Outlook: 12-Month Price
+        Target: The average analyst price target is $71.36, representing a -20.93%
+        downside from current levels. This suggests a bearish outlook over the next
+        year. Short-term (30-day) Forecast: Analysts project an even more pessimistic
+        near-term view, with an average target of $62.98, indicating a -30.22% decline
+        from the current price of $90.25.'
+      source: Stockscan
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.8
+          sentiment_label: strong sell
+          reasoning: The analysis indicates a significant bearish outlook with a projected
+            -20.93% downside over the next year and an even more pessimistic short-term
+            forecast of -30.22%. These substantial declines suggest strong negative
+            sentiment towards the Argentina ETF.
+    - sentiment: ARGT ETF Investment Outlook for 2025-2026. ARGT surged 35% in 2024,
+        driven by Argentina's austerity reforms under President Javier Milei. The
+        ETF tracks Argentine equities with strong fundamentals, including a weighted
+        average market cap of $34.9 billion and return on equity of 11.30%. Argentina's
+        economy is projected to grow 5.5% in 2025 based on these reform efforts. Despite
+        2024's strong performance, momentum has stalled in 2025 as growth expectations
+        have yet to materialize.
+      source: Ainvest
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.42
+          sentiment_label: buy
+          reasoning: The text highlights a strong 35% surge in 2024 and positive projections
+            for Argentina's economy, suggesting a bullish outlook. However, the mention
+            of stalled momentum in 2025 tempers the enthusiasm slightly, leading to
+            a positive but cautious sentiment.
+    - sentiment: ARGT Argentina ETF 2025-2026 Outlook. ARGT surged 35% in 2024 driven
+        by Argentina's austerity reforms under President Javier Milei, which reduced
+        inflation and country risk. The ETF tracks companies with a weighted average
+        market cap of $34.9 billion and return on equity of 11.30%. Argentina projects
+        GDP growth of 5.5% for 2025. However, 2025 momentum has stalled as expected
+        growth has yet to materialize, with ARGT's performance lagging behind 2024
+        highs.
+      source: Ainvest
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The positive aspects include a significant 35% surge in 2024
+            due to successful austerity reforms and a projected GDP growth of 5.5%
+            for 2025. However, the mention of stalled momentum and lagging performance
+            compared to 2024 highs introduces caution, resulting in a mixed outlook.
+    - sentiment: 'MSCI Argentina ETF (ARGT) 2025-2026 Forecast. Price Forecasts: The
+        Global X MSCI Argentina ETF (ARGT) has mixed near-term and medium-term outlooks:
+        Short-term (30 days): Analysts forecast a negative outlook with an average
+        price target of $62.98, representing a -30.22% decrease from the current price
+        of $90.25. 12-month forecast: The average analyst price target is $71.36,
+        indicating a -20.93% downside from current levels.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.71
+          sentiment_label: sell
+          reasoning: The sentiment is predominantly negative, with analysts forecasting
+            significant declines in the short-term (-30.22%) and medium-term (-20.93%),
+            indicating a bearish outlook for the MSCI Argentina ETF.
+    - sentiment: ARGT Argentina index ETF 2026 forecast 2025. As of January 23, 2026,
+        ARGT is trading at $97.60. However, analyst forecasts are bearish for the
+        near term. The 30-day price forecast shows an average analyst target of $62.98,
+        representing a -30.22% decrease from current levels, with targets ranging
+        from $61.67 to $64.29. For a 12-month price target, analysts project an average
+        of $71.36, indicating a -20.93% downside from current prices.
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-23'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.735
+          sentiment_label: sell
+          reasoning: The sentiment is predominantly negative due to bearish analyst
+            forecasts indicating significant declines in the ARGT ETF price, with
+            a projected decrease of over 30% in the near term and nearly 21% over
+            the next 12 months, reflecting a strong negative outlook.
+    - sentiment: 'Global X MSCI Argentina 2026 forecast investment research 2025.
+        As of March 31, 2025, ARGT has $952.49 million in assets under management
+        with a 0.59% expense ratio. Recent performance shows 1-year returns of 53.34%
+        (NAV basis), though near-term sentiment appears cautious with a -2.37% decline
+        in the past month. Short-term analyst forecasts are decidedly bearish: the
+        30-day average price target is $62.98, representing a -30.22% downside from
+        the current price of $90.25.'
+      source: Stockscan
+      author: ''
+      date: '2025-03-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.487
+          sentiment_label: sell
+          reasoning: While the fund has shown strong 1-year returns of 53.34%, the
+            recent -2.37% decline and bearish analyst forecasts indicating a significant
+            downside of -30.22% suggest a negative outlook for the near term, leading
+            to a sell sentiment.
+    - sentiment: ARGT ETF 2026 investment outlook 2025. ARGT surged 35% in 2024, driven
+        by Argentina's austerity reforms under President Javier Milei, which reduced
+        inflation and country risk. The ETF projects Argentina's GDP growth at 5.5%
+        for 2025, supported by strong corporate fundamentals including a weighted
+        average market cap of $34.9 billion and return on equity of 11.30%. Despite
+        strong fundamentals, ARGT's momentum has stalled in 2025 as growth expectations
+        have yet to materialize.
+      source: Ainvest
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.346
+          sentiment_label: buy
+          reasoning: The text highlights a significant 35% surge in 2024 and positive
+            projections for GDP growth at 5.5% in 2025, indicating a bullish outlook.
+            However, the mention of stalled momentum and unmet growth expectations
+            tempers the enthusiasm slightly, leading to a moderately positive sentiment
+            score.
+    - sentiment: 'ARGT Argentina ETF 2026 forecast 2025. The 30-day forecast for ARGT
+        shows negative sentiment, with an average analyst price target of $62.98,
+        representing a -30.22% decrease from the current price of $90.25. The 12-month
+        price target averages $71.36, indicating a -20.93% downside. As of January
+        23, 2026, ARGT was trading at $97.60 (market price). The ETF''s valuation
+        metrics show improvement compared to 2025: Price-to-earnings ratio: 19.17
+        (2026) vs. 26.17 (2025), Price-to-book value: 2.83 (2026) vs. 3.15 (2025),
+        Return on Equity: 15.60%.'
+      source: Etfpriceforecast
+      author: ''
+      date: '2026-01-23'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.674
+          sentiment_label: sell
+          reasoning: The forecast indicates a significant negative outlook with a
+            -30.22% decrease in the 30-day price target and a -20.93% downside in
+            the 12-month target. Although there are some improvements in valuation
+            metrics, the overall sentiment remains bearish due to the substantial
+            projected declines.

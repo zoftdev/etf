@@ -1,0 +1,791 @@
+etf_sentiment_scores:
+- etf: EWG
+  name: iShares MSCI Germany
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: -0.023
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: -0.201
+    sentiment_label: neutral
+  - year: 2022
+    forecast_year: 2023
+    score: -0.152
+    sentiment_label: neutral
+  - year: 2021
+    forecast_year: 2022
+    score: -0.009
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: -0.165
+    sentiment_label: neutral
+  - year: 2019
+    forecast_year: 2020
+    score: -1.0
+    sentiment_label: strong sell
+  - year: 2018
+    forecast_year: 2019
+    score: -0.613
+    sentiment_label: sell
+  - year: 2015
+    forecast_year: 2016
+    score: 0.029
+    sentiment_label: neutral
+  - year: 2013
+    forecast_year: 2014
+    score: -0.02
+    sentiment_label: neutral
+  - year: 2012
+    forecast_year: 2013
+    score: -0.288
+    sentiment_label: neutral
+  - year: 2011
+    forecast_year: 2012
+    score: 0.135
+    sentiment_label: neutral
+  - year: 2010
+    forecast_year: 2011
+    score: 0.185
+    sentiment_label: neutral
+  - year: 2009
+    forecast_year: 2010
+    score: -0.068
+    sentiment_label: neutral
+  - year: 2008
+    forecast_year: 2009
+    score: -0.417
+    sentiment_label: sell
+  - year: 2007
+    forecast_year: 2008
+    score: -0.168
+    sentiment_label: neutral
+  - year: 2006
+    forecast_year: 2007
+    score: 0.146
+    sentiment_label: neutral
+  - year: 2005
+    forecast_year: 2006
+    score: 0.678
+    sentiment_label: buy
+  - year: 2004
+    forecast_year: 2005
+    score: 0.186
+    sentiment_label: neutral
+- etf: EWJ
+  name: iShares MSCI Japan
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: 0.083
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: 0.168
+    sentiment_label: neutral
+  - year: 2022
+    forecast_year: 2023
+    score: -0.447
+    sentiment_label: sell
+  - year: 2021
+    forecast_year: 2022
+    score: -0.092
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: 0.142
+    sentiment_label: neutral
+  - year: 2019
+    forecast_year: 2020
+    score: -0.832
+    sentiment_label: strong sell
+  - year: 2018
+    forecast_year: 2019
+    score: -0.025
+    sentiment_label: neutral
+  - year: 2017
+    forecast_year: 2018
+    score: -0.214
+    sentiment_label: neutral
+  - year: 2016
+    forecast_year: 2017
+    score: 0.211
+    sentiment_label: neutral
+  - year: 2015
+    forecast_year: 2016
+    score: -0.129
+    sentiment_label: neutral
+  - year: 2014
+    forecast_year: 2015
+    score: 0.054
+    sentiment_label: neutral
+  - year: 2013
+    forecast_year: 2014
+    score: 0.145
+    sentiment_label: neutral
+  - year: 2012
+    forecast_year: 2013
+    score: 0.314
+    sentiment_label: buy
+  - year: 2011
+    forecast_year: 2012
+    score: -0.076
+    sentiment_label: neutral
+  - year: 2010
+    forecast_year: 2011
+    score: -0.151
+    sentiment_label: neutral
+  - year: 2009
+    forecast_year: 2010
+    score: -0.863
+    sentiment_label: strong sell
+  - year: 2008
+    forecast_year: 2009
+    score: -0.758
+    sentiment_label: strong sell
+  - year: 2007
+    forecast_year: 2008
+    score: -1.0
+    sentiment_label: strong sell
+  - year: 2006
+    forecast_year: 2007
+    score: -0.0
+    sentiment_label: neutral
+  - year: 2005
+    forecast_year: 2006
+    score: 0.141
+    sentiment_label: neutral
+  - year: 2004
+    forecast_year: 2005
+    score: 0.171
+    sentiment_label: neutral
+- etf: EWY
+  name: iShares MSCI South Korea
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: -0.05
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: 0.268
+    sentiment_label: neutral
+  - year: 2022
+    forecast_year: 2023
+    score: -0.435
+    sentiment_label: sell
+  - year: 2021
+    forecast_year: 2022
+    score: 0.157
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: 0.017
+    sentiment_label: neutral
+  - year: 2019
+    forecast_year: 2020
+    score: 0.237
+    sentiment_label: neutral
+  - year: 2018
+    forecast_year: 2019
+    score: -0.081
+    sentiment_label: neutral
+  - year: 2017
+    forecast_year: 2018
+    score: -0.766
+    sentiment_label: strong sell
+  - year: 2014
+    forecast_year: 2015
+    score: 0.171
+    sentiment_label: neutral
+  - year: 2013
+    forecast_year: 2014
+    score: -0.311
+    sentiment_label: sell
+  - year: 2012
+    forecast_year: 2013
+    score: 0.0
+    sentiment_label: neutral
+  - year: 2011
+    forecast_year: 2012
+    score: 0.068
+    sentiment_label: neutral
+  - year: 2010
+    forecast_year: 2011
+    score: 0.16
+    sentiment_label: neutral
+  - year: 2009
+    forecast_year: 2010
+    score: 0.385
+    sentiment_label: buy
+  - year: 2008
+    forecast_year: 2009
+    score: -0.727
+    sentiment_label: strong sell
+  - year: 2007
+    forecast_year: 2008
+    score: -1.0
+    sentiment_label: strong sell
+  - year: 2006
+    forecast_year: 2007
+    score: -0.463
+    sentiment_label: sell
+  - year: 2005
+    forecast_year: 2006
+    score: 0.032
+    sentiment_label: neutral
+  - year: 2004
+    forecast_year: 2005
+    score: 0.807
+    sentiment_label: strong buy
+- etf: EWZ
+  name: iShares MSCI Brazil
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: -0.239
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: -0.029
+    sentiment_label: neutral
+  - year: 2022
+    forecast_year: 2023
+    score: -0.123
+    sentiment_label: neutral
+  - year: 2021
+    forecast_year: 2022
+    score: -0.124
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: -0.082
+    sentiment_label: neutral
+  - year: 2019
+    forecast_year: 2020
+    score: -0.033
+    sentiment_label: neutral
+  - year: 2018
+    forecast_year: 2019
+    score: 0.074
+    sentiment_label: neutral
+  - year: 2017
+    forecast_year: 2018
+    score: -0.058
+    sentiment_label: neutral
+  - year: 2016
+    forecast_year: 2017
+    score: 0.104
+    sentiment_label: neutral
+  - year: 2015
+    forecast_year: 2016
+    score: -0.31
+    sentiment_label: sell
+  - year: 2014
+    forecast_year: 2015
+    score: -0.336
+    sentiment_label: sell
+  - year: 2013
+    forecast_year: 2014
+    score: -0.318
+    sentiment_label: sell
+  - year: 2012
+    forecast_year: 2013
+    score: 0.04
+    sentiment_label: neutral
+  - year: 2011
+    forecast_year: 2012
+    score: 0.067
+    sentiment_label: neutral
+  - year: 2010
+    forecast_year: 2011
+    score: 0.013
+    sentiment_label: neutral
+  - year: 2009
+    forecast_year: 2010
+    score: -0.64
+    sentiment_label: sell
+  - year: 2008
+    forecast_year: 2009
+    score: -0.672
+    sentiment_label: sell
+  - year: 2007
+    forecast_year: 2008
+    score: 0.81
+    sentiment_label: strong buy
+  - year: 2006
+    forecast_year: 2007
+    score: 0.289
+    sentiment_label: neutral
+  - year: 2005
+    forecast_year: 2006
+    score: 1.0
+    sentiment_label: strong buy
+  - year: 2004
+    forecast_year: 2005
+    score: 0.992
+    sentiment_label: strong buy
+- etf: GLD
+  name: SPDR Gold Shares
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: 0.169
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: 0.179
+    sentiment_label: neutral
+  - year: 2022
+    forecast_year: 2023
+    score: -0.428
+    sentiment_label: sell
+  - year: 2021
+    forecast_year: 2022
+    score: -0.139
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: 0.141
+    sentiment_label: neutral
+  - year: 2019
+    forecast_year: 2020
+    score: -0.195
+    sentiment_label: neutral
+  - year: 2018
+    forecast_year: 2019
+    score: -0.433
+    sentiment_label: sell
+- etf: MCHI
+  name: iShares MSCI China
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: -0.065
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: 0.149
+    sentiment_label: neutral
+  - year: 2022
+    forecast_year: 2023
+    score: 0.176
+    sentiment_label: neutral
+  - year: 2021
+    forecast_year: 2022
+    score: -1.0
+    sentiment_label: strong sell
+  - year: 2020
+    forecast_year: 2021
+    score: -0.618
+    sentiment_label: sell
+  - year: 2019
+    forecast_year: 2020
+    score: -0.333
+    sentiment_label: sell
+  - year: 2018
+    forecast_year: 2019
+    score: -0.113
+    sentiment_label: neutral
+  - year: 2017
+    forecast_year: 2018
+    score: -0.273
+    sentiment_label: neutral
+  - year: 2016
+    forecast_year: 2017
+    score: 0.427
+    sentiment_label: buy
+  - year: 2015
+    forecast_year: 2016
+    score: -1.0
+    sentiment_label: strong sell
+  - year: 2014
+    forecast_year: 2015
+    score: -0.022
+    sentiment_label: neutral
+  - year: 2013
+    forecast_year: 2014
+    score: -0.098
+    sentiment_label: neutral
+  - year: 2012
+    forecast_year: 2013
+    score: -0.035
+    sentiment_label: neutral
+  - year: 2011
+    forecast_year: 2012
+    score: -0.445
+    sentiment_label: sell
+  - year: 2010
+    forecast_year: 2011
+    score: -0.709
+    sentiment_label: strong sell
+  - year: 2009
+    forecast_year: 2010
+    score: -0.317
+    sentiment_label: sell
+  - year: 2008
+    forecast_year: 2009
+    score: -0.88
+    sentiment_label: strong sell
+  - year: 2007
+    forecast_year: 2008
+    score: -0.217
+    sentiment_label: neutral
+  - year: 2006
+    forecast_year: 2007
+    score: 0.214
+    sentiment_label: neutral
+  - year: 2005
+    forecast_year: 2006
+    score: 0.293
+    sentiment_label: neutral
+  - year: 2004
+    forecast_year: 2005
+    score: 0.174
+    sentiment_label: neutral
+- etf: MTUM
+  name: iShares MSCI USA Momentum Factor
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: 0.137
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: 0.823
+    sentiment_label: strong buy
+  - year: 2021
+    forecast_year: 2022
+    score: 0.107
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: 0.321
+    sentiment_label: buy
+  - year: 2019
+    forecast_year: 2020
+    score: 0.076
+    sentiment_label: neutral
+  - year: 2018
+    forecast_year: 2019
+    score: 0.474
+    sentiment_label: buy
+  - year: 2017
+    forecast_year: 2018
+    score: 0.667
+    sentiment_label: buy
+  - year: 2016
+    forecast_year: 2017
+    score: -0.341
+    sentiment_label: sell
+  - year: 2015
+    forecast_year: 2016
+    score: 0.194
+    sentiment_label: neutral
+  - year: 2014
+    forecast_year: 2015
+    score: 0.098
+    sentiment_label: neutral
+  - year: 2013
+    forecast_year: 2014
+    score: 0.018
+    sentiment_label: neutral
+  - year: 2012
+    forecast_year: 2013
+    score: -0.082
+    sentiment_label: neutral
+  - year: 2011
+    forecast_year: 2012
+    score: -0.045
+    sentiment_label: neutral
+  - year: 2010
+    forecast_year: 2011
+    score: 0.183
+    sentiment_label: neutral
+  - year: 2009
+    forecast_year: 2010
+    score: 0.082
+    sentiment_label: neutral
+  - year: 2008
+    forecast_year: 2009
+    score: -0.825
+    sentiment_label: strong sell
+  - year: 2007
+    forecast_year: 2008
+    score: -0.288
+    sentiment_label: neutral
+  - year: 2006
+    forecast_year: 2007
+    score: 0.496
+    sentiment_label: buy
+  - year: 2005
+    forecast_year: 2006
+    score: 0.105
+    sentiment_label: neutral
+  - year: 2004
+    forecast_year: 2005
+    score: 0.264
+    sentiment_label: neutral
+- etf: VEA
+  name: Vanguard FTSE Developed Markets
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: 0.0
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: -0.096
+    sentiment_label: neutral
+  - year: 2022
+    forecast_year: 2023
+    score: -0.921
+    sentiment_label: strong sell
+  - year: 2021
+    forecast_year: 2022
+    score: -0.176
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: 0.012
+    sentiment_label: neutral
+  - year: 2019
+    forecast_year: 2020
+    score: -0.119
+    sentiment_label: neutral
+  - year: 2018
+    forecast_year: 2019
+    score: -0.711
+    sentiment_label: strong sell
+  - year: 2017
+    forecast_year: 2018
+    score: -0.106
+    sentiment_label: neutral
+  - year: 2016
+    forecast_year: 2017
+    score: -0.353
+    sentiment_label: sell
+  - year: 2015
+    forecast_year: 2016
+    score: 0.066
+    sentiment_label: neutral
+  - year: 2014
+    forecast_year: 2015
+    score: 0.078
+    sentiment_label: neutral
+  - year: 2013
+    forecast_year: 2014
+    score: -0.043
+    sentiment_label: neutral
+  - year: 2012
+    forecast_year: 2013
+    score: -0.227
+    sentiment_label: neutral
+  - year: 2011
+    forecast_year: 2012
+    score: -1.0
+    sentiment_label: strong sell
+  - year: 2010
+    forecast_year: 2011
+    score: 0.068
+    sentiment_label: neutral
+  - year: 2009
+    forecast_year: 2010
+    score: 0.232
+    sentiment_label: neutral
+  - year: 2008
+    forecast_year: 2009
+    score: -0.257
+    sentiment_label: neutral
+  - year: 2007
+    forecast_year: 2008
+    score: 0.255
+    sentiment_label: neutral
+  - year: 2006
+    forecast_year: 2007
+    score: 0.167
+    sentiment_label: neutral
+  - year: 2005
+    forecast_year: 2006
+    score: -0.275
+    sentiment_label: neutral
+  - year: 2004
+    forecast_year: 2005
+    score: 0.039
+    sentiment_label: neutral
+- etf: VWO
+  name: Vanguard FTSE Emerging Markets
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: 0.108
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: 0.186
+    sentiment_label: neutral
+  - year: 2022
+    forecast_year: 2023
+    score: -0.143
+    sentiment_label: neutral
+  - year: 2021
+    forecast_year: 2022
+    score: 0.095
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: -0.01
+    sentiment_label: neutral
+  - year: 2019
+    forecast_year: 2020
+    score: -0.067
+    sentiment_label: neutral
+  - year: 2018
+    forecast_year: 2019
+    score: -0.115
+    sentiment_label: neutral
+  - year: 2017
+    forecast_year: 2018
+    score: 0.084
+    sentiment_label: neutral
+  - year: 2016
+    forecast_year: 2017
+    score: 0.003
+    sentiment_label: neutral
+  - year: 2015
+    forecast_year: 2016
+    score: -0.223
+    sentiment_label: neutral
+  - year: 2014
+    forecast_year: 2015
+    score: -0.713
+    sentiment_label: strong sell
+  - year: 2013
+    forecast_year: 2014
+    score: 0.101
+    sentiment_label: neutral
+  - year: 2012
+    forecast_year: 2013
+    score: -0.169
+    sentiment_label: neutral
+  - year: 2011
+    forecast_year: 2012
+    score: -0.027
+    sentiment_label: neutral
+  - year: 2010
+    forecast_year: 2011
+    score: 0.472
+    sentiment_label: buy
+  - year: 2009
+    forecast_year: 2010
+    score: 1.0
+    sentiment_label: strong buy
+  - year: 2008
+    forecast_year: 2009
+    score: -0.177
+    sentiment_label: neutral
+  - year: 2007
+    forecast_year: 2008
+    score: 0.799
+    sentiment_label: strong buy
+  - year: 2006
+    forecast_year: 2007
+    score: -1.0
+    sentiment_label: strong sell
+  - year: 2005
+    forecast_year: 2006
+    score: 0.671
+    sentiment_label: buy
+  - year: 2004
+    forecast_year: 2005
+    score: 1.0
+    sentiment_label: strong buy
+- etf: XLK
+  name: SPDR Technology Select Sector ETF
+  scores:
+  - year: 2024
+    forecast_year: 2025
+    score: 0.064
+    sentiment_label: neutral
+  - year: 2023
+    forecast_year: 2024
+    score: 0.347
+    sentiment_label: buy
+  - year: 2022
+    forecast_year: 2023
+    score: -0.098
+    sentiment_label: neutral
+  - year: 2021
+    forecast_year: 2022
+    score: -0.072
+    sentiment_label: neutral
+  - year: 2020
+    forecast_year: 2021
+    score: -0.314
+    sentiment_label: sell
+  - year: 2019
+    forecast_year: 2020
+    score: -0.199
+    sentiment_label: neutral
+  - year: 2018
+    forecast_year: 2019
+    score: 0.12
+    sentiment_label: neutral
+  - year: 2017
+    forecast_year: 2018
+    score: 0.047
+    sentiment_label: neutral
+  - year: 2016
+    forecast_year: 2017
+    score: 0.03
+    sentiment_label: neutral
+  - year: 2015
+    forecast_year: 2016
+    score: -0.059
+    sentiment_label: neutral
+  - year: 2014
+    forecast_year: 2015
+    score: 0.185
+    sentiment_label: neutral
+  - year: 2013
+    forecast_year: 2014
+    score: -0.016
+    sentiment_label: neutral
+  - year: 2012
+    forecast_year: 2013
+    score: -0.171
+    sentiment_label: neutral
+  - year: 2011
+    forecast_year: 2012
+    score: -0.053
+    sentiment_label: neutral
+  - year: 2010
+    forecast_year: 2011
+    score: 0.052
+    sentiment_label: neutral
+  - year: 2009
+    forecast_year: 2010
+    score: 0.14
+    sentiment_label: neutral
+  - year: 2008
+    forecast_year: 2009
+    score: -0.04
+    sentiment_label: neutral
+  - year: 2007
+    forecast_year: 2008
+    score: -0.094
+    sentiment_label: neutral
+  - year: 2006
+    forecast_year: 2007
+    score: 0.669
+    sentiment_label: buy
+  - year: 2005
+    forecast_year: 2006
+    score: 0.015
+    sentiment_label: neutral
+  - year: 2004
+    forecast_year: 2005
+    score: 0.146
+    sentiment_label: neutral

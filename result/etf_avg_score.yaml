@@ -1,0 +1,213 @@
+etf_avg_scores:
+- symbol: EWU
+  name: iShares MSCI United Kingdom
+  avg_sentiment: 0.6752
+  sentiment_count: 10
+- symbol: EWJ
+  name: iShares MSCI Japan
+  avg_sentiment: 0.6585
+  sentiment_count: 8
+- symbol: EWP
+  name: iShares MSCI Spain
+  avg_sentiment: 0.567
+  sentiment_count: 7
+- symbol: GLD
+  name: SPDR Gold Shares
+  avg_sentiment: 0.5652
+  sentiment_count: 10
+- symbol: VXUS
+  name: Vanguard Total International Stock
+  avg_sentiment: 0.5645
+  sentiment_count: 12
+- symbol: XMMO
+  name: Invesco S&P MidCap Momentum
+  avg_sentiment: 0.5583
+  sentiment_count: 8
+- symbol: VNM
+  name: VanEck Vietnam
+  avg_sentiment: 0.55
+  sentiment_count: 10
+- symbol: EWY
+  name: iShares MSCI South Korea
+  avg_sentiment: 0.5463
+  sentiment_count: 9
+- symbol: XLV
+  name: SPDR Healthcare Select Sector ETF
+  avg_sentiment: 0.5443
+  sentiment_count: 12
+- symbol: SLV
+  name: iShares Silver Trust
+  avg_sentiment: 0.5338
+  sentiment_count: 11
+- symbol: XLC
+  name: SPDR Communication Services Select Sector ETF
+  avg_sentiment: 0.5318
+  sentiment_count: 11
+- symbol: ECH
+  name: iShares MSCI Chile
+  avg_sentiment: 0.5162
+  sentiment_count: 12
+- symbol: UAE
+  name: iShares MSCI UAE
+  avg_sentiment: 0.4972
+  sentiment_count: 12
+- symbol: TUR
+  name: iShares MSCI Turkey
+  avg_sentiment: 0.4903
+  sentiment_count: 12
+- symbol: XLU
+  name: SPDR Utilities Select Sector ETF
+  avg_sentiment: 0.4836
+  sentiment_count: 12
+- symbol: DBC
+  name: Invesco DB Commodity Index Tracking
+  avg_sentiment: 0.4656
+  sentiment_count: 10
+- symbol: XLI
+  name: SPDR Industrial Select Sector ETF
+  avg_sentiment: 0.4636
+  sentiment_count: 12
+- symbol: FDMO
+  name: Fidelity Momentum Factor
+  avg_sentiment: 0.4558
+  sentiment_count: 5
+- symbol: EWZ
+  name: iShares MSCI Brazil
+  avg_sentiment: 0.4412
+  sentiment_count: 9
+- symbol: XLY
+  name: SPDR Consumer Discretionary Select Sector ETF
+  avg_sentiment: 0.402
+  sentiment_count: 11
+- symbol: XLB
+  name: SPDR Materials Select Sector ETF
+  avg_sentiment: 0.3875
+  sentiment_count: 12
+- symbol: EWA
+  name: iShares MSCI Australia
+  avg_sentiment: 0.3795
+  sentiment_count: 12
+- symbol: INDA
+  name: iShares MSCI India
+  avg_sentiment: 0.379
+  sentiment_count: 10
+- symbol: MCHI
+  name: iShares MSCI China
+  avg_sentiment: 0.3514
+  sentiment_count: 9
+- symbol: EZA
+  name: iShares MSCI South Africa
+  avg_sentiment: 0.3506
+  sentiment_count: 12
+- symbol: XLP
+  name: SPDR Consumer Staples Select Sector ETF
+  avg_sentiment: 0.3282
+  sentiment_count: 12
+- symbol: EWQ
+  name: iShares MSCI France
+  avg_sentiment: 0.3025
+  sentiment_count: 8
+- symbol: DBA
+  name: Invesco DB Agriculture
+  avg_sentiment: 0.2998
+  sentiment_count: 11
+- symbol: EWN
+  name: iShares MSCI Netherlands
+  avg_sentiment: 0.2892
+  sentiment_count: 9
+- symbol: EIS
+  name: iShares MSCI Israel
+  avg_sentiment: 0.2767
+  sentiment_count: 12
+- symbol: MTUM
+  name: iShares MSCI USA Momentum Factor
+  avg_sentiment: 0.2519
+  sentiment_count: 7
+- symbol: EWS
+  name: iShares MSCI Singapore
+  avg_sentiment: 0.2324
+  sentiment_count: 10
+- symbol: EWI
+  name: iShares MSCI Italy
+  avg_sentiment: 0.2279
+  sentiment_count: 10
+- symbol: PDBC
+  name: Invesco Optimum Yield Diversified
+  avg_sentiment: 0.2189
+  sentiment_count: 11
+- symbol: GSG
+  name: iShares S&P GSCI Commodity-Indexed
+  avg_sentiment: 0.2099
+  sentiment_count: 7
+- symbol: EWG
+  name: iShares MSCI Germany
+  avg_sentiment: 0.2003
+  sentiment_count: 12
+- symbol: EWW
+  name: iShares MSCI Mexico
+  avg_sentiment: 0.1536
+  sentiment_count: 10
+- symbol: QMOM
+  name: Alpha Architect US Quantitative Momentum
+  avg_sentiment: 0.1517
+  sentiment_count: 4
+- symbol: EIDO
+  name: iShares MSCI Indonesia
+  avg_sentiment: 0.1149
+  sentiment_count: 12
+- symbol: XLRE
+  name: SPDR Real Estate Select Sector ETF
+  avg_sentiment: 0.0958
+  sentiment_count: 12
+- symbol: EWC
+  name: iShares MSCI Canada
+  avg_sentiment: 0.0698
+  sentiment_count: 11
+- symbol: IAU
+  name: iShares Gold Trust
+  avg_sentiment: 0.0696
+  sentiment_count: 12
+- symbol: EWL
+  name: iShares MSCI Switzerland
+  avg_sentiment: 0.0464
+  sentiment_count: 12
+- symbol: EWT
+  name: iShares MSCI Taiwan
+  avg_sentiment: 0.0182
+  sentiment_count: 5
+- symbol: XLF
+  name: SPDR Financial Select Sector ETF
+  avg_sentiment: 0.0142
+  sentiment_count: 12
+- symbol: XLK
+  name: SPDR Technology Select Sector ETF
+  avg_sentiment: -0.0005
+  sentiment_count: 12
+- symbol: PDP
+  name: Invesco Dorsey Wright Momentum
+  avg_sentiment: -0.0126
+  sentiment_count: 7
+- symbol: UNG
+  name: United States Natural Gas Fund
+  avg_sentiment: -0.1119
+  sentiment_count: 10
+- symbol: XLE
+  name: SPDR Energy Select Sector ETF
+  avg_sentiment: -0.1296
+  sentiment_count: 12
+- symbol: THD
+  name: iShares MSCI Thailand
+  avg_sentiment: -0.1562
+  sentiment_count: 6
+- symbol: KSA
+  name: iShares MSCI Saudi Arabia
+  avg_sentiment: -0.1796
+  sentiment_count: 12
+- symbol: USO
+  name: United States Oil Fund
+  avg_sentiment: -0.2212
+  sentiment_count: 11
+- symbol: ARGT
+  name: Global X MSCI Argentina
+  avg_sentiment: -0.3556
+  sentiment_count: 9

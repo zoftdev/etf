@@ -1,0 +1,138 @@
+sentiment_data:
+- etf: PDP
+  name: Invesco Dorsey Wright Momentum
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'PDP ETF Outlook for 2025-2026. The overall ETF market outlook is
+        "uncomfortably bullish" entering 2026. Key trends include: Momentum-focused
+        strategies - The bull market is entering 2026 with momentum, though valuations
+        are stretched. Growth opportunities - Investors are being advised to target
+        AI and policy-led growth across US equities. Bond ETFs growth - Bond ETFs
+        are expected to continue gaining market share, potentially reaching 33% of
+        the bond fund market by 2026.'
+      source: Ssga
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The outlook is described as 'uncomfortably bullish' with positive
+            trends in momentum-focused strategies and growth opportunities in AI and
+            policy-led sectors, indicating a strong positive sentiment despite concerns
+            about stretched valuations.
+    - sentiment: PDP Momentum ETF Forecast for 2025-2026. The near-term forecast for
+        the Invesco Dorsey Wright Momentum ETF (PDP) is generally negative. Analyst
+        price targets average $99.50, representing a -5.25% decrease from the current
+        price of approximately $105. Price targets range from a high of $101.98 to
+        a low of $97.02. PDP seeks to track the Dorsey Wright Technical Leaders Index,
+        investing in approximately 100 U.S. companies demonstrating strong relative
+        strength characteristics.
+      source: Stockscan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.525
+          sentiment_label: sell
+          reasoning: The forecast for the Invesco Dorsey Wright Momentum ETF (PDP)
+            is predominantly negative, with an average price target indicating a decline
+            of 5.25% from the current price. This bearish outlook, combined with the
+            range of price targets suggesting limited upside, leads to a sell sentiment.
+    - sentiment: PDP ETF Price Predictions for 2025-2026. The average analyst price
+        target for the next 30 days is $99.50, representing a -5.25% decrease from
+        current levels. Analyst targets range from a low of $97.02 to a high of $101.98.
+        PDP is a momentum-focused ETF that tracks the Dorsey Wright Technical Leaders
+        Index, holding approximately 100-102 large and mid-cap U.S. stocks. The fund
+        has shown mixed recent performance, with a 1-year return of approximately
+        8.7-9.34%.
+      source: Stockscan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.325
+          sentiment_label: neutral
+          reasoning: The average analyst price target indicates a potential decrease
+            of -5.25%, which is a negative outlook. However, the recent performance
+            shows a positive return of approximately 8.7-9.34%, leading to a mixed
+            sentiment overall.
+    - sentiment: 'PDP ETF Investment Outlook 2025-2026. PDP shows mixed near-term
+        prospects. Analysts have issued a generally negative forecast for the next
+        30 days, with an average price target of $99.50, representing a 5.25% decrease
+        from the current price of approximately $124. Recent Returns: PDP has demonstrated
+        solid performance over longer timeframes. Year-to-date performance stands
+        at 6.76%, with 1-year returns around 9.34% and 3-year annualized returns of
+        18.42%.'
+      source: Finviz
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: The near-term outlook is negative with a forecasted decrease
+            of 5.25%, which weighs down the sentiment. However, the longer-term performance
+            metrics are solid, showing positive returns over various timeframes, leading
+            to a mixed overall sentiment.
+    - sentiment: PDP Momentum ETF 2025-2026 Outlook. Momentum ETFs are experiencing
+        strong long-term performance. Over the past 20 years, the MSCI World Momentum
+        Index significantly outperformed the broader MSCI World index (650% versus
+        405% returns). The strategy is based on the observation that stocks showing
+        strong performance over the past 3-12 months tend to continue that outperformance,
+        particularly during bull market phases. Momentum strategies excel during uptrend
+        and boom phases.
+      source: Justetf
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The text highlights strong long-term performance of Momentum
+            ETFs, with a significant outperformance of the MSCI World Momentum Index
+            compared to the broader index. The positive outlook on the strategy's
+            effectiveness during bull markets further supports a bullish sentiment.
+    - sentiment: 'PDP Momentum Factor ETF: 2025-2026 Forecast. The Invesco Dorsey
+        Wright Momentum ETF (PDP) is trading around $119-124, with short-term analyst
+        forecasts showing a negative 30-day outlook. The average analyst price target
+        is $99.50, representing a -5.25% decrease from recent price levels. PDP has
+        shown mixed results recently: 1-Year Return: 9.34%, 3-Year Return: 18.42%,
+        2024 Annual Return: 26.06%, Year-to-Date (2025): 11.81%.'
+      source: Stockscan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.146
+          sentiment_label: neutral
+          reasoning: While the ETF has shown positive returns over various time frames,
+            the short-term negative outlook and a price target indicating a decrease
+            suggest a cautious sentiment. The mixed results create a balanced perspective,
+            leading to a neutral score.
+    - sentiment: 'PDP ETF 2025-2026 Investment Outlook. PDP showed modest 2025 performance
+        with an 8.3% total return year-to-date. However, near-term analyst forecasts
+        are negative, with the average price target of $99.50 representing a -5.25%
+        decline from the $105.01 price level, suggesting downside risk in the short
+        term. The fund delivered: 1-year return: 8.3%, 3-year annualized return: 18.2%,
+        5-year annualized return: 6.1%.'
+      source: Etfrc
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.267
+          sentiment_label: sell
+          reasoning: While the PDP ETF has shown positive long-term returns (8.3%
+            for 1 year and 18.2% for 3 years), the near-term forecast is negative
+            with a projected decline of -5.25%, indicating a bearish outlook for the
+            immediate future.

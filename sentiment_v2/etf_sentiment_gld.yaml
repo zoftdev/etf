@@ -1,0 +1,179 @@
+sentiment_data:
+- etf: GLD
+  name: SPDR Gold Shares
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: 'SPDR Gold Trust (GLD) Surges 60% in 2025: Latest News, Fed Cut Bets
+        and 2026 Gold Price Forecast. GLD delivered exceptional returns in 2025, surging
+        approximately 60-64% year-to-date. Wall Street analysts project significant
+        upside for gold in 2026: J.P. Morgan: Gold could reach $5,000/oz by late 2026,
+        with longer-term potential exceeding $6,000/oz. Morgan Stanley: Raised 2026
+        target to $4,400/oz. Multiple analysts: Bold calls for gold approaching $5,000/oz
+        by 2026.'
+      source: Ts2
+      author: ''
+      date: '2025-12-05'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.754
+          sentiment_label: strong buy
+          reasoning: The text highlights a remarkable 60-64% surge in GLD's performance
+            for 2025, along with bullish forecasts from multiple analysts predicting
+            gold prices reaching between $4,400 and $5,000 per ounce by late 2026.
+            This strong positive outlook and significant projected upside indicate
+            a very bullish sentiment.
+    - sentiment: Should You Buy SPDR Gold ETF (GLD) in 2026 After a 64% Rally in 2025?.
+        Analysts recommend a 5-8% GLD allocation in 2026 as a hedge against macroeconomic
+        uncertainty. J.P. Morgan forecasts gold could reach $5,000/oz by late 2026,
+        with longer-term potential exceeding $6,000. Morgan Stanley raised its 2026
+        target to $4,400/oz.
+      source: Ainvest
+      author: ''
+      date: '2025-12-05'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The text highlights a significant rally in gold prices (64% in
+            2025) and strong bullish forecasts from analysts, suggesting a positive
+            outlook for gold investments in 2026. The recommendations for allocation
+            as a hedge against uncertainty further reinforce a favorable sentiment.
+    - sentiment: 'Gold Outlook 2026: Has The Metal''s Rally Peaked Or Just Begun?.
+        Wall Street analysts have issued bold predictions for 2026, with multiple
+        calls for gold to approach $5,000 per ounce by 2026. These bullish forecasts
+        appear influenced by expectations around Federal Reserve policy and interest
+        rate cuts.'
+      source: Benzinga
+      author: ''
+      date: '2025-12-05'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The text presents a positive outlook for gold, with Wall Street
+            analysts predicting a significant rise to $5,000 per ounce, indicating
+            strong bullish sentiment. The influence of favorable Federal Reserve policy
+            and anticipated interest rate cuts further supports a positive market
+            perspective.
+    - sentiment: Goldman hikes December 2026 gold price forecast to $4,900/oz. Goldman
+        Sachs raised its December 2026 gold price target to $4,900 per ounce from
+        $4,300, citing strong ETF inflows and central bank buying. The bank forecasts
+        gold will rise 6% by mid-2026 to approximately $4,000 per ounce.
+      source: Reuters
+      author: ''
+      date: '2025-10-07'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The upward revision of the gold price forecast from $4,300 to
+            $4,900 indicates a strong bullish outlook, supported by positive factors
+            such as strong ETF inflows and central bank buying. Additionally, the
+            forecasted rise of 6% by mid-2026 further reinforces a positive sentiment
+            towards gold investments.
+    - sentiment: Why Gold's Rally Will Likely Go On. Morgan Stanley revised its 2026
+        gold price forecast upward to $4,400 per ounce, implying an additional 10%
+        gain from early October 2025 through the end of 2026. Gold has surged approximately
+        50% in 2025, making it one of the year's top-performing assets.
+      source: Morganstanley
+      author: ''
+      date: '2025-10-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.7
+          sentiment_label: strong buy
+          reasoning: The upward revision of the gold price forecast to $4,400 per
+            ounce and the significant 50% gain in 2025 indicate a very bullish outlook
+            for gold, suggesting strong investor confidence and continued upward momentum.
+    - sentiment: 'Gold Outlook 2026: Push ahead or pull back. Gold has had a remarkable
+        2025, achieving over 50 all-time highs and returning more than 60%. The outlook
+        depends on macroeconomic conditions, with gold performance ranging from -5%
+        to 30% based on different scenarios: Macro consensus (-5% to 5%), Shallow
+        slip (5% to 15% upside), Doom loop (15% to 30% upside), Reflation return (-5%
+        to 20% downside).'
+      source: Gold
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.25
+          sentiment_label: buy
+          reasoning: The text highlights a strong performance for gold in 2025, with
+            over 60% returns and multiple all-time highs, indicating a bullish sentiment.
+            Although there are varying scenarios for 2026 that include potential downsides,
+            the overall positive outlook and significant upside potential suggest
+            a favorable market sentiment.
+    - sentiment: 'Gold Price Forecast: Top Trends for Gold in 2026. Most analysts
+        expect gold''s bull run to moderate somewhat in 2026, though the metal could
+        surge if global economic growth disappoints. Goldman Sachs has raised its
+        December 2026 gold price forecast to $4,900 per ounce.'
+      source: Nasdaq
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: While there is an expectation of a moderate bull run for gold
+            in 2026 and a raised price forecast by Goldman Sachs, the overall sentiment
+            remains cautious due to potential global economic disappointments, leading
+            to a balanced outlook.
+    - sentiment: BofA Forecasts Silver At $65, Gold At $5,000 In 2026. Bank of America
+        forecasts gold at $5,000 in 2026. The structural bull case for gold is underpinned
+        by record central bank demand, U.S. dollar weakness, Federal Reserve easing,
+        and geopolitical tensions.
+      source: Benzinga
+      author: ''
+      date: '2025-10-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.682
+          sentiment_label: buy
+          reasoning: The forecast for gold at $5,000 and silver at $65 indicates a
+            strong bullish outlook, supported by positive factors such as record central
+            bank demand and geopolitical tensions, which typically drive investors
+            towards precious metals.
+    - sentiment: Will gold prices break $5,000/oz in 2026?. J.P. Morgan forecasts
+        gold could reach $5,000/oz by late 2026, with longer-term potential exceeding
+        $6,000. The outlook depends on Federal Reserve policy, central bank demand,
+        and currency movements.
+      source: Jpmorgan
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The forecast by J.P. Morgan suggests a strong bullish outlook
+            for gold prices, with potential to reach $5,000/oz and even exceed $6,000
+            in the long term. This indicates positive sentiment, although it is somewhat
+            contingent on external factors like Federal Reserve policy and currency
+            movements.
+    - sentiment: 'Gold 2026 Outlook: Can the structural bull cycle continue to $5,000?.
+        State Street expects gold to consolidate higher at $4,000–$4,500, with potential
+        to reach $5,000/oz supported by structural bull cycle forces. Key drivers
+        include continued central bank demand, ETF inflows, elevated stock/bond correlations,
+        and global debt concerns.'
+      source: Ssga
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The outlook for gold is predominantly positive, with expectations
+            of consolidation at higher levels and potential to reach $5,000 per ounce.
+            Key drivers such as central bank demand and global debt concerns further
+            support a bullish sentiment.

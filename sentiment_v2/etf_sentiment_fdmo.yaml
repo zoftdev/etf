@@ -1,0 +1,99 @@
+sentiment_data:
+- etf: FDMO
+  name: Fidelity Momentum Factor
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: FDMO Fidelity Momentum Factor ETF - 2025-2026 Outlook. FDMO has shown
+        strong recent performance, with a 1-year return of +21.35% to +23.22% as of
+        late 2025. Year-to-date 2025 performance shows mixed results, with Q1 down
+        6.40% but Q2 up 7.85% for a net +0.95% through mid-year. The ETF has a beta
+        of 1.04 and volatility of 18.61% to 23.6%, indicating it tracks closely with
+        market movements while exhibiting higher volatility than the S&P 500.
+      source: Portfoliopilot
+      author: ''
+      date: '2025-12-31'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The recent strong performance of FDMO with a 1-year return of
+            +21.35% to +23.22% is positive, but mixed year-to-date results and higher
+            volatility suggest caution. The overall outlook is balanced, reflecting
+            both positive and negative factors.
+    - sentiment: FDMO ETF 2025-2026 Outlook. FDMO returned +21.4% in 2024 and has
+        shown strong recent momentum. Over the next 52 weeks, FDMO has historically
+        risen by an average of 14.5% based on 8 years of past performance, with an
+        87.5% historical accuracy rate of positive returns. The ETF currently carries
+        a score of 76, indicating lower risk than normal and placing it in the 70-80%
+        percentile range relative to historical levels.
+      source: Financhill
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.749
+          sentiment_label: strong buy
+          reasoning: The FDMO ETF's impressive return of +21.4% in 2024, coupled with
+            a strong historical performance average of 14.5% and a high accuracy rate
+            of 87.5% for positive returns, indicates a very bullish outlook. Additionally,
+            the low risk score further supports a strong buy sentiment.
+    - sentiment: FDMO Momentum ETF Forecast for 2025-2026. FDMO (Fidelity Momentum
+        Factor ETF) has shown strong recent performance, with a 1-year return of +21.4%
+        as of December 31, 2025. The fund returned +23.22% over the past year as of
+        late January 2026. FDMO tracks the Fidelity U.S. Momentum Factor Index, focusing
+        on large and mid-capitalization U.S. companies with positive momentum signals.
+        The fund has a low expense ratio of 0.15% and total assets of $608.5 million.
+      source: Morningstar
+      author: ''
+      date: '2026-01-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.675
+          sentiment_label: buy
+          reasoning: The FDMO ETF has demonstrated strong recent performance with
+            a 1-year return of +21.4% and +23.22%, indicating positive momentum. Additionally,
+            the low expense ratio and substantial total assets further enhance its
+            attractiveness, leading to a bullish sentiment.
+    - sentiment: 'FDMO Momentum Factor ETF: 2025-2026 Overview. FDMO returned 21.4%
+        in 2024 and showed mixed 2025 results, with a -6.40% return in Q1 2025 followed
+        by a +7.85% recovery in Q2 2025. As of January 30, 2026, the ETF was trading
+        at $85.95. FDMO is a passively managed ETF that tracks the Fidelity U.S. Momentum
+        Factor Index, investing in large and mid-cap U.S. companies with positive
+        momentum signals. The fund carries a beta of 1.04 with 18.61% annualized volatility
+        risk.'
+      source: Portfoliopilot
+      author: ''
+      date: '2026-01-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The ETF had a strong return of 21.4% in 2024, but the mixed results
+            in 2025, including a negative Q1 return followed by a recovery in Q2,
+            indicate uncertainty. The overall performance reflects a balanced outlook
+            with both positive and negative indicators.
+    - sentiment: FDMO ETF 2025-2026 Investment Outlook. FDMO delivered strong 2025
+        performance with a 20.61% return year-to-date as of January 2026. The ETF
+        outperformed the S&P 500 in the first half of 2025, with a 10% surge from
+        $58 to $64.12 by April 2025. However, Q1 2025 saw a pullback of -6.40%, followed
+        by Q2 recovery of +7.85%. The fund increased its annualized dividend from
+        $0.63 to $0.65, marking a three-year dividend growth streak averaging 13.78%
+        annually.
+      source: Bestetf
+      author: ''
+      date: '2026-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.563
+          sentiment_label: buy
+          reasoning: The strong year-to-date performance of 20.61% and the ETF's outperformance
+            compared to the S&P 500 indicate a positive outlook. Additionally, the
+            consistent dividend growth and recovery from the Q1 pullback further support
+            a bullish sentiment despite the initial decline.

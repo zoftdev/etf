@@ -1,0 +1,139 @@
+sentiment_data:
+- etf: MTUM
+  name: iShares MSCI USA Momentum Factor
+  forecasts:
+  - year: 2025
+    forecast_year: 2026
+    sentiments:
+    - sentiment: MTUM ETF 2025-2026 Outlook. MTUM has delivered strong long-term returns,
+        with cumulative growth of a $10,000 investment reaching $38,385 since its
+        April 2013 inception. Over specific periods, the ETF posted 1-year returns
+        of approximately 13.56%, 3-year annualized returns of 21.08%, and 5-year returns
+        of 9.40%. However, recent short-term performance has been mixed. Year-to-date
+        returns show -2.47%, with a -5.42% decline over the past month.
+      source: Stockscan
+      author: ''
+      date: '2025-02-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.146
+          sentiment_label: neutral
+          reasoning: The long-term performance of the MTUM ETF is strong, with significant
+            cumulative growth and positive annualized returns over multiple periods.
+            However, recent short-term declines in performance (-2.47% year-to-date
+            and -5.42% over the past month) introduce a mixed sentiment, balancing
+            the overall outlook to neutral.
+    - sentiment: 'MTUM ETF 2026 Price Prediction. One analysis from January 26, 2026
+        provides specific trading signals: Short-term support: $253.25, Short-term
+        resistance: $256.72, Mid-term target: $260.80, Long-term resistance: $272.49.
+        This same analysis indicates a "strong" long-term positive bias with neutral
+        near and mid-term readings. The technical analysis suggests MTUM could face
+        modest near-term consolidation but maintains positive long-term momentum potential.'
+      source: Stocktradersdaily
+      author: ''
+      date: '2026-01-26'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The analysis indicates a strong long-term positive bias and positive
+            long-term momentum potential, despite some expected near-term consolidation.
+            The overall outlook is bullish, particularly for the long-term, which
+            justifies a buy sentiment.
+    - sentiment: 'MTUM ETF Investment Outlook for 2025-2026. MTUM is positioned favorably
+        for 2025. The ETF tracks U.S. stocks with strong recent price performance,
+        holding approximately 125-150 large and mid-cap stocks. Why momentum investing
+        should perform well in 2025: Steady U.S. economic growth with sectors like
+        technology, healthcare, and clean energy expected to lead, Favorable conditions
+        with inflation under control and gradually rising interest rates supporting
+        growth-oriented stocks.'
+      source: Clarkfinancial
+      author: ''
+      date: '2025-01-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.646
+          sentiment_label: buy
+          reasoning: The outlook for MTUM is positive due to favorable economic conditions,
+            including steady growth and controlled inflation, which support momentum
+            investing. Additionally, the focus on strong sectors like technology and
+            healthcare enhances the bullish sentiment for the ETF in 2025.
+    - sentiment: '2026 US Stock Market Outlook: Where to Find Investing Opportunities.
+        The broader U.S. stock market faces headwinds in 2026. The market is expected
+        to experience increased volatility due to several factors: High valuations,
+        particularly in mega-cap stocks like NVIDIA, Alphabet, and Broadcom, AI stocks
+        requiring even stronger growth to justify valuations, Economic slowdown expected
+        in the first half, with inflation risks from potential tariffs.'
+      source: Morningstar
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: -0.475
+          sentiment_label: sell
+          reasoning: The outlook for the U.S. stock market in 2026 is characterized
+            by significant headwinds, including high valuations and expected economic
+            slowdown, which contribute to a bearish sentiment. The mention of increased
+            volatility and inflation risks further supports a negative outlook, leading
+            to a sell recommendation.
+    - sentiment: MTUM 2026 Forecast Summary. MTUM is described by Morningstar's Senior
+        Analyst Ryan Jackson as offering "cheap momentum exposure" with "a time-tested
+        factor with a history of market-beating returns." Recent strategic tweaks
+        have improved the fund, though it remains "prone to unpredictable stretches
+        of performance." As of late 2025, MTUM showed strong performance metrics,
+        with cumulative growth of a $10,000 investment since inception (April 2013)
+        reaching $38,385.
+      source: Morningstar
+      author: ''
+      date: '2025-11-30'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.446
+          sentiment_label: buy
+          reasoning: The text highlights strong performance metrics and historical
+            market-beating returns, which are positive indicators. However, the mention
+            of unpredictability in performance introduces some caution, but overall,
+            the sentiment leans towards a bullish outlook due to the strong growth
+            figures.
+    - sentiment: MTUM Momentum ETF 2025-2026 Outlook. The search results show momentum
+        ETFs are recommended for 2026, reflecting continued interest in momentum strategies.
+        Momentum strategies historically perform better during uptrend market phases
+        but show opposite effects during downturns, making economic conditions crucial
+        to future performance. The ETF's technical indicators currently show neutral
+        sentiment, suggesting a balanced outlook without clear directional bias in
+        the near term.
+      source: Extraetf
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The text presents a balanced outlook on the MTUM Momentum ETF,
+            highlighting that while momentum strategies are recommended for 2026,
+            the current technical indicators show neutral sentiment, indicating no
+            strong positive or negative bias in the near term.
+    - sentiment: 5 Momentum ETFs With More Room to Run in 2026. Recent analysis suggests
+        momentum investing may remain a winning strategy. One source notes that "momentum
+        investing is likely to be a winning strategy for those seeking higher returns
+        in a short spell." Additionally, there is discussion about whether the momentum
+        trade can sustain itself despite economic uncertainties like tariffs.
+      source: Nasdaq
+      author: ''
+      date: '2025-12-01'
+      sentiment_score: 0.0
+      sentiment_result:
+        chatgpt:
+          score: 0.5
+          sentiment_label: buy
+          reasoning: The text highlights a positive outlook on momentum investing,
+            suggesting it may yield higher returns, which indicates bullish sentiment.
+            However, there is a mention of economic uncertainties that could impact
+            this strategy, but the overall tone remains optimistic about the potential
+            for gains.
