@@ -66,6 +66,7 @@ def run_period(
     param_list: List[DipBuyParams],
     exit_rules_list: List[ExitRules],
     history_calendar_days: int,
+    max_workers: Optional[int] = None,
 ) -> List[Dict[str, Any]]:
     start_date = _parse_start_date(period.get("start_date"))
     end_date = _parse_start_date(period.get("end_date"))
@@ -78,6 +79,7 @@ def run_period(
             history_calendar_days=history_calendar_days,
             sim_start_date=start_date,
             sim_end_date=end_date,
+            max_workers=max_workers,
         )
     return grid_search(
         fetcher,
@@ -87,6 +89,7 @@ def run_period(
         history_calendar_days=history_calendar_days,
         sim_start_date=start_date,
         sim_end_date=end_date,
+        max_workers=max_workers,
     )
 
 
@@ -111,6 +114,7 @@ def main():
         default=None,
         help="Append per-period progress as YAML stream to this path (default: planner_progress.yaml next to planner)",
     )
+    parser.add_argument("--workers", type=int, default=None, help="Max parallel processes per period (default: cpu_count)")
     args = parser.parse_args()
 
     planner_path = Path(args.planner)
@@ -188,6 +192,7 @@ def main():
             param_list,
             exit_rules_list,
             history_calendar_days,
+            max_workers=args.workers,
         )
         dt_sec = float((pd.Timestamp.utcnow() - t0).total_seconds())
 

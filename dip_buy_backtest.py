@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import itertools
 import os
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -545,9 +545,9 @@ def grid_search(
                 continue
             tasks.append((ticker, df, params, group))
 
-    workers = max_workers if max_workers is not None else min(32, (os.cpu_count() or 4) * 2)
+    workers = max_workers if max_workers is not None else (os.cpu_count() or 4)
     results: List[Dict[str, Any]] = []
-    with ThreadPoolExecutor(max_workers=workers) as executor:
+    with ProcessPoolExecutor(max_workers=workers) as executor:
         future_to_task = {
             executor.submit(_run_one_dip, t, d, p, exit_rules, g, sim_start_date, sim_end_date): (t, p)
             for t, d, p, g in tasks
@@ -631,9 +631,9 @@ def grid_search_exit(
         for exit_rules in exit_rules_list:
             tasks.append((ticker, df, exit_rules, group))
 
-    workers = max_workers if max_workers is not None else min(32, (os.cpu_count() or 4) * 2)
+    workers = max_workers if max_workers is not None else (os.cpu_count() or 4)
     results: List[Dict[str, Any]] = []
-    with ThreadPoolExecutor(max_workers=workers) as executor:
+    with ProcessPoolExecutor(max_workers=workers) as executor:
         future_to_task = {
             executor.submit(_run_one_exit, t, d, params, er, g, sim_start_date, sim_end_date): (t, er)
             for t, d, er, g in tasks
@@ -836,6 +836,7 @@ def main():
     parser.add_argument("--config", type=str, default=None, help="Path to dip_default.yaml (default: same dir as script)")
     parser.add_argument("--sim-config", type=str, default=None, help="Path to dip-sim.yaml for grid lists (default: same dir as script)")
     parser.add_argument("--output", "-o", type=str, default=None, help="Write simulation result to YAML (for planner); default: dip_sim_result.yaml")
+    parser.add_argument("--workers", type=int, default=None, help="Max parallel processes (default: cpu_count); only affects grid/small-grid/grid-exit")
     args = parser.parse_args()
 
     default_params, default_exit, config_start_date = load_dip_defaults(Path(args.config) if args.config else None)
@@ -883,6 +884,7 @@ def main():
         else:
             history_days = int(args.years * 365) + 60  # calendar days + cushion
 
+    workers = getattr(args, "workers", None)
     if args.grid_exit:
         exit_rules_list = exit_rules_grid(spread_pct=exit_rules.spread_pct, sim_config_path=sim_config_path)
         results = grid_search_exit(
@@ -890,6 +892,7 @@ def main():
             history_calendar_days=history_days,
             sim_start_date=sim_start_date,
             sim_end_date=sim_end_date,
+            max_workers=workers,
         )
     elif args.grid or args.small_grid:
         if args.small_grid:
@@ -905,6 +908,7 @@ def main():
             history_calendar_days=history_days,
             sim_start_date=sim_start_date,
             sim_end_date=sim_end_date,
+            max_workers=workers,
         )
     else:
         param_list = [default_params]
@@ -913,6 +917,7 @@ def main():
             history_calendar_days=history_days,
             sim_start_date=sim_start_date,
             sim_end_date=sim_end_date,
+            max_workers=workers,
         )
 
     if not results:

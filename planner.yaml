@@ -9,7 +9,7 @@ dip_config: dip_default.yaml
 sim_config: dip-sim.yaml
 
 # จำกัดจำนวน ticker (null = ใช้ทั้งหมด)
-limit: 3
+# limit: 3
 
 # ช่วงที่รัน แต่ละช่วงได้ sim_start_date, sim_end_date
 periods:
