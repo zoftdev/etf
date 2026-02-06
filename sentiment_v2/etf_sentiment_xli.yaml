@@ -17,7 +17,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.615
@@ -39,7 +38,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.487
@@ -62,7 +60,6 @@ sentiment_data:
       source: Ts2
       author: ''
       date: '2025-12-20'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.742
@@ -86,7 +83,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -107,7 +103,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -128,7 +123,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.742
@@ -150,7 +144,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -172,7 +165,6 @@ sentiment_data:
       source: Etfdigi
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -196,7 +188,6 @@ sentiment_data:
       source: Ts2
       author: ''
       date: '2026-01-15'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.682
@@ -217,7 +208,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -240,7 +230,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.325
@@ -263,7 +252,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2026-01-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.682
@@ -285,7 +273,6 @@ sentiment_data:
       source: Ts2
       author: ''
       date: '2025-12-20'
-      sentiment_score: 0.0
     - sentiment: 'XLI Industrial ETF 2026 Performance Metrics. Performance Metrics
         (as of late December 2025): 1-Year Return: 19-24.58% (depending on measurement
         date), YTD 2025 Return: 7.59-19.06%, Assets Under Management: ~$25-28 billion,
@@ -298,4 +285,3 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0

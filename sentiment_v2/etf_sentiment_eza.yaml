@@ -16,7 +16,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.0
@@ -36,7 +35,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -58,7 +56,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2025-11-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -79,7 +76,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.482
@@ -101,7 +97,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.367
@@ -123,7 +118,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-05-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.267
@@ -144,7 +138,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -165,7 +158,6 @@ sentiment_data:
       source: Statista
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -187,7 +179,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.682
@@ -210,7 +201,6 @@ sentiment_data:
       source: Stonehagefleming
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -232,7 +222,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -252,7 +241,6 @@ sentiment_data:
       source: Aaii
       author: ''
       date: '2025-11-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.746
@@ -272,7 +260,6 @@ sentiment_data:
       source: Msci
       author: ''
       date: '2025-08-29'
-      sentiment_score: 0.0
     - sentiment: EZA ETF 2026 Performance Prediction. Historical analysis shows that
         over the next 52 weeks, the iShares MSCI South Africa ETF has on average historically
         risen by 5.8% based on 22 years of past performance data, with positive performance
@@ -285,4 +272,3 @@ sentiment_data:
       source: Financhill
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0

@@ -19,7 +19,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -41,7 +40,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.753
@@ -64,7 +62,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -88,7 +85,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.482
@@ -111,7 +107,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -134,7 +129,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.487
@@ -157,7 +151,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -178,7 +171,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.515
@@ -200,7 +192,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -224,7 +215,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.367
@@ -246,7 +236,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -269,7 +258,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.634
@@ -291,7 +279,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: 'XLF Financial Sector ETF 2025-2026 Forecast. XLF is forecast to
         average around $51.81 in 2025, representing a slight decline of approximately
         1.06% from late October 2025 levels. The ETF has shown solid year-to-date
@@ -306,4 +293,3 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0

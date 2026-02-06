@@ -15,7 +15,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.558
@@ -34,7 +33,6 @@ sentiment_data:
       source: Ebc
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -53,7 +51,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.684
@@ -71,7 +68,6 @@ sentiment_data:
       source: Ebc
       author: ''
       date: '2025-08-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -90,7 +86,6 @@ sentiment_data:
       source: Yahoo
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.746
@@ -109,7 +104,6 @@ sentiment_data:
       source: Ebc
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -127,7 +121,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.1
@@ -145,7 +138,6 @@ sentiment_data:
       source: Ebc
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -164,7 +156,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675

@@ -19,7 +19,6 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.487
@@ -41,7 +40,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -65,7 +63,6 @@ sentiment_data:
       source: Fidelity
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -88,7 +85,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.35
@@ -110,7 +106,6 @@ sentiment_data:
       source: Spdrs
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.575
@@ -132,7 +127,6 @@ sentiment_data:
       source: Schwab
       author: ''
       date: '2026-02-28'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -154,7 +148,6 @@ sentiment_data:
       source: Yahoo
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -177,7 +170,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2026-01-02'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -199,7 +191,6 @@ sentiment_data:
       source: Spdrs
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.346
@@ -222,7 +213,6 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.682
@@ -247,7 +237,6 @@ sentiment_data:
       source: Fidelity
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564

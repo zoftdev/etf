@@ -13,7 +13,6 @@ sentiment_data:
       source: Nasdaq
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.523
@@ -31,7 +30,6 @@ sentiment_data:
       source: Fxempire
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -47,7 +45,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.675
@@ -63,7 +60,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -81,7 +77,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.754
@@ -97,7 +92,6 @@ sentiment_data:
       source: Altindex
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -115,7 +109,6 @@ sentiment_data:
       source: Eia
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -133,7 +126,6 @@ sentiment_data:
       source: Eia
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -150,7 +142,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.742
@@ -168,7 +159,6 @@ sentiment_data:
       source: Eia
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146

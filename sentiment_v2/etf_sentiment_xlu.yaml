@@ -18,7 +18,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.746
@@ -42,7 +41,6 @@ sentiment_data:
       source: Altindex
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -66,7 +64,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -88,7 +85,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -110,7 +106,6 @@ sentiment_data:
       source: Ts2
       author: ''
       date: '2026-01-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.684
@@ -132,7 +127,6 @@ sentiment_data:
       source: Etfreplay
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.423
@@ -154,7 +148,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -176,7 +169,6 @@ sentiment_data:
       source: Morningstar
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -200,7 +192,6 @@ sentiment_data:
       source: Ts2
       author: ''
       date: '2026-01-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.487
@@ -222,7 +213,6 @@ sentiment_data:
       source: Morningstar
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -245,7 +235,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -268,7 +257,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -292,7 +280,6 @@ sentiment_data:
       source: Ts2
       author: ''
       date: '2026-01-03'
-      sentiment_score: 0.0
     - sentiment: 'XLU Utilities sector ETF 2026 forecast. XLU is currently trading
         at $42.69. For the next 30 days, analysts have a generally positive outlook
         with an average price target of $73.21, representing a +71.50% increase from
@@ -307,4 +294,3 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0

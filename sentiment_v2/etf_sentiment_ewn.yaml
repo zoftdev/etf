@@ -17,7 +17,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-06-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.267
@@ -38,7 +37,6 @@ sentiment_data:
       source: Etoro
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.346
@@ -59,7 +57,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.482
@@ -78,7 +75,6 @@ sentiment_data:
       source: Stockanalysis
       author: ''
       date: '2026-01-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -97,7 +93,6 @@ sentiment_data:
       source: Morningstar
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.4
@@ -116,7 +111,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.35
@@ -135,7 +129,6 @@ sentiment_data:
       source: Blackrock
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -155,7 +148,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-05-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.0
@@ -175,7 +167,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-05-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146

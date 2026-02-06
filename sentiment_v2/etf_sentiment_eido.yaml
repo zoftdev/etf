@@ -14,7 +14,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-16'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -30,7 +29,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -48,7 +46,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -64,7 +61,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.25
@@ -81,7 +77,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.457
@@ -100,7 +95,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.375
@@ -117,7 +111,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-04-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.423
@@ -136,7 +129,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.175
@@ -152,7 +144,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.3
@@ -168,7 +159,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -184,7 +174,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-16'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.3
@@ -201,7 +190,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.575
@@ -218,7 +206,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
     - sentiment: 'EIDO Indonesia ETF 2026 Forecast Summary. According to probabilistic
         forecasting models, EIDO is expected to trade in the following ranges through
         early 2027: April 2026: $19.38-$19.82, July 2026: $19.61-$20.50, October 2026:
@@ -228,4 +215,3 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0

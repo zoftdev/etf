@@ -16,7 +16,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -37,7 +36,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -58,7 +56,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-09-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -78,7 +75,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-05-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -97,7 +93,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.726
@@ -117,7 +112,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.267
@@ -135,7 +129,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -153,7 +146,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-09-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -172,7 +164,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.563

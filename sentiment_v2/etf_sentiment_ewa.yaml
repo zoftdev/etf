@@ -17,7 +17,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-06-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -39,7 +38,6 @@ sentiment_data:
       source: Etoro
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.682
@@ -61,7 +59,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-06-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.246
@@ -82,7 +79,6 @@ sentiment_data:
       source: Financhill
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -104,7 +100,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -126,7 +121,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-03-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.532
@@ -147,7 +141,6 @@ sentiment_data:
       source: Com
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -167,7 +160,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-03-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.25
@@ -189,7 +181,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-03-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -209,7 +200,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.486
@@ -230,7 +220,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -252,7 +241,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.482

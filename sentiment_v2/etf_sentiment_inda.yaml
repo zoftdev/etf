@@ -15,7 +15,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.25
@@ -35,7 +34,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.35
@@ -54,7 +52,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.375
@@ -72,7 +69,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.432
@@ -92,7 +88,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -109,7 +104,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.542
@@ -128,7 +122,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.485
@@ -146,7 +139,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -164,7 +156,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -183,7 +174,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146

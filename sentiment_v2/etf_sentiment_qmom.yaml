@@ -14,7 +14,6 @@ sentiment_data:
       source: Alphaarchitect
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -34,7 +33,6 @@ sentiment_data:
       source: Financhill
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -55,7 +53,6 @@ sentiment_data:
       source: Alphaarchitect
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.482
@@ -74,7 +71,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.167

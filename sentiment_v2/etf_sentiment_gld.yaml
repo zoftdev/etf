@@ -15,7 +15,6 @@ sentiment_data:
       source: Ts2
       author: ''
       date: '2025-12-05'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -33,7 +32,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-05'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.682
@@ -50,7 +48,6 @@ sentiment_data:
       source: Benzinga
       author: ''
       date: '2025-12-05'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -67,7 +64,6 @@ sentiment_data:
       source: Reuters
       author: ''
       date: '2025-10-07'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -84,7 +80,6 @@ sentiment_data:
       source: Morganstanley
       author: ''
       date: '2025-10-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.7
@@ -101,7 +96,6 @@ sentiment_data:
       source: Gold
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.25
@@ -118,7 +112,6 @@ sentiment_data:
       source: Nasdaq
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -134,7 +127,6 @@ sentiment_data:
       source: Benzinga
       author: ''
       date: '2025-10-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.682
@@ -150,7 +142,6 @@ sentiment_data:
       source: Jpmorgan
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -168,7 +159,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646

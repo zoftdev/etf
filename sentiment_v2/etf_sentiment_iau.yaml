@@ -13,7 +13,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-16'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.2
@@ -30,7 +29,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-05-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.675
@@ -48,7 +46,6 @@ sentiment_data:
       source: Etftrends
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -65,7 +62,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.487
@@ -83,7 +79,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.0
@@ -100,7 +95,6 @@ sentiment_data:
       source: Stockanalysis
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -116,7 +110,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.432
@@ -132,7 +125,6 @@ sentiment_data:
       source: Tradingview
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.8
@@ -149,7 +141,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.325
@@ -166,7 +157,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.575
@@ -183,7 +173,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -200,7 +189,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-06-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.683

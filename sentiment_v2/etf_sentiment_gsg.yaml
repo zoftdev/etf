@@ -13,7 +13,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-05'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -30,7 +29,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-10-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.487
@@ -48,7 +46,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2025-06-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -66,7 +63,6 @@ sentiment_data:
       source: Goldmansachs
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.462
@@ -83,7 +79,6 @@ sentiment_data:
       source: Morganstanley
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.625
@@ -100,7 +95,6 @@ sentiment_data:
       source: Chaipredict
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -119,7 +113,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-01-09'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.423

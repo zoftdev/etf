@@ -16,7 +16,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.487
@@ -38,7 +37,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.423
@@ -60,7 +58,6 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -81,7 +78,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.546
@@ -103,7 +99,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -126,7 +121,6 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -150,7 +144,6 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -174,7 +167,6 @@ sentiment_data:
       source: Morningstar
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -197,7 +189,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.375
@@ -218,7 +209,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.475
@@ -242,7 +232,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -264,7 +253,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.432
@@ -290,7 +278,6 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: XLV Healthcare ETF 2026 Market Outlook. Vanguard's 2026 economic
         outlook provides context for sector performance. The U.S. economy is expected
         to experience modest growth of approximately 2.25% in 2026, with stronger
@@ -305,7 +292,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: 'XLV Healthcare Sector ETF 2026 Forecast. The Morningstar Healthcare
         Index is expected to deliver solid performance in 2026, driven by its defensive
         profile and innovation potential. Healthcare: Increased Clarity on Drug Pricing
@@ -319,4 +305,3 @@ sentiment_data:
       source: Morningstar
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0

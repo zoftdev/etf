@@ -13,7 +13,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -30,7 +29,6 @@ sentiment_data:
       source: Jpmorgan
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.675
@@ -48,7 +46,6 @@ sentiment_data:
       source: Nasdaq
       author: ''
       date: '2025-12-15'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.675
@@ -66,7 +63,6 @@ sentiment_data:
       source: Financialease
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.35
@@ -85,7 +81,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-25'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -102,7 +97,6 @@ sentiment_data:
       source: Eia
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.675
@@ -120,7 +114,6 @@ sentiment_data:
       source: Eia
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.646
@@ -137,7 +130,6 @@ sentiment_data:
       source: Jpmorgan
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.367
@@ -156,7 +148,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2025-12-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.527
@@ -175,7 +166,6 @@ sentiment_data:
       source: Nasdaq
       author: ''
       date: '2025-12-15'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.564
@@ -193,7 +183,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.0

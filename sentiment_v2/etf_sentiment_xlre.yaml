@@ -20,7 +20,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.083
@@ -42,7 +41,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -66,7 +64,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-09-30'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -89,7 +86,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -112,7 +108,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -136,7 +131,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.367
@@ -161,7 +155,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.5
@@ -187,7 +180,6 @@ sentiment_data:
       source: Nuveen
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.625
@@ -213,7 +205,6 @@ sentiment_data:
       source: Ts2
       author: ''
       date: '2026-01-02'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.625
@@ -238,7 +229,6 @@ sentiment_data:
       source: Morganstanley
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.35
@@ -262,7 +252,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -285,7 +274,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -311,7 +299,6 @@ sentiment_data:
       source: Portfoliopilot
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: 'XLRE Real Estate ETF 2025-2026 Outlook. As of late January 2026,
         XLRE was trading around $41.39-$41.43. The ETF tracks the Real Estate Select
         Sector Index and provides exposure to major U.S. real estate investment trusts
@@ -327,4 +314,3 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0

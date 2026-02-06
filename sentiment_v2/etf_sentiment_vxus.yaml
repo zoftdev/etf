@@ -19,7 +19,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-10'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.575
@@ -42,7 +41,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -65,7 +63,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -87,7 +84,6 @@ sentiment_data:
       source: Red94
       author: ''
       date: '2025-12-15'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -111,7 +107,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-10'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -134,7 +129,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -158,7 +152,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.475
@@ -182,7 +175,6 @@ sentiment_data:
       source: Red94
       author: ''
       date: '2026-01-02'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.546
@@ -208,7 +200,6 @@ sentiment_data:
       source: Fidelity
       author: ''
       date: '2025-12-15'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -233,7 +224,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -259,7 +249,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-10'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.423
@@ -285,7 +274,6 @@ sentiment_data:
       source: Red94
       author: ''
       date: '2026-01-22'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -310,7 +298,6 @@ sentiment_data:
       source: Vanguard
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: 'VXUS International Equity ETF 2026 Forecast. VXUS delivered strong
         returns in 2025, gaining 21-32.35% depending on the measurement period, significantly
         outperforming the S&P 500''s 17.7% return. International markets demonstrated
@@ -327,4 +314,3 @@ sentiment_data:
       source: Marketwatch
       author: ''
       date: '2026-01-22'
-      sentiment_score: 0.0

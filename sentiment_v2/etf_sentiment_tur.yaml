@@ -16,7 +16,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -36,7 +35,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.325
@@ -55,7 +53,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -75,7 +72,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.423
@@ -96,7 +92,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.683
@@ -117,7 +112,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -137,7 +131,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.31
@@ -158,7 +151,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -179,7 +171,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -198,7 +189,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.654
@@ -218,7 +208,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.682
@@ -238,7 +227,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.342
@@ -257,7 +245,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
     - sentiment: TUR Turkey ETF 2026 forecast 2025. As of early February 2026, TUR
         (iShares MSCI Turkey ETF) was trading at $41.49. For the next 30 days, forecasts
         are generally positive, with an average analyst price target of $42.06, representing
@@ -269,4 +256,3 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-01'
-      sentiment_score: 0.0

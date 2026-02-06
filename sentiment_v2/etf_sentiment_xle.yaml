@@ -18,7 +18,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.487
@@ -38,7 +37,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -61,7 +59,6 @@ sentiment_data:
       source: Asktraders
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -83,7 +80,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -107,7 +103,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -129,7 +124,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -151,7 +145,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -175,7 +168,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.582
@@ -198,7 +190,6 @@ sentiment_data:
       source: Nasdaq
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.758
@@ -221,7 +212,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -245,7 +235,6 @@ sentiment_data:
       source: Ing
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.675
@@ -266,7 +255,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -288,7 +276,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: 'XLE Energy ETF 2026 Investment Outlook. XLE has delivered solid
         5-year annualized returns of 8.65%, with a 23.81% total return over the past
         year including dividends. The fund offers low-cost exposure to energy majors
@@ -303,7 +290,6 @@ sentiment_data:
       source: Ainvest
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: 'XLE Energy sector ETF 2026 forecast. For 2026: One forecast model
         projects XLE reaching $53.62 by January 2027, with intermediate targets of
         $47.64 (April 2026), $49.64 (July 2026), and $51.63 (October 2026). An alternative
@@ -317,4 +303,3 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0

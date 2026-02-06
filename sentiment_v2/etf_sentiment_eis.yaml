@@ -16,7 +16,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.267
@@ -36,7 +35,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2026-01-23'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -57,7 +55,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -76,7 +73,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.754
@@ -98,7 +94,6 @@ sentiment_data:
       source: Tradingeconomics
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.646
@@ -118,7 +113,6 @@ sentiment_data:
       source: Statista
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -139,7 +133,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -159,7 +152,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2025-05-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -180,7 +172,6 @@ sentiment_data:
       source: Marketbeat
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.35
@@ -200,7 +191,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2026-02-03'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -222,7 +212,6 @@ sentiment_data:
       source: Org
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.654
@@ -241,7 +230,6 @@ sentiment_data:
       source: Marketwatch
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.684
@@ -261,7 +249,6 @@ sentiment_data:
       source: Msci
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: 'iShares MSCI Israel ETF 2026 Outlook Investment Analysis. The iShares
         MSCI Israel ETF (EIS) is a passively managed ETF that tracks the MSCI Israel
         Capped Investable Market Index, providing exposure to Israeli equities. The
@@ -273,7 +260,6 @@ sentiment_data:
       source: Ishares
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
     - sentiment: EIS Israel Equity ETF 2026 Forecast. The iShares MSCI Israel ETF
         (EIS) has shown strong performance in early 2026, with year-to-date returns
         of approximately 8.28% gains. Over the past year, the ETF has delivered 47.55%
@@ -284,4 +270,3 @@ sentiment_data:
       source: Investing
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0

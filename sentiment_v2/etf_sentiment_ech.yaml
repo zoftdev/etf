@@ -16,7 +16,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.375
@@ -34,7 +33,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -55,7 +53,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.463
@@ -75,7 +72,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-02-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -94,7 +90,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -113,7 +108,6 @@ sentiment_data:
       source: Ad-hoc-news
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -132,7 +126,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -150,7 +143,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.25
@@ -171,7 +163,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.646
@@ -189,7 +180,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-27'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.423
@@ -209,7 +199,6 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.675
@@ -228,7 +217,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2025-01-01'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.575

@@ -16,7 +16,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.487
@@ -38,7 +37,6 @@ sentiment_data:
       source: Etfpriceforecast
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.423
@@ -61,7 +59,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -83,7 +80,6 @@ sentiment_data:
       source: Barchart
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.675
@@ -106,7 +102,6 @@ sentiment_data:
       source: Financialcontent
       author: ''
       date: '2026-01-22'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.267
@@ -128,7 +123,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2026-02-04'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.512
@@ -151,7 +145,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.564
@@ -174,7 +167,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -196,7 +188,6 @@ sentiment_data:
       source: Goldmansachs
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.423
@@ -219,7 +210,6 @@ sentiment_data:
       source: Barchart
       author: ''
       date: '2026-01-22'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.05
@@ -242,7 +232,6 @@ sentiment_data:
       source: Etfaction
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.267
@@ -264,7 +253,6 @@ sentiment_data:
       source: Aipickup
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: -0.146
@@ -287,7 +275,6 @@ sentiment_data:
       source: Ssga
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
     - sentiment: XLK Technology ETF 2026 Investment Outlook. XLK faces headwinds heading
         into 2026. The ETF's price has been flat for an extended period, with a significant
         rally from April through October 2025 stalling. Analysts suggest the technology
@@ -302,7 +289,6 @@ sentiment_data:
       source: Barchart
       author: ''
       date: '2026-01-22'
-      sentiment_score: 0.0
     - sentiment: 'Fidelity Portfolio Manager Updates Tech Stocks Forecast for 2026.
         The S&P 500 is on track for a third consecutive year of double-digit gains,
         primarily driven by artificial intelligence spending. AI is expected to continue
@@ -317,4 +303,3 @@ sentiment_data:
       source: Thestreet
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0

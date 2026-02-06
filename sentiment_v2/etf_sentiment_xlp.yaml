@@ -18,7 +18,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.558
@@ -41,7 +40,6 @@ sentiment_data:
       source: Altindex
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -64,7 +62,6 @@ sentiment_data:
       source: Seekingalpha
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -88,7 +85,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2026-01-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.4
@@ -113,7 +109,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.3
@@ -136,7 +131,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.146
@@ -161,7 +155,6 @@ sentiment_data:
       source: Tipranks
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.25
@@ -186,7 +179,6 @@ sentiment_data:
       source: Fidelity
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.482
@@ -209,7 +201,6 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.346
@@ -231,7 +222,6 @@ sentiment_data:
       source: Stockscan
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.325
@@ -254,7 +244,6 @@ sentiment_data:
       source: Finviz
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.563
@@ -277,7 +266,6 @@ sentiment_data:
       source: Nasdaq
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
       sentiment_result:
         chatgpt:
           score: 0.276
@@ -301,4 +289,3 @@ sentiment_data:
       source: Rockflow
       author: ''
       date: '2025-12-31'
-      sentiment_score: 0.0
