@@ -89,18 +89,18 @@ Simulator: "Bot, evaluate all tickers as of 2024-01-15"
 
 Bot:
   1. Fetch data for SPY (up to 2024-01-15)
-  2. Call decision.score("SPY", data, 2024-01-15) → score: 8.5
+  2. Call decision.score("SPY", data, 2024-01-15) → score: 0.85
   3. Fetch data for QQQ (up to 2024-01-15)
-  4. Call decision.score("QQQ", data, 2024-01-15) → score: 6.2
+  4. Call decision.score("QQQ", data, 2024-01-15) → score: 0.62
   5. Fetch data for DIA (up to 2024-01-15)
-  6. Call decision.score("DIA", data, 2024-01-15) → score: 3.1
+  6. Call decision.score("DIA", data, 2024-01-15) → score: 0.31
   
-  Sort: [SPY: 8.5, QQQ: 6.2, DIA: 3.1]
+  Sort: [SPY: 0.85, QQQ: 0.62, DIA: 0.31]
   Select top 2: [SPY: BUY, QQQ: BUY]
 
 Bot returns: [
-  {"ticker": "SPY", "action": "BUY", "score": 8.5},
-  {"ticker": "QQQ", "action": "BUY", "score": 6.2}
+  {"ticker": "SPY", "action": "BUY", "score": 0.85},
+  {"ticker": "QQQ", "action": "BUY", "score": 0.62}
 ]
 
 Simulator: Execute BUY for SPY and QQQ
@@ -113,19 +113,19 @@ Simulator: "Bot, evaluate all tickers as of 2024-01-16"
 
 Bot:
   1. Fetch data for SPY (up to 2024-01-16) ← includes 2024-01-16 data
-  2. Call decision.score("SPY", data, 2024-01-16) → score: 7.8
+  2. Call decision.score("SPY", data, 2024-01-16) → score: 0.78
   3. Fetch data for QQQ (up to 2024-01-16)
-  4. Call decision.score("QQQ", data, 2024-01-16) → score: 4.5
+  4. Call decision.score("QQQ", data, 2024-01-16) → score: 0.45
   5. Fetch data for DIA (up to 2024-01-16)
-  6. Call decision.score("DIA", data, 2024-01-16) → score: 9.2
+  6. Call decision.score("DIA", data, 2024-01-16) → score: 0.92
   
-  Sort: [DIA: 9.2, SPY: 7.8, QQQ: 4.5]
+  Sort: [DIA: 0.92, SPY: 0.78, QQQ: 0.45]
   Select top 2: [DIA: BUY, SPY: BUY]
   (SPY already in position, may hold or add)
 
 Bot returns: [
-  {"ticker": "DIA", "action": "BUY", "score": 9.2},
-  {"ticker": "SPY", "action": "BUY", "score": 7.8}
+  {"ticker": "DIA", "action": "BUY", "score": 0.92},
+  {"ticker": "SPY", "action": "BUY", "score": 0.78}
 ]
 
 Simulator: Execute BUY for DIA, maintain SPY position
@@ -188,10 +188,10 @@ Day 5 (2024-01-20):
 
 Example:
 ```
-Current positions: [SPY: 8.5, QQQ: 6.2]
+Current positions: [SPY: 0.85, QQQ: 0.62]
 Day 3 evaluation:
-  Scores: [DIA: 9.2, SPY: 7.8, QQQ: 4.5, IWM: 5.1]
-  Top 2: [DIA: 9.2, SPY: 7.8]
+  Scores: [DIA: 0.92, SPY: 0.78, QQQ: 0.45, IWM: 0.51]
+  Top 2: [DIA: 0.92, SPY: 0.78]
   QQQ falls out of top 2 → SELL QQQ
   DIA enters top 2 → BUY DIA
 ```
@@ -217,13 +217,13 @@ Bot rules:
 ```
 Day 1 (2024-01-15):
   Bot evaluates all tickers
-  Scores: [SPY: 8.5, QQQ: 6.2, DIA: 3.1]
+  Scores: [SPY: 0.85, QQQ: 0.62, DIA: 0.31]
   Top 2: [SPY: BUY, QQQ: BUY]
   No existing positions → Execute BUY for SPY and QQQ
 
 Day 2 (2024-01-16):
   Bot evaluates all tickers (including SPY, QQQ)
-  Scores: [DIA: 9.2, SPY: 7.8, QQQ: 4.5]
+  Scores: [DIA: 0.92, SPY: 0.78, QQQ: 0.45]
   Top 2: [DIA: BUY, SPY: BUY]
   SPY still in top 2 → HOLD SPY
   QQQ falls out of top 2 → SELL QQQ
@@ -231,7 +231,7 @@ Day 2 (2024-01-16):
 
 Day 3 (2024-01-17):
   Bot evaluates all tickers
-  Scores: [SPY: 6.5, DIA: 5.2, QQQ: -3.1]
+  Scores: [SPY: 0.65, DIA: 0.52, QQQ: -0.31]
   Top 2: [SPY: BUY, DIA: BUY]
   SPY still in top 2 → HOLD SPY
   DIA still in top 2 → HOLD DIA
@@ -239,9 +239,9 @@ Day 3 (2024-01-17):
 
 Day 4 (2024-01-18):
   Bot evaluates all tickers
-  Scores: [SPY: 2.1, DIA: -4.5, QQQ: 8.2]
-  Top 2: [QQQ: 8.2, SPY: 2.1]
-  DIA score < sell_threshold (-3.0) → SELL DIA
+  Scores: [SPY: 0.21, DIA: -0.45, QQQ: 0.82]
+  Top 2: [QQQ: 0.82, SPY: 0.21]
+  DIA score < sell_threshold (-0.3) → SELL DIA
   SPY still in top 2 → HOLD SPY
   QQQ re-enters top 2 → BUY QQQ
 ```

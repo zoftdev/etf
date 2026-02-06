@@ -1,0 +1,42 @@
+# RSI Decision Module - Mid Sensitivity Configuration (Standard)
+# Balanced settings: standard period, standard thresholds
+# Most widely used RSI configuration
+# Best for: Swing trading, general purpose trading, balanced approach
+
+decision: rsi
+
+# RSI Calculation Parameters
+rsi_period: 14             # Standard period (Wilder's original setting)
+                           # Balanced sensitivity, most commonly used
+
+# Overbought/Oversold Thresholds
+oversold_threshold: 30     # RSI level for oversold condition (standard: 30)
+overbought_threshold: 70   # RSI level for overbought condition (standard: 70)
+                           # Standard thresholds, balanced signal frequency
+
+# Strong Signal Thresholds
+strong_oversold: 20        # RSI level for strong oversold (strong buy signal)
+strong_overbought: 80      # RSI level for strong overbought (strong sell signal)
+
+# Divergence Detection
+divergence_lookback: 20    # Number of bars to check for divergence (standard)
+
+# Score Generation Thresholds
+score_strong_buy: 0.8      # Minimum score for strong buy signal
+score_buy: 0.5             # Minimum score for buy signal
+score_weak_buy: 0.2        # Minimum score for weak buy signal
+score_neutral: 0.0         # Neutral zone threshold
+score_weak_sell: -0.2      # Maximum score for weak sell signal
+score_sell: -0.5           # Maximum score for sell signal
+score_strong_sell: -0.8    # Maximum score for strong sell signal
+
+# Signal Filtering
+min_score_threshold: 0.1   # Minimum absolute score to return (filter out weak signals)
+enable_divergence: true     # Enable divergence detection
+enable_momentum_shift: true # Enable momentum shift signals (RSI crossing 50)
+
+# Notes:
+# - Period 14: Wilder's original standard, balanced sensitivity
+# - Thresholds 70/30: Most widely used, proven over decades
+# - Best for most traders, good balance between signal frequency and reliability
+# - Works well in most market conditions

@@ -1,0 +1,42 @@
+# RSI Decision Module - High Sensitivity Configuration (Conservative)
+# Less sensitive settings: longer period, wider thresholds
+# Generates fewer but more reliable signals, reduces false signals
+# Best for: Position trading, longer-term strategies, conservative approach
+
+decision: rsi
+
+# RSI Calculation Parameters
+rsi_period: 21             # Longer period for smoother, less sensitive signals
+                           # Higher period = less sensitive, fewer but more reliable signals
+
+# Overbought/Oversold Thresholds
+oversold_threshold: 20     # Wider threshold for oversold (standard: 30)
+overbought_threshold: 80   # Wider threshold for overbought (standard: 70)
+                           # Wider thresholds (80/20) = fewer signals but higher accuracy
+
+# Strong Signal Thresholds
+strong_oversold: 15        # RSI level for strong oversold (strong buy signal)
+strong_overbought: 85      # RSI level for strong overbought (strong sell signal)
+
+# Divergence Detection
+divergence_lookback: 25    # Number of bars to check for divergence (longer for more reliable detection)
+
+# Score Generation Thresholds
+score_strong_buy: 0.8      # Minimum score for strong buy signal
+score_buy: 0.5             # Minimum score for buy signal
+score_weak_buy: 0.2        # Minimum score for weak buy signal
+score_neutral: 0.0         # Neutral zone threshold
+score_weak_sell: -0.2      # Maximum score for weak sell signal
+score_sell: -0.5           # Maximum score for sell signal
+score_strong_sell: -0.8    # Maximum score for strong sell signal
+
+# Signal Filtering
+min_score_threshold: 0.15  # Higher threshold to filter out more weak signals
+enable_divergence: true    # Enable divergence detection
+enable_momentum_shift: true # Enable momentum shift signals (RSI crossing 50)
+
+# Notes:
+# - Period 21: Less sensitive, smoother signals, reduces noise
+# - Thresholds 80/20: Wider corridor, fewer but more reliable signals
+# - Best for conservative traders, reduces false signals in choppy markets
+# - May miss some opportunities but provides higher quality signals
