@@ -90,11 +90,27 @@ def run_period(
     )
 
 
+def _append_yaml_doc(path: Path, data: Dict[str, Any]) -> None:
+    """Append a YAML document (--- separated) so we can stream progress while long runs execute."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    doc = yaml.safe_dump(_to_native(data), allow_unicode=True, default_flow_style=False, sort_keys=False)
+    with open(path, "a", encoding="utf-8") as f:
+        # Separator between docs; makes it easy to tail/parse as YAML stream.
+        f.write("---\n")
+        f.write(doc)
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="Run dip_buy per period from planner.yaml, compare & aggregate")
     parser.add_argument("--planner", type=str, default="planner.yaml", help="Path to planner.yaml")
     parser.add_argument("--limit", type=int, default=None, help="Override planner limit (tickers)")
+    parser.add_argument(
+        "--progress",
+        type=str,
+        default=None,
+        help="Append per-period progress as YAML stream to this path (default: planner_progress.yaml next to planner)",
+    )
     args = parser.parse_args()
 
     planner_path = Path(args.planner)
@@ -106,6 +122,8 @@ def main():
     base_dir = planner_path.resolve().parent
     plan = load_planner(planner_path)
     mode = (plan.get("mode") or "single").strip().lower()
+
+    progress_path = Path(args.progress) if args.progress else (base_dir / "planner_progress.yaml")
     if mode not in ("single", "small_grid", "grid", "grid_exit"):
         mode = "single"
 
@@ -148,7 +166,18 @@ def main():
     period_results: Dict[str, List[Dict[str, Any]]] = {}
     for period in periods:
         name = period.get("name") or period.get("start_date", "?")
-        print(f"Running period: {name} ({period.get('start_date')} .. {period.get('end_date')}) ...")
+        start_s = period.get("start_date")
+        end_s = period.get("end_date")
+        print(f"Running period: {name} ({start_s} .. {end_s}) ...")
+
+        _append_yaml_doc(progress_path, {
+            "event": "period_start",
+            "period": {"name": name, "start_date": start_s, "end_date": end_s},
+            "mode": mode,
+            "limit": limit,
+        })
+
+        t0 = pd.Timestamp.utcnow()
         results = run_period(
             period,
             fetcher,
@@ -160,8 +189,33 @@ def main():
             exit_rules_list,
             history_calendar_days,
         )
+        dt_sec = float((pd.Timestamp.utcnow() - t0).total_seconds())
+
         period_results[name] = results
         print(f"  -> {len(results)} results")
+
+        # Stream per-period summaries so you can inspect mid-run.
+        try:
+            best_overall = summarize_best(results, by_ticker=False, metric="total_return_pct")
+            by_group = summarize_by_group(results, metric="total_return_pct")
+            excl_commodity = summarize_all_exclude_commodity(results, metric="total_return_pct")
+            _append_yaml_doc(progress_path, {
+                "event": "period_done",
+                "period": {"name": name, "start_date": start_s, "end_date": end_s},
+                "runtime_sec": round(dt_sec, 3),
+                "n_results": len(results),
+                "best_overall": best_overall.to_dict(orient="records") if best_overall is not None and not best_overall.empty else [],
+                "summary_by_group_top": by_group.head(15).to_dict(orient="records") if by_group is not None and not by_group.empty else [],
+                "all_exclude_commodity": excl_commodity.to_dict(orient="records") if excl_commodity is not None and not excl_commodity.empty else [],
+            })
+        except Exception as e:
+            _append_yaml_doc(progress_path, {
+                "event": "period_done",
+                "period": {"name": name, "start_date": start_s, "end_date": end_s},
+                "runtime_sec": round(dt_sec, 3),
+                "n_results": len(results),
+                "error": str(e),
+            })
 
     # เทียบ: best overall ต่อช่วง
     comparison_rows = []

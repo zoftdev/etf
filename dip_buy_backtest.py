@@ -494,6 +494,8 @@ def _run_one_dip(
         "use_slope_filter": params.use_slope_filter,
         "min_dip_pct": params.min_dip_pct,
     }
+    # In this backtest module, `group` is the raw YAML path key (group_key), e.g. commodity.specific
+    res["group_key"] = group
     res["group"] = group
     return res
 
@@ -585,6 +587,8 @@ def _run_one_exit(
         "exit_take_profit_pct": exit_rules.take_profit_pct,
         "exit_stop_loss_pct": exit_rules.stop_loss_pct,
     }
+    # In this backtest module, `group` is the raw YAML path key (group_key), e.g. commodity.specific
+    res["group_key"] = group
     res["group"] = group
     return res
 
@@ -711,7 +715,10 @@ def summarize_all_exclude_commodity(
     """
     if not results:
         return None
-    excluded = [r for r in results if "commodity" not in (r.get("group") or "").lower()]
+    def _gkey(r: Dict[str, Any]) -> str:
+        return str(r.get("group_key") or r.get("group") or "")
+
+    excluded = [r for r in results if not _gkey(r).lower().startswith("commodity")]
     if not excluded:
         return None
     rows = []
