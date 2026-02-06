@@ -1,0 +1,17 @@
+# Default parameters for Dip-Buy backtest (dip_buy_backtest.py)
+# Override via CLI (e.g. --hold-days, --spread).
+
+# Strategy params (DipBuyParams) — used when not running --grid / --small-grid
+dip_buy:
+  trend_days: 200
+  dip_days: 5
+  slope_lookback_days: 20
+  use_slope_filter: false
+  min_dip_pct: 0.0
+
+# Exit / cost rules (ExitRules)
+exit_rules:
+  hold_days: 20
+  take_profit_pct: 15   # e.g. 5.0 for 5% take profit
+  stop_loss_pct: null     # e.g. -3.0 for -3% stop loss
+  spread_pct: 0.0        # round-trip cost %, e.g. 0.15 = 0.15%
