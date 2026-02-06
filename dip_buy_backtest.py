@@ -6,7 +6,10 @@ Defaults loaded from dip_default.yaml when present.
 from __future__ import annotations
 
 import itertools
+import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any
 
@@ -376,6 +379,26 @@ def exit_rules_grid(spread_pct: float = 0.0, sim_config_path: Optional[Path] = N
     return grid
 
 
+def _run_one_dip(
+    ticker: str,
+    df: pd.DataFrame,
+    params: DipBuyParams,
+    exit_rules: ExitRules,
+    group: str,
+) -> Dict[str, Any]:
+    """Single backtest for grid_search (dip params). Used in parallel."""
+    res = run_backtest_ticker(ticker, df, params, exit_rules)
+    res["params_dict"] = {
+        "trend_days": params.trend_days,
+        "dip_days": params.dip_days,
+        "slope_lookback_days": params.slope_lookback_days,
+        "use_slope_filter": params.use_slope_filter,
+        "min_dip_pct": params.min_dip_pct,
+    }
+    res["group"] = group
+    return res
+
+
 def grid_search(
     fetcher: ETFDataFetcher,
     tickers: List[str],
@@ -385,9 +408,10 @@ def grid_search(
     max_dip_days: int = 14,
     max_slope_days: int = 30,
     history_calendar_days: Optional[int] = None,
+    max_workers: Optional[int] = None,
 ) -> List[Dict[str, Any]]:
     """
-    For each ticker, fetch history; for each param set run backtest; return list of results.
+    For each ticker, fetch history; for each param set run backtest (in parallel); return list of results.
     If history_calendar_days is set (e.g. 3*365 for 3 years), use that for fetch; else use min needed.
     """
     if history_calendar_days is not None:
@@ -397,7 +421,8 @@ def grid_search(
         calendar_days = fetcher._calendar_days_for_trading_window(need_trading)
     history, errors = fetcher.fetch_history_days(calendar_days, tickers=tickers)
 
-    results: List[Dict[str, Any]] = []
+    ticker_infos = {t: (fetcher.get_ticker_info(t) or {}).get("group") or "Unknown" for t in tickers}
+    tasks: List[Tuple[str, pd.DataFrame, DipBuyParams, str]] = []
     for ticker in tickers:
         if ticker not in history:
             continue
@@ -405,6 +430,7 @@ def grid_search(
         if df is None or df.empty or "Close" not in df.columns:
             continue
         df = df.sort_index()
+        group = ticker_infos.get(ticker, "Unknown")
         for params in param_list:
             if (
                 params.trend_days > max_trend_days
@@ -412,18 +438,46 @@ def grid_search(
                 or params.slope_lookback_days > max_slope_days
             ):
                 continue
-            res = run_backtest_ticker(ticker, df, params, exit_rules)
-            res["params_dict"] = {
-                "trend_days": params.trend_days,
-                "dip_days": params.dip_days,
-                "slope_lookback_days": params.slope_lookback_days,
-                "use_slope_filter": params.use_slope_filter,
-                "min_dip_pct": params.min_dip_pct,
-            }
-            info = fetcher.get_ticker_info(ticker)
-            res["group"] = (info.get("group") or "Unknown") if info else "Unknown"
-            results.append(res)
+            tasks.append((ticker, df, params, group))
+
+    workers = max_workers if max_workers is not None else min(32, (os.cpu_count() or 4) * 2)
+    results: List[Dict[str, Any]] = []
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        future_to_task = {
+            executor.submit(_run_one_dip, t, d, p, exit_rules, g): (t, p)
+            for t, d, p, g in tasks
+        }
+        for future in as_completed(future_to_task):
+            try:
+                results.append(future.result())
+            except Exception:
+                pass
     return results
+
+
+def _run_one_exit(
+    ticker: str,
+    df: pd.DataFrame,
+    params: DipBuyParams,
+    exit_rules: ExitRules,
+    group: str,
+) -> Dict[str, Any]:
+    """Single backtest for grid_search_exit. Used in parallel."""
+    res = run_backtest_ticker(ticker, df, params, exit_rules)
+    res["params_dict"] = {
+        "trend_days": params.trend_days,
+        "dip_days": params.dip_days,
+        "slope_lookback_days": params.slope_lookback_days,
+        "use_slope_filter": params.use_slope_filter,
+        "min_dip_pct": params.min_dip_pct,
+    }
+    res["exit_dict"] = {
+        "exit_hold_days": exit_rules.hold_days,
+        "exit_take_profit_pct": exit_rules.take_profit_pct,
+        "exit_stop_loss_pct": exit_rules.stop_loss_pct,
+    }
+    res["group"] = group
+    return res
 
 
 def grid_search_exit(
@@ -435,9 +489,10 @@ def grid_search_exit(
     max_dip_days: int = 14,
     max_slope_days: int = 30,
     history_calendar_days: Optional[int] = None,
+    max_workers: Optional[int] = None,
 ) -> List[Dict[str, Any]]:
     """
-    For each ticker and each exit_rule, run backtest with single DipBuyParams.
+    For each ticker and each exit_rule, run backtest with single DipBuyParams (in parallel).
     Results include exit_dict (hold_days, take_profit_pct, stop_loss_pct) for summarization.
     """
     if history_calendar_days is not None:
@@ -447,7 +502,8 @@ def grid_search_exit(
         calendar_days = fetcher._calendar_days_for_trading_window(need_trading)
     history, errors = fetcher.fetch_history_days(calendar_days, tickers=tickers)
 
-    results: List[Dict[str, Any]] = []
+    ticker_infos = {t: (fetcher.get_ticker_info(t) or {}).get("group") or "Unknown" for t in tickers}
+    tasks: List[Tuple[str, pd.DataFrame, ExitRules, str]] = []
     for ticker in tickers:
         if ticker not in history:
             continue
@@ -455,23 +511,22 @@ def grid_search_exit(
         if df is None or df.empty or "Close" not in df.columns:
             continue
         df = df.sort_index()
+        group = ticker_infos.get(ticker, "Unknown")
         for exit_rules in exit_rules_list:
-            res = run_backtest_ticker(ticker, df, params, exit_rules)
-            res["params_dict"] = {
-                "trend_days": params.trend_days,
-                "dip_days": params.dip_days,
-                "slope_lookback_days": params.slope_lookback_days,
-                "use_slope_filter": params.use_slope_filter,
-                "min_dip_pct": params.min_dip_pct,
-            }
-            res["exit_dict"] = {
-                "exit_hold_days": exit_rules.hold_days,
-                "exit_take_profit_pct": exit_rules.take_profit_pct,
-                "exit_stop_loss_pct": exit_rules.stop_loss_pct,
-            }
-            info = fetcher.get_ticker_info(ticker)
-            res["group"] = (info.get("group") or "Unknown") if info else "Unknown"
-            results.append(res)
+            tasks.append((ticker, df, exit_rules, group))
+
+    workers = max_workers if max_workers is not None else min(32, (os.cpu_count() or 4) * 2)
+    results: List[Dict[str, Any]] = []
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        future_to_task = {
+            executor.submit(_run_one_exit, t, d, params, er, g): (t, er)
+            for t, d, er, g in tasks
+        }
+        for future in as_completed(future_to_task):
+            try:
+                results.append(future.result())
+            except Exception:
+                pass
     return results
 
 
@@ -578,6 +633,44 @@ def summarize_all_exclude_commodity(
     return pd.DataFrame([row])
 
 
+def _df_to_yaml_friendly(df: pd.DataFrame) -> List[Dict[str, Any]]:
+    """Convert DataFrame to list of dicts with NaN -> None and numpy types to Python for YAML."""
+    if df is None or df.empty:
+        return []
+    out = []
+    for _, row in df.iterrows():
+        d = {}
+        for c in df.columns:
+            v = row[c]
+            if pd.isna(v):
+                d[c] = None
+            elif hasattr(v, "item"):
+                d[c] = v.item()
+            else:
+                d[c] = v
+        out.append(d)
+    return out
+
+
+def build_sim_output_yaml(
+    run_meta: Dict[str, Any],
+    best_per_ticker: pd.DataFrame,
+    best_overall: pd.DataFrame,
+    by_group: pd.DataFrame,
+    excl_commodity: Optional[pd.DataFrame],
+    per_ticker_agg: Optional[pd.DataFrame],
+) -> Dict[str, Any]:
+    """Build a dict suitable for YAML output so planner can load and compare."""
+    return {
+        "run": run_meta,
+        "best_per_ticker": _df_to_yaml_friendly(best_per_ticker),
+        "best_overall": _df_to_yaml_friendly(best_overall),
+        "summary_by_group": _df_to_yaml_friendly(by_group),
+        "all_exclude_commodity": _df_to_yaml_friendly(excl_commodity) if excl_commodity is not None and not excl_commodity.empty else [],
+        "per_ticker_agg": _df_to_yaml_friendly(per_ticker_agg) if per_ticker_agg is not None and not per_ticker_agg.empty else [],
+    }
+
+
 def summarize_best(
     results: List[Dict[str, Any]],
     by_ticker: bool = True,
@@ -622,6 +715,7 @@ def main():
     parser.add_argument("--years", type=float, default=None, help="Backtest history in years (e.g. 3 for 3 years)")
     parser.add_argument("--config", type=str, default=None, help="Path to dip_default.yaml (default: same dir as script)")
     parser.add_argument("--sim-config", type=str, default=None, help="Path to dip-sim.yaml for grid lists (default: same dir as script)")
+    parser.add_argument("--output", "-o", type=str, default=None, help="Write simulation result to YAML (for planner); default: dip_sim_result.yaml")
     args = parser.parse_args()
 
     default_params, default_exit = load_dip_defaults(Path(args.config) if args.config else None)
@@ -724,6 +818,46 @@ def main():
         }).reset_index()
         print("\n--- Per-ticker aggregate (over param sets) ---")
         print(by_ticker_agg.head(20).to_string())
+    else:
+        by_ticker_agg = None
+
+    out_path = Path(args.output) if args.output else (Path(__file__).resolve().parent / "dip_sim_result.yaml")
+    r0 = results[0]
+    backtest_start = r0.get("backtest_start")
+    backtest_end = r0.get("backtest_end")
+    if backtest_start is not None and hasattr(backtest_start, "isoformat"):
+        backtest_start = backtest_start.isoformat()
+    if backtest_end is not None and hasattr(backtest_end, "isoformat"):
+        backtest_end = backtest_end.isoformat()
+    mode = "grid_exit" if args.grid_exit else ("small_grid" if args.small_grid else ("grid" if args.grid else "single"))
+    run_meta = {
+        "run_at": datetime.now(timezone.utc).isoformat(),
+        "mode": mode,
+        "years": args.years,
+        "backtest_start": backtest_start,
+        "backtest_end": backtest_end,
+        "n_tickers": len(tickers),
+        "exit_rules": {
+            "hold_days": exit_rules.hold_days,
+            "take_profit_pct": exit_rules.take_profit_pct,
+            "stop_loss_pct": exit_rules.stop_loss_pct,
+            "spread_pct": exit_rules.spread_pct,
+        },
+    }
+    payload = build_sim_output_yaml(
+        run_meta=run_meta,
+        best_per_ticker=summary,
+        best_overall=overall,
+        by_group=by_group if not by_group.empty else pd.DataFrame(),
+        excl_commodity=excl_commodity,
+        per_ticker_agg=by_ticker_agg.head(20) if by_ticker_agg is not None else None,
+    )
+    try:
+        with open(out_path, "w", encoding="utf-8") as f:
+            yaml.dump(payload, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
+        print(f"\n--- Result YAML: {out_path} ---")
+    except Exception as e:
+        print(f"\nWarning: could not write YAML: {e}")
 
 
 if __name__ == "__main__":
