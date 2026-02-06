@@ -1,6 +1,6 @@
 # Bot backtest, SMC bot, and dip_buy decision
 
-**Status:** Plan — wait for approval before implementation.
+**Status:** Implemented. Run from repo root with `PYTHONPATH=. uv run python bot/simulation.py [--limit N]`.
 
 ---
 
@@ -155,5 +155,3 @@ flowchart LR
 - **SMC state format:** SQLite (one DB per ticker or one table with ticker column) vs JSON files (e.g. one file per ticker). SQLite is easier for querying and appending; JSON is simpler for inspection and versioning.
 
 ---
-
-*Approve this plan to start implementation.*

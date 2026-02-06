@@ -1,0 +1,24 @@
+# Bot simulation config (see doc/bot_simulation_plan.md)
+# spread_pct applied to every trade; exit from SMC or fallback below when no bot.
+
+spread_pct: 0.0
+
+# Initial capital ($). SMC decides how much to use per trade (position size); decision-only uses 100%.
+fund: 10000
+
+# Decision module for entry signal (e.g. dip_buy). No exit_rules from decision.
+decision: dip_buy
+
+# Bot for entry/exit when set (e.g. smc). When null, simulation uses decision for entry + fallback exit.
+bot: smc
+
+# Periods: run backtest per period (same shape as planner.yaml)
+periods:
+  - name: bull_2022_2025
+    start_date: "2022-10-01"
+    end_date: "2025-12-31"
+  - name: sideway_2015_2017
+    start_date: "2015-01-01"
+    end_date: "2017-12-31"
+# Exit params (hold_days, take_profit_pct, stop_loss_pct) live in bot/smc/config.yaml when using SMC.
+# Decision-only mode uses default fallback in code (hold_days=20, take_profit_pct=15, stop_loss_pct=null).

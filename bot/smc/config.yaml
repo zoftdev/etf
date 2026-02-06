@@ -1,0 +1,14 @@
+# SMC bot config (exit rules and SMC params)
+# hold_days, take_profit_pct, stop_loss_pct used by SMC for exit (time/TP/SL fallback).
+
+decision: dip_buy
+
+hold_days: 20
+take_profit_pct: 15
+stop_loss_pct: null
+
+# Stub / time fallback: max_hold_days (same as hold_days for bar-based exit)
+max_hold_days: 20
+
+# Position sizing: SMC decides how much of available fund to use per trade (%). 100 = use all.
+position_pct: 5
