@@ -50,11 +50,13 @@ This document describes the flow of daily bot evaluation where the simulator ask
 │    2. Calculate technical indicators                         │
 │    3. Detect patterns (dips, breakouts, etc.)              │
 │    4. Generate score:                                         │
+│       - Score range: -1.0 to 1.0                            │
+│       - -1.0 = strong SELL signal                            │
+│       - 0.0 = HOLD (no signal)                               │
+│       - 1.0 = strong BUY signal                              │
 │       - Higher score = better opportunity                    │
-│       - Score can be positive (BUY) or negative (SELL)      │
-│       - Score = 0 means no signal                            │
 │                                                               │
-│    5. Return score (float)                                   │
+│    5. Return score (float, normalized to -1.0 to 1.0)        │
 └─────────────────────────────────────────────────────────────┘
 ```
  
@@ -66,8 +68,11 @@ This document describes the flow of daily bot evaluation where the simulator ask
 - **Bot**: Passes `as_of_date` to all components
 
 ### 2. Score-Based Selection
-- **Decision returns score**: Float value representing opportunity quality
-- **Bot sorts by score**: Best opportunities first
+- **Decision returns score**: Float value normalized to -1.0 to 1.0
+  - **-1.0** = strong SELL signal
+  - **0.0** = HOLD (no signal)
+  - **1.0** = strong BUY signal
+- **Bot sorts by score**: Best opportunities first (highest scores)
 - **Bot filters top N**: Selects highest-scoring opportunities
 
 ### 3. Daily Evaluation
@@ -171,8 +176,8 @@ Example:
 ```
 Position: SPY (held since 2024-01-15)
 Day 5 (2024-01-20):
-  - decision.score("SPY") → -5.2 (negative = exit signal)
-  - Bot: score < sell_threshold (-3.0) → SELL SPY
+  - decision.score("SPY") → -0.8 (negative = exit signal)
+  - Bot: score < sell_threshold (-0.3) → SELL SPY
 ```
 
 #### Method 2: Ranking-Based Exit
