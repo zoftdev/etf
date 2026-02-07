@@ -1,0 +1,44 @@
+sentiment_data:
+- etf: ARGT
+  name: Global X MSCI Argentina
+  forecasts:
+  - run_date: 2026-02-07
+    sentiments:
+    - sentiment: 'Global X MSCI Argentina ETF (ARGT) 2025-2026 Forecast. Price Forecasts:
+        Short-term (Next 30 days): Analysts forecast a -30.22% decline to an average
+        target of $62.98, down from the current price of around $90. 12-month outlook:
+        The average 12-month price target is $71.36, representing a -20.93% downside
+        from current levels. 2026 Price Range: One forecast model projects ARGT could
+        trade between approximately $84.47 and $107.72 by January 2027, with intermediate
+        targets around $95.61-$99.65 through mid-2026.'
+      source: Stockscan
+      url: https://stockscan.io/stocks/ARGT/forecast
+      author: 'adam'
+      datetime: '2025-01-01T00:00:00Z'
+      sentiment_result:
+        llm_result:
+          score: -0.706
+          sentiment_label: sell
+          reasoning: The forecast indicates a significant decline in the short-term
+            (-30.22%) and a negative 12-month outlook (-20.93%), suggesting a bearish
+            sentiment. Although there is a potential recovery range for 2026, the
+            overall tone remains negative due to the substantial expected declines.
+    - sentiment: 'ARGT Argentina ETF Forecast Summary. Based on analyst forecasts
+        for the Global X MSCI Argentina ETF (ARGT): 2025-2026 Outlook: 12-Month Price
+        Target: The average analyst price target is $71.36, representing a -20.93%
+        downside from current levels. This suggests a bearish outlook over the next
+        year. Short-term (30-day) Forecast: Analysts project an even more pessimistic
+        near-term view, with an average target of $62.98, indicating a -30.22% decline
+        from the current price of $90.25.'
+      source: Stockscan
+      author: 'john'
+      url: https://stockscan.io/stocks/ARGT/forecast2
+      datetime: '2025-01-01T00:00:00Z'
+      sentiment_result:
+        llm_result:
+          score: -0.8
+          sentiment_label: strong sell
+          reasoning: The analysis indicates a significant bearish outlook with a projected
+            -20.93% downside over the next year and an even more pessimistic short-term
+            forecast of -30.22%. These substantial declines suggest strong negative
+            sentiment towards the Argentina ETF.

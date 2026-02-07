@@ -1,0 +1,247 @@
+etfs:
+  commodity:
+    display_name: Commodity
+    items:
+      - tickers: ["GLD"]
+        segment: ทองคำ
+        name: SPDR Gold Shares
+        description: ลงทุนในทองคำแท่งจริง สภาพคล่องสูงที่สุด
+      - tickers: ["IAU"]
+        segment: ทองคำ
+        name: iShares Gold Trust
+        description: ค่าธรรมเนียมถูกกว่า GLD เหมาะสำหรับถือยาว
+      - tickers: ["SLV"]
+        segment: เงิน
+        name: iShares Silver Trust
+        description: ลงทุนในแร่เงินแท้
+      - tickers: ["USO"]
+        segment: น้ำมันดิบ
+        name: United States Oil Fund
+        description: อ้างอิงราคาน้ำมันดิบ WTI ผ่านสัญญาฟิวเจอร์ส
+      - tickers: ["UNG"]
+        segment: ก๊าซธรรมชาติ
+        name: United States Natural Gas Fund
+        description: ""
+      - tickers: ["DBA"]
+        segment: สินค้าเกษตร
+        name: Invesco DB Agriculture
+        description: รวมข้าวโพด, ถั่วเหลือง, น้ำตาล, กาแฟ
+      - tickers: ["DBC"]
+        segment: ภาพรวม
+        name: Invesco DB Commodity Index Tracking
+        description: รวม 14 สินค้าโภคภัณฑ์หลัก (น้ำมัน, ทอง, ข้าวโพด ฯลฯ)
+      - tickers: ["GSG"]
+        segment: ภาพรวม
+        name: iShares S&P GSCI Commodity-Indexed
+        description: เน้นกลุ่มพลังงานสูง (น้ำมันและก๊าซ) ตามดัชนี S&P GSCI
+      - tickers: ["PDBC"]
+        segment: ภาพรวม
+        name: Invesco Optimum Yield Diversified
+        description: คล้าย DBC แต่บริหารแบบเชิงรุกเพื่อลดผลกระทบจาก Roll Yield
+
+  momentum:
+    display_name: Momentum
+    items:
+      - tickers: ["MTUM"]
+        name: iShares MSCI USA Momentum Factor
+        description: ตัวที่ใหญ่ที่สุด เน้นหุ้นขนาดใหญ่และกลางในสหรัฐฯ ที่มี Momentum สูง
+      - tickers: ["PDP"]
+        name: Invesco Dorsey Wright Momentum
+        description: ใช้ระบบ Relative Strength ของ Dorsey Wright ในการคัดเลือกหุ้น
+      - tickers: ["QMOM"]
+        name: Alpha Architect US Quantitative Momentum
+        description: ใช้กลยุทธ์เชิงปริมาณที่เข้มงวด เพื่อหา Momentum ที่ "บริสุทธิ์" ที่สุด
+      - tickers: ["XMMO"]
+        name: Invesco S&P MidCap Momentum
+        description: เน้นเจาะจงไปที่หุ้นขนาดกลาง (Mid-Cap) ที่มีแรงส่งราคาสูง
+      - tickers: ["FDMO"]
+        name: Fidelity Momentum Factor
+        description: คัดเลือกหุ้นที่มีแรงส่งดีและมีพื้นฐานรองรับในระดับหนึ่ง
+
+  world_asia_pacific:
+    display_name: ภูมิภาคเอเชียและโอเชียเนีย
+    items:
+      - tickers: ["MCHI", "FXI"]
+        segment: จีน
+        name: iShares MSCI China
+        description: หุ้นจีนขนาดใหญ่ (Large-Cap)
+      - tickers: ["INDA", "EPI"]
+        segment: อินเดีย
+        name: iShares MSCI India
+        description: เน้นบริษัทที่มีกำไร (Earnings)
+      - tickers: ["EWJ"]
+        segment: ญี่ปุ่น
+        name: iShares MSCI Japan
+        description: หุ้นยักษ์ใหญ่ของญี่ปุ่น
+      - tickers: ["EWT"]
+        segment: ไต้หวัน
+        name: iShares MSCI Taiwan
+        description: น้ำหนักส่วนใหญ่คือ TSMC
+      - tickers: ["EWY"]
+        segment: เกาหลีใต้
+        name: iShares MSCI South Korea
+        description: เน้น Samsung
+      - tickers: ["THD"]
+        segment: ไทย
+        name: iShares MSCI Thailand
+        description: หุ้นใหญ่ใน SET50/SET100
+      - tickers: ["VNM"]
+        segment: เวียดนาม
+        name: VanEck Vietnam
+        description: หุ้นบริษัทที่ทำธุรกิจในเวียดนาม
+      - tickers: ["EIDO"]
+        segment: อินโดนีเซีย
+        name: iShares MSCI Indonesia
+        description: เน้นกลุ่มธนาคาร
+      - tickers: ["EWS"]
+        segment: สิงคโปร์
+        name: iShares MSCI Singapore
+        description: ""
+      - tickers: ["EWA"]
+        segment: ออสเตรเลีย
+        name: iShares MSCI Australia
+        description: ""
+
+  world_europe:
+    display_name: ภูมิภาคยุโรป
+    items:
+      - tickers: ["EWG"]
+        segment: เยอรมนี
+        name: iShares MSCI Germany
+        description: SAP, Siemens, รถยนต์
+      - tickers: ["EWU"]
+        segment: อังกฤษ
+        name: iShares MSCI United Kingdom
+        description: AstraZeneca, Shell
+      - tickers: ["EWQ"]
+        segment: ฝรั่งเศส
+        name: iShares MSCI France
+        description: LVMH, Hermes, Total
+      - tickers: ["EWL"]
+        segment: สวิตเซอร์แลนด์
+        name: iShares MSCI Switzerland
+        description: Nestle, Novartis
+      - tickers: ["EWN"]
+        segment: เนเธอร์แลนด์
+        name: iShares MSCI Netherlands
+        description: ASML
+      - tickers: ["EWI"]
+        segment: อิตาลี
+        name: iShares MSCI Italy
+        description: ""
+      - tickers: ["EWP"]
+        segment: สเปน
+        name: iShares MSCI Spain
+        description: ""
+      - tickers: ["TUR"]
+        segment: ตุรกี
+        name: iShares MSCI Turkey
+        description: ""
+
+  world_americas:
+    display_name: ภูมิภาคอเมริกา (Non-US)
+    items:
+      - tickers: ["EWC"]
+        segment: แคนาดา
+        name: iShares MSCI Canada
+        description: ""
+      - tickers: ["EWW"]
+        segment: เม็กซิโก
+        name: iShares MSCI Mexico
+        description: ""
+      - tickers: ["EWZ"]
+        segment: บราซิล
+        name: iShares MSCI Brazil
+        description: หุ้นพลังงานและธนาคาร
+      - tickers: ["ECH"]
+        segment: ชิลี
+        name: iShares MSCI Chile
+        description: ""
+      - tickers: ["ARGT"]
+        segment: อาร์เจนตินา
+        name: Global X MSCI Argentina
+        description: ""
+
+  world_middle_east_africa:
+    display_name: ตะวันออกกลางและแอฟริกา
+    items:
+      - tickers: ["KSA"]
+        segment: ซาอุดีอาระเบีย
+        name: iShares MSCI Saudi Arabia
+        description: เน้นน้ำมันและธนาคาร
+      - tickers: ["EIS"]
+        segment: อิสราเอล
+        name: iShares MSCI Israel
+        description: หุ้นเทคโนโลยีและการเงิน
+      - tickers: ["EZA"]
+        segment: แอฟริกาใต้
+        name: iShares MSCI South Africa
+        description: ""
+      - tickers: ["UAE"]
+        segment: สหรัฐอาหรับเอมิเรตส์
+        name: iShares MSCI UAE
+        description: ""
+
+  world_broad_market:
+    display_name: กลุ่มดัชนีภาพรวม
+    items:
+      - tickers: ["VXUS"]
+        segment: ทั่วโลก (ไม่รวมเมกา)
+        name: Vanguard Total International Stock
+        description: ""
+      - tickers: ["VWO", "EEM"]
+        segment: ตลาดเกิดใหม่ (Emerging Markets)
+        name: Vanguard / iShares Emerging Markets
+        description: จีน, อินเดีย, ไต้หวัน เป็นหลัก
+      - tickers: ["VEA", "EFA"]
+        segment: ตลาดพัฒนาแล้ว (Developed Markets)
+        name: Vanguard / iShares Developed Markets
+        description: ยุโรป, ญี่ปุ่น, ออสเตรเลีย
+
+  us_sectors:
+    display_name: US Sectors
+    items:
+      - tickers: ["XLK"]
+        segment: Technology
+        name: SPDR Technology Select Sector ETF
+        description: หุ้นเทคโนโลยียักษ์ใหญ่ (Apple, Microsoft, Nvidia)
+      - tickers: ["XLF"]
+        segment: Financials
+        name: SPDR Financial Select Sector ETF
+        description: ธนาคาร ประกันภัย และสถาบันการเงิน
+      - tickers: ["XLV"]
+        segment: Healthcare
+        name: SPDR Healthcare Select Sector ETF
+        description: บริการทางการเงิน โรงพยาบาล และบริษัทยายักษ์ใหญ่
+      - tickers: ["XLY"]
+        segment: Consumer Discretionary
+        name: SPDR Consumer Discretionary Select Sector ETF
+        description: สินค้าฟุ่มเฟือย รถยนต์ (Amazon, Tesla, McDonald's)
+      - tickers: ["XLC"]
+        segment: Communication Services
+        name: SPDR Communication Services Select Sector ETF
+        description: บริการสื่อสารและโซเชียลมีเดีย (Meta, Google, Netflix)
+      - tickers: ["XLI"]
+        segment: Industrials
+        name: SPDR Industrial Select Sector ETF
+        description: การผลิต การบิน การก่อสร้าง และเครื่องจักร
+      - tickers: ["XLP"]
+        segment: Consumer Staples
+        name: SPDR Consumer Staples Select Sector ETF
+        description: สินค้าอุปโภคบริโภคที่จำเป็น (Coca-Cola, Walmart, P&G)
+      - tickers: ["XLE"]
+        segment: Energy
+        name: SPDR Energy Select Sector ETF
+        description: น้ำมัน ก๊าซธรรมชาติ และพลังงานฟอสซิล
+      - tickers: ["XLU"]
+        segment: Utilities
+        name: SPDR Utilities Select Sector ETF
+        description: สาธารณูปโภคพื้นฐาน ไฟฟ้า ประปา
+      - tickers: ["XLRE"]
+        segment: Real Estate
+        name: SPDR Real Estate Select Sector ETF
+        description: อสังหาริมทรัพย์และ REITs
+      - tickers: ["XLB"]
+        segment: Materials
+        name: SPDR Materials Select Sector ETF
+        description: วัตถุดิบต้นน้ำ เคมีภัณฑ์ และเหมืองแร่
