@@ -1,0 +1,4 @@
+sentiment_data:
+- etf: XLK
+  name: SPDR Technology Select Sector ETF
+  forecasts: []

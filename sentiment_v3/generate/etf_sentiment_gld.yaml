@@ -1,0 +1,134 @@
+sentiment_data:
+- etf: GLD
+  name: SPDR Gold Shares
+  forecasts:
+  - run_date: '2026-02-07'
+    sentiments:
+    - sentiment: Spdr Gold Shares ETF Price Forecast. Should You Buy GLD?. ... Predicted
+        fair opening price on February 5, 2026 - $454.27 ( 0.0609%). Want to trade
+        but not sure how? Our step-by-step guide can help. Skip the guide? Open account
+        with our trusted broker* *Your capital is at risk · Full Access. Published
+        2 days ago
+      source: Web Search
+      url: https://stockinvest.us/stock/GLD
+      author: ''
+      datetime: '2026-02-07T11:05:49.380097Z'
+      sentiment_result:
+        llm_result:
+          score: 0.45
+          sentiment_label: buy
+          reasoning: The forecast predicts a positive price movement with a fair value
+            of $454.27, representing an increase of 0.0609%. While the percentage
+            gain is modest, the overall tone is constructive with a price forecast
+            and guidance for potential buyers, suggesting a bullish but measured outlook.
+    - sentiment: GLD ETF Stock Price & Overview. Get a real-time stock price for the
+        GLD ETF (SPDR Gold Shares) with an overview of various metrics and statistics.
+      source: Web Search
+      url: https://stockanalysis.com/etf/gld/
+      author: ''
+      datetime: '2026-02-07T11:05:49.380114Z'
+      sentiment_result:
+        llm_result:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The text is purely informational, providing only a description
+            of available data (stock price, metrics, and statistics) for the GLD ETF
+            without any positive or negative commentary, forecasts, or market sentiment
+            indicators.
+    - sentiment: GLD Stock Price | SPDR Gold Shares ETF - Investing.com. Get detailed
+        information about the SPDR Gold Shares ETF. View the current GLD stock price
+        chart, historical data, premarket price, dividend returns and more.
+      source: Web Search
+      url: https://www.investing.com/etfs/spdr-gold-trust
+      author: ''
+      datetime: '2026-02-07T11:05:49.380117Z'
+      sentiment_result:
+        llm_result:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The text is purely informational and descriptive, providing only
+            factual information about where to find GLD ETF data without any positive
+            or negative commentary, outlook, or market sentiment indicators.
+    - sentiment: SPDR Gold Shares (GLD) Stock Price, News, Quote & History - Yahoo
+        Finance. GLD · SPDR Gold Shares · 455.89 +3.17% Go to hub · NYSEArca - Nasdaq
+        Real Time Price • USD · Follow · 455.89 +14.01 (+3.17%) As of 2:52:11 PM EST.
+        Market Open. Chart Range Bar · 1D · 5D · 1M · 6M · YTD · 1Y · 5Y · All · Key
+        Events ...
+      source: Web Search
+      url: https://finance.yahoo.com/quote/GLD/
+      author: ''
+      datetime: '2026-02-07T11:05:51.939218Z'
+      sentiment_result:
+        llm_result:
+          score: 0.45
+          sentiment_label: buy
+          reasoning: The text shows GLD with a significant positive gain of +3.17%
+            (+$14.01), indicating strong intraday bullish momentum for gold shares.
+            The substantial percentage increase reflects positive market sentiment,
+            though this is a single-day snapshot without broader context about trends
+            or fundamental drivers.
+    - sentiment: Gold Price Forecast & Predictions for 2026, 2027-2030 | CoinCodex.
+        11 hours ago - The Gold price forecast for the next week is bearish. Our algorithm
+        predicts that the price of Gold will decrease by -6.44% in the next 7 days
+        and reach $ 4,629.71 on Feb 12, 2026 .
+      source: Web Search
+      url: https://coincodex.com/precious-metal/gold/forecast/
+      author: ''
+      datetime: '2026-02-07T11:05:51.939220Z'
+      sentiment_result:
+        llm_result:
+          score: -0.55
+          sentiment_label: sell
+          reasoning: The forecast explicitly predicts a bearish outlook with a significant
+            -6.44% price decrease over the next 7 days, indicating clear negative
+            momentum. The directional language ('bearish,' 'decrease') and substantial
+            projected decline signal a negative trading outlook for gold in the near
+            term.
+    - sentiment: SPDR® Gold Shares (GLD) ETF Forecast, Price Targets and Analysts
+        .... SPDR ® Gold Shares (GLD) ETF forecast & analyst price target predictions
+        based on 25 analysts offering 12-months price targets for GLD in the last
+        3 months.
+      source: Web Search
+      url: https://tickeron.com/ticker/GLD/forecasts-predictions/
+      author: ''
+      datetime: '2026-02-07T11:05:54.694611Z'
+      sentiment_result:
+        llm_result:
+          score: 0.0
+          sentiment_label: neutral
+          reasoning: The text is purely informational, describing that analyst forecasts
+            and price targets exist for GLD based on 25 analysts' predictions, but
+            provides no actual data, directional outlook, or sentiment-bearing information
+            about whether those forecasts are positive or negative.
+    - sentiment: ลงทุนใน "ทองคำ" ผ่าน GLD. รู้หรือไม่ว่า การซื้อและถือทองคำเฉยๆในช่วง
+        1-2 ปี มานี้ให้ผลตอบแทนชนะการลงทุนในหุ้นไทยตลาดหุ้นไทย ให้ผลตอบแทน -7%ในขณะที่ทองคำ
+        ให้ผลตอบแทน อยู่ที่ +5% อีกทั้ง การเลือกลงทุนในตลาดหุ้นไทย ต้องใช้ความรู้
+      source: Web Search
+      url: https://stock2morrow.com/article/5611
+      author: ''
+      datetime: '2026-02-07T11:05:56.867737Z'
+      sentiment_result:
+        llm_result:
+          score: 0.45
+          sentiment_label: buy
+          reasoning: The text presents a bullish outlook on gold (GLD) investing,
+            highlighting that gold delivered positive returns (+5%) while the Thai
+            stock market suffered losses (-7%) over 1-2 years. The comparison favorably
+            positions gold as a simpler, better-performing alternative to Thai equities,
+            which require more expertise.
+    - sentiment: 'GLD ETF Explained: Overview, Prospects, Risks, and How It Tracks
+        Gold. 5 days ago - GLD’s prospects depend almost entirely on the outlook for
+        gold itself rather than company-level growth or innovation.'
+      source: Web Search
+      url: https://www.heygotrade.com/en/blog/gld-explained-overview
+      author: ''
+      datetime: '2026-02-07T11:05:56.867739Z'
+      sentiment_result:
+        llm_result:
+          score: 0.1
+          sentiment_label: neutral
+          reasoning: The text is primarily informational and factual, explaining that
+            GLD's performance depends on gold's outlook without providing clear bullish
+            or bearish indicators about gold's direction. The lack of specific positive
+            or negative projections for gold or the ETF results in a slightly positive
+            but essentially neutral sentiment.

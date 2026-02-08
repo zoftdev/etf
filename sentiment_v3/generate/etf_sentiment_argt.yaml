@@ -1,0 +1,21 @@
+sentiment_data:
+- etf: ARGT
+  name: Global X MSCI Argentina
+  forecasts:
+  - run_date: '2026-02-07'
+    sentiments:
+    - sentiment: Global X MSCI Argentina ETF (ARGT) shows strong bearish outlook.
+        Analysts forecast a -30.22% decline to $62.98 in the next 30 days. The 12-month
+        price target is $71.36, representing a -20.93% downside from current levels.
+      source: Stockscan
+      url: https://stockscan.io/stocks/ARGT/forecast
+      author: Market Analyst
+      datetime: '2026-02-07T00:00:00Z'
+      sentiment_result:
+        llm_result:
+          score: -0.85
+          sentiment_label: strong sell
+          reasoning: The outlook is decidedly bearish with a significant -30.22% forecasted
+            decline in 30 days and -20.93% downside over 12 months. Both short-term
+            and long-term projections indicate substantial negative returns with no
+            offsetting positive factors mentioned.
