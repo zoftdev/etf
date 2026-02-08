@@ -1,0 +1,20 @@
+strategies:
+  sma_crossover:
+    sma_period: [100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
+  rsi_mean_reversion:
+    rsi_period: [7, 14, 21, 30]
+    rsi_buy_threshold: [25, 30, 35]
+    rsi_sell_threshold: [65, 70, 75]
+  combined_rsi_sma:
+    rsi_period: [14, 21]
+    rsi_buy_threshold: [30, 35]
+    rsi_sell_threshold: [70, 75]
+    sma_period: [50, 100, 200]
+
+# Backtest settings
+backtest:
+  initial_capital: 10000
+  years: 20
+  # When selecting "best" params, only consider runs with at least this many trades
+  # (avoids picking RSI/strategies with 1–2 lucky trades over 20 years)
+  min_trades_for_best: 10

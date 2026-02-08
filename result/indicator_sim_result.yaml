@@ -1,0 +1,2279 @@
+run:
+  timestamp: '2026-02-08T07:37:59.809728+00:00'
+  years: 20
+  n_tickers: 59
+  strategies:
+  - sma_crossover
+  - rsi_mean_reversion
+  - combined_rsi_sma
+  min_trades_for_best: 10
+strategies:
+  sma_crossover:
+    best_overall:
+      sma_period: 140
+      mean_return_pct: 150.2683392338959
+      mean_win_rate: 26.881720430107524
+      mean_max_dd_pct: -22.459376155153976
+      n_trades: 93
+      annualized_return_pct: 4.693639015987383
+    by_group:
+    - group_name: US Sectors
+      n_tickers: 11
+      mean_return_pct: 264.9055
+      mean_win_rate: 23.55
+      mean_max_dd_pct: -20.84
+      sma_period: 180.0
+      annualized_return_pct: 6.6863901284131
+    - group_name: Momentum
+      n_tickers: 5
+      mean_return_pct: 224.9657
+      mean_win_rate: 24.74
+      mean_max_dd_pct: -23.01
+      sma_period: 190.0
+      annualized_return_pct: 6.069830827632283
+    - group_name: ภูมิภาคยุโรป
+      n_tickers: 8
+      mean_return_pct: 219.681
+      mean_win_rate: 26.91
+      mean_max_dd_pct: -28.51
+      sma_period: 140.0
+      annualized_return_pct: 5.982910335887492
+    - group_name: กลุ่มดัชนีภาพรวม
+      n_tickers: 5
+      mean_return_pct: 198.4156
+      mean_win_rate: 31.05
+      mean_max_dd_pct: -15.95
+      sma_period: 110.0
+      annualized_return_pct: 5.618762848401793
+    - group_name: Commodity - Specific
+      n_tickers: 6
+      mean_return_pct: 190.2241
+      mean_win_rate: 18.95
+      mean_max_dd_pct: -40.34
+      sma_period: 180.0
+      annualized_return_pct: 5.471876703365752
+    - group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      n_tickers: 12
+      mean_return_pct: 137.067
+      mean_win_rate: 26.0
+      mean_max_dd_pct: -27.82
+      sma_period: 110.0
+      annualized_return_pct: 4.410350866939572
+    - group_name: ภูมิภาคอเมริกา (Non-US)
+      n_tickers: 5
+      mean_return_pct: 121.4915
+      mean_win_rate: 24.2
+      mean_max_dd_pct: -38.88
+      sma_period: 100.0
+      annualized_return_pct: 4.056173943151653
+    - group_name: ตะวันออกกลางและแอฟริกา
+      n_tickers: 4
+      mean_return_pct: 110.0001
+      mean_win_rate: 26.46
+      mean_max_dd_pct: -36.06
+      sma_period: 100.0
+      annualized_return_pct: 3.7793568871382854
+    - group_name: Commodity - Broad
+      n_tickers: 3
+      mean_return_pct: 71.8846
+      mean_win_rate: 23.14
+      mean_max_dd_pct: -31.55
+      sma_period: 100.0
+      annualized_return_pct: 2.7452725178270576
+    by_ticker:
+    - ticker: XLK
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 180
+      total_return_pct: 979.0627158819502
+      n_trades: 49
+      win_rate: 26.53061224489796
+      max_drawdown_pct: -15.317798473093823
+      annualized_return_pct: 12.629546215941012
+    - ticker: XMMO
+      group_name: Momentum
+      strategy: sma_crossover
+      params:
+        sma_period: 150
+      total_return_pct: 565.7757589281364
+      n_trades: 74
+      win_rate: 27.027027027027028
+      max_drawdown_pct: -20.220393304937478
+      annualized_return_pct: 9.94270016319767
+    - ticker: XLY
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 180
+      total_return_pct: 558.3223144774499
+      n_trades: 62
+      win_rate: 30.64516129032258
+      max_drawdown_pct: -15.22362869833448
+      annualized_return_pct: 9.880829378780408
+    - ticker: EWN
+      group_name: ภูมิภาคยุโรป
+      strategy: sma_crossover
+      params:
+        sma_period: 140
+      total_return_pct: 509.445513572886
+      n_trades: 81
+      win_rate: 29.629629629629626
+      max_drawdown_pct: -12.6709070434328
+      annualized_return_pct: 9.457807369029592
+    - ticker: IAU
+      group_name: Commodity - Specific
+      strategy: sma_crossover
+      params:
+        sma_period: 180
+      total_return_pct: 457.79060289252664
+      n_trades: 73
+      win_rate: 20.54794520547945
+      max_drawdown_pct: -19.93242304497006
+      annualized_return_pct: 8.974167432019664
+    - ticker: GLD
+      group_name: Commodity - Specific
+      strategy: sma_crossover
+      params:
+        sma_period: 180
+      total_return_pct: 445.57750540404004
+      n_trades: 78
+      win_rate: 20.51282051282051
+      max_drawdown_pct: -18.617931366166363
+      annualized_return_pct: 8.853606569075456
+    - ticker: XLI
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 401.62927334595935
+      n_trades: 109
+      win_rate: 31.19266055045872
+      max_drawdown_pct: -15.339134420195377
+      annualized_return_pct: 8.397469438143723
+    - ticker: EWY
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 120
+      total_return_pct: 386.9327056535016
+      n_trades: 115
+      win_rate: 27.82608695652174
+      max_drawdown_pct: -28.22813273488124
+      annualized_return_pct: 8.236426995137268
+    - ticker: PDP
+      group_name: Momentum
+      strategy: sma_crossover
+      params:
+        sma_period: 200
+      total_return_pct: 371.8008378187499
+      n_trades: 58
+      win_rate: 32.758620689655174
+      max_drawdown_pct: -18.15329419145414
+      annualized_return_pct: 8.065716029284587
+    - ticker: SLV
+      group_name: Commodity - Specific
+      strategy: sma_crossover
+      params:
+        sma_period: 200
+      total_return_pct: 334.2944316262371
+      n_trades: 82
+      win_rate: 15.853658536585366
+      max_drawdown_pct: -42.389408951601936
+      annualized_return_pct: 7.619064627607908
+    - ticker: EIS
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 331.6868409842011
+      n_trades: 84
+      win_rate: 32.142857142857146
+      max_drawdown_pct: -27.788176169773994
+      annualized_return_pct: 7.586663803645588
+    - ticker: EWS
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 150
+      total_return_pct: 331.0022092226657
+      n_trades: 84
+      win_rate: 27.380952380952383
+      max_drawdown_pct: -15.003758688632107
+      annualized_return_pct: 7.578126041406441
+    - ticker: EWI
+      group_name: ภูมิภาคยุโรป
+      strategy: sma_crossover
+      params:
+        sma_period: 130
+      total_return_pct: 328.9536011729006
+      n_trades: 86
+      win_rate: 26.744186046511626
+      max_drawdown_pct: -20.748340553770884
+      annualized_return_pct: 7.5525015173523835
+    - ticker: EWG
+      group_name: ภูมิภาคยุโรป
+      strategy: sma_crossover
+      params:
+        sma_period: 120
+      total_return_pct: 326.08379479388844
+      n_trades: 96
+      win_rate: 35.41666666666667
+      max_drawdown_pct: -24.507487317236976
+      annualized_return_pct: 7.51640903495383
+    - ticker: THD
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 170
+      total_return_pct: 323.92886762653814
+      n_trades: 53
+      win_rate: 28.30188679245283
+      max_drawdown_pct: -14.816764016914764
+      annualized_return_pct: 7.489155186741825
+    - ticker: XLF
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 150
+      total_return_pct: 315.7154749157756
+      n_trades: 91
+      win_rate: 30.76923076923077
+      max_drawdown_pct: -17.379192081967165
+      annualized_return_pct: 7.384057460094762
+    - ticker: EPI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 311.78295405882795
+      n_trades: 95
+      win_rate: 24.210526315789473
+      max_drawdown_pct: -19.813684532845567
+      annualized_return_pct: 7.333037073601312
+    - ticker: EWT
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 190
+      total_return_pct: 299.709710879564
+      n_trades: 80
+      win_rate: 31.25
+      max_drawdown_pct: -19.546127282054492
+      annualized_return_pct: 7.173455860172173
+    - ticker: VWO
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: sma_crossover
+      params:
+        sma_period: 110
+      total_return_pct: 285.1652693750454
+      n_trades: 101
+      win_rate: 27.722772277227726
+      max_drawdown_pct: -19.765167195291333
+      annualized_return_pct: 6.975014981836125
+    - ticker: EWL
+      group_name: ภูมิภาคยุโรป
+      strategy: sma_crossover
+      params:
+        sma_period: 120
+      total_return_pct: 278.88755572197255
+      n_trades: 90
+      win_rate: 34.44444444444444
+      max_drawdown_pct: -18.22931142333499
+      annualized_return_pct: 6.887154852509547
+    - ticker: EEM
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: sma_crossover
+      params:
+        sma_period: 120
+      total_return_pct: 255.88194569685726
+      n_trades: 112
+      win_rate: 29.464285714285715
+      max_drawdown_pct: -17.109225264003815
+      annualized_return_pct: 6.552905794113806
+    - ticker: EWP
+      group_name: ภูมิภาคยุโรป
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 236.1719029151046
+      n_trades: 114
+      win_rate: 21.052631578947366
+      max_drawdown_pct: -41.95805870247281
+      annualized_return_pct: 6.24978762045767
+    - ticker: MTUM
+      group_name: Momentum
+      strategy: sma_crossover
+      params:
+        sma_period: 160
+      total_return_pct: 235.54015009391813
+      n_trades: 35
+      win_rate: 31.428571428571427
+      max_drawdown_pct: -9.707914606691027
+      annualized_return_pct: 6.239795174119656
+    - ticker: XLC
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 200
+      total_return_pct: 223.61023019925216
+      n_trades: 12
+      win_rate: 41.66666666666667
+      max_drawdown_pct: -8.112545952636374
+      annualized_return_pct: 6.047665398380664
+    - ticker: XLV
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 130
+      total_return_pct: 223.42100571454088
+      n_trades: 94
+      win_rate: 26.595744680851062
+      max_drawdown_pct: -21.016008413733445
+      annualized_return_pct: 6.044564076392822
+    - ticker: VEA
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: sma_crossover
+      params:
+        sma_period: 140
+      total_return_pct: 193.1241175149661
+      n_trades: 73
+      win_rate: 34.24657534246575
+      max_drawdown_pct: -15.772639861907633
+      annualized_return_pct: 5.524323739867887
+    - ticker: EFA
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: sma_crossover
+      params:
+        sma_period: 120
+      total_return_pct: 189.5464119211658
+      n_trades: 87
+      win_rate: 35.63218390804598
+      max_drawdown_pct: -19.138098586962784
+      annualized_return_pct: 5.459548913784107
+    - ticker: XLE
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 200
+      total_return_pct: 164.76634365883797
+      n_trades: 87
+      win_rate: 20.689655172413794
+      max_drawdown_pct: -29.160843492904586
+      annualized_return_pct: 4.988840382590332
+    - ticker: EWC
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: sma_crossover
+      params:
+        sma_period: 130
+      total_return_pct: 163.77602130715525
+      n_trades: 115
+      win_rate: 25.217391304347824
+      max_drawdown_pct: -18.668483191038256
+      annualized_return_pct: 4.969170591890548
+    - ticker: XLP
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 110
+      total_return_pct: 162.6456707939032
+      n_trades: 105
+      win_rate: 35.23809523809524
+      max_drawdown_pct: -17.93067657605786
+      annualized_return_pct: 4.946633640586118
+    - ticker: XLB
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 130
+      total_return_pct: 160.55777896599133
+      n_trades: 119
+      win_rate: 22.689075630252102
+      max_drawdown_pct: -32.44514071960785
+      annualized_return_pct: 4.904761847316275
+    - ticker: EWZ
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: sma_crossover
+      params:
+        sma_period: 190
+      total_return_pct: 158.55439218814027
+      n_trades: 86
+      win_rate: 24.418604651162788
+      max_drawdown_pct: -45.03828246335976
+      annualized_return_pct: 4.86428402407979
+    - ticker: EWW
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 147.68283304980417
+      n_trades: 137
+      win_rate: 18.248175182481752
+      max_drawdown_pct: -54.97503033699247
+      annualized_return_pct: 4.6392926793062506
+    - ticker: EWA
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 120
+      total_return_pct: 145.75775565469934
+      n_trades: 120
+      win_rate: 30.833333333333336
+      max_drawdown_pct: -23.81048502362916
+      annualized_return_pct: 4.598477133464618
+    - ticker: VXUS
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: sma_crossover
+      params:
+        sma_period: 110
+      total_return_pct: 136.24075305752817
+      n_trades: 71
+      win_rate: 39.436619718309856
+      max_drawdown_pct: -8.545972064606511
+      annualized_return_pct: 4.392125665523294
+    - ticker: FXI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 110
+      total_return_pct: 131.95805354111675
+      n_trades: 125
+      win_rate: 24.8
+      max_drawdown_pct: -32.49264187921273
+      annualized_return_pct: 4.2966772909397655
+    - ticker: ARGT
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: sma_crossover
+      params:
+        sma_period: 110
+      total_return_pct: 129.9842541323956
+      n_trades: 78
+      win_rate: 30.76923076923077
+      max_drawdown_pct: -25.192783611554916
+      annualized_return_pct: 4.252122376887568
+    - ticker: EWQ
+      group_name: ภูมิภาคยุโรป
+      strategy: sma_crossover
+      params:
+        sma_period: 130
+      total_return_pct: 127.56517379342172
+      n_trades: 101
+      win_rate: 28.71287128712871
+      max_drawdown_pct: -24.443691933430866
+      annualized_return_pct: 4.197017958320237
+    - ticker: DBC
+      group_name: Commodity - Broad
+      strategy: sma_crossover
+      params:
+        sma_period: 170
+      total_return_pct: 114.89645408235685
+      n_trades: 89
+      win_rate: 19.101123595505616
+      max_drawdown_pct: -25.882824293988026
+      annualized_return_pct: 3.899022694533949
+    - ticker: FDMO
+      group_name: Momentum
+      strategy: sma_crossover
+      params:
+        sma_period: 160
+      total_return_pct: 114.40961813588899
+      n_trades: 28
+      win_rate: 32.142857142857146
+      max_drawdown_pct: -7.943530418764178
+      annualized_return_pct: 3.8872411391103867
+    - ticker: ECH
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: sma_crossover
+      params:
+        sma_period: 190
+      total_return_pct: 103.2400477792129
+      n_trades: 72
+      win_rate: 19.444444444444446
+      max_drawdown_pct: -40.14167030528174
+      annualized_return_pct: 3.6097114999816604
+    - ticker: EWU
+      group_name: ภูมิภาคยุโรป
+      strategy: sma_crossover
+      params:
+        sma_period: 140
+      total_return_pct: 102.2162331082988
+      n_trades: 113
+      win_rate: 31.858407079646017
+      max_drawdown_pct: -23.508551766654374
+      annualized_return_pct: 3.583552335239215
+    - ticker: DBA
+      group_name: Commodity - Specific
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 88.47315184637333
+      n_trades: 118
+      win_rate: 17.796610169491526
+      max_drawdown_pct: -28.41728847420182
+      annualized_return_pct: 3.219671996173834
+    - ticker: GSG
+      group_name: Commodity - Broad
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 86.86852026991218
+      n_trades: 113
+      win_rate: 25.663716814159294
+      max_drawdown_pct: -34.409408969051135
+      annualized_return_pct: 3.1755534858545653
+    - ticker: EWJ
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 150
+      total_return_pct: 79.7235764262102
+      n_trades: 102
+      win_rate: 24.509803921568626
+      max_drawdown_pct: -17.88952352222495
+      annualized_return_pct: 2.9746329530879523
+    - ticker: INDA
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 130
+      total_return_pct: 79.29963247837041
+      n_trades: 71
+      win_rate: 26.76056338028169
+      max_drawdown_pct: -17.99949388131761
+      annualized_return_pct: 2.962474152695016
+    - ticker: MCHI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 110
+      total_return_pct: 79.18003568365054
+      n_trades: 78
+      win_rate: 25.64102564102564
+      max_drawdown_pct: -18.485065751488662
+      annualized_return_pct: 2.9590391526024273
+    - ticker: UAE
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: sma_crossover
+      params:
+        sma_period: 140
+      total_return_pct: 75.85424458419645
+      n_trades: 49
+      win_rate: 26.53061224489796
+      max_drawdown_pct: -17.062951254509418
+      annualized_return_pct: 2.8626343965951984
+    - ticker: KSA
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: sma_crossover
+      params:
+        sma_period: 110
+      total_return_pct: 71.8803260825994
+      n_trades: 53
+      win_rate: 28.30188679245283
+      max_drawdown_pct: -11.034151501825274
+      annualized_return_pct: 2.745144778054387
+    - ticker: XLU
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 200
+      total_return_pct: 71.18428365617252
+      n_trades: 96
+      win_rate: 26.041666666666668
+      max_drawdown_pct: -20.76471411944191
+      annualized_return_pct: 2.724300942339042
+    - ticker: TUR
+      group_name: ภูมิภาคยุโรป
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 58.381385668401144
+      n_trades: 96
+      win_rate: 26.041666666666668
+      max_drawdown_pct: -48.39572713818314
+      annualized_return_pct: 2.3258137118939093
+    - ticker: PDBC
+      group_name: Commodity - Broad
+      strategy: sma_crossover
+      params:
+        sma_period: 190
+      total_return_pct: 50.75608724266265
+      n_trades: 50
+      win_rate: 24.0
+      max_drawdown_pct: -22.653958435389033
+      annualized_return_pct: 2.073673054918679
+    - ticker: VNM
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 32.77985392430685
+      n_trades: 104
+      win_rate: 22.115384615384613
+      max_drawdown_pct: -25.290417289135902
+      annualized_return_pct: 1.4277074501387155
+    - ticker: USO
+      group_name: Commodity - Specific
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 29.749969433749346
+      n_trades: 125
+      win_rate: 26.400000000000002
+      max_drawdown_pct: -54.729836125094735
+      annualized_return_pct: 1.3107109906544956
+    - ticker: QMOM
+      group_name: Momentum
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 27.88944038571679
+      n_trades: 65
+      win_rate: 29.230769230769234
+      max_drawdown_pct: -35.34928467108032
+      annualized_return_pct: 1.2375751484228426
+    - ticker: XLRE
+      group_name: US Sectors
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: 10.229577395444235
+      n_trades: 71
+      win_rate: 16.901408450704224
+      max_drawdown_pct: -18.253442980912006
+      annualized_return_pct: 0.4881630127666403
+    - ticker: EZA
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: sma_crossover
+      params:
+        sma_period: 100
+      total_return_pct: -10.833719183401492
+      n_trades: 166
+      win_rate: 22.89156626506024
+      max_drawdown_pct: -73.25044552780513
+      annualized_return_pct: -0.5716957428013258
+    - ticker: EIDO
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: sma_crossover
+      params:
+        sma_period: 150
+      total_return_pct: -36.35785120234781
+      n_trades: 98
+      win_rate: 23.46938775510204
+      max_drawdown_pct: -37.88296198210696
+      annualized_return_pct: -2.2341362130827047
+    - ticker: UNG
+      group_name: Commodity - Specific
+      strategy: sma_crossover
+      params:
+        sma_period: 200
+      total_return_pct: -62.885684353574845
+      n_trades: 60
+      win_rate: 18.333333333333332
+      max_drawdown_pct: -64.49598690191422
+      annualized_return_pct: -4.835039242967332
+  rsi_mean_reversion:
+    best_overall:
+      rsi_period: 21
+      rsi_buy_threshold: 35
+      rsi_sell_threshold: 70
+      mean_return_pct: 217.9101103826194
+      mean_win_rate: 69.23076923076923
+      mean_max_dd_pct: -54.59695870817316
+      n_trades: 13
+      annualized_return_pct: 5.953477921751293
+    by_group:
+    - group_name: US Sectors
+      n_tickers: 11
+      mean_return_pct: 420.3803
+      mean_win_rate: 93.56
+      mean_max_dd_pct: -10.76
+      rsi_period: 21.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 70.0
+      annualized_return_pct: 8.596553493612657
+    - group_name: Momentum
+      n_tickers: 5
+      mean_return_pct: 373.1907
+      mean_win_rate: 91.72
+      mean_max_dd_pct: -4.61
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 75.0
+      annualized_return_pct: 8.081611156366918
+    - group_name: ภูมิภาคอเมริกา (Non-US)
+      n_tickers: 5
+      mean_return_pct: 339.2759
+      mean_win_rate: 72.5
+      mean_max_dd_pct: -11.55
+      rsi_period: 14.0
+      rsi_buy_threshold: 25.0
+      rsi_sell_threshold: 75.0
+      annualized_return_pct: 7.680451747178085
+    - group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      n_tickers: 12
+      mean_return_pct: 225.783
+      mean_win_rate: 78.67
+      mean_max_dd_pct: -24.17
+      rsi_period: 21.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 70.0
+      annualized_return_pct: 6.083153384015194
+    - group_name: ตะวันออกกลางและแอฟริกา
+      n_tickers: 4
+      mean_return_pct: 201.2598
+      mean_win_rate: 67.26
+      mean_max_dd_pct: -36.36
+      rsi_period: 7.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 65.0
+      annualized_return_pct: 5.668869020629019
+    - group_name: กลุ่มดัชนีภาพรวม
+      n_tickers: 5
+      mean_return_pct: 188.4588
+      mean_win_rate: 81.82
+      mean_max_dd_pct: -11.51
+      rsi_period: 21.0
+      rsi_buy_threshold: 30.0
+      rsi_sell_threshold: 65.0
+      annualized_return_pct: 5.4397068076927235
+    - group_name: ภูมิภาคยุโรป
+      n_tickers: 8
+      mean_return_pct: 184.9979
+      mean_win_rate: 90.0
+      mean_max_dd_pct: 0.0
+      rsi_period: 30.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 65.0
+      annualized_return_pct: 5.376090737811645
+    - group_name: Commodity - Specific
+      n_tickers: 6
+      mean_return_pct: 130.9938
+      mean_win_rate: 60.0
+      mean_max_dd_pct: -37.13
+      rsi_period: 14.0
+      rsi_buy_threshold: 25.0
+      rsi_sell_threshold: 75.0
+      annualized_return_pct: 4.274956217274095
+    - group_name: Commodity - Broad
+      n_tickers: 3
+      mean_return_pct: 26.8729
+      mean_win_rate: 71.6
+      mean_max_dd_pct: -49.21
+      rsi_period: 7.0
+      rsi_buy_threshold: 30.0
+      rsi_sell_threshold: 75.0
+      annualized_return_pct: 1.197187663963284
+    by_ticker:
+    - ticker: XLK
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 957.4098174537412
+      n_trades: 19
+      win_rate: 94.73684210526315
+      max_drawdown_pct: -19.382170533827036
+      annualized_return_pct: 12.515451412548039
+    - ticker: EZA
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 65
+      total_return_pct: 801.4908885117741
+      n_trades: 109
+      win_rate: 69.72477064220183
+      max_drawdown_pct: -39.08892048150916
+      annualized_return_pct: 11.621554666071642
+    - ticker: XLB
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 662.5069217711327
+      n_trades: 74
+      win_rate: 86.48648648648648
+      max_drawdown_pct: -48.961228940574784
+      annualized_return_pct: 10.690969050894129
+    - ticker: XLP
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 571.9114197991469
+      n_trades: 13
+      win_rate: 100.0
+      max_drawdown_pct: 0.0
+      annualized_return_pct: 9.993140250818122
+    - ticker: XMMO
+      group_name: Momentum
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 476.5784192693129
+      n_trades: 13
+      win_rate: 92.3076923076923
+      max_drawdown_pct: -8.44946808133712
+      annualized_return_pct: 9.154820338522974
+    - ticker: EWT
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 440.1640562341408
+      n_trades: 12
+      win_rate: 83.33333333333334
+      max_drawdown_pct: -13.042714932587229
+      annualized_return_pct: 8.799345823448679
+    - ticker: XLV
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 436.55679230403496
+      n_trades: 69
+      win_rate: 78.26086956521739
+      max_drawdown_pct: -22.13861970540134
+      annualized_return_pct: 8.762901494480978
+    - ticker: XLU
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 416.66809486600647
+      n_trades: 13
+      win_rate: 100.0
+      max_drawdown_pct: 0.0
+      annualized_return_pct: 8.557687201275277
+    - ticker: ARGT
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 400.977876786015
+      n_trades: 20
+      win_rate: 65.0
+      max_drawdown_pct: -17.264750990242696
+      annualized_return_pct: 8.390427053206961
+    - ticker: FXI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 75
+      total_return_pct: 396.19949802403465
+      n_trades: 12
+      win_rate: 83.33333333333334
+      max_drawdown_pct: -31.061282024229207
+      annualized_return_pct: 8.33849944069689
+    - ticker: SLV
+      group_name: Commodity - Specific
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 75
+      total_return_pct: 394.2014541677456
+      n_trades: 17
+      win_rate: 76.47058823529412
+      max_drawdown_pct: -35.68359687972421
+      annualized_return_pct: 8.316645308501801
+    - ticker: EWQ
+      group_name: ภูมิภาคยุโรป
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 377.37950616152256
+      n_trades: 91
+      win_rate: 79.12087912087912
+      max_drawdown_pct: -44.70093021290277
+      annualized_return_pct: 8.129249470028288
+    - ticker: XLI
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 365.36507688545396
+      n_trades: 17
+      win_rate: 94.11764705882352
+      max_drawdown_pct: -32.26038071658882
+      annualized_return_pct: 7.99152881450913
+    - ticker: EWZ
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 75
+      total_return_pct: 356.65399569359835
+      n_trades: 10
+      win_rate: 70.0
+      max_drawdown_pct: -13.679810450180096
+      annualized_return_pct: 7.8895453828231155
+    - ticker: XLE
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 75
+      total_return_pct: 349.0623308265776
+      n_trades: 50
+      win_rate: 80.0
+      max_drawdown_pct: -39.98061803844513
+      annualized_return_pct: 7.79914872736871
+    - ticker: XLY
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 344.53924951015694
+      n_trades: 19
+      win_rate: 89.47368421052632
+      max_drawdown_pct: -31.50420062178553
+      annualized_return_pct: 7.7445981188612345
+    - ticker: MTUM
+      group_name: Momentum
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 344.01595522875806
+      n_trades: 20
+      win_rate: 95.0
+      max_drawdown_pct: -17.387240243437596
+      annualized_return_pct: 7.738252933098022
+    - ticker: EWW
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 342.85874333364507
+      n_trades: 94
+      win_rate: 74.46808510638297
+      max_drawdown_pct: -49.74458897265268
+      annualized_return_pct: 7.724195938894773
+    - ticker: EWL
+      group_name: ภูมิภาคยุโรป
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 341.2872697856809
+      n_trades: 11
+      win_rate: 90.9090909090909
+      max_drawdown_pct: -10.61267087005544
+      annualized_return_pct: 7.705050813920322
+    - ticker: EIS
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 333.04728237518015
+      n_trades: 17
+      win_rate: 70.58823529411765
+      max_drawdown_pct: -27.565382350194913
+      annualized_return_pct: 7.603591201493387
+    - ticker: FDMO
+      group_name: Momentum
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 331.09657016049107
+      n_trades: 10
+      win_rate: 90.0
+      max_drawdown_pct: -5.380039247786749
+      annualized_return_pct: 7.579303543184768
+    - ticker: PDP
+      group_name: Momentum
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 311.89725961018644
+      n_trades: 14
+      win_rate: 92.85714285714286
+      max_drawdown_pct: 0.0
+      annualized_return_pct: 7.334526589433632
+    - ticker: EWU
+      group_name: ภูมิภาคยุโรป
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 308.34476886032263
+      n_trades: 68
+      win_rate: 76.47058823529412
+      max_drawdown_pct: -41.89713583790214
+      annualized_return_pct: 7.288049486020709
+    - ticker: EWC
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 75
+      total_return_pct: 304.56283102158324
+      n_trades: 11
+      win_rate: 90.9090909090909
+      max_drawdown_pct: -8.65282228692853
+      annualized_return_pct: 7.238146484925623
+    - ticker: QMOM
+      group_name: Momentum
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 259.7085352620225
+      n_trades: 16
+      win_rate: 81.25
+      max_drawdown_pct: -8.445352098306003
+      annualized_return_pct: 6.609900286547954
+    - ticker: EWA
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 70
+      total_return_pct: 239.31365409855044
+      n_trades: 18
+      win_rate: 83.33333333333334
+      max_drawdown_pct: -23.416915461527722
+      annualized_return_pct: 6.29921731470946
+    - ticker: MCHI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 235.13550654866208
+      n_trades: 10
+      win_rate: 80.0
+      max_drawdown_pct: -25.475792780140218
+      annualized_return_pct: 6.233385525084034
+    - ticker: IAU
+      group_name: Commodity - Specific
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 229.3449074616476
+      n_trades: 67
+      win_rate: 71.64179104477611
+      max_drawdown_pct: -28.88857877918496
+      annualized_return_pct: 6.140846673428446
+    - ticker: GLD
+      group_name: Commodity - Specific
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 229.14567547813286
+      n_trades: 66
+      win_rate: 71.21212121212122
+      max_drawdown_pct: -27.51308370069605
+      annualized_return_pct: 6.137635339400904
+    - ticker: EWN
+      group_name: ภูมิภาคยุโรป
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 215.80402050369418
+      n_trades: 70
+      win_rate: 80.0
+      max_drawdown_pct: -45.551520941436664
+      annualized_return_pct: 5.918270991448393
+    - ticker: EWJ
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 70
+      total_return_pct: 207.7636640106992
+      n_trades: 11
+      win_rate: 90.9090909090909
+      max_drawdown_pct: -7.562015698471813
+      annualized_return_pct: 5.781779154199906
+    - ticker: EEM
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 70
+      total_return_pct: 196.14823902425286
+      n_trades: 10
+      win_rate: 90.0
+      max_drawdown_pct: -3.5660533098090696
+      annualized_return_pct: 5.57849276303426
+    - ticker: VWO
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 65
+      total_return_pct: 182.70676918386295
+      n_trades: 11
+      win_rate: 81.81818181818183
+      max_drawdown_pct: -19.462244878784585
+      annualized_return_pct: 5.3335716216784235
+    - ticker: TUR
+      group_name: ภูมิภาคยุโรป
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 65
+      total_return_pct: 171.40061320489067
+      n_trades: 20
+      win_rate: 70.0
+      max_drawdown_pct: -22.502032606029378
+      annualized_return_pct: 5.1188355178884315
+    - ticker: EFA
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 166.1712289948088
+      n_trades: 68
+      win_rate: 75.0
+      max_drawdown_pct: -46.24418899524796
+      annualized_return_pct: 5.016624655200519
+    - ticker: EWI
+      group_name: ภูมิภาคยุโรป
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 65
+      total_return_pct: 146.2619872116372
+      n_trades: 103
+      win_rate: 71.84466019417476
+      max_drawdown_pct: -46.68920446198103
+      annualized_return_pct: 4.609197145180843
+    - ticker: EWS
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 65
+      total_return_pct: 145.00872952225757
+      n_trades: 19
+      win_rate: 73.68421052631578
+      max_drawdown_pct: -19.89554400359934
+      annualized_return_pct: 4.582514129169035
+    - ticker: EWP
+      group_name: ภูมิภาคยุโรป
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 142.46008406879915
+      n_trades: 86
+      win_rate: 74.4186046511628
+      max_drawdown_pct: -53.640347026389534
+      annualized_return_pct: 4.527848783930155
+    - ticker: XLF
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 65
+      total_return_pct: 141.18978486788336
+      n_trades: 104
+      win_rate: 77.88461538461539
+      max_drawdown_pct: -48.45331716150704
+      annualized_return_pct: 4.500398241577996
+    - ticker: XLRE
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 70
+      total_return_pct: 137.56890226804236
+      n_trades: 43
+      win_rate: 79.06976744186046
+      max_drawdown_pct: -18.233975446448337
+      annualized_return_pct: 4.421392295116511
+    - ticker: INDA
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 136.87789446432345
+      n_trades: 62
+      win_rate: 70.96774193548387
+      max_drawdown_pct: -19.942107126239218
+      annualized_return_pct: 4.4061849432832645
+    - ticker: XLC
+      group_name: US Sectors
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 115.45011110470571
+      n_trades: 26
+      win_rate: 76.92307692307693
+      max_drawdown_pct: -31.556034587707803
+      annualized_return_pct: 3.9123905613768217
+    - ticker: VEA
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 114.16787266347109
+      n_trades: 62
+      win_rate: 77.41935483870968
+      max_drawdown_pct: -47.17745875210303
+      annualized_return_pct: 3.881381390266969
+    - ticker: EWG
+      group_name: ภูมิภาคยุโรป
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 112.87967320941354
+      n_trades: 24
+      win_rate: 75.0
+      max_drawdown_pct: -36.0796503379474
+      annualized_return_pct: 3.8500499461846305
+    - ticker: VXUS
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 110.39086792960981
+      n_trades: 67
+      win_rate: 77.61194029850746
+      max_drawdown_pct: -16.14055395059706
+      annualized_return_pct: 3.7890039880659865
+    - ticker: DBC
+      group_name: Commodity - Broad
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 75
+      total_return_pct: 106.10661330773814
+      n_trades: 62
+      win_rate: 77.41935483870968
+      max_drawdown_pct: -48.558597074955415
+      annualized_return_pct: 3.682293722123009
+    - ticker: THD
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 70
+      total_return_pct: 100.6515756134684
+      n_trades: 21
+      win_rate: 66.66666666666666
+      max_drawdown_pct: -18.180936329447515
+      annualized_return_pct: 3.543330177064208
+    - ticker: EWY
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+      total_return_pct: 97.29463960065374
+      n_trades: 10
+      win_rate: 70.0
+      max_drawdown_pct: -27.515689793720767
+      annualized_return_pct: 3.456019381436337
+    - ticker: EIDO
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 65
+      total_return_pct: 69.41447477726106
+      n_trades: 14
+      win_rate: 64.28571428571429
+      max_drawdown_pct: -15.572699559698734
+      annualized_return_pct: 2.6709370397477894
+    - ticker: KSA
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 21
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 65
+      total_return_pct: 68.43624182783587
+      n_trades: 12
+      win_rate: 83.33333333333334
+      max_drawdown_pct: -1.0930409120447182
+      annualized_return_pct: 2.6412133096525237
+    - ticker: ECH
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 65.11732850824028
+      n_trades: 14
+      win_rate: 64.28571428571429
+      max_drawdown_pct: -40.600867713450775
+      annualized_return_pct: 2.5391310270802103
+    - ticker: UAE
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 65
+      total_return_pct: 50.22937700295831
+      n_trades: 16
+      win_rate: 81.25
+      max_drawdown_pct: -21.785937578878023
+      annualized_return_pct: 2.055812192459472
+    - ticker: VNM
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 65
+      total_return_pct: 35.53188040295765
+      n_trades: 13
+      win_rate: 69.23076923076923
+      max_drawdown_pct: -33.167369311484215
+      annualized_return_pct: 1.5317970963131256
+    - ticker: DBA
+      group_name: Commodity - Specific
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 75
+      total_return_pct: 25.55491927820457
+      n_trades: 43
+      win_rate: 65.11627906976744
+      max_drawdown_pct: -42.951931932530044
+      annualized_return_pct: 1.1443637157089626
+    - ticker: PDBC
+      group_name: Commodity - Broad
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 75
+      total_return_pct: 23.562134340707264
+      n_trades: 36
+      win_rate: 69.44444444444444
+      max_drawdown_pct: -24.806351598737997
+      annualized_return_pct: 1.0634850036211008
+    - ticker: EPI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+      total_return_pct: 17.402345767499927
+      n_trades: 14
+      win_rate: 64.28571428571429
+      max_drawdown_pct: -25.233945119959643
+      annualized_return_pct: 0.8054096235547537
+    - ticker: GSG
+      group_name: Commodity - Broad
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 75
+      total_return_pct: -41.54401209963707
+      n_trades: 42
+      win_rate: 73.80952380952381
+      max_drawdown_pct: -67.90965234778983
+      annualized_return_pct: -2.648768393453238
+    - ticker: USO
+      group_name: Commodity - Specific
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 65
+      total_return_pct: -78.33297019854831
+      n_trades: 59
+      win_rate: 62.71186440677966
+      max_drawdown_pct: -91.76124735938986
+      annualized_return_pct: -7.361829629185468
+    - ticker: UNG
+      group_name: Commodity - Specific
+      strategy: rsi_mean_reversion
+      params:
+        rsi_period: 7
+        rsi_buy_threshold: 25
+        rsi_sell_threshold: 65
+      total_return_pct: -89.33498013839973
+      n_trades: 56
+      win_rate: 53.57142857142857
+      max_drawdown_pct: -94.47958509188554
+      annualized_return_pct: -10.587531833878616
+  combined_rsi_sma:
+    best_overall:
+      rsi_period: 14
+      rsi_buy_threshold: 35
+      rsi_sell_threshold: 75
+      sma_period: 200
+      mean_return_pct: 37.12753849868768
+      mean_win_rate: 63.63636363636363
+      mean_max_dd_pct: -5.910580616261574
+      n_trades: 11
+      annualized_return_pct: 1.5912336271799887
+    by_group:
+    - group_name: Momentum
+      n_tickers: 5
+      mean_return_pct: 113.4501
+      mean_win_rate: 53.67
+      mean_max_dd_pct: -11.61
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 75.0
+      sma_period: 200.0
+      annualized_return_pct: 3.863945961196924
+    - group_name: US Sectors
+      n_tickers: 9
+      mean_return_pct: 47.4599
+      mean_win_rate: 42.48
+      mean_max_dd_pct: -15.77
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 75.0
+      sma_period: 200.0
+      annualized_return_pct: 1.9609085595482023
+    - group_name: ภูมิภาคอเมริกา (Non-US)
+      n_tickers: 5
+      mean_return_pct: 46.2874
+      mean_win_rate: 33.91
+      mean_max_dd_pct: -23.29
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 75.0
+      sma_period: 200.0
+      annualized_return_pct: 1.9202185025061436
+    - group_name: ภูมิภาคยุโรป
+      n_tickers: 8
+      mean_return_pct: 40.1005
+      mean_win_rate: 41.69
+      mean_max_dd_pct: -17.66
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 70.0
+      sma_period: 200.0
+      annualized_return_pct: 1.7002415118502867
+    - group_name: กลุ่มดัชนีภาพรวม
+      n_tickers: 5
+      mean_return_pct: 33.5789
+      mean_win_rate: 42.68
+      mean_max_dd_pct: -17.32
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 70.0
+      sma_period: 200.0
+      annualized_return_pct: 1.4581392685680372
+    - group_name: ตะวันออกกลางและแอฟริกา
+      n_tickers: 3
+      mean_return_pct: 31.4967
+      mean_win_rate: 31.11
+      mean_max_dd_pct: -13.03
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 75.0
+      sma_period: 200.0
+      annualized_return_pct: 1.3784723625978712
+    - group_name: Commodity - Specific
+      n_tickers: 6
+      mean_return_pct: 28.5458
+      mean_win_rate: 34.71
+      mean_max_dd_pct: -16.46
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 70.0
+      sma_period: 200.0
+      annualized_return_pct: 1.2634908164247838
+    - group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      n_tickers: 11
+      mean_return_pct: 26.365
+      mean_win_rate: 35.7
+      mean_max_dd_pct: -17.83
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 75.0
+      sma_period: 200.0
+      annualized_return_pct: 1.1768933215271948
+    - group_name: Commodity - Broad
+      n_tickers: 2
+      mean_return_pct: 3.8743
+      mean_win_rate: 35.5
+      mean_max_dd_pct: -15.33
+      rsi_period: 14.0
+      rsi_buy_threshold: 35.0
+      rsi_sell_threshold: 70.0
+      sma_period: 200.0
+      annualized_return_pct: 0.19023736358807497
+    by_ticker:
+    - ticker: XLK
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 178.72014582112965
+      n_trades: 22
+      win_rate: 63.63636363636363
+      max_drawdown_pct: -11.303027012863065
+      annualized_return_pct: 5.258800843367228
+    - ticker: XMMO
+      group_name: Momentum
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 135.07604452890877
+      n_trades: 19
+      win_rate: 47.368421052631575
+      max_drawdown_pct: -16.733006426909036
+      annualized_return_pct: 4.366331629475972
+    - ticker: PDP
+      group_name: Momentum
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 107.69311092035525
+      n_trades: 18
+      win_rate: 50.0
+      max_drawdown_pct: -12.172431068089507
+      annualized_return_pct: 3.7220530658345963
+    - ticker: MTUM
+      group_name: Momentum
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 107.30905162131626
+      n_trades: 13
+      win_rate: 61.53846153846154
+      max_drawdown_pct: -5.613222526327832
+      annualized_return_pct: 3.7124546611139175
+    - ticker: FXI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 105.28264334039213
+      n_trades: 17
+      win_rate: 35.294117647058826
+      max_drawdown_pct: -17.496563923748752
+      annualized_return_pct: 3.661529286956511
+    - ticker: EWG
+      group_name: ภูมิภาคยุโรป
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 102.26163943780784
+      n_trades: 20
+      win_rate: 45.0
+      max_drawdown_pct: -13.475955394249361
+      annualized_return_pct: 3.584715161600771
+    - ticker: EWZ
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 99.67570984769087
+      n_trades: 18
+      win_rate: 33.33333333333333
+      max_drawdown_pct: -24.763908946730307
+      annualized_return_pct: 3.5180927575037657
+    - ticker: FDMO
+      group_name: Momentum
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 97.5810728848499
+      n_trades: 11
+      win_rate: 63.63636363636363
+      max_drawdown_pct: -5.910580616261574
+      annualized_return_pct: 3.463524104175675
+    - ticker: XLI
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 93.92316008289505
+      n_trades: 17
+      win_rate: 47.05882352941176
+      max_drawdown_pct: -20.445598215575377
+      annualized_return_pct: 3.3668981233074824
+    - ticker: SLV
+      group_name: Commodity - Specific
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 87.94883117326555
+      n_trades: 16
+      win_rate: 43.75
+      max_drawdown_pct: -12.249557313010584
+      annualized_return_pct: 3.2052954516860854
+    - ticker: EWL
+      group_name: ภูมิภาคยุโรป
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 75.04102423197571
+      n_trades: 22
+      win_rate: 45.45454545454545
+      max_drawdown_pct: -13.405233468065347
+      annualized_return_pct: 2.838798097705464
+    - ticker: QMOM
+      group_name: Momentum
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 69.52612402753537
+      n_trades: 11
+      win_rate: 45.45454545454545
+      max_drawdown_pct: -8.797849361427424
+      annualized_return_pct: 2.674319143397841
+    - ticker: EIS
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 68.80270898703206
+      n_trades: 15
+      win_rate: 33.33333333333333
+      max_drawdown_pct: -12.494128224690881
+      annualized_return_pct: 2.6523676239396554
+    - ticker: EWT
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 68.02718583918129
+      n_trades: 17
+      win_rate: 64.70588235294117
+      max_drawdown_pct: -7.54253789494288
+      annualized_return_pct: 2.6287354389260775
+    - ticker: EWQ
+      group_name: ภูมิภาคยุโรป
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 62.759704418382434
+      n_trades: 16
+      win_rate: 62.5
+      max_drawdown_pct: -9.884991090120543
+      annualized_return_pct: 2.465424737819877
+    - ticker: VWO
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 59.1150210322525
+      n_trades: 17
+      win_rate: 35.294117647058826
+      max_drawdown_pct: -20.626980723988353
+      annualized_return_pct: 2.3494607962218694
+    - ticker: GLD
+      group_name: Commodity - Specific
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 58.709483102311545
+      n_trades: 12
+      win_rate: 50.0
+      max_drawdown_pct: -6.540284685517451
+      annualized_return_pct: 2.3364020287330645
+    - ticker: IAU
+      group_name: Commodity - Specific
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 58.358959458269545
+      n_trades: 12
+      win_rate: 50.0
+      max_drawdown_pct: -7.11173712868407
+      annualized_return_pct: 2.3250892155942005
+    - ticker: EFA
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 57.18725349976348
+      n_trades: 16
+      win_rate: 62.5
+      max_drawdown_pct: -6.264093875115195
+      annualized_return_pct: 2.2871001016847137
+    - ticker: EWC
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 55.522014782288
+      n_trades: 17
+      win_rate: 41.17647058823529
+      max_drawdown_pct: -19.887340512623798
+      annualized_return_pct: 2.232644183276422
+    - ticker: EWN
+      group_name: ภูมิภาคยุโรป
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 55.42227785133911
+      n_trades: 16
+      win_rate: 37.5
+      max_drawdown_pct: -13.939096621781355
+      annualized_return_pct: 2.2293650727605474
+    - ticker: XLV
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 48.42305372706414
+      n_trades: 16
+      win_rate: 56.25
+      max_drawdown_pct: -17.90657402435143
+      annualized_return_pct: 1.994104240537653
+    - ticker: EWY
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 47.541352305049614
+      n_trades: 12
+      win_rate: 41.66666666666667
+      max_drawdown_pct: -17.041706977561887
+      annualized_return_pct: 1.963723824170871
+    - ticker: XLP
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 45.724988393821995
+      n_trades: 24
+      win_rate: 37.5
+      max_drawdown_pct: -9.999217669831651
+      annualized_return_pct: 1.9005906828301944
+    - ticker: EWU
+      group_name: ภูมิภาคยุโรป
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 45.404091638932975
+      n_trades: 21
+      win_rate: 42.857142857142854
+      max_drawdown_pct: -11.68721335740398
+      annualized_return_pct: 1.8893593142490062
+    - ticker: TUR
+      group_name: ภูมิภาคยุโรป
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 38.134093411773605
+      n_trades: 16
+      win_rate: 25.0
+      max_drawdown_pct: -24.581451703591018
+      annualized_return_pct: 1.6283896627477645
+    - ticker: ARGT
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 37.41590849069632
+      n_trades: 14
+      win_rate: 35.714285714285715
+      max_drawdown_pct: -26.765542926776288
+      annualized_return_pct: 1.6019049482193903
+    - ticker: ECH
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 36.92850297491024
+      n_trades: 14
+      win_rate: 28.57142857142857
+      max_drawdown_pct: -27.7721907281675
+      annualized_return_pct: 1.5838557443195622
+    - ticker: VEA
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 35.28559319186244
+      n_trades: 16
+      win_rate: 50.0
+      max_drawdown_pct: -11.155191263877718
+      annualized_return_pct: 1.5225639945153802
+    - ticker: EWA
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 32.46977888038014
+      n_trades: 17
+      win_rate: 35.294117647058826
+      max_drawdown_pct: -11.510439402403716
+      annualized_return_pct: 1.4158513066814038
+    - ticker: XLY
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 31.427143914528187
+      n_trades: 22
+      win_rate: 40.909090909090914
+      max_drawdown_pct: -19.410251912817856
+      annualized_return_pct: 1.3757904466194626
+    - ticker: XLF
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 26.483236482344985
+      n_trades: 17
+      win_rate: 52.94117647058824
+      max_drawdown_pct: -19.288774473809656
+      annualized_return_pct: 1.181624649973445
+    - ticker: XLB
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 25.368231942395724
+      n_trades: 14
+      win_rate: 42.857142857142854
+      max_drawdown_pct: -9.683899499221448
+      annualized_return_pct: 1.1368388329799695
+    - ticker: EZA
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 24.530015628854905
+      n_trades: 11
+      win_rate: 27.27272727272727
+      max_drawdown_pct: -13.39617668940466
+      annualized_return_pct: 1.1029207680159692
+    - ticker: EWS
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 23.64599120434574
+      n_trades: 19
+      win_rate: 36.84210526315789
+      max_drawdown_pct: -19.55982132991666
+      annualized_return_pct: 1.0669132934190806
+    - ticker: KSA
+      group_name: ตะวันออกกลางและแอฟริกา
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 19.039037945392568
+      n_trades: 10
+      win_rate: 30.0
+      max_drawdown_pct: -13.195159911040255
+      annualized_return_pct: 0.8752143154580727
+    - ticker: EPI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 18.403420127143242
+      n_trades: 15
+      win_rate: 33.33333333333333
+      max_drawdown_pct: -20.158798685361056
+      annualized_return_pct: 0.8482142346610821
+    - ticker: MCHI
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 18.241805064750416
+      n_trades: 13
+      win_rate: 38.46153846153847
+      max_drawdown_pct: -21.336579706995764
+      annualized_return_pct: 0.841327116436319
+    - ticker: VXUS
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 18.173091263715023
+      n_trades: 14
+      win_rate: 35.714285714285715
+      max_drawdown_pct: -18.97767113079568
+      annualized_return_pct: 0.8383962138184486
+    - ticker: DBA
+      group_name: Commodity - Specific
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 17.822454966695854
+      n_trades: 11
+      win_rate: 36.36363636363637
+      max_drawdown_pct: -11.678138337973731
+      annualized_return_pct: 0.8234149983327166
+    - ticker: EWP
+      group_name: ภูมิภาคยุโรป
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 17.657417872971237
+      n_trades: 13
+      win_rate: 46.15384615384615
+      max_drawdown_pct: -24.23493353128353
+      annualized_return_pct: 0.8163489918706857
+    - ticker: INDA
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 17.06738789409512
+      n_trades: 12
+      win_rate: 33.33333333333333
+      max_drawdown_pct: -9.35314560561029
+      annualized_return_pct: 0.7910098217742245
+    - ticker: XLU
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 30
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 13.831540931662968
+      n_trades: 11
+      win_rate: 36.36363636363637
+      max_drawdown_pct: -5.657690065361953
+      annualized_return_pct: 0.6498497117192636
+    - ticker: XLE
+      group_name: US Sectors
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 10.471978411893001
+      n_trades: 16
+      win_rate: 25.0
+      max_drawdown_pct: -15.456227056052452
+      annualized_return_pct: 0.4992004430552921
+    - ticker: THD
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 8.517607365090418
+      n_trades: 15
+      win_rate: 20.0
+      max_drawdown_pct: -42.87619072868538
+      annualized_return_pct: 0.4095476319992075
+    - ticker: EWW
+      group_name: ภูมิภาคอเมริกา (Non-US)
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 8.265139108510233
+      n_trades: 15
+      win_rate: 26.666666666666668
+      max_drawdown_pct: -18.326259582331026
+      annualized_return_pct: 0.39785446951161596
+    - ticker: DBC
+      group_name: Commodity - Broad
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: 7.81080206521827
+      n_trades: 14
+      win_rate: 35.714285714285715
+      max_drawdown_pct: -13.04254455723568
+      annualized_return_pct: 0.37674627207144873
+    - ticker: GSG
+      group_name: Commodity - Broad
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 7.585798348288475
+      n_trades: 17
+      win_rate: 35.294117647058826
+      max_drawdown_pct: -17.620842169981888
+      annualized_return_pct: 0.36626144102389624
+    - ticker: EEM
+      group_name: กลุ่มดัชนีภาพรวม
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 6.361584996230407
+      n_trades: 14
+      win_rate: 35.714285714285715
+      max_drawdown_pct: -25.75385344999841
+      annualized_return_pct: 0.3088473660445956
+    - ticker: USO
+      group_name: Commodity - Specific
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 3.417649550483004
+      n_trades: 17
+      win_rate: 35.294117647058826
+      max_drawdown_pct: -28.777985452227504
+      annualized_return_pct: 0.1681685124000687
+    - ticker: EWJ
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: 2.5431187896399976
+      n_trades: 12
+      win_rate: 33.33333333333333
+      max_drawdown_pct: -13.9417325984326
+      annualized_return_pct: 0.1256448433361923
+    - ticker: EWI
+      group_name: ภูมิภาคยุโรป
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: -12.73820561496265
+      n_trades: 16
+      win_rate: 25.0
+      max_drawdown_pct: -30.10136038899416
+      annualized_return_pct: -0.6789717738536205
+    - ticker: VNM
+      group_name: ภูมิภาคเอเชียและโอเชียเนีย
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 75
+        sma_period: 200
+      total_return_pct: -22.034839646277238
+      n_trades: 12
+      win_rate: 16.666666666666664
+      max_drawdown_pct: -17.73755304081416
+      annualized_return_pct: -1.2368282271836173
+    - ticker: UNG
+      group_name: Commodity - Specific
+      strategy: combined_rsi_sma
+      params:
+        rsi_period: 14
+        rsi_buy_threshold: 35
+        rsi_sell_threshold: 70
+        sma_period: 200
+      total_return_pct: -38.27706096445147
+      n_trades: 10
+      win_rate: 0.0
+      max_drawdown_pct: -33.02202840050734
+      annualized_return_pct: -2.3837028037452357
