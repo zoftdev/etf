@@ -4,7 +4,6 @@ Dash web application with browser session storage
 """
 import dash
 from dash import dcc, html, Input, Output, State, callback_context, ALL
-from dash import dash_table
 import plotly.graph_objs as go
 import plotly.express as px
 from etf_data_fetcher import ETFDataFetcher
@@ -31,6 +30,14 @@ PERIOD_OPTIONS = [
     {'label': '1 Year', 'value': '1y'},
     {'label': '3 Years', 'value': '3y'}
 ]
+
+# Shared group color map (same order as bar chart "Group color" mode)
+GROUP_PALETTE = px.colors.qualitative.Set1
+
+
+def get_group_colors():
+    """Deterministic group -> color for sidebar and bar chart."""
+    return {g: GROUP_PALETTE[i % len(GROUP_PALETTE)] for i, g in enumerate(sorted(groups.keys()))}
 
 # App layout
 app.layout = dbc.Container([
@@ -76,7 +83,17 @@ app.layout = dbc.Container([
                     value='7d',  # Default value
                     className="mb-3"
                 ),
-                
+                html.Label("SMA (0 = real close, 1–730 = SMA days):", className="fw-bold mt-2"),
+                dcc.Slider(
+                    id='sma-days',
+                    min=0,
+                    max=730,
+                    step=1,
+                    value=0,
+                    marks={0: '0', 50: '50', 100: '100', 200: '200', 365: '365', 730: '730'},
+                    tooltip={"placement": "bottom", "always_visible": False},
+                ),
+                html.Div(id='sma-days-value', className="small text-muted mb-2"),
                 html.Hr(),
                 
                 # Group toggles
@@ -97,38 +114,18 @@ app.layout = dbc.Container([
                 html.Div(id='group-checkboxes'),
                 
                 html.Hr(),
-
-                # Dip-buy screener config
-                html.H5("Dip-Buy Screener", className="mt-2"),
-                dbc.Row([
-                    dbc.Col([
-                        dbc.Label("Trend window (days)", className="fw-bold"),
-                        dbc.Input(id='trend-days', type='number', min=20, step=5, value=200, size='sm'),
-                    ], width=6),
-                    dbc.Col([
-                        dbc.Label("Dip window (days)", className="fw-bold"),
-                        dbc.Input(id='dip-days', type='number', min=2, step=1, value=7, size='sm'),
-                    ], width=6),
-                ], className="g-2 mb-2"),
-                dbc.Row([
-                    dbc.Col([
-                        dbc.Label("SMA slope lookback", className="fw-bold"),
-                        dbc.Input(id='slope-lookback-days', type='number', min=5, step=5, value=20, size='sm'),
-                    ], width=6),
-                    dbc.Col([
-                        dbc.Label("Min dip (%)", className="fw-bold"),
-                        dbc.Input(id='min-dip-pct', type='number', step=0.5, value=0.0, size='sm'),
-                        html.Div("(0 = any negative)", className="text-muted", style={"fontSize": "0.8rem"}),
-                    ], width=6),
-                ], className="g-2 mb-2"),
-                dbc.Checkbox(
-                    id='use-slope-filter',
-                    value=True,
-                    label='Require SMA slope > 0',
+                html.Label("Bar chart color:", className="fw-bold"),
+                dcc.Dropdown(
+                    id='bar-color-mode',
+                    options=[
+                        {'label': 'Profit / Loss (green / red)', 'value': 'pnl'},
+                        {'label': 'Group color', 'value': 'group'},
+                        {'label': 'Item color (from performance chart)', 'value': 'item'},
+                    ],
+                    value='pnl',
+                    clearable=False,
                     className="mb-2"
                 ),
-                html.Div(id='screener-info', className="text-muted", style={"fontSize": "0.9rem"}),
-
                 html.Hr(),
 
                 # Error display
@@ -148,55 +145,14 @@ app.layout = dbc.Container([
             dcc.Graph(id='etf-chart', style={'height': '65vh'}),
             html.Div(id='chart-info', className="mt-2 text-muted"),
             html.Hr(),
-            html.H4("Dip-Buy Screener", className="mt-2"),
-            dash_table.DataTable(
-                id='screener-table',
-                columns=[
-                    {"name": "Ticker", "id": "ticker"},
-                    {"name": "Name", "id": "name"},
-                    {"name": "Group", "id": "group"},
-                    {"name": "Trend vs SMA", "id": "trend_vs_sma_pct", "type": "numeric", "format": {"specifier": ".2f"}},
-                    {"name": "SMA slope", "id": "sma_slope_pct", "type": "numeric", "format": {"specifier": ".2f"}},
-                    {"name": "Dip", "id": "dip_pct", "type": "numeric", "format": {"specifier": ".2f"}},
-                    {"name": "Score", "id": "score", "type": "numeric", "format": {"specifier": ".2f"}},
-                ],
-                data=[],
-                sort_action='native',
-                filter_action='native',
-                page_action='native',
-                page_size=15,
-                style_table={'overflowX': 'auto'},
-                style_cell={'padding': '6px', 'fontFamily': 'system-ui', 'fontSize': '0.9rem'},
-                style_header={'fontWeight': 'bold'},
-                style_data_conditional=[
-                    {
-                        'if': {'filter_query': '{dip_pct} < 0', 'column_id': 'dip_pct'},
-                        'color': '#B00020'
-                    },
-                    {
-                        'if': {'filter_query': '{trend_vs_sma_pct} > 0', 'column_id': 'trend_vs_sma_pct'},
-                        'color': '#0B6E4F'
-                    },
-                ],
-            ),
+            dcc.Graph(id='pnl-bar-chart', style={'height': '50vh'}),
+            html.Div(id='period-summary', className="mt-2 text-muted"),
         ], id='chart-col', width=9)
     ]),
     
     # Store for browser session
     dcc.Store(id='session-store', storage_type='session', data={'period': '7d', 'visible_groups': list(groups.keys())}),
     dcc.Store(id='ui-state-store', storage_type='session', data={'show_sidebar': True, 'show_legend': True}),
-    dcc.Store(
-        id='screener-config-store',
-        storage_type='session',
-        data={
-            'trend_days': 200,
-            'dip_days': 7,
-            'slope_lookback_days': 20,
-            'use_slope_filter': True,
-            'min_dip_pct': 0.0,
-        },
-    ),
-    
 ], fluid=True)
 
 
@@ -259,74 +215,49 @@ def restore_period_from_session(session_data):
 
 
 @app.callback(
-    Output('screener-config-store', 'data', allow_duplicate=True),
-    Input('trend-days', 'value'),
-    Input('dip-days', 'value'),
-    Input('slope-lookback-days', 'value'),
-    Input('use-slope-filter', 'value'),
-    Input('min-dip-pct', 'value'),
-    State('screener-config-store', 'data'),
-    prevent_initial_call=True
-)
-def persist_screener_config(trend_days, dip_days, slope_lookback_days, use_slope_filter, min_dip_pct, config):
-    """Persist screener config in browser session."""
-    if config is None:
-        config = {}
-
-    # Sanitize
-    config['trend_days'] = int(trend_days or 200)
-    config['dip_days'] = int(dip_days or 7)
-    config['slope_lookback_days'] = int(slope_lookback_days or 20)
-    config['use_slope_filter'] = bool(use_slope_filter)
-    config['min_dip_pct'] = float(min_dip_pct or 0.0)
-    return config
-
-
-@app.callback(
-    Output('trend-days', 'value', allow_duplicate=True),
-    Output('dip-days', 'value', allow_duplicate=True),
-    Output('slope-lookback-days', 'value', allow_duplicate=True),
-    Output('use-slope-filter', 'value', allow_duplicate=True),
-    Output('min-dip-pct', 'value', allow_duplicate=True),
-    Input('screener-config-store', 'data'),
-    prevent_initial_call=True
-)
-def restore_screener_config(config):
-    """Restore UI inputs from session store on reload."""
-    if not config:
-        return 200, 7, 20, True, 0.0
-    return (
-        config.get('trend_days', 200),
-        config.get('dip_days', 7),
-        config.get('slope_lookback_days', 20),
-        config.get('use_slope_filter', True),
-        config.get('min_dip_pct', 0.0),
-    )
-
-
-@app.callback(
     Output('group-checkboxes', 'children'),
     Input('session-store', 'data')
 )
 def update_group_checkboxes(session_data):
-    """Initialize group checkboxes, restore from session if available"""
-    # Get visible groups from session store, or default to all
+    """Initialize group checkboxes, restore from session if available. Show group name with color dot."""
     if session_data and 'visible_groups' in session_data:
         visible_groups = session_data['visible_groups']
     else:
-        visible_groups = list(groups.keys())  # All visible by default
-    
-    checkboxes = []
+        visible_groups = list(groups.keys())
+    group_colors = get_group_colors()
+    out = []
     for group_name in sorted(groups.keys()):
-        checkboxes.append(
-            dbc.Checklist(
-                options=[{'label': group_name, 'value': group_name}],
-                value=[group_name] if group_name in visible_groups else [],
-                id={'type': 'group-checkbox', 'index': group_name},
-                className="mb-2"
+        color = group_colors.get(group_name, "#888")
+        dot = html.Span(
+            title=group_name,
+            style={
+                "display": "inline-block",
+                "width": 10,
+                "height": 10,
+                "borderRadius": "50%",
+                "backgroundColor": color,
+                "marginRight": 8,
+                "verticalAlign": "middle",
+                "flexShrink": 0,
+            },
+        )
+        out.append(
+            html.Div(
+                [
+                    dot,
+                    dbc.Checklist(
+                        options=[{"label": group_name, "value": group_name}],
+                        value=[group_name] if group_name in visible_groups else [],
+                        id={"type": "group-checkbox", "index": group_name},
+                        className="mb-2",
+                        style={"display": "inline-block", "verticalAlign": "middle"},
+                    ),
+                ],
+                className="mb-2",
+                style={"display": "flex", "alignItems": "center"},
             )
         )
-    return html.Div(checkboxes)
+    return html.Div(out)
 
 
 @app.callback(
@@ -370,123 +301,31 @@ def toggle_ui_elements(sidebar_clicks, legend_clicks, ui_state):
 
 
 @app.callback(
-    Output('screener-table', 'data'),
-    Output('screener-info', 'children'),
-    Input('session-store', 'data'),
-    Input('screener-config-store', 'data'),
+    Output('sma-days-value', 'children'),
+    Input('sma-days', 'value')
 )
-def update_screener(session_data, config):
-    """Compute dip-buy screener table for currently visible groups."""
-    if not session_data:
-        visible_groups = list(groups.keys())
-    else:
-        visible_groups = session_data.get('visible_groups') or list(groups.keys())
-
-    visible_tickers = []
-    for g in visible_groups:
-        visible_tickers.extend(groups.get(g, []))
-
-    if not visible_tickers:
-        return [], "No groups selected"
-
-    config = config or {}
-    trend_days = int(config.get('trend_days', 200))
-    dip_days = int(config.get('dip_days', 7))
-    slope_lookback_days = int(config.get('slope_lookback_days', 20))
-    use_slope_filter = bool(config.get('use_slope_filter', True))
-    min_dip_pct = float(config.get('min_dip_pct', 0.0))
-
-    # Fetch enough data for indicators
-    history, errors = fetcher.fetch_history_for_windows(
-        tickers=visible_tickers,
-        trend_window_days=trend_days,
-        dip_window_days=dip_days,
-        slope_lookback_days=slope_lookback_days,
-    )
-
-    rows = []
-    for ticker in visible_tickers:
-        if ticker not in history:
-            continue
-
-        df = history[ticker].copy()
-        if 'Close' not in df.columns or df.empty:
-            continue
-
-        close = df['Close'].dropna()
-        if len(close) < max(trend_days + slope_lookback_days + 2, dip_days + 2):
-            continue
-
-        sma = close.rolling(window=trend_days).mean()
-        sma_today = sma.iloc[-1]
-        price_today = close.iloc[-1]
-
-        if pd.isna(sma_today) or sma_today == 0:
-            continue
-
-        trend_vs_sma_pct = (price_today / sma_today - 1.0) * 100.0
-
-        # SMA slope: compare SMA today vs SMA N days ago
-        sma_prev = sma.shift(slope_lookback_days).iloc[-1]
-        sma_slope_pct = None
-        if not pd.isna(sma_prev) and sma_prev != 0:
-            sma_slope_pct = (sma_today / sma_prev - 1.0) * 100.0
-        else:
-            sma_slope_pct = 0.0
-
-        # Dip: price change over dip_days (trading days)
-        dip_ref = close.shift(dip_days).iloc[-1]
-        if pd.isna(dip_ref) or dip_ref == 0:
-            continue
-        dip_pct = (price_today / dip_ref - 1.0) * 100.0
-
-        # Candidate filter
-        if trend_vs_sma_pct <= 0:
-            continue
-        if use_slope_filter and sma_slope_pct <= 0:
-            continue
-        # Require negative dip; and optionally below a minimum (e.g. -3)
-        if dip_pct >= 0:
-            continue
-        if min_dip_pct > 0 and dip_pct > -min_dip_pct:
-            continue
-
-        # Score: reward strong trend + strong dip
-        score = trend_vs_sma_pct + (-dip_pct) + max(0.0, sma_slope_pct)
-
-        info = fetcher.get_ticker_info(ticker) or {}
-        rows.append({
-            'ticker': ticker,
-            'name': info.get('name', ticker),
-            'group': info.get('group', ''),
-            'trend_vs_sma_pct': float(trend_vs_sma_pct),
-            'sma_slope_pct': float(sma_slope_pct),
-            'dip_pct': float(dip_pct),
-            'score': float(score),
-        })
-
-    # Sort by score desc
-    rows = sorted(rows, key=lambda r: r.get('score', 0), reverse=True)
-
-    info_text = f"Candidates: {len(rows)} (from {len(visible_tickers)} ETFs) | Trend={trend_days}d SMA, Dip={dip_days}d"
-    if errors:
-        info_text += f" | Data errors: {len(errors)}"
-
-    return rows, info_text
-
+def display_sma_value(sma_days):
+    """Show current SMA setting."""
+    if sma_days is None or sma_days == 0:
+        return "0 = real close"
+    return f"SMA{sma_days}"
 
 @app.callback(
     Output('session-store', 'data'),
     Output('etf-chart', 'figure'),
+    Output('pnl-bar-chart', 'figure'),
+    Output('period-summary', 'children'),
     Output('error-display', 'children'),
     Output('chart-info', 'children'),
     Input('period-selector', 'value'),
+    Input('sma-days', 'value'),
     Input({'type': 'group-checkbox', 'index': ALL}, 'value'),
+    Input('bar-color-mode', 'value'),
     Input('ui-state-store', 'data'),
     State('session-store', 'data'),
     State({'type': 'group-checkbox', 'index': ALL}, 'id')
 )
-def update_chart(period, group_values, ui_state, session_data, group_ids):
+def update_chart(period, sma_days, group_values, bar_color_mode, ui_state, session_data, group_ids):
     """Update chart based on period and group selections"""
     # Initialize session data if it doesn't exist
     if session_data is None:
@@ -559,29 +398,45 @@ def update_chart(period, group_values, ui_state, session_data, group_ids):
             xaxis_title="Date",
             yaxis_title="Percentage Change (%)"
         )
-        return session_data, empty_fig, html.Div(), ""
-    
+        empty_bar = go.Figure()
+        empty_bar.update_layout(xaxis_title="", yaxis_title="% change")
+        return session_data, empty_fig, empty_bar, "", html.Div(), ""
+
     # Fetch data
     data_results, errors = fetcher.fetch_data(period=period, tickers=visible_tickers)
-    
+    sma_days = int(sma_days) if sma_days is not None else 0
+
+    def pct_series_for_df(df):
+        """Return pct_change series: real close if sma_days==0, else from SMA(sma_days) of Close."""
+        close = df['Close']
+        if sma_days <= 0:
+            return df['pct_change']
+        smooth = close.rolling(window=sma_days, min_periods=1).mean()
+        first = smooth.iloc[0]
+        if first == 0:
+            return df['pct_change']
+        return ((smooth - first) / first) * 100.0
+
     # Create figure
     fig = go.Figure()
-    
-    # Add traces for each ticker
-    colors = px.colors.qualitative.Set3
+    line_colors = px.colors.qualitative.Set3
     color_idx = 0
-    
+    ticker_to_item_color = {}
+
     for ticker in visible_tickers:
         if ticker in data_results:
             df = data_results[ticker]
             ticker_info = fetcher.get_ticker_info(ticker)
             name = ticker_info['name'] if ticker_info else ticker
-            
-            line_color = colors[color_idx % len(colors)]
-            
+
+            pct_series = pct_series_for_df(df)
+            line_color = line_colors[color_idx % len(line_colors)]
+            ticker_to_item_color[ticker] = line_color
+            color_idx += 1
+
             fig.add_trace(go.Scatter(
-                x=df.index,
-                y=df['pct_change'],
+                x=df.index.tolist(),
+                y=pct_series.tolist(),
                 mode='lines',
                 name=f"{ticker} - {name}",
                 line=dict(color=line_color, width=2),
@@ -595,16 +450,17 @@ def update_chart(period, group_values, ui_state, session_data, group_ids):
                     font=dict(color='blue', size=12)
                 )
             ))
-            color_idx += 1
-    
+
+    # Group colors for bar chart (same as sidebar)
+    group_to_color = get_group_colors()
+
     # Update layout
     period_label = next((opt['label'] for opt in PERIOD_OPTIONS if opt['value'] == period), period)
-    
-    # Get legend visibility from UI state
+    sma_suffix = f" (SMA{sma_days})" if sma_days > 0 else ""
     show_legend = ui_state.get('show_legend', True) if ui_state else True
-    
+
     fig.update_layout(
-        title=f'ETF Performance Comparison - {period_label}',
+        title=f'ETF Performance Comparison - {period_label}{sma_suffix}',
         xaxis_title='Date',
         yaxis_title='Percentage Change (%)',
         hovermode='closest',
@@ -625,7 +481,95 @@ def update_chart(period, group_values, ui_state, session_data, group_ids):
         height=600,
         showlegend=show_legend
     )
-    
+
+    # Period return bar chart: total % change per ETF (always from actual close, not SMA)
+    rows_pnl = []
+    for ticker in visible_tickers:
+        if ticker not in data_results:
+            continue
+        df = data_results[ticker]
+        if df.empty or 'pct_change' not in df.columns:
+            continue
+        total_pct = float(df['pct_change'].iloc[-1]) if len(df) else 0.0
+        info = fetcher.get_ticker_info(ticker) or {}
+        name = info.get('name', ticker)
+        group = info.get('group', '')
+        rows_pnl.append({
+            "ticker": ticker,
+            "name": name,
+            "group": group,
+            "pct": total_pct,
+            "item_color": ticker_to_item_color.get(ticker, "#888"),
+            "group_color": group_to_color.get(group, "#888"),
+        })
+    rows_pnl.sort(key=lambda r: r["pct"], reverse=True)
+
+    if rows_pnl:
+        labels = [r["ticker"] for r in rows_pnl]
+        names = [r["name"] for r in rows_pnl]
+        pcts = [r["pct"] for r in rows_pnl]
+        mode = bar_color_mode or 'pnl'
+        if mode == 'pnl':
+            bar_colors = ["#0B6E4F" if p >= 0 else "#B00020" for p in pcts]
+        elif mode == 'group':
+            bar_colors = [r["group_color"] for r in rows_pnl]
+        else:
+            bar_colors = [r["item_color"] for r in rows_pnl]
+        pnl_fig = go.Figure(
+            go.Bar(
+                x=labels,
+                y=pcts,
+                customdata=names,
+                marker_color=bar_colors,
+                text=[f"{p:+.2f}%" for p in pcts],
+                textposition="outside",
+                hovertemplate="%{x} — %{customdata}<br>% change: %{y:.2f}%<extra></extra>",
+            )
+        )
+        period_label_short = next((o["label"] for o in PERIOD_OPTIONS if o["value"] == period), period)
+        # Colored x-axis labels via annotations (ticker text uses same color as bar)
+        n_bars = len(labels)
+        axis_annotations = [
+            dict(
+                x=i,
+                y=-0.06,
+                text=labels[i],
+                showarrow=False,
+                font=dict(size=11, color=bar_colors[i]),
+                xref="x",
+                yref="paper",
+                yanchor="top",
+                xanchor="center",
+            )
+            for i in range(n_bars)
+        ]
+        pnl_fig.update_layout(
+            title=f"ETF % change — {period_label_short} (best → worst)",
+            xaxis_title="",
+            yaxis_title="% change",
+            xaxis=dict(tickangle=-45, showticklabels=False),
+            annotations=axis_annotations,
+            margin=dict(b=80),
+            height=400,
+            showlegend=False,
+        )
+        # What's good in this range
+        top = rows_pnl[:5]
+        bottom = rows_pnl[-3:] if len(rows_pnl) >= 3 else []
+        good = " • ".join([f"{r['ticker']} {r['pct']:+.1f}%" for r in top])
+        weak = " • ".join([f"{r['ticker']} {r['pct']:+.1f}%" for r in bottom]) if bottom else ""
+        period_summary = [
+            html.Strong("Top in this range: "),
+            good,
+        ]
+        if weak:
+            period_summary.extend([html.Br(), html.Span("Weakest: ", className="text-muted"), weak])
+        period_summary = html.Div(period_summary)
+    else:
+        pnl_fig = go.Figure()
+        pnl_fig.update_layout(xaxis_title="", yaxis_title="% change")
+        period_summary = ""
+
     # Error display
     error_elements = []
     if errors:
@@ -644,8 +588,8 @@ def update_chart(period, group_values, ui_state, session_data, group_ids):
     info_text = f"Showing {len(data_results)} ETFs from {len(visible_groups)} groups"
     if errors:
         info_text += f" ({len(errors)} errors)"
-    
-    return session_data, fig, html.Div(error_elements), info_text
+
+    return session_data, fig, pnl_fig, period_summary, html.Div(error_elements), info_text
 
 
 if __name__ == '__main__':
