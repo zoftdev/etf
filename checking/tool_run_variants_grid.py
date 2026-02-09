@@ -14,7 +14,7 @@ Usage:
 Notes:
 - Uses Close only.
 - No fees/slippage yet.
-- Strategy variants are defined in-code (small, curated grids to keep runtime reasonable).
+- Strategy variants are defined in-code.
 """
 
 from __future__ import annotations
@@ -40,6 +40,11 @@ from checking.strategy_backtest_lib import (
     strat_momentum,
     strat_rsi_mean_reversion,
     strat_sma_crossover,
+    strat_bollinger_mean_reversion,
+    strat_donchian,
+    strat_vol_targeting,
+    strat_trend_filter,
+    strat_crash_filter_drawdown,
 )
 from checking.tool_view_verify_hold_etf import get_group_lv2
 
@@ -53,20 +58,33 @@ class Variant:
 
 
 def build_variants() -> list[Variant]:
+    """Build *all* variants we want to test overnight.
+
+    Keep this as the single source of truth for what "all variants" means.
+    """
     variants: list[Variant] = []
 
     # Baseline
     variants.append(Variant("buy_hold", "Buy & Hold", lambda close: strat_buy_hold(close), {}))
 
-    # SMA crossover grid (small)
-    for fast, slow in [(20, 200), (50, 200), (50, 150)]:
+    # 2) SMA Crossover
+    sma_fast = [10, 20, 50, 100]
+    sma_slow = [100, 150, 200, 250]
+    for fast, slow in product(sma_fast, sma_slow):
+        if fast >= slow:
+            continue
         k = f"sma_{fast}_{slow}"
         variants.append(
             Variant(k, f"SMA Crossover ({fast}/{slow})", lambda close, f=fast, s=slow: strat_sma_crossover(close, fast=f, slow=s), {"fast": fast, "slow": slow})
         )
 
-    # EMA crossover grid (small + optional band)
-    for fast, slow, band in [(10, 200, 0.0), (20, 200, 0.0), (20, 200, 0.5), (50, 200, 0.0)]:
+    # 3) EMA Crossover
+    ema_fast = [10, 20, 50]
+    ema_slow = [100, 150, 200]
+    ema_band = [0.0, 0.25, 0.5]
+    for fast, slow, band in product(ema_fast, ema_slow, ema_band):
+        if fast >= slow:
+            continue
         k = f"ema_{fast}_{slow}_band{str(band).replace('.', 'p')}"
         variants.append(
             Variant(
@@ -77,29 +95,97 @@ def build_variants() -> list[Variant]:
             )
         )
 
-    # Momentum grid
-    for lookback, skip in [(63, 5), (126, 21), (252, 21), (252, 0)]:
-        k = f"mom_{lookback}_skip{skip}"
+    # 4) Donchian breakout
+    for entry_window, exit_window in product([20, 55, 100], [10, 20, 55]):
+        k = f"donch_{entry_window}_{exit_window}"
         variants.append(
             Variant(
                 k,
-                f"Momentum ({lookback}d skip {skip}d)",
-                lambda close, lb=lookback, sk=skip: strat_momentum(close, lookback_days=lb, skip_recent_days=sk, threshold_pct=0.0),
-                {"lookback_days": lookback, "skip_recent_days": skip, "threshold_pct": 0.0},
+                f"Donchian Breakout ({entry_window}/{exit_window})",
+                lambda close, en=entry_window, ex=exit_window: strat_donchian(close, entry_window=en, exit_window=ex),
+                {"entry_window": entry_window, "exit_window": exit_window},
             )
         )
 
-    # RSI mean reversion grid
-    for w, entry, exit_ in [(7, 25, 50), (14, 30, 50), (14, 25, 55), (21, 30, 55)]:
-        k = f"rsi_{w}_{entry}_{exit_}"
+    # 5) Bollinger mean reversion
+    for window, num_std, exit_rule, max_hold in product([20, 50], [1.5, 2.0, 2.5], ["mid", "upper"], [None, 20, 60]):
+        k = f"boll_{window}_{str(num_std).replace('.', 'p')}_{exit_rule}_mh{max_hold if max_hold is not None else 'N'}"
         variants.append(
             Variant(
                 k,
-                f"RSI MR (w={w}, entry<{entry}, exit>{exit_})",
-                lambda close, ww=w, en=entry, ex=exit_: strat_rsi_mean_reversion(close, rsi_window=ww, entry_rsi=float(en), exit_rsi=float(ex)),
-                {"rsi_window": w, "entry_rsi": entry, "exit_rsi": exit_},
+                f"Boll MR (w={window}, sd={num_std}, exit={exit_rule}, max_hold={max_hold})",
+                lambda close, w=window, sd=num_std, er=exit_rule, mh=max_hold: strat_bollinger_mean_reversion(close, window=w, num_std=sd, exit_rule=er, max_hold_days=mh),
+                {"boll_window": window, "num_std": num_std, "exit_rule": exit_rule, "max_hold_days": max_hold},
             )
         )
+
+    # 6) RSI mean reversion
+    for w, entry, exit_, max_hold in product([7, 14, 21], [20, 25, 30], [45, 50, 55], [None, 10, 30]):
+        k = f"rsi_{w}_{entry}_{exit_}_mh{max_hold if max_hold is not None else 'N'}"
+        variants.append(
+            Variant(
+                k,
+                f"RSI MR (w={w}, entry<{entry}, exit>{exit_}, max_hold={max_hold})",
+                lambda close, ww=w, en=entry, ex=exit_, mh=max_hold: strat_rsi_mean_reversion(close, rsi_window=ww, entry_rsi=float(en), exit_rsi=float(ex), max_hold_days=mh),
+                {"rsi_window": w, "entry_rsi": entry, "exit_rsi": exit_, "max_hold_days": max_hold},
+            )
+        )
+
+    # 7) Momentum
+    for lookback, skip, thresh in product([63, 126, 252], [0, 5, 21], [0.0, 1.0, 2.0]):
+        k = f"mom_{lookback}_skip{skip}_th{str(thresh).replace('.', 'p')}"
+        variants.append(
+            Variant(
+                k,
+                f"Momentum ({lookback}d skip {skip}d thr={thresh}%)",
+                lambda close, lb=lookback, sk=skip, th=thresh: strat_momentum(close, lookback_days=lb, skip_recent_days=sk, threshold_pct=th),
+                {"lookback_days": lookback, "skip_recent_days": skip, "threshold_pct": thresh},
+            )
+        )
+
+    # 8) Vol targeting
+    for vol_lb, tgt, tf in product([20, 63, 126], [8, 10, 12, 15], ["none", "sma_200"]):
+        k = f"vol_{vol_lb}_t{tgt}_{tf}"
+        variants.append(
+            Variant(
+                k,
+                f"VolTarget (lb={vol_lb}, tgt={tgt}%, tf={tf})",
+                lambda close, vlb=vol_lb, t=tgt, tf_=tf: strat_vol_targeting(close, vol_lookback_days=vlb, target_vol_ann_pct=float(t), trend_filter=tf_, trend_window=200, max_leverage=1.0),
+                {"vol_lookback_days": vol_lb, "target_vol_ann_pct": tgt, "trend_filter": tf},
+            )
+        )
+
+    # 9) Trend filter + DCA (proxy)
+    # NOTE: true DCA needs cashflow + XIRR; for now we model the *trend filter* only.
+    for tw in [150, 200, 250]:
+        k = f"trend_sma{tw}"
+        variants.append(
+            Variant(
+                k,
+                f"Trend filter (close>=SMA{tw}) [DCA proxy]",
+                lambda close, w=tw: strat_trend_filter(close, trend_window=w),
+                {"trend_window": tw},
+            )
+        )
+
+    # 10) Crash filter (drawdown)
+    for dd_lb, dd_th, reentry in product([63, 126, 252], [-10, -15, -20], ["new_high", "sma_200", "cooldown"]):
+        if reentry == "cooldown":
+            cooldowns = [10, 20, 60]
+        else:
+            cooldowns = [20]
+        for cd in cooldowns:
+            k = f"crash_dd{dd_lb}_th{abs(dd_th)}_{reentry}_cd{cd}"
+            variants.append(
+                Variant(
+                    k,
+                    f"Crash(dd_lb={dd_lb}, th={dd_th}%, reentry={reentry}, cd={cd})",
+                    lambda close, lb=dd_lb, th=dd_th, rr=reentry, cd_=cd: strat_crash_filter_drawdown(
+                        close, dd_lookback_days=lb, dd_threshold_pct=float(th), reentry_rule=rr, cooldown_days=cd_, sma_window=200
+                    ),
+                    {"dd_lookback_days": dd_lb, "dd_threshold_pct": dd_th, "reentry_rule": reentry, "cooldown_days": cd},
+                )
+            )
 
     return variants
 

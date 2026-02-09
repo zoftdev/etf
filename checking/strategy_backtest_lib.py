@@ -183,14 +183,14 @@ def strat_rsi_mean_reversion(
     rsi_window: int = 14,
     entry_rsi: float = 30.0,
     exit_rsi: float = 50.0,
+    max_hold_days: int | None = None,
 ) -> pd.Series:
     """RSI mean reversion (long-only).
 
     Rule:
     - enter long when RSI < entry_rsi
     - exit to cash when RSI > exit_rsi
-
-    No max-hold yet.
+    - optional: force exit after max_hold_days in position
     """
     close = close.dropna()
     if len(close) < rsi_window + 10:
@@ -201,15 +201,227 @@ def strat_rsi_mean_reversion(
     # build position statefully
     pos = pd.Series(0.0, index=close.index)
     in_pos = False
+    hold = 0
     for i in range(len(close)):
         v = rsi.iloc[i]
+        if in_pos:
+            hold += 1
+
         if not np.isfinite(v):
             pos.iloc[i] = 1.0 if in_pos else 0.0
             continue
-        if not in_pos and v < entry_rsi:
+
+        if (not in_pos) and (v < entry_rsi):
             in_pos = True
-        elif in_pos and v > exit_rsi:
+            hold = 0
+        elif in_pos and (v > exit_rsi):
             in_pos = False
+            hold = 0
+        elif in_pos and (max_hold_days is not None) and (hold >= max_hold_days):
+            in_pos = False
+            hold = 0
+
+        pos.iloc[i] = 1.0 if in_pos else 0.0
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = pos.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
+def strat_donchian(close: pd.Series, entry_window: int = 55, exit_window: int = 20) -> pd.Series:
+    """Donchian breakout (close-only approximation).
+
+    - enter when close > rolling max over entry_window (excluding today)
+    - exit when close < rolling min over exit_window (excluding today)
+    """
+    close = close.dropna()
+    if len(close) < max(entry_window, exit_window) + 10:
+        return strat_buy_hold(close)
+
+    hh = close.shift(1).rolling(entry_window).max()
+    ll = close.shift(1).rolling(exit_window).min()
+
+    pos = pd.Series(0.0, index=close.index)
+    in_pos = False
+    for i in range(len(close)):
+        c = close.iloc[i]
+        hi = hh.iloc[i]
+        lo = ll.iloc[i]
+        if np.isfinite(hi) and (not in_pos) and (c > hi):
+            in_pos = True
+        elif np.isfinite(lo) and in_pos and (c < lo):
+            in_pos = False
+        pos.iloc[i] = 1.0 if in_pos else 0.0
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = pos.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
+def strat_bollinger_mean_reversion(
+    close: pd.Series,
+    window: int = 20,
+    num_std: float = 2.0,
+    exit_rule: str = "mid",  # mid|upper
+    max_hold_days: int | None = None,
+) -> pd.Series:
+    """Bollinger mean reversion (long-only).
+
+    Enter when close < lower band.
+    Exit when close > mid band (or upper band), or after max_hold_days.
+    """
+    close = close.dropna()
+    if len(close) < window + 10:
+        return strat_buy_hold(close)
+
+    mid = close.rolling(window).mean()
+    sd = close.rolling(window).std(ddof=0)
+    upper = mid + num_std * sd
+    lower = mid - num_std * sd
+
+    pos = pd.Series(0.0, index=close.index)
+    in_pos = False
+    hold = 0
+
+    for i in range(len(close)):
+        c = close.iloc[i]
+        if in_pos:
+            hold += 1
+
+        lo = lower.iloc[i]
+        m = mid.iloc[i]
+        up = upper.iloc[i]
+
+        if not in_pos and np.isfinite(lo) and (c < lo):
+            in_pos = True
+            hold = 0
+        elif in_pos:
+            if (max_hold_days is not None) and (hold >= max_hold_days):
+                in_pos = False
+                hold = 0
+            else:
+                if exit_rule == "upper":
+                    if np.isfinite(up) and (c > up):
+                        in_pos = False
+                        hold = 0
+                else:  # mid
+                    if np.isfinite(m) and (c > m):
+                        in_pos = False
+                        hold = 0
+
+        pos.iloc[i] = 1.0 if in_pos else 0.0
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = pos.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
+def strat_vol_targeting(
+    close: pd.Series,
+    vol_lookback_days: int = 63,
+    target_vol_ann_pct: float = 10.0,
+    trend_filter: str = "none",  # none|sma_200
+    trend_window: int = 200,
+    max_leverage: float = 1.0,
+) -> pd.Series:
+    """Volatility targeting (long-only) with optional trend filter.
+
+    Exposure = min(max_leverage, target_vol / realized_vol).
+    If trend_filter=sma_200 and close < SMA(trend_window) => exposure=0.
+    """
+    close = close.dropna()
+    if len(close) < max(vol_lookback_days, trend_window) + 10:
+        return strat_buy_hold(close)
+
+    daily_ret = close.pct_change().fillna(0.0)
+    vol = daily_ret.rolling(vol_lookback_days).std(ddof=0) * np.sqrt(252)
+    target = target_vol_ann_pct / 100.0
+    exp = (target / vol).clip(upper=max_leverage)
+    exp = exp.replace([np.inf, -np.inf], np.nan).fillna(0.0)
+
+    if trend_filter == "sma_200":
+        sma = close.rolling(trend_window).mean()
+        exp = exp.where(close >= sma, 0.0)
+
+    strat_ret = exp.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
+def strat_trend_filter(close: pd.Series, trend_window: int = 200) -> pd.Series:
+    """Simple trend filter: in market when close >= SMA(trend_window)."""
+    close = close.dropna()
+    if len(close) < trend_window + 10:
+        return strat_buy_hold(close)
+
+    sma = close.rolling(trend_window).mean()
+    pos = (close >= sma).astype(float).fillna(0.0)
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = pos.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
+def strat_crash_filter_drawdown(
+    close: pd.Series,
+    dd_lookback_days: int = 126,
+    dd_threshold_pct: float = -15.0,
+    reentry_rule: str = "sma_200",  # sma_200|new_high|cooldown
+    cooldown_days: int = 20,
+    sma_window: int = 200,
+) -> pd.Series:
+    """Simple crash filter using drawdown vs rolling peak.
+
+    Compute drawdown over dd_lookback window. If dd < threshold => go to cash.
+    Re-enter depending on rule.
+    """
+    close = close.dropna()
+    if len(close) < max(dd_lookback_days, sma_window) + 20:
+        return strat_buy_hold(close)
+
+    rolling_peak = close.rolling(dd_lookback_days).max()
+    dd = close / rolling_peak - 1.0
+
+    sma = close.rolling(sma_window).mean()
+
+    pos = pd.Series(0.0, index=close.index)
+    in_pos = True
+    cd = 0
+
+    for i in range(len(close)):
+        if not in_pos:
+            cd += 1
+
+        d = dd.iloc[i]
+        if np.isfinite(d) and in_pos and (d < (dd_threshold_pct / 100.0)):
+            in_pos = False
+            cd = 0
+
+        if not in_pos:
+            if reentry_rule == "cooldown":
+                if cd >= cooldown_days:
+                    in_pos = True
+                    cd = 0
+            elif reentry_rule == "new_high":
+                pk = rolling_peak.iloc[i]
+                if np.isfinite(pk) and close.iloc[i] >= pk:
+                    in_pos = True
+                    cd = 0
+            else:  # sma_200
+                sm = sma.iloc[i]
+                if np.isfinite(sm) and close.iloc[i] >= sm:
+                    in_pos = True
+                    cd = 0
+
         pos.iloc[i] = 1.0 if in_pos else 0.0
 
     daily_ret = close.pct_change().fillna(0.0)
@@ -241,6 +453,26 @@ def available_strategies() -> dict[str, Strategy]:
         "rsi_14_30_50": Strategy(
             "rsi_14_30_50",
             "RSI Mean Reversion (14, entry 30, exit 50)",
-            lambda close: strat_rsi_mean_reversion(close, rsi_window=14, entry_rsi=30.0, exit_rsi=50.0),
+            lambda close: strat_rsi_mean_reversion(close, rsi_window=14, entry_rsi=30.0, exit_rsi=50.0, max_hold_days=None),
+        ),
+        "boll_20_2_mid": Strategy(
+            "boll_20_2_mid",
+            "Bollinger MR (20, 2.0, exit=mid)",
+            lambda close: strat_bollinger_mean_reversion(close, window=20, num_std=2.0, exit_rule="mid", max_hold_days=None),
+        ),
+        "donch_55_20": Strategy(
+            "donch_55_20",
+            "Donchian Breakout (55/20)",
+            lambda close: strat_donchian(close, entry_window=55, exit_window=20),
+        ),
+        "vol_tgt_10_sma": Strategy(
+            "vol_tgt_10_sma",
+            "Vol Target 10% (63d, trend=sma200)",
+            lambda close: strat_vol_targeting(close, vol_lookback_days=63, target_vol_ann_pct=10.0, trend_filter="sma_200", trend_window=200, max_leverage=1.0),
+        ),
+        "crash_dd_126_-15_sma": Strategy(
+            "crash_dd_126_-15_sma",
+            "Crash Filter (dd126<-15%, reentry=sma200)",
+            lambda close: strat_crash_filter_drawdown(close, dd_lookback_days=126, dd_threshold_pct=-15.0, reentry_rule="sma_200", cooldown_days=20, sma_window=200),
         ),
     }
