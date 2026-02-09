@@ -36,7 +36,7 @@ Development of the Bot2 decision module system focusing on technical indicators 
   - Generates normalized scores (-1.0 to 1.0)
   - Strictly follows "no look-ahead" principle
 
-- **`tool_view_decision.py`** - Decision visualization tool:
+- **`2_tool_view_decision.py`** - Decision visualization tool:
   - Loads ETF data from `etf.yaml`
   - Fetches historical OHLC data via `ETFDataFetcher`
   - Calculates decision scores for each date
@@ -54,7 +54,7 @@ Development of the Bot2 decision module system focusing on technical indicators 
 - **Score Generation**: Normalized score from -1.0 (strong SELL) to 1.0 (strong BUY)
 - **No Look-Ahead**: Only uses historical data up to `as_of_date`
 
-### 2. Visualization Tool (`tool_view_decision.py`)
+### 2. Visualization Tool (`2_tool_view_decision.py`)
 - **Multi-Ticker Support**: Processes multiple ETFs from `etf.yaml`
 - **Interactive Charts**: Plotly-based HTML reports
 - **Price Display**: Line chart showing Close prices
@@ -141,7 +141,7 @@ y=data['Close'].tolist()  # plain list → correct values in HTML
 ```bash
 # Run visualization tool
 cd /home/zoftdev/clawd/workspace/etf
-uv run python bot2/tool_view_decision.py
+uv run python bot2/2_tool_view_decision.py
 
 # Output: result/decision_view.html
 ```
@@ -209,7 +209,7 @@ bot2/
 ├── decision_rsi_low.yaml    # Low sensitivity config
 ├── decision_rsi_mid.yaml    # Medium sensitivity config
 ├── decision_rsi_high.yaml   # High sensitivity config
-├── tool_view_decision.py    # Visualization tool
+├── 2_tool_view_decision.py    # Visualization tool
 └── tool_conf.yaml           # Tool configuration
 ```
 

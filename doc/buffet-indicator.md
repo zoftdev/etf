@@ -35,7 +35,7 @@ Create or edit `etf/.env`:
 FRED_API_KEY=your_key_here
 ```
 
-The script `fetch_buffet_ind.py` will load this file if present (no extra library).
+The script `buffet_ind/1_fetch_buffet_ind.py` will load this file if present (no extra library).
 
 ### 3. Fetch from FRED
 
@@ -71,9 +71,9 @@ If your CSV has a single “country” column (e.g. English name or `"CODE Name"
 
 | File | Role |
 |------|------|
-| `fetch_buffet_ind.py` | Calls FRED API, writes `data/buffet-ind.csv` (country + year columns). |
-| `parse_buffet_ind.py` | Optional: splits first column into code + name, overwrites same CSV. |
-| `data/buffet-ind.csv` | Input for `buffet_etf_lead_analysis.py` and charts. |
+| `buffet_ind/1_fetch_buffet_ind.py` | Calls FRED API, writes `data/buffet-ind.csv` (normalized format: country_code, country_name, country_code.source, year columns). |
+| `buffet_ind/2_buffet_etf_lead_analysis.py` | Analyzes correlation between Buffett indicator and next-year ETF returns. |
+| `data/buffet-ind.csv` | Input for `buffet_ind/2_buffet_etf_lead_analysis.py` and charts. |
 
 ---
 

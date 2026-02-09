@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"  # Go up from analysis/ to root
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"  # Go up from buffet_ind/ to root
 BUFFET_CSV = DATA_DIR / "buffet-ind.csv"
 ETFA_CSV = DATA_DIR / "etf_price_by_country.csv"
 
@@ -161,7 +161,7 @@ def main() -> None:
         sig = "*" if row["p"] < 0.05 else ""
         print(f"  {row['country_code']}: r = {row['corr']:.3f}, p = {row['p']:.3f}, n = {int(row['n'])} {sig}")
 
-    result_dir = Path(__file__).resolve().parent.parent / "result"  # Go up from analysis/ to root
+    result_dir = Path(__file__).resolve().parent.parent / "result"  # Go up from buffet_ind/ to root
     result_dir.mkdir(parents=True, exist_ok=True)
     corr_df.to_csv(result_dir / "buffet_etf_lead_corr.csv", index=False)
     print(f"\nPer-country correlations saved to {result_dir / 'buffet_etf_lead_corr.csv'}")

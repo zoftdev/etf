@@ -46,7 +46,11 @@ def test_with_mock_data(ticker: str = "ARGT", provider: str = "anthropic"):
     print(f"Provider: {provider}")
     print("="*60)
 
-    from generate_sentiment import ETFSentimentAnalyzer
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("generate_sentiment", Path(__file__).parent / "1_generate_sentiment.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    ETFSentimentAnalyzer = module.ETFSentimentAnalyzer
 
     # Initialize analyzer
     analyzer = ETFSentimentAnalyzer(provider=provider)

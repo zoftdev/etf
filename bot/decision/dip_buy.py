@@ -10,7 +10,7 @@ Responsibilities:
 Current: dip_buy only generates BUY signals (exit handled by bot).
 Future: Some decisions may generate SELL signals too.
 
-Reads params from decision/dip.yaml; reuses logic from dip_buy_backtest.
+Reads params from bot/decision/dip.yaml; reuses logic from dip_buy_backtest.
 """
 from __future__ import annotations
 
@@ -20,17 +20,17 @@ from typing import TYPE_CHECKING, Optional
 
 import pandas as pd
 
-from backtest.dip_buy_backtest import DipBuyParams, is_dip_buy_signal_at_idx
+from dip_buy.dip_buy_backtest import DipBuyParams, is_dip_buy_signal_at_idx
 
 if TYPE_CHECKING:
     from core.etf_data_fetcher import ETFDataFetcher
 
-# Default: decision/dip.yaml next to this file
+# Default: bot/decision/dip.yaml next to this file
 DEFAULT_CONFIG_PATH = Path(__file__).resolve().parent / "dip.yaml"
 
 
 def load_params(config_path: Optional[Path] = None) -> DipBuyParams:
-    """Load DipBuyParams from decision/dip.yaml (only dip_buy section; no exit_rules)."""
+    """Load DipBuyParams from bot/decision/dip.yaml (only dip_buy section; no exit_rules)."""
     path = config_path or DEFAULT_CONFIG_PATH
     params = DipBuyParams()
     if not path.exists():

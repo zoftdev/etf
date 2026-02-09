@@ -112,7 +112,7 @@ def main():
         hovermode="x unified",
         height=500,
     )
-    result_dir = Path(__file__).resolve().parent.parent / "result"  # Go up from analysis/ to root
+    result_dir = Path(__file__).resolve().parent.parent / "result"  # Go up from buffet_ind/ to root
     result_dir.mkdir(parents=True, exist_ok=True)
     out = result_dir / "long_term_by_section.html"
     fig.write_html(str(out))

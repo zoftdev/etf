@@ -24,7 +24,7 @@ def _to_native(obj: Any) -> Any:
     return obj
 
 from core.etf_data_fetcher import ETFDataFetcher
-from backtest.dip_buy_backtest import (
+from dip_buy.dip_buy_backtest import (
     DipBuyParams,
     ExitRules,
     load_dip_defaults,

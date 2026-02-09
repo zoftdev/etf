@@ -2,6 +2,12 @@
 """
 Fetch Buffett Indicator (Stock Market Cap to GDP) from FRED and write data/buffet-ind.csv.
 Requires FRED_API_KEY in environment. Get a free key: https://fredaccount.stlouisfed.org/apikeys
+
+Output format: country_code, country_name, country_code.source, 2004, 2005, ...
+- country_code: 3-letter code (USA, CNA, JPA, ...)
+- country_name: Empty by default (can be filled manually if needed)
+- country_code.source: e.g., "USA.DDDM01USA156NWDB"
+- Year columns: Numeric values for each year
 """
 import csv
 import os
@@ -95,12 +101,14 @@ def main() -> None:
         except Exception as e:
             print(f"Skip {country} ({series_id}): {e}")
             obs = {}
-        row = [country, country_code_source]
+        # Output parsed format: country_code, country_name, country_code.source, year columns
+        # country_name is empty by default (can be filled manually if needed)
+        row = [code, "", country_code_source]
         for y in YEAR_COLUMNS:
             row.append(obs.get(y, ""))
         rows.append(row)
 
-    header = ["country", "country_code.source"] + YEAR_COLUMNS
+    header = ["country_code", "country_name", "country_code.source"] + YEAR_COLUMNS
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)

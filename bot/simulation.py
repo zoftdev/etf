@@ -1063,8 +1063,8 @@ def run_backtest(
 
     # Resolve decision module (entry signal only)
     if decision == "dip_buy":
-        from decision.dip_buy import load_params, signal_at_idx
-        dip_params = load_params(Path(__file__).resolve().parent.parent / "decision" / "dip.yaml")
+        from bot.decision.dip_buy import load_params, signal_at_idx
+        dip_params = load_params(Path(__file__).resolve().parent / "decision" / "dip.yaml")
         need_bars = max(
             dip_params.trend_days + dip_params.slope_lookback_days + 2,
             dip_params.dip_days + 2,

@@ -36,31 +36,31 @@ export OPENAI_MODEL="gpt-4-turbo-preview"  # Optional, defaults to gpt-4-turbo-p
 ### Basic Usage (Claude)
 
 ```bash
-python generate_sentiment.py
+python 1_generate_sentiment.py
 ```
 
 ### Use ChatGPT instead
 
 ```bash
-python generate_sentiment.py --provider openai
+python 1_generate_sentiment.py --provider openai
 ```
 
 ### Process specific ETFs
 
 ```bash
-python generate_sentiment.py --tickers GLD SLV XLK
+python 1_generate_sentiment.py --tickers GLD SLV XLK
 ```
 
 ### Limit number of ETFs (for testing)
 
 ```bash
-python generate_sentiment.py --limit 5
+python 1_generate_sentiment.py --limit 5
 ```
 
 ### Combine options
 
 ```bash
-python generate_sentiment.py --provider openai --tickers ARGT --api-key "your-key"
+python 1_generate_sentiment.py --provider openai --tickers ARGT --api-key "your-key"
 ```
 
 ## Search Strategies

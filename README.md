@@ -36,9 +36,9 @@ uv run serve_result.py                             # → web server :8000
 
 | File | Purpose | Output |
 |------|---------|--------|
-| `fetch_buffet_ind.py` | Fetch Buffett Indicator from FRED - Downloads Stock Market Cap/GDP ratio for ~35 countries | `data/buffet-ind.csv` |
-| `parse_buffet_ind.py` | Parse/clean Buffett CSV - Splits country columns | `data/buffet-ind.csv` |
-| `buffet_etf_lead_analysis.py` | Lead indicator analysis - Correlates Buffett indicator with next-year ETF returns | `result/buffet_etf_lead_*.png/.csv` |
+| `buffet_ind/1_fetch_buffet_ind.py` | Fetch Buffett Indicator from FRED - Downloads Stock Market Cap/GDP ratio for ~35 countries | `data/buffet-ind.csv` |
+| `buffet_ind/2_buffet_etf_lead_analysis.py` | Lead indicator analysis - Correlates Buffett indicator with next-year ETF returns | `result/buffet_etf_lead_*.png/.csv` |
+| `buffet_ind/3_tool_view_performance.py` | Visualize 20-year ETF performance by group (lv2) | `result/long_term_by_section.html` |
 | `build_etf_price_by_country.py` | Map ETF prices to country codes | `data/etf_price_by_country.csv` |
 | `export_etf_price_csv.py` | Export 20-year ETF prices - All tickers Close prices | `data/etf_price.csv` |
 
@@ -72,7 +72,7 @@ uv run serve_result.py                             # → web server :8000
 | `bot/simulation.py` | Full trading simulation - Decision + bot, manages capital | `result/simulation_charts.html` |
 | `bot/smc/__init__.py` | SMC bot - Money management, position sizing | *(runtime only)* |
 | `bot2/decision_rsi.py` | RSI decision module - RSI-based buy/sell signals | *(returns score)* |
-| `bot2/tool_view_decision.py` | View decision output | `result/decision_view.html` |
+| `bot2/2_tool_view_decision.py` | View decision output | `result/decision_view.html` |
 
 ### Technical Indicator Simulation
 
@@ -118,8 +118,9 @@ uv run generate_sentiment_scores.py                # → etf_sentiment_score.yam
 uv run tool_view_sentiment.py                      # → result/sentiment_view.html
 
 # Buffett Indicator
-uv run fetch_buffet_ind.py                         # → data/buffet-ind.csv (needs FRED_API_KEY)
-uv run buffet_etf_lead_analysis.py                 # → result/buffet_etf_lead_*.png
+uv run buffet_ind/1_fetch_buffet_ind.py            # → data/buffet-ind.csv (needs FRED_API_KEY)
+uv run buffet_ind/2_buffet_etf_lead_analysis.py    # → result/buffet_etf_lead_*.png
+uv run buffet_ind/3_tool_view_performance.py       # → result/long_term_by_section.html
 
 # Long-term
 uv run long-term-check.py                          # → result/long_term_by_section.html
