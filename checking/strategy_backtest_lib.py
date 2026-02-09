@@ -141,6 +141,29 @@ def strat_ema_crossover(close: pd.Series, fast: int = 20, slow: int = 200, band_
     return equity
 
 
+def strat_momentum(close: pd.Series, lookback_days: int = 252, skip_recent_days: int = 21, threshold_pct: float = 0.0) -> pd.Series:
+    """Time-series (absolute) momentum.
+
+    position=1 when trailing return over lookback_days (ending skip_recent_days ago)
+    is > threshold_pct.
+
+    Example defaults: lookback=252, skip=21, threshold=0.
+    """
+    close = close.dropna()
+    if len(close) < lookback_days + skip_recent_days + 5:
+        return strat_buy_hold(close)
+
+    shifted = close.shift(skip_recent_days)
+    mom = shifted / shifted.shift(lookback_days) - 1.0
+    position = (mom > (threshold_pct / 100.0)).astype(float)
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = position.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
 def available_strategies() -> dict[str, Strategy]:
     # As we implement more strategies, add them here.
     return {
@@ -154,5 +177,10 @@ def available_strategies() -> dict[str, Strategy]:
             "ema_20_200",
             "EMA Crossover (20/200)",
             lambda close: strat_ema_crossover(close, fast=20, slow=200, band_pct=0.0),
+        ),
+        "mom_252_skip21": Strategy(
+            "mom_252_skip21",
+            "Momentum (252d, skip 21d)",
+            lambda close: strat_momentum(close, lookback_days=252, skip_recent_days=21, threshold_pct=0.0),
         ),
     }
