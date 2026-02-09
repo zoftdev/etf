@@ -22,6 +22,9 @@ ENV/
 cache/
 *.pkl
 
+# Generated reports
+result/
+
 # IDE
 .vscode/
 .idea/
