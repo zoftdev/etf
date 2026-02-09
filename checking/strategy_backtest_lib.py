@@ -118,6 +118,29 @@ def strat_sma_crossover(close: pd.Series, fast: int = 50, slow: int = 200) -> pd
     return equity
 
 
+def strat_ema_crossover(close: pd.Series, fast: int = 20, slow: int = 200, band_pct: float = 0.0) -> pd.Series:
+    """EMA crossover with optional band to reduce whipsaw.
+
+    position=1 when ema_fast > ema_slow*(1+band_pct/100)
+    band_pct is in percent (e.g. 0.5 means 0.5%).
+    """
+    close = close.dropna()
+    if len(close) < slow + 5:
+        return strat_buy_hold(close)
+
+    ema_fast = close.ewm(span=fast, adjust=False).mean()
+    ema_slow = close.ewm(span=slow, adjust=False).mean()
+
+    thresh = ema_slow * (1.0 + band_pct / 100.0)
+    position = (ema_fast > thresh).astype(float)
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = position.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
 def available_strategies() -> dict[str, Strategy]:
     # As we implement more strategies, add them here.
     return {
@@ -126,5 +149,10 @@ def available_strategies() -> dict[str, Strategy]:
             "sma_50_200",
             "SMA Crossover (50/200)",
             lambda close: strat_sma_crossover(close, fast=50, slow=200),
+        ),
+        "ema_20_200": Strategy(
+            "ema_20_200",
+            "EMA Crossover (20/200)",
+            lambda close: strat_ema_crossover(close, fast=20, slow=200, band_pct=0.0),
         ),
     }
