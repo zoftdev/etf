@@ -23,8 +23,8 @@ def _to_native(obj: Any) -> Any:
         return int(obj) if isinstance(obj, np.integer) else float(obj)
     return obj
 
-from etf_data_fetcher import ETFDataFetcher
-from dip_buy_backtest import (
+from core.etf_data_fetcher import ETFDataFetcher
+from backtest.dip_buy_backtest import (
     DipBuyParams,
     ExitRules,
     load_dip_defaults,

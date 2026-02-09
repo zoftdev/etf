@@ -10,8 +10,8 @@ import os
 import sys
 from pathlib import Path
 
-# Get the result directory (relative to script location)
-SCRIPT_DIR = Path(__file__).parent
+# Get the result directory (relative to project root)
+SCRIPT_DIR = Path(__file__).resolve().parent.parent  # Go up from tools/ to root
 RESULT_DIR = SCRIPT_DIR / "result"
 
 if not RESULT_DIR.exists():

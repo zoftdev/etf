@@ -14,7 +14,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 # Add parent directory to path to import modules
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from etf_data_fetcher import ETFDataFetcher
+from core.etf_data_fetcher import ETFDataFetcher
 from bot2.decision_rsi import RSIDecision
 
 

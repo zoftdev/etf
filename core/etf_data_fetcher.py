@@ -16,7 +16,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 class ETFDataFetcher:
     """Fetches and caches ETF data with optimization for large date ranges"""
     
-    def __init__(self, yaml_path: str = "etf.yaml", cache_dir: str = "cache"):
+    def __init__(self, yaml_path: str = "config/etf.yaml", cache_dir: str = "cache"):
         self.yaml_path = yaml_path
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(exist_ok=True)

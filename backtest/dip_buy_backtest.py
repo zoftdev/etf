@@ -17,7 +17,7 @@ import pandas as pd
 import numpy as np
 import yaml
 
-from etf_data_fetcher import ETFDataFetcher
+from core.etf_data_fetcher import ETFDataFetcher
 
 DEFAULT_CONFIG_PATH = Path(__file__).resolve().parent / "dip_default.yaml"
 SIM_CONFIG_PATH = Path(__file__).resolve().parent / "dip-sim.yaml"

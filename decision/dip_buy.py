@@ -20,10 +20,10 @@ from typing import TYPE_CHECKING, Optional
 
 import pandas as pd
 
-from dip_buy_backtest import DipBuyParams, is_dip_buy_signal_at_idx
+from backtest.dip_buy_backtest import DipBuyParams, is_dip_buy_signal_at_idx
 
 if TYPE_CHECKING:
-    from etf_data_fetcher import ETFDataFetcher
+    from core.etf_data_fetcher import ETFDataFetcher
 
 # Default: decision/dip.yaml next to this file
 DEFAULT_CONFIG_PATH = Path(__file__).resolve().parent / "dip.yaml"

@@ -6,7 +6,7 @@ import dash
 from dash import dcc, html, Input, Output, State, callback_context, ALL
 import plotly.graph_objs as go
 import plotly.express as px
-from etf_data_fetcher import ETFDataFetcher
+from core.etf_data_fetcher import ETFDataFetcher
 import dash_bootstrap_components as dbc
 from datetime import datetime
 import pandas as pd

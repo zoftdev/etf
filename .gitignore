@@ -14,6 +14,10 @@ venv/
 env/
 ENV/
 
+# Secrets / local config
+.env
+.env.local
+
 # Cache directory
 cache/
 *.pkl

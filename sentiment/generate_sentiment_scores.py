@@ -206,9 +206,9 @@ def get_sentiment_label(score: float) -> str:
 
 def main():
     """Main function."""
-    script_dir = Path(__file__).parent
+    script_dir = Path(__file__).resolve().parent.parent  # Go up from sentiment/ to root
     sentiment_dir = script_dir / 'sentiment_data'
-    output_file = script_dir / 'etf_sentiment_score.yaml'
+    output_file = script_dir / 'sentiment' / 'etf_sentiment_score.yaml'
     
     print(f"Loading sentiment files from {sentiment_dir}...")
     sentiment_data = load_sentiment_files(sentiment_dir)

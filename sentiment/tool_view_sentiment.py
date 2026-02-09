@@ -33,13 +33,13 @@ from typing import Dict, List, Optional, Tuple
 # Add parent directory to path to import modules
 sys.path.insert(0, str(Path(__file__).parent))
 
-from etf_data_fetcher import ETFDataFetcher
+from core.etf_data_fetcher import ETFDataFetcher
 
 
 class SentimentViewer:
     """Visualize sentiment predictions vs actual ETF performance"""
     
-    def __init__(self, sentiment_score_path: str = "etf_sentiment_score.yaml",
+    def __init__(self, sentiment_score_path: str = "sentiment/etf_sentiment_score.yaml",
                  sentiment_data_dir: str = "sentiment_data"):
         """
         Initialize sentiment viewer

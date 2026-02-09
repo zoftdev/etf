@@ -23,7 +23,7 @@ _ETF_ROOT = _SCRIPT_DIR.parent
 if str(_ETF_ROOT) not in sys.path:
     sys.path.insert(0, str(_ETF_ROOT))
 
-from etf_data_fetcher import ETFDataFetcher
+from core.etf_data_fetcher import ETFDataFetcher
 
 # Import backtest engine from same package
 sys.path.insert(0, str(_SCRIPT_DIR))
@@ -506,7 +506,7 @@ def main() -> None:
     backtest_cfg = config.get("backtest") or {}
     years = backtest_cfg.get("years", 20)
 
-    fetcher = ETFDataFetcher(yaml_path=str(_ETF_ROOT / "etf.yaml"), cache_dir=str(_ETF_ROOT / "cache"))
+    fetcher = ETFDataFetcher(yaml_path=str(_ETF_ROOT / "config" / "etf.yaml"), cache_dir=str(_ETF_ROOT / "cache"))
     tickers = list(fetcher.tickers_map.keys())
     if args.limit:
         tickers = tickers[: args.limit]

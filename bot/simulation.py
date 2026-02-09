@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 import yaml
 
-from etf_data_fetcher import ETFDataFetcher
+from core.etf_data_fetcher import ETFDataFetcher
 
 try:
     import plotly.graph_objects as go
