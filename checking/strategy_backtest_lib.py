@@ -164,6 +164,61 @@ def strat_momentum(close: pd.Series, lookback_days: int = 252, skip_recent_days:
     return equity
 
 
+def _rsi_wilder(close: pd.Series, window: int = 14) -> pd.Series:
+    """Wilder RSI (EMA-smoothed gains/losses)."""
+    delta = close.diff()
+    gain = delta.clip(lower=0.0)
+    loss = (-delta).clip(lower=0.0)
+
+    avg_gain = gain.ewm(alpha=1.0 / window, adjust=False, min_periods=window).mean()
+    avg_loss = loss.ewm(alpha=1.0 / window, adjust=False, min_periods=window).mean()
+
+    rs = avg_gain / avg_loss
+    rsi = 100.0 - (100.0 / (1.0 + rs))
+    return rsi
+
+
+def strat_rsi_mean_reversion(
+    close: pd.Series,
+    rsi_window: int = 14,
+    entry_rsi: float = 30.0,
+    exit_rsi: float = 50.0,
+) -> pd.Series:
+    """RSI mean reversion (long-only).
+
+    Rule:
+    - enter long when RSI < entry_rsi
+    - exit to cash when RSI > exit_rsi
+
+    No max-hold yet.
+    """
+    close = close.dropna()
+    if len(close) < rsi_window + 10:
+        return strat_buy_hold(close)
+
+    rsi = _rsi_wilder(close, window=rsi_window)
+
+    # build position statefully
+    pos = pd.Series(0.0, index=close.index)
+    in_pos = False
+    for i in range(len(close)):
+        v = rsi.iloc[i]
+        if not np.isfinite(v):
+            pos.iloc[i] = 1.0 if in_pos else 0.0
+            continue
+        if not in_pos and v < entry_rsi:
+            in_pos = True
+        elif in_pos and v > exit_rsi:
+            in_pos = False
+        pos.iloc[i] = 1.0 if in_pos else 0.0
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = pos.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
 def available_strategies() -> dict[str, Strategy]:
     # As we implement more strategies, add them here.
     return {
@@ -182,5 +237,10 @@ def available_strategies() -> dict[str, Strategy]:
             "mom_252_skip21",
             "Momentum (252d, skip 21d)",
             lambda close: strat_momentum(close, lookback_days=252, skip_recent_days=21, threshold_pct=0.0),
+        ),
+        "rsi_14_30_50": Strategy(
+            "rsi_14_30_50",
+            "RSI Mean Reversion (14, entry 30, exit 50)",
+            lambda close: strat_rsi_mean_reversion(close, rsi_window=14, entry_rsi=30.0, exit_rsi=50.0),
         ),
     }
