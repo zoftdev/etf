@@ -1,0 +1,131 @@
+{
+  "2010": {
+    "description": "Views from 2010 → 2021, 2022 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.95,
+        "note": "Fastest growth in East Asia (GEP 2010); Goldman/PwC saw China overtaking US by mid-2020s."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.9,
+        "note": "Strong growth in GEP 2010; BRIC; among largest economies by 2025."
+      },
+      {
+        "rank": 3,
+        "name": "Brazil",
+        "score": 0.85,
+        "note": "BRIC; Latin America leader in GEP 2010; top-5 economy by 2050 (GS)."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.75,
+        "note": "East Asia & Pacific standout in GEP 2010; N-11."
+      },
+      {
+        "rank": 5,
+        "name": "Russia",
+        "score": 0.7,
+        "note": "BRIC; post-crisis recovery; top global economies by 2050 (GS)."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.8,
+        "note": "Central to 2010 outlooks; multi-year price forecasts; clearly hot in 2010 view."
+      },
+      {
+        "name": "Metals",
+        "score": 0.45,
+        "note": "In outlooks but secondary to energy."
+      },
+      {
+        "name": "Agriculture",
+        "score": 0.4,
+        "note": "In outlooks but secondary."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "Main growth sector: cloud, semiconductor equipment; expected to lead next decade."
+      },
+      {
+        "name": "Healthcare",
+        "score": 0.6,
+        "note": "Cited as another big growth area for the coming decade."
+      }
+    ]
+  },
+  "2011": {
+    "description": "Views from 2011 → 2012, 2013 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.92,
+        "note": "Two-speed recovery leader; IMF/WB EM growth ~6%; GS BRIC, top economy by 2050."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.88,
+        "note": "BRIC; strong in 2011 outlooks; among largest economies by 2025."
+      },
+      {
+        "rank": 3,
+        "name": "Brazil",
+        "score": 0.82,
+        "note": "BRIC; Latin America leader in GEP 2011; developing countries half of global growth."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.72,
+        "note": "N-11; East Asia standout in GEP 2011; strong domestic demand and capital flows."
+      },
+      {
+        "rank": 5,
+        "name": "Russia",
+        "score": 0.68,
+        "note": "BRIC; post-crisis recovery; euro-area and commodity exposure in WEO Sep 2011."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.78,
+        "note": "Central to 2011 outlooks; oil-producing unrest; OPEC $70-90/bbl; oil scarcity in WEO Apr 2011."
+      },
+      {
+        "name": "Metals",
+        "score": 0.58,
+        "note": "Base metals +15% forecast (WB); strong EM demand; hot in 2011 commodity narratives."
+      },
+      {
+        "name": "Agriculture / food",
+        "score": 0.45,
+        "note": "High food prices in GEP 2011; risk of repeat of 2008 conditions."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.82,
+        "note": "Cyclical Stage I recovery; >50% S&P profits from abroad; 2011 recovery rally favored tech."
+      },
+      {
+        "name": "Healthcare",
+        "score": 0.52,
+        "note": "Defensive sector; less favored for 2011 recovery but cited in investing roundups."
+      }
+    ]
+  },
+  "$schema_note": "One key per forecast publication year (2010, 2011, ...). Same shape each year. Score 0-1; < 0.3 = not much, remove or set low."
+}
