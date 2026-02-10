@@ -28,7 +28,8 @@ PERIOD_OPTIONS = [
     {'label': '1 Month', 'value': '1m'},
     {'label': '6 Months', 'value': '6m'},
     {'label': '1 Year', 'value': '1y'},
-    {'label': '3 Years', 'value': '3y'}
+    {'label': '3 Years', 'value': '3y'},
+    {'label': '20 Years', 'value': '20y'}
 ]
 
 # Shared group color map (same order as bar chart "Group color" mode)
@@ -114,13 +115,13 @@ app.layout = dbc.Container([
                 html.Div(id='group-checkboxes'),
                 
                 html.Hr(),
-                html.Label("Bar chart color:", className="fw-bold"),
+                html.Label("Chart color (line + bar):", className="fw-bold"),
                 dcc.Dropdown(
                     id='bar-color-mode',
                     options=[
                         {'label': 'Profit / Loss (green / red)', 'value': 'pnl'},
                         {'label': 'Group color', 'value': 'group'},
-                        {'label': 'Item color (from performance chart)', 'value': 'item'},
+                        {'label': 'Item color (per ETF)', 'value': 'item'},
                     ],
                     value='pnl',
                     clearable=False,
@@ -417,42 +418,53 @@ def update_chart(period, sma_days, group_values, bar_color_mode, ui_state, sessi
             return df['pct_change']
         return ((smooth - first) / first) * 100.0
 
-    # Create figure
-    fig = go.Figure()
-    line_colors = px.colors.qualitative.Set3
-    color_idx = 0
-    ticker_to_item_color = {}
-
+    # Build single list of tickers we actually have data for (sync line chart and bar chart)
+    chart_tickers = []
     for ticker in visible_tickers:
-        if ticker in data_results:
-            df = data_results[ticker]
-            ticker_info = fetcher.get_ticker_info(ticker)
-            name = ticker_info['name'] if ticker_info else ticker
+        if ticker not in data_results:
+            continue
+        df = data_results[ticker]
+        if df.empty or 'pct_change' not in df.columns:
+            continue
+        info = fetcher.get_ticker_info(ticker) or {}
+        name = info.get('name', ticker)
+        group = info.get('group', '')
+        total_pct = float(df['pct_change'].iloc[-1]) if len(df) else 0.0
+        chart_tickers.append((ticker, df, name, group, total_pct))
 
-            pct_series = pct_series_for_df(df)
-            line_color = line_colors[color_idx % len(line_colors)]
-            ticker_to_item_color[ticker] = line_color
-            color_idx += 1
-
-            fig.add_trace(go.Scatter(
-                x=df.index.tolist(),
-                y=pct_series.tolist(),
-                mode='lines',
-                name=f"{ticker} - {name}",
-                line=dict(color=line_color, width=2),
-                hovertemplate=f'<b>{ticker}</b><br>' +
-                             f'{name}<br>' +
-                             'Date: %{x}<br>' +
-                             'Change: %{y:.2f}%<extra></extra>',
-                hoverlabel=dict(
-                    bgcolor='white',
-                    bordercolor=line_color,
-                    font=dict(color='blue', size=12)
-                )
-            ))
-
-    # Group colors for bar chart (same as sidebar)
     group_to_color = get_group_colors()
+    line_colors = px.colors.qualitative.Set3
+    mode = bar_color_mode or 'pnl'
+
+    fig = go.Figure()
+    ticker_to_item_color = {}
+    for idx, (ticker, df, name, group, total_pct) in enumerate(chart_tickers):
+        item_color = line_colors[idx % len(line_colors)]
+        ticker_to_item_color[ticker] = item_color
+        if mode == 'pnl':
+            line_color = "#0B6E4F" if total_pct >= 0 else "#B00020"
+        elif mode == 'group':
+            line_color = group_to_color.get(group, "#888")
+        else:
+            line_color = item_color
+
+        pct_series = pct_series_for_df(df)
+        fig.add_trace(go.Scatter(
+            x=df.index.tolist(),
+            y=pct_series.tolist(),
+            mode='lines',
+            name=f"{ticker} - {name}",
+            line=dict(color=line_color, width=2),
+            hovertemplate=f'<b>{ticker}</b><br>' +
+                         f'{name}<br>' +
+                         'Date: %{x}<br>' +
+                         'Change: %{y:.2f}%<extra></extra>',
+            hoverlabel=dict(
+                bgcolor='white',
+                bordercolor=line_color,
+                font=dict(color='blue', size=12)
+            )
+        ))
 
     # Update layout
     period_label = next((opt['label'] for opt in PERIOD_OPTIONS if opt['value'] == period), period)
@@ -482,18 +494,9 @@ def update_chart(period, sma_days, group_values, bar_color_mode, ui_state, sessi
         showlegend=show_legend
     )
 
-    # Period return bar chart: total % change per ETF (always from actual close, not SMA)
+    # Period return bar chart: same tickers as performance chart (sync show/hide)
     rows_pnl = []
-    for ticker in visible_tickers:
-        if ticker not in data_results:
-            continue
-        df = data_results[ticker]
-        if df.empty or 'pct_change' not in df.columns:
-            continue
-        total_pct = float(df['pct_change'].iloc[-1]) if len(df) else 0.0
-        info = fetcher.get_ticker_info(ticker) or {}
-        name = info.get('name', ticker)
-        group = info.get('group', '')
+    for ticker, df, name, group, total_pct in chart_tickers:
         rows_pnl.append({
             "ticker": ticker,
             "name": name,
@@ -585,7 +588,7 @@ def update_chart(period, sma_days, group_values, bar_color_mode, ui_state, sessi
             )
     
     # Chart info
-    info_text = f"Showing {len(data_results)} ETFs from {len(visible_groups)} groups"
+    info_text = f"Showing {len(chart_tickers)} ETFs from {len(visible_groups)} groups"
     if errors:
         info_text += f" ({len(errors)} errors)"
 
@@ -601,5 +604,4 @@ if __name__ == '__main__':
     print(f"\nStarting server...")
     print(f"Open http://127.0.0.1:8050 in your browser")
     print(f"{'='*60}\n")
-    
-    app.run(debug=True,host="0.0.0.0", port=8050)
+    app.run(debug=True, host="0.0.0.0", port=8050)

@@ -212,8 +212,13 @@ def main():
         yaml_path=str(project_root / "data" / "etf-v3.yaml"),
         cache_dir=str(project_root / "cache"),
     )
-    tickers = list(fetcher.tickers_map.keys())
-    print(f"[job_{JOB_NAME}] {len(tickers)} ETFs from etf-v3.yaml")
+    all_tickers = list(fetcher.tickers_map.keys())
+    # Exclude commodity group (plan: universe without commodity)
+    tickers = [
+        t for t in all_tickers
+        if (fetcher.get_ticker_info(t) or {}).get("group_key", "").split(".")[0] != "commodity"
+    ]
+    print(f"[job_{JOB_NAME}] {len(tickers)} ETFs from etf-v3.yaml (excl. commodity, total {len(all_tickers)})")
 
     # write plan
     write_plan(start_time, len(tickers))

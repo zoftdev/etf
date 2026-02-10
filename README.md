@@ -99,7 +99,7 @@ uv run serve_result.py                             # → web server :8000
 
 ```bash
 # Dashboard
-uv run etf_comparison.py                           # → web :8050
+uv run python -m dashboard.etf_comparison          # → web :8050
 
 # Data Export  
 uv run export_etf_price_csv.py                     # → data/etf_price.csv

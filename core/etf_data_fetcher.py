@@ -227,7 +227,8 @@ class ETFDataFetcher:
             '1m': 30,
             '6m': 180,
             '1y': 365,
-            '3y': 1095
+            '3y': 1095,
+            '20y': 365 * 20,
         }
         return period_map.get(period, 7)
     

@@ -1,7 +1,7 @@
 # Alice Autopilot Plan
 
 ## Objective
-Find ETF strategy variants that beat buy_and_hold across a universe of ~59 ETFs.
+Find ETF strategy variants that beat buy_and_hold across a universe of ETFs **excluding the commodity group** (etf-v3.yaml top-level group `commodity`).
 
 **"Beat" definition:** A variant beats buy_hold if:
 - Its `mean(cagr_pct)` across all 59 ETFs > baseline avg CAGR (6.08%), **OR**
@@ -97,6 +97,9 @@ This is handled automatically in `job_strategy_batch.py`.
 ## Data Sources (read-only, never modify)
 - `core/etf_data_fetcher.py` -- ETFDataFetcher class for fetching OHLCV data
 - `data/etf-v3.yaml` -- ETF universe (~59 ETFs)
+
+## Universe Filter
+- **Commodity excluded:** All jobs (001–014) filter out the `commodity` group. Tickers whose `group_key` (from fetcher) has top-level segment `commodity` are excluded. Baseline and strategy comparisons use only non-commodity ETFs.
 
 ## File Output Convention
 ```
