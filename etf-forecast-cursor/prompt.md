@@ -67,22 +67,40 @@ Root: one key per forecast publication year. Same shape every year.
 
 ## Example search terms (by topic)
 
-Use these when searching for historical forecasts published in **YYYY**. Replace YYYY with the target year.
+Use these when searching for outlooks published in **YYYY** that are more predictive of **ETF price** (earnings, momentum, valuation) than GDP-only. Replace YYYY with the target year and the next 1–2 years as needed.
 
-### Country
-- `top countries growth outlook YYYY next year two years`
-- `emerging markets developed markets forecast YYYY GDP equity`
-- `country equity market outlook YYYY best regions`
+### Country (regional / country ETFs)
+
+**Earnings and revisions**
+- earnings growth outlook and EPS revisions by country or region YYYY and next 1–2 years, which developed and emerging markets have strongest analyst upgrades
+
+**Momentum and relative strength**
+- country ETF relative strength ranking 6 month 12 month momentum, best performing single-country and regional equity ETFs year to date (as of YYYY)
+
+**Valuation and flows**
+- country or regional market P/E CAPE valuation comparison YYYY, ETF fund flows by country or region, most undervalued developed and emerging markets
 
 ### Commodity
-- `commodity outlook YYYY oil metals agriculture next year`
-- `energy crude oil metals forecast YYYY price`
-- `hot commodity sector YYYY investment outlook`
+
+**Supply, demand, inventories**
+- commodity supply demand balance YYYY and next 1–2 years, oil metals agriculture inventory and production outlook, OPEC and mining supply forecasts
+
+**Forward curves and positioning**
+- commodity futures term structure backwardation contango YYYY, CFTC positioning and open interest by commodity, commodity ETF flows and sentiment
+
+**Macro and real rates**
+- commodity prices vs real interest rates and dollar YYYY, inflation expectations and commodity outlook, gold copper oil macro drivers next 12 months
 
 ### US sector
-- `US sector outlook YYYY S&P 500 next year`
-- `sector rotation sector forecast YYYY technology financials`
-- `best performing sectors outlook YYYY equity`
+
+**Earnings and revisions**
+- S&P 500 sector earnings growth and EPS revisions YYYY and next 1–2 years, which sectors have strongest analyst upgrades, sector forward earnings visibility
+
+**Relative strength and rotation**
+- sector rotation and relative strength S&P 500 YYYY, best performing sectors 6 month 12 month momentum, sector leadership and breadth
+
+**Valuation and rates**
+- S&P 500 sector P/E valuation comparison YYYY, sector performance in rising vs falling rate environment, sector sensitivity to Fed and Treasury yields
 
 ---
  
