@@ -1,12 +1,12 @@
 # Alice Checking Progress
 
-_Updated: 2026-02-10 07:52:43_
+_Updated: 2026-02-10 08:14:00_
 
 | Job | Status | Result |
 |-----|--------|--------|
 | 001-buy_hold | COMPLETED | job-result-001-buy_hold.md |
-| 002-sma | pending | - |
-| 003-ema | pending | - |
+| 002-sma | COMPLETED | job-result-002-sma.md |
+| 003-ema | COMPLETED | job-result-003-ema.md |
 | 004-momentum | pending | - |
 | 005-rsi | pending | - |
 | 006-bollinger | pending | - |
