@@ -19,7 +19,9 @@ Back in YYYY, find forecasts and outlooks for ZZZZ, AAAA or the future. Extract:
 
 ## Main task
 
-Back in **YYYY**, find forecasts and outlooks that targeted next one,two year or fure the future**. Extract and fill:
+Back in **YYYY**, find forecasts and outlooks that targeted next one, two year or the future. Extract and fill:
+
+> **Highlight:** We want **turnaround or jump** — situations where **current ETF prices do not yet reflect** the forecast. Prioritise outlooks that, if right, would imply a catch-up or re-rating in the related ETFs (country / commodity / sector), not consensus already in the price.
 
 1. **Top 5 countries** (from those forecasts)
 2. **Top commodity** (from those forecasts; if none is clearly “hot”, use low score or omit)
@@ -68,6 +70,8 @@ Root: one key per forecast publication year. Same shape every year.
 ## Example search terms (by topic)
 
 Use these when searching for outlooks published in **YYYY** that are more predictive of **ETF price** (earnings, momentum, valuation) than GDP-only. Replace YYYY with the target year and the next 1–2 years as needed.
+
+**We care about turnaround or jump:** favour sources that point to **mispricing** or **under-reaction** — where the forecast implies upside (or a turn) that **current ETF levels do not yet reflect**. Avoid treating consensus “top country” or “hot sector” as sufficient if it is already priced in.
 
 ### Country (regional / country ETFs)
 
