@@ -30,6 +30,10 @@ sys.path.insert(0, str(project_root))
 from checking.strategy_backtest_lib import compute_metrics, safe_close, strat_buy_hold
 from checking.tool_view_verify_hold_etf import get_group_lv2
 from core.etf_data_fetcher import ETFDataFetcher
+from alice_checking.compare_utils import (
+    init_compare_result,
+    append_job_section,
+)
 
 JOB_ID = "001"
 JOB_NAME = "buy_hold"
@@ -148,51 +152,52 @@ def write_result(
 
 
 def append_compare_result(df: pd.DataFrame) -> Path:
-    """Append this job's summary to the shared compare_result.md."""
+    """Create compare_result.md with baseline thresholds, scoreboard, and detail section."""
     path = OUT_DIR / "compare_result.md"
 
-    # create header if file doesn't exist
-    if not path.exists():
-        header = (
-            "# Compare Result (across all jobs)\n\n"
-            "_This file is appended by each job. "
-            "Shows baseline and winning variants._\n\n---\n\n"
-        )
-        path.write_text(header, encoding="utf-8")
+    if df.empty:
+        return path
 
+    avg_cagr = df["cagr_pct"].mean()
+    avg_sharpe = df["sharpe"].mean()
+    median_cagr = df["cagr_pct"].median()
+    median_sharpe = df["sharpe"].median()
+    avg_mdd = df["max_drawdown_pct"].mean()
+
+    # Create file with header + empty scoreboard
+    init_compare_result(
+        path,
+        avg_cagr=avg_cagr,
+        avg_sharpe=avg_sharpe,
+        median_cagr=median_cagr,
+        median_sharpe=median_sharpe,
+        avg_mdd=avg_mdd,
+        etf_count=len(df),
+    )
+
+    # Append baseline detail section
     lines = []
     lines.append(f"## Job {JOB_ID}: {JOB_NAME} (baseline)")
     lines.append(f"_Run: {datetime.now():%Y-%m-%d %H:%M:%S}_\n")
-    lines.append("This is the **buy & hold baseline**. All future jobs compare against these numbers.\n")
+    lines.append(
+        "This is the **buy & hold baseline**. "
+        "All future jobs compare against these numbers.\n"
+    )
 
-    if not df.empty:
-        lines.append("### Avg Metrics (across all ETFs)")
-        lines.append("| Metric | Value |")
-        lines.append("|--------|-------|")
-        lines.append(f"| Avg CAGR % | {df['cagr_pct'].mean():.2f} |")
-        lines.append(f"| Median CAGR % | {df['cagr_pct'].median():.2f} |")
-        lines.append(f"| Avg Sharpe | {df['sharpe'].mean():.2f} |")
-        lines.append(f"| Median Sharpe | {df['sharpe'].median():.2f} |")
-        lines.append(f"| Avg Max DD % | {df['max_drawdown_pct'].mean():.2f} |")
-        lines.append(f"| ETFs | {len(df)} |")
-        lines.append("")
-
-        top = df.nlargest(10, "cagr_pct")
-        lines.append("### Top 10 ETFs by CAGR")
-        lines.append("| Ticker | Group | CAGR % | Sharpe | Max DD % | Total Ret % |")
-        lines.append("|--------|-------|--------|--------|----------|-------------|")
-        for _, r in top.iterrows():
-            lines.append(
-                f"| {r['ticker']} | {r['group']} | {r['cagr_pct']:.2f} "
-                f"| {r['sharpe']:.2f} | {r['max_drawdown_pct']:.2f} "
-                f"| {r['total_return_pct']:.1f} |"
-            )
-        lines.append("")
-
+    top = df.nlargest(10, "cagr_pct")
+    lines.append("### Top 10 ETFs by CAGR")
+    lines.append("| Ticker | Group | CAGR % | Sharpe | Max DD % | Total Ret % |")
+    lines.append("|--------|-------|--------|--------|----------|-------------|")
+    for _, r in top.iterrows():
+        lines.append(
+            f"| {r['ticker']} | {r['group']} | {r['cagr_pct']:.2f} "
+            f"| {r['sharpe']:.2f} | {r['max_drawdown_pct']:.2f} "
+            f"| {r['total_return_pct']:.1f} |"
+        )
+    lines.append("")
     lines.append("---\n")
 
-    with open(path, "a", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+    append_job_section(path, lines)
 
     return path
 
