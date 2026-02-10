@@ -1,6 +1,6 @@
 # Prompt: Fill missing ETF mappings
 
-When `makro-etf-colreated/compare_forecast_vs_etf.py` reports unmappable symbols, it writes `makro-etf-colreated/forecast-missing.json` (same format as `etf-mapping.json`) and exits. Use this flow to add the missing ETFs.
+When `makro-etf-colreated/1_create_mapping.py` reports unmappable symbols, it writes `makro-etf-colreated/forecast-missing.json` (same format as `etf-mapping.json`) and exits. Use this flow to add the missing ETFs.
 
 ## 1. See what’s missing
 
@@ -44,7 +44,7 @@ Valid tickers for the compare script are the **columns** of `data/etf_price.csv`
 ## 5. Re-run the compare
 
 ```bash
-uv run python makro-etf-colreated/compare_forecast_vs_etf.py
+uv run python makro-etf-colreated/1_create_mapping.py
 ```
 
 - If everything is mappable: it prints “All forecast symbols mappable” and exits 0.

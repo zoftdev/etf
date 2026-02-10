@@ -652,5 +652,133 @@
       }
     ]
   },
+  "2021": {
+    "description": "Views from 2021 → 2022, 2023 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.84,
+        "note": "World Bank GEP Jun 2021 projected China 8.5% in 2021; IMF WEO Oct 2021 highlighted major economies and divergences; China key driver of global recovery."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.8,
+        "note": "IMF WEO Oct 2021 and World Bank GEP Jun 2021 emphasized emerging Asia; India central to South Asia and EM growth narrative."
+      },
+      {
+        "rank": 3,
+        "name": "United States",
+        "score": 0.72,
+        "note": "World Bank GEP Jun 2021 projected US 6.8% in 2021; IMF WEO Oct 2021 advanced economies recovering faster; US policy support central."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.54,
+        "note": "World Bank GEP Jun 2021 East Asia & Pacific; IMF WEO Oct 2021 EM Asia; Indonesia part of EM recovery story."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.48,
+        "note": "World Bank GEP Jun 2021 Latin America; IMF WEO Oct 2021 commodity exporters and uneven recovery; pandemic/finance constraints."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.82,
+        "note": "World Bank CMO Oct 2021 oil ~$74/bbl 2022, soaring energy prices; CMO Apr 2021 commodity stabilization on recovery; energy hot in 2021."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Energy",
+        "score": 0.8,
+        "note": "FactSet Dec 2021 Energy 151.7% CY2022 earnings growth, largest contributor; Kiplinger/WS Dec 2021 Energy top 2021 performer, favored for 2022."
+      },
+      {
+        "name": "Financials",
+        "score": 0.7,
+        "note": "Kiplinger and Wall Street consensus Dec 2021 Financials on rising rates and growth; major banks overweight financials for 2022."
+      },
+      {
+        "name": "Industrials",
+        "score": 0.64,
+        "note": "FactSet Dec 2021 projected Industrials 27.4% earnings growth for CY 2022, among top sector growth rates."
+      }
+    ]
+  },
+  "2022": {
+    "description": "Views from 2022 → 2023, 2024 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.82,
+        "note": "IMF WEO Oct 2022: growth prospects in China and property sector crisis key to outlook; World Bank GEP Jun 2022 China central to EM/Asia narrative."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.78,
+        "note": "World Bank GEP Jun 2022 EMDE downgrades; IMF WEO Oct 2022 broad-based slowdown; India central to emerging Asia/South Asia."
+      },
+      {
+        "rank": 3,
+        "name": "United States",
+        "score": 0.72,
+        "note": "IMF WEO Oct 2022 tightening and diverging policy paths; World Bank GEP Jun 2022 advanced-economy slowdown; US key to 2023 outlook."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.52,
+        "note": "World Bank GEP Jun 2022 East Asia & Pacific; IMF WEO Oct 2022 EM Asia; Indonesia in EM resilience narrative."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.48,
+        "note": "World Bank GEP Jun 2022 Latin America and Ukraine spillovers; IMF WEO Oct 2022 EMDE debt distress; Brazil in uneven EM narrative."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.84,
+        "note": "World Bank CMO Oct 2022: energy +60% in 2022, 11% decline 2023 but 75% above 5-yr avg; Brent ~$92/bbl 2023; CMO Apr 2022 oil ~$100 2022."
+      },
+      {
+        "name": "Agriculture / food",
+        "score": 0.58,
+        "note": "World Bank CMO Oct 2022: food-price inflation very high in South Asia and other EMDE regions; food crisis and Ukraine disruptions."
+      },
+      {
+        "name": "Metals",
+        "score": 0.42,
+        "note": "World Bank CMO Oct 2022: metals -15% in 2023 on weaker growth and China slowdown; secondary to energy/food."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Healthcare",
+        "score": 0.76,
+        "note": "Business Insider Dec 2022 and Morningstar late 2022: Healthcare favored for 2023; defensive, recession-resistant."
+      },
+      {
+        "name": "Consumer Discretionary",
+        "score": 0.64,
+        "note": "FactSet Dec 2022 CY 2023 preview: Consumer Discretionary expected to lead S&P 500 sector earnings growth in 2023."
+      },
+      {
+        "name": "Energy",
+        "score": 0.62,
+        "note": "Only S&P 500 sector with positive returns in 2022 (+58%); late-2022 outlooks noted oil/commodity volatility into 2023."
+      }
+    ]
+  },
   "$schema_note": "One key per forecast publication year (2010, 2011, ...). Same shape each year. Score 0-1; < 0.3 = not much, remove or set low."
 }

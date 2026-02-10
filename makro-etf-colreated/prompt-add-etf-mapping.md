@@ -1,6 +1,6 @@
 # Prompt: Add missing ETF mapping into mapping file
 
-Use this when `compare_forecast_vs_etf.py` has written `forecast-missing.json` and you need to add those entries to the mapping file.
+Use this when `1_create_mapping.py` has written `forecast-missing.json` and you need to add those entries to the mapping file.
 
 ---
 
@@ -31,7 +31,7 @@ and confirm the ticker appears in the first line of `data/etf_price.csv` (as a c
 
 **After editing:** Run the compare script again (from repo root). It will accept the new mappings or write an updated `forecast-missing.json` if anything is still unmappable.
 ```bash
-uv run python makro-etf-colreated/compare_forecast_vs_etf.py
+uv run python makro-etf-colreated/1_create_mapping.py
 ```
 
 **Reference (this dir):**
