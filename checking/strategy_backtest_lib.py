@@ -87,6 +87,10 @@ def compute_metrics(equity: pd.Series) -> dict:
 StrategyFn = Callable[[pd.Series], pd.Series]
 
 
+def _ema(series: pd.Series, span: int) -> pd.Series:
+    return series.ewm(span=span, adjust=False).mean()
+
+
 @dataclass(frozen=True)
 class Strategy:
     key: str
@@ -431,6 +435,178 @@ def strat_crash_filter_drawdown(
     return equity
 
 
+def strat_macd_crossover(
+    close: pd.Series,
+    fast_span: int = 12,
+    slow_span: int = 26,
+    signal_span: int = 9,
+    use_zero_filter: bool = False,
+) -> pd.Series:
+    """MACD signal-line crossover (long-only).
+
+    Enter when MACD crosses above Signal; exit when crosses below.
+    Optional: if use_zero_filter, only allow longs when MACD > 0.
+    """
+    close = close.dropna()
+    if len(close) < max(slow_span, fast_span, signal_span) + 10:
+        return strat_buy_hold(close)
+
+    macd = _ema(close, span=fast_span) - _ema(close, span=slow_span)
+    signal = _ema(macd, span=signal_span)
+
+    long_cond = macd > signal
+    if use_zero_filter:
+        long_cond = long_cond & (macd > 0)
+
+    pos = long_cond.astype(float).fillna(0.0)
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = pos.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
+def _atr_wilder(df: pd.DataFrame, window: int = 14) -> pd.Series:
+    """Wilder ATR using OHLC when available; close-only fallback if not."""
+    df = df.sort_index()
+    if all(c in df.columns for c in ["High", "Low", "Close"]):
+        high = df["High"].astype(float)
+        low = df["Low"].astype(float)
+        close = df["Close"].astype(float)
+        prev_close = close.shift(1)
+        tr = pd.concat(
+            [
+                (high - low).abs(),
+                (high - prev_close).abs(),
+                (low - prev_close).abs(),
+            ],
+            axis=1,
+        ).max(axis=1)
+    else:
+        close = df["Close"].astype(float)
+        tr = close.diff().abs()
+
+    atr = tr.ewm(alpha=1.0 / window, adjust=False, min_periods=window).mean()
+    return atr
+
+
+def strat_keltner_breakout(
+    df: pd.DataFrame,
+    ema_window: int = 20,
+    atr_window: int = 10,
+    atr_mult: float = 2.0,
+    exit_rule: str = "mid",  # mid|lower
+) -> pd.Series:
+    """Keltner channel breakout (long-only).
+
+    Enter when Close > Upper (EMA + atr_mult*ATR).
+    Exit when Close < Mid (EMA) or Close < Lower depending on exit_rule.
+    """
+    if df is None or df.empty or "Close" not in df.columns:
+        return pd.Series(dtype=float)
+
+    df = df.sort_index()
+    close = df["Close"].dropna().astype(float)
+    if len(close) < max(ema_window, atr_window) + 10:
+        return strat_buy_hold(close)
+
+    # Align df to close index (drop days without close)
+    df2 = df.loc[close.index]
+
+    mid = _ema(close, span=ema_window)
+    atr = _atr_wilder(df2, window=atr_window)
+    upper = mid + atr_mult * atr
+    lower = mid - atr_mult * atr
+
+    pos = pd.Series(0.0, index=close.index)
+    in_pos = False
+
+    for i in range(len(close)):
+        c = close.iloc[i]
+        up = upper.iloc[i]
+        md = mid.iloc[i]
+        lo = lower.iloc[i]
+
+        if (not in_pos) and np.isfinite(up) and (c > up):
+            in_pos = True
+        elif in_pos:
+            if exit_rule == "lower":
+                if np.isfinite(lo) and (c < lo):
+                    in_pos = False
+            else:  # mid
+                if np.isfinite(md) and (c < md):
+                    in_pos = False
+
+        pos.iloc[i] = 1.0 if in_pos else 0.0
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = pos.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
+def strat_stochrsi_mean_reversion(
+    close: pd.Series,
+    rsi_window: int = 14,
+    stoch_window: int = 14,
+    smooth_k: int = 1,
+    smooth_d: int = 1,
+    entry: float = 0.2,
+    exit: float = 0.8,
+    max_hold_days: int | None = None,
+) -> pd.Series:
+    """StochRSI mean reversion (long-only).
+
+    Compute RSI (Wilder), then StochRSI in [0,1], optionally smooth %K and %D.
+    Enter when %D < entry, exit when %D > exit; optional max_hold.
+    """
+    close = close.dropna()
+    if len(close) < max(rsi_window + stoch_window, 50) + 10:
+        return strat_buy_hold(close)
+
+    rsi = _rsi_wilder(close, window=rsi_window)
+    rsi_min = rsi.rolling(stoch_window).min()
+    rsi_max = rsi.rolling(stoch_window).max()
+    denom = (rsi_max - rsi_min)
+    stoch = (rsi - rsi_min) / denom
+    stoch = stoch.replace([np.inf, -np.inf], np.nan)
+
+    k = stoch.rolling(smooth_k).mean() if smooth_k > 1 else stoch
+    d = k.rolling(smooth_d).mean() if smooth_d > 1 else k
+
+    pos = pd.Series(0.0, index=close.index)
+    in_pos = False
+    hold = 0
+
+    for i in range(len(close)):
+        v = d.iloc[i]
+        if in_pos:
+            hold += 1
+
+        if not np.isfinite(v):
+            pos.iloc[i] = 1.0 if in_pos else 0.0
+            continue
+
+        if (not in_pos) and (v < entry):
+            in_pos = True
+            hold = 0
+        elif in_pos and (v > exit):
+            in_pos = False
+            hold = 0
+        elif in_pos and (max_hold_days is not None) and (hold >= max_hold_days):
+            in_pos = False
+            hold = 0
+
+        pos.iloc[i] = 1.0 if in_pos else 0.0
+
+    daily_ret = close.pct_change().fillna(0.0)
+    strat_ret = pos.shift(1).fillna(0.0) * daily_ret
+    equity = equity_from_returns(strat_ret)
+    equity.index = close.index
+    return equity
+
+
 def available_strategies() -> dict[str, Strategy]:
     # As we implement more strategies, add them here.
     return {
@@ -474,5 +650,22 @@ def available_strategies() -> dict[str, Strategy]:
             "crash_dd_126_-15_sma",
             "Crash Filter (dd126<-15%, reentry=sma200)",
             lambda close: strat_crash_filter_drawdown(close, dd_lookback_days=126, dd_threshold_pct=-15.0, reentry_rule="sma_200", cooldown_days=20, sma_window=200),
+        ),
+        "macd_12_26_9_zf0": Strategy(
+            "macd_12_26_9_zf0",
+            "MACD (12/26/9) zero_filter=False",
+            lambda close: strat_macd_crossover(close, fast_span=12, slow_span=26, signal_span=9, use_zero_filter=False),
+        ),
+        "kelt_20_10_m2p0_xmid": Strategy(
+            "kelt_20_10_m2p0_xmid",
+            "Keltner Breakout (ema20 atr10 x2.0 exit=mid)",
+            # available_strategies() is used by scripts that are close-only; Keltner needs OHLC.
+            # We provide a close-only fallback DataFrame with Close column.
+            lambda close: strat_keltner_breakout(close.to_frame(name="Close"), ema_window=20, atr_window=10, atr_mult=2.0, exit_rule="mid"),
+        ),
+        "stochrsi_r14_s14_k3_d3_e0p2_x0p8_mhN": Strategy(
+            "stochrsi_r14_s14_k3_d3_e0p2_x0p8_mhN",
+            "StochRSI MR (rsi14 stoch14 k3 d3 entry<0.2 exit>0.8)",
+            lambda close: strat_stochrsi_mean_reversion(close, rsi_window=14, stoch_window=14, smooth_k=3, smooth_d=3, entry=0.2, exit=0.8, max_hold_days=None),
         ),
     }

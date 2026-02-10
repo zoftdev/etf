@@ -13,6 +13,9 @@ Purpose: track what strategies have been implemented / tested so we **don’t du
 - vol_targeting (variants: vol_lookback/target_vol/trend_filter)
 - crash_filter_drawdown (variants: dd_lookback/dd_threshold/reentry/cooldown)
 - trend_filter_sma (proxy for DCA gating; variants: trend_window)
+- macd_signal_crossover (variants: fast/slow/signal/zero_filter)
+- keltner_breakout (variants: ema_window/atr_window/atr_mult/exit_rule; uses OHLC when available)
+- stochrsi_mean_reversion (variants: rsi_window/stoch_window/smooth_k/smooth_d/entry/exit/max_hold)
 
 ## Not implemented yet (candidates)
 (keep adding here; when implemented, move to the section above)

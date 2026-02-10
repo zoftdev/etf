@@ -45,6 +45,9 @@ from checking.strategy_backtest_lib import (
     strat_vol_targeting,
     strat_trend_filter,
     strat_crash_filter_drawdown,
+    strat_macd_crossover,
+    strat_keltner_breakout,
+    strat_stochrsi_mean_reversion,
 )
 from checking.tool_view_verify_hold_etf import get_group_lv2
 
@@ -53,7 +56,7 @@ from checking.tool_view_verify_hold_etf import get_group_lv2
 class Variant:
     key: str
     name: str
-    fn: callable
+    fn: callable  # (df, close) -> equity
     params: dict
 
 
@@ -65,7 +68,7 @@ def build_variants() -> list[Variant]:
     variants: list[Variant] = []
 
     # Baseline
-    variants.append(Variant("buy_hold", "Buy & Hold", lambda close: strat_buy_hold(close), {}))
+    variants.append(Variant("buy_hold", "Buy & Hold", lambda df, close: strat_buy_hold(close), {}))
 
     # 2) SMA Crossover
     sma_fast = [10, 20, 50, 100]
@@ -75,7 +78,7 @@ def build_variants() -> list[Variant]:
             continue
         k = f"sma_{fast}_{slow}"
         variants.append(
-            Variant(k, f"SMA Crossover ({fast}/{slow})", lambda close, f=fast, s=slow: strat_sma_crossover(close, fast=f, slow=s), {"fast": fast, "slow": slow})
+            Variant(k, f"SMA Crossover ({fast}/{slow})", lambda df, close, f=fast, s=slow: strat_sma_crossover(close, fast=f, slow=s), {"fast": fast, "slow": slow})
         )
 
     # 3) EMA Crossover
@@ -90,7 +93,7 @@ def build_variants() -> list[Variant]:
             Variant(
                 k,
                 f"EMA Crossover ({fast}/{slow}) band={band}%",
-                lambda close, f=fast, s=slow, b=band: strat_ema_crossover(close, fast=f, slow=s, band_pct=b),
+                lambda df, close, f=fast, s=slow, b=band: strat_ema_crossover(close, fast=f, slow=s, band_pct=b),
                 {"fast": fast, "slow": slow, "band_pct": band},
             )
         )
@@ -102,7 +105,7 @@ def build_variants() -> list[Variant]:
             Variant(
                 k,
                 f"Donchian Breakout ({entry_window}/{exit_window})",
-                lambda close, en=entry_window, ex=exit_window: strat_donchian(close, entry_window=en, exit_window=ex),
+                lambda df, close, en=entry_window, ex=exit_window: strat_donchian(close, entry_window=en, exit_window=ex),
                 {"entry_window": entry_window, "exit_window": exit_window},
             )
         )
@@ -114,7 +117,7 @@ def build_variants() -> list[Variant]:
             Variant(
                 k,
                 f"Boll MR (w={window}, sd={num_std}, exit={exit_rule}, max_hold={max_hold})",
-                lambda close, w=window, sd=num_std, er=exit_rule, mh=max_hold: strat_bollinger_mean_reversion(close, window=w, num_std=sd, exit_rule=er, max_hold_days=mh),
+                lambda df, close, w=window, sd=num_std, er=exit_rule, mh=max_hold: strat_bollinger_mean_reversion(close, window=w, num_std=sd, exit_rule=er, max_hold_days=mh),
                 {"boll_window": window, "num_std": num_std, "exit_rule": exit_rule, "max_hold_days": max_hold},
             )
         )
@@ -126,7 +129,7 @@ def build_variants() -> list[Variant]:
             Variant(
                 k,
                 f"RSI MR (w={w}, entry<{entry}, exit>{exit_}, max_hold={max_hold})",
-                lambda close, ww=w, en=entry, ex=exit_, mh=max_hold: strat_rsi_mean_reversion(close, rsi_window=ww, entry_rsi=float(en), exit_rsi=float(ex), max_hold_days=mh),
+                lambda df, close, ww=w, en=entry, ex=exit_, mh=max_hold: strat_rsi_mean_reversion(close, rsi_window=ww, entry_rsi=float(en), exit_rsi=float(ex), max_hold_days=mh),
                 {"rsi_window": w, "entry_rsi": entry, "exit_rsi": exit_, "max_hold_days": max_hold},
             )
         )
@@ -138,7 +141,7 @@ def build_variants() -> list[Variant]:
             Variant(
                 k,
                 f"Momentum ({lookback}d skip {skip}d thr={thresh}%)",
-                lambda close, lb=lookback, sk=skip, th=thresh: strat_momentum(close, lookback_days=lb, skip_recent_days=sk, threshold_pct=th),
+                lambda df, close, lb=lookback, sk=skip, th=thresh: strat_momentum(close, lookback_days=lb, skip_recent_days=sk, threshold_pct=th),
                 {"lookback_days": lookback, "skip_recent_days": skip, "threshold_pct": thresh},
             )
         )
@@ -150,7 +153,7 @@ def build_variants() -> list[Variant]:
             Variant(
                 k,
                 f"VolTarget (lb={vol_lb}, tgt={tgt}%, tf={tf})",
-                lambda close, vlb=vol_lb, t=tgt, tf_=tf: strat_vol_targeting(close, vol_lookback_days=vlb, target_vol_ann_pct=float(t), trend_filter=tf_, trend_window=200, max_leverage=1.0),
+                lambda df, close, vlb=vol_lb, t=tgt, tf_=tf: strat_vol_targeting(close, vol_lookback_days=vlb, target_vol_ann_pct=float(t), trend_filter=tf_, trend_window=200, max_leverage=1.0),
                 {"vol_lookback_days": vol_lb, "target_vol_ann_pct": tgt, "trend_filter": tf},
             )
         )
@@ -163,7 +166,7 @@ def build_variants() -> list[Variant]:
             Variant(
                 k,
                 f"Trend filter (close>=SMA{tw}) [DCA proxy]",
-                lambda close, w=tw: strat_trend_filter(close, trend_window=w),
+                lambda df, close, w=tw: strat_trend_filter(close, trend_window=w),
                 {"trend_window": tw},
             )
         )
@@ -180,12 +183,71 @@ def build_variants() -> list[Variant]:
                 Variant(
                     k,
                     f"Crash(dd_lb={dd_lb}, th={dd_th}%, reentry={reentry}, cd={cd})",
-                    lambda close, lb=dd_lb, th=dd_th, rr=reentry, cd_=cd: strat_crash_filter_drawdown(
+                    lambda df, close, lb=dd_lb, th=dd_th, rr=reentry, cd_=cd: strat_crash_filter_drawdown(
                         close, dd_lookback_days=lb, dd_threshold_pct=float(th), reentry_rule=rr, cooldown_days=cd_, sma_window=200
                     ),
                     {"dd_lookback_days": dd_lb, "dd_threshold_pct": dd_th, "reentry_rule": reentry, "cooldown_days": cd},
                 )
             )
+
+    # 11) MACD signal-line crossover
+    for fast, slow, sig, zf in product([8, 12, 16], [20, 26, 35], [5, 9, 12], [0, 1]):
+        if fast >= slow:
+            continue
+        k = f"macd_{fast}_{slow}_{sig}_zf{zf}"
+        variants.append(
+            Variant(
+                k,
+                f"MACD ({fast}/{slow}/{sig}) zero_filter={bool(zf)}",
+                lambda df, close, f=fast, s=slow, si=sig, z=zf: strat_macd_crossover(close, fast_span=f, slow_span=s, signal_span=si, use_zero_filter=bool(z)),
+                {"fast_span": fast, "slow_span": slow, "signal_span": sig, "use_zero_filter": bool(zf)},
+            )
+        )
+
+    # 12) Keltner channel breakout (uses OHLC when present)
+    for ema_w, atr_w, mult, exit_rule in product([20, 50], [10, 20], [1.5, 2.0, 2.5], ["mid", "lower"]):
+        mult_key = str(mult).replace(".", "p")
+        k = f"kelt_{ema_w}_{atr_w}_m{mult_key}_x{exit_rule}"
+        variants.append(
+            Variant(
+                k,
+                f"Keltner BO (ema={ema_w}, atr={atr_w}, mult={mult}, exit={exit_rule})",
+                lambda df, close, ew=ema_w, aw=atr_w, m=mult, xr=exit_rule: strat_keltner_breakout(df, ema_window=ew, atr_window=aw, atr_mult=float(m), exit_rule=xr),
+                {"ema_window": ema_w, "atr_window": atr_w, "atr_mult": mult, "exit_rule": exit_rule},
+            )
+        )
+
+    # 13) StochRSI mean reversion
+    for rsi_w, stoch_w, k_sm, d_sm, entry, exit_, mh in product([14], [14, 21], [1, 3], [1, 3], [0.1, 0.2], [0.8, 0.9], [None, 10, 30]):
+        mh_key = mh if mh is not None else "N"
+        k_entry = str(entry).replace(".", "p")
+        k_exit = str(exit_).replace(".", "p")
+        k = f"stochrsi_r{rsi_w}_s{stoch_w}_k{k_sm}_d{d_sm}_e{k_entry}_x{k_exit}_mh{mh_key}"
+        variants.append(
+            Variant(
+                k,
+                f"StochRSI MR (rsi={rsi_w}, stoch={stoch_w}, k={k_sm}, d={d_sm}, entry<{entry}, exit>{exit_}, mh={mh})",
+                lambda df, close, rw=rsi_w, sw=stoch_w, kk=k_sm, dd=d_sm, en=entry, ex=exit_, mh_=mh: strat_stochrsi_mean_reversion(
+                    close,
+                    rsi_window=rw,
+                    stoch_window=sw,
+                    smooth_k=kk,
+                    smooth_d=dd,
+                    entry=float(en),
+                    exit=float(ex),
+                    max_hold_days=mh_,
+                ),
+                {
+                    "rsi_window": rsi_w,
+                    "stoch_window": stoch_w,
+                    "smooth_k": k_sm,
+                    "smooth_d": d_sm,
+                    "entry": entry,
+                    "exit": exit_,
+                    "max_hold_days": mh,
+                },
+            )
+        )
 
     return variants
 
@@ -222,7 +284,7 @@ def main(argv: list[str] | None = None) -> None:
 
         for v in variants:
             try:
-                equity = v.fn(close)
+                equity = v.fn(df, close)
                 m = compute_metrics(equity)
             except Exception as e:
                 print(f"Variant {v.key} failed for {ticker}: {e}")
