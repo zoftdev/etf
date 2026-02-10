@@ -1,0 +1,22 @@
+{
+  "$schema_note": "One key per forecast publication year (2010, 2011, ...). Same shape each year. Score -1..1; < 0.3 = not much, remove or set low.",
+  "2010": {
+    "description": "Views from 2010 → 2011, 2012 & beyond",
+    "countries": [
+      { "rank": 1, "name": "China", "score": 0.95, "note": "Fastest growth in East Asia; Goldman/PwC saw China overtaking US by mid-2020s." },
+      { "rank": 2, "name": "India", "score": 0.90, "note": "Strong growth (South Asia avg 7.7% 2010-12 in GEP 2010); BRIC; among largest economies by 2025." },
+      { "rank": 3, "name": "Brazil", "score": 0.85, "note": "BRIC; Latin America leader in GEP 2010; top-5 economy by 2050 (GS)." },
+      { "rank": 4, "name": "Indonesia", "score": 0.75, "note": "East Asia & Pacific standout in GEP 2010; N-11; best-performing post-crisis (GS)." },
+      { "rank": 5, "name": "Russia", "score": 0.70, "note": "BRIC; Europe & Central Asia recovery; top global economies by 2050 (GS)." }
+    ],
+    "commodity": [
+      { "name": "Crude oil / energy", "score": 0.80, "note": "Central to 2010 outlooks; multi-year price forecasts; clearly hot in 2010 view." },
+      { "name": "Metals", "score": 0.45, "note": "In outlooks but secondary to energy; driven by China demand." },
+      { "name": "Agriculture", "score": 0.40, "note": "In outlooks but secondary; food price volatility concern." }
+    ],
+    "us_sector": [
+      { "name": "Technology", "score": 0.85, "note": "Main growth sector: cloud/on-demand software, semiconductor equipment; expected to lead next decade." },
+      { "name": "Healthcare", "score": 0.60, "note": "Cited as another big growth area for the coming decade." }
+    ]
+  }
+}
