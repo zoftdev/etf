@@ -137,6 +137,10 @@ etfs:
         segment: ตุรกี
         name: iShares MSCI Turkey
         description: ""
+      - tickers: ["ERUS"]
+        segment: รัสเซีย
+        name: iShares MSCI Russia
+        description: ""
 
   world_americas:
     display_name: ภูมิภาคอเมริกา (Non-US)

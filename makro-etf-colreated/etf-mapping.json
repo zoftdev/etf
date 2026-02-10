@@ -1,0 +1,25 @@
+{
+  "countries": {
+    "China": ["MCHI", "FXI"],
+    "India": ["INDA"],
+    "Brazil": ["EWZ"],
+    "Indonesia": ["EIDO"],
+    "Russia": ["ERUS"],
+    "United States": ["VEA"]
+  },
+  "commodity": {
+    "Crude oil / energy": ["USO", "XLE"],
+    "Metals": ["GLD", "SLV"],
+    "Agriculture": ["DBA"],
+    "Agriculture / food": ["DBA"]
+  },
+  "us_sector": {
+    "Technology": ["XLK"],
+    "Healthcare": ["XLV"],
+    "Financials": ["XLF"],
+    "Consumer discretionary": ["XLY"],
+    "Consumer Discretionary": ["XLY"],
+    "Energy": ["XLE"],
+    "Industrials": ["XLI"]
+  }
+}

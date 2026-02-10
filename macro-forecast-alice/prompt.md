@@ -1,5 +1,7 @@
 # Macro forecast — reusable prompts
 
+ 
+
 user will told to check forecast publish in history as YYYY
 
 Back in YYYY, find forecasts and outlooks for ZZZZ, AAAA or the future. Extract:
@@ -7,14 +9,19 @@ Back in YYYY, find forecasts and outlooks for ZZZZ, AAAA or the future. Extract:
 2. Top commodity (if none hot, low score or omit)
 3. US sector
 
- 
- you must not read web content that after target year YYYY
+ัyou must not read web content that publish in YYYY ,not before , not after
 ทุก item ใน 3 หมวด (ประเทศ / commodity / US sector) ต้องมี อย่างน้อย 2 independent sources
-**Output:** 
 
-  1. Write generated markdown (`YYYY.md`), include a **Sources** section with named sources and **full links** (same style as the existing generated file, e.g. 2010.md). see example at example_2010.md
+**Output:**
 
-  2. Append to forecast.json , see example in example_forecast.json
+1) Write generated markdown: `macro-forecast/YYYY.md`
+- Must include **Score** column(s)
+- Must include a **Sources** section with named sources and **full links**
+- Follow the same style as the existing generated file (see `example_2010.md`)
+
+2) Update JSON: `macro-forecast/forecast.json`
+- Add/update the `"YYYY"` entry using the schema below
+- See example schema in `example_forecast.json`
 ---
 
 ## Main task
@@ -34,8 +41,12 @@ Fill results into:
 
 ## Scoring
 
-- **Score -1..1** for each item. **&lt; 0.3 = not much** — remove or set low; use score to prioritise.
-- **Commodity:** if no clear “hot” commodity in that year’s forecasts, give low score or omit the row.
+- **Score 0..1** for each item.
+- Default meaning: **< 0.3 = not much**.
+- If running in **Strict mode (แบบ 2)**:
+  - **Omit/delete** all rows with score **< 0.3** (do not keep low-score rows)
+  - Ensure **≥ 2 independent sources per item** (country/commodity/sector). Mention both sources in the item note and list them in **Sources**.
+- **Commodity:** if no clear “hot” commodity in that year’s forecasts, either omit the commodity table entirely or include only rows with score ≥ 0.3.
 
 Add a **Score** column (or score field) to:
 - Top 5 countries table

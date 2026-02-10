@@ -7,9 +7,9 @@ Back in YYYY, find forecasts and outlooks for ZZZZ, AAAA or the future. Extract:
 2. Top commodity (if none hot, low score or omit)
 3. US sector
 
- 
- 
-
+ - you must not read web content that after target year YYYY
+ - ทุก item ใน 3 หมวด (ประเทศ / commodity / US sector) ต้องมี อย่างน้อย 2 independent sources
+ - dont look previous year or future file.
 **Output:** 
 
   1. Write generated markdown (`YYYY.md`), include a **Sources** section with named sources and **full links** (same style as the existing generated file, e.g. 2010.md). see example at example_2010.md
@@ -27,8 +27,8 @@ Back in **YYYY**, find forecasts and outlooks that targeted next one,two year or
 
 Fill results into:
 
-- `macro-forecast/YYYY.md`
-- `macro-forecast/forecast.json` — add or update the `"YYYY"` entry using the same schema as existing years
+- `YYYY.md`
+- `forecast.json` — add or update the `"YYYY"` entry using the same schema as existing years
 
 ---
 

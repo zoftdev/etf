@@ -136,6 +136,10 @@ etfs:
           tickers: ["TUR"]
           name: iShares MSCI Turkey
           description: ""
+        - country: รัสเซีย
+          tickers: ["ERUS"]
+          name: iShares MSCI Russia
+          description: ""
     
     americas:
       name: ภูมิภาคอเมริกา (Non-US)

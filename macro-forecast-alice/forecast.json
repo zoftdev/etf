@@ -1,0 +1,892 @@
+{
+  "2010": {
+    "description": "Views from 2010 → 2021, 2022 & beyond (strict mode: 2010-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.95,
+        "note": "Featured as the largest/most important EM growth engine in 2010 outlook framing. Sources: IMF WEO Oct 2010; World Bank GEP 2010."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.9,
+        "note": "Highlighted among the fastest-growing large EMs in 2010 outlooks. Sources: IMF WEO Oct 2010; World Bank GEP 2010."
+      },
+      {
+        "rank": 3,
+        "name": "Brazil",
+        "score": 0.8,
+        "note": "Large LATAM EM emphasized in 2010 recovery outlooks. Sources: World Bank GEP 2010; IMF WEO Oct 2010."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.75,
+        "note": "Standout within developing East Asia in 2010 outlook framing. Sources: World Bank GEP 2010; IMF WEO Oct 2010."
+      },
+      {
+        "rank": 5,
+        "name": "Turkey",
+        "score": 0.6,
+        "note": "Large EM often discussed in 2010 outlook sets as financing-sensitive. Sources: IMF WEO Oct 2010; World Bank GEP 2010."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.8,
+        "note": "Energy was the most central commodity bucket in 2010 macro/price-forecast framing. Sources: World Bank Global commodity markets review & price forecast (2010); World Bank GEP 2010."
+      },
+      {
+        "name": "Metals",
+        "score": 0.45,
+        "note": "Major pro-cyclical commodity bucket in 2010 outlooks, secondary to energy. Sources: World Bank commodity outlook (2010); IMF WEO Oct 2010."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "2010 decade-ahead theses favored tech (software/internet/semis; early cloud). Sources: CNN Money (2010); Kiplinger (2010)."
+      },
+      {
+        "name": "Healthcare",
+        "score": 0.6,
+        "note": "2010 long-horizon sector themes often included healthcare as defensive growth/demographics play. Sources: Kiplinger (2010); decade-ahead sector commentary (2010)."
+      }
+    ]
+  },
+  "2011": {
+    "description": "Views from 2011 → 2021, 2022 & beyond (strict mode: 2011-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.95,
+        "note": "Featured as the largest EM growth engine in 2011 long-run narratives and 2011 outlook framing. Sources: PwC/E7 via Guardian (2011); World Bank GEP Jan 2011."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.9,
+        "note": "Persistent top-tier long-run growth candidate in 2011 projections and outlooks. Sources: PwC/E7 via Guardian (2011); World Bank GEP Jan 2011."
+      },
+      {
+        "rank": 3,
+        "name": "Brazil",
+        "score": 0.75,
+        "note": "Included in PwC E7 set; major LATAM EM in 2011 outlook framing. Sources: PwC/E7 via Guardian (2011); World Bank GEP Jan 2011."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.8,
+        "note": "Included in PwC E7 set; emblematic of large EM Asia growth contribution. Sources: PwC/E7 via Guardian (2011); World Bank GEP Jan 2011."
+      },
+      {
+        "rank": 5,
+        "name": "Turkey",
+        "score": 0.65,
+        "note": "Included in PwC E7 set; often framed as financing-sensitive large EM in 2011. Sources: PwC/E7 via Guardian (2011); World Bank GEP Jan 2011."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.8,
+        "note": "Energy treated as the most central commodity bucket in 2011 price-forecast framing. Sources: World Bank commodity outlook (Apr 2011); World Bank GEP Jan 2011."
+      },
+      {
+        "name": "Industrial metals (incl. copper)",
+        "score": 0.55,
+        "note": "Metals framed as pro-cyclical bucket tied to EM cycle, secondary to energy. Sources: World Bank commodity outlook (Apr 2011); World Bank GEP Jan 2011."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "Cloud/software + data infrastructure secular thesis. Sources: IDC PRUS23137111 (2011); NIST SP 800-145 (2011)."
+      },
+      {
+        "name": "Healthcare",
+        "score": 0.65,
+        "note": "Aging + chronic disease burden as durable tailwind. Sources: NIH/WHO Global Health and Aging (2011); IMF WEO landing (2011 issues)."
+      }
+    ]
+  },
+  "2012": {
+    "description": "Views from 2012 → 2021, 2022 & beyond (strict mode: 2012-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.9,
+        "note": "Large EM anchor in 2012 global growth framing. Sources: World Bank GEP Jan 2012; UN WESP 2012."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.85,
+        "note": "Major EM growth market in 2012 outlook framing. Sources: World Bank GEP Jan 2012; UN WESP 2012."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.75,
+        "note": "Large EM Asia within developing-economy growth drivers set. Sources: World Bank GEP Jan 2012; UN WESP 2012."
+      },
+      {
+        "rank": 4,
+        "name": "Brazil",
+        "score": 0.65,
+        "note": "Key large LATAM EM in 2012 outlook sets. Sources: World Bank GEP Jan 2012; UN WESP 2012."
+      },
+      {
+        "rank": 5,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM with close US linkage in 2012 outlook framing. Sources: World Bank GEP Jan 2012; UN WESP 2012."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.75,
+        "note": "Energy central in 2012 macro framing (inflation/risk channel + growth sensitivity). Sources: World Bank GEP Jan 2012; UN WESP 2012."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to global industrial cycle. Sources: USGS Mineral Commodity Summaries 2012; World Bank GEP Jan 2012."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "Cloud/data/mobile traffic growth + enterprise adoption as multi-year drivers. Sources: Cisco VNI news release (Feb 2012); NIST SP 800-146 (May 2012)."
+      },
+      {
+        "name": "Healthcare",
+        "score": 0.65,
+        "note": "Chronic disease burden + health indicators as long-horizon demand tailwind. Sources: WHO World Health Statistics 2012 (WHO, 2012); UN WESP 2012."
+      }
+    ]
+  },
+  "2013": {
+    "description": "Views from 2013 → 2021, 2022 & beyond (strict mode: 2013-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.9,
+        "note": "Large EM anchor in 2013 global outlook framing; global growth/risk discussion centered on China/EM rebalancing. Sources: World Bank GEP Jan 2013; IMF WEO Oct 2013."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.85,
+        "note": "Major EM growth market in 2013 medium-term outlook framing (growth contribution + policy/financing constraints). Sources: World Bank GEP Jun 2013; IMF WEO Oct 2013."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.7,
+        "note": "Large EM Asia economy in 2013 developing-economy growth set; sensitive to global financing conditions. Sources: World Bank GEP Jun 2013; IMF WEO Oct 2013."
+      },
+      {
+        "rank": 4,
+        "name": "Brazil",
+        "score": 0.65,
+        "note": "Key large LATAM EM in 2013 outlooks; slowdown/constraints highlighted but still material in EM set. Sources: World Bank GEP Jan 2013; IMF WEO Oct 2013."
+      },
+      {
+        "rank": 5,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM with close US linkage; covered in developing-economy outlook sets and medium-term narratives. Sources: World Bank GEP Jun 2013; IMF WEO Oct 2013."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.75,
+        "note": "Energy remained the most central commodity bucket in 2013 commodity-market framing. Sources: World Bank Commodity Markets (2013 CMO/Pink Sheet hub); IMF WEO Oct 2013."
+      },
+      {
+        "name": "Industrial metals",
+        "score": 0.5,
+        "note": "Industrial metals often linked to EM/China investment cycle in 2013 commodity/macro framing. Sources: World Bank Commodity Markets (2013 CMO/Pink Sheet hub); World Bank GEP Jun 2013."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "2013 forward-looking theses focused on software/cloud/data/mobile as multi-year drivers. Sources: McKinsey Global Institute Disruptive technologies (2013); IMF WEO Oct 2013."
+      },
+      {
+        "name": "Healthcare",
+        "score": 0.65,
+        "note": "Demographics + chronic disease burden remained a durable multi-year theme in 2013 publications/outlooks. Sources: WHO World Health Statistics 2013; IMF WEO Oct 2013."
+      }
+    ]
+  },
+  "2014": {
+    "description": "Views from 2014 → 2021, 2022 & beyond (strict mode: 2014-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.9,
+        "note": "Large EM anchor in 2014 global outlook framing. Sources: World Bank GEP Jan 2014; UN WESP 2014."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.85,
+        "note": "Major EM growth market in 2014 outlook framing. Sources: World Bank GEP Jan 2014; UN WESP 2014."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.75,
+        "note": "Large EM Asia within developing-economy growth drivers set; exposed to global financing conditions. Sources: World Bank GEP Jan 2014; UN WESP 2014."
+      },
+      {
+        "rank": 4,
+        "name": "Brazil",
+        "score": 0.6,
+        "note": "Key large LATAM EM in 2014 outlook sets. Sources: World Bank GEP Jan 2014; UN WESP 2014."
+      },
+      {
+        "rank": 5,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM with close US linkage in 2014 outlook framing. Sources: World Bank GEP Jan 2014; UN WESP 2014."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.7,
+        "note": "Energy central commodity bucket in 2014 macro framing. Sources: UN WESP 2014; World Bank GEP Jan 2014."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2014; World Bank GEP Jan 2014."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "Cloud/mobile/video/data traffic growth + cloud evaluation/standardization as multi-year drivers. Sources: Cisco VNI news release (Feb 2014); NIST SP 500-322 (2014)."
+      },
+      {
+        "name": "Healthcare",
+        "score": 0.65,
+        "note": "Longevity gains + health-burden statistics as long-horizon tailwind narrative. Sources: WHO World Health Statistics 2014 (WHO, 2014); ReliefWeb summary (May 2014)."
+      }
+    ]
+  },
+  "2015": {
+    "description": "Views from 2015 → 2021, 2022 & beyond (strict mode: 2015-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.85,
+        "note": "Large EM anchor in 2015 global outlook framing; central to demand/spillover narratives. Sources: World Bank GEP Jan 2015; UN WESP 2015."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.85,
+        "note": "Major EM growth market in 2015 outlook framing (medium-term growth contribution). Sources: World Bank GEP Jan 2015; UN WESP 2015."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.7,
+        "note": "Large EM Asia economy in 2015 developing-economy outlook sets; exposed to global financing conditions. Sources: World Bank GEP Jan 2015; UN WESP 2015."
+      },
+      {
+        "rank": 4,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM with close US linkage in 2015 outlook discussions. Sources: World Bank GEP Jan 2015; UN WESP 2015."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Key LATAM EM in 2015 outlook sets; constraints noted but still material. Sources: World Bank GEP Jan 2015; UN WESP 2015."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.8,
+        "note": "Energy central in 2015 macro framing (oil-price shock channel). Sources: World Bank GEP Jan 2015; UN WESP 2015."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2015; World Bank GEP Jan 2015."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "Mobile/video/data traffic + cloud usability/standardization as multi-year drivers. Sources: Cisco VNI Mobile Forecast news release (Feb 2015); NIST SP 500-316 (Dec 2015)."
+      }
+    ]
+  },
+  "2016": {
+    "description": "Views from 2016 → 2021, 2022 & beyond (strict mode: 2016-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.85,
+        "note": "Central to 2016 spillover/slowdown risk narratives and global cycle discussions. Sources: World Bank GEP Jan 2016; UN WESP 2016."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.8,
+        "note": "Large EM growth market in 2016 outlook framing; key contributor in medium-term narratives. Sources: World Bank GEP Jan 2016; UN WESP 2016."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.65,
+        "note": "Large EM Asia in 2016 outlook sets; sensitive to global financing conditions. Sources: World Bank GEP Jan 2016; UN WESP 2016."
+      },
+      {
+        "rank": 4,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM with close US linkage in 2016 outlook discussions. Sources: World Bank GEP Jan 2016; UN WESP 2016."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major commodity-linked EM; adjustment headwinds discussed in 2016. Sources: World Bank GEP Jan 2016; UN WESP 2016."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.75,
+        "note": "Energy remained the most central commodity bucket in 2016 macro framing. Sources: World Bank GEP Jan 2016; UN WESP 2016."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2016; World Bank GEP Jan 2016."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "IP traffic (video/mobile) + broader internet-trends shift toward mobile/platform/cloud as multi-year drivers. Sources: Cisco VNI Complete Forecast news release (Jun 2016); TechCrunch on Mary Meeker Internet Trends 2016 (Jun 2016)."
+      }
+    ]
+  },
+  "2017": {
+    "description": "Views from 2017 → 2021, 2022 & beyond (strict mode: 2017-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.85,
+        "note": "Central to EMDE growth and global demand narratives in 2017 outlook framing. Sources: World Bank GEP Jan 2017; UN WESP 2017."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.8,
+        "note": "Large EM growth market highlighted in 2017 medium-term outlook discussions. Sources: World Bank GEP Jan 2017; UN WESP 2017."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.65,
+        "note": "Large EM Asia economy in 2017 outlook sets; policy/financing sensitivity themes. Sources: World Bank GEP Jan 2017; UN WESP 2017."
+      },
+      {
+        "rank": 4,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM tied to US cycle; featured in 2017 spillover/integration discussions. Sources: World Bank GEP Jan 2017; UN WESP 2017."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM in 2017 outlook sets; recovery/constraints noted but material. Sources: World Bank GEP Jan 2017; UN WESP 2017."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.7,
+        "note": "Energy central commodity bucket in 2017 macro framing. Sources: World Bank GEP Jan 2017; UN WESP 2017."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2017; World Bank GEP Jan 2017."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "IP traffic growth + cloud-native/container adoption (and security guidance) as multi-year drivers. Sources: Cisco VNI news release (Jun 2017); NIST SP 800-190 (Sep 2017)."
+      }
+    ]
+  },
+  "2018": {
+    "description": "Views from 2018 → 2021, 2022 & beyond (strict mode: 2018-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.85,
+        "note": "Central to global demand and EMDE spillover narratives in 2018 outlook framing. Sources: World Bank GEP Jan 2018; UN WESP 2018."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.8,
+        "note": "Large EM growth market highlighted in 2018 medium-term outlooks. Sources: World Bank GEP Jan 2018; UN WESP 2018."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.65,
+        "note": "Large EM Asia; sensitive to global financial conditions themes. Sources: World Bank GEP Jan 2018; UN WESP 2018."
+      },
+      {
+        "rank": 4,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM tied to US cycle; featured in trade/financial spillover discussions. Sources: World Bank GEP Jan 2018; UN WESP 2018."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM; recovery/constraints noted but material. Sources: World Bank GEP Jan 2018; UN WESP 2018."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.7,
+        "note": "Energy central commodity bucket in 2018 macro framing. Sources: World Bank GEP Jan 2018; UN WESP 2018."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2018; World Bank GEP Jan 2018."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "IP traffic growth + rising cybersecurity risk management as foundational to digital economy. Sources: Cisco VNI forecast release (Nov 2018); NIST Cybersecurity Framework v1.1 (Apr 2018)."
+      }
+    ]
+  },
+  "2019": {
+    "description": "Views from 2019 → 2021, 2022 & beyond (strict mode: 2019-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.85,
+        "note": "Central to 2019 global growth and trade/spillover narratives. Sources: World Bank GEP Jan 2019; UN WESP 2019."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.8,
+        "note": "Large EM growth market highlighted in 2019 outlook discussions. Sources: World Bank GEP Jan 2019; UN WESP 2019."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.65,
+        "note": "Large EM Asia; sensitive to global financial conditions and trade. Sources: World Bank GEP Jan 2019; UN WESP 2019."
+      },
+      {
+        "rank": 4,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM tied to US cycle; featured in 2019 uncertainty/integration discussions. Sources: World Bank GEP Jan 2019; UN WESP 2019."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM; constraints noted but material. Sources: World Bank GEP Jan 2019; UN WESP 2019."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.7,
+        "note": "Energy central commodity bucket in 2019 macro framing. Sources: World Bank GEP Jan 2019; UN WESP 2019."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2019; World Bank GEP Jan 2019."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "Cloud migration + microservices/cloud-native architectures (and security strategies) as multi-year drivers. Sources: US Federal Cloud Smart Strategy (Jun 2019); NIST SP 800-204 (Aug 2019)."
+      }
+    ]
+  },
+  "2020": {
+    "description": "Views from 2020 → 2021, 2022 & beyond (strict mode: 2020-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.85,
+        "note": "Central to global recovery and spillover narratives in 2020 outlook framing. Sources: World Bank GEP Jan 2020; UN WESP 2020."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.8,
+        "note": "Large EM growth market highlighted in 2020 outlook discussions. Sources: World Bank GEP Jan 2020; UN WESP 2020."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.65,
+        "note": "Large EM Asia; sensitive to global financial conditions and trade. Sources: World Bank GEP Jan 2020; UN WESP 2020."
+      },
+      {
+        "rank": 4,
+        "name": "Mexico",
+        "score": 0.6,
+        "note": "Large EM tied to US cycle; featured in 2020 spillover/external-conditions discussions. Sources: World Bank GEP Jan 2020; UN WESP 2020."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM; constraints noted but material. Sources: World Bank GEP Jan 2020; UN WESP 2020."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.75,
+        "note": "Energy central commodity bucket in 2020 macro framing. Sources: World Bank GEP Jan 2020; UN WESP 2020."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2020; World Bank GEP Jan 2020."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.9,
+        "note": "Connected-device/traffic growth + security architecture shift (zero trust) supporting durable tech tailwind. Sources: Cisco Annual Internet Report news release (Feb 2020); NIST SP 800-207 (Aug 2020)."
+      }
+    ]
+  },
+  "2021": {
+    "description": "Views from 2021 → 2022 & beyond (strict mode: 2021-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.85,
+        "note": "Central to 2021 global recovery and spillover narratives. Sources: World Bank GEP Jan 2021; UN WESP 2021."
+      },
+      {
+        "rank": 2,
+        "name": "United States",
+        "score": 0.8,
+        "note": "Key driver of global demand/financial conditions in 2021 outlook framing. Sources: World Bank GEP Jan 2021; UN WESP 2021."
+      },
+      {
+        "rank": 3,
+        "name": "India",
+        "score": 0.75,
+        "note": "Large EM growth market highlighted in 2021 outlook discussions. Sources: World Bank GEP Jan 2021; UN WESP 2021."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.6,
+        "note": "Large EM Asia; sensitive to global conditions and recovery pace. Sources: World Bank GEP Jan 2021; UN WESP 2021."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM; constraints noted but material. Sources: World Bank GEP Jan 2021; UN WESP 2021."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.7,
+        "note": "Energy central commodity bucket in 2021 macro framing. Sources: World Bank GEP Jan 2021; UN WESP 2021."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2021; World Bank GEP Jan 2021."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "US tech spending/budget growth + strong projected demand for IT occupations supporting tech tailwind into 2022+. Sources: Forrester blog (Jul 2021); BLS Employment Projections 2020–30 (Sep 2021)."
+      }
+    ]
+  },
+  "2022": {
+    "description": "Views from 2022 → 2023 & beyond (strict mode: 2022-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "United States",
+        "score": 0.85,
+        "note": "Key driver of global demand/financial conditions in 2022 outlook framing. Sources: World Bank GEP Jan 2022; UN WESP 2022."
+      },
+      {
+        "rank": 2,
+        "name": "China",
+        "score": 0.8,
+        "note": "Central to global demand and EMDE spillover narratives in 2022 outlook framing. Sources: World Bank GEP Jan 2022; UN WESP 2022."
+      },
+      {
+        "rank": 3,
+        "name": "India",
+        "score": 0.75,
+        "note": "Large EM growth market highlighted in 2022 outlook discussions. Sources: World Bank GEP Jan 2022; UN WESP 2022."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.6,
+        "note": "Large EM Asia; sensitive to global conditions and commodity dynamics. Sources: World Bank GEP Jan 2022; UN WESP 2022."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM; constraints noted but material. Sources: World Bank GEP Jan 2022; UN WESP 2022."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.8,
+        "note": "Energy central commodity bucket in 2022 macro framing. Sources: World Bank GEP Jan 2022; UN WESP 2022."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2022; World Bank GEP Jan 2022."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "Secure software supply-chain practices + strong projected demand for tech work supporting durable tech tailwind into 2023+. Sources: NIST SP 800-218 (Feb 2022); BLS Employment Projections 2021–31 (Sep 2022)."
+      }
+    ]
+  },
+  "2023": {
+    "description": "Views from 2023 → 2024 & beyond (strict mode: 2023-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "United States",
+        "score": 0.85,
+        "note": "Key driver of global demand/financial conditions in 2023 outlook framing. Sources: World Bank GEP Jan 2023; UN WESP 2023."
+      },
+      {
+        "rank": 2,
+        "name": "China",
+        "score": 0.8,
+        "note": "Central to global demand and EMDE spillover narratives in 2023 outlook framing. Sources: World Bank GEP Jan 2023; UN WESP 2023."
+      },
+      {
+        "rank": 3,
+        "name": "India",
+        "score": 0.75,
+        "note": "Large EM growth market highlighted in 2023 outlook discussions. Sources: World Bank GEP Jan 2023; UN WESP 2023."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.6,
+        "note": "Large EM Asia; sensitive to global conditions and commodity/trade dynamics. Sources: World Bank GEP Jan 2023; UN WESP 2023."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM; constraints noted but material. Sources: World Bank GEP Jan 2023; UN WESP 2023."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.75,
+        "note": "Energy central commodity bucket in 2023 macro framing. Sources: World Bank GEP Jan 2023; UN WESP 2023."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2023; World Bank GEP Jan 2023."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "AI as general-purpose technology + strong projected demand for tech work supporting durable tailwind into 2024+. Sources: NIST AI RMF 1.0 (Jan 2023); BLS Employment Projections 2022–32 (Sep 2023)."
+      }
+    ]
+  },
+  "2024": {
+    "description": "Views from 2024 → 2025 & beyond (strict mode: 2024-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "United States",
+        "score": 0.85,
+        "note": "Key driver of global demand/financial conditions in 2024 outlook framing. Sources: World Bank GEP Jan 2024; UN WESP 2024."
+      },
+      {
+        "rank": 2,
+        "name": "China",
+        "score": 0.8,
+        "note": "Central to global demand and EMDE spillover narratives in 2024 outlook framing. Sources: World Bank GEP Jan 2024; UN WESP 2024."
+      },
+      {
+        "rank": 3,
+        "name": "India",
+        "score": 0.75,
+        "note": "Large EM growth market highlighted in 2024 outlook discussions. Sources: World Bank GEP Jan 2024; UN WESP 2024."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.6,
+        "note": "Large EM Asia; sensitive to global conditions and commodity/trade dynamics. Sources: World Bank GEP Jan 2024; UN WESP 2024."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM; constraints noted but material. Sources: World Bank GEP Jan 2024; UN WESP 2024."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.7,
+        "note": "Energy central commodity bucket in 2024 macro framing. Sources: World Bank GEP Jan 2024; UN WESP 2024."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2024; World Bank GEP Jan 2024."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "AI/ML risk governance + strong projected demand for computer/IT occupations supporting durable tailwind into 2025+. Sources: NIST AI 100-2e2023 (published 2024); BLS Employment Projections 2023–33 (Aug 2024)."
+      }
+    ]
+  },
+  "2025": {
+    "description": "Views from 2025 → 2026 & beyond (strict mode: 2025-only sources; omit <0.3; ≥2 sources/item)",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "United States",
+        "score": 0.85,
+        "note": "Key driver of global demand/financial conditions in 2025 outlook framing. Sources: World Bank GEP Jan 2025; UN WESP 2025 (exec summary)."
+      },
+      {
+        "rank": 2,
+        "name": "China",
+        "score": 0.8,
+        "note": "Central to global demand and EMDE spillover narratives in 2025 outlook framing. Sources: World Bank GEP Jan 2025; UN WESP 2025 (exec summary)."
+      },
+      {
+        "rank": 3,
+        "name": "India",
+        "score": 0.75,
+        "note": "Large EM growth market highlighted in 2025 outlook discussions. Sources: World Bank GEP Jan 2025; UN WESP 2025 (exec summary)."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.6,
+        "note": "Large EM Asia; sensitive to global conditions and commodity/trade dynamics. Sources: World Bank GEP Jan 2025; UN WESP 2025 (exec summary)."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.55,
+        "note": "Major LATAM EM; constraints noted but material. Sources: World Bank GEP Jan 2025; UN WESP 2025 (exec summary)."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.7,
+        "note": "Energy central commodity bucket in 2025 macro framing. Sources: World Bank GEP Jan 2025; UN WESP 2025 (exec summary)."
+      },
+      {
+        "name": "Industrial metals (incl. copper/iron ore)",
+        "score": 0.55,
+        "note": "Metals as key pro-cyclical commodity group tied to industrial cycle. Sources: USGS Mineral Commodity Summaries 2025; World Bank GEP Jan 2025."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.85,
+        "note": "AI governance/standards + strong projected growth in computer/IT occupations supporting durable tailwind into 2026+. Sources: NIST AI 100-5e2025 (2025); BLS Employment Projections 2024–34 (Aug 2025)."
+      }
+    ]
+  },
+  "$schema_note": "One key per forecast publication year (2010, 2011, ...). Same shape each year. Score 0-1; < 0.3 = not much, remove or set low."
+}

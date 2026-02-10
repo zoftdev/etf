@@ -18,5 +18,25 @@
       { "name": "Technology", "score": 0.85, "note": "Main growth sector: cloud/on-demand software, semiconductor equipment; expected to lead next decade." },
       { "name": "Healthcare", "score": 0.60, "note": "Cited as another big growth area for the coming decade." }
     ]
+  },
+  "2011": {
+    "description": "Views from 2011 → 2012, 2013 & beyond",
+    "countries": [
+      { "rank": 1, "name": "China", "score": 0.95, "note": "IMF projected 9.6% (2011), 9.5% (2012); two-speed recovery leader; still on track to overtake US by mid-2020s." },
+      { "rank": 2, "name": "India", "score": 0.90, "note": "IMF projected 8.4% (2011), 8.0% (2012); Developing Asia grows most rapidly; BRIC." },
+      { "rank": 3, "name": "Indonesia", "score": 0.80, "note": "MIST/N-11 standout; GS launched N-11 fund Feb 2011; ~6.2% growth; >1% of global GDP." },
+      { "rank": 4, "name": "Brazil", "score": 0.65, "note": "BRIC; IMF projected 4.5% (2011); slowing from 7.5% in 2010 but still top emerging economy." },
+      { "rank": 5, "name": "Russia", "score": 0.55, "note": "BRIC; IMF projected 4.5% (2011); moderate recovery; still in long-term top-economies narrative." }
+    ],
+    "commodity": [
+      { "name": "Crude oil / energy", "score": 0.85, "note": "Supercycle peak; oil hit $101.80/bbl Jan 2011; IMF Apr 2011 focused on commodity tensions." },
+      { "name": "Gold", "score": 0.80, "note": "PwC/CNNMoney forecast $1,500/oz; peaked $1,920 Sep 2011; clearly hot." },
+      { "name": "Silver", "score": 0.50, "note": "Speculative surge to $47.94 Apr 2011; high volatility; secondary to gold/oil." }
+    ],
+    "us_sector": [
+      { "name": "Energy", "score": 0.80, "note": "Commodity prices soaring; >50% profits abroad; favoured by strategists." },
+      { "name": "Industrials", "score": 0.75, "note": "Rose 25% in 2010; multinationals powered by developing-country growth; >50% profits abroad." },
+      { "name": "Technology", "score": 0.70, "note": "Strongest balance sheets; Apple/Marvell highlighted; cloud and mobile themes continuing." }
+    ]
   }
 }

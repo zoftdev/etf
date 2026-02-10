@@ -20,12 +20,7 @@
         "score": 0.85,
         "note": "BRIC; Latin America leader in GEP 2010; top-5 economy by 2050 (GS)."
       },
-      {
-        "rank": 4,
-        "name": "Indonesia",
-        "score": 0.75,
-        "note": "East Asia & Pacific standout in GEP 2010; N-11."
-      },
+      { "rank": 4, "name": "Indonesia", "score": 0.75, "note": "East Asia & Pacific standout in GEP 2010; N-11." },
       {
         "rank": 5,
         "name": "Russia",
@@ -39,16 +34,8 @@
         "score": 0.8,
         "note": "Central to 2010 outlooks; multi-year price forecasts; clearly hot in 2010 view."
       },
-      {
-        "name": "Metals",
-        "score": 0.45,
-        "note": "In outlooks but secondary to energy."
-      },
-      {
-        "name": "Agriculture",
-        "score": 0.4,
-        "note": "In outlooks but secondary."
-      }
+      { "name": "Metals", "score": 0.45, "note": "In outlooks but secondary to energy." },
+      { "name": "Agriculture", "score": 0.4, "note": "In outlooks but secondary." }
     ],
     "us_sector": [
       {
@@ -56,11 +43,7 @@
         "score": 0.85,
         "note": "Main growth sector: cloud, semiconductor equipment; expected to lead next decade."
       },
-      {
-        "name": "Healthcare",
-        "score": 0.6,
-        "note": "Cited as another big growth area for the coming decade."
-      }
+      { "name": "Healthcare", "score": 0.6, "note": "Cited as another big growth area for the coming decade." }
     ]
   },
   "2011": {
@@ -124,6 +107,548 @@
         "name": "Healthcare",
         "score": 0.52,
         "note": "Defensive sector; less favored for 2011 recovery but cited in investing roundups."
+      }
+    ]
+  },
+  "2012": {
+    "description": "Views from 2012 → 2013, 2014 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.9,
+        "note": "Main EM growth engine in 2012 outlooks; IMF/WB developing Asia leading despite slowdown."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.82,
+        "note": "BRIC; growth downgraded but top EM prospect in GEP 2012."
+      },
+      {
+        "rank": 3,
+        "name": "Brazil",
+        "score": 0.75,
+        "note": "BRIC; GEP 2012 noted slowdown; Latin America leader with headwinds."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.7,
+        "note": "East Asia standout in GEP 2012; N-11; domestic demand resilience."
+      },
+      {
+        "rank": 5,
+        "name": "Russia",
+        "score": 0.62,
+        "note": "BRIC; commodity exposure; EM slowdown and euro-area spillovers in WEO."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.76,
+        "note": "Central to 2012 outlooks; geopolitical tensions; WB ~$106/bbl; volatility."
+      },
+      {
+        "name": "Metals",
+        "score": 0.58,
+        "note": "WB Feb 2012: metals jumped on demand; copper, nickel, tin; multi-year forecasts."
+      },
+      {
+        "name": "Agriculture / food",
+        "score": 0.42,
+        "note": "Food price volatility and drought noted; secondary to energy/metals."
+      }
+    ],
+    "us_sector": [
+      { "name": "Technology", "score": 0.8, "note": "Strong 2012 performer; Apple-led gains; Kiplinger/CNN 2012 outlooks." },
+      {
+        "name": "Healthcare",
+        "score": 0.55,
+        "note": "Biotech strength; defensive and growth; cited in 2012 investing roundups."
+      }
+    ]
+  },
+  "2013": {
+    "description": "Views from 2013 → 2014, 2015 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.88,
+        "note": "Main EM growth engine in 2013 outlooks; WEO Oct 2013 highlighted EM slowdown and tighter financial conditions."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.8,
+        "note": "BRIC; top EM prospect in GEP 2013; growth to firm 2014-2015."
+      },
+      {
+        "rank": 3,
+        "name": "Brazil",
+        "score": 0.72,
+        "note": "BRIC; Latin America leader in GEP 2013; developing countries to lead muted global growth."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.68,
+        "note": "East Asia standout in GEP 2013; N-11; domestic demand resilience."
+      },
+      { "rank": 5, "name": "Russia", "score": 0.6, "note": "BRIC; commodity exposure; EM spillovers in WEO 2013." }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.74,
+        "note": "Central to 2013 outlooks; CMO Jul 2013 ~$101/bbl; Middle East disruption risk."
+      },
+      {
+        "name": "Metals",
+        "score": 0.48,
+        "note": "CMO Jul 2013: metals down >8%; abundant supply, weaker demand; secondary to oil."
+      },
+      {
+        "name": "Agriculture / food",
+        "score": 0.4,
+        "note": "CMO Jul 2013: food weaker on supply; secondary in 2013 narratives."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.78,
+        "note": "Strong 2013 performer; 2014 outlooks cited tech, corporate spending, valuations."
+      },
+      {
+        "name": "Financials",
+        "score": 0.58,
+        "note": "2014 outlooks cited financials on rising rates and bank profitability."
+      },
+      { "name": "Healthcare", "score": 0.5, "note": "Defensive and growth; cited in 2013-2014 investing roundups." }
+    ]
+  },
+  "2014": {
+    "description": "Views from 2014 → 2015, 2016 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.86,
+        "note": "Main EM growth engine; WEO Apr 2014; East Asia leading in GEP Jun 2014."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.82,
+        "note": "Top EM prospect in GEP 2014; growth 5.3%→5.7% 2016; vulnerability to Fed (GEP Jan 2014)."
+      },
+      {
+        "rank": 3,
+        "name": "Brazil",
+        "score": 0.72,
+        "note": "Latin America leader in GEP 2014; region 2.3%→3.3% by 2016."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.68,
+        "note": "East Asia standout; N-11; GEP Jan 2014 cited vulnerability to policy normalization."
+      },
+      {
+        "rank": 5,
+        "name": "Russia",
+        "score": 0.58,
+        "note": "WEO Oct 2014 geopolitical tensions; Ukraine conflict hit Europe & Central Asia (GEP Jun 2014)."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.76,
+        "note": "Central to 2014 outlooks; WB Oct 2014 weak through 2015; geopolitical risk in WEO."
+      },
+      {
+        "name": "Agriculture / food",
+        "score": 0.48,
+        "note": "CMO 2014: maize -27%, rice -16%, wheat -9%; secondary to oil."
+      },
+      { "name": "Metals", "score": 0.42, "note": "Non-energy weak on demand; secondary in 2014 narratives." }
+    ],
+    "us_sector": [
+      { "name": "Technology", "score": 0.78, "note": "Strong 2014 performer; 2015 outlooks favored tech, large-cap growth." },
+      { "name": "Healthcare", "score": 0.62, "note": "Best-performing 2014; 2015 outlooks defensive and growth." },
+      { "name": "Financials", "score": 0.56, "note": "2015 outlooks cited rising rates and bank profitability." }
+    ]
+  },
+  "2015": {
+    "description": "Views from 2015 → 2016, 2017 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.82,
+        "note": "WEO Oct 2015: gradual slowdown; GEP Jan 2015 disorderly slowdown risk; still main EM."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.8,
+        "note": "Top EM prospect in 2015 outlooks; GEP 2015 developing-country narrative."
+      },
+      {
+        "rank": 3,
+        "name": "Brazil",
+        "score": 0.68,
+        "note": "Latin America leader; WEO Oct 2015 EM/commodity/financial volatility."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.64,
+        "note": "East Asia in GEP 2015; EM commodity/financial exposure; 2016 recovery."
+      },
+      {
+        "rank": 5,
+        "name": "Russia",
+        "score": 0.52,
+        "note": "Commodity exporter; WEO Oct 2015 adjusting to lower commodity prices."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.8,
+        "note": "Central to 2015; WEO Oct 2015 special feature; CMO 2015 energy -17%, oil $52/bbl."
+      },
+      { "name": "Metals", "score": 0.45, "note": "CMO 2015 non-energy -14% from 2014; secondary to oil." },
+      { "name": "Agriculture / food", "score": 0.4, "note": "In CMO 2015 decline; secondary in 2015 narrative." }
+    ],
+    "us_sector": [
+      { "name": "Technology", "score": 0.76, "note": "Kiplinger 2016 outlook: tech well-priced, good performers." },
+      { "name": "Consumer discretionary", "score": 0.62, "note": "Kiplinger 2016 XLY; 2015 best-performing sector." },
+      { "name": "Healthcare", "score": 0.54, "note": "Defensive; Kiplinger 2016 stable earnings, CVS, Kroger." }
+    ]
+  },
+  "2016": {
+    "description": "Views from 2016 → 2017, 2018 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "India",
+        "score": 0.84,
+        "note": "IMF WEO Oct 2016: emerging Asia (India in particular) robust; World Bank GEP Jun 2016: India expected ~7.6% in 2016 with strong domestic demand supporting 2017 outlook."
+      },
+      {
+        "rank": 2,
+        "name": "China",
+        "score": 0.78,
+        "note": "IMF WEO Apr 2016: China slowdown/rebalancing central; World Bank GEP Jun 2016: China forecast ~6.7% in 2016 under orderly slowdown assumption."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.62,
+        "note": "World Bank GEP Jun 2016 regional outlook: rising investment to support Indonesia; IMF WEO 2016 projections/tables cover Indonesia as part of emerging Asia resilience narrative."
+      },
+      {
+        "rank": 4,
+        "name": "Brazil",
+        "score": 0.56,
+        "note": "IMF WEO 2016: large commodity exporters under stress; World Bank GEP Jun 2016: Brazil projected to remain in deep recession with weakness into 2017."
+      },
+      {
+        "rank": 5,
+        "name": "Russia",
+        "score": 0.5,
+        "note": "IMF WEO 2016: adjustment to lower commodity prices; World Bank GEP Jun 2016: Russia projected to remain in deeper recession than earlier forecast, weighing on ECA."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.84,
+        "note": "World Bank CMO Jan 2016 cut 2016 oil forecast to $37/bbl; CMO Oct 2016 raised 2017 oil forecast to $55/bbl; IMF WEO Apr 2016 flagged further commodity price declines (esp. oil)."
+      },
+      {
+        "name": "Metals",
+        "score": 0.5,
+        "note": "World Bank CMO Oct 2016 projected modest metals/minerals recovery in 2017 (+4.1%, zinc +20%+); IMF WEO 2016 covered commodity price effects on exporters/investment."
+      },
+      {
+        "name": "Agriculture / food",
+        "score": 0.35,
+        "note": "World Bank CMO Jan 2016 projected agriculture prices slightly down in 2016; Oct 2016 projected modest increase in 2017; secondary vs energy."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.74,
+        "note": "CNBC Dec 2016: tech 'easiest trade' theme; USA Today Dec 2016: cloud + AI highlighted as major 2017 growth themes."
+      },
+      {
+        "name": "Financials",
+        "score": 0.7,
+        "note": "CNBC Dec 2016: banks/financials favored in rotation; USA Today Dec 2016: deregulation 'Trump plays' — financials beneficiaries."
+      },
+      {
+        "name": "Energy",
+        "score": 0.56,
+        "note": "CNBC Dec 2016: energy in favored sectors; USA Today Dec 2016: energy expected to lead profit growth in 2017 on oil price recovery."
+      }
+    ]
+  },
+  "2017": {
+    "description": "Views from 2017 → 2018, 2019 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "India",
+        "score": 0.84,
+        "note": "World Bank GEP Jan/Jun 2017 projected India sustaining >7% growth into FY2018/FY2019; IMF WEO 2017 treated India as a core part of emerging Asia’s growth story."
+      },
+      {
+        "rank": 2,
+        "name": "China",
+        "score": 0.8,
+        "note": "World Bank GEP Jan/Jun 2017 projected orderly slowdown (~6.5% in 2017, ~6.3% in 2018); IMF WEO Oct 2017 cited broad-based upgrades including China/emerging Asia."
+      },
+      {
+        "rank": 3,
+        "name": "United States",
+        "score": 0.66,
+        "note": "World Bank GEP Jan 2017 expected US growth picking up (~2.2%); IMF WEO Apr/Oct 2017 highlighted cyclical recovery and a strengthening global upswing including the US."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.58,
+        "note": "World Bank GEP Jan/Jun 2017 projected Indonesia picking up (~5.2% in 2017, ~5.3% in 2018) on improving demand and modestly rising commodity prices; IMF WEO Oct 2017 highlighted emerging Asia upgrades."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.52,
+        "note": "World Bank GEP Jan/Jun 2017 projected Brazil emerging from recession (2017 near-flat, 2018 stronger); IMF WEO Oct 2017 noted commodity exporters still adjusting but with strengthening growth in parts of EM."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.82,
+        "note": "World Bank CMO Jan 2017 held crude oil forecast at ~$55/bbl for 2017; Oct 2017 CMO projected oil averaging ~$56/bbl in 2018 on steady demand + production cuts."
+      },
+      {
+        "name": "Metals",
+        "score": 0.58,
+        "note": "World Bank CMO Jan 2017 raised metals forecast on tightening supply and strong demand; Oct 2017 CMO expected metals surge to level off after strong 2017 gains (iron ore down; other base metals supported by tight supply)."
+      },
+      {
+        "name": "Agriculture / food",
+        "score": 0.3,
+        "note": "World Bank CMO Jan 2017 expected agriculture broadly flat-to-slightly up (grains down, others modest); Oct 2017 CMO expected only marginal increases in 2018 with well-supplied markets."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.78,
+        "note": "Gartner Oct 2017: AI foundation + intelligent apps/analytics key 2018 trends; FactSet Dec 2017: Information Technology among top 2018 S&P 500 earnings-growth sectors (and highest revenue growth)."
+      },
+      {
+        "name": "Financials",
+        "score": 0.7,
+        "note": "FactSet Dec 2017: Financials among top 2018 earnings-growth sectors; USA Today Dec 2017: bank stocks’ 2018 tailwinds from rising rates, deregulation, and tax reform."
+      },
+      {
+        "name": "Energy",
+        "score": 0.62,
+        "note": "FactSet Dec 2017: Energy projected highest 2018 earnings-growth sector; World Bank Oct 2017 CMO projected higher 2018 oil prices; Moody’s (Dec 2017) expected continued oil & gas industry recovery in 2018."
+      }
+    ]
+  },
+  "2018": {
+    "description": "Views from 2018 → 2019, 2020 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "India",
+        "score": 0.86,
+        "note": "World Bank GEP Jun 2018 projected India ~7.3% (FY2018/19) and ~7.5% (FY2019/20) on robust consumption + strengthening investment; IMF WEO Apr 2018 emphasized strong emerging Asia growth into 2018–2019."
+      },
+      {
+        "rank": 2,
+        "name": "China",
+        "score": 0.78,
+        "note": "World Bank GEP Jan 2018 projected China continuing structural slowdown (China ~6.4% in 2018 noted in regional summary); IMF WEO Oct 2018 revised down and noted global growth becoming less balanced with deceleration in major economies."
+      },
+      {
+        "rank": 3,
+        "name": "United States",
+        "score": 0.64,
+        "note": "IMF WEO Apr 2018 cited US fiscal expansion supporting 2018–2019 global growth; World Bank GEP Jan/Jun 2018 expected advanced-economy growth to moderate as accommodation is removed, but US remains key late-cycle driver."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.56,
+        "note": "World Bank GEP Jan 2018 projected Indonesia accelerating to ~5.3% in 2018; World Bank GEP Jun 2018 reiterated Indonesia ~5.2% in 2018 and ~5.3% in 2019; IMF WEO 2018 highlighted emerging Asia resilience."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.5,
+        "note": "World Bank GEP Jan 2018 projected Brazil picking up to ~2.0% in 2018 (from ~1.0% in 2017); World Bank GEP Jun 2018 forecast Brazil ~2.4% in 2018 and ~2.5% in 2019, consistent with IMF WEO Apr 2018 noting recovery signs in some commodity exporters."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.82,
+        "note": "World Bank CMO Apr 2018 forecast oil averaging ~$65/bbl in 2018 and ~$65 in 2019; World Bank CMO Oct 2018 revised up with oil projected ~$72 in 2018 and ~$74 in 2019; EIA STEO Jan 2018 forecast Brent ~$60 in 2018 and ~$61 in 2019."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Financials",
+        "score": 0.68,
+        "note": "FactSet Dec 2018 projected Financials among the top 2019 earnings-growth sectors (~9.5% YoY); CNBC Nov 2018 reported Morgan Stanley maintained an overweight on U.S. financials for 2019 on valuation + earnings achievability."
+      },
+      {
+        "name": "Energy",
+        "score": 0.6,
+        "note": "FactSet Dec 2018 projected Energy among the top 2019 earnings-growth sectors (~9.7% YoY); World Bank CMO Oct 2018 projected oil ~$74/bbl in 2019, supporting energy cash flows; EIA STEO Jan 2018 forecast Brent ~$61/bbl in 2019."
+      }
+    ]
+  },
+  "2019": {
+    "description": "Views from 2019 → 2020, 2021 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "India",
+        "score": 0.82,
+        "note": "World Bank GEP Jun 2019: EMDE 4.6% in 2020, India key in EM Asia; IMF WEO Oct 2019: Emerging and Developing Asia 6.0% in 2020 — India central."
+      },
+      {
+        "rank": 2,
+        "name": "China",
+        "score": 0.78,
+        "note": "IMF WEO Apr/Oct 2019: trade tensions and manufacturing downturn central; World Bank GEP Jun 2019: US-China trade tensions as major risk; China core to 2020 outlook."
+      },
+      {
+        "rank": 3,
+        "name": "Indonesia",
+        "score": 0.58,
+        "note": "World Bank GEP Jun 2019 EMDE regional outlook; IMF WEO 2019 Emerging and Developing Asia includes Indonesia in recovery into 2020."
+      },
+      {
+        "rank": 4,
+        "name": "United States",
+        "score": 0.54,
+        "note": "IMF WEO Apr 2019: Fed accommodation easing financial conditions; World Bank GEP Jun 2019: major-economy slowdown risk; US key advanced-economy driver."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.5,
+        "note": "World Bank GEP Jun 2019: EMDE subdued investment; IMF WEO 2019 EMDE 3.9%→4.6%; Brazil in Latin America/commodity-exporter narrative."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.8,
+        "note": "World Bank CMO Apr 2019 ~$66/$65 bbl; Oct 2019 revised to $60/$58 on weak growth; energy ~15% lower in 2019 than 2018; IMF WEO 2019 global slowdown."
+      },
+      {
+        "name": "Metals",
+        "score": 0.48,
+        "note": "World Bank CMO Oct 2019: metals -5% in 2019, sliding in 2020; precious metals gain on uncertainty; secondary to energy."
+      },
+      {
+        "name": "Agriculture / food",
+        "score": 0.38,
+        "note": "World Bank CMO Oct 2019: agriculture down in 2019, stabilize in 2020; trade resolution could lift soy/corn; secondary."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Technology",
+        "score": 0.76,
+        "note": "FactSet Dec 2019 S&P 500 earnings 9.6% for 2020; Kiplinger Dec 2019 tech led 2019; USA Today Dec 2019 tech benefit if trade deal."
+      },
+      {
+        "name": "Financials",
+        "score": 0.68,
+        "note": "USA Today Dec 2019: cyclicals/financials benefit if trade deal; Kiplinger Dec 2019 shift to offense/defense mix."
+      },
+      {
+        "name": "Healthcare",
+        "score": 0.58,
+        "note": "USA Today Dec 2019: healthcare outperform as beaten-down; FactSet Dec 2019 all 11 sectors YoY growth 2020."
+      }
+    ]
+  },
+  "2020": {
+    "description": "Views from 2020 → 2021, 2022 & beyond",
+    "countries": [
+      {
+        "rank": 1,
+        "name": "China",
+        "score": 0.86,
+        "note": "IMF WEO Oct 2020 projected China positive in 2020 (1.9%) and strong rebound in 2021 (8.2%); World Bank GEP Jun 2020 emphasized China’s early restart in the recovery narrative."
+      },
+      {
+        "rank": 2,
+        "name": "India",
+        "score": 0.82,
+        "note": "IMF WEO Oct 2020 projected deep 2020 contraction (-10.3%) then sharp 2021 rebound (8.8%); World Bank GEP Jun 2020 framed South Asia recovery around India’s rebound path and pandemic risks."
+      },
+      {
+        "rank": 3,
+        "name": "United States",
+        "score": 0.62,
+        "note": "IMF WEO Oct 2020 projected -4.3% (2020) then +3.1% (2021); World Bank GEP Jun 2020 treated the US recovery pace and policy support as central to the global baseline."
+      },
+      {
+        "rank": 4,
+        "name": "Indonesia",
+        "score": 0.54,
+        "note": "IMF WEO Oct 2020 projected -1.5% (2020) then +6.1% (2021); World Bank GEP Jun 2020 described EM recoveries (incl. commodity exporters) as rebound-but-risk-heavy in 2021."
+      },
+      {
+        "rank": 5,
+        "name": "Brazil",
+        "score": 0.46,
+        "note": "IMF WEO Oct 2020 projected -5.8% (2020) then +2.8% (2021); World Bank GEP Jun 2020 Latin America outlook emphasized a hard 2020 hit and partial 2021 rebound constrained by health/finance conditions."
+      }
+    ],
+    "commodity": [
+      {
+        "name": "Crude oil / energy",
+        "score": 0.78,
+        "note": "World Bank CMO Oct 2020 forecast oil averaging $44/bbl in 2021 (up from ~$41 in 2020) but below pre-pandemic; FactSet Dec 2020 CY2021 earnings preview cited expected average oil price ~$45.75 in 2021 supporting Energy sector rebound."
+      }
+    ],
+    "us_sector": [
+      {
+        "name": "Industrials",
+        "score": 0.72,
+        "note": "FactSet Dec 2020 projected Industrials with the largest 2021 earnings growth (78.0%); UBS Nov 2020 Year Ahead highlighted upside potential in cyclical exposures including industrials as the economy reopens."
+      },
+      {
+        "name": "Consumer Discretionary",
+        "score": 0.62,
+        "note": "FactSet Dec 2020 projected Consumer Discretionary earnings growth of 58.9% in CY2021; UBS Nov 2020 cited industrial and consumer discretionary sectors as areas with upside in 2021."
+      },
+      {
+        "name": "Energy",
+        "score": 0.68,
+        "note": "FactSet Dec 2020 expected Energy to swing back to profit in 2021, tied to higher expected oil prices; UBS Nov 2020 cited upside potential in select energy stocks in 2021."
       }
     ]
   },
