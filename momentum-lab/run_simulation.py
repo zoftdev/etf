@@ -20,7 +20,7 @@ import pandas as pd
 _lab_dir = Path(__file__).resolve().parent
 sys.path.insert(0, str(_lab_dir))
 
-from simulate import OUT_DIR, SPREAD_PCT, run_simulation
+from simulate import ETF_GROUP_NAME, OUT_DIR, SPREAD_PCT, run_simulation
 from gen_graph import build_chart
 
 
@@ -34,7 +34,8 @@ def main() -> None:
                         help="Skip chart generation")
     args = parser.parse_args()
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    result_dir = OUT_DIR / ETF_GROUP_NAME
+    result_dir.mkdir(parents=True, exist_ok=True)
 
     print("Fetching 13 ETFs from Yahoo Finance...")
     result = run_simulation(spread=args.spread, show_trades=args.show_trades)
@@ -62,8 +63,8 @@ def main() -> None:
     print(f"  Sharpe:     {m_bh.get('sharpe', 0):.2f}")
     print(f"  Max DD:     {m_bh.get('max_drawdown_pct', 0):.2f}%")
 
-    # Save CSVs
-    out_csv = OUT_DIR / "equity_curves.csv"
+    # Save CSVs in result/ETF_GROUP_NAME/
+    out_csv = result_dir / "equity_curves.csv"
     result.out_df.to_csv(out_csv)
     print(f"\nSaved {out_csv}")
 
@@ -72,28 +73,28 @@ def main() -> None:
         {"strategy": result.spread_label, **m_mom_015},
         {"strategy": "buy_hold", **m_bh},
     ])
-    metrics_csv = OUT_DIR / "metrics.csv"
+    metrics_csv = result_dir / "metrics.csv"
     metrics_df.to_csv(metrics_csv, index=False)
     print(f"Saved {metrics_csv}")
 
     trades_df = pd.DataFrame(result.trades_log)
     if not trades_df.empty:
         trades_df["date"] = pd.to_datetime(trades_df["date"]).dt.strftime("%Y-%m-%d")
-    trades_csv = OUT_DIR / "buysell_log.csv"
+    trades_csv = result_dir / "buysell_log.csv"
     trades_df.to_csv(trades_csv, index=False)
     print(f"Saved {trades_csv} ({len(trades_df)} rows)")
 
     if result.trade_log:
         trade_df = pd.DataFrame(result.trade_log)
         trade_df["date"] = pd.to_datetime(trade_df["date"]).dt.strftime("%Y-%m-%d")
-        trade_csv = OUT_DIR / "trade_log.csv"
+        trade_csv = result_dir / "trade_log.csv"
         trade_df.to_csv(trade_csv, index=False)
         print(f"Saved {trade_csv} ({len(trade_df)} rows)")
 
     if args.show_trades and result.trades_summary:
         summary_df = pd.DataFrame(result.trades_summary)
         summary_df["date"] = pd.to_datetime(summary_df["date"]).dt.strftime("%Y-%m-%d")
-        summary_csv = OUT_DIR / "trades_summary.csv"
+        summary_csv = result_dir / "trades_summary.csv"
         summary_df.to_csv(summary_csv, index=False)
         print(f"Saved {summary_csv}")
         print("\n--- Trades Summary (last 10) ---")
@@ -111,7 +112,7 @@ def main() -> None:
                 first_valid=result.first_valid,
                 spread=result.spread,
                 spread_label=result.spread_label,
-                out_path=OUT_DIR / "momentum_vs_buyhold.html",
+                out_path=result_dir / "momentum_vs_buyhold.html",
             )
             print(f"Saved {path}")
         except ImportError:

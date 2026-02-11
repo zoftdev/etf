@@ -14,9 +14,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from simulate import ETFS, OUT_DIR, last_trading_day_of_month
+from simulate import ETFS, ETF_GROUP_NAME, OUT_DIR, last_trading_day_of_month
 
-# Optional: allow running standalone by loading saved data
 RESULT_DIR = OUT_DIR
 
 
@@ -38,7 +37,7 @@ def build_chart(
         raise ImportError("Plotly required for gen_graph. pip install plotly") from e
 
     etfs = etfs or ETFS
-    out_path = out_path or RESULT_DIR / "momentum_vs_buyhold.html"
+    out_path = out_path or RESULT_DIR / ETF_GROUP_NAME / "momentum_vs_buyhold.html"
 
     # ── Shared x-axis: use holdings_history rebalance dates for all 3 rows ──
     h_timestamps = [pd.Timestamp(h["date"]) for h in holdings_history]
@@ -227,7 +226,7 @@ def main() -> None:
         first_valid=result.first_valid,
         spread=result.spread,
         spread_label=result.spread_label,
-        out_path=RESULT_DIR / "momentum_vs_buyhold.html",
+        out_path=RESULT_DIR / ETF_GROUP_NAME / "momentum_vs_buyhold.html",
     )
     print(f"Saved {path}")
 

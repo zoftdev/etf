@@ -45,9 +45,11 @@ uv run python momentum-lab/gen_graph.py
 
 ## Outputs
 
-- `result/momentum-lab/equity_curves.csv` — Daily equity (momentum_spread0, momentum_spread015, buy_hold)
-- `result/momentum-lab/metrics.csv` — CAGR, Sharpe, Max DD for all 3
-- `result/momentum-lab/buysell_log.csv` — Holdings snapshot per rebalance
-- `result/momentum-lab/trade_log.csv` — Trade log (BUY/SELL, PnL on close)
-- `result/momentum-lab/trades_summary.csv` — Merged by date (with `--show-trades`)
-- `result/momentum-lab/momentum_vs_buyhold.html` — Equity curves + ETFs + buy/sell markers
+Saved under `result/momentum-lab/{ETF_GROUP_NAME}/`. Adjust `ETF_GROUP_NAME` in `simulate.py`.
+
+- `result/momentum-lab/from-research/equity_curves.csv`
+- `result/momentum-lab/from-research/metrics.csv`
+- `result/momentum-lab/from-research/buysell_log.csv`
+- `result/momentum-lab/from-research/trade_log.csv`
+- `result/momentum-lab/from-research/trades_summary.csv` (with `--show-trades`)
+- `result/momentum-lab/from-research/momentum_vs_buyhold.html`

@@ -34,6 +34,7 @@ SHORT_WEIGHT = 0.30
 LONG_WEIGHT = 1.0
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "result" / "momentum-lab"
+ETF_GROUP_NAME = "from-research"  # subfolder for outputs; adjust when changing ETF list
 LOOKBACK_YEARS = 20
 SPREAD_PCT = 0.15
 
