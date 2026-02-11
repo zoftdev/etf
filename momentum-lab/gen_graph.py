@@ -30,7 +30,7 @@ def build_chart(
     etfs: list[str] | None = None,
     out_path: Path | None = None,
 ) -> Path:
-    """Build combined Plotly chart. Returns path to saved HTML."""
+    """Build 3-row Plotly chart: equity curves, holdings heatmap, exit P&L."""
     try:
         import plotly.graph_objects as go
         from plotly.subplots import make_subplots
@@ -40,157 +40,173 @@ def build_chart(
     etfs = etfs or ETFS
     out_path = out_path or RESULT_DIR / "momentum_vs_buyhold.html"
 
-    seen = set()
-    month_end_dates = []
-    for d in out_df.index:
-        key = (d.year, d.month)
-        if key in seen:
-            continue
-        last = last_trading_day_of_month(out_df, d.year, d.month)
-        if last is not None and last in out_df.index:
-            month_end_dates.append(last)
-            seen.add(key)
-    month_end_dates = sorted(set(month_end_dates))
-    out_mo = out_df.loc[out_df.index.isin(month_end_dates)].sort_index()
-    dates_str = [pd.Timestamp(d).strftime("%Y-%m-%d") for d in out_mo.index]
+    # ── Shared x-axis: use holdings_history rebalance dates for all 3 rows ──
+    h_timestamps = [pd.Timestamp(h["date"]) for h in holdings_history]
+    h_dates = [d.strftime("%Y-%m-%d") for d in h_timestamps]
+    # Resample equity curves at rebalance dates (ffill to nearest prior date)
+    out_mo = out_df.reindex(h_timestamps, method="ffill")
 
-    idx0 = prices.index.get_indexer([first_valid], method="ffill")[0]
-    start_prices = prices.iloc[idx0]
-    etf_norm_full = (prices / start_prices).reindex(out_df.index).ffill()
-    etf_norm = etf_norm_full.loc[etf_norm_full.index.isin(month_end_dates)].sort_index()
-    etf_dates = [pd.Timestamp(d).strftime("%Y-%m-%d") for d in etf_norm.index]
-    colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b",
-              "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", "#aec7e8", "#ffbb78", "#98df8a"]
+    # ── Holdings matrix: z[etf_i][month_j] = 1(LONG), -1(SHORT), 0(none) ──
+    n_etfs = len(etfs)
+    n_months = len(holdings_history)
+    z = [[0.0] * n_months for _ in range(n_etfs)]
+    hover = [[""] * n_months for _ in range(n_etfs)]
 
-    buy_x, buy_y, buy_text = [], [], []
-    sell_x, sell_y, sell_text = [], [], []
-    exits_detail_all: list[dict] = []
-    JITTER = 0.008
-    for h in holdings_history:
-        d, dstr = h["date"], pd.Timestamp(h["date"]).strftime("%Y-%m-%d")
-        mask = etf_norm_full.index <= d
-        if not mask.any():
-            continue
-        row = etf_norm_full.loc[mask].iloc[-1]
-        entries_list = [t for t in h["entries"] if t in etf_norm_full.columns and pd.notna(row.get(t))]
-        for i, t in enumerate(entries_list):
-            buy_x.append(dstr)
-            buy_y.append(float(row[t]) + i * JITTER)
-            buy_text.append(f"{t} buy")
-        exits_det = h.get("exits_detail", [])
-        for i, ed in enumerate(exits_det):
+    for j, h in enumerate(holdings_history):
+        dstr = h_dates[j]
+        longs_set = set(h.get("longs", []))
+        short_t = h.get("short")
+        entries_set = set(h.get("entries", []))
+        exits_map = {ed["ticker"]: ed for ed in h.get("exits_detail", [])}
+
+        for i, etf in enumerate(etfs):
+            parts = [f"<b>{etf}</b> | {dstr}"]
+            if etf in longs_set:
+                z[i][j] = 1.0
+                tag = "LONG 25%"
+                if etf in entries_set:
+                    tag += "  ← new"
+                parts.append(tag)
+            elif short_t == etf:
+                z[i][j] = -1.0
+                tag = "SHORT 30%"
+                if etf in entries_set:
+                    tag += "  ← new"
+                parts.append(tag)
+            else:
+                parts.append("—")
+            if etf in exits_map:
+                ed = exits_map[etf]
+                pnl = ed["pnl_pct"]
+                hold = (pd.Timestamp(ed["sell_date"]) - pd.Timestamp(ed["buy_date"])).days
+                parts.append(f"CLOSED {pnl:+.1f}% ({hold}d hold)")
+            hover[i][j] = "<br>".join(parts)
+
+    # ── Exit P&L data ──
+    exit_dates: list[str] = []
+    exit_pnls: list[float] = []
+    exit_colors: list[str] = []
+    exit_symbols: list[str] = []
+    exit_hover: list[str] = []
+    for j, h in enumerate(holdings_history):
+        dstr = pd.Timestamp(h["date"]).strftime("%Y-%m-%d")
+        prev_h = holdings_history[j - 1] if j > 0 else None
+        for ed in h.get("exits_detail", []):
             t = ed["ticker"]
-            if t in etf_norm_full.columns and pd.notna(row.get(t)):
-                pnl = ed.get("pnl_pct", 0)
-                win = "✓" if pnl > 0 else "✗"
-                sell_x.append(dstr)
-                sell_y.append(float(row[t]) - i * JITTER)
-                sell_text.append(f"{t} sell • PnL: {win}{pnl:.1f}%")
-        exits_detail_all.extend(exits_det)
+            pnl = ed["pnl_pct"]
+            hold = (pd.Timestamp(ed["sell_date"]) - pd.Timestamp(ed["buy_date"])).days
+            side = "SHORT" if prev_h and prev_h.get("short") == t else "LONG"
+            exit_dates.append(dstr)
+            exit_pnls.append(pnl)
+            exit_colors.append("#27ae60" if pnl > 0 else "#e74c3c")
+            exit_symbols.append("diamond" if side == "SHORT" else "circle")
+            exit_hover.append(
+                f"<b>{t}</b> ({side})<br>"
+                f"P&L: {pnl:+.1f}%<br>"
+                f"Hold: {hold}d<br>"
+                f"Exit: {dstr}"
+            )
 
+    # ── Build 3-row figure ──
     fig = make_subplots(
-        rows=2, cols=1,
+        rows=3, cols=1,
         subplot_titles=(
-            "Equity curves",
-            "All 13 ETFs (normalized) — ▲ buy, ▼ sell, dotted = round-trip",
+            "Equity Curves",
+            "Monthly Holdings — "
+            "<span style='color:#27ae60'>■ LONG</span>  "
+            "<span style='color:#e74c3c'>■ SHORT</span>  "
+            "<span style='color:#ddd'>■ not held</span>",
+            "Closed Position P&L (%) — "
+            "<span style='color:#27ae60'>● long exit</span>  "
+            "<span style='color:#e74c3c'>◆ short exit</span>",
         ),
-        vertical_spacing=0.10,
-        row_heights=[0.5, 0.5],
+        vertical_spacing=0.07,
+        row_heights=[0.33, 0.37, 0.30],
         shared_xaxes=True,
     )
 
-    fig.add_trace(
-        go.Scatter(x=dates_str, y=out_mo["momentum_spread0"].tolist(),
-                  name="Momentum (spread=0%)", mode="lines+markers", marker=dict(size=4),
-                  line=dict(color="#1f77b4", width=2)),
-        row=1, col=1,
-    )
-    fig.add_trace(
-        go.Scatter(x=dates_str, y=out_mo[spread_label].tolist(),
-                  name=f"Momentum (spread={spread}%)", mode="lines+markers", marker=dict(size=4),
-                  line=dict(color="#2ca02c", width=2)),
-        row=1, col=1,
-    )
-    fig.add_trace(
-        go.Scatter(x=dates_str, y=out_mo["buy_hold"].tolist(),
-                  name="Buy-Hold", mode="lines+markers", marker=dict(size=4),
-                  line=dict(color="#ff7f0e", width=2)),
-        row=1, col=1,
-    )
+    # ── Row 1: Equity curves ──
+    fig.add_trace(go.Scatter(
+        x=h_dates, y=out_mo["momentum_spread0"].tolist(),
+        name="Momentum (spread=0%)", mode="lines+markers",
+        marker=dict(size=3), line=dict(color="#1f77b4", width=2),
+    ), row=1, col=1)
+    fig.add_trace(go.Scatter(
+        x=h_dates, y=out_mo[spread_label].tolist(),
+        name=f"Momentum (spread={spread}%)", mode="lines+markers",
+        marker=dict(size=3), line=dict(color="#2ca02c", width=2),
+    ), row=1, col=1)
+    fig.add_trace(go.Scatter(
+        x=h_dates, y=out_mo["buy_hold"].tolist(),
+        name="Buy-Hold", mode="lines+markers",
+        marker=dict(size=3), line=dict(color="#ff7f0e", width=2),
+    ), row=1, col=1)
 
-    buy_combined = ["<br>".join(buy_text[j] for j in range(len(buy_x)) if buy_x[j] == buy_x[i])
-                    for i in range(len(buy_x))]
-    sell_combined = ["<br>".join(sell_text[j] for j in range(len(sell_x)) if sell_x[j] == sell_x[i])
-                     for i in range(len(sell_x))]
-    if buy_x:
-        fig.add_trace(
-            go.Scatter(x=buy_x, y=buy_y, text=buy_combined, name="Buy", mode="markers",
-                      marker=dict(symbol="triangle-up", size=8, color="green", line=dict(width=1)),
-                      hovertemplate="%{text}<extra></extra>"),
-            row=2, col=1,
-        )
-    if sell_x:
-        fig.add_trace(
-            go.Scatter(x=sell_x, y=sell_y, text=sell_combined, name="Sell", mode="markers",
-                      marker=dict(symbol="triangle-down", size=8, color="red", line=dict(width=1)),
-                      hovertemplate="%{text}<extra></extra>"),
-            row=2, col=1,
-        )
-    for i, t in enumerate(etfs):
-        if t not in etf_norm.columns:
-            continue
-        fig.add_trace(
-            go.Scatter(x=etf_dates, y=etf_norm[t].tolist(), name=t,
-                      mode="lines+markers", marker=dict(size=3),
-                      line=dict(color=colors[i % len(colors)], width=1)),
-            row=2, col=1,
-        )
-
-    for ed in exits_detail_all:
-        t = ed["ticker"]
-        if t not in start_prices.index or start_prices[t] <= 0:
-            continue
-        buy_d = pd.Timestamp(ed["buy_date"]).strftime("%Y-%m-%d")
-        sell_d = pd.Timestamp(ed["sell_date"]).strftime("%Y-%m-%d")
-        buy_yn = ed["buy_price"] / float(start_prices[t])
-        sell_yn = ed["sell_price"] / float(start_prices[t])
-        fig.add_trace(
-            go.Scatter(x=[buy_d, sell_d], y=[buy_yn, sell_yn], mode="lines",
-                      line=dict(color="rgba(128,128,128,0.4)", width=1, dash="dot"),
-                      name=f"{t} round-trip", showlegend=False,
-                      hovertemplate=f"{t} buy→sell PnL: {ed.get('pnl_pct',0):.1f}%<extra></extra>"),
-            row=2, col=1,
-        )
-
+    # Short-period pink shading on equity chart
     for i, h in enumerate(holdings_history):
-        if not h["short"]:
+        if not h.get("short"):
             continue
-        dstr = pd.Timestamp(h["date"]).strftime("%Y-%m-%d")
-        end_str = dates_str[-1] if dates_str else dstr
-        if i + 1 < len(holdings_history):
-            end_str = pd.Timestamp(holdings_history[i + 1]["date"]).strftime("%Y-%m-%d")
+        dstr = h_dates[i]
+        end_str = h_dates[-1] if i + 1 >= len(holdings_history) else h_dates[i + 1]
         fig.add_vrect(x0=dstr, x1=end_str, fillcolor="rgba(255,100,100,0.12)",
                       line_width=0, row=1, col=1)
 
-    fig.add_annotation(
-        text="<b>พื้นที่สีชมพู:</b> ช่วงที่เปิด short (correlation filter ผ่าน, 20d corr > 250d corr)",
-        xref="paper", yref="paper",
-        x=0.5, y=1.02, xanchor="center", yanchor="bottom",
-        showarrow=False, font=dict(size=11),
-    )
+    # ── Row 2: Holdings heatmap ──
+    colorscale = [
+        [0.0, "#e74c3c"],
+        [0.5, "#f0f0f0"],
+        [1.0, "#27ae60"],
+    ]
+    fig.add_trace(go.Heatmap(
+        z=z, x=h_dates, y=etfs,
+        colorscale=colorscale, zmin=-1, zmax=1,
+        showscale=False,
+        hovertext=hover,
+        hovertemplate="%{hovertext}<extra></extra>",
+        xgap=1, ygap=2,
+    ), row=2, col=1)
 
+    # ── Row 3: Exit P&L scatter ──
+    if exit_dates:
+        fig.add_trace(go.Scatter(
+            x=exit_dates, y=exit_pnls,
+            mode="markers",
+            marker=dict(
+                size=7, color=exit_colors, symbol=exit_symbols,
+                line=dict(width=0.5, color="white"),
+            ),
+            text=exit_hover,
+            hovertemplate="%{text}<extra></extra>",
+            name="Exit P&L",
+        ), row=3, col=1)
+        fig.add_hline(y=0, line_dash="dash", line_color="gray",
+                      line_width=1, row=3, col=1)
+
+    # ── Layout ──
+    fig.add_annotation(
+        text="Pink shade = short hedge active (20d corr > 250d corr)",
+        xref="paper", yref="paper",
+        x=0.5, y=1.01, xanchor="center", yanchor="bottom",
+        showarrow=False, font=dict(size=10, color="gray"),
+    )
     fig.update_layout(
-        title=dict(text=f"QuantPedia ETF Momentum (spread 0% vs {spread}%)", x=0.5, xanchor="center"),
-        height=900,
-        hovermode="x unified",
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
-        margin=dict(t=120),
+        title=dict(
+            text=f"QuantPedia ETF Momentum Strategy (spread 0% vs {spread}%)",
+            x=0.5, xanchor="center",
+        ),
+        height=1100,
+        hovermode="closest",
+        legend=dict(orientation="h", yanchor="bottom", y=1.03,
+                    xanchor="center", x=0.5),
+        margin=dict(t=130, b=40),
         template="plotly_white",
     )
-    fig.update_xaxes(title_text="Date", row=1, col=1)
-    fig.update_xaxes(title_text="Date", row=2, col=1)
-    fig.update_yaxes(title_text="Equity (start=1)", row=1, col=1)
-    fig.update_yaxes(title_text="Price (start=1)", row=2, col=1)
+    fig.update_xaxes(title_text="", row=1, col=1)
+    fig.update_xaxes(title_text="", row=2, col=1)
+    fig.update_xaxes(title_text="Date", row=3, col=1)
+    fig.update_yaxes(title_text="Equity", row=1, col=1)
+    fig.update_yaxes(autorange="reversed", row=2, col=1)
+    fig.update_yaxes(title_text="P&L %", row=3, col=1)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     fig.write_html(str(out_path))
