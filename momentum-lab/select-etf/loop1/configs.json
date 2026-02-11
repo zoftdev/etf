@@ -1,0 +1,94 @@
+[
+  {
+    "etfs": [
+      "SPY",
+      "IWM",
+      "EFA",
+      "EEM",
+      "IYR",
+      "QQQ",
+      "LQD",
+      "IEF",
+      "TIP",
+      "GLD",
+      "USO",
+      "DBC",
+      "FXE"
+    ],
+    "group_name": "plan_a_quantpedia"
+  },
+  {
+    "etfs": [
+      "SPY",
+      "EFA",
+      "IYR",
+      "EEM",
+      "TLT",
+      "IEF",
+      "USO",
+      "GLD",
+      "UUP",
+      "FXE",
+      "DBC",
+      "TIP",
+      "SLV"
+    ],
+    "group_name": "plan_b_low_corr"
+  },
+  {
+    "etfs": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "EFA",
+      "EEM",
+      "VEU",
+      "TLT",
+      "IEF",
+      "LQD",
+      "GLD",
+      "SLV",
+      "USO",
+      "FXE"
+    ],
+    "group_name": "plan_c_long_backtest"
+  },
+  {
+    "etfs": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "EFA",
+      "EEM",
+      "TLT",
+      "IEF",
+      "LQD",
+      "GLD",
+      "SLV",
+      "USO",
+      "IYR",
+      "VTV"
+    ],
+    "group_name": "plan_d_low_expense"
+  },
+  {
+    "etfs": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "IYR",
+      "EFA",
+      "EEM",
+      "TLT",
+      "IEF",
+      "LQD",
+      "TIP",
+      "GLD",
+      "USO",
+      "DBC",
+      "XLU",
+      "XLF"
+    ],
+    "group_name": "plan_e_sector_tilt"
+  }
+]

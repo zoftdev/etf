@@ -8,15 +8,26 @@
 | D | Low Expense | 13 | cost-efficient |
 | E | Sector Tilt | 15 | เพิ่ม sector ETFs (XLU, XLF) |
 
-### Backtest (n_long=4, spread=0.15%)
+### Params Used (`param/default` → optimal-13etf.json)
+
+| Param | Value |
+|-------|-------|
+| n_long | 5 |
+| n_short | 1 |
+| short_weight | 0.2 |
+| mom_periods_days | [21, 63, 126, 189, 252] |
+| corr_short_days | 10 |
+| spread_pct | 0.15 |
+
+### Backtest (n_long=5, spread=0.15%)
 
 | Plan | Mom CAGR | Mom Sharpe | Mom MaxDD |
 |------|----------|------------|-----------|
-| E Sector Tilt | 12.14% | 0.78 | -26.4% |
-| D Low Expense | 12.07% | 0.76 | -34.0% |
-| A QuantPedia | 9.68% | 0.67 | -28.8% |
-| B Low Corr | 9.66% | 0.64 | -35.7% |
-| C Long Backtest | 8.94% | 0.60 | -28.5% |
+| A QuantPedia | 11.53% | 0.87 | -25.2% |
+| D Low Expense | 11.84% | 0.82 | -34.7% |
+| C Long Backtest | 11.28% | 0.80 | -29.0% |
+| E Sector Tilt | 10.37% | 0.76 | -21.5% |
+| B Low Corr | 8.84% | 0.67 | -25.8% |
 
 ---
 

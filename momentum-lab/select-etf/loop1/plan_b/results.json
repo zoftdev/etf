@@ -1,0 +1,4657 @@
+[
+  {
+    "config": {
+      "group_name": "plan_b-A-n6",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 6,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.689466213434782,
+      "sharpe": 0.7095855939507101,
+      "max_drawdown_pct": -22.30795314129529,
+      "total_return_pct": 349.17388919965884,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.748406483024395,
+      "sharpe": 0.6420147281357179,
+      "max_drawdown_pct": -22.525316100355642,
+      "total_return_pct": 283.99638584944114,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586201506757,
+      "sharpe": 0.5399933422014298,
+      "max_drawdown_pct": -32.47006502716863,
+      "total_return_pct": 145.65919108413672,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-B-sw01",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.082773494514917,
+      "sharpe": 0.7069288654127271,
+      "max_drawdown_pct": -30.158078553847865,
+      "total_return_pct": 465.1293423704462,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.10836964837567,
+      "sharpe": 0.6484157966530085,
+      "max_drawdown_pct": -30.92964088613416,
+      "total_return_pct": 381.43040736805716,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586895505726,
+      "sharpe": 0.5399935037897026,
+      "max_drawdown_pct": -32.470069735050714,
+      "total_return_pct": 145.65922032611985,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-B-sw04",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.25884629332654,
+      "sharpe": 0.6356397761644779,
+      "max_drawdown_pct": -35.87129684035876,
+      "total_return_pct": 481.6493771735706,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.925718996167165,
+      "sharpe": 0.5674843462153123,
+      "max_drawdown_pct": -36.95955497944654,
+      "total_return_pct": 367.10577881322433,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586606826424,
+      "sharpe": 0.5399933172904045,
+      "max_drawdown_pct": -32.470070250809414,
+      "total_return_pct": 145.65920816247734,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-B-sw005",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.941348784097869,
+      "sharpe": 0.7025264884837092,
+      "max_drawdown_pct": -29.600366842301497,
+      "total_return_pct": 452.1821546942153,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.026283257596578,
+      "sharpe": 0.6471209776387795,
+      "max_drawdown_pct": -30.33103792032873,
+      "total_return_pct": 374.94208401330883,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586529481316,
+      "sharpe": 0.5399932043797567,
+      "max_drawdown_pct": -32.47007237067411,
+      "total_return_pct": 145.65920490350385,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-A-n5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.837230661630935,
+      "sharpe": 0.6700323118782983,
+      "max_drawdown_pct": -25.799733982991192,
+      "total_return_pct": 360.31162955563263,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.837984018653366,
+      "sharpe": 0.6045045280328427,
+      "max_drawdown_pct": -26.531178910617072,
+      "total_return_pct": 289.7927794675889,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586376512878,
+      "sharpe": 0.5399933500323033,
+      "max_drawdown_pct": -32.47008132475877,
+      "total_return_pct": 145.65919845810456,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-B-sw0",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.825741926756626,
+      "sharpe": 0.6958130051202424,
+      "max_drawdown_pct": -29.118478562386507,
+      "total_return_pct": 441.8071905844342,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.969689106219336,
+      "sharpe": 0.6439322441325132,
+      "max_drawdown_pct": -29.80674892638271,
+      "total_return_pct": 370.51693211207777,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586819567782,
+      "sharpe": 0.5399933513896966,
+      "max_drawdown_pct": -32.47006904871349,
+      "total_return_pct": 145.6592171264381,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-A-n1",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 1,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.058635425873685,
+      "sharpe": 0.45197881249423605,
+      "max_drawdown_pct": -57.4334917444967,
+      "total_return_pct": 377.4893600296322,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.202624413852998,
+      "sharpe": 0.3910274812354654,
+      "max_drawdown_pct": -58.4320151434367,
+      "total_return_pct": 250.4014069741265,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586318501349,
+      "sharpe": 0.5399931272320927,
+      "max_drawdown_pct": -32.47008285950783,
+      "total_return_pct": 145.6591960137605,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-C-ct06",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.880042394874922,
+      "sharpe": 0.6720073782522312,
+      "max_drawdown_pct": -31.218956800244268,
+      "total_return_pct": 446.65715979400557,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.699022164420178,
+      "sharpe": 0.6039002027671097,
+      "max_drawdown_pct": -32.070657005252315,
+      "total_return_pct": 349.88640032622,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586423974024,
+      "sharpe": 0.5399933477369875,
+      "max_drawdown_pct": -32.47007486734299,
+      "total_return_pct": 145.6592004579027,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-A-n3",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.961267860604806,
+      "sharpe": 0.6721380335410047,
+      "max_drawdown_pct": -39.95403560465459,
+      "total_return_pct": 552.2047380363763,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.697283099097941,
+      "sharpe": 0.6078173047018397,
+      "max_drawdown_pct": -40.652984254306986,
+      "total_return_pct": 430.4949008254873,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586178207417,
+      "sharpe": 0.539993160491254,
+      "max_drawdown_pct": -32.47006906215108,
+      "total_return_pct": 145.6591901024074,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-A-n4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.182781724375744,
+      "sharpe": 0.69412852278274,
+      "max_drawdown_pct": -31.449724191816497,
+      "total_return_pct": 474.4574260837581,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.091139165086837,
+      "sharpe": 0.6307977634580648,
+      "max_drawdown_pct": -32.29856996178751,
+      "total_return_pct": 380.06156129811757,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586892411002,
+      "sharpe": 0.5399934394527683,
+      "max_drawdown_pct": -32.47006256984349,
+      "total_return_pct": 145.65922019572278,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-B-sw02",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.26990251249913,
+      "sharpe": 0.6992211801654209,
+      "max_drawdown_pct": -31.449781414914955,
+      "total_return_pct": 482.70180143139703,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.177397344907167,
+      "sharpe": 0.6358871020999853,
+      "max_drawdown_pct": -32.29862647630258,
+      "total_return_pct": 386.951250160175,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111587015047037,
+      "sharpe": 0.539993262071889,
+      "max_drawdown_pct": -32.47006900998953,
+      "total_return_pct": 145.6592253630522,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-A-n2",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.805648967850232,
+      "sharpe": 0.49917574277136934,
+      "max_drawdown_pct": -48.25743174790102,
+      "total_return_pct": 357.9094648183072,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.279565878609029,
+      "sharpe": 0.43392572901187676,
+      "max_drawdown_pct": -49.71281821561714,
+      "total_return_pct": 254.9632720966629,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586655079381,
+      "sharpe": 0.539993326031014,
+      "max_drawdown_pct": -32.47006571181254,
+      "total_return_pct": 145.65921019563896,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-B-sw03",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.255896869928716,
+      "sharpe": 0.669323011859351,
+      "max_drawdown_pct": -33.031383007510506,
+      "total_return_pct": 481.3689296640895,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.044475220962877,
+      "sharpe": 0.6028715872497868,
+      "max_drawdown_pct": -33.976909002060474,
+      "total_return_pct": 376.37286014309774,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586628499509,
+      "sharpe": 0.5399934296676617,
+      "max_drawdown_pct": -32.47006558290432,
+      "total_return_pct": 145.65920907568298,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-B-sw05",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.191805561905753,
+      "sharpe": 0.5982223562655498,
+      "max_drawdown_pct": -38.838137799269425,
+      "total_return_pct": 475.3062230241011,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.738001306212695,
+      "sharpe": 0.5295096966126047,
+      "max_drawdown_pct": -39.97533740472276,
+      "total_return_pct": 352.80383789949275,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586419437875,
+      "sharpe": 0.5399931883962039,
+      "max_drawdown_pct": -32.47008011602611,
+      "total_return_pct": 145.65920026676994,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-C-ct09",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.17592807603933,
+      "sharpe": 0.6930144418428557,
+      "max_drawdown_pct": -34.75745175487132,
+      "total_return_pct": 473.8135511868806,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.075272214453655,
+      "sharpe": 0.6292126876619591,
+      "max_drawdown_pct": -35.56531524748725,
+      "total_return_pct": 378.80429075192774,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586895505726,
+      "sharpe": 0.5399935037897026,
+      "max_drawdown_pct": -32.470069735050714,
+      "total_return_pct": 145.65922032611985,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-C-ct10",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.18278171478848,
+      "sharpe": 0.6941281954963748,
+      "max_drawdown_pct": -31.44979366157208,
+      "total_return_pct": 474.45742518259226,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.09113915559454,
+      "sharpe": 0.6307974754207676,
+      "max_drawdown_pct": -32.298638571311635,
+      "total_return_pct": 380.06156054503276,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586606826424,
+      "sharpe": 0.5399933172904045,
+      "max_drawdown_pct": -32.470070250809414,
+      "total_return_pct": 145.65920816247734,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-C-ct08",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.961769063101888,
+      "sharpe": 0.6784346556456744,
+      "max_drawdown_pct": -34.029037088493254,
+      "total_return_pct": 454.0341312421099,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.84149075838938,
+      "sharpe": 0.6136429210680991,
+      "max_drawdown_pct": -34.8459201493554,
+      "total_return_pct": 360.636570340723,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586201506757,
+      "sharpe": 0.5399933422014298,
+      "max_drawdown_pct": -32.47006502716863,
+      "total_return_pct": 145.65919108413672,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom63",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.701398131147965,
+      "sharpe": 0.5977737285164445,
+      "max_drawdown_pct": -44.90931339451579,
+      "total_return_pct": 379.3524694127042,
+      "years": 18.784394250513348
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.074424513436273,
+      "sharpe": 0.5040731382368514,
+      "max_drawdown_pct": -49.5186878646548,
+      "total_return_pct": 261.1010996089513,
+      "years": 18.784394250513348
+    },
+    "benchmark": {
+      "cagr_pct": 5.4082697190716456,
+      "sharpe": 0.5600623271300113,
+      "max_drawdown_pct": -33.10247946355872,
+      "total_return_pct": 168.95962506317517,
+      "years": 18.784394250513348
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-C-ct15",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.2633924346611,
+      "sharpe": 0.6514816552023444,
+      "max_drawdown_pct": -31.13840522971091,
+      "total_return_pct": 393.91281745947555,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.26377616902585,
+      "sharpe": 0.5918289821927118,
+      "max_drawdown_pct": -31.878687406539928,
+      "total_return_pct": 318.4931746101008,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586819567782,
+      "sharpe": 0.5399933513896966,
+      "max_drawdown_pct": -32.47006904871349,
+      "total_return_pct": 145.6592171264381,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-C-ct11",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.812348062803643,
+      "sharpe": 0.6724149124693343,
+      "max_drawdown_pct": -31.449776303890186,
+      "total_return_pct": 440.61715169056237,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.735243198491238,
+      "sharpe": 0.60977077100822,
+      "max_drawdown_pct": -32.2986214285667,
+      "total_return_pct": 352.59681816736224,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586529481316,
+      "sharpe": 0.5399932043797567,
+      "max_drawdown_pct": -32.47007237067411,
+      "total_return_pct": 145.65920490350385,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 7.427170583162757,
+      "sharpe": 0.5298008080278329,
+      "max_drawdown_pct": -41.69803312213026,
+      "total_return_pct": 263.87224092286397,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 6.545466895547447,
+      "sharpe": 0.4778845123154743,
+      "max_drawdown_pct": -41.74175959728864,
+      "total_return_pct": 213.63256036928502,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586892411002,
+      "sharpe": 0.5399934394527683,
+      "max_drawdown_pct": -32.47006256984349,
+      "total_return_pct": 145.65922019572278,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-C-ct12",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.101136282686806,
+      "sharpe": 0.6911095754840273,
+      "max_drawdown_pct": -31.449800549554453,
+      "total_return_pct": 466.83130336153766,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.042994713489815,
+      "sharpe": 0.6294924444751355,
+      "max_drawdown_pct": -32.298645374001275,
+      "total_return_pct": 376.25626799634136,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586376512878,
+      "sharpe": 0.5399933500323033,
+      "max_drawdown_pct": -32.47008132475877,
+      "total_return_pct": 145.65919845810456,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom189",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.199272118570324,
+      "sharpe": 0.6382426375408172,
+      "max_drawdown_pct": -34.397634990268386,
+      "total_return_pct": 399.66735797631605,
+      "years": 18.28062970568104
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.173960151756221,
+      "sharpe": 0.5780806981884916,
+      "max_drawdown_pct": -34.712024749912395,
+      "total_return_pct": 320.5183733269676,
+      "years": 18.28062970568104
+    },
+    "benchmark": {
+      "cagr_pct": 5.078672963839659,
+      "sharpe": 0.5442478280194076,
+      "max_drawdown_pct": -31.059776721468314,
+      "total_return_pct": 147.34324846426813,
+      "years": 18.28062970568104
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom63-252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.07279185222938,
+      "sharpe": 0.632131321788712,
+      "max_drawdown_pct": -30.31537810577327,
+      "total_return_pct": 378.6080323279754,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.985844783134954,
+      "sharpe": 0.5680821197480403,
+      "max_drawdown_pct": -30.929733976256447,
+      "total_return_pct": 299.5417371914023,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111587015047037,
+      "sharpe": 0.539993262071889,
+      "max_drawdown_pct": -32.47006900998953,
+      "total_return_pct": 145.6592253630522,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom126",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 13.310777760343374,
+      "sharpe": 0.8692847487825207,
+      "max_drawdown_pct": -26.88337461567636,
+      "total_return_pct": 913.402671088743,
+      "years": 18.532511978097194
+    },
+    "momentum_spread": {
+      "cagr_pct": 12.085824433592162,
+      "sharpe": 0.8000039689459277,
+      "max_drawdown_pct": -27.047804766587504,
+      "total_return_pct": 728.5119301505338,
+      "years": 18.532511978097194
+    },
+    "benchmark": {
+      "cagr_pct": 5.5869887648139605,
+      "sharpe": 0.5727226267880415,
+      "max_drawdown_pct": -32.758885819862584,
+      "total_return_pct": 173.8798633898715,
+      "years": 18.532511978097194
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom63-126",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 12.250010939364664,
+      "sharpe": 0.8010709545260095,
+      "max_drawdown_pct": -25.083790550074436,
+      "total_return_pct": 751.2946633569724,
+      "years": 18.532511978097194
+    },
+    "momentum_spread": {
+      "cagr_pct": 10.929548976843817,
+      "sharpe": 0.7268667699794199,
+      "max_drawdown_pct": -28.74463090490591,
+      "total_return_pct": 583.6576039749967,
+      "years": 18.532511978097194
+    },
+    "benchmark": {
+      "cagr_pct": 5.586989449918112,
+      "sharpe": 0.5727226988533627,
+      "max_drawdown_pct": -32.75887270088752,
+      "total_return_pct": 173.8798963235789,
+      "years": 18.532511978097194
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom63-126-252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.323948455778575,
+      "sharpe": 0.7021053117330042,
+      "max_drawdown_pct": -27.857809887716932,
+      "total_return_pct": 487.87228716546355,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.246346927764604,
+      "sharpe": 0.6397502097684287,
+      "max_drawdown_pct": -28.203565116144567,
+      "total_return_pct": 392.5255048716657,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586628499509,
+      "sharpe": 0.5399934296676617,
+      "max_drawdown_pct": -32.47006558290432,
+      "total_return_pct": 145.65920907568298,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom21-63-126-189-252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.18278171478848,
+      "sharpe": 0.6941281954963748,
+      "max_drawdown_pct": -31.44979366157208,
+      "total_return_pct": 474.45742518259226,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.09113915559454,
+      "sharpe": 0.6307974754207676,
+      "max_drawdown_pct": -32.298638571311635,
+      "total_return_pct": 380.06156054503276,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586606826424,
+      "sharpe": 0.5399933172904045,
+      "max_drawdown_pct": -32.470070250809414,
+      "total_return_pct": 145.65920816247734,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom63-126-189-252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.018977605209045,
+      "sharpe": 0.6831973291969101,
+      "max_drawdown_pct": -31.71349388015531,
+      "total_return_pct": 459.2538380186033,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.061459712382103,
+      "sharpe": 0.6277577622652386,
+      "max_drawdown_pct": -32.45776770112377,
+      "total_return_pct": 377.71234403300554,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586419437875,
+      "sharpe": 0.5399931883962039,
+      "max_drawdown_pct": -32.47008011602611,
+      "total_return_pct": 145.65920026676994,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-E-c10-250",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.18277883235752,
+      "sharpe": 0.6941281851280778,
+      "max_drawdown_pct": -31.44978254825219,
+      "total_return_pct": 474.4571542454877,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.091136301721425,
+      "sharpe": 0.6307974449970586,
+      "max_drawdown_pct": -32.29862759560581,
+      "total_return_pct": 380.061334128792,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586318501349,
+      "sharpe": 0.5399931272320927,
+      "max_drawdown_pct": -32.47008285950783,
+      "total_return_pct": 145.6591960137605,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-E-c15-250",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.888319672909663,
+      "sharpe": 0.6768834564037616,
+      "max_drawdown_pct": -34.7574388273838,
+      "total_return_pct": 447.4000555800218,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.777858427848262,
+      "sharpe": 0.6123474956027384,
+      "max_drawdown_pct": -35.56530248007399,
+      "total_return_pct": 355.8054610114998,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586819567782,
+      "sharpe": 0.5399933513896966,
+      "max_drawdown_pct": -32.47006904871349,
+      "total_return_pct": 145.6592171264381,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-E-c20-300",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.889802754024268,
+      "sharpe": 0.6840037811320223,
+      "max_drawdown_pct": -28.529851418502584,
+      "total_return_pct": 439.1162162183041,
+      "years": 17.864476386036962
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.778325969295597,
+      "sharpe": 0.6185231990417633,
+      "max_drawdown_pct": -29.414875713680356,
+      "total_return_pct": 349.58345860066606,
+      "years": 17.864476386036962
+    },
+    "benchmark": {
+      "cagr_pct": 5.183054651563435,
+      "sharpe": 0.5479411594619698,
+      "max_drawdown_pct": -32.051665814410114,
+      "total_return_pct": 146.63224325304301,
+      "years": 17.864476386036962
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-E-c20-200",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.668702296385035,
+      "sharpe": 0.6620327458642981,
+      "max_drawdown_pct": -28.529826630849264,
+      "total_return_pct": 440.42705031857497,
+      "years": 18.28062970568104
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.594389829111737,
+      "sharpe": 0.5997574880509935,
+      "max_drawdown_pct": -29.414851232975824,
+      "total_return_pct": 351.42086342134036,
+      "years": 18.28062970568104
+    },
+    "benchmark": {
+      "cagr_pct": 5.07867310800818,
+      "sharpe": 0.5442478575294999,
+      "max_drawdown_pct": -31.059779152043188,
+      "total_return_pct": 147.34325466791506,
+      "years": 18.28062970568104
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-E-c30-300",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.592626522524927,
+      "sharpe": 0.6068400040763501,
+      "max_drawdown_pct": -31.218946473111465,
+      "total_return_pct": 336.0680662705124,
+      "years": 17.864476386036962
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.499672866176876,
+      "sharpe": 0.5418392425626758,
+      "max_drawdown_pct": -32.07064680599792,
+      "total_return_pct": 263.97550573431505,
+      "years": 17.864476386036962
+    },
+    "benchmark": {
+      "cagr_pct": 5.183054417269717,
+      "sharpe": 0.5479409114505935,
+      "max_drawdown_pct": -32.05165794634267,
+      "total_return_pct": 146.63223343884133,
+      "years": 17.864476386036962
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-D-mom21-63-126-189",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.943426484383,
+      "sharpe": 0.7311559383928462,
+      "max_drawdown_pct": -25.96864997497518,
+      "total_return_pct": 567.5521366375895,
+      "years": 18.28062970568104
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.688910425425924,
+      "sharpe": 0.6596245387713291,
+      "max_drawdown_pct": -26.841356332122267,
+      "total_return_pct": 442.2503716707949,
+      "years": 18.28062970568104
+    },
+    "benchmark": {
+      "cagr_pct": 5.078672546879726,
+      "sharpe": 0.5442479484246617,
+      "max_drawdown_pct": -31.059785804222926,
+      "total_return_pct": 147.34323052226466,
+      "years": 18.28062970568104
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-E-c10-200",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.129580272247729,
+      "sharpe": 0.6879618519139702,
+      "max_drawdown_pct": -31.44978526104549,
+      "total_return_pct": 483.4870414923472,
+      "years": 18.28062970568104
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.050737994521452,
+      "sharpe": 0.6257187070489105,
+      "max_drawdown_pct": -32.298630274807124,
+      "total_return_pct": 387.3878148715769,
+      "years": 18.28062970568104
+    },
+    "benchmark": {
+      "cagr_pct": 5.078673106501785,
+      "sharpe": 0.5442479840221708,
+      "max_drawdown_pct": -31.059776764238155,
+      "total_return_pct": 147.34325460309412,
+      "years": 18.28062970568104
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-E-c20-250",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.034624779059387,
+      "sharpe": 0.686023875815222,
+      "max_drawdown_pct": -28.52977082969711,
+      "total_return_pct": 460.68955492615754,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.931761465439948,
+      "sharpe": 0.6219179832181972,
+      "max_drawdown_pct": -29.414796122816757,
+      "total_return_pct": 367.5731586243198,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586892411002,
+      "sharpe": 0.5399934394527683,
+      "max_drawdown_pct": -32.47006256984349,
+      "total_return_pct": 145.65922019572278,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-E-c30-250",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.822846755018876,
+      "sharpe": 0.6139138198368095,
+      "max_drawdown_pct": -31.21895944015106,
+      "total_return_pct": 359.2160895258841,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.744682424728566,
+      "sharpe": 0.5507938725203582,
+      "max_drawdown_pct": -32.07065961246961,
+      "total_return_pct": 283.7571807093664,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586178207417,
+      "sharpe": 0.539993160491254,
+      "max_drawdown_pct": -32.47006906215108,
+      "total_return_pct": 145.6591901024074,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw0-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.4779272187258,
+      "sharpe": 0.49276291575653475,
+      "max_drawdown_pct": -47.212327624193094,
+      "total_return_pct": 333.67139884767766,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.184776422327421,
+      "sharpe": 0.4358397818319438,
+      "max_drawdown_pct": -48.542729138694575,
+      "total_return_pct": 249.35113975789,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586628499509,
+      "sharpe": 0.5399934296676617,
+      "max_drawdown_pct": -32.47006558290432,
+      "total_return_pct": 145.65920907568298,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw02-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.907819666139073,
+      "sharpe": 0.5437433019136491,
+      "max_drawdown_pct": -45.34937259553736,
+      "total_return_pct": 449.15397493911075,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.415078574164546,
+      "sharpe": 0.4809798837174508,
+      "max_drawdown_pct": -47.067343037848744,
+      "total_return_pct": 329.1638559750609,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586606826424,
+      "sharpe": 0.5399933172904045,
+      "max_drawdown_pct": -32.470070250809414,
+      "total_return_pct": 145.65920816247734,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw0-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.979373248098987,
+      "sharpe": 0.5144735712331383,
+      "max_drawdown_pct": -47.55419731118498,
+      "total_return_pct": 371.2713724372422,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.832865304465542,
+      "sharpe": 0.4642867642843034,
+      "max_drawdown_pct": -49.18192265893734,
+      "total_return_pct": 289.45934310916994,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586655079381,
+      "sharpe": 0.539993326031014,
+      "max_drawdown_pct": -32.47006571181254,
+      "total_return_pct": 145.65921019563896,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw0-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.736677260104077,
+      "sharpe": 0.5451573540483976,
+      "max_drawdown_pct": -44.199472681599126,
+      "total_return_pct": 433.9400750829911,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.47373873824655,
+      "sharpe": 0.49061108656944835,
+      "max_drawdown_pct": -45.60580682578858,
+      "total_return_pct": 333.3696131288879,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586423974024,
+      "sharpe": 0.5399933477369875,
+      "max_drawdown_pct": -32.47007486734299,
+      "total_return_pct": 145.6592004579027,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw03-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.886867774853947,
+      "sharpe": 0.5326543817649068,
+      "max_drawdown_pct": -45.94436613807924,
+      "total_return_pct": 447.26967703586513,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.280660732038768,
+      "sharpe": 0.46722135866969383,
+      "max_drawdown_pct": -48.03727224023188,
+      "total_return_pct": 319.6714244178006,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586819567782,
+      "sharpe": 0.5399933513896966,
+      "max_drawdown_pct": -32.47006904871349,
+      "total_return_pct": 145.6592171264381,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw02-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.8056435926392,
+      "sharpe": 0.4991755144723293,
+      "max_drawdown_pct": -48.25743047527734,
+      "total_return_pct": 357.90905697901235,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.279560578789401,
+      "sharpe": 0.43392549966517274,
+      "max_drawdown_pct": -49.71281697878916,
+      "total_return_pct": 254.96295594689062,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586318501349,
+      "sharpe": 0.5399931272320927,
+      "max_drawdown_pct": -32.47008285950783,
+      "total_return_pct": 145.6591960137605,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw03-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.161135701952116,
+      "sharpe": 0.504891753624255,
+      "max_drawdown_pct": -49.15483889146739,
+      "total_return_pct": 385.6452836347982,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.689298423737534,
+      "sharpe": 0.44415779611040385,
+      "max_drawdown_pct": -51.06481075912931,
+      "total_return_pct": 280.21630355505556,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586376512878,
+      "sharpe": 0.5399933500323033,
+      "max_drawdown_pct": -32.47008132475877,
+      "total_return_pct": 145.65919845810456,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw02-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.169683949708052,
+      "sharpe": 0.5146080435913997,
+      "max_drawdown_pct": -48.60636133147215,
+      "total_return_pct": 386.3313772460512,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.805459394393632,
+      "sharpe": 0.4564981955548701,
+      "max_drawdown_pct": -50.42533208320887,
+      "total_return_pct": 287.6786821552452,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586419437875,
+      "sharpe": 0.5399931883962039,
+      "max_drawdown_pct": -32.47008011602611,
+      "total_return_pct": 145.65920026676994,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw04-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.259695309015935,
+      "sharpe": 0.4974950306182275,
+      "max_drawdown_pct": -48.23486216392436,
+      "total_return_pct": 393.61159991375484,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.678800661593432,
+      "sharpe": 0.4349408424781542,
+      "max_drawdown_pct": -50.291553894013916,
+      "total_return_pct": 279.54863634882486,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586895505726,
+      "sharpe": 0.5399935037897026,
+      "max_drawdown_pct": -32.470069735050714,
+      "total_return_pct": 145.65922032611985,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw04-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.856199237375439,
+      "sharpe": 0.4812527243282122,
+      "max_drawdown_pct": -49.835157953069256,
+      "total_return_pct": 361.7601322979359,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.100668906061691,
+      "sharpe": 0.4116024748853467,
+      "max_drawdown_pct": -51.539538868584664,
+      "total_return_pct": 244.44171862798188,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586201506757,
+      "sharpe": 0.5399933422014298,
+      "max_drawdown_pct": -32.47006502716863,
+      "total_return_pct": 145.65919108413672,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw03-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.865535560239834,
+      "sharpe": 0.492654893852409,
+      "max_drawdown_pct": -48.87504693095441,
+      "total_return_pct": 362.4746645881111,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.224184399886324,
+      "sharpe": 0.4247375784658293,
+      "max_drawdown_pct": -50.580975262151895,
+      "total_return_pct": 251.67408423870353,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586529481316,
+      "sharpe": 0.5399932043797567,
+      "max_drawdown_pct": -32.47007237067411,
+      "total_return_pct": 145.65920490350385,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw0-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.184245002030924,
+      "sharpe": 0.6463066014810388,
+      "max_drawdown_pct": -37.33305513309399,
+      "total_return_pct": 474.5949839781324,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.30105170248423,
+      "sharpe": 0.5998185614738899,
+      "max_drawdown_pct": -37.89493134213387,
+      "total_return_pct": 396.9909548702579,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586178207417,
+      "sharpe": 0.539993160491254,
+      "max_drawdown_pct": -32.47006906215108,
+      "total_return_pct": 145.6591901024074,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw0-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 11.68238442472771,
+      "sharpe": 0.7253690799942507,
+      "max_drawdown_pct": -32.298936360561214,
+      "total_return_pct": 632.9994232091307,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 10.682640296140722,
+      "sharpe": 0.6733368662165574,
+      "max_drawdown_pct": -32.569402245202895,
+      "total_return_pct": 523.3017732894826,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586892411002,
+      "sharpe": 0.5399934394527683,
+      "max_drawdown_pct": -32.47006256984349,
+      "total_return_pct": 145.65922019572278,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw0-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.606101190138562,
+      "sharpe": 0.670642087937334,
+      "max_drawdown_pct": -37.9096864652161,
+      "total_return_pct": 515.576521321046,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.579535596181898,
+      "sharpe": 0.6165064177861684,
+      "max_drawdown_pct": -38.46639255741711,
+      "total_return_pct": 420.322156562717,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586628499509,
+      "sharpe": 0.5399934296676617,
+      "max_drawdown_pct": -32.47006558290432,
+      "total_return_pct": 145.65920907568298,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw02-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.961267244178096,
+      "sharpe": 0.6721379338119549,
+      "max_drawdown_pct": -39.95401633165039,
+      "total_return_pct": 552.2046727143676,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.697282489693059,
+      "sharpe": 0.6078172181085504,
+      "max_drawdown_pct": -40.652965205644854,
+      "total_return_pct": 430.49484769340836,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586423974024,
+      "sharpe": 0.5399933477369875,
+      "max_drawdown_pct": -32.47007486734299,
+      "total_return_pct": 145.6592004579027,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n2-sw04-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 2,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.972358642686352,
+      "sharpe": 0.5236085202185271,
+      "max_drawdown_pct": -45.37710567192244,
+      "total_return_pct": 454.996840646397,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.251166708850333,
+      "sharpe": 0.4563653861835167,
+      "max_drawdown_pct": -47.77237227366147,
+      "total_return_pct": 317.61529161593893,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111587015047037,
+      "sharpe": 0.539993262071889,
+      "max_drawdown_pct": -32.47006900998953,
+      "total_return_pct": 145.6592253630522,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw02-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 11.857397816349579,
+      "sharpe": 0.7133193521938482,
+      "max_drawdown_pct": -33.320771944641535,
+      "total_return_pct": 653.9869002672085,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 10.623675694614331,
+      "sharpe": 0.6515578590578306,
+      "max_drawdown_pct": -34.03771138375672,
+      "total_return_pct": 517.3423121329116,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586606826424,
+      "sharpe": 0.5399933172904045,
+      "max_drawdown_pct": -32.470070250809414,
+      "total_return_pct": 145.65920816247734,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw02-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.396775055786446,
+      "sharpe": 0.6417975376598816,
+      "max_drawdown_pct": -39.39628854164868,
+      "total_return_pct": 494.9080545022794,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.29322699871651,
+      "sharpe": 0.5856155653016123,
+      "max_drawdown_pct": -40.101729493664074,
+      "total_return_pct": 396.349903389439,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586655079381,
+      "sharpe": 0.539993326031014,
+      "max_drawdown_pct": -32.47006571181254,
+      "total_return_pct": 145.65921019563896,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw03-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 11.03258655173034,
+      "sharpe": 0.6542987565675347,
+      "max_drawdown_pct": -41.23665697458204,
+      "total_return_pct": 559.8037964992574,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.650803721337176,
+      "sharpe": 0.5870650758876792,
+      "max_drawdown_pct": -41.999109308495655,
+      "total_return_pct": 426.4570974461943,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586376512878,
+      "sharpe": 0.5399933500323033,
+      "max_drawdown_pct": -32.47008132475877,
+      "total_return_pct": 145.65919845810456,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw03-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.397878024202267,
+      "sharpe": 0.6222424746812141,
+      "max_drawdown_pct": -40.690824636314545,
+      "total_return_pct": 495.0152209999004,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.185123241459614,
+      "sharpe": 0.5631173653238041,
+      "max_drawdown_pct": -41.460359125851355,
+      "total_return_pct": 387.572875745539,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586318501349,
+      "sharpe": 0.5399931272320927,
+      "max_drawdown_pct": -32.47008285950783,
+      "total_return_pct": 145.6591960137605,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw04-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 11.743815272883463,
+      "sharpe": 0.6557995469619924,
+      "max_drawdown_pct": -36.52871294289379,
+      "total_return_pct": 640.3025052394586,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 10.2758880467962,
+      "sharpe": 0.5895589627087426,
+      "max_drawdown_pct": -37.3242237413435,
+      "total_return_pct": 483.27230527764505,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586419437875,
+      "sharpe": 0.5399931883962039,
+      "max_drawdown_pct": -32.47008011602611,
+      "total_return_pct": 145.65920026676994,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw03-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 11.836554100320384,
+      "sharpe": 0.6883087790648844,
+      "max_drawdown_pct": -34.86401159295796,
+      "total_return_pct": 651.4578882925075,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 10.48702495164273,
+      "sharpe": 0.6237811567022264,
+      "max_drawdown_pct": -35.62239416900147,
+      "total_return_pct": 503.7374573356953,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586819567782,
+      "sharpe": 0.5399933513896966,
+      "max_drawdown_pct": -32.47006904871349,
+      "total_return_pct": 145.6592171264381,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw02-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.018974362059074,
+      "sharpe": 0.6831972929432301,
+      "max_drawdown_pct": -31.71347682710277,
+      "total_return_pct": 459.2535408014677,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.061456497457954,
+      "sharpe": 0.6277577059050069,
+      "max_drawdown_pct": -32.457750833937205,
+      "total_return_pct": 377.7120901513424,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586423974024,
+      "sharpe": 0.5399933477369875,
+      "max_drawdown_pct": -32.47007486734299,
+      "total_return_pct": 145.6592004579027,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw04-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 11.033169016258793,
+      "sharpe": 0.6284954994526404,
+      "max_drawdown_pct": -42.74179698755578,
+      "total_return_pct": 559.8662014131488,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.53084612459978,
+      "sharpe": 0.5594697913527394,
+      "max_drawdown_pct": -43.56105569218669,
+      "total_return_pct": 416.16973675647284,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586201506757,
+      "sharpe": 0.5399933422014298,
+      "max_drawdown_pct": -32.47006502716863,
+      "total_return_pct": 145.65919108413672,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw0-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.825737377221566,
+      "sharpe": 0.6958127574238322,
+      "max_drawdown_pct": -29.118461534391717,
+      "total_return_pct": 441.8067859404996,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.969684592146287,
+      "sharpe": 0.6439319920073191,
+      "max_drawdown_pct": -29.8067320637324,
+      "total_return_pct": 370.51658071064423,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586892411002,
+      "sharpe": 0.5399934394527683,
+      "max_drawdown_pct": -32.47006256984349,
+      "total_return_pct": 145.65922019572278,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw0-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.140435636908695,
+      "sharpe": 0.7169622405068683,
+      "max_drawdown_pct": -27.43598386882924,
+      "total_return_pct": 470.4900587371783,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.28645051950252,
+      "sharpe": 0.6651677574974894,
+      "max_drawdown_pct": -27.762073135247412,
+      "total_return_pct": 395.79536054870397,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586529481316,
+      "sharpe": 0.5399932043797567,
+      "max_drawdown_pct": -32.47007237067411,
+      "total_return_pct": 145.65920490350385,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw02-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.26990251249913,
+      "sharpe": 0.6992211801654209,
+      "max_drawdown_pct": -31.449781414914955,
+      "total_return_pct": 482.70180143139703,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.177397344907167,
+      "sharpe": 0.6358871020999853,
+      "max_drawdown_pct": -32.29862647630258,
+      "total_return_pct": 386.951250160175,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111587015047037,
+      "sharpe": 0.539993262071889,
+      "max_drawdown_pct": -32.47006900998953,
+      "total_return_pct": 145.6592253630522,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw03-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.02066046194261,
+      "sharpe": 0.655238189137653,
+      "max_drawdown_pct": -33.2941489108652,
+      "total_return_pct": 459.4080828534427,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.951454080759591,
+      "sharpe": 0.5966379121808716,
+      "max_drawdown_pct": -34.137163212985,
+      "total_return_pct": 369.0994329725276,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586655079381,
+      "sharpe": 0.539993326031014,
+      "max_drawdown_pct": -32.47006571181254,
+      "total_return_pct": 145.65921019563896,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n3-sw04-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.506492746388151,
+      "sharpe": 0.6038593403260857,
+      "max_drawdown_pct": -42.20998104180769,
+      "total_return_pct": 505.6582072473445,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.17969458000747,
+      "sharpe": 0.542731228972008,
+      "max_drawdown_pct": -43.036849046414794,
+      "total_return_pct": 387.13600743738397,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586895505726,
+      "sharpe": 0.5399935037897026,
+      "max_drawdown_pct": -32.470069735050714,
+      "total_return_pct": 145.65922032611985,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw0-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.806271508752996,
+      "sharpe": 0.6933503766459621,
+      "max_drawdown_pct": -29.380125493473642,
+      "total_return_pct": 440.0780670519031,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.068343693156544,
+      "sharpe": 0.6487795967986523,
+      "max_drawdown_pct": -29.960835876781566,
+      "total_return_pct": 378.2562624688988,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586178207417,
+      "sharpe": 0.539993160491254,
+      "max_drawdown_pct": -32.47006906215108,
+      "total_return_pct": 145.6591901024074,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw03-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.30880718296383,
+      "sharpe": 0.6709745260314147,
+      "max_drawdown_pct": -28.46003493216124,
+      "total_return_pct": 486.41939389094597,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.115861257077107,
+      "sharpe": 0.6057966103313434,
+      "max_drawdown_pct": -28.813594671759013,
+      "total_return_pct": 382.02671450138956,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586606826424,
+      "sharpe": 0.5399933172904045,
+      "max_drawdown_pct": -32.470070250809414,
+      "total_return_pct": 145.65920816247734,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw02-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.323948455778575,
+      "sharpe": 0.7021053117330042,
+      "max_drawdown_pct": -27.857809887716932,
+      "total_return_pct": 487.87228716546355,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.246346927764604,
+      "sharpe": 0.6397502097684287,
+      "max_drawdown_pct": -28.203565116144567,
+      "total_return_pct": 392.5255048716657,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586628499509,
+      "sharpe": 0.5399934296676617,
+      "max_drawdown_pct": -32.47006558290432,
+      "total_return_pct": 145.65920907568298,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw04-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.258851927691715,
+      "sharpe": 0.6356402781986045,
+      "max_drawdown_pct": -35.87124293220757,
+      "total_return_pct": 481.64991304247667,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.925724562407812,
+      "sharpe": 0.5674848170896811,
+      "max_drawdown_pct": -36.95950198611161,
+      "total_return_pct": 367.10620915402757,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586819567782,
+      "sharpe": 0.5399933513896966,
+      "max_drawdown_pct": -32.47006904871349,
+      "total_return_pct": 145.6592171264381,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw03-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.255904772712498,
+      "sharpe": 0.6693234753238327,
+      "max_drawdown_pct": -33.031415778286984,
+      "total_return_pct": 481.3696809338558,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.044483036915896,
+      "sharpe": 0.6028720465127745,
+      "max_drawdown_pct": -33.976929787259856,
+      "total_return_pct": 376.37347573245734,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586376512878,
+      "sharpe": 0.5399933500323033,
+      "max_drawdown_pct": -32.47008132475877,
+      "total_return_pct": 145.65919845810456,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw04-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.95283019705333,
+      "sharpe": 0.6191443184878542,
+      "max_drawdown_pct": -36.127856259544714,
+      "total_return_pct": 453.2227177582926,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.770052510362337,
+      "sharpe": 0.5586527411038751,
+      "max_drawdown_pct": -37.11741551801884,
+      "total_return_pct": 355.2161247001873,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586419437875,
+      "sharpe": 0.5399931883962039,
+      "max_drawdown_pct": -32.47008011602611,
+      "total_return_pct": 145.65920026676994,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n4-sw04-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.222708934716485,
+      "sharpe": 0.6318599673049741,
+      "max_drawdown_pct": -29.768693483252495,
+      "total_return_pct": 478.2220285817548,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.910853685187936,
+      "sharpe": 0.5651223382785302,
+      "max_drawdown_pct": -30.721603140217713,
+      "total_return_pct": 365.9578372128019,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586318501349,
+      "sharpe": 0.5399931272320927,
+      "max_drawdown_pct": -32.47008285950783,
+      "total_return_pct": 145.6591960137605,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw0-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.929712543262669,
+      "sharpe": 0.6994316424434981,
+      "max_drawdown_pct": -24.986727209802385,
+      "total_return_pct": 367.4146267795232,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.170717827470453,
+      "sharpe": 0.6475399652243025,
+      "max_drawdown_pct": -25.25647803650396,
+      "total_return_pct": 312.05517959265165,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586423974024,
+      "sharpe": 0.5399933477369875,
+      "max_drawdown_pct": -32.47007486734299,
+      "total_return_pct": 145.6592004579027,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw0-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.48088194024179,
+      "sharpe": 0.6734237567295658,
+      "max_drawdown_pct": -24.986735650090065,
+      "total_return_pct": 333.884409947242,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.699914201429681,
+      "sharpe": 0.6194041664005963,
+      "max_drawdown_pct": -25.256486446440142,
+      "total_return_pct": 280.8926046840685,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586892411002,
+      "sharpe": 0.5399934394527683,
+      "max_drawdown_pct": -32.47006256984349,
+      "total_return_pct": 145.65922019572278,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw0-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 0,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.722141526541005,
+      "sharpe": 0.6877824460309898,
+      "max_drawdown_pct": -25.173360522295685,
+      "total_return_pct": 351.6146452526984,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.05452124343251,
+      "sharpe": 0.6419247436113573,
+      "max_drawdown_pct": -25.57659013408117,
+      "total_return_pct": 304.14771756218306,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586201506757,
+      "sharpe": 0.5399933422014298,
+      "max_drawdown_pct": -32.47006502716863,
+      "total_return_pct": 145.65919108413672,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw02-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.13193961575558,
+      "sharpe": 0.6867089950499902,
+      "max_drawdown_pct": -25.252507552012492,
+      "total_return_pct": 383.3088544886271,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.162398783573588,
+      "sharpe": 0.6235595215614603,
+      "max_drawdown_pct": -25.54365964505546,
+      "total_return_pct": 311.48422669787027,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586529481316,
+      "sharpe": 0.5399932043797567,
+      "max_drawdown_pct": -32.47007237067411,
+      "total_return_pct": 145.65920490350385,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw02-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.025947228451514,
+      "sharpe": 0.6808552393562449,
+      "max_drawdown_pct": -27.72545132175418,
+      "total_return_pct": 374.91569394274745,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.140163465697704,
+      "sharpe": 0.6230335281732777,
+      "max_drawdown_pct": -28.30884318167114,
+      "total_return_pct": 309.96183716103303,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111587015047037,
+      "sharpe": 0.539993262071889,
+      "max_drawdown_pct": -32.47006900998953,
+      "total_return_pct": 145.6592253630522,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw03-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.256725573250545,
+      "sharpe": 0.659776146662891,
+      "max_drawdown_pct": -27.045428813862003,
+      "total_return_pct": 393.3697709959614,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.167093792770054,
+      "sharpe": 0.5934403749038643,
+      "max_drawdown_pct": -27.775388620344742,
+      "total_return_pct": 311.80636280015034,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586895505726,
+      "sharpe": 0.5399935037897026,
+      "max_drawdown_pct": -32.470069735050714,
+      "total_return_pct": 145.65922032611985,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw03-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.945331020867876,
+      "sharpe": 0.6414824663852232,
+      "max_drawdown_pct": -29.801837582787616,
+      "total_return_pct": 368.62436238956155,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.9468681495421745,
+      "sharpe": 0.5804516341655133,
+      "max_drawdown_pct": -30.571470529565214,
+      "total_return_pct": 296.94976071411816,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586178207417,
+      "sharpe": 0.539993160491254,
+      "max_drawdown_pct": -32.47006906215108,
+      "total_return_pct": 145.6591901024074,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw02-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.837224009177746,
+      "sharpe": 0.6700318695950175,
+      "max_drawdown_pct": -25.799725709136677,
+      "total_return_pct": 360.3111223061414,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.837977427277121,
+      "sharpe": 0.6045040863974858,
+      "max_drawdown_pct": -26.53117071832395,
+      "total_return_pct": 289.7923499277384,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586655079381,
+      "sharpe": 0.539993326031014,
+      "max_drawdown_pct": -32.47006571181254,
+      "total_return_pct": 145.65921019563896,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw03-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.911355490867457,
+      "sharpe": 0.6402909455914572,
+      "max_drawdown_pct": -27.92679718655191,
+      "total_return_pct": 365.9965445791659,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.791056540561714,
+      "sharpe": 0.5716852885361352,
+      "max_drawdown_pct": -28.845343105472885,
+      "total_return_pct": 286.7459620781527,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586606826424,
+      "sharpe": 0.5399933172904045,
+      "max_drawdown_pct": -32.470070250809414,
+      "total_return_pct": 145.65920816247734,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw04-m252",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.052189998944682,
+      "sharpe": 0.6083008602976293,
+      "max_drawdown_pct": -29.32610706531885,
+      "total_return_pct": 376.98084668037575,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.845943339644368,
+      "sharpe": 0.5406235791060989,
+      "max_drawdown_pct": -30.12773060446695,
+      "total_return_pct": 290.3117904522455,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586628499509,
+      "sharpe": 0.5399934296676617,
+      "max_drawdown_pct": -32.47006558290432,
+      "total_return_pct": 145.65920907568298,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw04-m4",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.88189366749208,
+      "sharpe": 0.5994573420781153,
+      "max_drawdown_pct": -32.81036525705676,
+      "total_return_pct": 363.7291102431847,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.770841870099088,
+      "sharpe": 0.5369160156748268,
+      "max_drawdown_pct": -33.692085797916825,
+      "total_return_pct": 285.4404467905057,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586819567782,
+      "sharpe": 0.5399933513896966,
+      "max_drawdown_pct": -32.47006904871349,
+      "total_return_pct": 145.6592171264381,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F1-n5-sw04-m5",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.916240055906721,
+      "sharpe": 0.6017240668498149,
+      "max_drawdown_pct": -31.011279919322643,
+      "total_return_pct": 366.37347989804596,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.675624269905357,
+      "sharpe": 0.5318802005270847,
+      "max_drawdown_pct": -32.03923329202208,
+      "total_return_pct": 279.3468332848289,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586376512878,
+      "sharpe": 0.5399933500323033,
+      "max_drawdown_pct": -32.47008132475877,
+      "total_return_pct": 145.65919845810456,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n3-ct10",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.961262946750905,
+      "sharpe": 0.6721377125377244,
+      "max_drawdown_pct": -39.95402478763047,
+      "total_return_pct": 552.2042173212787,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.697278241218843,
+      "sharpe": 0.6078169958272701,
+      "max_drawdown_pct": -40.65297356319545,
+      "total_return_pct": 430.494477282559,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586318501349,
+      "sharpe": 0.5399931272320927,
+      "max_drawdown_pct": -32.47008285950783,
+      "total_return_pct": 145.6591960137605,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n3-ct12",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.879813362175096,
+      "sharpe": 0.6693323080305555,
+      "max_drawdown_pct": -39.95401633165039,
+      "total_return_pct": 543.626839792351,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.649638203035792,
+      "sharpe": 0.6065370400115102,
+      "max_drawdown_pct": -40.652965205644854,
+      "total_return_pct": 426.3562194345455,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586423974024,
+      "sharpe": 0.5399933477369875,
+      "max_drawdown_pct": -32.47007486734299,
+      "total_return_pct": 145.6592004579027,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n5-ct08",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.622707250093487,
+      "sharpe": 0.6533470022494631,
+      "max_drawdown_pct": -28.554995956893702,
+      "total_return_pct": 344.2258574072285,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.594971220751323,
+      "sharpe": 0.5861497859443211,
+      "max_drawdown_pct": -29.259261145284555,
+      "total_return_pct": 274.25659731315665,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111587015047037,
+      "sharpe": 0.539993262071889,
+      "max_drawdown_pct": -32.47006900998953,
+      "total_return_pct": 145.6592253630522,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n3-ct08",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 3,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.739441606719001,
+      "sharpe": 0.6589076776379386,
+      "max_drawdown_pct": -42.20675820729828,
+      "total_return_pct": 529.0939455387835,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.4469913540562,
+      "sharpe": 0.5932558620238204,
+      "max_drawdown_pct": -42.879489774573734,
+      "total_return_pct": 409.0915689366675,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586419437875,
+      "sharpe": 0.5399931883962039,
+      "max_drawdown_pct": -32.47008011602611,
+      "total_return_pct": 145.65920026676994,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n5-ct10",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.923099871791118,
+      "sharpe": 0.6756682631486152,
+      "max_drawdown_pct": -25.799743779254,
+      "total_return_pct": 366.90332891071114,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.923065394479956,
+      "sharpe": 0.6101399919837461,
+      "max_drawdown_pct": -26.53118861031103,
+      "total_return_pct": 295.37467893939083,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586895505726,
+      "sharpe": 0.5399935037897026,
+      "max_drawdown_pct": -32.470069735050714,
+      "total_return_pct": 145.65922032611985,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n4-ct12",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.101134628272735,
+      "sharpe": 0.6911094265117063,
+      "max_drawdown_pct": -31.449776303890186,
+      "total_return_pct": 466.83114980378815,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.042993074975714,
+      "sharpe": 0.6294923009999431,
+      "max_drawdown_pct": -32.2986214285667,
+      "total_return_pct": 376.2561389758729,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586529481316,
+      "sharpe": 0.5399932043797567,
+      "max_drawdown_pct": -32.47007237067411,
+      "total_return_pct": 145.65920490350385,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n5-ct12",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 5,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 8.759755045653495,
+      "sharpe": 0.6678112071887683,
+      "max_drawdown_pct": -25.799719558602895,
+      "total_return_pct": 354.4397808278344,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 7.793540161620638,
+      "sharpe": 0.6040691220996346,
+      "max_drawdown_pct": -26.5311646284203,
+      "total_return_pct": 286.9066484887773,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586178207417,
+      "sharpe": 0.539993160491254,
+      "max_drawdown_pct": -32.47006906215108,
+      "total_return_pct": 145.6591901024074,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n4-ct08",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 9.961774469390372,
+      "sharpe": 0.6784350270451959,
+      "max_drawdown_pct": -34.028977458694285,
+      "total_return_pct": 454.0346223305992,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 8.841496109599213,
+      "sharpe": 0.6136432821951278,
+      "max_drawdown_pct": -34.8458612579202,
+      "total_return_pct": 360.63697864285774,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586892411002,
+      "sharpe": 0.5399934394527683,
+      "max_drawdown_pct": -32.47006256984349,
+      "total_return_pct": 145.65922019572278,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  },
+  {
+    "config": {
+      "group_name": "plan_b-F2-n4-ct10",
+      "etfs": [
+        "SPY",
+        "EFA",
+        "IYR",
+        "EEM",
+        "TLT",
+        "IEF",
+        "USO",
+        "GLD",
+        "UUP",
+        "FXE",
+        "DBC",
+        "TIP",
+        "SLV"
+      ],
+      "n_long": 4,
+      "n_short": 1,
+      "spread_pct": 0.15
+    },
+    "momentum_spread0": {
+      "cagr_pct": 10.182775814818278,
+      "sharpe": 0.6941281347400349,
+      "max_drawdown_pct": -31.449785261045438,
+      "total_return_pct": 474.45687060886684,
+      "years": 18.028747433264886
+    },
+    "momentum_spread": {
+      "cagr_pct": 9.091133314078647,
+      "sharpe": 0.6307973833238342,
+      "max_drawdown_pct": -32.29863027480714,
+      "total_return_pct": 380.0610970998458,
+      "years": 18.028747433264886
+    },
+    "benchmark": {
+      "cagr_pct": 5.111586201506757,
+      "sharpe": 0.5399933422014298,
+      "max_drawdown_pct": -32.47006502716863,
+      "total_return_pct": 145.65919108413672,
+      "years": 18.028747433264886
+    },
+    "data_range": {
+      "start": "2005-12-19",
+      "end": "2026-02-10",
+      "days": 5067
+    }
+  }
+]

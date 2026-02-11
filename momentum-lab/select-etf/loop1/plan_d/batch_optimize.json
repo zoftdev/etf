@@ -1,0 +1,2241 @@
+{
+  "configs": [
+    {
+      "group_name": "plan_d-A-n1",
+      "n_long": 1,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-A-n2",
+      "n_long": 2,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-A-n3",
+      "n_long": 3,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-A-n4",
+      "n_long": 4,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-A-n5",
+      "n_long": 5,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-A-n6",
+      "n_long": 6,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-B-sw0",
+      "n_long": 4,
+      "n_short": 0,
+      "short_weight": 0,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-B-sw005",
+      "n_long": 4,
+      "short_weight": 0.05,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-B-sw01",
+      "n_long": 4,
+      "short_weight": 0.1,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-B-sw02",
+      "n_long": 4,
+      "short_weight": 0.2,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-B-sw03",
+      "n_long": 4,
+      "short_weight": 0.3,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-B-sw04",
+      "n_long": 4,
+      "short_weight": 0.4,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-B-sw05",
+      "n_long": 4,
+      "short_weight": 0.5,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-C-ct06",
+      "n_long": 4,
+      "corr_threshold": 0.6,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-C-ct08",
+      "n_long": 4,
+      "corr_threshold": 0.8,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-C-ct09",
+      "n_long": 4,
+      "corr_threshold": 0.9,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-C-ct10",
+      "n_long": 4,
+      "corr_threshold": 1.0,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-C-ct11",
+      "n_long": 4,
+      "corr_threshold": 1.1,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-C-ct12",
+      "n_long": 4,
+      "corr_threshold": 1.2,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-C-ct15",
+      "n_long": 4,
+      "corr_threshold": 1.5,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom63",
+      "n_long": 4,
+      "mom_periods_days": [
+        63
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom126",
+      "n_long": 4,
+      "mom_periods_days": [
+        126
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom189",
+      "n_long": 4,
+      "mom_periods_days": [
+        189
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom252",
+      "n_long": 4,
+      "mom_periods_days": [
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom63-252",
+      "n_long": 4,
+      "mom_periods_days": [
+        63,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom63-126",
+      "n_long": 4,
+      "mom_periods_days": [
+        63,
+        126
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom63-126-252",
+      "n_long": 4,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom63-126-189-252",
+      "n_long": 4,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom21-63-126-189",
+      "n_long": 4,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-D-mom21-63-126-189-252",
+      "n_long": 4,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-E-c10-200",
+      "n_long": 4,
+      "corr_short_days": 10,
+      "corr_long_days": 200,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-E-c10-250",
+      "n_long": 4,
+      "corr_short_days": 10,
+      "corr_long_days": 250,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-E-c15-250",
+      "n_long": 4,
+      "corr_short_days": 15,
+      "corr_long_days": 250,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-E-c20-200",
+      "n_long": 4,
+      "corr_short_days": 20,
+      "corr_long_days": 200,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-E-c20-250",
+      "n_long": 4,
+      "corr_short_days": 20,
+      "corr_long_days": 250,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-E-c20-300",
+      "n_long": 4,
+      "corr_short_days": 20,
+      "corr_long_days": 300,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-E-c30-250",
+      "n_long": 4,
+      "corr_short_days": 30,
+      "corr_long_days": 250,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-E-c30-300",
+      "n_long": 4,
+      "corr_short_days": 30,
+      "corr_long_days": 300,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw0-m252",
+      "n_long": 2,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw0-m4",
+      "n_long": 2,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw0-m5",
+      "n_long": 2,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw02-m252",
+      "n_long": 2,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw02-m4",
+      "n_long": 2,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw02-m5",
+      "n_long": 2,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw03-m252",
+      "n_long": 2,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw03-m4",
+      "n_long": 2,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw03-m5",
+      "n_long": 2,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw04-m252",
+      "n_long": 2,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw04-m4",
+      "n_long": 2,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n2-sw04-m5",
+      "n_long": 2,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw0-m252",
+      "n_long": 3,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw0-m4",
+      "n_long": 3,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw0-m5",
+      "n_long": 3,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw02-m252",
+      "n_long": 3,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw02-m4",
+      "n_long": 3,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw02-m5",
+      "n_long": 3,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw03-m252",
+      "n_long": 3,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw03-m4",
+      "n_long": 3,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw03-m5",
+      "n_long": 3,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw04-m252",
+      "n_long": 3,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw04-m4",
+      "n_long": 3,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n3-sw04-m5",
+      "n_long": 3,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw0-m252",
+      "n_long": 4,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw0-m4",
+      "n_long": 4,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw0-m5",
+      "n_long": 4,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw02-m252",
+      "n_long": 4,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw02-m4",
+      "n_long": 4,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw02-m5",
+      "n_long": 4,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw03-m252",
+      "n_long": 4,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw03-m4",
+      "n_long": 4,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw03-m5",
+      "n_long": 4,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw04-m252",
+      "n_long": 4,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw04-m4",
+      "n_long": 4,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n4-sw04-m5",
+      "n_long": 4,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw0-m252",
+      "n_long": 5,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw0-m4",
+      "n_long": 5,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw0-m5",
+      "n_long": 5,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw02-m252",
+      "n_long": 5,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw02-m4",
+      "n_long": 5,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw02-m5",
+      "n_long": 5,
+      "short_weight": 0.2,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw03-m252",
+      "n_long": 5,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw03-m4",
+      "n_long": 5,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw03-m5",
+      "n_long": 5,
+      "short_weight": 0.3,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw04-m252",
+      "n_long": 5,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        63,
+        126,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw04-m4",
+      "n_long": 5,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F1-n5-sw04-m5",
+      "n_long": 5,
+      "short_weight": 0.4,
+      "mom_periods_days": [
+        21,
+        63,
+        126,
+        189,
+        252
+      ],
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n3-ct08",
+      "n_long": 3,
+      "corr_threshold": 0.8,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n3-ct10",
+      "n_long": 3,
+      "corr_threshold": 1.0,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n3-ct12",
+      "n_long": 3,
+      "corr_threshold": 1.2,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n4-ct08",
+      "n_long": 4,
+      "corr_threshold": 0.8,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n4-ct10",
+      "n_long": 4,
+      "corr_threshold": 1.0,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n4-ct12",
+      "n_long": 4,
+      "corr_threshold": 1.2,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n5-ct08",
+      "n_long": 5,
+      "corr_threshold": 0.8,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n5-ct10",
+      "n_long": 5,
+      "corr_threshold": 1.0,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    },
+    {
+      "group_name": "plan_d-F2-n5-ct12",
+      "n_long": 5,
+      "corr_threshold": 1.2,
+      "etfs": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "EFA",
+        "EEM",
+        "TLT",
+        "IEF",
+        "LQD",
+        "GLD",
+        "SLV",
+        "USO",
+        "IYR",
+        "VTV"
+      ]
+    }
+  ]
+}

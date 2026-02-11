@@ -19,8 +19,8 @@
 # เลือก ETFs ตาม 5 plans (ดึง metadata + price จาก yfinance)
 uv run python momentum-lab/select-etf/run_select_plans.py
 
-# Backtest เปรียบเทียบทั้ง 5 plans
-uv run python momentum-lab/run_batch.py momentum-lab/select-etf/batch_5plans.json --name 5plans
+# Backtest เปรียบเทียบทั้ง 5 plans (ใช้ param/default)
+uv run python momentum-lab/run_batch.py momentum-lab/select-etf/loop1/batch_5plans.json -o momentum-lab/select-etf/loop1 --name loop1
 ```
 
 ## สรุป 5 Plans

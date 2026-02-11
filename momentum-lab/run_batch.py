@@ -97,7 +97,7 @@ def write_csv(results: list[dict], out: Path) -> None:
         w.writerows(rows)
 
 
-def write_md(results: list[dict], out: Path) -> None:
+def write_md(results: list[dict], out: Path, param_dict: dict | None = None, param_name: str = "") -> None:
     rows = [flatten_summary(r) for r in results]
     rows_sorted = sorted(rows, key=lambda x: (x.get("mom0_sharpe") or 0), reverse=True)
 
@@ -106,11 +106,29 @@ def write_md(results: list[dict], out: Path) -> None:
         "",
         f"Total runs: {len(results)}",
         "",
-        "## Top 20 by Momentum Sharpe (spread=0)",
+    ]
+    if param_dict:
+        lines.extend([
+            "## Params Used" + (f" (`{param_name}`)" if param_name else ""),
+            "",
+            "| Param | Value |",
+            "|-------|-------|",
+        ])
+        for k, v in sorted(param_dict.items()):
+            if k in ("etfs", "group_name"):
+                continue
+            val = list(v) if isinstance(v, tuple) else v
+            lines.append(f"| {k} | {val} |")
+        lines.extend(["", "## Top 20 by Momentum Sharpe (spread=0)", ""])
+    else:
+        lines.append("## Top 20 by Momentum Sharpe (spread=0)")
+        lines.append("")
+
+    lines.extend([
         "",
         "| group_name | n_long | mom0_cagr | mom0_sharpe | mom0_maxdd | bh_cagr | bh_sharpe |",
         "|------------|--------|-----------|-------------|------------|---------|-----------|",
-    ]
+    ])
     for r in rows_sorted[:20]:
         lines.append(
             f"| {r.get('group_name','')} | {r.get('n_long','')} | "
@@ -171,23 +189,26 @@ def main() -> None:
     parser.add_argument("--name", type=str, default="",
                         help="Batch name (default: from filename)")
     parser.add_argument("--param", type=str, default="",
-                        help="Param file in param/ (default: quantpedia.json)")
+                        help="Param file in param/ (default: from param/default)")
+    parser.add_argument("--output-dir", "-o", type=Path, default=None,
+                        help="Output directory (default: result/momentum-lab/_batch/{name})")
     parser.add_argument("--workers", type=int, default=14,
                         help="ProcessPoolExecutor workers")
     args = parser.parse_args()
 
+    from simulate import load_quantpedia_params, get_default_param
+
     batch_name = args.name or args.batch_file.stem
-    out_dir = BATCH_BASE / batch_name
+    out_dir = args.output_dir if args.output_dir else BATCH_BASE / batch_name
+    out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     configs = load_batch(args.batch_file)
     print(f"Loaded {len(configs)} configs from {args.batch_file}")
 
-    defaults = None
-    if args.param:
-        from simulate import load_quantpedia_params
-        defaults = load_quantpedia_params(args.param)
-        print(f"Using param: {args.param}")
+    param_name = args.param if args.param else get_default_param()
+    defaults = load_quantpedia_params(param_name)
+    print(f"Using param: {param_name}")
 
     results: list[dict] = []
     errors: list[tuple[int, str]] = []
@@ -215,7 +236,7 @@ def main() -> None:
         json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8"
     )
     write_csv(results, out_dir / "results.csv")
-    write_md(results, out_dir / "report.md")
+    write_md(results, out_dir / "report.md", param_dict=defaults, param_name=param_name)
     write_html(results, out_dir / "report.html")
 
     # Generate parallel coordinates graph
