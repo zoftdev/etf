@@ -1,0 +1,23 @@
+{
+  "group_name": "F1-n5-sw02-m5",
+  "etfs": [
+    "SPY",
+    "QQQ",
+    "GLD",
+    "IWM",
+    "EEM"
+  ],
+  "n_long": 5,
+  "n_short": 1,
+  "short_weight": 0.2,
+  "corr_threshold": 1.0,
+  "corr_short_days": 10,
+  "corr_long_days": 250,
+  "mom_periods_days": [
+    21,
+    63,
+    126,
+    189,
+    252
+  ]
+}
