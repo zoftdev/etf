@@ -10,6 +10,8 @@ Strategy:
 
 from __future__ import annotations
 
+import json
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import NamedTuple
 
@@ -17,14 +19,55 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
-# 13 ETFs from QuantPedia research
-ETFS = [
+OUT_DIR = Path(__file__).resolve().parent.parent / "result" / "momentum-lab"
+
+# Default 13 ETFs from QuantPedia research
+DEFAULT_ETFS = [
     "SPY", "IWM", "EFA", "EEM", "IYR", "QQQ",  # stock
     "LQD", "IEF", "TIP",                        # bond
     "GLD", "USO", "DBC",                        # commodity
     "FXE",                                     # currency
 ]
 
+
+@dataclass
+class Config:
+    """Configurable parameters for optimization and variant runs."""
+
+    # ETF selection & output
+    etfs: list[str] = field(default_factory=lambda: list(DEFAULT_ETFS))
+    group_name: str = "from-research"
+
+    # Strategy rules
+    n_long: int = 4
+    n_short: int = 1
+    long_weight: float = 1.0
+    short_weight: float = 0.30
+    corr_threshold: float = 1.0  # activate short when 20d_corr/250d_corr > this
+
+    # Momentum lookback (days): 3, 6, 9, 12 months
+    mom_periods_days: tuple[int, ...] = (63, 126, 189, 252)
+
+    # Correlation filter
+    corr_short_days: int = 20
+    corr_long_days: int = 250
+
+    # Cost & data
+    spread_pct: float = 0.15
+    lookback_years: int = 20
+
+    def result_dir(self) -> Path:
+        return OUT_DIR / self.group_name
+
+
+def default_config() -> Config:
+    """Default config (QuantPedia research params)."""
+    return Config()
+
+
+# Backward-compat
+ETFS = DEFAULT_ETFS
+ETF_GROUP_NAME = "from-research"
 MOM_PERIODS_DAYS = (63, 126, 189, 252)
 CORR_SHORT_DAYS = 20
 CORR_LONG_DAYS = 250
@@ -32,9 +75,6 @@ N_LONG = 4
 N_SHORT = 1
 SHORT_WEIGHT = 0.30
 LONG_WEIGHT = 1.0
-
-OUT_DIR = Path(__file__).resolve().parent.parent / "result" / "momentum-lab"
-ETF_GROUP_NAME = "from-research"  # subfolder for outputs; adjust when changing ETF list
 LOOKBACK_YEARS = 20
 SPREAD_PCT = 0.15
 
@@ -53,6 +93,42 @@ class SimResult(NamedTuple):
     spread: float
     spread_label: str
     metrics: dict
+    config: Config
+
+    def to_summary_dict(self) -> dict:
+        """JSON-serializable summary for caller. Includes momentum + benchmark."""
+        def _safe(v):
+            if v is None or isinstance(v, (int, str, bool)):
+                return v
+            if isinstance(v, float):
+                return float(v) if np.isfinite(v) else None
+            return v
+
+        m0 = self.metrics.get("mom_0", {})
+        m15 = self.metrics.get("mom_015", {})
+        bh = self.metrics.get("bh", {})
+
+        return {
+            "config": {
+                "group_name": self.config.group_name,
+                "etfs": self.config.etfs,
+                "n_long": self.config.n_long,
+                "n_short": self.config.n_short,
+                "spread_pct": self.config.spread_pct,
+            },
+            "momentum_spread0": {k: _safe(v) for k, v in m0.items()},
+            "momentum_spread": {k: _safe(v) for k, v in m15.items()},
+            "benchmark": {k: _safe(v) for k, v in bh.items()},
+            "data_range": {
+                "start": str(self.prices.index[0].date()) if len(self.prices) else None,
+                "end": str(self.prices.index[-1].date()) if len(self.prices) else None,
+                "days": len(self.prices),
+            },
+        }
+
+    def to_summary_json(self, indent: int = 2) -> str:
+        """Return JSON string summary for caller."""
+        return json.dumps(self.to_summary_dict(), indent=indent, ensure_ascii=False)
 
 
 def fetch_prices(tickers: list[str], years: int) -> pd.DataFrame:
@@ -91,16 +167,21 @@ def momentum_rank(prices: pd.DataFrame, date: pd.Timestamp, periods: tuple[int, 
     return avg_mom
 
 
-def avg_correlation_ratio(returns: pd.DataFrame, date: pd.Timestamp) -> float | None:
-    """Ratio of avg short-term (20d) to long-term (250d) correlation."""
+def avg_correlation_ratio(
+    returns: pd.DataFrame,
+    date: pd.Timestamp,
+    corr_short_days: int = 20,
+    corr_long_days: int = 250,
+) -> float | None:
+    """Ratio of avg short-term to long-term correlation."""
     idx = returns.index.get_indexer([date], method="ffill")[0]
-    if idx < CORR_LONG_DAYS + 5:
+    if idx < corr_long_days + 5:
         return None
     r = returns.iloc[:idx]
-    if len(r) < CORR_LONG_DAYS:
+    if len(r) < corr_long_days:
         return None
-    r_short = r.tail(CORR_SHORT_DAYS)
-    r_long = r.tail(CORR_LONG_DAYS)
+    r_short = r.tail(corr_short_days)
+    r_long = r.tail(corr_long_days)
     corr_short = r_short.corr().values
     corr_long = r_long.corr().values
     n = corr_short.shape[0]
@@ -123,15 +204,26 @@ def last_trading_day_of_month(prices: pd.DataFrame, year: int, month: int) -> pd
 def run_momentum_strategy(
     prices: pd.DataFrame,
     returns: pd.DataFrame,
-    spread_pct: float = 0.0,
+    config: Config,
+    spread_pct: float | None = None,
     trades_log: list[dict] | None = None,
     trade_log: list[dict] | None = None,
     trades_summary: list[dict] | None = None,
     holdings_history: list[dict] | None = None,
 ) -> pd.Series:
     """Run QuantPedia long-short strategy. Returns equity curve."""
+    spread = config.spread_pct if spread_pct is None else spread_pct
+    mom_periods = config.mom_periods_days
+    corr_short = config.corr_short_days
+    corr_long = config.corr_long_days
+    n_long = config.n_long
+    n_short = config.n_short
+    long_w = config.long_weight
+    short_w = config.short_weight
+    corr_thresh = config.corr_threshold
+
     dates = prices.index
-    start_idx = max(MOM_PERIODS_DAYS) + CORR_LONG_DAYS + 10
+    start_idx = max(mom_periods) + corr_long + 10
     if len(dates) <= start_idx:
         return pd.Series(dtype=float)
 
@@ -168,13 +260,13 @@ def run_momentum_strategy(
         if idx_curr <= idx_prev:
             continue
 
-        mom = momentum_rank(prices, d_prev, MOM_PERIODS_DAYS)
+        mom = momentum_rank(prices, d_prev, mom_periods)
         valid = mom.dropna()
-        long_tickers = list(valid.nlargest(N_LONG).index) if len(valid) >= N_LONG else list(valid.index)
-        corr_ratio = avg_correlation_ratio(returns, d_prev)
+        long_tickers = list(valid.nlargest(n_long).index) if len(valid) >= n_long else list(valid.index)
+        corr_ratio = avg_correlation_ratio(returns, d_prev, corr_short, corr_long)
         short_ticker = None
-        if corr_ratio is not None and corr_ratio > 1.0 and len(valid) >= N_SHORT:
-            short_ticker = valid.nsmallest(N_SHORT).index[0]
+        if n_short > 0 and corr_ratio is not None and corr_ratio > corr_thresh and len(valid) >= n_short:
+            short_ticker = valid.nsmallest(n_short).index[0]
 
         prev_longs = set(long_tickers_prev)
         prev_shorts = {short_ticker_prev} if short_ticker_prev else set()
@@ -206,18 +298,18 @@ def run_momentum_strategy(
                     })
 
         if trades_log is not None:
-            w_long = (LONG_WEIGHT / len(long_tickers)) * 100 if long_tickers else 0
+            w_long = (long_w / len(long_tickers)) * 100 if long_tickers else 0
             for t in long_tickers:
                 trades_log.append({"date": d_prev, "ticker": t, "side": "LONG", "weight_pct": w_long})
             if short_ticker:
-                trades_log.append({"date": d_prev, "ticker": short_ticker, "side": "SHORT", "weight_pct": SHORT_WEIGHT * 100})
+                trades_log.append({"date": d_prev, "ticker": short_ticker, "side": "SHORT", "weight_pct": short_w * 100})
 
         if trade_log is not None:
-            w_long = (LONG_WEIGHT / len(long_tickers)) * 100 if long_tickers else 0
+            w_long = (long_w / len(long_tickers)) * 100 if long_tickers else 0
             for ed in exits_detail:
                 t = ed["ticker"]
                 _, _, side = entry_tracker.get(t, (None, None, "LONG"))
-                w = (SHORT_WEIGHT * 100) if side == "SHORT" else w_long
+                w = (short_w * 100) if side == "SHORT" else w_long
                 entry_date = ed.get("buy_date")
                 trade_log.append({
                     "date": d_prev, "ticker": t, "action": "SELL", "side": side,
@@ -226,7 +318,7 @@ def run_momentum_strategy(
                 })
             for t in entries:
                 side = "SHORT" if t in new_shorts else "LONG"
-                w = (SHORT_WEIGHT * 100) if t in new_shorts else w_long
+                w = (short_w * 100) if t in new_shorts else w_long
                 trade_log.append({
                     "date": d_prev, "ticker": t, "action": "BUY", "side": side,
                     "weight_pct": w, "pnl_pct": "", "entry_date": "",
@@ -261,19 +353,19 @@ def run_momentum_strategy(
                     side = "SHORT" if t in new_shorts else "LONG"
                     entry_tracker[t] = (d_prev, float(exit_price[t]), side)
 
-        if spread_pct > 0:
-            w_long = LONG_WEIGHT / len(long_tickers) if long_tickers else 0
-            old_weights = {t: LONG_WEIGHT / len(long_tickers_prev) for t in long_tickers_prev} if long_tickers_prev else {}
+        if spread > 0:
+            w_long = long_w / len(long_tickers) if long_tickers else 0
+            old_weights = {t: long_w / len(long_tickers_prev) for t in long_tickers_prev} if long_tickers_prev else {}
             if short_ticker_prev:
-                old_weights[short_ticker_prev] = old_weights.get(short_ticker_prev, 0) + SHORT_WEIGHT
+                old_weights[short_ticker_prev] = old_weights.get(short_ticker_prev, 0) + short_w
             new_weights = {t: w_long for t in long_tickers}
             if short_ticker:
-                new_weights[short_ticker] = new_weights.get(short_ticker, 0) + SHORT_WEIGHT
+                new_weights[short_ticker] = new_weights.get(short_ticker, 0) + short_w
             all_tickers = set(old_weights.keys()) | set(new_weights.keys())
             turnover = sum(abs(new_weights.get(t, 0) - old_weights.get(t, 0)) for t in all_tickers)
             prev_eq = equity.iloc[idx_prev]
             if pd.notna(prev_eq) and prev_eq > 0 and turnover > 0:
-                equity.iloc[idx_prev] = prev_eq * (1.0 - spread_pct / 100.0 * turnover)
+                equity.iloc[idx_prev] = prev_eq * (1.0 - spread / 100.0 * turnover)
 
         long_tickers_prev = long_tickers
         short_ticker_prev = short_ticker
@@ -283,12 +375,12 @@ def run_momentum_strategy(
             ret = returns.loc[d]
             port_ret = 0.0
             if long_tickers:
-                w_long = LONG_WEIGHT / len(long_tickers)
+                w_long = long_w / len(long_tickers)
                 for t in long_tickers:
                     if t in ret.index and pd.notna(ret[t]):
                         port_ret += w_long * ret[t]
             if short_ticker and short_ticker in ret.index and pd.notna(ret[short_ticker]):
-                port_ret -= SHORT_WEIGHT * ret[short_ticker]
+                port_ret -= short_w * ret[short_ticker]
             prev_eq = equity.iloc[j - 1]
             if pd.notna(prev_eq) and prev_eq > 0:
                 equity.iloc[j] = prev_eq * (1.0 + port_ret)
@@ -342,16 +434,22 @@ def compute_metrics(equity: pd.Series) -> dict:
 
 
 def run_simulation(
-    spread: float = SPREAD_PCT,
+    config: Config | None = None,
+    *,
+    spread: float | None = None,
     show_trades: bool = False,
 ) -> SimResult:
     """Run full simulation. Returns SimResult."""
+    cfg = config or default_config()
+    if spread is not None:
+        cfg = Config(**{**cfg.__dict__, "spread_pct": spread})
+
     trades_log: list[dict] = []
     trade_log: list[dict] = []
     trades_summary: list[dict] = []
     holdings_history: list[dict] = []
 
-    prices = fetch_prices(ETFS, LOOKBACK_YEARS)
+    prices = fetch_prices(cfg.etfs, cfg.lookback_years)
     if prices.empty or len(prices) < 300:
         raise ValueError("Insufficient price data")
     prices = prices.dropna(how="all").ffill().bfill()
@@ -361,13 +459,16 @@ def run_simulation(
         raise ValueError("No valid returns")
 
     eq_mom_0 = run_momentum_strategy(
-        prices, returns, spread_pct=0.0,
+        prices, returns, cfg, spread_pct=0.0,
         trades_log=trades_log,
         trade_log=trade_log,
         trades_summary=trades_summary,
         holdings_history=holdings_history,
     )
-    eq_mom_015 = run_momentum_strategy(prices, returns, spread_pct=spread)
+    eq_mom_015 = run_momentum_strategy(
+        prices, returns, cfg,
+        trades_log=[], trade_log=[], trades_summary=[], holdings_history=[],
+    )
     first_valid = eq_mom_0.dropna().index[0] if eq_mom_0.notna().any() else None
     eq_bh = run_buy_hold(prices, returns, start_date=first_valid)
 
@@ -377,7 +478,7 @@ def run_simulation(
     eq_mom_015 = eq_mom_015.reindex(common).ffill()
     eq_bh = eq_bh.reindex(common).ffill()
 
-    spread_label = f"momentum_spread{str(spread).replace('.', '')}"
+    spread_label = f"momentum_spread{str(cfg.spread_pct).replace('.', '')}"
     out_df = pd.DataFrame({
         "momentum_spread0": eq_mom_0,
         spread_label: eq_mom_015,
@@ -400,7 +501,8 @@ def run_simulation(
         holdings_history=holdings_history,
         prices=prices,
         first_valid=first_valid,
-        spread=spread,
+        spread=cfg.spread_pct,
         spread_label=spread_label,
         metrics=metrics,
+        config=cfg,
     )

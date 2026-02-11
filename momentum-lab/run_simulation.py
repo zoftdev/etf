@@ -20,25 +20,55 @@ import pandas as pd
 _lab_dir = Path(__file__).resolve().parent
 sys.path.insert(0, str(_lab_dir))
 
-from simulate import ETF_GROUP_NAME, OUT_DIR, SPREAD_PCT, run_simulation
+from simulate import Config, DEFAULT_ETFS, OUT_DIR, run_simulation
 from gen_graph import build_chart
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="QuantPedia ETF Momentum Strategy")
-    parser.add_argument("--spread", type=float, default=SPREAD_PCT,
+    # ETF & output
+    parser.add_argument("--etfs", type=str, default="",
+                        help="Comma-separated ETF tickers (default: QuantPedia 13)")
+    parser.add_argument("--group-name", type=str, default="from-research",
+                        help="Output subfolder name")
+    # Strategy
+    parser.add_argument("--n-long", type=int, default=4, help="Number of top ETFs to long")
+    parser.add_argument("--n-short", type=int, default=1, help="Number of bottom ETFs to short")
+    parser.add_argument("--corr-threshold", type=float, default=1.0,
+                        help="Activate short when 20d_corr/250d_corr > this")
+    parser.add_argument("--mom-periods", type=str, default="63,126,189,252",
+                        help="Momentum lookback days (comma-separated)")
+    # Data & cost
+    parser.add_argument("--spread", type=float, default=0.15,
                         help="Transaction cost %% per rebalance")
+    parser.add_argument("--lookback-years", type=int, default=20,
+                        help="Years of historical data")
     parser.add_argument("--show-trades", action="store_true",
                         help="Output merged buy/sell summary")
     parser.add_argument("--no-graph", action="store_true",
                         help="Skip chart generation")
+    parser.add_argument("--output-json", type=str, default="",
+                        help="Save JSON summary to file (or '-' for stdout)")
     args = parser.parse_args()
 
-    result_dir = OUT_DIR / ETF_GROUP_NAME
+    etfs = [t.strip() for t in args.etfs.split(",") if t.strip()] if args.etfs else list(DEFAULT_ETFS)
+    mom_periods = tuple(int(x.strip()) for x in args.mom_periods.split(",") if x.strip())
+
+    config = Config(
+        etfs=etfs,
+        group_name=args.group_name,
+        n_long=args.n_long,
+        n_short=args.n_short,
+        corr_threshold=args.corr_threshold,
+        mom_periods_days=mom_periods,
+        spread_pct=args.spread,
+        lookback_years=args.lookback_years,
+    )
+    result_dir = config.result_dir()
     result_dir.mkdir(parents=True, exist_ok=True)
 
-    print("Fetching 13 ETFs from Yahoo Finance...")
-    result = run_simulation(spread=args.spread, show_trades=args.show_trades)
+    print(f"Fetching {len(config.etfs)} ETFs from Yahoo Finance...")
+    result = run_simulation(config=config, show_trades=args.show_trades)
 
     print(f"Data range: {result.prices.index[0].date()} to {result.prices.index[-1].date()} "
           f"({len(result.prices)} days)")
@@ -58,7 +88,7 @@ def main() -> None:
     print(f"  CAGR:       {m_mom_015.get('cagr_pct', 0):.2f}%")
     print(f"  Sharpe:     {m_mom_015.get('sharpe', 0):.2f}")
     print(f"  Max DD:     {m_mom_015.get('max_drawdown_pct', 0):.2f}%")
-    print(f"\nBuy-Hold (Equal Weight 13 ETFs):")
+    print(f"\nBuy-Hold (Equal Weight {len(config.etfs)} ETFs):")
     print(f"  CAGR:       {m_bh.get('cagr_pct', 0):.2f}%")
     print(f"  Sharpe:     {m_bh.get('sharpe', 0):.2f}")
     print(f"  Max DD:     {m_bh.get('max_drawdown_pct', 0):.2f}%")
@@ -112,11 +142,21 @@ def main() -> None:
                 first_valid=result.first_valid,
                 spread=result.spread,
                 spread_label=result.spread_label,
+                etfs=result.config.etfs,
                 out_path=result_dir / "momentum_vs_buyhold.html",
             )
             print(f"Saved {path}")
         except ImportError:
             print("Plotly not installed; skip HTML.")
+
+    if args.output_json:
+        j = result.to_summary_json()
+        if args.output_json == "-":
+            print(j)
+        else:
+            out_json = result_dir / args.output_json
+            out_json.write_text(j, encoding="utf-8")
+            print(f"Saved {out_json}")
 
 
 if __name__ == "__main__":

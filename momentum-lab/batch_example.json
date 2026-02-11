@@ -1,0 +1,9 @@
+{
+  "configs": [
+    {"group_name": "v1-n2", "n_long": 2},
+    {"group_name": "v2-n3", "n_long": 3},
+    {"group_name": "v3-n4", "n_long": 4},
+    {"group_name": "v4-5etf", "etfs": ["SPY", "GLD", "QQQ", "IWM", "EEM"], "n_long": 2},
+    {"group_name": "v5-noshort", "n_short": 0}
+  ]
+}

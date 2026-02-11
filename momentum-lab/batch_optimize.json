@@ -1,0 +1,542 @@
+{
+  "configs": [
+    {
+      "group_name": "A-n1",
+      "n_long": 1
+    },
+    {
+      "group_name": "A-n2",
+      "n_long": 2
+    },
+    {
+      "group_name": "A-n3",
+      "n_long": 3
+    },
+    {
+      "group_name": "A-n4",
+      "n_long": 4
+    },
+    {
+      "group_name": "A-n5",
+      "n_long": 5
+    },
+    {
+      "group_name": "A-n6",
+      "n_long": 6
+    },
+    {
+      "group_name": "B-sw0",
+      "n_long": 4,
+      "n_short": 0,
+      "short_weight": 0
+    },
+    {
+      "group_name": "B-sw005",
+      "n_long": 4,
+      "short_weight": 0.05
+    },
+    {
+      "group_name": "B-sw01",
+      "n_long": 4,
+      "short_weight": 0.10
+    },
+    {
+      "group_name": "B-sw02",
+      "n_long": 4,
+      "short_weight": 0.20
+    },
+    {
+      "group_name": "B-sw03",
+      "n_long": 4,
+      "short_weight": 0.30
+    },
+    {
+      "group_name": "B-sw04",
+      "n_long": 4,
+      "short_weight": 0.40
+    },
+    {
+      "group_name": "B-sw05",
+      "n_long": 4,
+      "short_weight": 0.50
+    },
+    {
+      "group_name": "C-ct06",
+      "n_long": 4,
+      "corr_threshold": 0.6
+    },
+    {
+      "group_name": "C-ct08",
+      "n_long": 4,
+      "corr_threshold": 0.8
+    },
+    {
+      "group_name": "C-ct09",
+      "n_long": 4,
+      "corr_threshold": 0.9
+    },
+    {
+      "group_name": "C-ct10",
+      "n_long": 4,
+      "corr_threshold": 1.0
+    },
+    {
+      "group_name": "C-ct11",
+      "n_long": 4,
+      "corr_threshold": 1.1
+    },
+    {
+      "group_name": "C-ct12",
+      "n_long": 4,
+      "corr_threshold": 1.2
+    },
+    {
+      "group_name": "C-ct15",
+      "n_long": 4,
+      "corr_threshold": 1.5
+    },
+    {
+      "group_name": "D-mom63",
+      "n_long": 4,
+      "mom_periods_days": [63]
+    },
+    {
+      "group_name": "D-mom126",
+      "n_long": 4,
+      "mom_periods_days": [126]
+    },
+    {
+      "group_name": "D-mom189",
+      "n_long": 4,
+      "mom_periods_days": [189]
+    },
+    {
+      "group_name": "D-mom252",
+      "n_long": 4,
+      "mom_periods_days": [252]
+    },
+    {
+      "group_name": "D-mom63-252",
+      "n_long": 4,
+      "mom_periods_days": [63, 252]
+    },
+    {
+      "group_name": "D-mom63-126",
+      "n_long": 4,
+      "mom_periods_days": [63, 126]
+    },
+    {
+      "group_name": "D-mom63-126-252",
+      "n_long": 4,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "D-mom63-126-189-252",
+      "n_long": 4,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "D-mom21-63-126-189",
+      "n_long": 4,
+      "mom_periods_days": [21, 63, 126, 189]
+    },
+    {
+      "group_name": "D-mom21-63-126-189-252",
+      "n_long": 4,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "E-c10-200",
+      "n_long": 4,
+      "corr_short_days": 10,
+      "corr_long_days": 200
+    },
+    {
+      "group_name": "E-c10-250",
+      "n_long": 4,
+      "corr_short_days": 10,
+      "corr_long_days": 250
+    },
+    {
+      "group_name": "E-c15-250",
+      "n_long": 4,
+      "corr_short_days": 15,
+      "corr_long_days": 250
+    },
+    {
+      "group_name": "E-c20-200",
+      "n_long": 4,
+      "corr_short_days": 20,
+      "corr_long_days": 200
+    },
+    {
+      "group_name": "E-c20-250",
+      "n_long": 4,
+      "corr_short_days": 20,
+      "corr_long_days": 250
+    },
+    {
+      "group_name": "E-c20-300",
+      "n_long": 4,
+      "corr_short_days": 20,
+      "corr_long_days": 300
+    },
+    {
+      "group_name": "E-c30-250",
+      "n_long": 4,
+      "corr_short_days": 30,
+      "corr_long_days": 250
+    },
+    {
+      "group_name": "E-c30-300",
+      "n_long": 4,
+      "corr_short_days": 30,
+      "corr_long_days": 300
+    },
+    {
+      "group_name": "F1-n2-sw0-m252",
+      "n_long": 2,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n2-sw0-m4",
+      "n_long": 2,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n2-sw0-m5",
+      "n_long": 2,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n2-sw02-m252",
+      "n_long": 2,
+      "short_weight": 0.20,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n2-sw02-m4",
+      "n_long": 2,
+      "short_weight": 0.20,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n2-sw02-m5",
+      "n_long": 2,
+      "short_weight": 0.20,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n2-sw03-m252",
+      "n_long": 2,
+      "short_weight": 0.30,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n2-sw03-m4",
+      "n_long": 2,
+      "short_weight": 0.30,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n2-sw03-m5",
+      "n_long": 2,
+      "short_weight": 0.30,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n2-sw04-m252",
+      "n_long": 2,
+      "short_weight": 0.40,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n2-sw04-m4",
+      "n_long": 2,
+      "short_weight": 0.40,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n2-sw04-m5",
+      "n_long": 2,
+      "short_weight": 0.40,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n3-sw0-m252",
+      "n_long": 3,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n3-sw0-m4",
+      "n_long": 3,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n3-sw0-m5",
+      "n_long": 3,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n3-sw02-m252",
+      "n_long": 3,
+      "short_weight": 0.20,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n3-sw02-m4",
+      "n_long": 3,
+      "short_weight": 0.20,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n3-sw02-m5",
+      "n_long": 3,
+      "short_weight": 0.20,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n3-sw03-m252",
+      "n_long": 3,
+      "short_weight": 0.30,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n3-sw03-m4",
+      "n_long": 3,
+      "short_weight": 0.30,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n3-sw03-m5",
+      "n_long": 3,
+      "short_weight": 0.30,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n3-sw04-m252",
+      "n_long": 3,
+      "short_weight": 0.40,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n3-sw04-m4",
+      "n_long": 3,
+      "short_weight": 0.40,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n3-sw04-m5",
+      "n_long": 3,
+      "short_weight": 0.40,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n4-sw0-m252",
+      "n_long": 4,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n4-sw0-m4",
+      "n_long": 4,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n4-sw0-m5",
+      "n_long": 4,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n4-sw02-m252",
+      "n_long": 4,
+      "short_weight": 0.20,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n4-sw02-m4",
+      "n_long": 4,
+      "short_weight": 0.20,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n4-sw02-m5",
+      "n_long": 4,
+      "short_weight": 0.20,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n4-sw03-m252",
+      "n_long": 4,
+      "short_weight": 0.30,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n4-sw03-m4",
+      "n_long": 4,
+      "short_weight": 0.30,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n4-sw03-m5",
+      "n_long": 4,
+      "short_weight": 0.30,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n4-sw04-m252",
+      "n_long": 4,
+      "short_weight": 0.40,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n4-sw04-m4",
+      "n_long": 4,
+      "short_weight": 0.40,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n4-sw04-m5",
+      "n_long": 4,
+      "short_weight": 0.40,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n5-sw0-m252",
+      "n_long": 5,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n5-sw0-m4",
+      "n_long": 5,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n5-sw0-m5",
+      "n_long": 5,
+      "n_short": 0,
+      "short_weight": 0,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n5-sw02-m252",
+      "n_long": 5,
+      "short_weight": 0.20,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n5-sw02-m4",
+      "n_long": 5,
+      "short_weight": 0.20,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n5-sw02-m5",
+      "n_long": 5,
+      "short_weight": 0.20,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n5-sw03-m252",
+      "n_long": 5,
+      "short_weight": 0.30,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n5-sw03-m4",
+      "n_long": 5,
+      "short_weight": 0.30,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n5-sw03-m5",
+      "n_long": 5,
+      "short_weight": 0.30,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n5-sw04-m252",
+      "n_long": 5,
+      "short_weight": 0.40,
+      "mom_periods_days": [63, 126, 252]
+    },
+    {
+      "group_name": "F1-n5-sw04-m4",
+      "n_long": 5,
+      "short_weight": 0.40,
+      "mom_periods_days": [63, 126, 189, 252]
+    },
+    {
+      "group_name": "F1-n5-sw04-m5",
+      "n_long": 5,
+      "short_weight": 0.40,
+      "mom_periods_days": [21, 63, 126, 189, 252]
+    },
+    {
+      "group_name": "F2-n3-ct08",
+      "n_long": 3,
+      "corr_threshold": 0.8
+    },
+    {
+      "group_name": "F2-n3-ct10",
+      "n_long": 3,
+      "corr_threshold": 1.0
+    },
+    {
+      "group_name": "F2-n3-ct12",
+      "n_long": 3,
+      "corr_threshold": 1.2
+    },
+    {
+      "group_name": "F2-n4-ct08",
+      "n_long": 4,
+      "corr_threshold": 0.8
+    },
+    {
+      "group_name": "F2-n4-ct10",
+      "n_long": 4,
+      "corr_threshold": 1.0
+    },
+    {
+      "group_name": "F2-n4-ct12",
+      "n_long": 4,
+      "corr_threshold": 1.2
+    },
+    {
+      "group_name": "F2-n5-ct08",
+      "n_long": 5,
+      "corr_threshold": 0.8
+    },
+    {
+      "group_name": "F2-n5-ct10",
+      "n_long": 5,
+      "corr_threshold": 1.0
+    },
+    {
+      "group_name": "F2-n5-ct12",
+      "n_long": 5,
+      "corr_threshold": 1.2
+    }
+  ]
+}
