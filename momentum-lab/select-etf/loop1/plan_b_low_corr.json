@@ -1,0 +1,19 @@
+{
+  "group_name": "plan_b_low_corr",
+  "etfs": [
+    "SPY",
+    "EFA",
+    "IYR",
+    "EEM",
+    "TLT",
+    "IEF",
+    "USO",
+    "GLD",
+    "UUP",
+    "FXE",
+    "DBC",
+    "TIP",
+    "SLV"
+  ],
+  "focus": "Low Correlation"
+}

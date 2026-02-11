@@ -1,0 +1,19 @@
+{
+  "group_name": "plan_d_low_expense",
+  "etfs": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "EFA",
+    "EEM",
+    "TLT",
+    "IEF",
+    "LQD",
+    "GLD",
+    "SLV",
+    "USO",
+    "IYR",
+    "VTV"
+  ],
+  "focus": "Low Expense"
+}

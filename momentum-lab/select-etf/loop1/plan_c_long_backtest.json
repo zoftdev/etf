@@ -1,0 +1,19 @@
+{
+  "group_name": "plan_c_long_backtest",
+  "etfs": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "EFA",
+    "EEM",
+    "VEU",
+    "TLT",
+    "IEF",
+    "LQD",
+    "GLD",
+    "SLV",
+    "USO",
+    "FXE"
+  ],
+  "focus": "Long Backtest"
+}

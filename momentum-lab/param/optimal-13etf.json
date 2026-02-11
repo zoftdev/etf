@@ -1,0 +1,9 @@
+{
+  "etfs": ["SPY", "IWM", "EFA", "EEM", "IYR", "QQQ", "LQD", "IEF", "TIP", "GLD", "USO", "DBC", "FXE"],
+  "group_name": "optimal-13etf",
+  "n_long": 5,
+  "n_short": 1,
+  "short_weight": 0.20,
+  "mom_periods_days": [21, 63, 126, 189, 252],
+  "corr_short_days": 10
+}

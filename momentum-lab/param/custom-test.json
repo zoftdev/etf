@@ -1,0 +1,9 @@
+{
+  "etfs": ["SPY", "QQQ", "GLD", "IWM", "EEM"],
+  "group_name": "custom-test",
+  "n_long": 3,
+  "n_short": 1,
+  "short_weight": 0.20,
+  "spread_pct": 0.10,
+  "lookback_years": 15
+}

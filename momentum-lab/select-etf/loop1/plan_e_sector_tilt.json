@@ -1,0 +1,21 @@
+{
+  "group_name": "plan_e_sector_tilt",
+  "etfs": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "IYR",
+    "EFA",
+    "EEM",
+    "TLT",
+    "IEF",
+    "LQD",
+    "TIP",
+    "GLD",
+    "USO",
+    "DBC",
+    "XLU",
+    "XLF"
+  ],
+  "focus": "Sector Tilt"
+}

@@ -1,0 +1,19 @@
+{
+  "group_name": "plan_a_quantpedia",
+  "etfs": [
+    "SPY",
+    "IWM",
+    "EFA",
+    "EEM",
+    "IYR",
+    "QQQ",
+    "LQD",
+    "IEF",
+    "TIP",
+    "GLD",
+    "USO",
+    "DBC",
+    "FXE"
+  ],
+  "focus": "QuantPedia Classic"
+}

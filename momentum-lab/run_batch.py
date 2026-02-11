@@ -9,6 +9,7 @@ Usage:
   uv run python momentum-lab/run_batch.py batch.json [--name my-batch] [--workers 4]
 
 Output: result/momentum-lab/_batch/{batch_name}/
+  results.csv, results.json, report.md, report.html, graph2_parcoords.html
 """
 
 from __future__ import annotations
@@ -28,13 +29,13 @@ OUT_DIR = Path(__file__).resolve().parent.parent / "result" / "momentum-lab"
 BATCH_BASE = OUT_DIR / "_batch"
 
 
-def _run_one(config_dict: dict) -> dict:
+def _run_one(config_dict: dict, defaults: dict | None = None) -> dict:
     """Worker: run simulation for one config, return summary dict. Must be top-level for pickling."""
     from simulate import Config, default_config, run_simulation
 
-    defaults = asdict(default_config())
+    base = defaults if defaults is not None else asdict(default_config())
     overrides = {k: v for k, v in config_dict.items() if v is not None}
-    merged = {**defaults, **overrides}
+    merged = {**base, **overrides}
     if "mom_periods_days" in merged and isinstance(merged["mom_periods_days"], list):
         merged["mom_periods_days"] = tuple(merged["mom_periods_days"])
     config = Config(**merged)
@@ -169,6 +170,8 @@ def main() -> None:
     parser.add_argument("batch_file", type=Path, help="JSON file with config array")
     parser.add_argument("--name", type=str, default="",
                         help="Batch name (default: from filename)")
+    parser.add_argument("--param", type=str, default="",
+                        help="Param file in param/ (default: quantpedia.json)")
     parser.add_argument("--workers", type=int, default=14,
                         help="ProcessPoolExecutor workers")
     args = parser.parse_args()
@@ -180,11 +183,17 @@ def main() -> None:
     configs = load_batch(args.batch_file)
     print(f"Loaded {len(configs)} configs from {args.batch_file}")
 
+    defaults = None
+    if args.param:
+        from simulate import load_quantpedia_params
+        defaults = load_quantpedia_params(args.param)
+        print(f"Using param: {args.param}")
+
     results: list[dict] = []
     errors: list[tuple[int, str]] = []
 
     with ProcessPoolExecutor(max_workers=args.workers) as ex:
-        futures = {ex.submit(_run_one, c): i for i, c in enumerate(configs)}
+        futures = {ex.submit(_run_one, c, defaults): i for i, c in enumerate(configs)}
         for fut in as_completed(futures):
             i = futures[fut]
             try:
@@ -208,6 +217,18 @@ def main() -> None:
     write_csv(results, out_dir / "results.csv")
     write_md(results, out_dir / "report.md")
     write_html(results, out_dir / "report.html")
+
+    # Generate parallel coordinates graph
+    try:
+        from gen_batch_graphs import load_batch_data, graph2_parcoords
+        rows = load_batch_data(out_dir)
+        if rows:
+            graph2_parcoords(rows, out_dir / "graph2_parcoords.html")
+            print(f"  graph2_parcoords.html")
+    except ImportError as e:
+        print(f"  (skip graph: {e})")
+    except Exception as e:
+        print(f"  (graph error: {e})")
 
     if errors:
         (out_dir / "errors.json").write_text(

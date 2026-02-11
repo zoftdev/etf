@@ -11,6 +11,7 @@ Strategy:
 from __future__ import annotations
 
 import json
+import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import NamedTuple
@@ -20,14 +21,44 @@ import pandas as pd
 import yfinance as yf
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "result" / "momentum-lab"
+PARAM_DIR = Path(__file__).resolve().parent / "param"
+DEFAULT_PARAM_FILE = PARAM_DIR / "default"
 
-# Default 13 ETFs from QuantPedia research
-DEFAULT_ETFS = [
-    "SPY", "IWM", "EFA", "EEM", "IYR", "QQQ",  # stock
-    "LQD", "IEF", "TIP",                        # bond
-    "GLD", "USO", "DBC",                        # commodity
-    "FXE",                                     # currency
-]
+
+def get_default_param() -> str:
+    """Single setting for default profile: env MOMENTUM_LAB_PARAM > param/default > quantpedia.json."""
+    env = os.environ.get("MOMENTUM_LAB_PARAM", "").strip()
+    if env:
+        return env
+    if DEFAULT_PARAM_FILE.exists():
+        name = DEFAULT_PARAM_FILE.read_text().strip()
+        if name:
+            return name
+    return "quantpedia.json"
+
+
+def load_quantpedia_params(param_file: str | Path | None = None) -> dict:
+    """Load params from param dir. param_file: filename (e.g. quantpedia.json) or path.
+    When None: use get_default_param() (env MOMENTUM_LAB_PARAM or param/default).
+    Missing keys are filled from quantpedia.json."""
+    if param_file is None or param_file == "":
+        param_file = get_default_param()
+    path = Path(param_file)
+    if not path.is_absolute():
+        path = PARAM_DIR / path
+    with open(path, encoding="utf-8") as f:
+        d = json.load(f)
+    # Merge with quantpedia baseline for missing keys
+    if path.name != "quantpedia.json":
+        base = load_quantpedia_params("quantpedia.json")
+        d = {**base, **d}
+    if "mom_periods_days" in d and isinstance(d["mom_periods_days"], list):
+        d["mom_periods_days"] = tuple(d["mom_periods_days"])
+    return d
+
+
+_QUANTPEDIA_PARAMS = load_quantpedia_params()
+DEFAULT_ETFS = _QUANTPEDIA_PARAMS["etfs"]
 
 
 @dataclass
@@ -35,48 +66,53 @@ class Config:
     """Configurable parameters for optimization and variant runs."""
 
     # ETF selection & output
-    etfs: list[str] = field(default_factory=lambda: list(DEFAULT_ETFS))
-    group_name: str = "from-research"
+    etfs: list[str] = field(default_factory=lambda: list(_QUANTPEDIA_PARAMS["etfs"]))
+    group_name: str = _QUANTPEDIA_PARAMS["group_name"]
 
     # Strategy rules
-    n_long: int = 4
-    n_short: int = 1
-    long_weight: float = 1.0
-    short_weight: float = 0.30
-    corr_threshold: float = 1.0  # activate short when 20d_corr/250d_corr > this
+    n_long: int = _QUANTPEDIA_PARAMS["n_long"]
+    n_short: int = _QUANTPEDIA_PARAMS["n_short"]
+    long_weight: float = _QUANTPEDIA_PARAMS["long_weight"]
+    short_weight: float = _QUANTPEDIA_PARAMS["short_weight"]
+    corr_threshold: float = _QUANTPEDIA_PARAMS["corr_threshold"]
 
     # Momentum lookback (days): 3, 6, 9, 12 months
-    mom_periods_days: tuple[int, ...] = (63, 126, 189, 252)
+    mom_periods_days: tuple[int, ...] = _QUANTPEDIA_PARAMS["mom_periods_days"]
 
     # Correlation filter
-    corr_short_days: int = 20
-    corr_long_days: int = 250
+    corr_short_days: int = _QUANTPEDIA_PARAMS["corr_short_days"]
+    corr_long_days: int = _QUANTPEDIA_PARAMS["corr_long_days"]
 
     # Cost & data
-    spread_pct: float = 0.15
-    lookback_years: int = 20
+    spread_pct: float = _QUANTPEDIA_PARAMS["spread_pct"]
+    lookback_years: int = _QUANTPEDIA_PARAMS["lookback_years"]
 
     def result_dir(self) -> Path:
         return OUT_DIR / self.group_name
 
 
-def default_config() -> Config:
-    """Default config (QuantPedia research params)."""
-    return Config()
+def default_config(param_file: str | Path | None = None) -> Config:
+    """Default config. param_file: load from param/{name} (default: quantpedia.json)."""
+    params = load_quantpedia_params(param_file) if param_file else _QUANTPEDIA_PARAMS
+    return Config(**{k: v for k, v in params.items() if k in {
+        "etfs", "group_name", "n_long", "n_short", "long_weight", "short_weight",
+        "corr_threshold", "mom_periods_days", "corr_short_days", "corr_long_days",
+        "spread_pct", "lookback_years",
+    }})
 
 
 # Backward-compat
 ETFS = DEFAULT_ETFS
-ETF_GROUP_NAME = "from-research"
-MOM_PERIODS_DAYS = (63, 126, 189, 252)
-CORR_SHORT_DAYS = 20
-CORR_LONG_DAYS = 250
-N_LONG = 4
-N_SHORT = 1
-SHORT_WEIGHT = 0.30
-LONG_WEIGHT = 1.0
-LOOKBACK_YEARS = 20
-SPREAD_PCT = 0.15
+ETF_GROUP_NAME = _QUANTPEDIA_PARAMS["group_name"]
+MOM_PERIODS_DAYS = _QUANTPEDIA_PARAMS["mom_periods_days"]
+CORR_SHORT_DAYS = _QUANTPEDIA_PARAMS["corr_short_days"]
+CORR_LONG_DAYS = _QUANTPEDIA_PARAMS["corr_long_days"]
+N_LONG = _QUANTPEDIA_PARAMS["n_long"]
+N_SHORT = _QUANTPEDIA_PARAMS["n_short"]
+SHORT_WEIGHT = _QUANTPEDIA_PARAMS["short_weight"]
+LONG_WEIGHT = _QUANTPEDIA_PARAMS["long_weight"]
+LOOKBACK_YEARS = _QUANTPEDIA_PARAMS["lookback_years"]
+SPREAD_PCT = _QUANTPEDIA_PARAMS["spread_pct"]
 
 
 class SimResult(NamedTuple):

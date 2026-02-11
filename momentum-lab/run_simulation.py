@@ -20,28 +20,30 @@ import pandas as pd
 _lab_dir = Path(__file__).resolve().parent
 sys.path.insert(0, str(_lab_dir))
 
-from simulate import Config, DEFAULT_ETFS, OUT_DIR, run_simulation
+from simulate import Config, load_quantpedia_params, OUT_DIR, run_simulation
 from gen_graph import build_chart
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="QuantPedia ETF Momentum Strategy")
+    parser.add_argument("--param", type=str, default="",
+                        help="Param file in param/ (default: quantpedia.json)")
     # ETF & output
     parser.add_argument("--etfs", type=str, default="",
-                        help="Comma-separated ETF tickers (default: QuantPedia 13)")
-    parser.add_argument("--group-name", type=str, default="from-research",
-                        help="Output subfolder name")
-    # Strategy
-    parser.add_argument("--n-long", type=int, default=4, help="Number of top ETFs to long")
-    parser.add_argument("--n-short", type=int, default=1, help="Number of bottom ETFs to short")
-    parser.add_argument("--corr-threshold", type=float, default=1.0,
+                        help="Comma-separated ETF tickers (default: from param)")
+    parser.add_argument("--group-name", type=str, default="",
+                        help="Output subfolder name (default: from param)")
+    # Strategy (default=None = use param file)
+    parser.add_argument("--n-long", type=int, default=None, help="Number of top ETFs to long")
+    parser.add_argument("--n-short", type=int, default=None, help="Number of bottom ETFs to short")
+    parser.add_argument("--corr-threshold", type=float, default=None,
                         help="Activate short when 20d_corr/250d_corr > this")
-    parser.add_argument("--mom-periods", type=str, default="63,126,189,252",
-                        help="Momentum lookback days (comma-separated)")
+    parser.add_argument("--mom-periods", type=str, default="",
+                        help="Momentum lookback days (comma-separated, default: from param)")
     # Data & cost
-    parser.add_argument("--spread", type=float, default=0.15,
+    parser.add_argument("--spread", type=float, default=None,
                         help="Transaction cost %% per rebalance")
-    parser.add_argument("--lookback-years", type=int, default=20,
+    parser.add_argument("--lookback-years", type=int, default=None,
                         help="Years of historical data")
     parser.add_argument("--show-trades", action="store_true",
                         help="Output merged buy/sell summary")
@@ -51,18 +53,25 @@ def main() -> None:
                         help="Save JSON summary to file (or '-' for stdout)")
     args = parser.parse_args()
 
-    etfs = [t.strip() for t in args.etfs.split(",") if t.strip()] if args.etfs else list(DEFAULT_ETFS)
-    mom_periods = tuple(int(x.strip()) for x in args.mom_periods.split(",") if x.strip())
+    params = load_quantpedia_params(args.param) if args.param else load_quantpedia_params()
+    etfs = [t.strip() for t in args.etfs.split(",") if t.strip()] if args.etfs else list(params["etfs"])
+    mom_periods = tuple(int(x.strip()) for x in args.mom_periods.split(",") if x.strip()) if args.mom_periods.strip() else params["mom_periods_days"]
+    group_name = args.group_name or params["group_name"]
+    n_long = args.n_long if args.n_long is not None else params["n_long"]
+    n_short = args.n_short if args.n_short is not None else params["n_short"]
+    corr_threshold = args.corr_threshold if args.corr_threshold is not None else params["corr_threshold"]
+    spread_pct = args.spread if args.spread is not None else params["spread_pct"]
+    lookback_years = args.lookback_years if args.lookback_years is not None else params["lookback_years"]
 
     config = Config(
         etfs=etfs,
-        group_name=args.group_name,
-        n_long=args.n_long,
-        n_short=args.n_short,
-        corr_threshold=args.corr_threshold,
+        group_name=group_name,
+        n_long=n_long,
+        n_short=n_short,
+        corr_threshold=corr_threshold,
         mom_periods_days=mom_periods,
-        spread_pct=args.spread,
-        lookback_years=args.lookback_years,
+        spread_pct=spread_pct,
+        lookback_years=lookback_years,
     )
     result_dir = config.result_dir()
     result_dir.mkdir(parents=True, exist_ok=True)
@@ -84,7 +93,7 @@ def main() -> None:
     print(f"  CAGR:       {m_mom_0.get('cagr_pct', 0):.2f}%")
     print(f"  Sharpe:     {m_mom_0.get('sharpe', 0):.2f}")
     print(f"  Max DD:     {m_mom_0.get('max_drawdown_pct', 0):.2f}%")
-    print(f"\nMomentum (spread={args.spread}%):")
+    print(f"\nMomentum (spread={spread_pct}%):")
     print(f"  CAGR:       {m_mom_015.get('cagr_pct', 0):.2f}%")
     print(f"  Sharpe:     {m_mom_015.get('sharpe', 0):.2f}")
     print(f"  Max DD:     {m_mom_015.get('max_drawdown_pct', 0):.2f}%")

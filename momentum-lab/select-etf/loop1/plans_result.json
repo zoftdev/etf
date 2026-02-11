@@ -1,0 +1,82 @@
+{
+  "plans": {
+    "A_QuantPedia_Classic": [
+      "SPY",
+      "IWM",
+      "EFA",
+      "EEM",
+      "IYR",
+      "QQQ",
+      "LQD",
+      "IEF",
+      "TIP",
+      "GLD",
+      "USO",
+      "DBC",
+      "FXE"
+    ],
+    "B_Low_Correlation": [
+      "SPY",
+      "EFA",
+      "IYR",
+      "EEM",
+      "TLT",
+      "IEF",
+      "USO",
+      "GLD",
+      "UUP",
+      "FXE",
+      "DBC",
+      "TIP",
+      "SLV"
+    ],
+    "C_Long_Backtest": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "EFA",
+      "EEM",
+      "VEU",
+      "TLT",
+      "IEF",
+      "LQD",
+      "GLD",
+      "SLV",
+      "USO",
+      "FXE"
+    ],
+    "D_Low_Expense": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "EFA",
+      "EEM",
+      "TLT",
+      "IEF",
+      "LQD",
+      "GLD",
+      "SLV",
+      "USO",
+      "IYR",
+      "VTV"
+    ],
+    "E_Sector_Tilt": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "IYR",
+      "EFA",
+      "EEM",
+      "TLT",
+      "IEF",
+      "LQD",
+      "TIP",
+      "GLD",
+      "USO",
+      "DBC",
+      "XLU",
+      "XLF"
+    ]
+  },
+  "run_time": "2026-02-11T18:52:10.841514"
+}
