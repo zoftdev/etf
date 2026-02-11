@@ -25,6 +25,7 @@ Usage:
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -46,8 +47,8 @@ CORR_SHORT_DAYS = 20
 CORR_LONG_DAYS = 250
 N_LONG = 4
 N_SHORT = 1
-SHORT_WEIGHT = 0.30  # 30%
-LONG_WEIGHT = 1.0 - SHORT_WEIGHT  # 70%
+SHORT_WEIGHT = 0.30  # 30% additional short hedge (when corr filter active)
+LONG_WEIGHT = 1.0    # 100% in longs (4 × 25% each)
 
 # result/ at etf project root (../ from momentum-lab)
 OUT_DIR = Path(__file__).resolve().parent.parent / "result"
@@ -237,22 +238,18 @@ def run_momentum_strategy(
 
 
 def run_buy_hold(prices: pd.DataFrame, returns: pd.DataFrame, start_date: pd.Timestamp | None = None) -> pd.Series:
-    """Equal-weight buy-hold all ETFs. Returns equity curve. Optionally start at start_date."""
+    """True buy-hold: equal initial investment in all ETFs, let positions drift."""
     valid_cols = [c for c in prices.columns if prices[c].notna().any()]
     if not valid_cols:
         return pd.Series(dtype=float)
-    n = len(valid_cols)
-    w = 1.0 / n
-    port_ret = returns[valid_cols].mul(w).sum(axis=1)
-    port_ret = port_ret.fillna(0.0)
-    equity = (1.0 + port_ret).cumprod()
     if start_date is not None:
         idx = prices.index.get_indexer([start_date], method="ffill")[0]
-        base = equity.iloc[idx]
-        if base > 0:
-            equity = equity / base
-        equity.iloc[:idx] = np.nan
-        equity = equity.ffill()
+    else:
+        idx = 0
+    # Normalize each ETF price to 1.0 at start → portfolio = mean of individual growth
+    start_prices = prices[valid_cols].iloc[idx]
+    equity = (prices[valid_cols] / start_prices).mean(axis=1)
+    equity.iloc[:idx] = np.nan
     return equity
 
 
@@ -285,6 +282,12 @@ def compute_metrics(equity: pd.Series) -> dict:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="QuantPedia ETF Momentum Strategy Simulation")
+    parser.add_argument("--spread", type=float, default=SPREAD_PCT,
+                        help="Transaction cost %% per rebalance (default: %(default)s)")
+    args = parser.parse_args()
+    spread = args.spread
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     project_root = Path(__file__).resolve().parent.parent
     sys.path.insert(0, str(project_root))
@@ -309,8 +312,8 @@ def main() -> None:
     trades_log: list[dict] = []
     print("Running momentum (spread=0%)...")
     eq_mom_0 = run_momentum_strategy(prices, returns, spread_pct=0.0, trades_log=trades_log)
-    print("Running momentum (spread=0.15%)...")
-    eq_mom_015 = run_momentum_strategy(prices, returns, spread_pct=0.15)
+    print(f"Running momentum (spread={spread}%)...")
+    eq_mom_015 = run_momentum_strategy(prices, returns, spread_pct=spread)
     first_valid = eq_mom_0.dropna().index[0] if eq_mom_0.notna().any() else None
     print("Running buy-hold benchmark...")
     eq_bh = run_buy_hold(prices, returns, start_date=first_valid)
@@ -333,7 +336,7 @@ def main() -> None:
     print(f"  CAGR:       {m_mom_0.get('cagr_pct', 0):.2f}%")
     print(f"  Sharpe:     {m_mom_0.get('sharpe', 0):.2f}")
     print(f"  Max DD:     {m_mom_0.get('max_drawdown_pct', 0):.2f}%")
-    print(f"\nMomentum (spread=0.15%):")
+    print(f"\nMomentum (spread={spread}%):")
     print(f"  CAGR:       {m_mom_015.get('cagr_pct', 0):.2f}%")
     print(f"  Sharpe:     {m_mom_015.get('sharpe', 0):.2f}")
     print(f"  Max DD:     {m_mom_015.get('max_drawdown_pct', 0):.2f}%")
@@ -343,9 +346,10 @@ def main() -> None:
     print(f"  Max DD:     {m_bh.get('max_drawdown_pct', 0):.2f}%")
 
     # Save equity curves
+    spread_label = f"momentum_spread{str(spread).replace('.', '')}"
     out_df = pd.DataFrame({
         "momentum_spread0": eq_mom_0,
-        "momentum_spread015": eq_mom_015,
+        spread_label: eq_mom_015,
         "buy_hold": eq_bh,
     })
     out_csv = OUT_DIR / "equity_curves.csv"
@@ -355,7 +359,7 @@ def main() -> None:
     # Save metrics
     metrics_df = pd.DataFrame([
         {"strategy": "momentum_spread0", **m_mom_0},
-        {"strategy": "momentum_spread015", **m_mom_015},
+        {"strategy": spread_label, **m_mom_015},
         {"strategy": "buy_hold", **m_bh},
     ])
     metrics_csv = OUT_DIR / "metrics.csv"
@@ -387,8 +391,8 @@ def main() -> None:
     ))
     fig.add_trace(go.Scatter(
         x=dates_str,
-        y=out_df["momentum_spread015"].tolist(),
-        name="Momentum (spread=0.15%)",
+        y=out_df[spread_label].tolist(),
+        name=f"Momentum (spread={spread}%)",
         line=dict(color="#2ca02c", width=2),
     ))
     fig.add_trace(go.Scatter(
@@ -398,7 +402,7 @@ def main() -> None:
         line=dict(color="#ff7f0e", width=2),
     ))
     fig.update_layout(
-        title="QuantPedia ETF Momentum vs Buy-Hold (13 ETFs) — spread 0% vs 0.15%",
+        title=f"QuantPedia ETF Momentum vs Buy-Hold (13 ETFs) — spread 0% vs {spread}%",
         xaxis_title="Date",
         yaxis_title="Equity (start=1)",
         hovermode="x unified",
